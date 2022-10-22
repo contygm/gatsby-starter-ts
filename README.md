@@ -18,7 +18,8 @@ Before running the site, you will need to install the following:
 2. In project root, run `npm install`
 3. In project root, run `npm run start`
 4. In your browser, visit http://localhost:8000/
-  - For CMS: http://localhost:8000/admin
+
+-   For CMS: http://localhost:8000/admin
 
 ## Tech
 
@@ -41,7 +42,8 @@ Before running the site, you will need to install the following:
 -   **Bulma**
     -   [Helpers](https://bulma.io/documentation/helpers/)
     -   [Variables](https://bulma.io/documentation/customize/variables/)
--   [Gatsby Docs](https://www.gatsbyjs.com/docs)
+-   **Gatsby Docs**
+    -   [Prettier Setup](https://decodenatura.com/how-to-set-up-gatsby-typescript-eslint-prettier/)
 -   **NetlifyCMS**:
     -   [NetlifyCMS Docs](https://www.netlifycms.org/docs/gatsby/)
     -   [Netlify CMS/Gatsby Setup](https://www.netlifycms.org/docs/gatsby/)
@@ -50,8 +52,6 @@ Before running the site, you will need to install the following:
     -   [Font Awesome Free Search](https://fontawesome.com/search?o=r&m=free)
 -   **Misc**:
     -   [Generate placeholder images](https://placeholder.com/)
-
-
 
 ## Operational Notes
 
