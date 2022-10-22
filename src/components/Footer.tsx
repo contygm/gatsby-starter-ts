@@ -1,53 +1,97 @@
-import { Link } from 'gatsby';
 import * as React from 'react';
+import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
+import { useSiteMetadata } from "../hooks/useSiteMetadata";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar, faMugHot, faGhost } from '@fortawesome/free-solid-svg-icons';
+import { faStar, faMugHot, faGhost, faAngleUp } from '@fortawesome/free-solid-svg-icons';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
 /**
- * @description Site wide footer, mobile friendly
- * @param author - string value passed from Layout
+ * @description A icon link using FontAwesome icons with
+ * footer styles
+ * @param faIcon - IconProp, faicon name
  */
-const Footer = (props: { author: string }) => {
-    /**
-     * @description A icon link using FontAwesome icons with
-     * footer styles
-     * @param faIcon - IconProp, faicon name
-     */
-    const FaIconLink = (props: { faIcon: IconProp }) => {
-        return (
-            <li className="mx-2 is-inline">
-                <Link
-                    className="has-text-info-light"
-                    to="/"
+ const FaIconLink = (props: { faIcon: IconProp }) => {
+    return (
+        <li className="mx-2 is-inline">
+            <Link
+                className="has-text-info-light"
+                to="/"
+            >
+                <FontAwesomeIcon
+                    icon={props.faIcon}
+                    size="lg"
+                />
+            </Link>
+        </li>
+    );
+};
+
+/**
+ * @description A text link with footer styles
+ * @param pageUrl - string, destination url
+ * @param label - string, link text
+ */
+const PageLink = (props: { pageUrl: string; label: string }) => {
+    return (
+        <li className="is-inline-desktop is-inline-tablet mx-4">
+            <Link
+                className="has-text-info-light"
+                to={props.pageUrl}
+            >
+                {props.label}
+            </Link>
+        </li>
+    );
+};
+
+/**
+ * @description A link dropdown that routes to the legal pages: Copyright, 
+ * Cookie Policy, Terms and Conditions, Disclaimer. Dropdown actually drops UP
+ */
+const DropDownLinkBtn = () => {
+    return (
+        <li className="dropdown is-hoverable is-up ">
+            <div className="dropdown-trigger ">
+                <Link 
+                    className="has-text-info-light is-inline-desktop is-inline-tablet mx-4"
+                    aria-haspopup="true"
+                    aria-controls="footer-dropdown-menu"
+                    to="/legal"
                 >
+                    Legal
                     <FontAwesomeIcon
-                        icon={props.faIcon}
-                        size="lg"
+                        icon={faAngleUp}
+                        size="sm"
+                        className="px-2"
                     />
                 </Link>
-            </li>
-        );
-    };
+            </div>
+            <div className="dropdown-menu" id="footer-dropdown-menu" role="menu">
+                <div className="dropdown-content">
+                    <div className="dropdown-item">
+                        <Link className="" to="/legal/copyright">Copyright</Link>
+                    </div>
+                    <div className="dropdown-item">
+                        <Link className="" to="/legal/cookie-policy">Cookie Policy</Link>
+                    </div>
+                    <div className="dropdown-item">
+                        <Link className="" to="/legal/terms-and-conditions">Terms and Conditions</Link>
+                    </div>
+                    <div className="dropdown-item">
+                        <Link className="" to="/legal/disclaimer">Disclaimer</Link>
+                    </div>
+                </div>
+            </div>
+        </li>
+    );
+}
 
-    /**
-     * @description A text link with footer styles
-     * @param pageUrl - string, destination url
-     * @param label - string, link text
-     */
-    const PageLink = (props: { pageUrl: string; label: string }) => {
-        return (
-            <li className="is-inline-desktop is-inline-tablet mx-4">
-                <Link
-                    className="has-text-info-light"
-                    to={props.pageUrl}
-                >
-                    {props.label}
-                </Link>
-            </li>
-        );
-    };
+/**
+ * @description Site wide footer, mobile friendly
+ */
+const Footer = () => {
+    const { author } = useSiteMetadata();
 
     return (
         <footer className="footer">
@@ -81,8 +125,10 @@ const Footer = (props: { author: string }) => {
                     />
                     <PageLink
                         label="Privacy"
-                        pageUrl="/"
+                        pageUrl="/legal/privacy-policy"
                     />
+                    {/* contians the rest of the 'legal' pages */}
+                    <DropDownLinkBtn />
                 </ul>
                 {/* Social media links to the left */}
                 <div className="column">
@@ -96,7 +142,7 @@ const Footer = (props: { author: string }) => {
             {/* Copy right section with border */}
             <div className="footer-copyright has-text-centered has-text-grey-light is-size-7">
                 <p className="pt-3">
-                    © {new Date().getFullYear()}, Built by {props.author}
+                    © {new Date().getFullYear()}, Built by {author}
                 </p>
             </div>
         </footer>
