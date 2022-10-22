@@ -44,6 +44,8 @@ Before running the site, you will need to install the following:
     -   [Variables](https://bulma.io/documentation/customize/variables/)
 -   **Gatsby Docs**
     -   [Prettier Setup](https://decodenatura.com/how-to-set-up-gatsby-typescript-eslint-prettier/)
+    -   [Gatsby Plugin ES Lint](https://www.gatsbyjs.com/plugins/gatsby-plugin-eslint/)
+    -   Gatsby ES Lint Setup: [One](https://medium.com/@stojanpeshov/how-to-setup-gatsbyjs-starter-with-typescript-eslint-prettier-269b1a0a812f), [Two](https://decodenatura.com/how-to-set-up-gatsby-typescript-eslint-prettier/)
 -   **NetlifyCMS**:
     -   [NetlifyCMS Docs](https://www.netlifycms.org/docs/gatsby/)
     -   [Netlify CMS/Gatsby Setup](https://www.netlifycms.org/docs/gatsby/)
@@ -60,6 +62,8 @@ Before running the site, you will need to install the following:
     -   [See Github Issue](https://github.com/netlify/netlify-cms/issues/6499)
 
 ### Commit Message Style
+
+Keep it short and informative.
 
 -   `chore`: minor maintenance tasks like README updates, package upgrades, etc.
 -   `update`: larger tech debt tasks that are more involved than a chore. Ex: test package upgrade involving extensive breaking changes.
