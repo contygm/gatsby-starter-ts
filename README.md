@@ -1,54 +1,37 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal TypeScript starter
-</h1>
+# Starter
 
-## 🚀 Quick start
+This starter will ultimately feature a blog, wiki and glossary. All 3 post types will work with Netlify CMS.
 
-1.  **Create a Gatsby site.**
+## Quick Start
 
-    Use the Gatsby CLI to create a new site, specifying the minimal TypeScript starter.
+### Pre Requistes
 
-    ```shell
-    # create a new Gatsby site using the minimal TypeScript starter
-    npm init gatsby
-    ```
+Before running the site, you will need to install the following:
 
-2.  **Start developing.**
+-   [Node 18](https://nodejs.org/en/download/current/)
+    -   NPM (installed with node)
+-   [GatsbyCLI](https://www.gatsbyjs.com/docs/tutorial/part-0/#gatsby-cli)
 
-    Navigate into your new site’s directory and start it up.
+### Run Locally
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+1. Clone repo
+2. In project root, run `npm install`
+3. In project root, run `npm run start`
+4. In your browser, visit http://localhost:8000/
+  - For CMS: http://localhost:8000/admin
 
-3.  **Open the code and start customizing!**
+## Tech
 
-    Your site is now running at http://localhost:8000!
+-   [Gatsby v4](https://www.gatsbyjs.com/docs)
+-   [NetlifyCMS](https://www.netlifycms.org/docs/intro/)
+-   [React 18](https://reactjs.org/docs/getting-started.html)
+-   [Typescript](https://www.typescriptlang.org/docs/)
+-   [Bulma](https://bulma.io/documentation/)
+-   [Font Awesome v6](https://fontawesome.com/docs)
 
-    Edit `src/pages/index.tsx` to see your site update in real-time!
+## Features
 
-4.  **Learn more**
-
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal-ts)
+-   **CMS**: This starter utilizes the Netlify's opensource CMS. NetlifyCMS leverages git repos to store markdown files and doesn't require a server to run. This allows the site to remain static and cost effective, while delivering a light-weight CMS experience.
+-   **SiteMap**: The [`gatsby-plugin-sitemap`](https://www.gatsbyjs.com/plugins/gatsby-plugin-sitemap/) plugin generates a site map for production builds.
+-   **Responsive Images**: The starter takes advantage of Gatsby's responsive image plugins to implement responsive images. See [`gatsby-plugin-image`](https://www.gatsbyjs.com/plugins/gatsby-plugin-image//) for more info.
+-   **Mobile Friendly**: Because most modern users are on mobile, every page is designed with the mobile user in mind.
