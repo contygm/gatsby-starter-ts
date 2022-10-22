@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+/*******************************
+* 
+* Custom Styles & Bulma Overrides
+* 	
+* Overrides must be placed before Bulma
+* imports.
+*
+********************************/
+
+/*******************************
+* THEME 
+********************************/
+
+// Fonts
+$family-primary: Arial, Helvetica, sans-serif; // header
+
+// set body font
+$body-family: $family-primary;
+h1, h2, h3, h4, h5, h6
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
+
+// Colors
+$primary: #BBBFCA;
+$secondary: #373A40;
+$white: hsl(0, 0%, 98%);
+
+/*******************************
+* Navigation 
+********************************/
+
+// For large screens, left align logo and
+// center menu links
+@media only screen and (min-width: 1024px) {
+	.navbar {
+		display: flex;
+		align-content: center;
+		justify-content: center;
+	}
+	
+	.navbar .navbar-menu {
+		flex-grow: initial;
+		flex-shrink: initial;
+	}
+	
+	.navbar .navbar-brand {
+		position: absolute;
+		left: 0;
+	}
+
+	.navbar .navbar-end {
+		width: 10em;
+		right: 1em; 
+		// vertically center container
+		margin: 0;
+		position: absolute;
+		top: 50%;
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+	
+}
+
+// Center mobile menu links
+.navbar-menu.is-active {
+	text-align: center;
+}
+
+
+@media only screen and (max-width: 1024px) {
+	// center and size search input in nav
+	.navbar-end .field {
+		width: 50%;
+		margin: auto;	
+	}
+}
+
+/*******************************
+* Footer
+********************************/
+
+$footer-padding: 1.0rem;
+$footer-background-color: $secondary;
+
+
+#app-container {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+.footer-copyright {
+	border-top: 0.1rem solid;
+}
+
+/*******************************
+* IMPORT BULMA
+********************************/
+@import "~bulma/bulma.sass";
