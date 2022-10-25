@@ -1,7 +1,7 @@
 import * as React from 'react';
 import NavBar from './NavBar';
 import Footer from './Footer';
-import { useStaticQuery, graphql } from 'gatsby';
+import { useSiteMetadata } from "../hooks/useSiteMetadata";
 import '../styles.scss';
 
 interface LayoutProps {
@@ -14,23 +14,12 @@ interface LayoutProps {
  * @param children - the page content that's passed in
  */
 const Layout = ({ children }: LayoutProps) => {
-    // Pull author from site metadata to pass to footer
-    const data = useStaticQuery(graphql`
-        query AuthorQuery {
-            site {
-                siteMetadata {
-                    author
-                }
-            }
-        }
-    `);
-
-    const author = data.site.siteMetadata.author;
+    const { author } = useSiteMetadata();
 
     return (
         <div id="app-container">
             <NavBar />
-            <main className="container">{children}</main>
+            <main>{children}</main>
             <Footer author={author} />
         </div>
     );

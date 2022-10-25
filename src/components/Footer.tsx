@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
-import { useSiteMetadata } from "../hooks/useSiteMetadata";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faMugHot, faGhost, faAngleUp } from '@fortawesome/free-solid-svg-icons';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
@@ -34,7 +33,7 @@ import { IconProp } from '@fortawesome/fontawesome-svg-core';
  */
 const PageLink = (props: { pageUrl: string; label: string }) => {
     return (
-        <li className="is-inline-desktop is-inline-tablet mx-4">
+        <li className="is-inline is-inline-desktop is-inline-tablet mx-3">
             <Link
                 className="has-text-info-light"
                 to={props.pageUrl}
@@ -51,10 +50,10 @@ const PageLink = (props: { pageUrl: string; label: string }) => {
  */
 const DropDownLinkBtn = () => {
     return (
-        <li className="dropdown is-hoverable is-up ">
-            <div className="dropdown-trigger ">
+        <li className="dropdown is-hoverable is-up">
+            <div className="dropdown-trigge">
                 <Link 
-                    className="has-text-info-light is-inline-desktop is-inline-tablet mx-4"
+                    className="has-text-info-light ml-3"
                     aria-haspopup="true"
                     aria-controls="footer-dropdown-menu"
                     to="/legal"
@@ -89,10 +88,9 @@ const DropDownLinkBtn = () => {
 
 /**
  * @description Site wide footer, mobile friendly
+ * @param author - author of site, passed in from layour
  */
-const Footer = () => {
-    const { author } = useSiteMetadata();
-
+const Footer = (props: { author: string }) => {
     return (
         <footer className="footer">
             <div className="columns mb-1 is-vcentered has-text-centered-mobile">
@@ -115,20 +113,26 @@ const Footer = () => {
                 </div>
                 {/* Navigation links centered */}
                 <ul className="column has-text-centered">
-                    <PageLink
-                        label="Contact"
-                        pageUrl="/"
-                    />
-                    <PageLink
-                        label="About"
-                        pageUrl="/"
-                    />
-                    <PageLink
-                        label="Privacy"
-                        pageUrl="/legal/privacy-policy"
-                    />
-                    {/* contians the rest of the 'legal' pages */}
-                    <DropDownLinkBtn />
+                    {/* TODO: display: flex for div will get tthe links to site straight  */}
+                    {/* TODO: need to account for mobile tho */}
+                    {/* https://stackoverflow.com/questions/27418104/whats-the-difference-between-displayinline-flex-and-displayflex */}
+                    <div >
+                        <PageLink
+                            label="Contact"
+                            pageUrl="/"
+                        />
+                        <PageLink
+                            label="About"
+                            pageUrl="/"
+                        />
+                        <PageLink
+                            label="Privacy"
+                            pageUrl="/legal/privacy-policy"
+                        />
+                        {/* contians the rest of the 'legal' pages */}
+                        <DropDownLinkBtn />
+                    </div>
+                    
                 </ul>
                 {/* Social media links to the left */}
                 <div className="column">
@@ -140,9 +144,10 @@ const Footer = () => {
                 </div>
             </div>
             {/* Copy right section with border */}
+            {/* TODO: use <time /> */}
             <div className="footer-copyright has-text-centered has-text-grey-light is-size-7">
                 <p className="pt-3">
-                    © {new Date().getFullYear()}, Built by {author}
+                    © {new Date().getFullYear()}, Built by {props.author}
                 </p>
             </div>
         </footer>
