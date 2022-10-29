@@ -1,53 +1,91 @@
 import * as React from 'react';
 
-const ContactForm = (props: {email: string}) => {
-	function onSubmit(e: React.SyntheticEvent) {
+/**
+ * @description Page header for standard pages
+ * @param title - the page title to be displayed
+ * @param alignCenter - boolean;
+ */
+const ContactForm = (props: { email: string }) => {
+    // console.log form values on submit
+    function onSubmit(e: React.SyntheticEvent) {
         e.preventDefault();
 
-		const target = e.target as typeof e.target & {
-			email: { value: string };
-			message: { value: string };
-			name: { value: string };
-		};
+        const target = e.target as typeof e.target & {
+            email: { value: string };
+            message: { value: string };
+            name: { value: string };
+        };
 
-		console.log("name:", target.name.value)
-		console.log("email:", target.email.value)
-		console.log("message:", target.message.value)
+        console.log('name:', target.name.value);
+        console.log('email:', target.email.value);
+        console.log('message:', target.message.value);
     }
 
-	return (
-		<form method="get" action={`mailto:${props.email}`} encType="text/plain" onSubmit={onSubmit}>
-			<div className="field">
-				<label className="label">Name</label>
-				<div className="control">
-					<input className="input" type="text" placeholder="Name" name="name"/>
-				</div>
-			</div>
+    // mailto action will only work in IE (lol)
+    return (
+        <form
+            className="is-small"
+            method="get"
+            action={`mailto:${props.email}`}
+            encType="text/plain"
+            onSubmit={onSubmit}
+        >
+            <div className="field">
+                <label className="label">Name</label>
+                <div className="control">
+                    <input
+                        className="input"
+                        type="text"
+                        placeholder="Name"
+                        name="name"
+                    />
+                </div>
+            </div>
 
-			<div className="field">
-				<label className="label">YourEmail</label>
-				<div className="control">
-					<input className="input" type="text" placeholder="email@email.com" name="email"/>
-				</div>
-			</div>
+            <div className="field">
+                <label className="label">YourEmail</label>
+                <div className="control">
+                    <input
+                        className="input"
+                        type="text"
+                        placeholder="email@email.com"
+                        name="email"
+                    />
+                </div>
+            </div>
 
-			<div className="field">
-				<label className="label">Message</label>
-				<div className="control">
-					<textarea className="textarea" placeholder="Your messages" name="message"></textarea>
-				</div>
-			</div>
+            <div className="field">
+                <label className="label">Message</label>
+                <div className="control">
+                    <textarea
+                        className="textarea"
+                        placeholder="Your messages"
+                        name="message"
+                    ></textarea>
+                </div>
+            </div>
 
-			<div className="field is-grouped">
-				<div className="control">
-					<button type="submit" className="button is-link">Submit</button>
-				</div>
-				<div className="control">
-					<button type="reset" name="reset" className="button is-link is-light">Cancel</button>
-				</div>
-			</div>
-		</form>
-	)
-}
+            <div className="field is-grouped">
+                <div className="control">
+                    <button
+                        type="submit"
+                        className="button is-primary"
+                    >
+                        Submit
+                    </button>
+                </div>
+                <div className="control">
+                    <button
+                        type="reset"
+                        name="reset"
+                        className="button has-background-grey-lighter"
+                    >
+                        Cancel
+                    </button>
+                </div>
+            </div>
+        </form>
+    );
+};
 
 export default ContactForm;
