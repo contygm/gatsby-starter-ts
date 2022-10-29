@@ -2,7 +2,7 @@
 
 /*******************************
 * 
-* Custom Styles & Bulma Overrides
+* src/images/Bulma Overrides
 * 	
 * Overrides must be placed before Bulma
 * imports.
@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6
 }
 
 // Colors
-$primary: green;
+// $primary: green;
 $secondary: #373A40;
 $white: hsl(0, 0%, 98%);
 
@@ -85,11 +85,16 @@ $white: hsl(0, 0%, 98%);
 $footer-padding: 1.0rem;
 $footer-background-color: $secondary;
 
-
+// sticky footer
 #app-container {
 	display: flex;
 	min-height: 100vh;
 	flex-direction: column;
+}
+
+// sticky footer
+main {
+	flex: 1;
 }
 
 .footer-copyright {
@@ -100,3 +105,49 @@ $footer-background-color: $secondary;
 * IMPORT BULMA
 ********************************/
 @import "~bulma/bulma.sass";
+
+/*******************************
+* Custom Styles
+********************************/
+
+
+.pg-header-period {
+	color: $primary;
+}
+
+.footer-link {
+	color: $white-ter;
+	&:hover {
+		color: $primary;
+	}
+}
+
+.footer-drawer-link {
+	color: $grey-dark;
+	&:hover {
+		color: $primary;
+	}
+}
+
+.footer-logo {
+	&:hover {
+		-webkit-filter: drop-shadow(1px 1px 1px $primary)
+		drop-shadow(-1px -1px 1px $primary);
+		filter: drop-shadow(1px 1px 1px $primary) 
+		drop-shadow(-1px -1px 1px $primary);
+	}
+}
+
+@media only screen and (max-width : 768px) {
+    .footer-falink {    
+		margin-left: 1rem;
+    	margin-right: 1rem;
+	}
+}
+
+@media only screen and (min-width : 769px) {
+    .footer-falink {    
+		margin-left: 0.5rem;
+		margin-right: 0.5rem;
+	}
+}

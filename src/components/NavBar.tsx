@@ -35,7 +35,7 @@ const NavBar = () => {
                     to="/"
                 >
                     <StaticImage
-                        src="../images/icon.png"
+                        src="../images/bulma-logo-white.png"
                         alt="Logo"
                         placeholder="blurred"
                         className="nav-side-width"
@@ -80,7 +80,7 @@ const NavBar = () => {
                         Wiki
                     </Link>
                     <Link
-                        to="/"
+                        to="/404"
                         className="navbar-item"
                     >
                         Glossary

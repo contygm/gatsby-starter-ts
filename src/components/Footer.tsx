@@ -12,14 +12,14 @@ import { IconProp } from '@fortawesome/fontawesome-svg-core';
  */
  const FaIconLink = (props: { faIcon: IconProp }) => {
     return (
-        <li className="mx-2 is-inline">
+        <li className="footer-falink is-inline">
             <Link
-                className="has-text-info-light"
+                className="footer-link"
                 to="/"
             >
                 <FontAwesomeIcon
                     icon={props.faIcon}
-                    size="lg"
+                    size="xl"
                 />
             </Link>
         </li>
@@ -33,9 +33,9 @@ import { IconProp } from '@fortawesome/fontawesome-svg-core';
  */
 const PageLink = (props: { pageUrl: string; label: string }) => {
     return (
-        <li className="is-inline is-inline-desktop is-inline-tablet mx-3">
+        <li className="is-inline-desktop is-inline-tablet m-4 footer-link">
             <Link
-                className="has-text-info-light"
+                className="footer-link"
                 to={props.pageUrl}
             >
                 {props.label}
@@ -51,9 +51,9 @@ const PageLink = (props: { pageUrl: string; label: string }) => {
 const DropDownLinkBtn = () => {
     return (
         <li className="dropdown is-hoverable is-up">
-            <div className="dropdown-trigge">
+            <div className="dropdown-trigger">
                 <Link 
-                    className="has-text-info-light ml-3"
+                    className="m-4 footer-link"
                     aria-haspopup="true"
                     aria-controls="footer-dropdown-menu"
                     to="/legal"
@@ -66,19 +66,20 @@ const DropDownLinkBtn = () => {
                     />
                 </Link>
             </div>
+            {/* TODO fix drop down menu bar */}
             <div className="dropdown-menu" id="footer-dropdown-menu" role="menu">
                 <div className="dropdown-content">
                     <div className="dropdown-item">
-                        <Link className="" to="/legal/copyright">Copyright</Link>
+                        <Link className="footer-drawer-link" to="/legal/copyright">Copyright</Link>
                     </div>
                     <div className="dropdown-item">
-                        <Link className="" to="/legal/cookie-policy">Cookie Policy</Link>
+                        <Link className="footer-drawer-link" to="/legal/cookie-policy">Cookie Policy</Link>
                     </div>
                     <div className="dropdown-item">
-                        <Link className="" to="/legal/terms-and-conditions">Terms and Conditions</Link>
+                        <Link className="footer-drawer-link" to="/legal/terms-and-conditions">Terms and Conditions</Link>
                     </div>
                     <div className="dropdown-item">
-                        <Link className="" to="/legal/disclaimer">Disclaimer</Link>
+                        <Link className="footer-drawer-link" to="/legal/disclaimer">Disclaimer</Link>
                     </div>
                 </div>
             </div>
@@ -100,30 +101,30 @@ const Footer = (props: { author: string }) => {
                         className=""
                         to="/"
                     >
-                        <StaticImage
-                            src="../images/icon.png"
+                        <figure className="image footer-logo">
+                            <StaticImage
+                            src="../images/bulma-logo-white.png"
                             alt="Logo"
                             placeholder="blurred"
-                            className="footer-logo"
                             layout="constrained"
-                            width={50}
-                            height={50}
+                            width={128}
                         />
+                        </figure>
                     </Link>
                 </div>
                 {/* Navigation links centered */}
-                <ul className="column has-text-centered">
-                    {/* TODO: display: flex for div will get tthe links to site straight  */}
+                <ul className="column has-text-centered" style={{flexBasis: "auto"}}>
+                    {/* TODO: display: flex for div will get the links to site straight  */}
                     {/* TODO: need to account for mobile tho */}
                     {/* https://stackoverflow.com/questions/27418104/whats-the-difference-between-displayinline-flex-and-displayflex */}
                     <div >
                         <PageLink
                             label="Contact"
-                            pageUrl="/"
+                            pageUrl="/about#contact-us"
                         />
                         <PageLink
                             label="About"
-                            pageUrl="/"
+                            pageUrl="/about"
                         />
                         <PageLink
                             label="Privacy"
@@ -136,7 +137,7 @@ const Footer = (props: { author: string }) => {
                 </ul>
                 {/* Social media links to the left */}
                 <div className="column">
-                    <ul className="has-text-right has-text-centered-mobile">
+                    <ul className="has-text-right has-text-centered-mobile footer-link">
                         <FaIconLink faIcon={faStar} />
                         <FaIconLink faIcon={faMugHot} />
                         <FaIconLink faIcon={faGhost} />

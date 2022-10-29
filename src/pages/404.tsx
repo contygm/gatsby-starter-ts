@@ -9,17 +9,16 @@ import Layout from '../components/Layout';
 const NotFoundPage = () => {
     return (
         <Layout>
-            <div className="hero is-halfheight">
+            <section className="hero is-fullheight">
                 <div className="hero-body">
                     <div className="container has-text-centered">
                         <h1 className="title">Page not found</h1>
                         <p className="subtitle">
-                            Sorry 😔, we couldn’t find what you were looking
-                            for.
+                            Sorry 😔, we couldn’t find that page.
                         </p>
                         <p>
                             <Link
-                                className="button is-dark"
+                                className="button is-primary"
                                 to="/"
                             >
                                 Go home
@@ -27,7 +26,7 @@ const NotFoundPage = () => {
                         </p>
                     </div>
                 </div>
-            </div>
+            </section>
         </Layout>
     );
 };
