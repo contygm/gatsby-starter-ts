@@ -2,7 +2,12 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar, faMugHot, faGhost, faAngleUp } from '@fortawesome/free-solid-svg-icons';
+import {
+    faStar,
+    faMugHot,
+    faGhost,
+    faAngleUp
+} from '@fortawesome/free-solid-svg-icons';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
 /**
@@ -10,7 +15,7 @@ import { IconProp } from '@fortawesome/fontawesome-svg-core';
  * footer styles
  * @param faIcon - IconProp, faicon name
  */
- const FaIconLink = (props: { faIcon: IconProp }) => {
+const FaIconLink = (props: { faIcon: IconProp }) => {
     return (
         <li className="footer-falink is-inline">
             <Link
@@ -45,14 +50,14 @@ const PageLink = (props: { pageUrl: string; label: string }) => {
 };
 
 /**
- * @description A link dropdown that routes to the legal pages: Copyright, 
+ * @description A link dropdown that routes to the legal pages: Copyright,
  * Cookie Policy, Terms and Conditions, Disclaimer. Dropdown actually drops UP
  */
 const DropDownLinkBtn = () => {
     return (
         <li className="dropdown is-hoverable is-up">
             <div className="dropdown-trigger">
-                <Link 
+                <Link
                     className="m-4 footer-link"
                     aria-haspopup="true"
                     aria-controls="footer-dropdown-menu"
@@ -67,25 +72,49 @@ const DropDownLinkBtn = () => {
                 </Link>
             </div>
             {/* TODO fix drop down menu bar */}
-            <div className="dropdown-menu" id="footer-dropdown-menu" role="menu">
+            <div
+                className="dropdown-menu"
+                id="footer-dropdown-menu"
+                role="menu"
+            >
                 <div className="dropdown-content">
                     <div className="dropdown-item">
-                        <Link className="footer-drawer-link" to="/legal/copyright">Copyright</Link>
+                        <Link
+                            className="footer-drawer-link"
+                            to="/legal/copyright"
+                        >
+                            Copyright
+                        </Link>
                     </div>
                     <div className="dropdown-item">
-                        <Link className="footer-drawer-link" to="/legal/cookie-policy">Cookie Policy</Link>
+                        <Link
+                            className="footer-drawer-link"
+                            to="/legal/cookie-policy"
+                        >
+                            Cookie Policy
+                        </Link>
                     </div>
                     <div className="dropdown-item">
-                        <Link className="footer-drawer-link" to="/legal/terms-and-conditions">Terms and Conditions</Link>
+                        <Link
+                            className="footer-drawer-link"
+                            to="/legal/terms-and-conditions"
+                        >
+                            Terms and Conditions
+                        </Link>
                     </div>
                     <div className="dropdown-item">
-                        <Link className="footer-drawer-link" to="/legal/disclaimer">Disclaimer</Link>
+                        <Link
+                            className="footer-drawer-link"
+                            to="/legal/disclaimer"
+                        >
+                            Disclaimer
+                        </Link>
                     </div>
                 </div>
             </div>
         </li>
     );
-}
+};
 
 /**
  * @description Site wide footer, mobile friendly
@@ -103,21 +132,22 @@ const Footer = (props: { author: string }) => {
                     >
                         <figure className="image footer-logo">
                             <StaticImage
-                            src="../images/bulma-logo-white.png"
-                            alt="Logo"
-                            placeholder="blurred"
-                            layout="constrained"
-                            width={128}
-                        />
+                                src="../images/bulma-logo-white.png"
+                                alt="Logo"
+                                placeholder="blurred"
+                                layout="constrained"
+                                width={128}
+                            />
                         </figure>
                     </Link>
                 </div>
                 {/* Navigation links centered */}
-                <ul className="column has-text-centered" style={{flexBasis: "auto"}}>
-                    {/* TODO: display: flex for div will get the links to site straight  */}
-                    {/* TODO: need to account for mobile tho */}
-                    {/* https://stackoverflow.com/questions/27418104/whats-the-difference-between-displayinline-flex-and-displayflex */}
-                    <div >
+                {/* NOTE: flex basis will keep dropdown btn in line with the links */}
+                <ul
+                    className="column has-text-centered"
+                    style={{ flexBasis: 'auto' }}
+                >
+                    <div>
                         <PageLink
                             label="Contact"
                             pageUrl="/about#contact-us"
@@ -133,7 +163,6 @@ const Footer = (props: { author: string }) => {
                         {/* contians the rest of the 'legal' pages */}
                         <DropDownLinkBtn />
                     </div>
-                    
                 </ul>
                 {/* Social media links to the left */}
                 <div className="column">
@@ -145,10 +174,9 @@ const Footer = (props: { author: string }) => {
                 </div>
             </div>
             {/* Copy right section with border */}
-            {/* TODO: use <time /> */}
             <div className="footer-copyright has-text-centered has-text-grey-light is-size-7">
                 <p className="pt-3">
-                    © {new Date().getFullYear()}, Built by {props.author}
+                    © <time>{new Date().getFullYear()}</time>, Built by {props.author}
                 </p>
             </div>
         </footer>

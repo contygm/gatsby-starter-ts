@@ -110,6 +110,13 @@ main {
 * Custom Styles
 ********************************/
 
+.legal-link {
+	color: $secondary;
+	text-decoration: none;
+	&:hover {
+		color: $primary;
+	}
+}
 
 .pg-header-period {
 	color: $primary;
