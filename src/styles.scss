@@ -24,9 +24,10 @@ h1, h2, h3, h4, h5, h6
 }
 
 // Colors
-// $primary: green;
-$secondary: #373A40;
+// $primary: #FFBE0B;
+$secondary: #12130F;
 $white: hsl(0, 0%, 98%);
+$navbar-item-hover-color: hsl(171, 100%, 41%); // bulma primary
 
 /*******************************
 * Navigation 
@@ -77,6 +78,8 @@ $white: hsl(0, 0%, 98%);
 		margin: auto;	
 	}
 }
+
+
 
 /*******************************
 * Footer
