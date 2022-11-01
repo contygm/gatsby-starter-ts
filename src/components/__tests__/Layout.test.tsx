@@ -6,18 +6,14 @@ import Layout from '../Layout';
 // 	useSiteMetadata: () => ({ author: `Writer B. Author` }),
 // })
 
-jest.mock("../../hooks/useSiteMetadata", () => ({
-	useSiteMetadata: () => ({ author: `Writer B. Author` }),
+jest.mock('../../hooks/useSiteMetadata', () => ({
+    useSiteMetadata: () => ({ author: `Writer B. Author` })
 }));
 
 describe('Layout', () => {
     it('renders correctly', () => {
-		const content = <p>Hello, goodbye.</p>;
-        const { asFragment } = render(
-			<Layout>
-				{content}
-			</Layout>
-		);
+        const content = <p>Hello, goodbye.</p>;
+        const { asFragment } = render(<Layout>{content}</Layout>);
         expect(asFragment()).toMatchSnapshot();
     });
 });

@@ -1,10 +1,10 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import NavBar from '../NavBar';
+import IndexPage from '../index';
 
-describe('NavBar', () => {
+describe('IndexPage', () => {
     it('renders correctly', () => {
-        const { asFragment } = render(<NavBar />);
+        const { asFragment } = render(<IndexPage />);
         expect(asFragment()).toMatchSnapshot();
     });
 });

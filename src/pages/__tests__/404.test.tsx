@@ -1,10 +1,10 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import NavBar from '../NavBar';
+import NotFoundPage from '../404';
 
-describe('NavBar', () => {
+describe('404 - NotFoundPage', () => {
     it('renders correctly', () => {
-        const { asFragment } = render(<NavBar />);
+        const { asFragment } = render(<NotFoundPage />);
         expect(asFragment()).toMatchSnapshot();
     });
 });
