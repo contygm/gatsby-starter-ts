@@ -27,6 +27,12 @@ module.exports = {
         'react/prop-types': 'off', // Disable prop-types as we use TypeScript for type checking
         '@typescript-eslint/explicit-function-return-type': 'off'
     },
+    ignorePatterns: [
+        '__mocks__/**/*',
+        '.gitignore',
+        '.prettierignore',
+        'loadershim.js'
+    ],
     overrides: [
         // Override some TypeScript rules just for .js files
         {

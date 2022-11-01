@@ -27,6 +27,7 @@ Before running the site, you will need to install the following:
 -   [NetlifyCMS](https://www.netlifycms.org/docs/intro/)
 -   [React 18](https://reactjs.org/docs/getting-started.html)
 -   [Typescript](https://www.typescriptlang.org/docs/)
+-   [Jest](https://jestjs.io/)
 -   [Bulma](https://bulma.io/documentation/)
 -   [Font Awesome v6](https://fontawesome.com/docs)
 
@@ -36,6 +37,7 @@ Before running the site, you will need to install the following:
 -   **SiteMap**: The [`gatsby-plugin-sitemap`](https://www.gatsbyjs.com/plugins/gatsby-plugin-sitemap/) plugin generates a site map for production builds.
 -   **Responsive Images**: The starter takes advantage of Gatsby's responsive image plugins to implement responsive images. See [`gatsby-plugin-image`](https://www.gatsbyjs.com/plugins/gatsby-plugin-image//) for more info.
 -   **Mobile Friendly**: Because most modern users are on mobile, every page is designed with the mobile user in mind.## Resources
+-   **Unit Testing**: Jest is used for unit testing throughout the application
 
 ## Resources
 
@@ -61,9 +63,21 @@ Before running the site, you will need to install the following:
 -   NetlfiyCMS has known issues using React 18. The workaround is including the React packages under `overrides` block in `package.json`.
     -   [See Github Issue](https://github.com/netlify/netlify-cms/issues/6499)
 
+### Testing + Formatting
+
+To run the **full** test suite (lint, typecheck, unit): `npm run tests`.
+
+To run only one element of the suite:
+
+-   Unit tests: `npm run unit`
+-   Update unit tests: `npm run unit-update`
+-   Fix formatting: `npm run format`
+-   Lint: `npm run lint`
+-   Type check: `npm run typecheck`
+
 ### Commit Message Style
 
-Keep it short and informative.
+Keep it short and informative. The message should begin with **one** of the following:
 
 -   `chore`: minor maintenance tasks like README updates, package upgrades, etc.
 -   `update`: larger tech debt tasks that are more involved than a chore. Ex: test package upgrade involving extensive breaking changes.

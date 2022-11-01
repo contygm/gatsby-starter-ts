@@ -175,8 +175,12 @@ const Footer = (props: { author: string }) => {
             </div>
             {/* Copy right section with border */}
             <div className="footer-copyright has-text-centered has-text-grey-light is-size-7">
-                <p className="pt-3">
-                    © <time>{new Date().getFullYear()}</time>, Built by {props.author}
+                <p
+                    className="pt-3"
+                    data-testid="copyright"
+                >
+                    © <time>{new Date().getFullYear()}</time>, Built by{' '}
+                    {props.author}
                 </p>
             </div>
         </footer>
