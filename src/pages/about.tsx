@@ -98,7 +98,7 @@ const AboutPage = () => {
                         </p>
                         <div className="columns my-2">
                             <div className="column is-two-thirds-desktop">
-                                <ContactForm email={email} />
+                                <ContactForm />
                             </div>
                         </div>
                     </div>

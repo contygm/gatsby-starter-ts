@@ -17,6 +17,9 @@ module.exports = {
     testEnvironmentOptions: {
         url: `http://localhost`
     },
+    moduleNameMapper: {
+        "\\.(css|scss)$": "identity-obj-proxy"
+    },
     setupFiles: [`<rootDir>/loadershim.js`],
     collectCoverage: true,
     collectCoverageFrom: ['src/**/*.{js, jsx, ts,tsx}'],

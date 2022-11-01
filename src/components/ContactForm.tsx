@@ -1,11 +1,9 @@
 import * as React from 'react';
 
 /**
- * @description Page header for standard pages
- * @param title - the page title to be displayed
- * @param alignCenter - boolean;
+ * @description Basic Contact form
  */
-const ContactForm = (props: { email: string }) => {
+const ContactForm = () => {
     // console.log form values on submit
     function onSubmit(e: React.SyntheticEvent) {
         e.preventDefault();
@@ -26,7 +24,7 @@ const ContactForm = (props: { email: string }) => {
         <form
             className="is-small"
             method="get"
-            action={`mailto:${props.email}`}
+            // action={`mailto:${props.email}`}
             encType="text/plain"
             onSubmit={onSubmit}
         >
