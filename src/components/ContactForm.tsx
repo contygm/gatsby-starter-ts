@@ -1,22 +1,24 @@
 import * as React from 'react';
 
 /**
- * @description Basic Contact form
+ * @description Page header for standard pages
+ * @param title - the page title to be displayed
+ * @param alignCenter - boolean;
  */
 const ContactForm = () => {
     // console.log form values on submit
     function onSubmit(e: React.SyntheticEvent) {
         e.preventDefault();
 
-        const target = e.target as typeof e.target & {
-            email: { value: string };
-            message: { value: string };
-            name: { value: string };
-        };
+        // const target = e.target as typeof e.target & {
+        //     email: { value: string };
+        //     message: { value: string };
+        //     name: { value: string };
+        // };
 
-        console.log('name:', target.name.value);
-        console.log('email:', target.email.value);
-        console.log('message:', target.message.value);
+        console.log('contact form submit');
+        // console.log('email:', target.email.value);
+        // console.log('message:', target.message.value);
     }
 
     // mailto action will only work in IE (lol)

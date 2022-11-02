@@ -18,6 +18,7 @@ module.exports = {
         url: `http://localhost`
     },
     moduleNameMapper: {
+        // mock css
         '\\.(css|scss)$': 'identity-obj-proxy'
     },
     setupFiles: [`<rootDir>/loadershim.js`],
@@ -29,7 +30,7 @@ module.exports = {
             lines: 90
         }
     },
-    setupFilesAfterEnv: ['<rootDir>/__mocks__/utils.js'],
+    // setupFilesAfterEnv: ['<rootDir>/__mocks__/utils.js'], use for global utils
     testEnvironment: 'jsdom',
     verbose: true
 };

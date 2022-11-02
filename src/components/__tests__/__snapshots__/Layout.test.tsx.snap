@@ -28,7 +28,7 @@ exports[`Layout renders correctly 1`] = `
           aria-expanded="false"
           aria-label="menu"
           class="navbar-burger "
-          data-target="siteNav"
+          data-testid="siteNav"
         >
           <span
             aria-hidden="true"

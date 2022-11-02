@@ -48,7 +48,7 @@ const NavBar = () => {
                     aria-label="menu"
                     aria-expanded="false"
                     onClick={handleUpdateShowBurger}
-                    data-target="siteNav"
+                    data-testid="siteNav"
                 >
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>

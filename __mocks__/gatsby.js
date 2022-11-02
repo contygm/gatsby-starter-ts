@@ -25,5 +25,16 @@ module.exports = {
             })
     ),
     StaticQuery: jest.fn(),
-    useStaticQuery: jest.fn()
+    useStaticQuery: jest.fn().mockImplementation(() => ({
+        site: {
+            siteMetadata: {
+                title: `Starter`,
+                siteUrl: `https://www.domain.com`,
+                author: `Writer B. Author`,
+                businessName: 'The Company',
+                phone: '999-999-9999',
+                email: 'email@email.com'
+            }
+        }
+    }))
 };

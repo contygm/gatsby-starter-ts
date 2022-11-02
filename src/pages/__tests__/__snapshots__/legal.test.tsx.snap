@@ -28,7 +28,7 @@ exports[`LegalPage legal pages 1`] = `
           aria-expanded="false"
           aria-label="menu"
           class="navbar-burger "
-          data-target="siteNav"
+          data-testid="siteNav"
         >
           <span
             aria-hidden="true"
@@ -459,7 +459,7 @@ exports[`LegalPage legal pages 2`] = `
           aria-expanded="false"
           aria-label="menu"
           class="navbar-burger "
-          data-target="siteNav"
+          data-testid="siteNav"
         >
           <span
             aria-hidden="true"
@@ -890,7 +890,7 @@ exports[`LegalPage legal pages 3`] = `
           aria-expanded="false"
           aria-label="menu"
           class="navbar-burger "
-          data-target="siteNav"
+          data-testid="siteNav"
         >
           <span
             aria-hidden="true"
@@ -1321,7 +1321,7 @@ exports[`LegalPage legal pages 4`] = `
           aria-expanded="false"
           aria-label="menu"
           class="navbar-burger "
-          data-target="siteNav"
+          data-testid="siteNav"
         >
           <span
             aria-hidden="true"
@@ -1752,7 +1752,7 @@ exports[`LegalPage legal pages 5`] = `
           aria-expanded="false"
           aria-label="menu"
           class="navbar-burger "
-          data-target="siteNav"
+          data-testid="siteNav"
         >
           <span
             aria-hidden="true"
@@ -2183,7 +2183,7 @@ exports[`LegalPage renders correctly 1`] = `
           aria-expanded="false"
           aria-label="menu"
           class="navbar-burger "
-          data-target="siteNav"
+          data-testid="siteNav"
         >
           <span
             aria-hidden="true"
