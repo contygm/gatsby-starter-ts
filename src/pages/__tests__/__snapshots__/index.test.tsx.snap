@@ -19,6 +19,7 @@ exports[`IndexPage renders correctly 1`] = `
         >
           <img
             alt="Logo"
+            data-cy="nav-link-logo"
             layout="constrained"
             placeholder="blurred"
             src="../images/bulma-logo-white.png"
@@ -28,6 +29,7 @@ exports[`IndexPage renders correctly 1`] = `
           aria-expanded="false"
           aria-label="menu"
           class="navbar-burger "
+          data-cy="nav-hamburger"
           data-testid="siteNav"
         >
           <span
@@ -50,24 +52,28 @@ exports[`IndexPage renders correctly 1`] = `
         >
           <a
             class="navbar-item"
+            data-cy="nav-link-home"
             href="/"
           >
             Home
           </a>
           <a
             class="navbar-item"
+            data-cy="nav-link-blog"
             href="/"
           >
             Blog
           </a>
           <a
             class="navbar-item"
+            data-cy="nav-link-wiki"
             href="/"
           >
             Wiki
           </a>
           <a
             class="navbar-item"
+            data-cy="nav-link-glossary"
             href="/404"
           >
             Glossary
@@ -175,6 +181,7 @@ exports[`IndexPage renders correctly 1`] = `
         >
           <a
             class=""
+            data-cy="footer-logo"
             href="/"
           >
             <figure
@@ -200,6 +207,7 @@ exports[`IndexPage renders correctly 1`] = `
             >
               <a
                 class="footer-link"
+                data-cy="footer-link-Contact"
                 href="/about#contact-us"
               >
                 Contact
@@ -210,6 +218,7 @@ exports[`IndexPage renders correctly 1`] = `
             >
               <a
                 class="footer-link"
+                data-cy="footer-link-About"
                 href="/about"
               >
                 About
@@ -220,6 +229,7 @@ exports[`IndexPage renders correctly 1`] = `
             >
               <a
                 class="footer-link"
+                data-cy="footer-link-Privacy"
                 href="/legal/privacy-policy"
               >
                 Privacy
@@ -235,6 +245,7 @@ exports[`IndexPage renders correctly 1`] = `
                   aria-controls="footer-dropdown-menu"
                   aria-haspopup="true"
                   class="m-4 footer-link"
+                  data-cy="footer-link-legal"
                   href="/legal"
                 >
                   Legal
@@ -268,6 +279,7 @@ exports[`IndexPage renders correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
+                      data-cy="footer-link-copyright"
                       href="/legal/copyright"
                     >
                       Copyright
@@ -278,6 +290,7 @@ exports[`IndexPage renders correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
+                      data-cy="footer-link-cookie"
                       href="/legal/cookie-policy"
                     >
                       Cookie Policy
@@ -288,6 +301,7 @@ exports[`IndexPage renders correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
+                      data-cy="footer-link-terms"
                       href="/legal/terms-and-conditions"
                     >
                       Terms and Conditions
@@ -298,6 +312,7 @@ exports[`IndexPage renders correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
+                      data-cy="footer-link-disclaimer"
                       href="/legal/disclaimer"
                     >
                       Disclaimer
@@ -319,6 +334,7 @@ exports[`IndexPage renders correctly 1`] = `
             >
               <a
                 class="footer-link"
+                data-cy="footer-falink"
                 href="/"
               >
                 <svg
@@ -343,6 +359,7 @@ exports[`IndexPage renders correctly 1`] = `
             >
               <a
                 class="footer-link"
+                data-cy="footer-falink"
                 href="/"
               >
                 <svg
@@ -367,6 +384,7 @@ exports[`IndexPage renders correctly 1`] = `
             >
               <a
                 class="footer-link"
+                data-cy="footer-falink"
                 href="/"
               >
                 <svg

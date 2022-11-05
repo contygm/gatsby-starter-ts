@@ -16,6 +16,7 @@ exports[`NavBar renders correctly 1`] = `
       >
         <img
           alt="Logo"
+          data-cy="nav-link-logo"
           layout="constrained"
           placeholder="blurred"
           src="../images/bulma-logo-white.png"
@@ -25,6 +26,7 @@ exports[`NavBar renders correctly 1`] = `
         aria-expanded="false"
         aria-label="menu"
         class="navbar-burger "
+        data-cy="nav-hamburger"
         data-testid="siteNav"
       >
         <span
@@ -47,24 +49,28 @@ exports[`NavBar renders correctly 1`] = `
       >
         <a
           class="navbar-item"
+          data-cy="nav-link-home"
           href="/"
         >
           Home
         </a>
         <a
           class="navbar-item"
+          data-cy="nav-link-blog"
           href="/"
         >
           Blog
         </a>
         <a
           class="navbar-item"
+          data-cy="nav-link-wiki"
           href="/"
         >
           Wiki
         </a>
         <a
           class="navbar-item"
+          data-cy="nav-link-glossary"
           href="/404"
         >
           Glossary

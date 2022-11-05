@@ -13,6 +13,7 @@ exports[`Footer renders correctly 1`] = `
       >
         <a
           class=""
+          data-cy="footer-logo"
           href="/"
         >
           <figure
@@ -38,6 +39,7 @@ exports[`Footer renders correctly 1`] = `
           >
             <a
               class="footer-link"
+              data-cy="footer-link-Contact"
               href="/about#contact-us"
             >
               Contact
@@ -48,6 +50,7 @@ exports[`Footer renders correctly 1`] = `
           >
             <a
               class="footer-link"
+              data-cy="footer-link-About"
               href="/about"
             >
               About
@@ -58,6 +61,7 @@ exports[`Footer renders correctly 1`] = `
           >
             <a
               class="footer-link"
+              data-cy="footer-link-Privacy"
               href="/legal/privacy-policy"
             >
               Privacy
@@ -73,6 +77,7 @@ exports[`Footer renders correctly 1`] = `
                 aria-controls="footer-dropdown-menu"
                 aria-haspopup="true"
                 class="m-4 footer-link"
+                data-cy="footer-link-legal"
                 href="/legal"
               >
                 Legal
@@ -106,6 +111,7 @@ exports[`Footer renders correctly 1`] = `
                 >
                   <a
                     class="footer-drawer-link"
+                    data-cy="footer-link-copyright"
                     href="/legal/copyright"
                   >
                     Copyright
@@ -116,6 +122,7 @@ exports[`Footer renders correctly 1`] = `
                 >
                   <a
                     class="footer-drawer-link"
+                    data-cy="footer-link-cookie"
                     href="/legal/cookie-policy"
                   >
                     Cookie Policy
@@ -126,6 +133,7 @@ exports[`Footer renders correctly 1`] = `
                 >
                   <a
                     class="footer-drawer-link"
+                    data-cy="footer-link-terms"
                     href="/legal/terms-and-conditions"
                   >
                     Terms and Conditions
@@ -136,6 +144,7 @@ exports[`Footer renders correctly 1`] = `
                 >
                   <a
                     class="footer-drawer-link"
+                    data-cy="footer-link-disclaimer"
                     href="/legal/disclaimer"
                   >
                     Disclaimer
@@ -157,6 +166,7 @@ exports[`Footer renders correctly 1`] = `
           >
             <a
               class="footer-link"
+              data-cy="footer-falink"
               href="/"
             >
               <svg
@@ -181,6 +191,7 @@ exports[`Footer renders correctly 1`] = `
           >
             <a
               class="footer-link"
+              data-cy="footer-falink"
               href="/"
             >
               <svg
@@ -205,6 +216,7 @@ exports[`Footer renders correctly 1`] = `
           >
             <a
               class="footer-link"
+              data-cy="footer-falink"
               href="/"
             >
               <svg

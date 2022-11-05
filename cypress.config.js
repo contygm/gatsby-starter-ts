@@ -5,8 +5,8 @@ module.exports = defineConfig({
         baseUrl: 'http://localhost:8000',
         specPattern: 'cypress/e2e'
     },
-	retries: {
-		runMode: 2,
-		openMode: 2
-	}
+    retries: {
+        runMode: 2,
+        openMode: 2
+    }
 });

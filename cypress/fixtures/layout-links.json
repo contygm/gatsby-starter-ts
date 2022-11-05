@@ -20,12 +20,12 @@
                 "name": "Glossary",
                 "cyTag": "nav-link-glossary",
                 "url": "/404"
-            }, 
-			{
+            },
+            {
                 "name": "Logo",
-				"cyTag": "nav-link-logo",
-				"url": "/"
-			}
+                "cyTag": "nav-link-logo",
+                "url": "/"
+            }
         ],
         "mainFooterLinks": [
             {
@@ -65,27 +65,27 @@
         ],
         "legalIndexLinks": [
             {
-				"name": "privacy policy",
+                "name": "privacy policy",
                 "cyTag": "legal-index-privacy",
                 "url": "/legal/privacy-policy"
             },
             {
-				"name": "copyright",
+                "name": "copyright",
                 "cyTag": "legal-index-copyright",
                 "url": "/legal/copyright"
             },
             {
-				"name": "cookie policy",
+                "name": "cookie policy",
                 "cyTag": "legal-index-cookie",
                 "url": "/legal/cookie-policy"
             },
             {
-				"name": "terms and conditions",
+                "name": "terms and conditions",
                 "cyTag": "legal-index-terms",
                 "url": "/legal/terms-and-conditions"
             },
             {
-				"name": "disclaimer",
+                "name": "disclaimer",
                 "cyTag": "legal-index-disclaimer",
                 "url": "/legal/disclaimer"
             }

@@ -19,7 +19,7 @@
     "checks": "npm run format ; tsc --noEmit ; npm run lint",
     "tests": "tsc --noEmit && npm run lint && npm run unit",
     "unit": "jest",
-    "unit-update": "jest -- -u",
+    "unit-update": "npm run unit -- -u",
     "nodeClean": "rm -rf node_modules ; npm install",
     "cy:open": "cypress open",
     "cy:run:chrome": "cypress run --browser chrome",
