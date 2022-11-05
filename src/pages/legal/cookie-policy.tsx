@@ -130,6 +130,4 @@ const CookiesPage = () => {
 };
 
 export default CookiesPage;
-export const Head = () => (
-    <SEO title="Cookie Policy" />
-)
+export const Head = () => <SEO title="Cookie Policy" />;

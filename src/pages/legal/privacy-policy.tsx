@@ -130,6 +130,4 @@ const PrivacyPage = () => {
 };
 
 export default PrivacyPage;
-export const Head = () => (
-    <SEO title="Privacy Policy" />
-)
+export const Head = () => <SEO title="Privacy Policy" />;

@@ -29,7 +29,7 @@ describe('LegalPage', () => {
         { title: 'Disclaimer', element: <DisclaiimerHead /> },
         { title: 'Privacy Policy', element: <PrivacyHead /> },
         { title: 'Terms and Conditions', element: <TermsHead /> }
-    ],)('$title header meta data renders correctly', ({ title, element }) => {
+    ])('$title header meta data renders correctly', ({ title, element }) => {
         const { asFragment, getByText } = render(element);
         expect(asFragment()).toMatchSnapshot();
         expect(getByText(title)).toBeDefined();

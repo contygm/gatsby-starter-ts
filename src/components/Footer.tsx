@@ -40,7 +40,10 @@ const FaIconLink = (props: { faIcon: IconProp }) => {
  */
 const PageLink = (props: { pageUrl: string; label: string }) => {
     return (
-        <li className="is-inline-desktop is-inline-tablet m-4 footer-link" role="listitem">
+        <li
+            className="is-inline-desktop is-inline-tablet m-4 footer-link"
+            role="listitem"
+        >
             <Link
                 className="footer-link"
                 to={props.pageUrl}
@@ -58,7 +61,10 @@ const PageLink = (props: { pageUrl: string; label: string }) => {
  */
 const DropDownLinkBtn = () => {
     return (
-        <li className="dropdown is-hoverable is-up" role="listitem">
+        <li
+            className="dropdown is-hoverable is-up"
+            role="listitem"
+        >
             <div className="dropdown-trigger">
                 <Link
                     className="m-4 footer-link"

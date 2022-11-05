@@ -132,6 +132,4 @@ const TermsPage = () => {
 };
 
 export default TermsPage;
-export const Head = () => (
-    <SEO title="Terms and Conditions" />
-)
+export const Head = () => <SEO title="Terms and Conditions" />;

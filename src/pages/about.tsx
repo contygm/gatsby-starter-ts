@@ -110,6 +110,4 @@ const AboutPage = () => {
 };
 
 export default AboutPage;
-export const Head = () => (
-    <SEO title="About" />
-)
+export const Head = () => <SEO title="About" />;

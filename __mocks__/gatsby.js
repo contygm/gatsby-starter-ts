@@ -35,7 +35,7 @@ module.exports = {
                 phone: '999-999-9999',
                 email: 'email@email.com',
                 description: 'a super duper site!',
-                image: '/nothing.png',
+                image: '/nothing.png'
             }
         }
     }))

@@ -130,6 +130,4 @@ const DisclaimerPage = () => {
 };
 
 export default DisclaimerPage;
-export const Head = () => (
-    <SEO title="Disclaimer" />
-)
+export const Head = () => <SEO title="Disclaimer" />;

@@ -94,6 +94,4 @@ const LegalPage = () => {
 };
 
 export default LegalPage;
-export const Head = () => (
-    <SEO title="Legal" />
-)
+export const Head = () => <SEO title="Legal" />;
