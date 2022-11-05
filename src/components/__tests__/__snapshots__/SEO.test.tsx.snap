@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SEO Component renders correctly with arguments 1`] = `
+<DocumentFragment>
+  <title>
+    Different Title
+  </title>
+  <meta
+    content="Different Description"
+    name="description"
+  />
+  <meta
+    content="https://www.domain.com/nothing.png"
+    name="image"
+  />
+  <link
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>👤</text></svg>"
+    rel="icon"
+  />
+  <meta
+    name="hello"
+  />
+</DocumentFragment>
+`;
+
+exports[`SEO Component renders correctly without 1`] = `
+<DocumentFragment>
+  <title>
+    Starter
+  </title>
+  <meta
+    content="a super duper site!"
+    name="description"
+  />
+  <meta
+    content="https://www.domain.com/nothing.png"
+    name="image"
+  />
+  <link
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>👤</text></svg>"
+    rel="icon"
+  />
+</DocumentFragment>
+`;

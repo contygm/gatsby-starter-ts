@@ -1,5 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`IndexPage header meta data renders correctly 1`] = `
+<DocumentFragment>
+  <title>
+    Home
+  </title>
+  <meta
+    content="a super duper site!"
+    name="description"
+  />
+  <meta
+    content="https://www.domain.com/nothing.png"
+    name="image"
+  />
+  <link
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>👤</text></svg>"
+    rel="icon"
+  />
+</DocumentFragment>
+`;
+
 exports[`IndexPage renders correctly 1`] = `
 <DocumentFragment>
   <div
@@ -199,11 +219,13 @@ exports[`IndexPage renders correctly 1`] = `
         </div>
         <ul
           class="column has-text-centered"
+          role="list"
           style="flex-basis: auto;"
         >
           <div>
             <li
               class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              role="listitem"
             >
               <a
                 class="footer-link"
@@ -215,6 +237,7 @@ exports[`IndexPage renders correctly 1`] = `
             </li>
             <li
               class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              role="listitem"
             >
               <a
                 class="footer-link"
@@ -226,6 +249,7 @@ exports[`IndexPage renders correctly 1`] = `
             </li>
             <li
               class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              role="listitem"
             >
               <a
                 class="footer-link"
@@ -237,6 +261,7 @@ exports[`IndexPage renders correctly 1`] = `
             </li>
             <li
               class="dropdown is-hoverable is-up"
+              role="listitem"
             >
               <div
                 class="dropdown-trigger"
@@ -333,6 +358,7 @@ exports[`IndexPage renders correctly 1`] = `
               class="footer-falink is-inline"
             >
               <a
+                aria-label="social media link"
                 class="footer-link"
                 data-cy="footer-falink"
                 href="/"
@@ -358,6 +384,7 @@ exports[`IndexPage renders correctly 1`] = `
               class="footer-falink is-inline"
             >
               <a
+                aria-label="social media link"
                 class="footer-link"
                 data-cy="footer-falink"
                 href="/"
@@ -383,6 +410,7 @@ exports[`IndexPage renders correctly 1`] = `
               class="footer-falink is-inline"
             >
               <a
+                aria-label="social media link"
                 class="footer-link"
                 data-cy="footer-falink"
                 href="/"

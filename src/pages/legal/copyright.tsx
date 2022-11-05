@@ -131,5 +131,5 @@ const CopyrightPage = () => {
 
 export default CopyrightPage;
 export const Head = () => (
-    <SEO title="Copyrightt" />
+    <SEO title="Copyright" />
 )

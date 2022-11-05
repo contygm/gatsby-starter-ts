@@ -33,7 +33,9 @@ module.exports = {
                 author: `Writer B. Author`,
                 businessName: 'The Company',
                 phone: '999-999-9999',
-                email: 'email@email.com'
+                email: 'email@email.com',
+                description: 'a super duper site!',
+                image: '/nothing.png',
             }
         }
     }))

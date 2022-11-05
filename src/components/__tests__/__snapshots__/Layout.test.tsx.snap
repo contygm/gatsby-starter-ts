@@ -151,11 +151,13 @@ exports[`Layout renders correctly 1`] = `
         </div>
         <ul
           class="column has-text-centered"
+          role="list"
           style="flex-basis: auto;"
         >
           <div>
             <li
               class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              role="listitem"
             >
               <a
                 class="footer-link"
@@ -167,6 +169,7 @@ exports[`Layout renders correctly 1`] = `
             </li>
             <li
               class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              role="listitem"
             >
               <a
                 class="footer-link"
@@ -178,6 +181,7 @@ exports[`Layout renders correctly 1`] = `
             </li>
             <li
               class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              role="listitem"
             >
               <a
                 class="footer-link"
@@ -189,6 +193,7 @@ exports[`Layout renders correctly 1`] = `
             </li>
             <li
               class="dropdown is-hoverable is-up"
+              role="listitem"
             >
               <div
                 class="dropdown-trigger"
@@ -285,6 +290,7 @@ exports[`Layout renders correctly 1`] = `
               class="footer-falink is-inline"
             >
               <a
+                aria-label="social media link"
                 class="footer-link"
                 data-cy="footer-falink"
                 href="/"
@@ -310,6 +316,7 @@ exports[`Layout renders correctly 1`] = `
               class="footer-falink is-inline"
             >
               <a
+                aria-label="social media link"
                 class="footer-link"
                 data-cy="footer-falink"
                 href="/"
@@ -335,6 +342,7 @@ exports[`Layout renders correctly 1`] = `
               class="footer-falink is-inline"
             >
               <a
+                aria-label="social media link"
                 class="footer-link"
                 data-cy="footer-falink"
                 href="/"
