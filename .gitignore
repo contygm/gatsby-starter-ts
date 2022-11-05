@@ -4,3 +4,6 @@ node_modules/
 public
 src/gatsby-types.d.ts
 coverage/
+cypress/screenshots
+cypress/downloads
+cypress/videos

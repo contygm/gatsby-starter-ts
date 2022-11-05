@@ -12,7 +12,7 @@ describe('ContactForm', () => {
         const { asFragment, getByText } = render(<ContactForm />);
 
         expect(asFragment()).toMatchSnapshot();
-        fireEvent.click(getByText("Submit"));
+        fireEvent.click(getByText('Submit'));
         expect(asFragment()).toMatchSnapshot();
     });
 });

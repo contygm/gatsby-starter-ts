@@ -6,30 +6,35 @@ import PageHeader from '../../components/PageHeader';
 const legalPageMap = [
     {
         title: 'Privacy Policy',
+        cyTag: "legal-index-privacy",
         url: '/legal/privacy-policy',
         description:
             'Bonbon tootsie roll lemon drops topping biscuit cookie. Icing gummi bears ice cream marshmallow jelly brownie icing soufflé.'
     },
     {
         title: 'Copyright',
+        cyTag: "legal-index-copyright",
         url: '/legal/copyright',
         description:
             'Bonbon tootsie roll lemon drops topping biscuit cookie. Icing gummi bears ice cream marshmallow jelly brownie icing soufflé.'
     },
     {
         title: 'Cookie Policy',
+        cyTag: "legal-index-cookie",
         url: '/legal/cookie-policy',
         description:
             'Bonbon tootsie roll lemon drops topping biscuit cookie. Icing gummi bears ice cream marshmallow jelly brownie icing soufflé.'
     },
     {
         title: 'Terms and Conditions',
+        cyTag: "legal-index-terms",
         url: '/legal/terms-and-conditions',
         description:
             'Bonbon tootsie roll lemon drops topping biscuit cookie. Icing gummi bears ice cream marshmallow jelly brownie icing soufflé.'
     },
     {
         title: 'Disclaimer',
+        cyTag: "legal-index-disclaimer",
         url: '/legal/disclaimer',
         description:
             'Bonbon tootsie roll lemon drops topping biscuit cookie. Icing gummi bears ice cream marshmallow jelly brownie icing soufflé.'
@@ -38,6 +43,7 @@ const legalPageMap = [
 
 const LegalLink = (props: {
     title: string;
+    cyTag: string;
     url: string;
     description: string;
 }) => {
@@ -49,6 +55,7 @@ const LegalLink = (props: {
                         <Link
                             className="legal-link"
                             to={props.url}
+                            data-cy={props.cyTag}
                         >
                             {props.title}
                         </Link>
@@ -74,6 +81,7 @@ const LegalPage = () => {
                                     title={page.title}
                                     url={page.url}
                                     description={page.description}
+                                    cyTag={page.cyTag}
                                 />
                             );
                         })}

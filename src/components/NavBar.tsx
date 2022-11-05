@@ -40,6 +40,7 @@ const NavBar = () => {
                         placeholder="blurred"
                         className="nav-side-width"
                         layout="constrained"
+                        data-cy="nav-link-logo"
                     />
                 </Link>
                 {/* Mobile Hamburger Graphic - following Bulma docs */}
@@ -49,6 +50,7 @@ const NavBar = () => {
                     aria-expanded="false"
                     onClick={handleUpdateShowBurger}
                     data-testid="siteNav"
+                    data-cy="nav-hamburger"
                 >
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
@@ -64,24 +66,28 @@ const NavBar = () => {
                     <Link
                         to="/"
                         className="navbar-item"
+                        data-cy="nav-link-home"
                     >
                         Home
                     </Link>
                     <Link
                         to="/"
                         className="navbar-item"
+                        data-cy="nav-link-blog"
                     >
                         Blog
                     </Link>
                     <Link
                         to="/"
                         className="navbar-item"
+                        data-cy="nav-link-wiki"
                     >
                         Wiki
                     </Link>
                     <Link
                         to="/404"
                         className="navbar-item"
+                        data-cy="nav-link-glossary"
                     >
                         Glossary
                     </Link>

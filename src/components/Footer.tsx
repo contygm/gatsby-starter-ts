@@ -21,6 +21,7 @@ const FaIconLink = (props: { faIcon: IconProp }) => {
             <Link
                 className="footer-link"
                 to="/"
+                data-cy={`footer-falink`}
             >
                 <FontAwesomeIcon
                     icon={props.faIcon}
@@ -42,6 +43,7 @@ const PageLink = (props: { pageUrl: string; label: string }) => {
             <Link
                 className="footer-link"
                 to={props.pageUrl}
+                data-cy={`footer-link-${props.label}`}
             >
                 {props.label}
             </Link>
@@ -62,6 +64,7 @@ const DropDownLinkBtn = () => {
                     aria-haspopup="true"
                     aria-controls="footer-dropdown-menu"
                     to="/legal"
+                    data-cy="footer-link-legal"
                 >
                     Legal
                     <FontAwesomeIcon
@@ -71,7 +74,6 @@ const DropDownLinkBtn = () => {
                     />
                 </Link>
             </div>
-            {/* TODO fix drop down menu bar */}
             <div
                 className="dropdown-menu"
                 id="footer-dropdown-menu"
@@ -82,6 +84,7 @@ const DropDownLinkBtn = () => {
                         <Link
                             className="footer-drawer-link"
                             to="/legal/copyright"
+                            data-cy="footer-link-copyright"
                         >
                             Copyright
                         </Link>
@@ -90,6 +93,7 @@ const DropDownLinkBtn = () => {
                         <Link
                             className="footer-drawer-link"
                             to="/legal/cookie-policy"
+                            data-cy="footer-link-cookie"
                         >
                             Cookie Policy
                         </Link>
@@ -98,6 +102,7 @@ const DropDownLinkBtn = () => {
                         <Link
                             className="footer-drawer-link"
                             to="/legal/terms-and-conditions"
+                            data-cy="footer-link-terms"
                         >
                             Terms and Conditions
                         </Link>
@@ -106,6 +111,7 @@ const DropDownLinkBtn = () => {
                         <Link
                             className="footer-drawer-link"
                             to="/legal/disclaimer"
+                            data-cy="footer-link-disclaimer"
                         >
                             Disclaimer
                         </Link>
@@ -129,6 +135,7 @@ const Footer = (props: { author: string }) => {
                     <Link
                         className=""
                         to="/"
+                        data-cy="footer-logo"
                     >
                         <figure className="image footer-logo">
                             <StaticImage
