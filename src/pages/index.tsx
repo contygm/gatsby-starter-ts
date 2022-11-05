@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Layout from '../components/Layout';
 import { StaticImage } from 'gatsby-plugin-image';
+import { SEO } from '../components/SEO';
 
 /**
  * @description Main landing page for the site
@@ -69,4 +70,6 @@ const IndexPage = () => {
 };
 
 export default IndexPage;
-export const Head = () => <title>Home</title>;
+export const Head = () => (
+    <SEO title="Home" />
+)

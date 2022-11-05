@@ -2,6 +2,7 @@ import * as React from 'react';
 import ContactForm from '../components/ContactForm';
 import Layout from '../components/Layout';
 import PageHeader from '../components/PageHeader';
+import { SEO } from '../components/SEO';
 import { useSiteMetadata } from '../hooks/useSiteMetadata';
 
 const AboutPage = () => {
@@ -109,3 +110,6 @@ const AboutPage = () => {
 };
 
 export default AboutPage;
+export const Head = () => (
+    <SEO title="About" />
+)

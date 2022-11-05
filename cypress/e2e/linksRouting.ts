@@ -1,5 +1,3 @@
-/// <reference types="Cypress" />
-
 describe('Links + Routing Tests', () => {
     beforeEach(() => {
         cy.visit('/').get('main');

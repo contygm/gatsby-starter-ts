@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Layout from '../../components/Layout';
+import { SEO } from '../../components/SEO';
 import { useSiteMetadata } from '../../hooks/useSiteMetadata';
 
 const PrivacyPage = () => {
@@ -129,3 +130,6 @@ const PrivacyPage = () => {
 };
 
 export default PrivacyPage;
+export const Head = () => (
+    <SEO title="Privacy Policy" />
+)

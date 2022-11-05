@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Layout from '../../components/Layout';
+import { SEO } from '../../components/SEO';
 import { useSiteMetadata } from '../../hooks/useSiteMetadata';
 
 const DisclaimerPage = () => {
@@ -129,3 +130,6 @@ const DisclaimerPage = () => {
 };
 
 export default DisclaimerPage;
+export const Head = () => (
+    <SEO title="Disclaimer" />
+)

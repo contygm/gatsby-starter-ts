@@ -2,6 +2,7 @@ import * as React from 'react';
 import Layout from '../../components/Layout';
 import { Link } from 'gatsby';
 import PageHeader from '../../components/PageHeader';
+import { SEO } from '../../components/SEO';
 
 const legalPageMap = [
     {
@@ -93,3 +94,6 @@ const LegalPage = () => {
 };
 
 export default LegalPage;
+export const Head = () => (
+    <SEO title="Legal" />
+)

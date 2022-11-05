@@ -14,7 +14,7 @@ describe('Mobile Tests', () => {
             .then((links) => {
                 links.forEach((link) => {
                     if (link.name === 'Logo') {
-                        cy.get(`[data-cy=${link.cyTag}]`).should('be.visible');
+                        cy.get(`[data-cy=${link.cyTag}]`).scrollIntoView().should('be.visible');
                     } else {
                         cy.get(`[data-cy=${link.cyTag}]`).should(
                             'be.not.visible'

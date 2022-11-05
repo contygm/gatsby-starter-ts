@@ -1,20 +1,15 @@
-/// <reference types="Cypress" />
+import { data } from '../fixtures/all-pages.json';
 
 describe('Accessibility Tests', () => {
     beforeEach(() => {
-        // TODO view port
+        cy.viewport(1280, 800);
     });
 
-    // TODO
-    it.skip('check accessibility for all pages', () => {
-        cy.fixture('all-pages.json')
-            .its('data.allPages')
-            .then((links) => {
-                links.forEach((link) => {
-                    cy.visit(link.url).get('main');
-                    cy.injectAxe();
-                    cy.checkA11y();
-                });
-            });
+    data.allPages.forEach((link) => {
+        it(`${link.name} Page has no detectable accessibility violations`, () => {
+            cy.visit(link.url).get('main');
+            cy.injectAxe();
+            cy.checkA11y();
+        });
     });
 });

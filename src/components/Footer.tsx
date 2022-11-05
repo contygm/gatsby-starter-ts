@@ -22,6 +22,7 @@ const FaIconLink = (props: { faIcon: IconProp }) => {
                 className="footer-link"
                 to="/"
                 data-cy={`footer-falink`}
+                aria-label="social media link"
             >
                 <FontAwesomeIcon
                     icon={props.faIcon}
@@ -39,7 +40,7 @@ const FaIconLink = (props: { faIcon: IconProp }) => {
  */
 const PageLink = (props: { pageUrl: string; label: string }) => {
     return (
-        <li className="is-inline-desktop is-inline-tablet m-4 footer-link">
+        <li className="is-inline-desktop is-inline-tablet m-4 footer-link" role="listitem">
             <Link
                 className="footer-link"
                 to={props.pageUrl}
@@ -57,7 +58,7 @@ const PageLink = (props: { pageUrl: string; label: string }) => {
  */
 const DropDownLinkBtn = () => {
     return (
-        <li className="dropdown is-hoverable is-up">
+        <li className="dropdown is-hoverable is-up" role="listitem">
             <div className="dropdown-trigger">
                 <Link
                     className="m-4 footer-link"
@@ -153,6 +154,7 @@ const Footer = (props: { author: string }) => {
                 <ul
                     className="column has-text-centered"
                     style={{ flexBasis: 'auto' }}
+                    role="list"
                 >
                     <div>
                         <PageLink

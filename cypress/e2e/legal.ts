@@ -1,4 +1,3 @@
-/// <reference types="Cypress" />
 import { data } from '../fixtures/layout-links.json';
 
 describe('Legal pages', () => {

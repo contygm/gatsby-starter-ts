@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
 import Layout from '../components/Layout';
+import { SEO } from '../components/SEO';
 
 /**
  * @description 404 page
@@ -32,3 +33,6 @@ const NotFoundPage = () => {
 };
 
 export default NotFoundPage;
+export const Head = () => (
+    <SEO title="404" />
+)

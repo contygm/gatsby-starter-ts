@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Layout from '../../components/Layout';
+import { SEO } from '../../components/SEO';
 import { useSiteMetadata } from '../../hooks/useSiteMetadata';
 
 const TermsPage = () => {
@@ -131,3 +132,6 @@ const TermsPage = () => {
 };
 
 export default TermsPage;
+export const Head = () => (
+    <SEO title="Terms and Conditionsy" />
+)
