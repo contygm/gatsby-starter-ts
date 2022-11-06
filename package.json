@@ -22,7 +22,8 @@
     "unit-update": "npm run unit -- -u",
     "nodeClean": "rm -rf node_modules ; npm install",
     "cy:open": "cypress open",
-    "cy:run:chrome": "cypress run --browser chrome",
+    "cy:run": "cypress run",
+    "cy:headless": "start-server-and-test start 8000 cy:run",
     "test:e2e": "start-server-and-test develop http://localhost:8000 cy:open"
   },
   "dependencies": {
