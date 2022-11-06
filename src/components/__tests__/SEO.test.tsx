@@ -1,4 +1,3 @@
-import * as gatsby from 'gatsby';
 import { render } from '@testing-library/react';
 import React from 'react';
 import { SEO } from '../SEO';

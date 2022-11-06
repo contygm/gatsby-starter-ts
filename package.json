@@ -17,7 +17,7 @@
     "lint": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "checks": "npm run format ; tsc --noEmit ; npm run lint",
-    "tests": "tsc --noEmit && npm run lint && npm run unit",
+    "tests": "tsc --noEmit && npm run lint && npm run unit && npm run cy:headless",
     "unit": "jest",
     "unit-update": "npm run unit -- -u",
     "nodeClean": "rm -rf node_modules ; npm install",
