@@ -1,4 +1,4 @@
-const React = require('react');
+import React from 'react';
 const plugin = jest.requireActual('gatsby-plugin-image');
 
 const mockImage = ({ imgClassName, ...props }) =>

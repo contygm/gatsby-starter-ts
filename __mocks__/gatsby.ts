@@ -1,4 +1,4 @@
-const React = require('react');
+import React from 'react';
 const gatsby = jest.requireActual('gatsby');
 
 // NOTE: This mocks the graphql() function, Link component, and StaticQuery component.

@@ -1,6 +1,6 @@
 module.exports = {
     transform: {
-        '^.+\\.[jt]sx?$': '<rootDir>/jest-preprocess.js'
+        '^.+\\.[jt]sx?$': '<rootDir>/jest-preprocess.ts'
     },
     testPathIgnorePatterns: [
         `node_modules`,
@@ -21,7 +21,7 @@ module.exports = {
         // mock css
         '\\.(css|scss)$': 'identity-obj-proxy'
     },
-    setupFiles: [`<rootDir>/loadershim.js`],
+    setupFiles: [`<rootDir>/loadershim.ts`],
     collectCoverage: true,
     collectCoverageFrom: ['src/**/*.{js, jsx, ts,tsx}'],
     coverageThreshold: {
