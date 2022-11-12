@@ -52,12 +52,11 @@ const config: GatsbyConfig = {
             __key: 'images'
         },
         {
-            resolve: 'gatsby-source-filesystem',
+            resolve: `gatsby-source-filesystem`,
             options: {
-                name: 'pages',
-                path: './src/pages/'
-            },
-            __key: 'pages'
+                path: `${__dirname}/content/blog`,
+                name: `blog`
+            }
         },
         {
             resolve: 'gatsby-plugin-eslint',

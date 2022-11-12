@@ -7,7 +7,7 @@ import { SEO } from '../components/SEO';
  * @description Main landing page for the site
  * @note place holder content and styles
  */
-const IndexPage = () => {
+const HomePage = () => {
     return (
         <Layout>
             <div className="content">
@@ -69,5 +69,5 @@ const IndexPage = () => {
     );
 };
 
-export default IndexPage;
+export default HomePage;
 export const Head = () => <SEO title="Home" />;
