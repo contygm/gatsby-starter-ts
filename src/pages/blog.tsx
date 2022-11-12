@@ -2,7 +2,7 @@ import { Link, graphql } from 'gatsby';
 import * as React from 'react';
 import Layout from '../components/Layout';
 import PostHeader from '../components/PostHeader';
-import { SEO } from '../components/SEO';
+import SEO from '../components/SEO';
 
 const BlogIndex = (props: { data: any }) => {
     const posts = props.data.index.nodes;

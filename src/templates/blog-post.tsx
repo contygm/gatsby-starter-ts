@@ -1,11 +1,11 @@
 import * as React from 'react';
 import { Link, graphql, PageProps, HeadProps } from 'gatsby';
 import Layout from '../components/Layout';
-import { SEO } from '../components/SEO';
+import SEO from '../components/SEO';
 import PostHeader from '../components/PostHeader';
-// import sanitizeHtml from 'sanitize-html'; TODO
+import sanitizeHtml from 'sanitize-html';
 
-type DataProps = {
+type BlogPostProps = {
     site: SiteMetadata;
     markdownRemark: PostElements;
     previous: NeighborPost;
@@ -14,9 +14,8 @@ type DataProps = {
 
 const BlogPost = ({
     data: { markdownRemark, previous, next }
-}: PageProps<DataProps>) => {
-    // const cleanHTML = sanitizeHtml(post.html);
-    const cleanHTML = markdownRemark.html;
+}: PageProps<BlogPostProps>) => {
+    const cleanHTML = sanitizeHtml(markdownRemark.html);
 
     return (
         <Layout>
@@ -57,11 +56,11 @@ const BlogPost = ({
 };
 
 export default BlogPost;
-export function Head(props: HeadProps<DataProps>) {
+export function Head({data: { markdownRemark }}: HeadProps<BlogPostProps>) {
 	return (
-		<SEO title={props.data.markdownRemark.frontmatter.title} />
+		<SEO title={markdownRemark.frontmatter.title} />
 	)
-  }
+}
 
 export const pageQuery = graphql`
     query BlogPostBySlug(
