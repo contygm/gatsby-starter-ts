@@ -1,5 +1,5 @@
 import React from 'react';
-import { useSiteMetadata } from '../hooks/useSiteMetadata';
+import { useSiteMetadata } from '../utils/useSiteMetadata';
 
 const SEO = (props: {
     title?: string;

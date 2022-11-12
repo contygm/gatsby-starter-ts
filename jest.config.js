@@ -9,7 +9,8 @@ module.exports = {
         `\\.dist`,
         `<rootDir>.*/static`,
         `node_modules/(?!(gatsby|gatsby-script|gatsby-link)/)`,
-        '.*\\.d\\.ts$'
+        '.*\\.d\\.ts$',
+        '__tests__/mock-data.tsx'
     ],
     globals: {
         __PATH_PREFIX__: ``

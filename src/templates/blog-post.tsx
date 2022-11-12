@@ -5,12 +5,12 @@ import SEO from '../components/SEO';
 import PostHeader from '../components/PostHeader';
 import sanitizeHtml from 'sanitize-html';
 
-type BlogPostProps = {
+export interface BlogPostProps {
     site: SiteMetadata;
     markdownRemark: PostElements;
     previous: NeighborPost;
     next: NeighborPost;
-};
+}
 
 const BlogPost = ({
     data: { markdownRemark, previous, next }

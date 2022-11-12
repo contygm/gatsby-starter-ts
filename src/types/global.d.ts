@@ -5,9 +5,11 @@ declare global {
         title: string;
         siteUrl: string;
         author: string;
+        description: string;
         businessName: string;
         phone: string;
         email: string;
+        image: string;
     }
 
     interface NeighborPost {
@@ -25,7 +27,7 @@ declare global {
         html: string;
         frontmatter: {
             title: string;
-            date: Date;
+            date: string;
             description: string;
         };
     }
@@ -36,7 +38,7 @@ declare global {
             slug: string;
         };
         frontmatter: {
-            date: Date;
+            date: string;
             title: string;
             description: string;
             tags: Array<string>;

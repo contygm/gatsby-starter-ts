@@ -4,7 +4,7 @@ import Layout from '../components/Layout';
 import PostHeader from '../components/PostHeader';
 import SEO from '../components/SEO';
 
-type BlogIndexProps = {
+export interface BlogIndexProps {
     site: SiteMetadata;
     index: {
         nodes: Array<IndexElements>;
@@ -12,7 +12,7 @@ type BlogIndexProps = {
     featured: {
         nodes: Array<IndexElements>;
     };
-};
+}
 
 const BlogIndex = ({ data: { index } }: PageProps<BlogIndexProps>) => {
     const posts = index.nodes;

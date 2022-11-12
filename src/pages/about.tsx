@@ -3,7 +3,7 @@ import ContactForm from '../components/ContactForm';
 import Layout from '../components/Layout';
 import PageHeader from '../components/PageHeader';
 import SEO from '../components/SEO';
-import { useSiteMetadata } from '../hooks/useSiteMetadata';
+import { useSiteMetadata } from '../utils/useSiteMetadata';
 
 const AboutPage = () => {
     const { businessName, phone, email } = useSiteMetadata();

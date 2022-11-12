@@ -3,6 +3,8 @@ const gatsby = jest.requireActual('gatsby');
 
 // NOTE: This mocks the graphql() function, Link component, and StaticQuery component.
 // Allow testing components that use Link or GraphQL
+// https://stackoverflow.com/questions/54941990/how-to-strongly-type-jest-mocks
+// https://stackoverflow.com/questions/48759035/mock-dependency-in-jest-with-typescript
 module.exports = {
     ...gatsby,
     graphql: jest.fn(),
