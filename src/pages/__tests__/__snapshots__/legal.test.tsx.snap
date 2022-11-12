@@ -60,7 +60,7 @@ exports[`LegalPage Cookie Page renders correctly 1`] = `
           <a
             class="navbar-item"
             data-cy="nav-link-blog"
-            href="/"
+            href="/blog"
           >
             Blog
           </a>
@@ -537,7 +537,7 @@ exports[`LegalPage Copyright Page renders correctly 1`] = `
           <a
             class="navbar-item"
             data-cy="nav-link-blog"
-            href="/"
+            href="/blog"
           >
             Blog
           </a>
@@ -1014,7 +1014,7 @@ exports[`LegalPage Disclaimer Page renders correctly 1`] = `
           <a
             class="navbar-item"
             data-cy="nav-link-blog"
-            href="/"
+            href="/blog"
           >
             Blog
           </a>
@@ -1511,7 +1511,7 @@ exports[`LegalPage Legal renders correctly 1`] = `
           <a
             class="navbar-item"
             data-cy="nav-link-blog"
-            href="/"
+            href="/blog"
           >
             Blog
           </a>
@@ -2068,7 +2068,7 @@ exports[`LegalPage Privacy Policy Page renders correctly 1`] = `
           <a
             class="navbar-item"
             data-cy="nav-link-blog"
-            href="/"
+            href="/blog"
           >
             Blog
           </a>
@@ -2545,7 +2545,7 @@ exports[`LegalPage Terms and Conditions Page renders correctly 1`] = `
           <a
             class="navbar-item"
             data-cy="nav-link-blog"
-            href="/"
+            href="/blog"
           >
             Blog
           </a>

@@ -71,7 +71,7 @@ const NavBar = () => {
                         Home
                     </Link>
                     <Link
-                        to="/"
+                        to="/blog"
                         className="navbar-item"
                         data-cy="nav-link-blog"
                     >

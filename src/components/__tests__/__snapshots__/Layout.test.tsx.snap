@@ -60,7 +60,7 @@ exports[`Layout renders correctly 1`] = `
           <a
             class="navbar-item"
             data-cy="nav-link-blog"
-            href="/"
+            href="/blog"
           >
             Blog
           </a>

@@ -1,11 +1,21 @@
-import { Link, graphql } from 'gatsby';
+import { Link, graphql, HeadProps, PageProps } from 'gatsby';
 import * as React from 'react';
 import Layout from '../components/Layout';
 import PostHeader from '../components/PostHeader';
 import SEO from '../components/SEO';
 
-const BlogIndex = (props: { data: any }) => {
-    const posts = props.data.index.nodes;
+type BlogIndexProps = {
+    site: SiteMetadata;
+    index: {
+        nodes: Array<IndexElements>;
+    };
+    featured: {
+        nodes: Array<IndexElements>;
+    };
+};
+
+const BlogIndex = ({ data: { index } }: PageProps<BlogIndexProps>) => {
+    const posts = index.nodes;
     return (
         <Layout>
             <PostHeader title={`Blog`} />
@@ -15,32 +25,15 @@ const BlogIndex = (props: { data: any }) => {
             <section>
                 <h2>All Blogs</h2>
                 <ul>
-                    {posts.map(
-                        (post: {
-                            frontmatter: {
-                                title:
-                                    | boolean
-                                    | React.ReactElement<
-                                          any,
-                                          | string
-                                          | React.JSXElementConstructor<any>
-                                      >
-                                    | React.ReactFragment
-                                    | React.Key
-                                    | null
-                                    | undefined;
-                            };
-                            fields: { slug: any };
-                        }) => {
-                            return (
-                                <li key={post.frontmatter.title}>
-                                    <Link to={`/blog${post.fields.slug}`}>
-                                        {post.frontmatter.title}
-                                    </Link>
-                                </li>
-                            );
-                        }
-                    )}
+                    {posts.map((post: IndexElements) => {
+                        return (
+                            <li key={post.frontmatter.title}>
+                                <Link to={`/blog${post.fields.slug}`}>
+                                    {post.frontmatter.title}
+                                </Link>
+                            </li>
+                        );
+                    })}
                 </ul>
             </section>
         </Layout>
@@ -48,30 +41,21 @@ const BlogIndex = (props: { data: any }) => {
 };
 
 export default BlogIndex;
-export const Head = () => <SEO title="Blog" />;
+export function Head({ data: { site } }: HeadProps<BlogIndexProps>) {
+    return <SEO title={site.title} />;
+}
 
 export const pageQuery = graphql`
     query BlogQuery {
         site: site {
-            siteMetadata {
-                title
-            }
+            ...SiteMetadata
         }
         index: allMarkdownRemark(
             sort: { fields: [frontmatter___date], order: DESC }
             filter: { frontmatter: { type: { eq: "blog" } } }
         ) {
             nodes {
-                excerpt
-                fields {
-                    slug
-                }
-                frontmatter {
-                    date(formatString: "MMMM DD, YYYY")
-                    title
-                    description
-                    tags
-                }
+                ...IndexElements
             }
         }
         featured: allMarkdownRemark(
@@ -82,16 +66,7 @@ export const pageQuery = graphql`
             }
         ) {
             nodes {
-                excerpt
-                fields {
-                    slug
-                }
-                frontmatter {
-                    date(formatString: "MMMM DD, YYYY")
-                    title
-                    description
-                    tags
-                }
+                ...IndexElements
             }
         }
     }

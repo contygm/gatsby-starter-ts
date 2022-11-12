@@ -56,10 +56,8 @@ const BlogPost = ({
 };
 
 export default BlogPost;
-export function Head({data: { markdownRemark }}: HeadProps<BlogPostProps>) {
-	return (
-		<SEO title={markdownRemark.frontmatter.title} />
-	)
+export function Head({ data: { markdownRemark } }: HeadProps<BlogPostProps>) {
+    return <SEO title={markdownRemark.frontmatter.title} />;
 }
 
 export const pageQuery = graphql`
