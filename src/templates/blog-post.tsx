@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Link, graphql, PageProps, HeadProps } from 'gatsby';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
-import PostHeader from '../components/PostHeader';
+import PageHeader from '../components/PageHeader';
 // import sanitizeHtml from 'sanitize-html';
 
 export interface BlogPostProps {
@@ -19,7 +19,12 @@ const BlogPost = ({
 
     return (
         <Layout>
-            <PostHeader title={markdownRemark.frontmatter.title} />
+            <PageHeader
+                title={markdownRemark.frontmatter.title}
+                alignCenter={true}
+                hasSocial={true}
+                subtitle={markdownRemark.frontmatter.description}
+            />
             <article className="content">
                 <section className="section">
                     <div

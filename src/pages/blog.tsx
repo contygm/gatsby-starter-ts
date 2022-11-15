@@ -1,7 +1,7 @@
 import { Link, graphql, HeadProps, PageProps } from 'gatsby';
 import * as React from 'react';
 import Layout from '../components/Layout';
-import PostHeader from '../components/PostHeader';
+import PageHeader from '../components/PageHeader';
 import SEO from '../components/SEO';
 
 export interface BlogIndexProps {
@@ -18,7 +18,10 @@ const BlogIndex = ({ data: { index } }: PageProps<BlogIndexProps>) => {
     const posts = index.nodes;
     return (
         <Layout>
-            <PostHeader title={`Blog`} />
+            <PageHeader
+                title={`Blog`}
+                alignCenter={true}
+            />
             <article className="content">
                 <p>some content</p>
             </article>

@@ -358,12 +358,12 @@ exports[`LegalPage Cookie Page renders correctly 1`] = `
             class="has-text-right has-text-centered-mobile footer-link"
           >
             <li
-              class="footer-falink is-inline"
+              class="faicon-link-container is-inline"
             >
               <a
                 aria-label="social media link"
-                class="footer-link"
-                data-cy="footer-falink"
+                class="faicon-link"
+                data-cy="faicon-link"
                 href="/"
               >
                 <svg
@@ -384,12 +384,12 @@ exports[`LegalPage Cookie Page renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="footer-falink is-inline"
+              class="faicon-link-container is-inline"
             >
               <a
                 aria-label="social media link"
-                class="footer-link"
-                data-cy="footer-falink"
+                class="faicon-link"
+                data-cy="faicon-link"
                 href="/"
               >
                 <svg
@@ -410,12 +410,12 @@ exports[`LegalPage Cookie Page renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="footer-falink is-inline"
+              class="faicon-link-container is-inline"
             >
               <a
                 aria-label="social media link"
-                class="footer-link"
-                data-cy="footer-falink"
+                class="faicon-link"
+                data-cy="faicon-link"
                 href="/"
               >
                 <svg
@@ -835,12 +835,12 @@ exports[`LegalPage Copyright Page renders correctly 1`] = `
             class="has-text-right has-text-centered-mobile footer-link"
           >
             <li
-              class="footer-falink is-inline"
+              class="faicon-link-container is-inline"
             >
               <a
                 aria-label="social media link"
-                class="footer-link"
-                data-cy="footer-falink"
+                class="faicon-link"
+                data-cy="faicon-link"
                 href="/"
               >
                 <svg
@@ -861,12 +861,12 @@ exports[`LegalPage Copyright Page renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="footer-falink is-inline"
+              class="faicon-link-container is-inline"
             >
               <a
                 aria-label="social media link"
-                class="footer-link"
-                data-cy="footer-falink"
+                class="faicon-link"
+                data-cy="faicon-link"
                 href="/"
               >
                 <svg
@@ -887,12 +887,12 @@ exports[`LegalPage Copyright Page renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="footer-falink is-inline"
+              class="faicon-link-container is-inline"
             >
               <a
                 aria-label="social media link"
-                class="footer-link"
-                data-cy="footer-falink"
+                class="faicon-link"
+                data-cy="faicon-link"
                 href="/"
               >
                 <svg
@@ -1312,12 +1312,12 @@ exports[`LegalPage Disclaimer Page renders correctly 1`] = `
             class="has-text-right has-text-centered-mobile footer-link"
           >
             <li
-              class="footer-falink is-inline"
+              class="faicon-link-container is-inline"
             >
               <a
                 aria-label="social media link"
-                class="footer-link"
-                data-cy="footer-falink"
+                class="faicon-link"
+                data-cy="faicon-link"
                 href="/"
               >
                 <svg
@@ -1338,12 +1338,12 @@ exports[`LegalPage Disclaimer Page renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="footer-falink is-inline"
+              class="faicon-link-container is-inline"
             >
               <a
                 aria-label="social media link"
-                class="footer-link"
-                data-cy="footer-falink"
+                class="faicon-link"
+                data-cy="faicon-link"
                 href="/"
               >
                 <svg
@@ -1364,12 +1364,12 @@ exports[`LegalPage Disclaimer Page renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="footer-falink is-inline"
+              class="faicon-link-container is-inline"
             >
               <a
                 aria-label="social media link"
-                class="footer-link"
-                data-cy="footer-falink"
+                class="faicon-link"
+                data-cy="faicon-link"
                 href="/"
               >
                 <svg
@@ -1909,12 +1909,12 @@ exports[`LegalPage Legal renders correctly 1`] = `
             class="has-text-right has-text-centered-mobile footer-link"
           >
             <li
-              class="footer-falink is-inline"
+              class="faicon-link-container is-inline"
             >
               <a
                 aria-label="social media link"
-                class="footer-link"
-                data-cy="footer-falink"
+                class="faicon-link"
+                data-cy="faicon-link"
                 href="/"
               >
                 <svg
@@ -1935,12 +1935,12 @@ exports[`LegalPage Legal renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="footer-falink is-inline"
+              class="faicon-link-container is-inline"
             >
               <a
                 aria-label="social media link"
-                class="footer-link"
-                data-cy="footer-falink"
+                class="faicon-link"
+                data-cy="faicon-link"
                 href="/"
               >
                 <svg
@@ -1961,12 +1961,12 @@ exports[`LegalPage Legal renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="footer-falink is-inline"
+              class="faicon-link-container is-inline"
             >
               <a
                 aria-label="social media link"
-                class="footer-link"
-                data-cy="footer-falink"
+                class="faicon-link"
+                data-cy="faicon-link"
                 href="/"
               >
                 <svg
@@ -2366,12 +2366,12 @@ exports[`LegalPage Privacy Policy Page renders correctly 1`] = `
             class="has-text-right has-text-centered-mobile footer-link"
           >
             <li
-              class="footer-falink is-inline"
+              class="faicon-link-container is-inline"
             >
               <a
                 aria-label="social media link"
-                class="footer-link"
-                data-cy="footer-falink"
+                class="faicon-link"
+                data-cy="faicon-link"
                 href="/"
               >
                 <svg
@@ -2392,12 +2392,12 @@ exports[`LegalPage Privacy Policy Page renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="footer-falink is-inline"
+              class="faicon-link-container is-inline"
             >
               <a
                 aria-label="social media link"
-                class="footer-link"
-                data-cy="footer-falink"
+                class="faicon-link"
+                data-cy="faicon-link"
                 href="/"
               >
                 <svg
@@ -2418,12 +2418,12 @@ exports[`LegalPage Privacy Policy Page renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="footer-falink is-inline"
+              class="faicon-link-container is-inline"
             >
               <a
                 aria-label="social media link"
-                class="footer-link"
-                data-cy="footer-falink"
+                class="faicon-link"
+                data-cy="faicon-link"
                 href="/"
               >
                 <svg
@@ -2843,12 +2843,12 @@ exports[`LegalPage Terms and Conditions Page renders correctly 1`] = `
             class="has-text-right has-text-centered-mobile footer-link"
           >
             <li
-              class="footer-falink is-inline"
+              class="faicon-link-container is-inline"
             >
               <a
                 aria-label="social media link"
-                class="footer-link"
-                data-cy="footer-falink"
+                class="faicon-link"
+                data-cy="faicon-link"
                 href="/"
               >
                 <svg
@@ -2869,12 +2869,12 @@ exports[`LegalPage Terms and Conditions Page renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="footer-falink is-inline"
+              class="faicon-link-container is-inline"
             >
               <a
                 aria-label="social media link"
-                class="footer-link"
-                data-cy="footer-falink"
+                class="faicon-link"
+                data-cy="faicon-link"
                 href="/"
               >
                 <svg
@@ -2895,12 +2895,12 @@ exports[`LegalPage Terms and Conditions Page renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="footer-falink is-inline"
+              class="faicon-link-container is-inline"
             >
               <a
                 aria-label="social media link"
-                class="footer-link"
-                data-cy="footer-falink"
+                class="faicon-link"
+                data-cy="faicon-link"
                 href="/"
               >
                 <svg

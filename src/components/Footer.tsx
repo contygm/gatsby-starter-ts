@@ -8,30 +8,7 @@ import {
     faGhost,
     faAngleUp
 } from '@fortawesome/free-solid-svg-icons';
-import { IconProp } from '@fortawesome/fontawesome-svg-core';
-
-/**
- * @description A icon link using FontAwesome icons with
- * footer styles
- * @param faIcon - IconProp, faicon name
- */
-const FaIconLink = (props: { faIcon: IconProp }) => {
-    return (
-        <li className="footer-falink is-inline">
-            <Link
-                className="footer-link"
-                to="/"
-                data-cy={`footer-falink`}
-                aria-label="social media link"
-            >
-                <FontAwesomeIcon
-                    icon={props.faIcon}
-                    size="xl"
-                />
-            </Link>
-        </li>
-    );
-};
+import FaIconLink from './FaIconLink';
 
 /**
  * @description A text link with footer styles

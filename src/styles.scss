@@ -109,6 +109,9 @@ main {
 * IMPORT BULMA
 ********************************/
 @import "~bulma/bulma.sass";
+.bulma-fa-mixin {
+	@include fa(1rem, 2rem);
+}
 
 /*******************************
 * Custom Styles
@@ -124,6 +127,13 @@ main {
 
 .pg-header-period {
 	color: $primary;
+}
+
+.faicon-link {
+	color: $white-ter;
+	&:hover {
+		color: $primary;
+	}
 }
 
 .footer-link {
@@ -149,15 +159,21 @@ main {
 	}
 }
 
+.header-icon-row {
+	span {
+		margin: 0 1rem;
+	}
+}
+
 @media only screen and (max-width : 768px) {
-    .footer-falink {    
+    .faicon-link-container {    
 		margin-left: 1rem;
     	margin-right: 1rem;
 	}
 }
 
 @media only screen and (min-width : 769px) {
-    .footer-falink {    
+    .faicon-link-container {    
 		margin-left: 0.5rem;
 		margin-right: 0.5rem;
 	}
