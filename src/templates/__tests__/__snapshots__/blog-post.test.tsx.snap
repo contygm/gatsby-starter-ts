@@ -138,40 +138,45 @@ exports[`Blog Posts Page renders correctly 1`] = `
       </div>
     </nav>
     <main>
-      <article
-        class="blog-post"
+      <header
+        class="hero is-medium"
       >
-        <header
-          class="hero is-medium"
+        <div
+          class="hero-body has-background-black"
         >
           <div
-            class="hero-body has-background-black"
+            class="container has-text-centered"
           >
-            <div
-              class="container has-text-centered"
+            <h1
+              class="title has-text-white is-1"
             >
-              <h1
-                class="title has-text-white is-1"
+              Baking Tutorial
+              <span
+                class="pg-header-period"
               >
-                Baking Tutorial
-                <span
-                  class="pg-header-period"
-                >
-                  .
-                </span>
-              </h1>
-            </div>
+                .
+              </span>
+            </h1>
           </div>
-        </header>
-        <section>
-          <h2>
-            Header
-          </h2>
-          <p>
-            Lemon drops pastry danish halvah. Lemon drops pastry danish halvah. Lemon drops pastry danish halvah. Lemon drops pastry danish halvah.
-          </p>
+        </div>
+      </header>
+      <article
+        class="content"
+      >
+        <section
+          class="section"
+        >
+          <div
+            class="container is-max-widescreen"
+          >
+            <h2>
+              Header
+            </h2>
+            <p>
+              Lemon drops pastry danish halvah. Lemon drops pastry danish halvah. Lemon drops pastry danish halvah. Lemon drops pastry danish halvah.
+            </p>
+          </div>
         </section>
-        <hr />
       </article>
       <nav
         class="blog-post-nav"

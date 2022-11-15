@@ -3,7 +3,7 @@ import { Link, graphql, PageProps, HeadProps } from 'gatsby';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import PostHeader from '../components/PostHeader';
-import sanitizeHtml from 'sanitize-html';
+// import sanitizeHtml from 'sanitize-html';
 
 export interface BlogPostProps {
     site: SiteMetadata;
@@ -15,17 +15,20 @@ export interface BlogPostProps {
 const BlogPost = ({
     data: { markdownRemark, previous, next }
 }: PageProps<BlogPostProps>) => {
-    const cleanHTML = sanitizeHtml(markdownRemark.html);
+    // const cleanHTML = sanitizeHtml(markdownRemark.html);
 
     return (
         <Layout>
-            <article className="blog-post">
-                <PostHeader title={markdownRemark.frontmatter.title} />
-                <section
-                    dangerouslySetInnerHTML={{ __html: cleanHTML }}
-                    //   itemProp="articleBody"
-                />
-                <hr />
+            <PostHeader title={markdownRemark.frontmatter.title} />
+            <article className="content">
+                <section className="section">
+                    <div
+                        className="container is-max-widescreen"
+                        dangerouslySetInnerHTML={{
+                            __html: markdownRemark.html
+                        }}
+                    />
+                </section>
             </article>
             <nav className="blog-post-nav">
                 <ul>

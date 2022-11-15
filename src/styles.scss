@@ -162,3 +162,88 @@ main {
 		margin-right: 0.5rem;
 	}
 }
+
+.content {
+	details {
+		@extend .box;
+
+		summary {
+			//font styling
+			color: $grey-dark;
+			font-size: 1rem;
+			font-weight: 400;
+			line-height: 1;
+		}
+	}
+
+	details[open] summary {
+		margin-bottom: 1rem;
+	}
+	
+	blockquote {
+		border-color: $primary;
+	}
+
+	a {
+		text-decoration: underline;
+		
+	}
+
+	a:hover {
+		text-decoration: none;
+		color: $green;
+	}
+
+	table {
+		margin: 3rem 0 !important;
+	}
+}
+
+/*******************************
+* Code Editor Styles
+********************************/
+
+pre[class*="language-"] {
+	font-size: .875rem;
+	border-radius: .3rem;
+}
+
+// colors and positioning for code highlights
+.gatsby-highlight-code-line {
+	background-color: rgba(207, 207, 207, 0.372);
+	display: block;
+	margin-right: -1em;
+	margin-left: -1em;
+	padding-right: 1em;
+	padding-left: 0.75em;
+	border-left: 0.25em solid $primary;
+}
+
+// set up parent container for line highlights + numbers
+.gatsby-highlight {
+	margin: 0.5em 0;
+	padding: 1em;
+	overflow: auto;
+}
+
+// if highlighted lines are present, extend highlight for full line
+.gatsby-highlight.has-highlighted-lines pre[class*="language-"] {
+	margin: 0;
+	overflow: initial;
+	float: left; 
+	min-width: 100%; 
+}
+
+// if highlighted lines AND line numbers are present
+.gatsby-highlight pre[class*="language-"].line-numbers {
+	padding: 0.5rem 0;
+	padding-left: 3rem;
+	overflow: initial;
+
+	.line-numbers-rows {
+		padding: 0.5rem 0;
+		span {
+			width: 3em;
+		}
+	}
+}
