@@ -29,6 +29,11 @@ declare global {
             title: string;
             date: string;
             description: string;
+            headerImage: {
+                childImageSharp: {
+                    gatsbyImageData: GatsbyImageProps.image;
+                };
+            };
         };
     }
 

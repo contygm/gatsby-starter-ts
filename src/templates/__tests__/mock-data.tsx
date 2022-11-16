@@ -22,7 +22,12 @@ const mockBlogPost: BlogPostProps = {
         frontmatter: {
             date: 'December 02, 2022',
             title: 'Baking Tutorial',
-            description: 'a baking tutorial'
+            description: 'a baking tutorial',
+            headerImage: {
+                childImageSharp: {
+                    gatsbyImageData: {}
+                }
+            }
         }
     },
     previous: {

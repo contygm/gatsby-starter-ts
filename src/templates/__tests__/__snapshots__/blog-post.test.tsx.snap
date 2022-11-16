@@ -293,6 +293,14 @@ exports[`Blog Posts Page renders correctly 1`] = `
         class="content"
       >
         <section
+          class="container has-text-centered mb-2 mt-6"
+        >
+          <img
+            alt="blog-post-header"
+            image="[object Object]"
+          />
+        </section>
+        <section
           class="section"
         >
           <div
@@ -303,6 +311,17 @@ exports[`Blog Posts Page renders correctly 1`] = `
             </h2>
             <p>
               Lemon drops pastry danish halvah. Lemon drops pastry danish halvah. Lemon drops pastry danish halvah. Lemon drops pastry danish halvah.
+            </p>
+          </div>
+        </section>
+        <section
+          class="section"
+        >
+          <div
+            class="container"
+          >
+            <p>
+              This is where the author will go
             </p>
           </div>
         </section>

@@ -3,6 +3,7 @@ import { Link, graphql, PageProps, HeadProps } from 'gatsby';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import PageHeader from '../components/PageHeader';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 // import sanitizeHtml from 'sanitize-html';
 
 export interface BlogPostProps {
@@ -16,7 +17,7 @@ const BlogPost = ({
     data: { markdownRemark, previous, next }
 }: PageProps<BlogPostProps>) => {
     // const cleanHTML = sanitizeHtml(markdownRemark.html);
-
+    const image = getImage(markdownRemark.frontmatter.headerImage);
     return (
         <Layout>
             <PageHeader
@@ -26,6 +27,15 @@ const BlogPost = ({
                 subtitle={markdownRemark.frontmatter.description}
             />
             <article className="content">
+                {image && (
+                    <section className="container has-text-centered mb-2 mt-6">
+                        <GatsbyImage
+                            alt={'blog-post-header'}
+                            image={image}
+                            className="post-header-image"
+                        />
+                    </section>
+                )}
                 <section className="section">
                     <div
                         className="container is-max-widescreen"
@@ -33,6 +43,11 @@ const BlogPost = ({
                             __html: markdownRemark.html
                         }}
                     />
+                </section>
+                <section className="section">
+                    <div className="container">
+                        <p>This is where the author will go</p>
+                    </div>
                 </section>
             </article>
             <nav className="blog-post-nav">

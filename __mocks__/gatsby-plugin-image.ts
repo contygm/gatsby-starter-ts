@@ -5,7 +5,7 @@ const mockImage = ({ imgClassName, ...props }) =>
     React.createElement('img', {
         ...props,
         className: imgClassName
-    });
+});
 
 module.exports = {
     ...plugin,

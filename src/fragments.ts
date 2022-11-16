@@ -31,6 +31,15 @@ export const fragments = graphql`
             title
             date(formatString: "MMMM DD, YYYY")
             description
+            headerImage {
+                childImageSharp {
+                    gatsbyImageData(
+                        layout: FULL_WIDTH
+                        placeholder: BLURRED
+                        formats: [AUTO, WEBP, AVIF]
+                    )
+                }
+            }
         }
     }
     fragment NeighborPost on MarkdownRemark {
