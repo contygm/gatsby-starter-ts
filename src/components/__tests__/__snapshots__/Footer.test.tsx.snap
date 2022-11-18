@@ -171,13 +171,13 @@ exports[`Footer renders correctly 1`] = `
           >
             <a
               aria-label="social media link"
-              class="faicon-link"
+              class="faicon-link no-label"
               data-cy="faicon-link"
               href="/"
             >
               <svg
                 aria-hidden="true"
-                class="svg-inline--fa fa-star fa-xl "
+                class="svg-inline--fa fa-star fa-xl icon"
                 data-icon="star"
                 data-prefix="fas"
                 focusable="false"
@@ -197,13 +197,13 @@ exports[`Footer renders correctly 1`] = `
           >
             <a
               aria-label="social media link"
-              class="faicon-link"
+              class="faicon-link no-label"
               data-cy="faicon-link"
               href="/"
             >
               <svg
                 aria-hidden="true"
-                class="svg-inline--fa fa-mug-hot fa-xl "
+                class="svg-inline--fa fa-mug-hot fa-xl icon"
                 data-icon="mug-hot"
                 data-prefix="fas"
                 focusable="false"
@@ -223,13 +223,13 @@ exports[`Footer renders correctly 1`] = `
           >
             <a
               aria-label="social media link"
-              class="faicon-link"
+              class="faicon-link no-label"
               data-cy="faicon-link"
               href="/"
             >
               <svg
                 aria-hidden="true"
-                class="svg-inline--fa fa-ghost fa-xl "
+                class="svg-inline--fa fa-ghost fa-xl icon"
                 data-icon="ghost"
                 data-prefix="fas"
                 focusable="false"

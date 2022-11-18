@@ -4,7 +4,10 @@ declare global {
     interface SiteMetadata {
         title: string;
         siteUrl: string;
-        author: string;
+        author: {
+            name: string;
+            description: string;
+        };
         description: string;
         businessName: string;
         phone: string;
@@ -29,6 +32,7 @@ declare global {
             title: string;
             date: string;
             description: string;
+            tags: Array<string>;
             headerImage: {
                 childImageSharp: {
                     gatsbyImageData: GatsbyImageProps.image;

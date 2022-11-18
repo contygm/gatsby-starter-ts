@@ -174,13 +174,13 @@ exports[`Blog Posts Page renders correctly 1`] = `
             >
               <a
                 aria-label="social media link"
-                class="faicon-link"
+                class="faicon-link no-label"
                 data-cy="faicon-link"
                 href="/"
               >
                 <svg
                   aria-hidden="true"
-                  class="svg-inline--fa fa-mug-hot fa-xl "
+                  class="svg-inline--fa fa-mug-hot fa-xl icon"
                   data-icon="mug-hot"
                   data-prefix="fas"
                   focusable="false"
@@ -203,13 +203,13 @@ exports[`Blog Posts Page renders correctly 1`] = `
               >
                 <a
                   aria-label="social media link"
-                  class="faicon-link"
+                  class="faicon-link no-label"
                   data-cy="faicon-link"
                   href="/"
                 >
                   <svg
                     aria-hidden="true"
-                    class="svg-inline--fa fa-ghost fa-xl "
+                    class="svg-inline--fa fa-ghost fa-xl icon"
                     data-icon="ghost"
                     data-prefix="fas"
                     focusable="false"
@@ -233,13 +233,13 @@ exports[`Blog Posts Page renders correctly 1`] = `
               >
                 <a
                   aria-label="social media link"
-                  class="faicon-link"
+                  class="faicon-link no-label"
                   data-cy="faicon-link"
                   href="/"
                 >
                   <svg
                     aria-hidden="true"
-                    class="svg-inline--fa fa-envelope fa-xl "
+                    class="svg-inline--fa fa-envelope fa-xl icon"
                     data-icon="envelope"
                     data-prefix="fas"
                     focusable="false"
@@ -263,13 +263,13 @@ exports[`Blog Posts Page renders correctly 1`] = `
               >
                 <a
                   aria-label="social media link"
-                  class="faicon-link"
+                  class="faicon-link no-label"
                   data-cy="faicon-link"
                   href="/"
                 >
                   <svg
                     aria-hidden="true"
-                    class="svg-inline--fa fa-paperclip fa-xl "
+                    class="svg-inline--fa fa-paperclip fa-xl icon"
                     data-icon="paperclip"
                     data-prefix="fas"
                     focusable="false"
@@ -318,36 +318,161 @@ exports[`Blog Posts Page renders correctly 1`] = `
           class="section"
         >
           <div
-            class="container"
+            class="container author-container"
           >
-            <p>
-              This is where the author will go
-            </p>
+            <div
+              class="level mb-2"
+            >
+              <div
+                class="level-left"
+              >
+                <div
+                  class="level-item"
+                >
+                  <p>
+                    Published: 
+                    <time>
+                      December 02, 2022
+                    </time>
+                  </p>
+                </div>
+              </div>
+              <div
+                class="level-right"
+              >
+                <div
+                  class="level-item"
+                >
+                  <a
+                    class="post-tag"
+                    href="/404"
+                  >
+                    one
+                  </a>
+                  <a
+                    class="post-tag"
+                    href="/404"
+                  >
+                    two
+                  </a>
+                  <a
+                    class="post-tag"
+                    href="/404"
+                  >
+                    three
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="media p-2 m-2"
+            >
+              <figure
+                class="media-left ml-0 mb-0"
+              >
+                <img
+                  alt="author image"
+                  placeholder="blurred"
+                  src="../images/icon.png"
+                />
+              </figure>
+              <div
+                class="media-content m-auto"
+              >
+                <div
+                  class="content"
+                >
+                  <p>
+                    <strong>
+                      Writer B. Author
+                    </strong>
+                    <br />
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="level my-3"
+            >
+              <div
+                class="level-left"
+              >
+                <div
+                  class="level-item"
+                >
+                  <li
+                    class="faicon-link-container is-inline icon-text"
+                  >
+                    <a
+                      aria-label="social media link"
+                      class="faicon-link with-label"
+                      data-cy="faicon-link"
+                      href="/blog/blog-post-before"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="svg-inline--fa fa-arrow-left fa-xl icon"
+                        data-icon="arrow-left"
+                        data-prefix="fas"
+                        focusable="false"
+                        role="img"
+                        viewBox="0 0 448 512"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                      <span>
+                        Before - A Blog About Things
+                      </span>
+                    </a>
+                  </li>
+                </div>
+              </div>
+              <div
+                class="level-right"
+              >
+                <div
+                  class="level-item"
+                >
+                  <li
+                    class="faicon-link-container is-inline icon-text"
+                  >
+                    <a
+                      aria-label="social media link"
+                      class="faicon-link with-label"
+                      data-cy="faicon-link"
+                      href="/blog/blog-post-after"
+                    >
+                      <span>
+                        After - A Blog About Things
+                      </span>
+                      <svg
+                        aria-hidden="true"
+                        class="svg-inline--fa fa-arrow-right fa-xl icon"
+                        data-icon="arrow-right"
+                        data-prefix="fas"
+                        focusable="false"
+                        role="img"
+                        viewBox="0 0 448 512"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </article>
-      <nav
-        class="blog-post-nav"
-      >
-        <ul>
-          <li>
-            <a
-              href="/blog/blog-post-before"
-              rel="prev"
-            >
-              ← Before - A Blog About Things
-            </a>
-          </li>
-          <li>
-            <a
-              href="/blog/blog-post-after"
-              rel="next"
-            >
-              After - A Blog About Things →
-            </a>
-          </li>
-        </ul>
-      </nav>
     </main>
     <footer
       class="footer"
@@ -518,13 +643,13 @@ exports[`Blog Posts Page renders correctly 1`] = `
             >
               <a
                 aria-label="social media link"
-                class="faicon-link"
+                class="faicon-link no-label"
                 data-cy="faicon-link"
                 href="/"
               >
                 <svg
                   aria-hidden="true"
-                  class="svg-inline--fa fa-star fa-xl "
+                  class="svg-inline--fa fa-star fa-xl icon"
                   data-icon="star"
                   data-prefix="fas"
                   focusable="false"
@@ -544,13 +669,13 @@ exports[`Blog Posts Page renders correctly 1`] = `
             >
               <a
                 aria-label="social media link"
-                class="faicon-link"
+                class="faicon-link no-label"
                 data-cy="faicon-link"
                 href="/"
               >
                 <svg
                   aria-hidden="true"
-                  class="svg-inline--fa fa-mug-hot fa-xl "
+                  class="svg-inline--fa fa-mug-hot fa-xl icon"
                   data-icon="mug-hot"
                   data-prefix="fas"
                   focusable="false"
@@ -570,13 +695,13 @@ exports[`Blog Posts Page renders correctly 1`] = `
             >
               <a
                 aria-label="social media link"
-                class="faicon-link"
+                class="faicon-link no-label"
                 data-cy="faicon-link"
                 href="/"
               >
                 <svg
                   aria-hidden="true"
-                  class="svg-inline--fa fa-ghost fa-xl "
+                  class="svg-inline--fa fa-ghost fa-xl icon"
                   data-icon="ghost"
                   data-prefix="fas"
                   focusable="false"

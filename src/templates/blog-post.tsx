@@ -1,20 +1,23 @@
 import * as React from 'react';
-import { Link, graphql, PageProps, HeadProps } from 'gatsby';
+import { graphql, PageProps, HeadProps } from 'gatsby';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import PageHeader from '../components/PageHeader';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import AuthorBlurb from '../components/AuthorBlurb';
 // import sanitizeHtml from 'sanitize-html';
 
 export interface BlogPostProps {
-    site: SiteMetadata;
+    site: {
+        siteMetadata: SiteMetadata;
+    };
     markdownRemark: PostElements;
     previous: NeighborPost;
     next: NeighborPost;
 }
 
 const BlogPost = ({
-    data: { markdownRemark, previous, next }
+    data: { site, markdownRemark, previous, next }
 }: PageProps<BlogPostProps>) => {
     // const cleanHTML = sanitizeHtml(markdownRemark.html);
     const image = getImage(markdownRemark.frontmatter.headerImage);
@@ -26,7 +29,9 @@ const BlogPost = ({
                 hasSocial={true}
                 subtitle={markdownRemark.frontmatter.description}
             />
+            {/* TODO <aside></aside> */}
             <article className="content">
+                {/* image header */}
                 {image && (
                     <section className="container has-text-centered mb-2 mt-6">
                         <GatsbyImage
@@ -36,6 +41,7 @@ const BlogPost = ({
                         />
                     </section>
                 )}
+                {/* content section */}
                 <section className="section">
                     <div
                         className="container is-max-widescreen"
@@ -44,36 +50,15 @@ const BlogPost = ({
                         }}
                     />
                 </section>
-                <section className="section">
-                    <div className="container">
-                        <p>This is where the author will go</p>
-                    </div>
-                </section>
+                {/* author section */}
+                <AuthorBlurb
+                    author={site.siteMetadata.author}
+                    postDate={markdownRemark.frontmatter.date}
+                    postTags={markdownRemark.frontmatter.tags}
+                    previousPost={previous}
+                    nextPost={next}
+                />
             </article>
-            <nav className="blog-post-nav">
-                <ul>
-                    <li>
-                        {previous && (
-                            <Link
-                                to={`/blog${previous.fields.slug}`}
-                                rel="prev"
-                            >
-                                ← {previous.frontmatter.title}
-                            </Link>
-                        )}
-                    </li>
-                    <li>
-                        {next && (
-                            <Link
-                                to={`/blog${next.fields.slug}`}
-                                rel="next"
-                            >
-                                {next.frontmatter.title} →
-                            </Link>
-                        )}
-                    </li>
-                </ul>
-            </nav>
         </Layout>
     );
 };

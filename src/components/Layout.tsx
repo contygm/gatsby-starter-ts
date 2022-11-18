@@ -20,7 +20,7 @@ const Layout = ({ children }: LayoutProps) => {
         <div id="app-container">
             <NavBar />
             <main>{children}</main>
-            <Footer author={author} />
+            <Footer author={author.name} />
         </div>
     );
 };

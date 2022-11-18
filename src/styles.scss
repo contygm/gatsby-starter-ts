@@ -129,12 +129,24 @@ main {
 	color: $primary;
 }
 
-.faicon-link {
-	color: $white-ter;
+.faicon-link.with-label, .faicon-link.no-label {
 	&:hover {
 		color: $primary;
 	}
 }
+
+.faicon-link.with-label {
+	color: $black;
+	text-decoration: none;
+}
+
+.faicon-link.no-label {
+	color: $white-ter;
+}
+
+/*******************************
+* Footer Styles
+********************************/
 
 .footer-link {
 	color: $white-ter;
@@ -159,12 +171,6 @@ main {
 	}
 }
 
-.header-icon-row {
-	span {
-		margin: 0 1rem;
-	}
-}
-
 @media only screen and (max-width : 768px) {
     .faicon-link-container {    
 		margin-left: 1rem;
@@ -176,42 +182,6 @@ main {
     .faicon-link-container {    
 		margin-left: 0.5rem;
 		margin-right: 0.5rem;
-	}
-}
-
-.content {
-	details {
-		@extend .box;
-
-		summary {
-			//font styling
-			color: $grey-dark;
-			font-size: 1rem;
-			font-weight: 400;
-			line-height: 1;
-		}
-	}
-
-	details[open] summary {
-		margin-bottom: 1rem;
-	}
-	
-	blockquote {
-		border-color: $primary;
-	}
-
-	a {
-		text-decoration: underline;
-		
-	}
-
-	a:hover {
-		text-decoration: none;
-		color: $green;
-	}
-
-	table {
-		margin: 3rem 0 !important;
 	}
 }
 
@@ -264,6 +234,74 @@ pre[class*="language-"] {
 	}
 }
 
+/*******************************
+* Post Styles
+********************************/
+
 .post-header-image {
 	max-height: 500px;
+}
+
+.header-icon-row {
+	span {
+		margin: 0 1rem;
+	}
+}
+
+.content {
+	details {
+		@extend .box;
+
+		summary {
+			//font styling
+			color: $grey-dark;
+			font-size: 1rem;
+			font-weight: 400;
+			line-height: 1;
+		}
+	}
+
+	details[open] summary {
+		margin-bottom: 1rem;
+	}
+	
+	blockquote {
+		border-color: $primary;
+	}
+
+	a:not(.tag) {
+		text-decoration: underline;
+		
+	}
+
+	a:not(.tag):hover {
+		text-decoration: none;
+		color: $green;
+	}
+
+	table {
+		margin: 3rem 0 !important;
+	}
+}
+
+// author blub component
+.author-container {
+	border-top: 0.1rem solid $grey-light;
+}
+
+.all-post-tags {
+	@extend .tag;
+	@extend .is-primary;
+	@extend .is-medium;
+}
+
+.post-tag:not(:last-child) {
+	@extend .all-post-tags;
+	@extend .m-2;
+}
+
+.post-tag:last-child {
+	@extend .all-post-tags;
+	@extend .my-2;
+	@extend .ml-2;
 }

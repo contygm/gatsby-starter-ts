@@ -18,7 +18,11 @@ const config: GatsbyConfig = {
     siteMetadata: {
         title: `Starter`,
         siteUrl: `https://www.domain.com`,
-        author: `Writer B. Author`,
+        author: {
+            name: `Writer B. Author`,
+            description:
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit'
+        },
         description: 'a super duper site!',
         businessName: 'The Company',
         phone: '999-999-9999',
@@ -60,7 +64,7 @@ const config: GatsbyConfig = {
             resolve: 'gatsby-source-filesystem',
             options: {
                 name: 'images',
-                path: './src/images/'
+                path: `${__dirname}/src/images`
             },
             __key: 'images'
         },

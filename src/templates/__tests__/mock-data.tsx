@@ -5,14 +5,20 @@ import { mockHeadProps, mockPageProps } from '../../utils/test-props';
 
 const mockBlogPost: BlogPostProps = {
     site: {
-        title: `Starter`,
-        siteUrl: `https://www.domain.com`,
-        author: `Writer B. Author`,
-        businessName: 'The Company',
-        phone: '999-999-9999',
-        email: 'email@email.com',
-        description: 'a super duper site!',
-        image: '/nothing.png'
+        siteMetadata: {
+            title: `Starter`,
+            siteUrl: `https://www.domain.com`,
+            author: {
+                name: `Writer B. Author`,
+                description:
+                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit'
+            },
+            businessName: 'The Company',
+            phone: '999-999-9999',
+            email: 'email@email.com',
+            description: 'a super duper site!',
+            image: '/nothing.png'
+        }
     },
     markdownRemark: {
         id: 'slkj-dsjflks-dflkjl',
@@ -23,6 +29,7 @@ const mockBlogPost: BlogPostProps = {
             date: 'December 02, 2022',
             title: 'Baking Tutorial',
             description: 'a baking tutorial',
+            tags: ['one', 'two', 'three'],
             headerImage: {
                 childImageSharp: {
                     gatsbyImageData: {}

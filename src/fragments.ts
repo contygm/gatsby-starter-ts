@@ -5,7 +5,10 @@ export const fragments = graphql`
         siteMetadata {
             title
             siteUrl
-            author
+            author {
+                name
+                description
+            }
             businessName
             phone
             email
@@ -29,8 +32,9 @@ export const fragments = graphql`
         html
         frontmatter {
             title
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "DD MMMM YYYY, hh:mm a")
             description
+            tags
             headerImage {
                 childImageSharp {
                     gatsbyImageData(
