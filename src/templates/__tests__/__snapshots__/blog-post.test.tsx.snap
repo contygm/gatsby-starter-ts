@@ -170,11 +170,11 @@ exports[`Blog Posts Page renders correctly 1`] = `
               />
             </p>
             <li
-              class="faicon-link-container is-inline"
+              class="faicon-link-container"
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label"
+                class="faicon-link no-label is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -199,11 +199,11 @@ exports[`Blog Posts Page renders correctly 1`] = `
               class="bulma-fa-mixin"
             >
               <li
-                class="faicon-link-container is-inline"
+                class="faicon-link-container"
               >
                 <a
                   aria-label="social media link"
-                  class="faicon-link no-label"
+                  class="faicon-link no-label is-white"
                   data-cy="faicon-link"
                   href="/"
                 >
@@ -229,11 +229,11 @@ exports[`Blog Posts Page renders correctly 1`] = `
               class="bulma-fa-mixin"
             >
               <li
-                class="faicon-link-container is-inline"
+                class="faicon-link-container"
               >
                 <a
                   aria-label="social media link"
-                  class="faicon-link no-label"
+                  class="faicon-link no-label is-white"
                   data-cy="faicon-link"
                   href="/"
                 >
@@ -259,11 +259,11 @@ exports[`Blog Posts Page renders correctly 1`] = `
               class="bulma-fa-mixin"
             >
               <li
-                class="faicon-link-container is-inline"
+                class="faicon-link-container"
               >
                 <a
                   aria-label="social media link"
-                  class="faicon-link no-label"
+                  class="faicon-link no-label is-white"
                   data-cy="faicon-link"
                   href="/"
                 >
@@ -289,190 +289,570 @@ exports[`Blog Posts Page renders correctly 1`] = `
           </div>
         </div>
       </header>
-      <article
-        class="content"
+      <div
+        class="columns"
       >
-        <section
-          class="container has-text-centered mb-2 mt-6"
+        <div
+          class="column is-three-fifths is-offset-one-fifth"
         >
-          <img
-            alt="blog-post-header"
-            image="[object Object]"
-          />
-        </section>
-        <section
-          class="section"
-        >
-          <div
-            class="container is-max-widescreen"
+          <article
+            class="content"
           >
-            <h2>
-              Header
-            </h2>
-            <p>
-              Lemon drops pastry danish halvah. Lemon drops pastry danish halvah. Lemon drops pastry danish halvah. Lemon drops pastry danish halvah.
-            </p>
-          </div>
-        </section>
-        <section
-          class="section"
-        >
-          <div
-            class="container author-container"
-          >
-            <div
-              class="level mb-2"
+            <section
+              class="container has-text-centered mb-2 mt-6"
+            >
+              <img
+                alt="blog-post-header"
+                image="[object Object]"
+              />
+            </section>
+            <section
+              class="section"
             >
               <div
-                class="level-left"
+                class="container"
               >
-                <div
-                  class="level-item"
-                >
-                  <p>
-                    Published: 
-                    <time>
-                      December 02, 2022
-                    </time>
-                  </p>
-                </div>
+                <h2>
+                  Header
+                </h2>
+                <p>
+                  Lemon drops pastry danish halvah. Lemon drops pastry danish halvah. Lemon drops pastry danish halvah. Lemon drops pastry danish halvah.
+                </p>
               </div>
-              <div
-                class="level-right"
-              >
-                <div
-                  class="level-item"
-                >
-                  <a
-                    class="post-tag"
-                    href="/404"
-                  >
-                    one
-                  </a>
-                  <a
-                    class="post-tag"
-                    href="/404"
-                  >
-                    two
-                  </a>
-                  <a
-                    class="post-tag"
-                    href="/404"
-                  >
-                    three
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div
-              class="media p-2 m-2"
+            </section>
+            <section
+              class="section"
             >
-              <figure
-                class="media-left ml-0 mb-0"
+              <div
+                class="container author-container"
               >
-                <img
-                  alt="author image"
-                  placeholder="blurred"
-                  src="../images/icon.png"
+                <div
+                  class="level mb-2"
+                >
+                  <div
+                    class="level-left"
+                  >
+                    <div
+                      class="level-item"
+                    >
+                      <p>
+                        Published: 
+                        <time>
+                          December 02, 2022
+                        </time>
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="level-right"
+                  >
+                    <div
+                      class="level-item"
+                    >
+                      <a
+                        class="post-tag"
+                        href="/404"
+                      >
+                        one
+                      </a>
+                      <a
+                        class="post-tag"
+                        href="/404"
+                      >
+                        two
+                      </a>
+                      <a
+                        class="post-tag"
+                        href="/404"
+                      >
+                        three
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="media p-2 m-2"
+                >
+                  <figure
+                    class="media-left ml-0 mb-0"
+                  >
+                    <img
+                      alt="author image"
+                      placeholder="blurred"
+                      src="../images/icon.png"
+                    />
+                  </figure>
+                  <div
+                    class="media-content m-auto"
+                  >
+                    <div
+                      class="content"
+                    >
+                      <p>
+                        <strong>
+                          Writer B. Author
+                        </strong>
+                        <br />
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="level my-3"
+                >
+                  <div
+                    class="level-left"
+                  >
+                    <div
+                      class="level-item"
+                    >
+                      <li
+                        class="faicon-link-container"
+                      >
+                        <a
+                          aria-label="social media link"
+                          class="faicon-link with-label is-black"
+                          data-cy="faicon-link"
+                          href="/blog/blog-post-before"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="svg-inline--fa fa-arrow-left fa-xl icon"
+                            data-icon="arrow-left"
+                            data-prefix="fas"
+                            focusable="false"
+                            role="img"
+                            viewBox="0 0 448 512"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                          <span>
+                            Before - A Blog About Things
+                          </span>
+                        </a>
+                      </li>
+                    </div>
+                  </div>
+                  <div
+                    class="level-right"
+                  >
+                    <div
+                      class="level-item"
+                    >
+                      <li
+                        class="faicon-link-container"
+                      >
+                        <a
+                          aria-label="social media link"
+                          class="faicon-link with-label is-black"
+                          data-cy="faicon-link"
+                          href="/blog/blog-post-after"
+                        >
+                          <span>
+                            After - A Blog About Things
+                          </span>
+                          <svg
+                            aria-hidden="true"
+                            class="svg-inline--fa fa-arrow-right fa-xl icon"
+                            data-icon="arrow-right"
+                            data-prefix="fas"
+                            focusable="false"
+                            role="img"
+                            viewBox="0 0 448 512"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </article>
+        </div>
+        <div
+          class="column mr-3 mt-6"
+        >
+          <aside
+            class="menu sidebar"
+          >
+            <div
+              class="box"
+            >
+              <p
+                class="menu-label"
+              >
+                Search the blog
+              </p>
+              <p
+                class="menu-list control has-icons-left"
+              >
+                <span
+                  class="icon"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="svg-inline--fa fa-magnifying-glass "
+                    data-icon="magnifying-glass"
+                    data-prefix="fas"
+                    focusable="false"
+                    role="img"
+                    viewBox="0 0 512 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </span>
+                <input
+                  class="input is-rounded"
+                  placeholder="A Blog Title..."
+                  type="text"
                 />
-              </figure>
-              <div
-                class="media-content m-auto"
-              >
-                <div
-                  class="content"
-                >
-                  <p>
-                    <strong>
-                      Writer B. Author
-                    </strong>
-                    <br />
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit
-                  </p>
-                </div>
-              </div>
+              </p>
             </div>
             <div
-              class="level my-3"
+              class="box"
+            >
+              <p
+                class="menu-label"
+              >
+                Related posts
+              </p>
+              <ul
+                class="menu-list"
+              >
+                <li>
+                  <a
+                    class="horizontal-post-tile"
+                    href="/blog/baking-tutorial/"
+                  >
+                    <div
+                      class="media"
+                    >
+                      <figure
+                        class="media-left my-auto"
+                      >
+                        <img
+                          alt="blog image"
+                          image="[object Object]"
+                        />
+                      </figure>
+                      <div
+                        class="media-content"
+                      >
+                        <div
+                          class="content"
+                        >
+                          <h6>
+                            Baking Tutorial
+                          </h6>
+                          <p>
+                            Lemon drops pastry danish halvah. Chupa chups fruitcake powder...
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="horizontal-post-tile"
+                    href="/blog/ten-best-things/"
+                  >
+                    <div
+                      class="media"
+                    >
+                      <figure
+                        class="media-left my-auto"
+                      >
+                        <img
+                          alt="blog image"
+                          image="[object Object]"
+                        />
+                      </figure>
+                      <div
+                        class="media-content"
+                      >
+                        <div
+                          class="content"
+                        >
+                          <h6>
+                            10 Best Things
+                          </h6>
+                          <p>
+                            Cheesecake lemon drops Cheesecake lemon drops pastry danish halvah...
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="horizontal-post-tile"
+                    href="/blog/guide/"
+                  >
+                    <div
+                      class="media"
+                    >
+                      <figure
+                        class="media-left my-auto"
+                      >
+                        <img
+                          alt="blog image"
+                          image="[object Object]"
+                        />
+                      </figure>
+                      <div
+                        class="media-content"
+                      >
+                        <div
+                          class="content"
+                        >
+                          <h6>
+                            Guide
+                          </h6>
+                          <p>
+                            Chupa chups fruitcake powder dessert gingerbread gummies...
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="box"
+            >
+              <p
+                class="menu-label"
+              >
+                Featured posts
+              </p>
+              <ul
+                class="menu-list"
+              >
+                <li>
+                  <a
+                    class="horizontal-post-tile"
+                    href="/blog/baking-tutorial/"
+                  >
+                    <div
+                      class="media"
+                    >
+                      <figure
+                        class="media-left my-auto"
+                      >
+                        <img
+                          alt="blog image"
+                          image="[object Object]"
+                        />
+                      </figure>
+                      <div
+                        class="media-content"
+                      >
+                        <div
+                          class="content"
+                        >
+                          <h6>
+                            Baking Tutorial
+                          </h6>
+                          <p>
+                            Lemon drops pastry danish halvah. Chupa chups fruitcake powder...
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="horizontal-post-tile"
+                    href="/blog/ten-best-things/"
+                  >
+                    <div
+                      class="media"
+                    >
+                      <figure
+                        class="media-left my-auto"
+                      >
+                        <img
+                          alt="blog image"
+                          image="[object Object]"
+                        />
+                      </figure>
+                      <div
+                        class="media-content"
+                      >
+                        <div
+                          class="content"
+                        >
+                          <h6>
+                            10 Best Things
+                          </h6>
+                          <p>
+                            Cheesecake lemon drops Cheesecake lemon drops pastry danish halvah...
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="horizontal-post-tile"
+                    href="/blog/guide/"
+                  >
+                    <div
+                      class="media"
+                    >
+                      <figure
+                        class="media-left my-auto"
+                      >
+                        <img
+                          alt="blog image"
+                          image="[object Object]"
+                        />
+                      </figure>
+                      <div
+                        class="media-content"
+                      >
+                        <div
+                          class="content"
+                        >
+                          <h6>
+                            Guide
+                          </h6>
+                          <p>
+                            Chupa chups fruitcake powder dessert gingerbread gummies...
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </aside>
+          <div
+            class="menu sticky box mt-4"
+          >
+            <p
+              class="menu-label"
+            >
+              Share this post
+            </p>
+            <ul
+              class="has-text-black has-text-centered columns"
             >
               <div
-                class="level-left"
+                class="column"
               >
-                <div
-                  class="level-item"
+                <li
+                  class="faicon-link-container"
                 >
-                  <li
-                    class="faicon-link-container is-inline icon-text"
+                  <a
+                    aria-label="social media link"
+                    class="faicon-link no-label is-black"
+                    data-cy="faicon-link"
+                    href="/"
                   >
-                    <a
-                      aria-label="social media link"
-                      class="faicon-link with-label"
-                      data-cy="faicon-link"
-                      href="/blog/blog-post-before"
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-mug-hot fa-xl icon"
+                      data-icon="mug-hot"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 512 512"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      <svg
-                        aria-hidden="true"
-                        class="svg-inline--fa fa-arrow-left fa-xl icon"
-                        data-icon="arrow-left"
-                        data-prefix="fas"
-                        focusable="false"
-                        role="img"
-                        viewBox="0 0 448 512"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
-                          fill="currentColor"
-                        />
-                      </svg>
-                      <span>
-                        Before - A Blog About Things
-                      </span>
-                    </a>
-                  </li>
-                </div>
+                      <path
+                        d="M88 0C74.7 0 64 10.7 64 24c0 38.9 23.4 59.4 39.1 73.1l1.1 1C120.5 112.3 128 119.9 128 136c0 13.3 10.7 24 24 24s24-10.7 24-24c0-38.9-23.4-59.4-39.1-73.1l-1.1-1C119.5 47.7 112 40.1 112 24c0-13.3-10.7-24-24-24zM32 192c-17.7 0-32 14.3-32 32V416c0 53 43 96 96 96H288c53 0 96-43 96-96h16c61.9 0 112-50.1 112-112s-50.1-112-112-112H352 32zm352 64h16c26.5 0 48 21.5 48 48s-21.5 48-48 48H384V256zM224 24c0-13.3-10.7-24-24-24s-24 10.7-24 24c0 38.9 23.4 59.4 39.1 73.1l1.1 1C232.5 112.3 240 119.9 240 136c0 13.3 10.7 24 24 24s24-10.7 24-24c0-38.9-23.4-59.4-39.1-73.1l-1.1-1C231.5 47.7 224 40.1 224 24z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </a>
+                </li>
               </div>
               <div
-                class="level-right"
+                class="column"
               >
-                <div
-                  class="level-item"
+                <li
+                  class="faicon-link-container"
                 >
-                  <li
-                    class="faicon-link-container is-inline icon-text"
+                  <a
+                    aria-label="social media link"
+                    class="faicon-link no-label is-black"
+                    data-cy="faicon-link"
+                    href="/"
                   >
-                    <a
-                      aria-label="social media link"
-                      class="faicon-link with-label"
-                      data-cy="faicon-link"
-                      href="/blog/blog-post-after"
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-ghost fa-xl icon"
+                      data-icon="ghost"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 384 512"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      <span>
-                        After - A Blog About Things
-                      </span>
-                      <svg
-                        aria-hidden="true"
-                        class="svg-inline--fa fa-arrow-right fa-xl icon"
-                        data-icon="arrow-right"
-                        data-prefix="fas"
-                        focusable="false"
-                        role="img"
-                        viewBox="0 0 448 512"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
-                          fill="currentColor"
-                        />
-                      </svg>
-                    </a>
-                  </li>
-                </div>
+                      <path
+                        d="M50.8 452.1L19.2 477.4c-2.1 1.7-4.7 2.6-7.4 2.6C5.3 480 0 474.7 0 468.2V192C0 86 86 0 192 0S384 86 384 192V468.2c0 6.5-5.3 11.8-11.8 11.8c-2.7 0-5.3-.9-7.4-2.6l-31.6-25.3c-3.3-2.7-7.5-4.1-11.8-4.1c-5.9 0-11.5 2.8-15 7.5l-37.6 50.1c-3 4-7.8 6.4-12.8 6.4s-9.8-2.4-12.8-6.4l-38.4-51.2c-3-4-7.8-6.4-12.8-6.4s-9.8 2.4-12.8 6.4l-38.4 51.2c-3 4-7.8 6.4-12.8 6.4s-9.8-2.4-12.8-6.4L77.6 455.5c-3.6-4.7-9.1-7.5-15-7.5c-4.3 0-8.4 1.5-11.7 4.1zM160 192c0-17.7-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32zm96 32c17.7 0 32-14.3 32-32s-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </a>
+                </li>
               </div>
-            </div>
+              <div
+                class="column"
+              >
+                <li
+                  class="faicon-link-container"
+                >
+                  <a
+                    aria-label="social media link"
+                    class="faicon-link no-label is-black"
+                    data-cy="faicon-link"
+                    href="/"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-envelope fa-xl icon"
+                      data-icon="envelope"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 512 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </a>
+                </li>
+              </div>
+            </ul>
           </div>
-        </section>
-      </article>
+        </div>
+      </div>
     </main>
     <footer
       class="footer"
@@ -639,11 +1019,11 @@ exports[`Blog Posts Page renders correctly 1`] = `
             class="has-text-right has-text-centered-mobile footer-link"
           >
             <li
-              class="faicon-link-container is-inline"
+              class="faicon-link-container"
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label"
+                class="faicon-link no-label is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -665,11 +1045,11 @@ exports[`Blog Posts Page renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="faicon-link-container is-inline"
+              class="faicon-link-container"
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label"
+                class="faicon-link no-label is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -691,11 +1071,11 @@ exports[`Blog Posts Page renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="faicon-link-container is-inline"
+              class="faicon-link-container"
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label"
+                class="faicon-link no-label is-white"
                 data-cy="faicon-link"
                 href="/"
               >

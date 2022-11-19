@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HorizontalPostTile renders correctly 1`] = `
+<DocumentFragment>
+  <a
+    class="horizontal-post-tile"
+    href="/blog/blog-url/"
+  >
+    <div
+      class="media"
+    >
+      <figure
+        class="media-left my-auto"
+      >
+        <img
+          alt="blog image"
+          image="[object Object]"
+        />
+      </figure>
+      <div
+        class="media-content"
+      >
+        <div
+          class="content"
+        >
+          <h6>
+            A Blog Title
+          </h6>
+          <p>
+            Cheesecake lemon drops cheesecake lemon drops pastry danish…
+          </p>
+        </div>
+      </div>
+    </div>
+  </a>
+</DocumentFragment>
+`;

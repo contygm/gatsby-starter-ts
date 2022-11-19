@@ -10,8 +10,8 @@ export interface AuthorBlurbProps {
     };
     postTags: Array<string>;
     postDate: string;
-    previousPost: NeighborPost;
-    nextPost: NeighborPost;
+    previousPost?: NeighborPost;
+    nextPost?: NeighborPost;
 }
 
 const AuthorMedia = ({ name, description }: AuthorBlurbProps['author']) => {
@@ -68,8 +68,8 @@ const DateAndTags = (props: { tags: Array<string>; date: string }) => {
 };
 
 const NextAndPrevious = (props: {
-    next: NeighborPost;
-    previous: NeighborPost;
+    next?: NeighborPost;
+    previous?: NeighborPost;
 }) => {
     return (
         <div className="level my-3">

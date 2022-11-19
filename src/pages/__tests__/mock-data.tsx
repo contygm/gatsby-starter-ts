@@ -27,10 +27,13 @@ const mockBlogs: BlogIndexProps = {
                     slug: '/baking-tutorial/'
                 },
                 frontmatter: {
-                    date: 'December 02, 2022',
                     title: 'Baking Tutorial',
                     description: 'a baking tutorial',
-                    tags: ['one', 'two', 'three']
+                    headerImage: {
+                        childImageSharp: {
+                            gatsbyImageData: {}
+                        }
+                    }
                 }
             },
             {
@@ -40,10 +43,13 @@ const mockBlogs: BlogIndexProps = {
                     slug: '/ten-best-things/'
                 },
                 frontmatter: {
-                    date: 'March 02, 2022',
                     title: '10 Best Things',
                     description: 'a list of the ten best things',
-                    tags: ['five', 'four', 'three']
+                    headerImage: {
+                        childImageSharp: {
+                            gatsbyImageData: {}
+                        }
+                    }
                 }
             },
             {
@@ -53,10 +59,13 @@ const mockBlogs: BlogIndexProps = {
                     slug: '/guide/'
                 },
                 frontmatter: {
-                    date: 'July 02, 2022',
                     title: 'Guide',
                     description: 'a guide',
-                    tags: ['one', 'four', 'three']
+                    headerImage: {
+                        childImageSharp: {
+                            gatsbyImageData: {}
+                        }
+                    }
                 }
             }
         ]
@@ -70,10 +79,13 @@ const mockBlogs: BlogIndexProps = {
                     slug: '/baking-tutorial/'
                 },
                 frontmatter: {
-                    date: 'December 02, 2022',
                     title: 'Baking Tutorial',
                     description: 'a baking tutorial',
-                    tags: ['one', 'two', 'three']
+                    headerImage: {
+                        childImageSharp: {
+                            gatsbyImageData: {}
+                        }
+                    }
                 }
             },
             {
@@ -83,10 +95,13 @@ const mockBlogs: BlogIndexProps = {
                     slug: '/ten-best-things/'
                 },
                 frontmatter: {
-                    date: 'March 02, 2022',
                     title: '10 Best Things',
                     description: 'a list of the ten best things',
-                    tags: ['five', 'four', 'three']
+                    headerImage: {
+                        childImageSharp: {
+                            gatsbyImageData: {}
+                        }
+                    }
                 }
             },
             {
@@ -96,10 +111,13 @@ const mockBlogs: BlogIndexProps = {
                     slug: '/guide/'
                 },
                 frontmatter: {
-                    date: 'July 02, 2022',
                     title: 'Guide',
                     description: 'a guide',
-                    tags: ['one', 'four', 'three']
+                    headerImage: {
+                        childImageSharp: {
+                            gatsbyImageData: {}
+                        }
+                    }
                 }
             }
         ]

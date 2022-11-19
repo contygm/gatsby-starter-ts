@@ -10,10 +10,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import HorizontalPostTile from './HorizontalPostTile';
 import { getImage } from 'gatsby-plugin-image';
 
-const SideBar = (props: {
+export interface SideBarProps {
     featured: Array<IndexElements>;
     related: Array<IndexElements>;
-}) => {
+}
+
+const SideBar = ({ featured, related }: SideBarProps) => {
     return (
         <>
             <aside className="menu sidebar">
@@ -30,33 +32,34 @@ const SideBar = (props: {
                         />
                     </p>
                 </div>
+                {related && related.length > 0 && (
+                    <div className="box">
+                        <p className="menu-label">Related posts</p>
+                        <ul className="menu-list">
+                            {related.length > 0 &&
+                                related.map((post) => {
+                                    const image = getImage(
+                                        post.frontmatter.headerImage
+                                    );
 
-                <div className="box">
-                    {/* TODO */}
-                    <p className="menu-label">Related posts</p>
-                    <ul className="menu-list">
-                        {props.related.map((post) => {
-                            const image = getImage(
-                                post.frontmatter.headerImage
-                            );
-
-                            return (
-                                <li key={post.frontmatter.title}>
-                                    <HorizontalPostTile
-                                        title={post.frontmatter.title}
-                                        excerpt={post.excerpt}
-                                        slug={post.fields.slug}
-                                        image={image}
-                                    />
-                                </li>
-                            );
-                        })}
-                    </ul>
-                </div>
+                                    return (
+                                        <li key={post.frontmatter.title}>
+                                            <HorizontalPostTile
+                                                title={post.frontmatter.title}
+                                                excerpt={post.excerpt}
+                                                slug={post.fields.slug}
+                                                image={image}
+                                            />
+                                        </li>
+                                    );
+                                })}
+                        </ul>
+                    </div>
+                )}
                 <div className="box">
                     <p className="menu-label">Featured posts</p>
                     <ul className="menu-list">
-                        {props.featured.map((post) => {
+                        {featured.map((post) => {
                             const image = getImage(
                                 post.frontmatter.headerImage
                             );
@@ -78,24 +81,24 @@ const SideBar = (props: {
             <div className="menu sticky box mt-4">
                 <p className="menu-label">Share this post</p>
                 <ul className="has-text-black has-text-centered columns">
-                    <li className="column">
+                    <div className="column">
                         <FaIconLink
                             faIcon={faMugHot}
                             color="black"
                         />
-                    </li>
-                    <li className="column">
+                    </div>
+                    <div className="column">
                         <FaIconLink
                             faIcon={faGhost}
                             color="black"
                         />
-                    </li>
-                    <li className="column">
+                    </div>
+                    <div className="column">
                         <FaIconLink
                             faIcon={faEnvelope}
                             color="black"
                         />
-                    </li>
+                    </div>
                 </ul>
             </div>
         </>

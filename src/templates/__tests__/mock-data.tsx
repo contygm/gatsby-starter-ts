@@ -3,7 +3,7 @@ import { HeadProps, PageProps } from 'gatsby';
 import { BlogPostProps } from '../../templates/blog-post';
 import { mockHeadProps, mockPageProps } from '../../utils/test-props';
 
-const mockBlogPost: BlogPostProps = {
+export const mockBlogPost: BlogPostProps = {
     site: {
         siteMetadata: {
             title: `Starter`,
@@ -29,6 +29,7 @@ const mockBlogPost: BlogPostProps = {
             date: 'December 02, 2022',
             title: 'Baking Tutorial',
             description: 'a baking tutorial',
+            related: ['/one-url/', '/two-url/', '/three-url/'],
             tags: ['one', 'two', 'three'],
             headerImage: {
                 childImageSharp: {
@@ -52,6 +53,110 @@ const mockBlogPost: BlogPostProps = {
         frontmatter: {
             title: 'After - A Blog About Things'
         }
+    },
+    featured: {
+        nodes: [
+            {
+                excerpt:
+                    'Lemon drops pastry danish halvah. Chupa chups fruitcake powder...',
+                fields: {
+                    slug: '/baking-tutorial/'
+                },
+                frontmatter: {
+                    title: 'Baking Tutorial',
+                    description: 'a baking tutorial',
+                    headerImage: {
+                        childImageSharp: {
+                            gatsbyImageData: {}
+                        }
+                    }
+                }
+            },
+            {
+                excerpt:
+                    'Cheesecake lemon drops Cheesecake lemon drops pastry danish halvah...',
+                fields: {
+                    slug: '/ten-best-things/'
+                },
+                frontmatter: {
+                    title: '10 Best Things',
+                    description: 'a list of the ten best things',
+                    headerImage: {
+                        childImageSharp: {
+                            gatsbyImageData: {}
+                        }
+                    }
+                }
+            },
+            {
+                excerpt:
+                    'Chupa chups fruitcake powder dessert gingerbread gummies...',
+                fields: {
+                    slug: '/guide/'
+                },
+                frontmatter: {
+                    title: 'Guide',
+                    description: 'a guide',
+                    headerImage: {
+                        childImageSharp: {
+                            gatsbyImageData: {}
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    related: {
+        nodes: [
+            {
+                excerpt:
+                    'Lemon drops pastry danish halvah. Chupa chups fruitcake powder...',
+                fields: {
+                    slug: '/baking-tutorial/'
+                },
+                frontmatter: {
+                    title: 'Baking Tutorial',
+                    description: 'a baking tutorial',
+                    headerImage: {
+                        childImageSharp: {
+                            gatsbyImageData: {}
+                        }
+                    }
+                }
+            },
+            {
+                excerpt:
+                    'Cheesecake lemon drops Cheesecake lemon drops pastry danish halvah...',
+                fields: {
+                    slug: '/ten-best-things/'
+                },
+                frontmatter: {
+                    title: '10 Best Things',
+                    description: 'a list of the ten best things',
+                    headerImage: {
+                        childImageSharp: {
+                            gatsbyImageData: {}
+                        }
+                    }
+                }
+            },
+            {
+                excerpt:
+                    'Chupa chups fruitcake powder dessert gingerbread gummies...',
+                fields: {
+                    slug: '/guide/'
+                },
+                frontmatter: {
+                    title: 'Guide',
+                    description: 'a guide',
+                    headerImage: {
+                        childImageSharp: {
+                            gatsbyImageData: {}
+                        }
+                    }
+                }
+            }
+        ]
     }
 };
 

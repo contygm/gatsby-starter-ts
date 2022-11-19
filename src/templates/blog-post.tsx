@@ -71,7 +71,7 @@ const BlogPost = ({
                 <div className="column mr-3 mt-6">
                     <SideBar
                         featured={featured.nodes}
-                        related={related.nodes}
+                        related={related?.nodes}
                     />
                 </div>
             </div>
