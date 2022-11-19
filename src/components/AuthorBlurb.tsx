@@ -81,6 +81,7 @@ const NextAndPrevious = (props: {
                             url={`/blog${props.previous.fields.slug}`}
                             label={props.previous.frontmatter.title}
                             labelLeft={false}
+                            color="black"
                         />
                     )}
                 </div>
@@ -92,6 +93,7 @@ const NextAndPrevious = (props: {
                             faIcon={faArrowRight}
                             url={`/blog${props.next.fields.slug}`}
                             label={props.next.frontmatter.title}
+                            color="black"
                         />
                     )}
                 </div>

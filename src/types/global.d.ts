@@ -32,6 +32,7 @@ declare global {
             title: string;
             date: string;
             description: string;
+            related: Array<string>;
             tags: Array<string>;
             headerImage: {
                 childImageSharp: {
@@ -47,10 +48,13 @@ declare global {
             slug: string;
         };
         frontmatter: {
-            date: string;
             title: string;
             description: string;
-            tags: Array<string>;
+            headerImage: {
+                childImageSharp: {
+                    gatsbyImageData: GatsbyImageProps.image;
+                };
+            };
         };
     }
 }

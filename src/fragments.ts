@@ -15,15 +15,22 @@ export const fragments = graphql`
         }
     }
     fragment IndexElements on MarkdownRemark {
-        excerpt
+        excerpt(pruneLength: 60)
         fields {
             slug
         }
         frontmatter {
-            date(formatString: "MMMM DD, YYYY")
             title
             description
-            tags
+            headerImage {
+                childImageSharp {
+                    gatsbyImageData(
+                        layout: FULL_WIDTH
+                        placeholder: BLURRED
+                        formats: [AUTO, WEBP, AVIF]
+                    )
+                }
+            }
         }
     }
     fragment PostElements on MarkdownRemark {
@@ -34,6 +41,7 @@ export const fragments = graphql`
             title
             date(formatString: "DD MMMM YYYY, hh:mm a")
             description
+            related
             tags
             headerImage {
                 childImageSharp {

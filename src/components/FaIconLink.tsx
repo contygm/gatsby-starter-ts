@@ -8,6 +8,7 @@ interface FaIconLinkProps {
     url?: string;
     label?: string;
     labelLeft?: boolean;
+    color?: 'white' | 'black';
 }
 
 /**
@@ -17,20 +18,18 @@ interface FaIconLinkProps {
  */
 const FaIconLink = ({
     faIcon,
-    url = '/',
     label,
-    labelLeft = true
+    url = '/',
+    labelLeft = true,
+    color = 'white'
 }: FaIconLinkProps) => {
-    const classes = label
-        ? 'faicon-link-container is-inline icon-text'
-        : 'faicon-link-container is-inline';
-
-    const colorClass = label ? 'with-label' : 'no-label';
+    const labelClass = label ? 'with-label' : 'no-label';
+    const colorClass = color === 'white' ? 'is-white' : 'is-black';
 
     return (
-        <li className={classes}>
+        <li className={`faicon-link-container`}>
             <Link
-                className={`faicon-link ${colorClass}`}
+                className={`faicon-link ${labelClass} ${colorClass}`}
                 to={url}
                 data-cy={`faicon-link`}
                 aria-label="social media link"

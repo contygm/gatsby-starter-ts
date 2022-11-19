@@ -101,7 +101,6 @@ const NavBar = () => {
                                 type="text"
                                 placeholder="Search..."
                             />
-
                             <span className="icon is-small is-left">
                                 <FontAwesomeIcon icon={faMagnifyingGlass} />
                             </span>

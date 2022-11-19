@@ -129,7 +129,7 @@ main {
 	color: $primary;
 }
 
-.faicon-link.with-label, .faicon-link.no-label {
+.faicon-link {
 	&:hover {
 		color: $primary;
 	}
@@ -138,10 +138,15 @@ main {
 .faicon-link.with-label {
 	color: $black;
 	text-decoration: none;
+	@extend .icon-text;
 }
 
-.faicon-link.no-label {
+.is-white {
 	color: $white-ter;
+}
+
+.is-black {
+	color: $black;
 }
 
 /*******************************
@@ -169,6 +174,10 @@ main {
 		filter: drop-shadow(1px 1px 1px $primary) 
 		drop-shadow(-1px -1px 1px $primary);
 	}
+}
+
+.faicon-link-container {
+	@extend .is-inline;
 }
 
 @media only screen and (max-width : 768px) {
@@ -253,7 +262,6 @@ pre[class*="language-"] {
 		@extend .box;
 
 		summary {
-			//font styling
 			color: $grey-dark;
 			font-size: 1rem;
 			font-weight: 400;
@@ -304,4 +312,27 @@ pre[class*="language-"] {
 	@extend .all-post-tags;
 	@extend .my-2;
 	@extend .ml-2;
+}
+
+.sticky {
+	position: sticky;
+	top: 0;
+}
+
+.horizontal-post-tile {
+	@extend .py-2;
+	@extend .px-1;
+
+	h6 {
+		@extend .mb-0;
+		@extend .is-size-6;
+	}
+	p {
+		font-size: .85rem;
+		@extend .mb-1;
+	}
+}
+
+.post-tile-image img {
+	height: 100%;
 }

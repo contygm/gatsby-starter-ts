@@ -358,11 +358,11 @@ exports[`LegalPage Cookie Page renders correctly 1`] = `
             class="has-text-right has-text-centered-mobile footer-link"
           >
             <li
-              class="faicon-link-container is-inline"
+              class="faicon-link-container"
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label"
+                class="faicon-link no-label is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -384,11 +384,11 @@ exports[`LegalPage Cookie Page renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="faicon-link-container is-inline"
+              class="faicon-link-container"
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label"
+                class="faicon-link no-label is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -410,11 +410,11 @@ exports[`LegalPage Cookie Page renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="faicon-link-container is-inline"
+              class="faicon-link-container"
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label"
+                class="faicon-link no-label is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -835,11 +835,11 @@ exports[`LegalPage Copyright Page renders correctly 1`] = `
             class="has-text-right has-text-centered-mobile footer-link"
           >
             <li
-              class="faicon-link-container is-inline"
+              class="faicon-link-container"
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label"
+                class="faicon-link no-label is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -861,11 +861,11 @@ exports[`LegalPage Copyright Page renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="faicon-link-container is-inline"
+              class="faicon-link-container"
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label"
+                class="faicon-link no-label is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -887,11 +887,11 @@ exports[`LegalPage Copyright Page renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="faicon-link-container is-inline"
+              class="faicon-link-container"
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label"
+                class="faicon-link no-label is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -1312,11 +1312,11 @@ exports[`LegalPage Disclaimer Page renders correctly 1`] = `
             class="has-text-right has-text-centered-mobile footer-link"
           >
             <li
-              class="faicon-link-container is-inline"
+              class="faicon-link-container"
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label"
+                class="faicon-link no-label is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -1338,11 +1338,11 @@ exports[`LegalPage Disclaimer Page renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="faicon-link-container is-inline"
+              class="faicon-link-container"
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label"
+                class="faicon-link no-label is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -1364,11 +1364,11 @@ exports[`LegalPage Disclaimer Page renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="faicon-link-container is-inline"
+              class="faicon-link-container"
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label"
+                class="faicon-link no-label is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -1909,11 +1909,11 @@ exports[`LegalPage Legal renders correctly 1`] = `
             class="has-text-right has-text-centered-mobile footer-link"
           >
             <li
-              class="faicon-link-container is-inline"
+              class="faicon-link-container"
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label"
+                class="faicon-link no-label is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -1935,11 +1935,11 @@ exports[`LegalPage Legal renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="faicon-link-container is-inline"
+              class="faicon-link-container"
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label"
+                class="faicon-link no-label is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -1961,11 +1961,11 @@ exports[`LegalPage Legal renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="faicon-link-container is-inline"
+              class="faicon-link-container"
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label"
+                class="faicon-link no-label is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -2366,11 +2366,11 @@ exports[`LegalPage Privacy Policy Page renders correctly 1`] = `
             class="has-text-right has-text-centered-mobile footer-link"
           >
             <li
-              class="faicon-link-container is-inline"
+              class="faicon-link-container"
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label"
+                class="faicon-link no-label is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -2392,11 +2392,11 @@ exports[`LegalPage Privacy Policy Page renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="faicon-link-container is-inline"
+              class="faicon-link-container"
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label"
+                class="faicon-link no-label is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -2418,11 +2418,11 @@ exports[`LegalPage Privacy Policy Page renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="faicon-link-container is-inline"
+              class="faicon-link-container"
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label"
+                class="faicon-link no-label is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -2843,11 +2843,11 @@ exports[`LegalPage Terms and Conditions Page renders correctly 1`] = `
             class="has-text-right has-text-centered-mobile footer-link"
           >
             <li
-              class="faicon-link-container is-inline"
+              class="faicon-link-container"
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label"
+                class="faicon-link no-label is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -2869,11 +2869,11 @@ exports[`LegalPage Terms and Conditions Page renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="faicon-link-container is-inline"
+              class="faicon-link-container"
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label"
+                class="faicon-link no-label is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -2895,11 +2895,11 @@ exports[`LegalPage Terms and Conditions Page renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="faicon-link-container is-inline"
+              class="faicon-link-container"
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label"
+                class="faicon-link no-label is-white"
                 data-cy="faicon-link"
                 href="/"
               >

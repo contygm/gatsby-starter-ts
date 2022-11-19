@@ -28,6 +28,7 @@ export const createPages: GatsbyNode['createPages'] = async ({
                     frontmatter {
                         title
                         type
+                        related
                     }
                 }
             }
@@ -58,7 +59,8 @@ export const createPages: GatsbyNode['createPages'] = async ({
                     id: post.id,
                     slug: post.fields.slug,
                     previousPostId,
-                    nextPostId
+                    nextPostId,
+                    relatedPosts: post.frontmatter.related
                 }
             });
         });
