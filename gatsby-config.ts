@@ -54,7 +54,8 @@ const config: GatsbyConfig = {
                             maxWidth: 590
                         }
                     },
-                    `gatsby-remark-prismjs`
+                    `gatsby-remark-prismjs`,
+                    `gatsby-remark-autolink-headers`
                 ]
             }
         },

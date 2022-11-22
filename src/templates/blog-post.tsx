@@ -6,6 +6,7 @@ import PageHeader from '../components/PageHeader';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import AuthorBlurb from '../components/AuthorBlurb';
 import SideBar from '../components/SideBar';
+import ToC from '../components/ToC';
 // import sanitizeHtml from 'sanitize-html';
 
 export interface BlogPostProps {
@@ -30,14 +31,21 @@ const BlogPost = ({
     const image = getImage(markdownRemark.frontmatter.headerImage);
     return (
         <Layout>
+            {/* full page header with social share */}
             <PageHeader
                 title={markdownRemark.frontmatter.title}
                 alignCenter={true}
                 hasSocial={true}
                 subtitle={markdownRemark.frontmatter.description}
             />
-            <div className="columns">
-                <div className="column is-three-fifths is-offset-one-fifth">
+            <div className="columns is-desktop">
+                {/* stickey table of contetnts */}
+                <div className="column">
+                    <section className="blog-toc pb-0 mt-5 sticky">
+                        <ToC tocHtml={markdownRemark.tableOfContents} />
+                    </section>
+                </div>
+                <div className="column is-three-fifths-desktop">
                     <article className="content">
                         {/* image header */}
                         {image && (
@@ -49,7 +57,7 @@ const BlogPost = ({
                                 />
                             </section>
                         )}
-                        {/* content section */}
+                        {/* Table of Contents */}
                         <section className="section">
                             <div
                                 className="container"
@@ -58,7 +66,7 @@ const BlogPost = ({
                                 }}
                             />
                         </section>
-                        {/* author section */}
+                        {/* author, tags, and prev/next post nav */}
                         <AuthorBlurb
                             author={site.siteMetadata.author}
                             postDate={markdownRemark.frontmatter.date}
@@ -68,6 +76,10 @@ const BlogPost = ({
                         />
                     </article>
                 </div>
+                {/* 
+                    side bar with related + featured posts 
+                    and sticky social share btns 
+                */}
                 <div className="column mr-3 mt-6">
                     <SideBar
                         featured={featured.nodes}

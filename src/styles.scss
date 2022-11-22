@@ -29,6 +29,7 @@ $primary:hsl(141, 71%, 58%);
 $secondary: #12130F;
 // $white: hsl(0, 0%, 98%);
 $navbar-item-hover-color: hsl(171, 100%, 41%); // bulma primary
+$menu-item-active-background-color: $secondary;
 
 /*******************************
 * Navigation 
@@ -257,6 +258,16 @@ pre[class*="language-"] {
 	}
 }
 
+.sticky {
+	position: sticky;
+	top: 0;
+}
+
+.blog-toc {
+	height: 100vh;
+	overflow-x: scroll;
+}
+
 .content {
 	details {
 		@extend .box;
@@ -314,11 +325,7 @@ pre[class*="language-"] {
 	@extend .ml-2;
 }
 
-.sticky {
-	position: sticky;
-	top: 0;
-}
-
+// horizontal post tile component
 .horizontal-post-tile {
 	@extend .py-2;
 	@extend .px-1;
@@ -328,7 +335,7 @@ pre[class*="language-"] {
 		@extend .is-size-6;
 	}
 	p {
-		font-size: .85rem;
+		font-size: .875rem;
 		@extend .mb-1;
 	}
 }
@@ -336,3 +343,39 @@ pre[class*="language-"] {
 .post-tile-image img {
 	height: 100%;
 }
+
+/*******************************
+* Table of Contents Styles
+********************************/
+// table of contents 
+.toc-wrapper {
+	.container {
+		@extend .menu;
+		padding: 1.25rem; 
+		
+		// TOC string from graphQL query uses <p> to nest lists
+		p {
+			@extend .mb-0;
+			@extend .menu-list;
+			font-size: .875rem;
+		}
+
+		ul {
+			@extend .my-1;
+			@extend .menu-list;
+			list-style-type: none;
+			font-size: .875rem;
+		}
+
+		h6 {
+			@extend .menu-label;
+		}
+	}
+}
+
+// for tablets and up
+// @media only screen and (min-width : $tablet) {
+//     .toc-section {
+// 		max-width: 65%;
+// 	}
+// }

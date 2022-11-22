@@ -36,6 +36,7 @@ export const fragments = graphql`
     fragment PostElements on MarkdownRemark {
         id
         excerpt(pruneLength: 160)
+        tableOfContents
         html
         frontmatter {
             title

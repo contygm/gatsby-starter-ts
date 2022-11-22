@@ -28,6 +28,7 @@ declare global {
         id: string;
         excerpt: string;
         html: string;
+        tableOfContents: string;
         frontmatter: {
             title: string;
             date: string;

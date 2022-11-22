@@ -25,6 +25,7 @@ export const mockBlogPost: BlogPostProps = {
         excerpt:
             'Lemon drops pastry danish halvah. Chupa chups fruitcake powder...',
         html: `<h2>Header</h2><p>Lemon drops pastry danish halvah. Lemon drops pastry danish halvah. Lemon drops pastry danish halvah. Lemon drops pastry danish halvah.</p>`,
+        tableOfContents: `<ul><li><p><a href="#liquorice-topping">Liquorice topping</a></p><ul><li><p><a href="#pastry-halvah-caramels">Pastry halvah caramels</a></p><ul> <li><a href="#wafer-oat-cake">Wafer oat cake</a></li></ul></li></ul></li></ul>`,
         frontmatter: {
             date: 'December 02, 2022',
             title: 'Baking Tutorial',
