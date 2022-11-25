@@ -19,7 +19,7 @@
     "checks": "npm run format ; tsc --noEmit ; npm run lint",
     "tests": "tsc --noEmit && npm run lint && npm run unit && npm run cy:headless",
     "unit": "jest",
-    "unit-update": "npm run unit -- -u",
+    "unit-update": "jest -u",
     "nodeClean": "rm -rf node_modules ; npm install",
     "cy:open": "cypress open",
     "cy:run": "cypress run",

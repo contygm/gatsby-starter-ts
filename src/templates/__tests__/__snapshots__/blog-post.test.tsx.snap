@@ -290,10 +290,61 @@ exports[`Blog Posts Page renders correctly 1`] = `
         </div>
       </header>
       <div
-        class="columns"
+        class="columns is-desktop"
       >
         <div
-          class="column is-three-fifths is-offset-one-fifth"
+          class="column"
+        >
+          <section
+            class="blog-toc pb-0 mt-5 sticky"
+          >
+            <div
+              class="toc-wrapper"
+            >
+              <div
+                class="container toc-links"
+              >
+                <h6>
+                  Table of Contents
+                </h6>
+                <ul>
+                  <li>
+                    <p>
+                      <a
+                        href="#liquorice-topping"
+                      >
+                        Liquorice topping
+                      </a>
+                    </p>
+                    <ul>
+                      <li>
+                        <p>
+                          <a
+                            href="#pastry-halvah-caramels"
+                          >
+                            Pastry halvah caramels
+                          </a>
+                        </p>
+                        <ul>
+                           
+                          <li>
+                            <a
+                              href="#wafer-oat-cake"
+                            >
+                              Wafer oat cake
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div
+          class="column is-three-fifths-desktop"
         >
           <article
             class="content"
