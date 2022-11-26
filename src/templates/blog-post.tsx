@@ -7,7 +7,12 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import AuthorBlurb from '../components/AuthorBlurb';
 import SideBar from '../components/SideBar';
 import ToC from '../components/ToC';
-// import sanitizeHtml from 'sanitize-html';
+import { useEffect, useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEllipsis, faXmark } from '@fortawesome/free-solid-svg-icons';
+import OutsideClicker from '../components/OutsideClicker';
+import StickySocialMedia from '../components/StickySocialMedia';
+
 
 export interface BlogPostProps {
     site: {
@@ -27,7 +32,47 @@ export interface BlogPostProps {
 const BlogPost = ({
     data: { site, markdownRemark, previous, next, featured, related }
 }: PageProps<BlogPostProps>) => {
-    // const cleanHTML = sanitizeHtml(markdownRemark.html);
+    const [showMobileToc, setShowMobileToc] = useState(false);
+    const [isMobile, setIsMobile] = useState(false)
+    const [isBigScreen, setIsBigScreen] = useState(true)
+    const [btnIcon, setBtnIcon] = useState(faEllipsis);
+ 
+    const handleResize = () => {
+        if (window.innerWidth < 1024) { // mobile screen 
+            setIsMobile(true)
+            setIsBigScreen(false);
+        } else if (1024 <= window.innerWidth && window.innerWidth <= 1215) { // medium screen
+            setIsMobile(false)
+            setIsBigScreen(false);
+            setShowMobileToc(false)
+        }else { // large screen
+            setIsMobile(false)
+            setShowMobileToc(false)
+            setIsBigScreen(true);
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener("resize", handleResize)
+    })
+
+    const handleClickOutside = () => {
+        console.log("outside click")
+        setShowMobileToc(false)
+        setBtnIcon(faEllipsis)
+    }
+
+    const handleTocBtnClick = () => {
+        console.log("TOC btn", btnIcon)
+        if(btnIcon === faEllipsis && !showMobileToc) {
+            setShowMobileToc(true)
+            setBtnIcon(faXmark)
+        } else if(btnIcon === faXmark && showMobileToc) {
+            setBtnIcon(faEllipsis)
+            setShowMobileToc(false)
+        }
+    }
+
     const image = getImage(markdownRemark.frontmatter.headerImage);
     return (
         <Layout>
@@ -38,14 +83,38 @@ const BlogPost = ({
                 hasSocial={true}
                 subtitle={markdownRemark.frontmatter.description}
             />
-            <div className="columns is-desktop">
+            {/* main body: ToC, sidebar, post content */}
+            <div className="columns is-multiline">
                 {/* stickey table of contetnts */}
-                <div className="column">
-                    <section className="blog-toc pb-0 mt-5 sticky">
-                        <ToC tocHtml={markdownRemark.tableOfContents} />
+                <div className="column blog-toc is-one-fifth-widescreen is-one-fifth-desktop is-narrow">
+                    <section 
+                        className={isMobile ? "mobile-blog-toc" : "web-blog-toc"} 
+                        style={{display: !isMobile || (isMobile && showMobileToc)
+                            ? 'block'
+                            : 'none' 
+                         }}
+                    >
+                        <OutsideClicker callback={isMobile ? handleClickOutside : undefined}>
+                            <ToC tocHtml={markdownRemark.tableOfContents} />
+                        </OutsideClicker>
                     </section>
+                    <button 
+                        className='button is-rounded is-primary' 
+                        style={{display: isMobile ? 'block': 'none'}} 
+                        onClick={handleTocBtnClick}
+                        
+                    >
+                        <i className="icon">
+                            <FontAwesomeIcon
+                                className="icon"
+                                icon={btnIcon}
+                                size="xl"
+                                id="toc-button"
+                            />
+                        </i>
+                    </button>
                 </div>
-                <div className="column is-three-fifths-desktop">
+                <div className="column is-three-fifths-widescreen is-four-fifths">
                     <article className="content">
                         {/* image header */}
                         {image && (
@@ -66,6 +135,8 @@ const BlogPost = ({
                                 }}
                             />
                         </section>
+                        {!isBigScreen && <StickySocialMedia isVertical={true}/>}
+
                         {/* author, tags, and prev/next post nav */}
                         <AuthorBlurb
                             author={site.siteMetadata.author}
@@ -80,11 +151,12 @@ const BlogPost = ({
                     side bar with related + featured posts 
                     and sticky social share btns 
                 */}
-                <div className="column mr-3 mt-6">
+                <div className="column mt-6 is-one-fifth-widescreen is-half">
                     <SideBar
                         featured={featured.nodes}
                         related={related?.nodes}
                     />
+                    {isBigScreen && <StickySocialMedia isVertical={false}/>}
                 </div>
             </div>
         </Layout>
