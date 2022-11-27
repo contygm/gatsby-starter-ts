@@ -1,5 +1,4 @@
 import * as React from 'react';
-import FaIconLink from './FaIconLink';
 import {
     faMugHot,
     faGhost,
@@ -10,7 +9,7 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
 
-const StickySocialMedia = (props: {isVertical: boolean}) => {
+const StickySocialMedia = (props: {isVertical: boolean, classes?: string}) => {
 	const [showMedia, setShowMedia] = useState(true);
 
 	const verticalClass = props.isVertical ? "is-vertical" : "";
@@ -21,7 +20,7 @@ const StickySocialMedia = (props: {isVertical: boolean}) => {
 
 	return (
 		<div 
-			className={`menu sticky box mt-4 ${verticalClass}`} 
+			className={`menu sticky box mt-4 ${verticalClass} ${props.classes}`} 
 		>
 			<p className="menu-label">{props.isVertical? 'Share' : 'Share this post'}</p>
 			<ul className={`has-text-black has-text-centered ${props.isVertical ? "" : "columns"}`}>

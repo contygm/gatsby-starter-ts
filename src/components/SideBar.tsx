@@ -25,7 +25,7 @@ const SideBar = ({ featured, related }: SideBarProps) => {
                     />
                 </p>
             </div>
-            {/* {related && related.length > 0 && (
+            {related && related.length > 0 && (
                 <div className="box">
                     <p className="menu-label">Related posts</p>
                     <ul className="menu-list">
@@ -48,7 +48,7 @@ const SideBar = ({ featured, related }: SideBarProps) => {
                             })}
                     </ul>
                 </div>
-            )} */}
+            )}
             <div className="box">
                 <p className="menu-label">Featured posts</p>
                 <ul className="menu-list">

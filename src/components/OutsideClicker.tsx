@@ -1,13 +1,11 @@
 import React, { useRef, useEffect } from "react";
 
-const useOutsideClick = (ref: any, callback: () => void) => {
+const useOutsideClick = (ref: React.RefObject<HTMLElement>, callback: () => void) => {
 	useEffect(() => {
 
 	function handleClickOutside(event: Event) {
 		const element =  event.target as HTMLElement;
-		console.log("eid", event)
-		if (ref.current && !ref.current.contains(event.target) && callback && element.id !== 'toc-button') {
-
+		if (ref.current && !ref.current.contains(event.target as Node) && callback && element.id !== 'toc-button') {
 			callback();
 			
 		}

@@ -12,6 +12,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEllipsis, faXmark } from '@fortawesome/free-solid-svg-icons';
 import OutsideClicker from '../components/OutsideClicker';
 import StickySocialMedia from '../components/StickySocialMedia';
+import useCheckMobileScreen from '../utils/useCheckMobileScreen';
+import useCheckBigScreen from '../utils/useCheckBigScreen';
 
 
 export interface BlogPostProps {
@@ -32,9 +34,10 @@ export interface BlogPostProps {
 const BlogPost = ({
     data: { site, markdownRemark, previous, next, featured, related }
 }: PageProps<BlogPostProps>) => {
+    // const winSize = window.innerWidth <= 1215;
     const [showMobileToc, setShowMobileToc] = useState(false);
-    const [isMobile, setIsMobile] = useState(false)
-    const [isBigScreen, setIsBigScreen] = useState(true)
+    const [isMobile, setIsMobile] = useState(useCheckMobileScreen())
+    const [isBigScreen, setIsBigScreen] = useState(useCheckBigScreen())
     const [btnIcon, setBtnIcon] = useState(faEllipsis);
  
     const handleResize = () => {
@@ -45,7 +48,7 @@ const BlogPost = ({
             setIsMobile(false)
             setIsBigScreen(false);
             setShowMobileToc(false)
-        }else { // large screen
+        } else { // large screen
             setIsMobile(false)
             setShowMobileToc(false)
             setIsBigScreen(true);
@@ -102,7 +105,6 @@ const BlogPost = ({
                         className='button is-rounded is-primary' 
                         style={{display: isMobile ? 'block': 'none'}} 
                         onClick={handleTocBtnClick}
-                        
                     >
                         <i className="icon">
                             <FontAwesomeIcon
@@ -151,11 +153,13 @@ const BlogPost = ({
                     side bar with related + featured posts 
                     and sticky social share btns 
                 */}
-                <div className="column mt-6 is-one-fifth-widescreen is-half">
-                    <SideBar
-                        featured={featured.nodes}
-                        related={related?.nodes}
-                    />
+                <div className="column mt-6 is-one-fifth-widescreen">
+                    <div className='blog-sidebar'>
+                        <SideBar
+                            featured={featured.nodes}
+                            related={related?.nodes}
+                        />
+                    </div>
                     {isBigScreen && <StickySocialMedia isVertical={false}/>}
                 </div>
             </div>
