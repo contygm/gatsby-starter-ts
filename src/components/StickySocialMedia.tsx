@@ -20,7 +20,7 @@ const StickySocialMedia = (props: {isVertical: boolean, classes?: string}) => {
 
 	return (
 		<div 
-			className={`menu sticky box mt-4 ${verticalClass} ${props.classes}`} 
+			className={`menu sticky box mt-4 ${verticalClass} ${props.classes ?? ""}`} 
 		>
 			<p className="menu-label">{props.isVertical? 'Share' : 'Share this post'}</p>
 			<ul className={`has-text-black has-text-centered ${props.isVertical ? "" : "columns"}`}>
@@ -55,6 +55,7 @@ const StickySocialMedia = (props: {isVertical: boolean, classes?: string}) => {
 							icon={faChevronRight}
 							size="sm"
 							onClick={handleCollapse}
+							data-testid={"sticky-social-hide"}
 						/>
 					</div>
 				}
@@ -65,6 +66,7 @@ const StickySocialMedia = (props: {isVertical: boolean, classes?: string}) => {
 							icon={faShare}
 							size="lg"
 							onClick={handleCollapse}
+							data-testid={"sticky-social-show-more"}
 						/>
 					</div>
 				}

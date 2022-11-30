@@ -1,7 +1,12 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { fireEvent, render } from '@testing-library/react';
 import BlogPost, { Head } from '../../templates/blog-post';
 import { mockBlogPostHeadData, mockBlogPostPageData } from './mock-data';
+
+const resizeWindow = (x: number) => {
+    window.innerWidth = x;
+    window.dispatchEvent(new Event('resize'));
+}
 
 describe('Blog Posts Page', () => {
     beforeEach(() => {
@@ -13,6 +18,7 @@ describe('Blog Posts Page', () => {
           disconnect: () => null
         });
         window.IntersectionObserver = mockIntersectionObserver;
+        resizeWindow(1216)
     })
 
     it('renders correctly', () => {
@@ -23,5 +29,38 @@ describe('Blog Posts Page', () => {
     it('header meta data renders correctly', () => {
         const { asFragment } = render(<Head {...mockBlogPostHeadData} />);
         expect(asFragment()).toMatchSnapshot();
+    });
+
+    it('renders correctly on mobile view', () => {
+        resizeWindow(1000)
+        const { asFragment } = render(<BlogPost {...mockBlogPostPageData} />);
+        expect(asFragment()).toMatchSnapshot();
+    });
+
+    it('renders correctly on medium view', () => {
+        resizeWindow(1100)
+        const { asFragment } = render(<BlogPost {...mockBlogPostPageData} />);
+        expect(asFragment()).toMatchSnapshot();
+    });
+
+    it('ToC shows properly on mobile', () => {
+        resizeWindow(1000)
+        const { 
+            asFragment, 
+            getByTestId, 
+            queryByRole 
+        } = render(<BlogPost {...mockBlogPostPageData} />);
+        expect(asFragment()).toMatchSnapshot("closed table of contents");
+
+        // open with ToC button
+        fireEvent.click(getByTestId('blog-toc-mobile-btn'))
+        expect(asFragment()).toMatchSnapshot("open table of contents");
+        // ToC sectiion has role of widget
+        expect(queryByRole('widget', { hidden: false })).toBeDefined();
+
+        // close with ToC button
+        fireEvent.click(getByTestId('blog-toc-mobile-btn'))
+        expect(asFragment()).toMatchSnapshot("closed table of contents w btn");
+        expect(queryByRole('widget', { hidden: false })).toBeNull();
     });
 });

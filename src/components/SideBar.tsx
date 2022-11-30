@@ -22,6 +22,7 @@ const SideBar = ({ featured, related }: SideBarProps) => {
                         className="input is-rounded"
                         type="text"
                         placeholder="A Blog Title..."
+                        aria-label="blog-search"
                     />
                 </p>
             </div>

@@ -7,7 +7,6 @@ export default function TableOfContents(props: { tocHtml: string }) {
         // NOTE: can't use 'postive lookbehind' because of browser compatibility
         // so must leave in # instead of using `(?<=\#)(.*?)(?=\")`
         const anchors = props.tocHtml.match(/#(.*?)(?=")/gi) ?? [];
-		console.log(props.tocHtml)
 
         // remove # from anchors
         anchors.forEach((a, i) => (anchors[i] = a.replace('#', '')));
@@ -36,7 +35,7 @@ export default function TableOfContents(props: { tocHtml: string }) {
     const tocHtmlWtihHeading = `<h6>Table of Contents</h6>${props.tocHtml}`;
 
     return (
-        <div className="toc-wrapper">
+        <div className="toc-wrapper" data-testid={"toc-wrapper"} role="widget">
             <div
                 className="container toc-links"
                 dangerouslySetInnerHTML={{ __html: tocHtmlWtihHeading }}

@@ -15,7 +15,6 @@ import StickySocialMedia from '../components/StickySocialMedia';
 import useCheckMobileScreen from '../utils/useCheckMobileScreen';
 import useCheckBigScreen from '../utils/useCheckBigScreen';
 
-
 export interface BlogPostProps {
     site: {
         siteMetadata: SiteMetadata;
@@ -60,13 +59,11 @@ const BlogPost = ({
     })
 
     const handleClickOutside = () => {
-        console.log("outside click")
         setShowMobileToc(false)
         setBtnIcon(faEllipsis)
     }
 
     const handleTocBtnClick = () => {
-        console.log("TOC btn", btnIcon)
         if(btnIcon === faEllipsis && !showMobileToc) {
             setShowMobileToc(true)
             setBtnIcon(faXmark)
@@ -105,6 +102,7 @@ const BlogPost = ({
                         className='button is-rounded is-primary' 
                         style={{display: isMobile ? 'block': 'none'}} 
                         onClick={handleTocBtnClick}
+                        data-testid="blog-toc-mobile-btn"
                     >
                         <i className="icon">
                             <FontAwesomeIcon
