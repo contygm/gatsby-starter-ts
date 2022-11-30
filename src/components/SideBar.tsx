@@ -54,9 +54,7 @@ const SideBar = ({ featured, related }: SideBarProps) => {
                 <p className="menu-label">Featured posts</p>
                 <ul className="menu-list">
                     {featured.map((post) => {
-                        const image = getImage(
-                            post.frontmatter.headerImage
-                        );
+                        const image = getImage(post.frontmatter.headerImage);
                         return (
                             <li key={post.frontmatter.title}>
                                 <HorizontalPostTile

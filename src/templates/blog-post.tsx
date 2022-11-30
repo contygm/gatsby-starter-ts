@@ -35,43 +35,46 @@ const BlogPost = ({
 }: PageProps<BlogPostProps>) => {
     // const winSize = window.innerWidth <= 1215;
     const [showMobileToc, setShowMobileToc] = useState(false);
-    const [isMobile, setIsMobile] = useState(useCheckMobileScreen())
-    const [isBigScreen, setIsBigScreen] = useState(useCheckBigScreen())
+    const [isMobile, setIsMobile] = useState(useCheckMobileScreen());
+    const [isBigScreen, setIsBigScreen] = useState(useCheckBigScreen());
     const [btnIcon, setBtnIcon] = useState(faEllipsis);
- 
+
     const handleResize = () => {
-        if (window.innerWidth < 1024) { // mobile screen 
-            setIsMobile(true)
+        if (window.innerWidth < 1024) {
+            // mobile screen
+            setIsMobile(true);
             setIsBigScreen(false);
-        } else if (1024 <= window.innerWidth && window.innerWidth <= 1215) { // medium screen
-            setIsMobile(false)
+        } else if (1024 <= window.innerWidth && window.innerWidth <= 1215) {
+            // medium screen
+            setIsMobile(false);
             setIsBigScreen(false);
-            setShowMobileToc(false)
-        } else { // large screen
-            setIsMobile(false)
-            setShowMobileToc(false)
+            setShowMobileToc(false);
+        } else {
+            // large screen
+            setIsMobile(false);
+            setShowMobileToc(false);
             setIsBigScreen(true);
         }
-    }
+    };
 
     useEffect(() => {
-        window.addEventListener("resize", handleResize)
-    })
+        window.addEventListener('resize', handleResize);
+    });
 
     const handleClickOutside = () => {
-        setShowMobileToc(false)
-        setBtnIcon(faEllipsis)
-    }
+        setShowMobileToc(false);
+        setBtnIcon(faEllipsis);
+    };
 
     const handleTocBtnClick = () => {
-        if(btnIcon === faEllipsis && !showMobileToc) {
-            setShowMobileToc(true)
-            setBtnIcon(faXmark)
-        } else if(btnIcon === faXmark && showMobileToc) {
-            setBtnIcon(faEllipsis)
-            setShowMobileToc(false)
+        if (btnIcon === faEllipsis && !showMobileToc) {
+            setShowMobileToc(true);
+            setBtnIcon(faXmark);
+        } else if (btnIcon === faXmark && showMobileToc) {
+            setBtnIcon(faEllipsis);
+            setShowMobileToc(false);
         }
-    }
+    };
 
     const image = getImage(markdownRemark.frontmatter.headerImage);
     return (
@@ -87,20 +90,26 @@ const BlogPost = ({
             <div className="columns is-multiline">
                 {/* stickey table of contetnts */}
                 <div className="column blog-toc is-one-fifth-widescreen is-one-fifth-desktop is-narrow">
-                    <section 
-                        className={isMobile ? "mobile-blog-toc" : "web-blog-toc"} 
-                        style={{display: !isMobile || (isMobile && showMobileToc)
-                            ? 'block'
-                            : 'none' 
-                         }}
+                    <section
+                        className={
+                            isMobile ? 'mobile-blog-toc' : 'web-blog-toc'
+                        }
+                        style={{
+                            display:
+                                !isMobile || (isMobile && showMobileToc)
+                                    ? 'block'
+                                    : 'none'
+                        }}
                     >
-                        <OutsideClicker callback={isMobile ? handleClickOutside : undefined}>
+                        <OutsideClicker
+                            callback={isMobile ? handleClickOutside : undefined}
+                        >
                             <ToC tocHtml={markdownRemark.tableOfContents} />
                         </OutsideClicker>
                     </section>
-                    <button 
-                        className='button is-rounded is-primary' 
-                        style={{display: isMobile ? 'block': 'none'}} 
+                    <button
+                        className="button is-rounded is-primary"
+                        style={{ display: isMobile ? 'block' : 'none' }}
                         onClick={handleTocBtnClick}
                         data-testid="blog-toc-mobile-btn"
                     >
@@ -135,7 +144,9 @@ const BlogPost = ({
                                 }}
                             />
                         </section>
-                        {!isBigScreen && <StickySocialMedia isVertical={true}/>}
+                        {!isBigScreen && (
+                            <StickySocialMedia isVertical={true} />
+                        )}
 
                         {/* author, tags, and prev/next post nav */}
                         <AuthorBlurb
@@ -152,13 +163,13 @@ const BlogPost = ({
                     and sticky social share btns 
                 */}
                 <div className="column mt-6 is-one-fifth-widescreen">
-                    <div className='blog-sidebar'>
+                    <div className="blog-sidebar">
                         <SideBar
                             featured={featured.nodes}
                             related={related?.nodes}
                         />
                     </div>
-                    {isBigScreen && <StickySocialMedia isVertical={false}/>}
+                    {isBigScreen && <StickySocialMedia isVertical={false} />}
                 </div>
             </div>
         </Layout>

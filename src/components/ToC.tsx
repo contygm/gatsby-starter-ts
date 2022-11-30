@@ -35,7 +35,11 @@ export default function TableOfContents(props: { tocHtml: string }) {
     const tocHtmlWtihHeading = `<h6>Table of Contents</h6>${props.tocHtml}`;
 
     return (
-        <div className="toc-wrapper" data-testid={"toc-wrapper"} role="widget">
+        <div
+            className="toc-wrapper"
+            data-testid={'toc-wrapper'}
+            role="widget"
+        >
             <div
                 className="container toc-links"
                 dangerouslySetInnerHTML={{ __html: tocHtmlWtihHeading }}
