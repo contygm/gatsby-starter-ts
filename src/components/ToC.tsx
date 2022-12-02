@@ -13,7 +13,7 @@ export default function TableOfContents(props: { tocHtml: string }) {
         return anchors;
     }, []);
 
-    const activeHash = useActiveHash(targetedIds);
+    const activeHash = useActiveHash(targetedIds)
 
     useEffect(() => {
         // get all links and remove active class

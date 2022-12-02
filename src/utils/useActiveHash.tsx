@@ -22,11 +22,7 @@ export const useActiveHash = (
             observer.observe(document.getElementById(id) as Element);
         });
 
-        return () => {
-            itemIds.forEach((id) => {
-                observer.unobserve(document.getElementById(id) as Element);
-            });
-        };
+        return () => observer.disconnect();
     }, []);
 
     return activeHash;
