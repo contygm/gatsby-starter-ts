@@ -1,11 +1,2 @@
-node_modules/
 .cache/
 .dist/
-public
-src/gatsby-types.d.ts
-coverage/
-cypress/screenshots
-cypress/downloads
-cypress/videos
-content/
-package-lock.json
