@@ -21,7 +21,9 @@ export const fragments = graphql`
         }
         frontmatter {
             title
+            date(formatString: "DD MMMM YYYY")
             description
+            tags
             headerImage {
                 childImageSharp {
                     gatsbyImageData(

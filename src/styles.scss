@@ -437,3 +437,19 @@ pre[class*="language-"] {
 		margin-bottom: 1rem;
 	}
 }
+
+.blog-card-image {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.card {
+	height: 100%;
+  }
+
+.sticky-tag {
+	position: absolute; 
+	top: 0.5rem;
+	right: 0.5rem;
+	z-index: 99;
+}

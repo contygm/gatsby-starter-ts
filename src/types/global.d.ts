@@ -50,7 +50,9 @@ declare global {
         };
         frontmatter: {
             title: string;
+            date: string;
             description: string;
+            tags: Array<string>;
             headerImage: {
                 childImageSharp: {
                     gatsbyImageData: GatsbyImageProps.image;
