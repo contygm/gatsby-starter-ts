@@ -7,6 +7,9 @@ import SEO from '../components/SEO';
 
 export interface BlogIndexProps {
     site: SiteMetadata;
+    allTags: {
+        distinct: Array<string>
+    };
     index: {
         nodes: Array<IndexElements>;
     };
@@ -15,22 +18,21 @@ export interface BlogIndexProps {
     };
 }
 
-const BlogIndex = ({ data: { index } }: PageProps<BlogIndexProps>) => {
+const BlogIndex = ({ data: { index, allTags } }: PageProps<BlogIndexProps>) => {
     const INCREMENT = 6;
+    const tags = allTags.distinct;
     const allPosts = index.nodes;
     const [displayPosts, setDisplayPosts] = useState([...allPosts.slice(0, INCREMENT)]);
     const [loadMore, setLoadMore] = useState(false);
     const [hasMore, setHasMore] = useState(allPosts.length > INCREMENT);
 
     const handleLoadMore = () => {
-        console.log("set load more")
         setLoadMore(true)
     }
 
     useEffect(() => {
         console.log("set display posts")
         if (loadMore && hasMore) {
-            console.log("the good stuff")
             const length = displayPosts.length;
             const isMore = length < allPosts.length
             const nextResults = isMore
@@ -43,7 +45,6 @@ const BlogIndex = ({ data: { index } }: PageProps<BlogIndexProps>) => {
     }, [loadMore, hasMore])
 
     useEffect(() => {
-        console.log("setHasMore")
         const isMore = displayPosts.length < allPosts.length
         setHasMore(isMore)
     }, [displayPosts])
@@ -54,6 +55,60 @@ const BlogIndex = ({ data: { index } }: PageProps<BlogIndexProps>) => {
                 title={`Blog Index`}
                 alignCenter={true}
             />
+            <section className="section ">
+                <div className='container is-max-desktop'>
+                    <div className="columns">
+                        <div className="column">
+                            <div className="field has-addons">
+                                <p className="control">
+                                <input className="input" type="text" placeholder="Find a post" />
+                                </p>
+                                <p className="control">
+                                <button className="button">
+                                    Search
+                                </button>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className='column is-two-thirds'>
+                            <div className='tags'>
+                            {
+                                tags.map((tag: string) => {
+                                    return (
+                                        <span key={tag} id={tag} className='tag is-success is-light is-medium'>
+                                            {tag}
+                                        </span>
+                                    )
+                                })
+                            }
+                            {
+                                tags.map((tag: string) => {
+                                    return (
+                                        <span key={tag} id={tag} className='tag is-success is-light is-medium'>
+                                            {tag}
+                                        </span>
+                                    )
+                                })
+                            }
+                            {
+                                tags.map((tag: string) => {
+                                    return (
+                                        <span key={tag} id={tag} className='tag is-success is-light is-medium'>
+                                            {tag}
+                                        </span>
+                                    )
+                                })
+                            }
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+            </section>
             <article className="section">            
                 <section className='container is-max-desktop'>
                     {/* post cards */}
@@ -113,6 +168,9 @@ export const pageQuery = graphql`
     query BlogQuery {
         site: site {
             ...SiteMetadata
+        }
+        allTags: allMarkdownRemark {
+            distinct(field: frontmatter___tags)
         }
         index: allMarkdownRemark(
             sort: { fields: [frontmatter___date], order: DESC }

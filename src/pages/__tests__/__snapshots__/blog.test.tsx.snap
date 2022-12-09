@@ -160,6 +160,106 @@ exports[`Blog Index Page renders correctly 1`] = `
           </div>
         </div>
       </header>
+      <section
+        class="section "
+      >
+        <div
+          class="container is-max-desktop"
+        >
+          <div
+            class="columns"
+          >
+            <div
+              class="column"
+            >
+              <div
+                class="field has-addons"
+              >
+                <p
+                  class="control"
+                >
+                  <input
+                    class="input"
+                    placeholder="Find a post"
+                    type="text"
+                  />
+                </p>
+                <p
+                  class="control"
+                >
+                  <button
+                    class="button"
+                  >
+                    Search
+                  </button>
+                </p>
+              </div>
+            </div>
+            <div
+              class="column is-two-thirds"
+            >
+              <div
+                class="tags"
+              >
+                <span
+                  class="tag is-success is-light is-medium"
+                  id="one"
+                >
+                  one
+                </span>
+                <span
+                  class="tag is-success is-light is-medium"
+                  id="two"
+                >
+                  two
+                </span>
+                <span
+                  class="tag is-success is-light is-medium"
+                  id="three"
+                >
+                  three
+                </span>
+                <span
+                  class="tag is-success is-light is-medium"
+                  id="one"
+                >
+                  one
+                </span>
+                <span
+                  class="tag is-success is-light is-medium"
+                  id="two"
+                >
+                  two
+                </span>
+                <span
+                  class="tag is-success is-light is-medium"
+                  id="three"
+                >
+                  three
+                </span>
+                <span
+                  class="tag is-success is-light is-medium"
+                  id="one"
+                >
+                  one
+                </span>
+                <span
+                  class="tag is-success is-light is-medium"
+                  id="two"
+                >
+                  two
+                </span>
+                <span
+                  class="tag is-success is-light is-medium"
+                  id="three"
+                >
+                  three
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <article
         class="section"
       >

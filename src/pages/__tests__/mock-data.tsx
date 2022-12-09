@@ -18,6 +18,13 @@ const mockBlogs: BlogIndexProps = {
         description: 'a super duper site!',
         image: '/nothing.png'
     },
+    allTags: {
+        distinct: [
+            "one",
+            "two",
+            "three"
+        ]
+    },
     index: {
         nodes: [
             {
