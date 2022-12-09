@@ -39,7 +39,7 @@ const BlogPost = ({
     const [isBigScreen, setIsBigScreen] = useState(useCheckBigScreen());
     const [btnIcon, setBtnIcon] = useState(faEllipsis);
 
-    // TODO: 
+    // TODO:
     const handleResize = () => {
         if (window.innerWidth < 1024) {
             // mobile screen
