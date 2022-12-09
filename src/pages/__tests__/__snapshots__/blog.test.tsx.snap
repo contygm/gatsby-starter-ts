@@ -150,7 +150,7 @@ exports[`Blog Index Page renders correctly 1`] = `
             <h1
               class="title has-text-white is-1"
             >
-              Blog
+              Blog Index
               <span
                 class="pg-header-period"
               >
@@ -161,40 +161,206 @@ exports[`Blog Index Page renders correctly 1`] = `
         </div>
       </header>
       <article
-        class="content"
+        class="section"
       >
-        <p>
-          some content
-        </p>
+        <section
+          class="container is-max-desktop"
+        >
+          <div
+            class="columns is-multiline is-centered"
+          >
+            <div
+              class="column is-4"
+            >
+              <div
+                class="card"
+              >
+                <div
+                  class="card-image"
+                >
+                  <span
+                    class="tag is-primary sticky-tag"
+                  >
+                    two
+                  </span>
+                  <figure
+                    class="image is-4by3 blog-card-image"
+                  >
+                    <img
+                      alt="Placeholder image"
+                      src="https://bulma.io/images/placeholders/1280x960.png"
+                    />
+                  </figure>
+                </div>
+                <div
+                  class="card-content"
+                >
+                  <div
+                    class="media"
+                  >
+                    <div
+                      class="media-content"
+                    >
+                      <p
+                        class="title is-4"
+                      >
+                        Baking Tutorial
+                      </p>
+                      <p
+                        class="subtitle is-6"
+                      >
+                        <time
+                          datetime="3-2-2021"
+                        >
+                          3-2-2021
+                        </time>
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="content"
+                  >
+                    <p>
+                      a baking tutorial
+                    </p>
+                    <a
+                      href="/blog/baking-tutorial/"
+                    >
+                      Read more...
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="column is-4"
+            >
+              <div
+                class="card"
+              >
+                <div
+                  class="card-image"
+                >
+                  <span
+                    class="tag is-primary sticky-tag"
+                  >
+                    one
+                  </span>
+                  <figure
+                    class="image is-4by3 blog-card-image"
+                  >
+                    <img
+                      alt="Placeholder image"
+                      src="https://bulma.io/images/placeholders/1280x960.png"
+                    />
+                  </figure>
+                </div>
+                <div
+                  class="card-content"
+                >
+                  <div
+                    class="media"
+                  >
+                    <div
+                      class="media-content"
+                    >
+                      <p
+                        class="title is-4"
+                      >
+                        10 Best Things
+                      </p>
+                      <p
+                        class="subtitle is-6"
+                      >
+                        <time
+                          datetime="12-2-2021"
+                        >
+                          12-2-2021
+                        </time>
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="content"
+                  >
+                    <p>
+                      a list of the ten best things
+                    </p>
+                    <a
+                      href="/blog/ten-best-things/"
+                    >
+                      Read more...
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="column is-4"
+            >
+              <div
+                class="card"
+              >
+                <div
+                  class="card-image"
+                >
+                  <span
+                    class="tag is-primary sticky-tag"
+                  >
+                    one
+                  </span>
+                  <figure
+                    class="image is-4by3 blog-card-image"
+                  >
+                    <img
+                      alt="Placeholder image"
+                      src="https://bulma.io/images/placeholders/1280x960.png"
+                    />
+                  </figure>
+                </div>
+                <div
+                  class="card-content"
+                >
+                  <div
+                    class="media"
+                  >
+                    <div
+                      class="media-content"
+                    >
+                      <p
+                        class="title is-4"
+                      >
+                        Guide
+                      </p>
+                      <p
+                        class="subtitle is-6"
+                      >
+                        <time
+                          datetime="4-2-2021"
+                        >
+                          4-2-2021
+                        </time>
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="content"
+                  >
+                    <p>
+                      a guide
+                    </p>
+                    <a
+                      href="/blog/guide/"
+                    >
+                      Read more...
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </article>
-      <section>
-        <h2>
-          All Blogs
-        </h2>
-        <ul>
-          <li>
-            <a
-              href="/blog/baking-tutorial/"
-            >
-              Baking Tutorial
-            </a>
-          </li>
-          <li>
-            <a
-              href="/blog/ten-best-things/"
-            >
-              10 Best Things
-            </a>
-          </li>
-          <li>
-            <a
-              href="/blog/guide/"
-            >
-              Guide
-            </a>
-          </li>
-        </ul>
-      </section>
     </main>
     <footer
       class="footer"

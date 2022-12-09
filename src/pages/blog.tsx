@@ -1,5 +1,6 @@
 import { Link, graphql, HeadProps, PageProps } from 'gatsby';
 import * as React from 'react';
+import { useEffect, useState } from 'react';
 import Layout from '../components/Layout';
 import PageHeader from '../components/PageHeader';
 import SEO from '../components/SEO';
@@ -15,7 +16,38 @@ export interface BlogIndexProps {
 }
 
 const BlogIndex = ({ data: { index } }: PageProps<BlogIndexProps>) => {
-    const posts = index.nodes;
+    const INCREMENT = 6;
+    const allPosts = index.nodes;
+    const [displayPosts, setDisplayPosts] = useState([...allPosts.slice(0, INCREMENT)]);
+    const [loadMore, setLoadMore] = useState(false);
+    const [hasMore, setHasMore] = useState(allPosts.length > INCREMENT);
+
+    const handleLoadMore = () => {
+        console.log("set load more")
+        setLoadMore(true)
+    }
+
+    useEffect(() => {
+        console.log("set display posts")
+        if (loadMore && hasMore) {
+            console.log("the good stuff")
+            const length = displayPosts.length;
+            const isMore = length < allPosts.length
+            const nextResults = isMore
+                ? allPosts.slice(length, length + INCREMENT)
+                : []
+            // combine old displayPosts with next batch of posts
+            setDisplayPosts([...displayPosts, ...nextResults])
+            setLoadMore(false)
+        }
+    }, [loadMore, hasMore])
+
+    useEffect(() => {
+        console.log("setHasMore")
+        const isMore = displayPosts.length < allPosts.length
+        setHasMore(isMore)
+    }, [displayPosts])
+
     return (
         <Layout>
             <PageHeader
@@ -24,8 +56,9 @@ const BlogIndex = ({ data: { index } }: PageProps<BlogIndexProps>) => {
             />
             <article className="section">            
                 <section className='container is-max-desktop'>
+                    {/* post cards */}
                     <div className="columns is-multiline is-centered">
-                        {posts.map((post: IndexElements) => {
+                        {displayPosts.map((post: IndexElements) => {
                             return (
                                 <div className='column is-4' key={post.frontmatter.title}>
                                     <div className="card" >
@@ -39,15 +72,15 @@ const BlogIndex = ({ data: { index } }: PageProps<BlogIndexProps>) => {
                                             <div className="media">
                                                 <div className="media-content">
                                                     <p className="title is-4">{post.frontmatter.title}</p>
-                                                    <p className="subtitle is-6"><time dateTime={post.frontmatter.date}>{post.frontmatter.date}</time></p>
+                                                    <p className="subtitle is-6">
+                                                        <time dateTime={post.frontmatter.date}>{post.frontmatter.date}</time>
+                                                    </p>
                                                 </div>
                                             </div>
-
                                             <div className="content">
                                                 <p>
                                                     {post.frontmatter.description}
                                                 </p>
-                                                
                                                 <Link to={`/blog${post.fields.slug}`}>
                                                     Read more...
                                                 </Link>
@@ -58,6 +91,13 @@ const BlogIndex = ({ data: { index } }: PageProps<BlogIndexProps>) => {
                             );
                         })}
                     </div>
+                    {hasMore && 
+                        <div className='columns is-mobile is-centered'>
+                            <button className='button is-dark' onClick={handleLoadMore}>
+                                Load more...
+                            </button>
+                        </div>
+                    }
                 </section>
             </article>
         </Layout>

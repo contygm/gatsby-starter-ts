@@ -28,7 +28,9 @@ const mockBlogs: BlogIndexProps = {
                 },
                 frontmatter: {
                     title: 'Baking Tutorial',
+                    date: '3-2-2021',
                     description: 'a baking tutorial',
+                    tags: ["two", "three"],
                     headerImage: {
                         childImageSharp: {
                             gatsbyImageData: {}
@@ -44,6 +46,8 @@ const mockBlogs: BlogIndexProps = {
                 },
                 frontmatter: {
                     title: '10 Best Things',
+                    date: '12-2-2021',
+                    tags: ["one", "three"],
                     description: 'a list of the ten best things',
                     headerImage: {
                         childImageSharp: {
@@ -60,6 +64,8 @@ const mockBlogs: BlogIndexProps = {
                 },
                 frontmatter: {
                     title: 'Guide',
+                    date: '4-2-2021',
+                    tags: ["one", "two", "three"],
                     description: 'a guide',
                     headerImage: {
                         childImageSharp: {
@@ -80,7 +86,9 @@ const mockBlogs: BlogIndexProps = {
                 },
                 frontmatter: {
                     title: 'Baking Tutorial',
+                    date: '3-2-2021',
                     description: 'a baking tutorial',
+                    tags: ["two", "three"],
                     headerImage: {
                         childImageSharp: {
                             gatsbyImageData: {}
@@ -97,6 +105,8 @@ const mockBlogs: BlogIndexProps = {
                 frontmatter: {
                     title: '10 Best Things',
                     description: 'a list of the ten best things',
+                    tags: ["one", "two", "three"],
+                    date: '2-2-2021',
                     headerImage: {
                         childImageSharp: {
                             gatsbyImageData: {}
@@ -113,6 +123,8 @@ const mockBlogs: BlogIndexProps = {
                 frontmatter: {
                     title: 'Guide',
                     description: 'a guide',
+                    tags: ["one", "two"],
+                    date: '5-2-2021',
                     headerImage: {
                         childImageSharp: {
                             gatsbyImageData: {}
