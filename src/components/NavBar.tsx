@@ -77,7 +77,7 @@ const NavBar = () => {
                         Blog
                     </Link>
                     <Link
-                        to="/"
+                        to="/wiki"
                         className="navbar-item"
                         data-cy="nav-link-wiki"
                     >

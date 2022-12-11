@@ -1,7 +1,12 @@
 import React, { FunctionComponent } from 'react';
 import { graphql, HeadProps, PageProps } from 'gatsby';
-import { Layout, SEO,  PageHeader, SearchFilterRow, PostIndex} from '../components';
-
+import {
+    Layout,
+    SEO,
+    PageHeader,
+    SearchFilterRow,
+    PostIndex
+} from '../components';
 
 export interface BlogIndexProps {
     site: SiteMetadata;
@@ -16,7 +21,9 @@ export interface BlogIndexProps {
     };
 }
 
-const BlogIndex: FunctionComponent<PageProps<BlogIndexProps>> = ({ data: { index, allTags } }: PageProps<BlogIndexProps>) => {
+const BlogIndex: FunctionComponent<PageProps<BlogIndexProps>> = ({
+    data: { index, allTags }
+}: PageProps<BlogIndexProps>) => {
     const INCREMENT = 6;
     const tags = allTags.distinct;
     const allPosts = index.nodes;
@@ -27,11 +34,14 @@ const BlogIndex: FunctionComponent<PageProps<BlogIndexProps>> = ({ data: { index
                 title={`Blog Index`}
                 alignCenter={true}
             />
-            <SearchFilterRow tags={tags}/>
-            <PostIndex allPosts={allPosts} increment={INCREMENT}/>
+            <SearchFilterRow tags={tags} />
+            <PostIndex
+                allPosts={allPosts}
+                increment={INCREMENT}
+            />
         </Layout>
     );
-} 
+};
 
 export default BlogIndex;
 
@@ -44,9 +54,11 @@ export const pageQuery = graphql`
         site: site {
             ...SiteMetadata
         }
-        allTags: allMarkdownRemark(filter: {frontmatter: {type: {eq: "blog"}}}) {
-			distinct(field: frontmatter___tags)
-		}
+        allTags: allMarkdownRemark(
+            filter: { frontmatter: { type: { eq: "blog" } } }
+        ) {
+            distinct(field: frontmatter___tags)
+        }
         index: allMarkdownRemark(
             sort: { fields: [frontmatter___date], order: DESC }
             filter: { frontmatter: { type: { eq: "blog" } } }

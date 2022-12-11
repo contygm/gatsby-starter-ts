@@ -5,7 +5,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEllipsis, faXmark } from '@fortawesome/free-solid-svg-icons';
 import useCheckMobileScreen from '../utils/useCheckMobileScreen';
 import useCheckBigScreen from '../utils/useCheckBigScreen';
-import { Layout, PageHeader, SEO, AuthorBlurb,  SideBar, ToC, OutsideClicker,  StickySocialMedia}  from '../components';
+import {
+    Layout,
+    PageHeader,
+    SEO,
+    AuthorBlurb,
+    SideBar,
+    ToC,
+    OutsideClicker,
+    StickySocialMedia
+} from '../components';
 
 export interface BlogPostProps {
     site: {
@@ -30,6 +39,7 @@ const BlogPost = ({
     const [isMobile, setIsMobile] = useState(useCheckMobileScreen());
     const [isBigScreen, setIsBigScreen] = useState(useCheckBigScreen());
     const [btnIcon, setBtnIcon] = useState(faEllipsis);
+    const image = getImage(markdownRemark.frontmatter.headerImage);
 
     // TODO:
     const handleResize = () => {
@@ -50,10 +60,6 @@ const BlogPost = ({
         }
     };
 
-    useEffect(() => {
-        window.addEventListener('resize', handleResize);
-    });
-
     const handleClickOutside = () => {
         setShowMobileToc(false);
         setBtnIcon(faEllipsis);
@@ -69,7 +75,10 @@ const BlogPost = ({
         }
     };
 
-    const image = getImage(markdownRemark.frontmatter.headerImage);
+    useEffect(() => {
+        window.addEventListener('resize', handleResize);
+    });
+
     return (
         <Layout>
             {/* full page header with social share */}

@@ -1,6 +1,12 @@
 import React from 'react';
 import { graphql, HeadProps, PageProps } from 'gatsby';
-import { Layout, PageHeader, PostIndex, SearchFilterRow, SEO }  from '../components/';
+import {
+    Layout,
+    PageHeader,
+    PostIndex,
+    SearchFilterRow,
+    SEO
+} from '../components/';
 
 export interface WikiIndexProps {
     site: SiteMetadata;
@@ -26,8 +32,11 @@ const WikiIndex = ({ data: { index, allTags } }: PageProps<WikiIndexProps>) => {
                 title={`Wiki Index`}
                 alignCenter={true}
             />
-            <SearchFilterRow tags={tags}/>
-            <PostIndex allPosts={allPosts} increment={INCREMENT}/>
+            <SearchFilterRow tags={tags} />
+            <PostIndex
+                allPosts={allPosts}
+                increment={INCREMENT}
+            />
         </Layout>
     );
 };
@@ -42,9 +51,11 @@ export const pageQuery = graphql`
         site: site {
             ...SiteMetadata
         }
-        allTags: allMarkdownRemark(filter: {frontmatter: {type: {eq: "wiki"}}}) {
-			distinct(field: frontmatter___tags)
-		}
+        allTags: allMarkdownRemark(
+            filter: { frontmatter: { type: { eq: "wiki" } } }
+        ) {
+            distinct(field: frontmatter___tags)
+        }
         index: allMarkdownRemark(
             sort: { fields: [frontmatter___date], order: DESC }
             filter: { frontmatter: { type: { eq: "wiki" } } }
