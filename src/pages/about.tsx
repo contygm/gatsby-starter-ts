@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { useSiteMetadata } from '../utils/useSiteMetadata';
 import { Layout, SEO,  PageHeader, ContactForm } from '../components';
 

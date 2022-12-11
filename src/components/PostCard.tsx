@@ -1,5 +1,5 @@
 import { Link } from 'gatsby';
-import * as React from 'react';
+import React from 'react';
 
 const PostCard = (props: {post: IndexElements}) => {
 	return (  

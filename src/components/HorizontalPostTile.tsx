@@ -1,6 +1,6 @@
 import { Link } from 'gatsby';
 import { GatsbyImage, IGatsbyImageData } from 'gatsby-plugin-image';
-import * as React from 'react';
+import React from 'react';
 
 export interface PostTileProps {
     title: string;

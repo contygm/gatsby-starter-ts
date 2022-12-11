@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import NavBar from './NavBar';
 import Footer from './Footer';
 import { useSiteMetadata } from '../utils/useSiteMetadata';

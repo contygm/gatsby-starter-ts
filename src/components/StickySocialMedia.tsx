@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useState } from 'react';
 import {
     faMugHot,
     faGhost,
@@ -7,7 +7,6 @@ import {
     faShare
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useState } from 'react';
 
 const StickySocialMedia = (props: {
     isVertical: boolean;
