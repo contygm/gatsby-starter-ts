@@ -64,7 +64,7 @@ exports[`NavBar renders correctly 1`] = `
         <a
           class="navbar-item"
           data-cy="nav-link-wiki"
-          href="/"
+          href="/wiki"
         >
           Wiki
         </a>

@@ -67,7 +67,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
           <a
             class="navbar-item"
             data-cy="nav-link-wiki"
-            href="/"
+            href="/wiki"
           >
             Wiki
           </a>
@@ -1239,7 +1239,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
           <a
             class="navbar-item"
             data-cy="nav-link-wiki"
-            href="/"
+            href="/wiki"
           >
             Wiki
           </a>
@@ -2411,7 +2411,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
           <a
             class="navbar-item"
             data-cy="nav-link-wiki"
-            href="/"
+            href="/wiki"
           >
             Wiki
           </a>
@@ -3603,7 +3603,7 @@ exports[`Blog Posts Page renders correctly 1`] = `
           <a
             class="navbar-item"
             data-cy="nav-link-wiki"
-            href="/"
+            href="/wiki"
           >
             Wiki
           </a>
@@ -4755,7 +4755,7 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
           <a
             class="navbar-item"
             data-cy="nav-link-wiki"
-            href="/"
+            href="/wiki"
           >
             Wiki
           </a>
@@ -5927,7 +5927,7 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
           <a
             class="navbar-item"
             data-cy="nav-link-wiki"
-            href="/"
+            href="/wiki"
           >
             Wiki
           </a>

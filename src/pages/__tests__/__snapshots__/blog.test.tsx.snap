@@ -87,7 +87,7 @@ exports[`Blog Index Page renders correctly 1`] = `
           <a
             class="navbar-item"
             data-cy="nav-link-wiki"
-            href="/"
+            href="/wiki"
           >
             Wiki
           </a>
@@ -203,39 +203,9 @@ exports[`Blog Index Page renders correctly 1`] = `
               >
                 <span
                   class="tag is-success is-light is-medium"
-                  id="one"
+                  id="all"
                 >
-                  one
-                </span>
-                <span
-                  class="tag is-success is-light is-medium"
-                  id="two"
-                >
-                  two
-                </span>
-                <span
-                  class="tag is-success is-light is-medium"
-                  id="three"
-                >
-                  three
-                </span>
-                <span
-                  class="tag is-success is-light is-medium"
-                  id="one"
-                >
-                  one
-                </span>
-                <span
-                  class="tag is-success is-light is-medium"
-                  id="two"
-                >
-                  two
-                </span>
-                <span
-                  class="tag is-success is-light is-medium"
-                  id="three"
-                >
-                  three
+                  All
                 </span>
                 <span
                   class="tag is-success is-light is-medium"
