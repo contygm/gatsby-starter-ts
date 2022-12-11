@@ -1,9 +1,6 @@
 import * as React from 'react';
-import ContactForm from '../components/ContactForm';
-import Layout from '../components/Layout';
-import PageHeader from '../components/PageHeader';
-import SEO from '../components/SEO';
 import { useSiteMetadata } from '../utils/useSiteMetadata';
+import { Layout, SEO,  PageHeader, ContactForm } from '../components';
 
 const AboutPage = () => {
     const { businessName, phone, email } = useSiteMetadata();

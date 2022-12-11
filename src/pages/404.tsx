@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
-import Layout from '../components/Layout';
-import SEO from '../components/SEO';
+import { Layout, SEO } from '../components';
 
 /**
  * @description 404 page

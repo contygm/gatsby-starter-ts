@@ -1,8 +1,7 @@
 import * as React from 'react';
-import Layout from '../../components/Layout';
 import { Link } from 'gatsby';
-import PageHeader from '../../components/PageHeader';
-import SEO from '../../components/SEO';
+import { Layout, SEO,  PageHeader} from '../../components';
+
 
 const legalPageMap = [
     {

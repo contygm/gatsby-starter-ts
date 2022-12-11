@@ -1,19 +1,11 @@
-import * as React from 'react';
+import React, { useEffect, useState } from 'react';
 import { graphql, PageProps, HeadProps } from 'gatsby';
-import Layout from '../components/Layout';
-import SEO from '../components/SEO';
-import PageHeader from '../components/PageHeader';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
-import AuthorBlurb from '../components/AuthorBlurb';
-import SideBar from '../components/SideBar';
-import ToC from '../components/ToC';
-import { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEllipsis, faXmark } from '@fortawesome/free-solid-svg-icons';
-import OutsideClicker from '../components/OutsideClicker';
-import StickySocialMedia from '../components/StickySocialMedia';
 import useCheckMobileScreen from '../utils/useCheckMobileScreen';
 import useCheckBigScreen from '../utils/useCheckBigScreen';
+import { Layout, PageHeader, SEO, AuthorBlurb,  SideBar, ToC, OutsideClicker,  StickySocialMedia}  from '../components';
 
 export interface BlogPostProps {
     site: {

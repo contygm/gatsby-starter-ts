@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
-import FaIconLink from '../components/FaIconLink';
+import FaIconLink from './FaIconLink';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 export interface AuthorBlurbProps {

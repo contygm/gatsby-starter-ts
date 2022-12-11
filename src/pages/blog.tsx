@@ -1,10 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import { graphql, HeadProps, PageProps } from 'gatsby';
-import Layout from '../components/Layout';
-import PageHeader from '../components/PageHeader';
-import PostIndex from '../components/PostIndex';
-import SearchFilterRow from '../components/SearchFilterRow';
-import SEO from '../components/SEO';
+import { Layout, SEO,  PageHeader, SearchFilterRow, PostIndex} from '../components';
+
 
 export interface BlogIndexProps {
     site: SiteMetadata;

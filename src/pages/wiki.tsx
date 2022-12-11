@@ -1,10 +1,6 @@
 import React from 'react';
 import { graphql, HeadProps, PageProps } from 'gatsby';
-import Layout from '../components/Layout';
-import PageHeader from '../components/PageHeader';
-import PostIndex from '../components/PostIndex';
-import SearchFilterRow from '../components/SearchFilterRow';
-import SEO from '../components/SEO';
+import { Layout, PageHeader, PostIndex, SearchFilterRow, SEO }  from '../components/';
 
 export interface WikiIndexProps {
     site: SiteMetadata;
