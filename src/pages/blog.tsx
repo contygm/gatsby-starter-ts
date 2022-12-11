@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react';
+import React, { FunctionComponent, useEffect, useState } from 'react';
 import { graphql, HeadProps, PageProps } from 'gatsby';
 import {
     Layout,
@@ -26,7 +26,22 @@ const BlogIndex: FunctionComponent<PageProps<BlogIndexProps>> = ({
 }: PageProps<BlogIndexProps>) => {
     const INCREMENT = 6;
     const tags = allTags.distinct;
-    const allPosts = index.nodes;
+    const unfilteredPosts = index.nodes;
+    const [allPosts, setAllPosts] = useState(index.nodes);
+    const [tagFilter, setTagFilter] = useState("all");
+
+    const handleFilterUpdate = (e: any ) => {
+        setTagFilter(e.target.id);
+    };
+
+    useEffect(() => {
+        if(tagFilter === "all") {
+            setAllPosts(unfilteredPosts)
+        } else {
+            const filtered = unfilteredPosts.filter(post => post.frontmatter.tags.includes(tagFilter));
+            setAllPosts(filtered);
+        }
+    }, [tagFilter])
 
     return (
         <Layout>
@@ -34,7 +49,7 @@ const BlogIndex: FunctionComponent<PageProps<BlogIndexProps>> = ({
                 title={`Blog Index`}
                 alignCenter={true}
             />
-            <SearchFilterRow tags={tags} />
+            <SearchFilterRow tags={tags} handleFilterUpdate={handleFilterUpdate}/>
             <PostIndex
                 allPosts={allPosts}
                 increment={INCREMENT}

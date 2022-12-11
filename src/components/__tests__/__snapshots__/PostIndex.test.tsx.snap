@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`PostIndex default renders correctly 1`] = `
+exports[`PostIndex default renders and load btn works correctly 1`] = `
 <DocumentFragment>
   <article
     class="section"

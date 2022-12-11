@@ -34,6 +34,10 @@ const PostIndex: FunctionComponent<PostIndexProps> = ({
     }, [loadMore, hasMore]);
 
     useEffect(() => {
+        setDisplayPosts([...allPosts.slice(0, increment)])
+    }, [allPosts]);
+
+    useEffect(() => {
         const stillHasMore = displayPosts.length < allPosts.length;
         setHasMore(stillHasMore);
     }, [displayPosts]);

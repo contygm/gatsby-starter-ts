@@ -209,18 +209,21 @@ exports[`Wiki Index Page renders correctly 1`] = `
                 </span>
                 <span
                   class="tag is-success is-light is-medium"
+                  data-testid="one"
                   id="one"
                 >
                   one
                 </span>
                 <span
                   class="tag is-success is-light is-medium"
+                  data-testid="two"
                   id="two"
                 >
                   two
                 </span>
                 <span
                   class="tag is-success is-light is-medium"
+                  data-testid="three"
                   id="three"
                 >
                   three
