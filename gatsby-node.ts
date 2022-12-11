@@ -15,10 +15,27 @@ export const createPages: GatsbyNode['createPages'] = async ({
     // Get all markdown posts
     const result = await graphql(`
         {
-            allMarkdownRemark(
+            blogs: allMarkdownRemark(
                 sort: { fields: [frontmatter___date], order: DESC }
                 limit: 1000
                 filter: { frontmatter: { type: { eq: "blog" } } }
+            ) {
+                nodes {
+                    id
+                    fields {
+                        slug
+                    }
+                    frontmatter {
+                        title
+                        type
+                        related
+                    }
+                }
+            }
+            wikis: allMarkdownRemark(
+                sort: { fields: [frontmatter___date], order: DESC }
+                limit: 1000
+                filter: { frontmatter: { type: { eq: "wiki" } } }
             ) {
                 nodes {
                     id
@@ -46,7 +63,7 @@ export const createPages: GatsbyNode['createPages'] = async ({
     // Create blog posts pages
     // But only if there's at least one markdown file found at "content/blog" (defined in gatsby-config.js)
     // `context` is available in the template as a prop and as a variable in GraphQL
-    const allBlogs = result.data.allMarkdownRemark.nodes;
+    const allBlogs = result.data.blogs.nodes;
     if (allBlogs.length > 0) {
         allBlogs.forEach((post, index) => {
             const previousPostId = index === 0 ? null : allBlogs[index - 1].id;
@@ -54,6 +71,26 @@ export const createPages: GatsbyNode['createPages'] = async ({
                 index === allBlogs.length - 1 ? null : allBlogs[index + 1].id;
             createPage({
                 path: `blog${post.fields.slug}`,
+                component: blogTemplate,
+                context: {
+                    id: post.id,
+                    slug: post.fields.slug,
+                    previousPostId,
+                    nextPostId,
+                    relatedPosts: post.frontmatter.related
+                }
+            });
+        });
+    }
+
+    const allWikis = result.data.wikis.nodes;
+    if (allWikis.length > 0) {
+        allWikis.forEach((post, index) => {
+            const previousPostId = index === 0 ? null : allWikis[index - 1].id;
+            const nextPostId =
+                index === allWikis.length - 1 ? null : allWikis[index + 1].id;
+            createPage({
+                path: `wiki${post.fields.slug}`,
                 component: blogTemplate,
                 context: {
                     id: post.id,

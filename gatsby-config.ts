@@ -77,6 +77,13 @@ const config: GatsbyConfig = {
             }
         },
         {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                path: `${__dirname}/content/wiki`,
+                name: `wiki`
+            }
+        },
+        {
             resolve: 'gatsby-plugin-eslint',
             options: {
                 // Gatsby required rules directory
