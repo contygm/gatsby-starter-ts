@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import BlogIndex, { Head } from '../blog';
-import { mockBlogHeadData, mockBlogPageData } from './mock-data';
+import { mockBlogHeadData, mockBlogPageData } from '../../../__mocks__/mock-page-data';
 
 describe('Blog Index Page', () => {
     it('renders correctly', () => {
