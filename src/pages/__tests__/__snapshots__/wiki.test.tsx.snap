@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Blog Index Page header meta data renders correctly 1`] = `
+exports[`Wiki Index Page header meta data renders correctly 1`] = `
 <DocumentFragment>
   <title>
     Starter
@@ -20,7 +20,7 @@ exports[`Blog Index Page header meta data renders correctly 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Blog Index Page renders correctly 1`] = `
+exports[`Wiki Index Page renders correctly 1`] = `
 <DocumentFragment>
   <div
     id="app-container"
@@ -150,7 +150,7 @@ exports[`Blog Index Page renders correctly 1`] = `
             <h1
               class="title has-text-white is-1"
             >
-              Blog Index
+              Wiki Index
               <span
                 class="pg-header-period"
               >

@@ -1,0 +1,155 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PostIndex default renders correctly 1`] = `
+<DocumentFragment>
+  <article
+    class="section"
+  >
+    <section
+      class="container is-max-desktop"
+    >
+      <div
+        class="columns is-multiline is-centered"
+      >
+        <div
+          class="column is-4"
+          data-testid="post-card"
+        >
+          <div
+            class="card"
+          >
+            <div
+              class="card-image"
+            >
+              <span
+                class="tag is-primary sticky-tag"
+              >
+                two
+              </span>
+              <figure
+                class="image is-4by3 blog-card-image"
+              >
+                <img
+                  alt="Placeholder image"
+                  src="https://bulma.io/images/placeholders/1280x960.png"
+                />
+              </figure>
+            </div>
+            <div
+              class="card-content"
+            >
+              <div
+                class="media"
+              >
+                <div
+                  class="media-content"
+                >
+                  <p
+                    class="title is-4"
+                  >
+                    Baking Tutorial
+                  </p>
+                  <p
+                    class="subtitle is-6"
+                  >
+                    <time
+                      datetime="3-2-2021"
+                    >
+                      3-2-2021
+                    </time>
+                  </p>
+                </div>
+              </div>
+              <div
+                class="content"
+              >
+                <p>
+                  a baking tutorial
+                </p>
+                <a
+                  href="/blog/baking-tutorial/"
+                >
+                  Read more...
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="column is-4"
+          data-testid="post-card"
+        >
+          <div
+            class="card"
+          >
+            <div
+              class="card-image"
+            >
+              <span
+                class="tag is-primary sticky-tag"
+              >
+                one
+              </span>
+              <figure
+                class="image is-4by3 blog-card-image"
+              >
+                <img
+                  alt="Placeholder image"
+                  src="https://bulma.io/images/placeholders/1280x960.png"
+                />
+              </figure>
+            </div>
+            <div
+              class="card-content"
+            >
+              <div
+                class="media"
+              >
+                <div
+                  class="media-content"
+                >
+                  <p
+                    class="title is-4"
+                  >
+                    10 Best Things
+                  </p>
+                  <p
+                    class="subtitle is-6"
+                  >
+                    <time
+                      datetime="12-2-2021"
+                    >
+                      12-2-2021
+                    </time>
+                  </p>
+                </div>
+              </div>
+              <div
+                class="content"
+              >
+                <p>
+                  a list of the ten best things
+                </p>
+                <a
+                  href="/blog/ten-best-things/"
+                >
+                  Read more...
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="columns is-mobile is-centered"
+      >
+        <button
+          class="button is-dark"
+        >
+          Load more...
+        </button>
+      </div>
+    </section>
+  </article>
+</DocumentFragment>
+`;

@@ -46,6 +46,7 @@ const PostIndex: FunctionComponent<PostIndexProps> = ({
                     {displayPosts.map((post: IndexElements) => {
                         return (
                             <div
+                                data-testid={"post-card"}
                                 className="column is-4"
                                 key={post.frontmatter.title}
                             >
