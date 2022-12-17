@@ -72,6 +72,25 @@ exports[`PostIndex default renders and load btn works correctly 1`] = `
                   Read more...
                 </a>
               </div>
+              <div
+                class="card-footer"
+              >
+                <p
+                  class="mt-2 ml-2 mr-2"
+                >
+                  Tags:
+                </p>
+                <div
+                  class="tags"
+                >
+                  <span
+                    class="tag mt-2"
+                    id="three"
+                  >
+                    three
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -135,6 +154,25 @@ exports[`PostIndex default renders and load btn works correctly 1`] = `
                 >
                   Read more...
                 </a>
+              </div>
+              <div
+                class="card-footer"
+              >
+                <p
+                  class="mt-2 ml-2 mr-2"
+                >
+                  Tags:
+                </p>
+                <div
+                  class="tags"
+                >
+                  <span
+                    class="tag mt-2"
+                    id="three"
+                  >
+                    three
+                  </span>
+                </div>
               </div>
             </div>
           </div>

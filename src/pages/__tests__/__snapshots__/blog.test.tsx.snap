@@ -20,7 +20,7 @@ exports[`Blog Index Page header meta data renders correctly 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Blog Index Page renders correctly 1`] = `
+exports[`Blog Index Page renders and filters correctly 1`] = `
 <DocumentFragment>
   <div
     id="app-container"
@@ -303,6 +303,25 @@ exports[`Blog Index Page renders correctly 1`] = `
                       Read more...
                     </a>
                   </div>
+                  <div
+                    class="card-footer"
+                  >
+                    <p
+                      class="mt-2 ml-2 mr-2"
+                    >
+                      Tags:
+                    </p>
+                    <div
+                      class="tags"
+                    >
+                      <span
+                        class="tag mt-2"
+                        id="three"
+                      >
+                        three
+                      </span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -367,6 +386,25 @@ exports[`Blog Index Page renders correctly 1`] = `
                       Read more...
                     </a>
                   </div>
+                  <div
+                    class="card-footer"
+                  >
+                    <p
+                      class="mt-2 ml-2 mr-2"
+                    >
+                      Tags:
+                    </p>
+                    <div
+                      class="tags"
+                    >
+                      <span
+                        class="tag mt-2"
+                        id="three"
+                      >
+                        three
+                      </span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -430,6 +468,31 @@ exports[`Blog Index Page renders correctly 1`] = `
                     >
                       Read more...
                     </a>
+                  </div>
+                  <div
+                    class="card-footer"
+                  >
+                    <p
+                      class="mt-2 ml-2 mr-2"
+                    >
+                      Tags:
+                    </p>
+                    <div
+                      class="tags"
+                    >
+                      <span
+                        class="tag mt-2"
+                        id="two"
+                      >
+                        two
+                      </span>
+                      <span
+                        class="tag mt-2"
+                        id="three"
+                      >
+                        three
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>

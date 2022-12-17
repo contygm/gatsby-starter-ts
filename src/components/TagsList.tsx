@@ -1,6 +1,9 @@
 import React from 'react';
 
-const TagsList = (props: { tags: Array<string>, handleFilterUpdate: (e: any) => void}) => {
+const TagsList = (props: {
+    tags: Array<string>;
+    handleFilterUpdate: (e: any) => void;
+}) => {
     return (
         <div className="tags">
             <span

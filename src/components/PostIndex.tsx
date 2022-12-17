@@ -4,11 +4,13 @@ import PostCard from './PostCard';
 interface PostIndexProps {
     allPosts: Array<IndexElements>;
     increment: number;
+    handleFilterUpdate: (e: any) => void;
 }
 
 const PostIndex: FunctionComponent<PostIndexProps> = ({
     allPosts,
-    increment
+    increment,
+    handleFilterUpdate
 }: PostIndexProps) => {
     const [displayPosts, setDisplayPosts] = useState([
         ...allPosts.slice(0, increment)
@@ -34,7 +36,7 @@ const PostIndex: FunctionComponent<PostIndexProps> = ({
     }, [loadMore, hasMore]);
 
     useEffect(() => {
-        setDisplayPosts([...allPosts.slice(0, increment)])
+        setDisplayPosts([...allPosts.slice(0, increment)]);
     }, [allPosts]);
 
     useEffect(() => {
@@ -50,11 +52,14 @@ const PostIndex: FunctionComponent<PostIndexProps> = ({
                     {displayPosts.map((post: IndexElements) => {
                         return (
                             <div
-                                data-testid={"post-card"}
+                                data-testid={'post-card'}
                                 className="column is-4"
                                 key={post.frontmatter.title}
                             >
-                                <PostCard post={post} />
+                                <PostCard
+                                    post={post}
+                                    handleFilterUpdate={handleFilterUpdate}
+                                />
                             </div>
                         );
                     })}

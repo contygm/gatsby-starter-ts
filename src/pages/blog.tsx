@@ -28,20 +28,22 @@ const BlogIndex: FunctionComponent<PageProps<BlogIndexProps>> = ({
     const tags = allTags.distinct;
     const unfilteredPosts = index.nodes;
     const [allPosts, setAllPosts] = useState(index.nodes);
-    const [tagFilter, setTagFilter] = useState("all");
+    const [tagFilter, setTagFilter] = useState('all');
 
-    const handleFilterUpdate = (e: any ) => {
+    const handleFilterUpdate = (e: any) => {
         setTagFilter(e.target.id);
     };
 
     useEffect(() => {
-        if(tagFilter === "all") {
-            setAllPosts(unfilteredPosts)
+        if (tagFilter === 'all') {
+            setAllPosts(unfilteredPosts);
         } else {
-            const filtered = unfilteredPosts.filter(post => post.frontmatter.tags.includes(tagFilter));
+            const filtered = unfilteredPosts.filter((post) =>
+                post.frontmatter.tags.includes(tagFilter)
+            );
             setAllPosts(filtered);
         }
-    }, [tagFilter])
+    }, [tagFilter]);
 
     return (
         <Layout>
@@ -49,10 +51,14 @@ const BlogIndex: FunctionComponent<PageProps<BlogIndexProps>> = ({
                 title={`Blog Index`}
                 alignCenter={true}
             />
-            <SearchFilterRow tags={tags} handleFilterUpdate={handleFilterUpdate}/>
+            <SearchFilterRow
+                tags={tags}
+                handleFilterUpdate={handleFilterUpdate}
+            />
             <PostIndex
                 allPosts={allPosts}
                 increment={INCREMENT}
+                handleFilterUpdate={handleFilterUpdate}
             />
         </Layout>
     );

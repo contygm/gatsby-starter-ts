@@ -1,7 +1,10 @@
 import { Link } from 'gatsby';
 import React from 'react';
 
-const PostCard = (props: { post: IndexElements }) => {
+const PostCard = (props: {
+    post: IndexElements;
+    handleFilterUpdate: (e: any) => void;
+}) => {
     return (
         <div className="card">
             <div className="card-image">
@@ -33,6 +36,26 @@ const PostCard = (props: { post: IndexElements }) => {
                     <Link to={`/blog${props.post.fields.slug}`}>
                         Read more...
                     </Link>
+                </div>
+                <div className="card-footer">
+                    <p className="mt-2 ml-2 mr-2">Tags:</p>
+
+                    <div className="tags">
+                        {props.post.frontmatter.tags
+                            .slice(1)
+                            .map((tag: string) => {
+                                return (
+                                    <span
+                                        id={tag}
+                                        className="tag mt-2"
+                                        key={tag}
+                                        onClick={props.handleFilterUpdate}
+                                    >
+                                        {tag}
+                                    </span>
+                                );
+                            })}
+                    </div>
                 </div>
             </div>
         </div>
