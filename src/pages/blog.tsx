@@ -26,9 +26,10 @@ const BlogIndex: FunctionComponent<PageProps<BlogIndexProps>> = ({
 }: PageProps<BlogIndexProps>) => {
     const INCREMENT = 6;
     const tags = allTags.distinct;
+    const tagFromQuery = location.search.match(/(?<=\btag=)\w+/g)
     const unfilteredPosts = index.nodes;
     const [allPosts, setAllPosts] = useState(index.nodes);
-    const [tagFilter, setTagFilter] = useState('all');
+    const [tagFilter, setTagFilter] = useState(tagFromQuery ? tagFromQuery[0] : 'all');
 
     const handleFilterUpdate = (e: any) => {
         setTagFilter(e.target.id);

@@ -1,3 +1,4 @@
+import { Link } from 'gatsby';
 import React from 'react';
 
 const TagsList = (props: {
@@ -6,16 +7,18 @@ const TagsList = (props: {
 }) => {
     return (
         <div className="tags">
-            <span
+            <Link
+                to={`/blog`}
                 id="all"
                 className="tag is-success is-light is-medium"
                 onClick={props.handleFilterUpdate}
             >
                 All
-            </span>
+            </Link>
             {props.tags.map((tag: string) => {
                 return (
-                    <span
+                    <Link
+                        to={`?tag=${tag}`}
                         key={tag}
                         id={tag}
                         data-testid={tag}
@@ -23,7 +26,7 @@ const TagsList = (props: {
                         onClick={props.handleFilterUpdate}
                     >
                         {tag}
-                    </span>
+                    </Link>
                 );
             })}
         </div>

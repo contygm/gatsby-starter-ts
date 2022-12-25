@@ -8,9 +8,9 @@ const PostCard = (props: {
     return (
         <div className="card">
             <div className="card-image">
-                <span className="tag is-primary sticky-tag">
+                <Link to={`?tag=${props.post.frontmatter.tags[0]}`} className="tag is-primary sticky-tag">
                     {props.post.frontmatter.tags[0]}
-                </span>
+                </Link>
                 <figure className="image is-4by3 blog-card-image">
                     <img
                         src="https://bulma.io/images/placeholders/1280x960.png"
@@ -45,14 +45,15 @@ const PostCard = (props: {
                             .slice(1)
                             .map((tag: string) => {
                                 return (
-                                    <span
+                                    <Link
+                                        to={`?tag=${tag}`}
                                         id={tag}
                                         className="tag mt-2"
                                         key={tag}
                                         onClick={props.handleFilterUpdate}
                                     >
                                         {tag}
-                                    </span>
+                                    </Link>
                                 );
                             })}
                     </div>

@@ -1,7 +1,8 @@
-import React from 'react';
+import * as React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import FaIconLink from './FaIconLink';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'gatsby';
 
 export interface AuthorBlurbProps {
     author: {
@@ -52,13 +53,13 @@ const DateAndTags = (props: { tags: Array<string>; date: string }) => {
                 <div className="level-item">
                     {props.tags.map((tag) => {
                         return (
-                            <a
-                                href="/404"
+                            <Link
+                                to={`/blog?tag=${tag}`}
                                 className="post-tag"
                                 key={tag}
                             >
                                 {tag}
-                            </a>
+                            </Link>
                         );
                     })}
                 </div>
