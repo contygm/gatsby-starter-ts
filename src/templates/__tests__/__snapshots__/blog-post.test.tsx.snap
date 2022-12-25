@@ -503,19 +503,19 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                     >
                       <a
                         class="post-tag"
-                        href="/404"
+                        href="/blog?tag=one"
                       >
                         one
                       </a>
                       <a
                         class="post-tag"
-                        href="/404"
+                        href="/blog?tag=two"
                       >
                         two
                       </a>
                       <a
                         class="post-tag"
-                        href="/404"
+                        href="/blog?tag=three"
                       >
                         three
                       </a>
@@ -1675,19 +1675,19 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                     >
                       <a
                         class="post-tag"
-                        href="/404"
+                        href="/blog?tag=one"
                       >
                         one
                       </a>
                       <a
                         class="post-tag"
-                        href="/404"
+                        href="/blog?tag=two"
                       >
                         two
                       </a>
                       <a
                         class="post-tag"
-                        href="/404"
+                        href="/blog?tag=three"
                       >
                         three
                       </a>
@@ -2847,19 +2847,19 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
                     >
                       <a
                         class="post-tag"
-                        href="/404"
+                        href="/blog?tag=one"
                       >
                         one
                       </a>
                       <a
                         class="post-tag"
-                        href="/404"
+                        href="/blog?tag=two"
                       >
                         two
                       </a>
                       <a
                         class="post-tag"
-                        href="/404"
+                        href="/blog?tag=three"
                       >
                         three
                       </a>
@@ -3949,19 +3949,19 @@ exports[`Blog Posts Page renders correctly 1`] = `
                     >
                       <a
                         class="post-tag"
-                        href="/404"
+                        href="/blog?tag=one"
                       >
                         one
                       </a>
                       <a
                         class="post-tag"
-                        href="/404"
+                        href="/blog?tag=two"
                       >
                         two
                       </a>
                       <a
                         class="post-tag"
-                        href="/404"
+                        href="/blog?tag=three"
                       >
                         three
                       </a>
@@ -5191,19 +5191,19 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
                     >
                       <a
                         class="post-tag"
-                        href="/404"
+                        href="/blog?tag=one"
                       >
                         one
                       </a>
                       <a
                         class="post-tag"
-                        href="/404"
+                        href="/blog?tag=two"
                       >
                         two
                       </a>
                       <a
                         class="post-tag"
-                        href="/404"
+                        href="/blog?tag=three"
                       >
                         three
                       </a>
@@ -6363,19 +6363,19 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
                     >
                       <a
                         class="post-tag"
-                        href="/404"
+                        href="/blog?tag=one"
                       >
                         one
                       </a>
                       <a
                         class="post-tag"
-                        href="/404"
+                        href="/blog?tag=two"
                       >
                         two
                       </a>
                       <a
                         class="post-tag"
-                        href="/404"
+                        href="/blog?tag=three"
                       >
                         three
                       </a>

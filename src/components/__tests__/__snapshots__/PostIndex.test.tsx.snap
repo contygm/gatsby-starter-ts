@@ -21,11 +21,12 @@ exports[`PostIndex default renders and load btn works correctly 1`] = `
             <div
               class="card-image"
             >
-              <span
+              <a
                 class="tag is-primary sticky-tag"
+                href="?tag=two"
               >
                 two
-              </span>
+              </a>
               <figure
                 class="image is-4by3 blog-card-image"
               >
@@ -83,12 +84,13 @@ exports[`PostIndex default renders and load btn works correctly 1`] = `
                 <div
                   class="tags"
                 >
-                  <span
+                  <a
                     class="tag mt-2"
+                    href="?tag=three"
                     id="three"
                   >
                     three
-                  </span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -104,11 +106,12 @@ exports[`PostIndex default renders and load btn works correctly 1`] = `
             <div
               class="card-image"
             >
-              <span
+              <a
                 class="tag is-primary sticky-tag"
+                href="?tag=one"
               >
                 one
-              </span>
+              </a>
               <figure
                 class="image is-4by3 blog-card-image"
               >
@@ -166,12 +169,13 @@ exports[`PostIndex default renders and load btn works correctly 1`] = `
                 <div
                   class="tags"
                 >
-                  <span
+                  <a
                     class="tag mt-2"
+                    href="?tag=three"
                     id="three"
                   >
                     three
-                  </span>
+                  </a>
                 </div>
               </div>
             </div>

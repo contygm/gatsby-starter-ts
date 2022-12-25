@@ -33,19 +33,19 @@ exports[`PageHeader default renders correctly 1`] = `
           >
             <a
               class="post-tag"
-              href="/404"
+              href="/blog?tag=one"
             >
               one
             </a>
             <a
               class="post-tag"
-              href="/404"
+              href="/blog?tag=two"
             >
               two
             </a>
             <a
               class="post-tag"
-              href="/404"
+              href="/blog?tag=three"
             >
               three
             </a>
@@ -196,19 +196,19 @@ exports[`PageHeader renders when previousPost is defined 1`] = `
           >
             <a
               class="post-tag"
-              href="/404"
+              href="/blog?tag=one"
             >
               one
             </a>
             <a
               class="post-tag"
-              href="/404"
+              href="/blog?tag=two"
             >
               two
             </a>
             <a
               class="post-tag"
-              href="/404"
+              href="/blog?tag=three"
             >
               three
             </a>
@@ -299,19 +299,19 @@ exports[`PageHeader renders when previousPost is undefined 1`] = `
           >
             <a
               class="post-tag"
-              href="/404"
+              href="/blog?tag=one"
             >
               one
             </a>
             <a
               class="post-tag"
-              href="/404"
+              href="/blog?tag=two"
             >
               two
             </a>
             <a
               class="post-tag"
-              href="/404"
+              href="/blog?tag=three"
             >
               three
             </a>
