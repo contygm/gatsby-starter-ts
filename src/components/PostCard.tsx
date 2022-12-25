@@ -8,7 +8,10 @@ const PostCard = (props: {
     return (
         <div className="card">
             <div className="card-image">
-                <Link to={`?tag=${props.post.frontmatter.tags[0]}`} className="tag is-primary sticky-tag">
+                <Link
+                    to={`?tag=${props.post.frontmatter.tags[0]}`}
+                    className="tag is-primary sticky-tag"
+                >
                     {props.post.frontmatter.tags[0]}
                 </Link>
                 <figure className="image is-4by3 blog-card-image">
