@@ -11,21 +11,27 @@ import {
 export interface BlogIndexProps {
     site: SiteMetadata;
     allTags: {
-        distinct: Array<string>;
+        group: Array<{
+            fieldValue: string;
+            totalCount: number;
+        }>;
     };
     index: {
         nodes: Array<IndexElements>;
+        totalCount: number;
     };
     featured: {
         nodes: Array<IndexElements>;
     };
 }
 
+const INCREMENT = 6;
+
 const BlogIndex: FunctionComponent<PageProps<BlogIndexProps>> = ({
     data: { index, allTags }
 }: PageProps<BlogIndexProps>) => {
-    const INCREMENT = 6;
-    const tags = allTags.distinct;
+    
+    const tags = allTags.group;
     const tagFromQuery = location.search.match(/(?<=\btag=)\w+/g);
     const unfilteredPosts = index.nodes;
     const [allPosts, setAllPosts] = useState(index.nodes);
@@ -56,6 +62,8 @@ const BlogIndex: FunctionComponent<PageProps<BlogIndexProps>> = ({
             />
             <SearchFilterRow
                 tags={tags}
+                activeTag={tagFilter}
+                totalPostCount={index.totalCount}
                 handleFilterUpdate={handleFilterUpdate}
             />
             <PostIndex
@@ -81,7 +89,10 @@ export const pageQuery = graphql`
         allTags: allMarkdownRemark(
             filter: { frontmatter: { type: { eq: "blog" } } }
         ) {
-            distinct(field: frontmatter___tags)
+            group(field: frontmatter___tags) {
+                fieldValue
+                totalCount
+            }
         }
         index: allMarkdownRemark(
             sort: { fields: [frontmatter___date], order: DESC }
@@ -90,6 +101,7 @@ export const pageQuery = graphql`
             nodes {
                 ...IndexElements
             }
+            totalCount
         }
         featured: allMarkdownRemark(
             limit: 5

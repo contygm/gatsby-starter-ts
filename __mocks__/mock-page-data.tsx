@@ -19,9 +19,14 @@ const mockBlogs: BlogIndexProps = {
         image: '/nothing.png'
     },
     allTags: {
-        distinct: ['one', 'two', 'three']
+        group: [
+            { fieldValue: "three", totalCount: 3 },
+            { fieldValue: "two", totalCount: 2 },
+            { fieldValue: "one", totalCount: 1 },
+        ]
     },
     index: {
+        totalCount: 3,
         nodes: [
             {
                 excerpt:

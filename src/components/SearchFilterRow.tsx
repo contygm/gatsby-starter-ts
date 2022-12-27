@@ -2,7 +2,12 @@ import React from 'react';
 import TagsList from './TagsList';
 
 const SearchFilterRow = (props: {
-    tags: Array<string>;
+    tags: Array<{
+        fieldValue: string;
+        totalCount: number;
+    }>;
+    totalPostCount: number;
+    activeTag: string;
     handleFilterUpdate: (e: any) => void;
 }) => {
     return (
@@ -24,9 +29,11 @@ const SearchFilterRow = (props: {
                         </div>
                     </div>
 
-                    <div className="column is-two-thirds">
+                    <div className="column is-two-thirds m-auto">
                         <TagsList
+                            totalPostCount={props.totalPostCount}
                             tags={props.tags}
+                            activeTag={props.activeTag}
                             handleFilterUpdate={props.handleFilterUpdate}
                         />
                     </div>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { graphql, HeadProps, PageProps } from 'gatsby';
 import {
     Layout,
@@ -11,20 +11,45 @@ import {
 export interface WikiIndexProps {
     site: SiteMetadata;
     allTags: {
-        distinct: Array<string>;
+        group: Array<{
+            fieldValue: string;
+            totalCount: number;
+        }>;
     };
     index: {
         nodes: Array<IndexElements>;
+        totalCount: number;
     };
     featured: {
         nodes: Array<IndexElements>;
     };
 }
 
+const INCREMENT = 6;
+
 const WikiIndex = ({ data: { index, allTags } }: PageProps<WikiIndexProps>) => {
-    const INCREMENT = 6;
-    const tags = allTags.distinct;
-    const allPosts = index.nodes;
+    const tags = allTags.group;
+    const tagFromQuery = location.search.match(/(?<=\btag=)\w+/g);
+    const unfilteredPosts = index.nodes;
+    const [allPosts, setAllPosts] = useState(index.nodes);
+    const [tagFilter, setTagFilter] = useState(
+        tagFromQuery ? tagFromQuery[0] : 'all'
+    );
+
+    const handleFilterUpdate = (e: any) => {
+        setTagFilter(e.target.id);
+    };
+
+    useEffect(() => {
+        if (tagFilter === 'all') {
+            setAllPosts(unfilteredPosts);
+        } else {
+            const filtered = unfilteredPosts.filter((post) =>
+                post.frontmatter.tags.includes(tagFilter)
+            );
+            setAllPosts(filtered);
+        }
+    }, [tagFilter]);
 
     return (
         <Layout>
@@ -32,10 +57,16 @@ const WikiIndex = ({ data: { index, allTags } }: PageProps<WikiIndexProps>) => {
                 title={`Wiki Index`}
                 alignCenter={true}
             />
-            <SearchFilterRow tags={tags} />
+            <SearchFilterRow
+                tags={tags}
+                activeTag={tagFilter}
+                totalPostCount={index.totalCount}
+                handleFilterUpdate={handleFilterUpdate}
+            />
             <PostIndex
                 allPosts={allPosts}
                 increment={INCREMENT}
+                handleFilterUpdate={handleFilterUpdate}
             />
         </Layout>
     );
@@ -54,7 +85,10 @@ export const pageQuery = graphql`
         allTags: allMarkdownRemark(
             filter: { frontmatter: { type: { eq: "wiki" } } }
         ) {
-            distinct(field: frontmatter___tags)
+            group(field: frontmatter___tags) {
+                fieldValue
+                totalCount
+            }
         }
         index: allMarkdownRemark(
             sort: { fields: [frontmatter___date], order: DESC }
@@ -63,6 +97,7 @@ export const pageQuery = graphql`
             nodes {
                 ...IndexElements
             }
+            totalCount
         }
         featured: allMarkdownRemark(
             limit: 5
