@@ -196,42 +196,78 @@ exports[`Blog Index Page renders and filters correctly 1`] = `
               </div>
             </div>
             <div
-              class="column is-two-thirds"
+              class="column is-two-thirds m-auto"
             >
               <div
-                class="tags"
+                class="field is-grouped is-grouped-multiline"
               >
-                <a
-                  class="tag is-success is-light is-medium"
-                  href="/blog"
-                  id="all"
+                <div
+                  class="tags has-addons mx-2 tag-align"
                 >
-                  All
-                </a>
-                <a
-                  class="tag is-success is-light is-medium"
-                  data-testid="one"
-                  href="?tag=one"
-                  id="one"
+                  <a
+                    class="tag is-success"
+                    href="/blog"
+                    id="all"
+                  >
+                    All
+                  </a>
+                  <span
+                    class="tag is-dark"
+                  >
+                    3
+                  </span>
+                </div>
+                <div
+                  class="tags has-addons mx-2 tag-align"
                 >
-                  one
-                </a>
-                <a
-                  class="tag is-success is-light is-medium"
-                  data-testid="two"
-                  href="?tag=two"
-                  id="two"
+                  <a
+                    class="tag is-success is-light"
+                    data-testid="three"
+                    href="?tag=three"
+                    id="three"
+                  >
+                    three
+                  </a>
+                  <span
+                    class="tag is-dark"
+                  >
+                    3
+                  </span>
+                </div>
+                <div
+                  class="tags has-addons mx-2 tag-align"
                 >
-                  two
-                </a>
-                <a
-                  class="tag is-success is-light is-medium"
-                  data-testid="three"
-                  href="?tag=three"
-                  id="three"
+                  <a
+                    class="tag is-success is-light"
+                    data-testid="two"
+                    href="?tag=two"
+                    id="two"
+                  >
+                    two
+                  </a>
+                  <span
+                    class="tag is-dark"
+                  >
+                    2
+                  </span>
+                </div>
+                <div
+                  class="tags has-addons mx-2 tag-align"
                 >
-                  three
-                </a>
+                  <a
+                    class="tag is-success is-light"
+                    data-testid="one"
+                    href="?tag=one"
+                    id="one"
+                  >
+                    one
+                  </a>
+                  <span
+                    class="tag is-dark"
+                  >
+                    1
+                  </span>
+                </div>
               </div>
             </div>
           </div>
