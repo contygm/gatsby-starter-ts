@@ -20,9 +20,9 @@ const mockBlogs: BlogIndexProps = {
     },
     allTags: {
         group: [
-            { fieldValue: "three", totalCount: 3 },
-            { fieldValue: "two", totalCount: 2 },
-            { fieldValue: "one", totalCount: 1 },
+            { fieldValue: 'three', totalCount: 3 },
+            { fieldValue: 'two', totalCount: 2 },
+            { fieldValue: 'one', totalCount: 1 }
         ]
     },
     index: {

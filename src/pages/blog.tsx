@@ -1,10 +1,6 @@
 import React, { FunctionComponent, useEffect, useState } from 'react';
 import { graphql, HeadProps, PageProps } from 'gatsby';
-import {
-    Layout,
-    SEO,
-    PageHeader
-} from '../components';
+import { Layout, SEO, PageHeader } from '../components';
 import PostPage from '../templates/post-page';
 
 export interface BlogIndexProps {
@@ -27,14 +23,13 @@ export interface BlogIndexProps {
 const BlogIndex: FunctionComponent<PageProps<BlogIndexProps>> = ({
     data: { index, allTags }
 }: PageProps<BlogIndexProps>) => {
-
     return (
         <Layout>
             <PageHeader
                 title={`Blog Index`}
                 alignCenter={true}
             />
-            <PostPage 
+            <PostPage
                 index={index}
                 allTags={allTags}
             />

@@ -1,9 +1,5 @@
 import React, { FunctionComponent, useEffect, useState } from 'react';
-import {
-
-    SearchFilterRow,
-    PostIndex
-} from '../components';
+import { SearchFilterRow, PostIndex } from '../components';
 
 export interface PostPageProps {
     allTags: {
@@ -20,8 +16,10 @@ export interface PostPageProps {
 
 const INCREMENT = 6;
 
-const PostPage: FunctionComponent<PostPageProps> = ({ index, allTags }: PostPageProps) => {
-    
+const PostPage: FunctionComponent<PostPageProps> = ({
+    index,
+    allTags
+}: PostPageProps) => {
     const tags = allTags.group;
     const tagFromQuery = location.search.match(/(?<=\btag=)\w+/g);
     const unfilteredPosts = index.nodes;

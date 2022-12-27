@@ -1,10 +1,6 @@
 import React from 'react';
 import { graphql, HeadProps, PageProps } from 'gatsby';
-import {
-    Layout,
-    PageHeader,
-    SEO
-} from '../components/';
+import { Layout, PageHeader, SEO } from '../components/';
 import PostPage from '../templates/post-page';
 
 export interface WikiIndexProps {
@@ -31,7 +27,7 @@ const WikiIndex = ({ data: { index, allTags } }: PageProps<WikiIndexProps>) => {
                 title={`Wiki Index`}
                 alignCenter={true}
             />
-            <PostPage 
+            <PostPage
                 index={index}
                 allTags={allTags}
             />
