@@ -1,12 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { graphql, HeadProps, PageProps } from 'gatsby';
 import {
     Layout,
     PageHeader,
-    PostIndex,
-    SearchFilterRow,
     SEO
 } from '../components/';
+import PostPage from '../templates/post-page';
 
 export interface WikiIndexProps {
     site: SiteMetadata;
@@ -25,48 +24,16 @@ export interface WikiIndexProps {
     };
 }
 
-const INCREMENT = 6;
-
 const WikiIndex = ({ data: { index, allTags } }: PageProps<WikiIndexProps>) => {
-    const tags = allTags.group;
-    const tagFromQuery = location.search.match(/(?<=\btag=)\w+/g);
-    const unfilteredPosts = index.nodes;
-    const [allPosts, setAllPosts] = useState(index.nodes);
-    const [tagFilter, setTagFilter] = useState(
-        tagFromQuery ? tagFromQuery[0] : 'all'
-    );
-
-    const handleFilterUpdate = (e: any) => {
-        setTagFilter(e.target.id);
-    };
-
-    useEffect(() => {
-        if (tagFilter === 'all') {
-            setAllPosts(unfilteredPosts);
-        } else {
-            const filtered = unfilteredPosts.filter((post) =>
-                post.frontmatter.tags.includes(tagFilter)
-            );
-            setAllPosts(filtered);
-        }
-    }, [tagFilter]);
-
     return (
         <Layout>
             <PageHeader
                 title={`Wiki Index`}
                 alignCenter={true}
             />
-            <SearchFilterRow
-                tags={tags}
-                activeTag={tagFilter}
-                totalPostCount={index.totalCount}
-                handleFilterUpdate={handleFilterUpdate}
-            />
-            <PostIndex
-                allPosts={allPosts}
-                increment={INCREMENT}
-                handleFilterUpdate={handleFilterUpdate}
+            <PostPage 
+                index={index}
+                allTags={allTags}
             />
         </Layout>
     );

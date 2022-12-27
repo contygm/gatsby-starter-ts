@@ -3,10 +3,9 @@ import { graphql, HeadProps, PageProps } from 'gatsby';
 import {
     Layout,
     SEO,
-    PageHeader,
-    SearchFilterRow,
-    PostIndex
+    PageHeader
 } from '../components';
+import PostPage from '../templates/post-page';
 
 export interface BlogIndexProps {
     site: SiteMetadata;
@@ -25,34 +24,9 @@ export interface BlogIndexProps {
     };
 }
 
-const INCREMENT = 6;
-
 const BlogIndex: FunctionComponent<PageProps<BlogIndexProps>> = ({
     data: { index, allTags }
 }: PageProps<BlogIndexProps>) => {
-    
-    const tags = allTags.group;
-    const tagFromQuery = location.search.match(/(?<=\btag=)\w+/g);
-    const unfilteredPosts = index.nodes;
-    const [allPosts, setAllPosts] = useState(index.nodes);
-    const [tagFilter, setTagFilter] = useState(
-        tagFromQuery ? tagFromQuery[0] : 'all'
-    );
-
-    const handleFilterUpdate = (e: any) => {
-        setTagFilter(e.target.id);
-    };
-
-    useEffect(() => {
-        if (tagFilter === 'all') {
-            setAllPosts(unfilteredPosts);
-        } else {
-            const filtered = unfilteredPosts.filter((post) =>
-                post.frontmatter.tags.includes(tagFilter)
-            );
-            setAllPosts(filtered);
-        }
-    }, [tagFilter]);
 
     return (
         <Layout>
@@ -60,16 +34,9 @@ const BlogIndex: FunctionComponent<PageProps<BlogIndexProps>> = ({
                 title={`Blog Index`}
                 alignCenter={true}
             />
-            <SearchFilterRow
-                tags={tags}
-                activeTag={tagFilter}
-                totalPostCount={index.totalCount}
-                handleFilterUpdate={handleFilterUpdate}
-            />
-            <PostIndex
-                allPosts={allPosts}
-                increment={INCREMENT}
-                handleFilterUpdate={handleFilterUpdate}
+            <PostPage 
+                index={index}
+                allTags={allTags}
             />
         </Layout>
     );
