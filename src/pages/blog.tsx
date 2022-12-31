@@ -1,4 +1,4 @@
-import React, { FunctionComponent, useEffect, useState } from 'react';
+import React, { FunctionComponent } from 'react';
 import { graphql, HeadProps, PageProps } from 'gatsby';
 import { Layout, SEO, PageHeader } from '../components';
 import PostPage from '../templates/post-page';
@@ -32,6 +32,7 @@ const BlogIndex: FunctionComponent<PageProps<BlogIndexProps>> = ({
             <PostPage
                 index={index}
                 allTags={allTags}
+                type={"blog"}
             />
         </Layout>
     );

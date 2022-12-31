@@ -12,18 +12,26 @@ export interface PostPageProps {
         nodes: Array<IndexElements>;
         totalCount: number;
     };
+    type: "blog" | "wiki";
 }
 
 const INCREMENT = 6;
 
 const PostPage: FunctionComponent<PostPageProps> = ({
     index,
-    allTags
+    allTags,
+    type
 }: PostPageProps) => {
-    const tags = allTags.group;
-    const tagFromQuery = location.search.match(/(?<=\btag=)\w+/g);
     const unfilteredPosts = index.nodes;
     const [allPosts, setAllPosts] = useState(index.nodes);
+
+    const searchFromQuery = location.search.match(/(?<=\bsearch=)\w+/g);
+    const [searchQuery, setSearchQuery] = useState(
+        searchFromQuery ? searchFromQuery[0] : ''
+    );
+
+    const tags = allTags.group;
+    const tagFromQuery = location.search.match(/(?<=\btag=)\w+/g);
     const [tagFilter, setTagFilter] = useState(
         tagFromQuery ? tagFromQuery[0] : 'all'
     );
@@ -31,6 +39,16 @@ const PostPage: FunctionComponent<PostPageProps> = ({
     const handleFilterUpdate = (e: any) => {
         setTagFilter(e.target.id);
     };
+
+    const handleSubmitSearch = (e: any) => {
+        e.preventDefault();
+        setSearchQuery(e.target.searchPost.value)
+
+        const queryStr = e.target.searchPost.value === "" 
+            ? `/${type}` 
+            : `?search=${e.target.searchPost.value}`;
+        window.history.replaceState(null, "", queryStr)
+	}
 
     useEffect(() => {
         if (tagFilter === 'all') {
@@ -43,6 +61,26 @@ const PostPage: FunctionComponent<PostPageProps> = ({
         }
     }, [tagFilter]);
 
+    useEffect(() => {
+        if (searchQuery === '') {
+            setAllPosts(unfilteredPosts);
+        } else {
+            const posts = unfilteredPosts ?? []; // start w all posts
+
+            const filteredData = posts.filter(post => {
+                const { description, title } = post.frontmatter;
+
+                return (
+                    // standardize data with .toLowerCase()  
+                    // return true if the description or title
+                    description.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                    title.toLowerCase().includes(searchQuery.toLowerCase())
+                )
+            });
+            setAllPosts(filteredData)
+        }
+    }, [searchQuery]);
+
     return (
         <>
             <SearchFilterRow
@@ -50,6 +88,7 @@ const PostPage: FunctionComponent<PostPageProps> = ({
                 activeTag={tagFilter}
                 totalPostCount={index.totalCount}
                 handleFilterUpdate={handleFilterUpdate}
+                handleSubmitSearch={handleSubmitSearch}
             />
             <PostIndex
                 allPosts={allPosts}

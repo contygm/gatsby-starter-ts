@@ -49,20 +49,23 @@ const PostIndex: FunctionComponent<PostIndexProps> = ({
             <section className="container is-max-desktop">
                 {/* post cards */}
                 <div className="columns is-multiline is-centered">
-                    {displayPosts.map((post: IndexElements) => {
-                        return (
-                            <div
-                                data-testid={'post-card'}
-                                className="column is-4"
-                                key={post.frontmatter.title}
-                            >
-                                <PostCard
-                                    post={post}
-                                    handleFilterUpdate={handleFilterUpdate}
-                                />
-                            </div>
-                        );
-                    })}
+                    {displayPosts.length > 0
+                        ? displayPosts.map((post: IndexElements) => {
+                            return (
+                                <div
+                                    data-testid={'post-card'}
+                                    className="column is-4"
+                                    key={post.frontmatter.title}
+                                >
+                                    <PostCard
+                                        post={post}
+                                        handleFilterUpdate={handleFilterUpdate}
+                                    />
+                                </div>
+                            );
+                        }) // TODO make no results look like something
+                        : <div>No results</div>
+                    }
                 </div>
                 {hasMore && (
                     <div className="columns is-mobile is-centered">

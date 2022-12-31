@@ -9,16 +9,19 @@ const SearchFilterRow = (props: {
     totalPostCount: number;
     activeTag: string;
     handleFilterUpdate: (e: any) => void;
+    handleSubmitSearch: (e: any) => void;
 }) => {
+
     return (
         <section className="section ">
             <div className="container is-max-desktop">
                 <div className="columns">
                     <div className="column">
-                        <div className="field has-addons">
+                        <form className="field has-addons" onSubmit={props.handleSubmitSearch}>
                             <p className="control">
                                 <input
                                     className="input"
+                                    name="searchPost"
                                     type="text"
                                     placeholder="Find a post"
                                 />
@@ -26,7 +29,7 @@ const SearchFilterRow = (props: {
                             <p className="control">
                                 <button className="button">Search</button>
                             </p>
-                        </div>
+                        </form>
                     </div>
 
                     <div className="column is-two-thirds m-auto">
