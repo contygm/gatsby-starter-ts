@@ -172,7 +172,7 @@ exports[`Blog Index Page renders and filters correctly 1`] = `
             <div
               class="column"
             >
-              <div
+              <form
                 class="field has-addons"
               >
                 <p
@@ -180,6 +180,7 @@ exports[`Blog Index Page renders and filters correctly 1`] = `
                 >
                   <input
                     class="input"
+                    name="searchPost"
                     placeholder="Find a post"
                     type="text"
                   />
@@ -193,7 +194,7 @@ exports[`Blog Index Page renders and filters correctly 1`] = `
                     Search
                   </button>
                 </p>
-              </div>
+              </form>
             </div>
             <div
               class="column is-two-thirds m-auto"
