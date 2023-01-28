@@ -12,7 +12,7 @@ export interface PostPageProps {
         nodes: Array<IndexElements>;
         totalCount: number;
     };
-    type: "blog" | "wiki";
+    type: 'blog' | 'wiki';
 }
 
 const INCREMENT = 6;
@@ -42,17 +42,17 @@ const PostPage: FunctionComponent<PostPageProps> = ({
 
     const handleSubmitSearch = (e: any) => {
         e.preventDefault();
-        const queryValue =  e.target.searchPost && e.target.searchPost.value
-            ? e.target.searchPost.value
-            : "";
-        
-        setSearchQuery(queryValue)
+        const queryValue =
+            e.target.searchPost && e.target.searchPost.value
+                ? e.target.searchPost.value
+                : '';
 
-        const queryStr = queryValue === "" 
-            ? `/${type}` 
-            : `?search=${queryValue}`;
-        window.history.replaceState(null, "", queryStr)
-	}
+        setSearchQuery(queryValue);
+
+        const queryStr =
+            queryValue === '' ? `/${type}` : `?search=${queryValue}`;
+        window.history.replaceState(null, '', queryStr);
+    };
 
     useEffect(() => {
         if (tagFilter === 'all') {
@@ -71,17 +71,19 @@ const PostPage: FunctionComponent<PostPageProps> = ({
         } else {
             const posts = unfilteredPosts ?? []; // start w all posts
 
-            const filteredData = posts.filter(post => {
+            const filteredData = posts.filter((post) => {
                 const { description, title } = post.frontmatter;
 
                 return (
-                    // standardize data with .toLowerCase()  
+                    // standardize data with .toLowerCase()
                     // return true if the description or title
-                    description.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                    description
+                        .toLowerCase()
+                        .includes(searchQuery.toLowerCase()) ||
                     title.toLowerCase().includes(searchQuery.toLowerCase())
-                )
+                );
             });
-            setAllPosts(filteredData)
+            setAllPosts(filteredData);
         }
     }, [searchQuery]);
 

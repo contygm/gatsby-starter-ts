@@ -11,13 +11,15 @@ const SearchFilterRow = (props: {
     handleFilterUpdate: (e: any) => void;
     handleSubmitSearch: (e: any) => void;
 }) => {
-
     return (
         <section className="section ">
             <div className="container is-max-desktop">
                 <div className="columns">
                     <div className="column">
-                        <form className="field has-addons" onSubmit={props.handleSubmitSearch}>
+                        <form
+                            className="field has-addons"
+                            onSubmit={props.handleSubmitSearch}
+                        >
                             <p className="control">
                                 <input
                                     className="input"
@@ -28,7 +30,12 @@ const SearchFilterRow = (props: {
                                 />
                             </p>
                             <p className="control">
-                                <button className="button" data-testid="searchPostSubmit">Search</button>
+                                <button
+                                    className="button"
+                                    data-testid="searchPostSubmit"
+                                >
+                                    Search
+                                </button>
                             </p>
                         </form>
                     </div>

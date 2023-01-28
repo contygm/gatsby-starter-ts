@@ -49,8 +49,8 @@ const PostIndex: FunctionComponent<PostIndexProps> = ({
             <section className="container is-max-desktop">
                 {/* post cards */}
                 <div className="columns is-multiline is-centered">
-                    {displayPosts.length > 0
-                        ? displayPosts.map((post: IndexElements) => {
+                    {displayPosts.length > 0 ? (
+                        displayPosts.map((post: IndexElements) => {
                             return (
                                 <div
                                     data-testid={'post-card'}
@@ -64,8 +64,9 @@ const PostIndex: FunctionComponent<PostIndexProps> = ({
                                 </div>
                             );
                         }) // TODO make no results look like something
-                        : <div>No results</div>
-                    }
+                    ) : (
+                        <div>No results</div>
+                    )}
                 </div>
                 {hasMore && (
                     <div className="columns is-mobile is-centered">

@@ -26,12 +26,11 @@ describe('Blog Index Page', () => {
         expect(getAllByTestId('post-card').length).toEqual(3);
 
         const input = getByTestId('searchPost') as HTMLInputElement;
-        fireEvent.change(input, {target: {value: 'baking'}})
-        expect(input.value).toBe('baking')
-        
+        fireEvent.change(input, { target: { value: 'baking' } });
+        expect(input.value).toBe('baking');
+
         fireEvent.click(getByTestId('searchPostSubmit'));
         waitFor(() => expect(getAllByTestId('post-card').length).toEqual(2));
-        
     });
 
     it('header meta data renders correctly', () => {

@@ -32,7 +32,7 @@ const BlogIndex: FunctionComponent<PageProps<BlogIndexProps>> = ({
             <PostPage
                 index={index}
                 allTags={allTags}
-                type={"blog"}
+                type={'blog'}
             />
         </Layout>
     );
