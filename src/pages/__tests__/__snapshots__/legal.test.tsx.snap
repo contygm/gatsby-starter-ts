@@ -447,7 +447,7 @@ exports[`LegalPage Cookie Page renders correctly 1`] = `
         >
           © 
           <time>
-            2022
+            2023
           </time>
           , Built by Writer B. Author
         </p>
@@ -924,7 +924,7 @@ exports[`LegalPage Copyright Page renders correctly 1`] = `
         >
           © 
           <time>
-            2022
+            2023
           </time>
           , Built by Writer B. Author
         </p>
@@ -1401,7 +1401,7 @@ exports[`LegalPage Disclaimer Page renders correctly 1`] = `
         >
           © 
           <time>
-            2022
+            2023
           </time>
           , Built by Writer B. Author
         </p>
@@ -1998,7 +1998,7 @@ exports[`LegalPage Legal renders correctly 1`] = `
         >
           © 
           <time>
-            2022
+            2023
           </time>
           , Built by Writer B. Author
         </p>
@@ -2455,7 +2455,7 @@ exports[`LegalPage Privacy Policy Page renders correctly 1`] = `
         >
           © 
           <time>
-            2022
+            2023
           </time>
           , Built by Writer B. Author
         </p>
@@ -2932,7 +2932,7 @@ exports[`LegalPage Terms and Conditions Page renders correctly 1`] = `
         >
           © 
           <time>
-            2022
+            2023
           </time>
           , Built by Writer B. Author
         </p>

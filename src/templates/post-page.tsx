@@ -42,11 +42,15 @@ const PostPage: FunctionComponent<PostPageProps> = ({
 
     const handleSubmitSearch = (e: any) => {
         e.preventDefault();
-        setSearchQuery(e.target.searchPost.value)
+        const queryValue =  e.target.searchPost && e.target.searchPost.value
+            ? e.target.searchPost.value
+            : "";
+        
+        setSearchQuery(queryValue)
 
-        const queryStr = e.target.searchPost.value === "" 
+        const queryStr = queryValue === "" 
             ? `/${type}` 
-            : `?search=${e.target.searchPost.value}`;
+            : `?search=${queryValue}`;
         window.history.replaceState(null, "", queryStr)
 	}
 

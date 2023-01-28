@@ -423,7 +423,7 @@ exports[`404 - NotFoundPage renders correctly 1`] = `
         >
           © 
           <time>
-            2022
+            2023
           </time>
           , Built by Writer B. Author
         </p>

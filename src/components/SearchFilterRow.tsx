@@ -22,12 +22,13 @@ const SearchFilterRow = (props: {
                                 <input
                                     className="input"
                                     name="searchPost"
+                                    data-testid="searchPost"
                                     type="text"
                                     placeholder="Find a post"
                                 />
                             </p>
                             <p className="control">
-                                <button className="button">Search</button>
+                                <button className="button" data-testid="searchPostSubmit">Search</button>
                             </p>
                         </form>
                     </div>

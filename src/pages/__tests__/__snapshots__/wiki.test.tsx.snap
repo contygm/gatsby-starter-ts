@@ -180,6 +180,7 @@ exports[`Wiki Index Page renders correctly 1`] = `
                 >
                   <input
                     class="input"
+                    data-testid="searchPost"
                     name="searchPost"
                     placeholder="Find a post"
                     type="text"
@@ -190,6 +191,7 @@ exports[`Wiki Index Page renders correctly 1`] = `
                 >
                   <button
                     class="button"
+                    data-testid="searchPostSubmit"
                   >
                     Search
                   </button>
@@ -803,7 +805,7 @@ exports[`Wiki Index Page renders correctly 1`] = `
         >
           © 
           <time>
-            2022
+            2023
           </time>
           , Built by Writer B. Author
         </p>
