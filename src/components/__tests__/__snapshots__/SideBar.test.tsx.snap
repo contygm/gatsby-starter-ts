@@ -60,18 +60,20 @@ exports[`SideBar renders correctly 1`] = `
             href="/blog/baking-tutorial/"
           >
             <div
-              class="media"
+              class="card"
             >
-              <figure
-                class="media-left my-auto"
-              >
-                <img
-                  alt="blog image"
-                  image="[object Object]"
-                />
-              </figure>
               <div
-                class="media-content"
+                class="card-image"
+              >
+                <figure>
+                  <img
+                    alt="blog image"
+                    image="[object Object]"
+                  />
+                </figure>
+              </div>
+              <div
+                class="card-content"
               >
                 <div
                   class="content"
@@ -93,18 +95,20 @@ exports[`SideBar renders correctly 1`] = `
             href="/blog/ten-best-things/"
           >
             <div
-              class="media"
+              class="card"
             >
-              <figure
-                class="media-left my-auto"
-              >
-                <img
-                  alt="blog image"
-                  image="[object Object]"
-                />
-              </figure>
               <div
-                class="media-content"
+                class="card-image"
+              >
+                <figure>
+                  <img
+                    alt="blog image"
+                    image="[object Object]"
+                  />
+                </figure>
+              </div>
+              <div
+                class="card-content"
               >
                 <div
                   class="content"
@@ -126,18 +130,20 @@ exports[`SideBar renders correctly 1`] = `
             href="/blog/guide/"
           >
             <div
-              class="media"
+              class="card"
             >
-              <figure
-                class="media-left my-auto"
-              >
-                <img
-                  alt="blog image"
-                  image="[object Object]"
-                />
-              </figure>
               <div
-                class="media-content"
+                class="card-image"
+              >
+                <figure>
+                  <img
+                    alt="blog image"
+                    image="[object Object]"
+                  />
+                </figure>
+              </div>
+              <div
+                class="card-content"
               >
                 <div
                   class="content"
@@ -172,18 +178,20 @@ exports[`SideBar renders correctly 1`] = `
             href="/blog/baking-tutorial/"
           >
             <div
-              class="media"
+              class="card"
             >
-              <figure
-                class="media-left my-auto"
-              >
-                <img
-                  alt="blog image"
-                  image="[object Object]"
-                />
-              </figure>
               <div
-                class="media-content"
+                class="card-image"
+              >
+                <figure>
+                  <img
+                    alt="blog image"
+                    image="[object Object]"
+                  />
+                </figure>
+              </div>
+              <div
+                class="card-content"
               >
                 <div
                   class="content"
@@ -205,18 +213,20 @@ exports[`SideBar renders correctly 1`] = `
             href="/blog/ten-best-things/"
           >
             <div
-              class="media"
+              class="card"
             >
-              <figure
-                class="media-left my-auto"
-              >
-                <img
-                  alt="blog image"
-                  image="[object Object]"
-                />
-              </figure>
               <div
-                class="media-content"
+                class="card-image"
+              >
+                <figure>
+                  <img
+                    alt="blog image"
+                    image="[object Object]"
+                  />
+                </figure>
+              </div>
+              <div
+                class="card-content"
               >
                 <div
                   class="content"
@@ -238,18 +248,20 @@ exports[`SideBar renders correctly 1`] = `
             href="/blog/guide/"
           >
             <div
-              class="media"
+              class="card"
             >
-              <figure
-                class="media-left my-auto"
-              >
-                <img
-                  alt="blog image"
-                  image="[object Object]"
-                />
-              </figure>
               <div
-                class="media-content"
+                class="card-image"
+              >
+                <figure>
+                  <img
+                    alt="blog image"
+                    image="[object Object]"
+                  />
+                </figure>
+              </div>
+              <div
+                class="card-content"
               >
                 <div
                   class="content"
@@ -331,18 +343,20 @@ exports[`SideBar renders correctly without related posts 1`] = `
             href="/blog/baking-tutorial/"
           >
             <div
-              class="media"
+              class="card"
             >
-              <figure
-                class="media-left my-auto"
-              >
-                <img
-                  alt="blog image"
-                  image="[object Object]"
-                />
-              </figure>
               <div
-                class="media-content"
+                class="card-image"
+              >
+                <figure>
+                  <img
+                    alt="blog image"
+                    image="[object Object]"
+                  />
+                </figure>
+              </div>
+              <div
+                class="card-content"
               >
                 <div
                   class="content"
@@ -364,18 +378,20 @@ exports[`SideBar renders correctly without related posts 1`] = `
             href="/blog/ten-best-things/"
           >
             <div
-              class="media"
+              class="card"
             >
-              <figure
-                class="media-left my-auto"
-              >
-                <img
-                  alt="blog image"
-                  image="[object Object]"
-                />
-              </figure>
               <div
-                class="media-content"
+                class="card-image"
+              >
+                <figure>
+                  <img
+                    alt="blog image"
+                    image="[object Object]"
+                  />
+                </figure>
+              </div>
+              <div
+                class="card-content"
               >
                 <div
                   class="content"
@@ -397,18 +413,20 @@ exports[`SideBar renders correctly without related posts 1`] = `
             href="/blog/guide/"
           >
             <div
-              class="media"
+              class="card"
             >
-              <figure
-                class="media-left my-auto"
-              >
-                <img
-                  alt="blog image"
-                  image="[object Object]"
-                />
-              </figure>
               <div
-                class="media-content"
+                class="card-image"
+              >
+                <figure>
+                  <img
+                    alt="blog image"
+                    image="[object Object]"
+                  />
+                </figure>
+              </div>
+              <div
+                class="card-content"
               >
                 <div
                   class="content"

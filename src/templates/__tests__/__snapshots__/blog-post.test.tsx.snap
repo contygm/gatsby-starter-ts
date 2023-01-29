@@ -696,18 +696,20 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                       href="/blog/baking-tutorial/"
                     >
                       <div
-                        class="media"
+                        class="card"
                       >
-                        <figure
-                          class="media-left my-auto"
-                        >
-                          <img
-                            alt="blog image"
-                            image="[object Object]"
-                          />
-                        </figure>
                         <div
-                          class="media-content"
+                          class="card-image"
+                        >
+                          <figure>
+                            <img
+                              alt="blog image"
+                              image="[object Object]"
+                            />
+                          </figure>
+                        </div>
+                        <div
+                          class="card-content"
                         >
                           <div
                             class="content"
@@ -729,18 +731,20 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                       href="/blog/ten-best-things/"
                     >
                       <div
-                        class="media"
+                        class="card"
                       >
-                        <figure
-                          class="media-left my-auto"
-                        >
-                          <img
-                            alt="blog image"
-                            image="[object Object]"
-                          />
-                        </figure>
                         <div
-                          class="media-content"
+                          class="card-image"
+                        >
+                          <figure>
+                            <img
+                              alt="blog image"
+                              image="[object Object]"
+                            />
+                          </figure>
+                        </div>
+                        <div
+                          class="card-content"
                         >
                           <div
                             class="content"
@@ -762,18 +766,20 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                       href="/blog/guide/"
                     >
                       <div
-                        class="media"
+                        class="card"
                       >
-                        <figure
-                          class="media-left my-auto"
-                        >
-                          <img
-                            alt="blog image"
-                            image="[object Object]"
-                          />
-                        </figure>
                         <div
-                          class="media-content"
+                          class="card-image"
+                        >
+                          <figure>
+                            <img
+                              alt="blog image"
+                              image="[object Object]"
+                            />
+                          </figure>
+                        </div>
+                        <div
+                          class="card-content"
                         >
                           <div
                             class="content"
@@ -808,18 +814,20 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                       href="/blog/baking-tutorial/"
                     >
                       <div
-                        class="media"
+                        class="card"
                       >
-                        <figure
-                          class="media-left my-auto"
-                        >
-                          <img
-                            alt="blog image"
-                            image="[object Object]"
-                          />
-                        </figure>
                         <div
-                          class="media-content"
+                          class="card-image"
+                        >
+                          <figure>
+                            <img
+                              alt="blog image"
+                              image="[object Object]"
+                            />
+                          </figure>
+                        </div>
+                        <div
+                          class="card-content"
                         >
                           <div
                             class="content"
@@ -841,18 +849,20 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                       href="/blog/ten-best-things/"
                     >
                       <div
-                        class="media"
+                        class="card"
                       >
-                        <figure
-                          class="media-left my-auto"
-                        >
-                          <img
-                            alt="blog image"
-                            image="[object Object]"
-                          />
-                        </figure>
                         <div
-                          class="media-content"
+                          class="card-image"
+                        >
+                          <figure>
+                            <img
+                              alt="blog image"
+                              image="[object Object]"
+                            />
+                          </figure>
+                        </div>
+                        <div
+                          class="card-content"
                         >
                           <div
                             class="content"
@@ -874,18 +884,20 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                       href="/blog/guide/"
                     >
                       <div
-                        class="media"
+                        class="card"
                       >
-                        <figure
-                          class="media-left my-auto"
-                        >
-                          <img
-                            alt="blog image"
-                            image="[object Object]"
-                          />
-                        </figure>
                         <div
-                          class="media-content"
+                          class="card-image"
+                        >
+                          <figure>
+                            <img
+                              alt="blog image"
+                              image="[object Object]"
+                            />
+                          </figure>
+                        </div>
+                        <div
+                          class="card-content"
                         >
                           <div
                             class="content"
@@ -1868,18 +1880,20 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                       href="/blog/baking-tutorial/"
                     >
                       <div
-                        class="media"
+                        class="card"
                       >
-                        <figure
-                          class="media-left my-auto"
-                        >
-                          <img
-                            alt="blog image"
-                            image="[object Object]"
-                          />
-                        </figure>
                         <div
-                          class="media-content"
+                          class="card-image"
+                        >
+                          <figure>
+                            <img
+                              alt="blog image"
+                              image="[object Object]"
+                            />
+                          </figure>
+                        </div>
+                        <div
+                          class="card-content"
                         >
                           <div
                             class="content"
@@ -1901,18 +1915,20 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                       href="/blog/ten-best-things/"
                     >
                       <div
-                        class="media"
+                        class="card"
                       >
-                        <figure
-                          class="media-left my-auto"
-                        >
-                          <img
-                            alt="blog image"
-                            image="[object Object]"
-                          />
-                        </figure>
                         <div
-                          class="media-content"
+                          class="card-image"
+                        >
+                          <figure>
+                            <img
+                              alt="blog image"
+                              image="[object Object]"
+                            />
+                          </figure>
+                        </div>
+                        <div
+                          class="card-content"
                         >
                           <div
                             class="content"
@@ -1934,18 +1950,20 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                       href="/blog/guide/"
                     >
                       <div
-                        class="media"
+                        class="card"
                       >
-                        <figure
-                          class="media-left my-auto"
-                        >
-                          <img
-                            alt="blog image"
-                            image="[object Object]"
-                          />
-                        </figure>
                         <div
-                          class="media-content"
+                          class="card-image"
+                        >
+                          <figure>
+                            <img
+                              alt="blog image"
+                              image="[object Object]"
+                            />
+                          </figure>
+                        </div>
+                        <div
+                          class="card-content"
                         >
                           <div
                             class="content"
@@ -1980,18 +1998,20 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                       href="/blog/baking-tutorial/"
                     >
                       <div
-                        class="media"
+                        class="card"
                       >
-                        <figure
-                          class="media-left my-auto"
-                        >
-                          <img
-                            alt="blog image"
-                            image="[object Object]"
-                          />
-                        </figure>
                         <div
-                          class="media-content"
+                          class="card-image"
+                        >
+                          <figure>
+                            <img
+                              alt="blog image"
+                              image="[object Object]"
+                            />
+                          </figure>
+                        </div>
+                        <div
+                          class="card-content"
                         >
                           <div
                             class="content"
@@ -2013,18 +2033,20 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                       href="/blog/ten-best-things/"
                     >
                       <div
-                        class="media"
+                        class="card"
                       >
-                        <figure
-                          class="media-left my-auto"
-                        >
-                          <img
-                            alt="blog image"
-                            image="[object Object]"
-                          />
-                        </figure>
                         <div
-                          class="media-content"
+                          class="card-image"
+                        >
+                          <figure>
+                            <img
+                              alt="blog image"
+                              image="[object Object]"
+                            />
+                          </figure>
+                        </div>
+                        <div
+                          class="card-content"
                         >
                           <div
                             class="content"
@@ -2046,18 +2068,20 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                       href="/blog/guide/"
                     >
                       <div
-                        class="media"
+                        class="card"
                       >
-                        <figure
-                          class="media-left my-auto"
-                        >
-                          <img
-                            alt="blog image"
-                            image="[object Object]"
-                          />
-                        </figure>
                         <div
-                          class="media-content"
+                          class="card-image"
+                        >
+                          <figure>
+                            <img
+                              alt="blog image"
+                              image="[object Object]"
+                            />
+                          </figure>
+                        </div>
+                        <div
+                          class="card-content"
                         >
                           <div
                             class="content"
@@ -3040,18 +3064,20 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
                       href="/blog/baking-tutorial/"
                     >
                       <div
-                        class="media"
+                        class="card"
                       >
-                        <figure
-                          class="media-left my-auto"
-                        >
-                          <img
-                            alt="blog image"
-                            image="[object Object]"
-                          />
-                        </figure>
                         <div
-                          class="media-content"
+                          class="card-image"
+                        >
+                          <figure>
+                            <img
+                              alt="blog image"
+                              image="[object Object]"
+                            />
+                          </figure>
+                        </div>
+                        <div
+                          class="card-content"
                         >
                           <div
                             class="content"
@@ -3073,18 +3099,20 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
                       href="/blog/ten-best-things/"
                     >
                       <div
-                        class="media"
+                        class="card"
                       >
-                        <figure
-                          class="media-left my-auto"
-                        >
-                          <img
-                            alt="blog image"
-                            image="[object Object]"
-                          />
-                        </figure>
                         <div
-                          class="media-content"
+                          class="card-image"
+                        >
+                          <figure>
+                            <img
+                              alt="blog image"
+                              image="[object Object]"
+                            />
+                          </figure>
+                        </div>
+                        <div
+                          class="card-content"
                         >
                           <div
                             class="content"
@@ -3106,18 +3134,20 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
                       href="/blog/guide/"
                     >
                       <div
-                        class="media"
+                        class="card"
                       >
-                        <figure
-                          class="media-left my-auto"
-                        >
-                          <img
-                            alt="blog image"
-                            image="[object Object]"
-                          />
-                        </figure>
                         <div
-                          class="media-content"
+                          class="card-image"
+                        >
+                          <figure>
+                            <img
+                              alt="blog image"
+                              image="[object Object]"
+                            />
+                          </figure>
+                        </div>
+                        <div
+                          class="card-content"
                         >
                           <div
                             class="content"
@@ -3152,18 +3182,20 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
                       href="/blog/baking-tutorial/"
                     >
                       <div
-                        class="media"
+                        class="card"
                       >
-                        <figure
-                          class="media-left my-auto"
-                        >
-                          <img
-                            alt="blog image"
-                            image="[object Object]"
-                          />
-                        </figure>
                         <div
-                          class="media-content"
+                          class="card-image"
+                        >
+                          <figure>
+                            <img
+                              alt="blog image"
+                              image="[object Object]"
+                            />
+                          </figure>
+                        </div>
+                        <div
+                          class="card-content"
                         >
                           <div
                             class="content"
@@ -3185,18 +3217,20 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
                       href="/blog/ten-best-things/"
                     >
                       <div
-                        class="media"
+                        class="card"
                       >
-                        <figure
-                          class="media-left my-auto"
-                        >
-                          <img
-                            alt="blog image"
-                            image="[object Object]"
-                          />
-                        </figure>
                         <div
-                          class="media-content"
+                          class="card-image"
+                        >
+                          <figure>
+                            <img
+                              alt="blog image"
+                              image="[object Object]"
+                            />
+                          </figure>
+                        </div>
+                        <div
+                          class="card-content"
                         >
                           <div
                             class="content"
@@ -3218,18 +3252,20 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
                       href="/blog/guide/"
                     >
                       <div
-                        class="media"
+                        class="card"
                       >
-                        <figure
-                          class="media-left my-auto"
-                        >
-                          <img
-                            alt="blog image"
-                            image="[object Object]"
-                          />
-                        </figure>
                         <div
-                          class="media-content"
+                          class="card-image"
+                        >
+                          <figure>
+                            <img
+                              alt="blog image"
+                              image="[object Object]"
+                            />
+                          </figure>
+                        </div>
+                        <div
+                          class="card-content"
                         >
                           <div
                             class="content"
@@ -4142,18 +4178,20 @@ exports[`Blog Posts Page renders correctly 1`] = `
                       href="/blog/baking-tutorial/"
                     >
                       <div
-                        class="media"
+                        class="card"
                       >
-                        <figure
-                          class="media-left my-auto"
-                        >
-                          <img
-                            alt="blog image"
-                            image="[object Object]"
-                          />
-                        </figure>
                         <div
-                          class="media-content"
+                          class="card-image"
+                        >
+                          <figure>
+                            <img
+                              alt="blog image"
+                              image="[object Object]"
+                            />
+                          </figure>
+                        </div>
+                        <div
+                          class="card-content"
                         >
                           <div
                             class="content"
@@ -4175,18 +4213,20 @@ exports[`Blog Posts Page renders correctly 1`] = `
                       href="/blog/ten-best-things/"
                     >
                       <div
-                        class="media"
+                        class="card"
                       >
-                        <figure
-                          class="media-left my-auto"
-                        >
-                          <img
-                            alt="blog image"
-                            image="[object Object]"
-                          />
-                        </figure>
                         <div
-                          class="media-content"
+                          class="card-image"
+                        >
+                          <figure>
+                            <img
+                              alt="blog image"
+                              image="[object Object]"
+                            />
+                          </figure>
+                        </div>
+                        <div
+                          class="card-content"
                         >
                           <div
                             class="content"
@@ -4208,18 +4248,20 @@ exports[`Blog Posts Page renders correctly 1`] = `
                       href="/blog/guide/"
                     >
                       <div
-                        class="media"
+                        class="card"
                       >
-                        <figure
-                          class="media-left my-auto"
-                        >
-                          <img
-                            alt="blog image"
-                            image="[object Object]"
-                          />
-                        </figure>
                         <div
-                          class="media-content"
+                          class="card-image"
+                        >
+                          <figure>
+                            <img
+                              alt="blog image"
+                              image="[object Object]"
+                            />
+                          </figure>
+                        </div>
+                        <div
+                          class="card-content"
                         >
                           <div
                             class="content"
@@ -4254,18 +4296,20 @@ exports[`Blog Posts Page renders correctly 1`] = `
                       href="/blog/baking-tutorial/"
                     >
                       <div
-                        class="media"
+                        class="card"
                       >
-                        <figure
-                          class="media-left my-auto"
-                        >
-                          <img
-                            alt="blog image"
-                            image="[object Object]"
-                          />
-                        </figure>
                         <div
-                          class="media-content"
+                          class="card-image"
+                        >
+                          <figure>
+                            <img
+                              alt="blog image"
+                              image="[object Object]"
+                            />
+                          </figure>
+                        </div>
+                        <div
+                          class="card-content"
                         >
                           <div
                             class="content"
@@ -4287,18 +4331,20 @@ exports[`Blog Posts Page renders correctly 1`] = `
                       href="/blog/ten-best-things/"
                     >
                       <div
-                        class="media"
+                        class="card"
                       >
-                        <figure
-                          class="media-left my-auto"
-                        >
-                          <img
-                            alt="blog image"
-                            image="[object Object]"
-                          />
-                        </figure>
                         <div
-                          class="media-content"
+                          class="card-image"
+                        >
+                          <figure>
+                            <img
+                              alt="blog image"
+                              image="[object Object]"
+                            />
+                          </figure>
+                        </div>
+                        <div
+                          class="card-content"
                         >
                           <div
                             class="content"
@@ -4320,18 +4366,20 @@ exports[`Blog Posts Page renders correctly 1`] = `
                       href="/blog/guide/"
                     >
                       <div
-                        class="media"
+                        class="card"
                       >
-                        <figure
-                          class="media-left my-auto"
-                        >
-                          <img
-                            alt="blog image"
-                            image="[object Object]"
-                          />
-                        </figure>
                         <div
-                          class="media-content"
+                          class="card-image"
+                        >
+                          <figure>
+                            <img
+                              alt="blog image"
+                              image="[object Object]"
+                            />
+                          </figure>
+                        </div>
+                        <div
+                          class="card-content"
                         >
                           <div
                             class="content"
@@ -5384,18 +5432,20 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
                       href="/blog/baking-tutorial/"
                     >
                       <div
-                        class="media"
+                        class="card"
                       >
-                        <figure
-                          class="media-left my-auto"
-                        >
-                          <img
-                            alt="blog image"
-                            image="[object Object]"
-                          />
-                        </figure>
                         <div
-                          class="media-content"
+                          class="card-image"
+                        >
+                          <figure>
+                            <img
+                              alt="blog image"
+                              image="[object Object]"
+                            />
+                          </figure>
+                        </div>
+                        <div
+                          class="card-content"
                         >
                           <div
                             class="content"
@@ -5417,18 +5467,20 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
                       href="/blog/ten-best-things/"
                     >
                       <div
-                        class="media"
+                        class="card"
                       >
-                        <figure
-                          class="media-left my-auto"
-                        >
-                          <img
-                            alt="blog image"
-                            image="[object Object]"
-                          />
-                        </figure>
                         <div
-                          class="media-content"
+                          class="card-image"
+                        >
+                          <figure>
+                            <img
+                              alt="blog image"
+                              image="[object Object]"
+                            />
+                          </figure>
+                        </div>
+                        <div
+                          class="card-content"
                         >
                           <div
                             class="content"
@@ -5450,18 +5502,20 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
                       href="/blog/guide/"
                     >
                       <div
-                        class="media"
+                        class="card"
                       >
-                        <figure
-                          class="media-left my-auto"
-                        >
-                          <img
-                            alt="blog image"
-                            image="[object Object]"
-                          />
-                        </figure>
                         <div
-                          class="media-content"
+                          class="card-image"
+                        >
+                          <figure>
+                            <img
+                              alt="blog image"
+                              image="[object Object]"
+                            />
+                          </figure>
+                        </div>
+                        <div
+                          class="card-content"
                         >
                           <div
                             class="content"
@@ -5496,18 +5550,20 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
                       href="/blog/baking-tutorial/"
                     >
                       <div
-                        class="media"
+                        class="card"
                       >
-                        <figure
-                          class="media-left my-auto"
-                        >
-                          <img
-                            alt="blog image"
-                            image="[object Object]"
-                          />
-                        </figure>
                         <div
-                          class="media-content"
+                          class="card-image"
+                        >
+                          <figure>
+                            <img
+                              alt="blog image"
+                              image="[object Object]"
+                            />
+                          </figure>
+                        </div>
+                        <div
+                          class="card-content"
                         >
                           <div
                             class="content"
@@ -5529,18 +5585,20 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
                       href="/blog/ten-best-things/"
                     >
                       <div
-                        class="media"
+                        class="card"
                       >
-                        <figure
-                          class="media-left my-auto"
-                        >
-                          <img
-                            alt="blog image"
-                            image="[object Object]"
-                          />
-                        </figure>
                         <div
-                          class="media-content"
+                          class="card-image"
+                        >
+                          <figure>
+                            <img
+                              alt="blog image"
+                              image="[object Object]"
+                            />
+                          </figure>
+                        </div>
+                        <div
+                          class="card-content"
                         >
                           <div
                             class="content"
@@ -5562,18 +5620,20 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
                       href="/blog/guide/"
                     >
                       <div
-                        class="media"
+                        class="card"
                       >
-                        <figure
-                          class="media-left my-auto"
-                        >
-                          <img
-                            alt="blog image"
-                            image="[object Object]"
-                          />
-                        </figure>
                         <div
-                          class="media-content"
+                          class="card-image"
+                        >
+                          <figure>
+                            <img
+                              alt="blog image"
+                              image="[object Object]"
+                            />
+                          </figure>
+                        </div>
+                        <div
+                          class="card-content"
                         >
                           <div
                             class="content"
@@ -6556,18 +6616,20 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
                       href="/blog/baking-tutorial/"
                     >
                       <div
-                        class="media"
+                        class="card"
                       >
-                        <figure
-                          class="media-left my-auto"
-                        >
-                          <img
-                            alt="blog image"
-                            image="[object Object]"
-                          />
-                        </figure>
                         <div
-                          class="media-content"
+                          class="card-image"
+                        >
+                          <figure>
+                            <img
+                              alt="blog image"
+                              image="[object Object]"
+                            />
+                          </figure>
+                        </div>
+                        <div
+                          class="card-content"
                         >
                           <div
                             class="content"
@@ -6589,18 +6651,20 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
                       href="/blog/ten-best-things/"
                     >
                       <div
-                        class="media"
+                        class="card"
                       >
-                        <figure
-                          class="media-left my-auto"
-                        >
-                          <img
-                            alt="blog image"
-                            image="[object Object]"
-                          />
-                        </figure>
                         <div
-                          class="media-content"
+                          class="card-image"
+                        >
+                          <figure>
+                            <img
+                              alt="blog image"
+                              image="[object Object]"
+                            />
+                          </figure>
+                        </div>
+                        <div
+                          class="card-content"
                         >
                           <div
                             class="content"
@@ -6622,18 +6686,20 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
                       href="/blog/guide/"
                     >
                       <div
-                        class="media"
+                        class="card"
                       >
-                        <figure
-                          class="media-left my-auto"
-                        >
-                          <img
-                            alt="blog image"
-                            image="[object Object]"
-                          />
-                        </figure>
                         <div
-                          class="media-content"
+                          class="card-image"
+                        >
+                          <figure>
+                            <img
+                              alt="blog image"
+                              image="[object Object]"
+                            />
+                          </figure>
+                        </div>
+                        <div
+                          class="card-content"
                         >
                           <div
                             class="content"
@@ -6668,18 +6734,20 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
                       href="/blog/baking-tutorial/"
                     >
                       <div
-                        class="media"
+                        class="card"
                       >
-                        <figure
-                          class="media-left my-auto"
-                        >
-                          <img
-                            alt="blog image"
-                            image="[object Object]"
-                          />
-                        </figure>
                         <div
-                          class="media-content"
+                          class="card-image"
+                        >
+                          <figure>
+                            <img
+                              alt="blog image"
+                              image="[object Object]"
+                            />
+                          </figure>
+                        </div>
+                        <div
+                          class="card-content"
                         >
                           <div
                             class="content"
@@ -6701,18 +6769,20 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
                       href="/blog/ten-best-things/"
                     >
                       <div
-                        class="media"
+                        class="card"
                       >
-                        <figure
-                          class="media-left my-auto"
-                        >
-                          <img
-                            alt="blog image"
-                            image="[object Object]"
-                          />
-                        </figure>
                         <div
-                          class="media-content"
+                          class="card-image"
+                        >
+                          <figure>
+                            <img
+                              alt="blog image"
+                              image="[object Object]"
+                            />
+                          </figure>
+                        </div>
+                        <div
+                          class="card-content"
                         >
                           <div
                             class="content"
@@ -6734,18 +6804,20 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
                       href="/blog/guide/"
                     >
                       <div
-                        class="media"
+                        class="card"
                       >
-                        <figure
-                          class="media-left my-auto"
-                        >
-                          <img
-                            alt="blog image"
-                            image="[object Object]"
-                          />
-                        </figure>
                         <div
-                          class="media-content"
+                          class="card-image"
+                        >
+                          <figure>
+                            <img
+                              alt="blog image"
+                              image="[object Object]"
+                            />
+                          </figure>
+                        </div>
+                        <div
+                          class="card-content"
                         >
                           <div
                             class="content"

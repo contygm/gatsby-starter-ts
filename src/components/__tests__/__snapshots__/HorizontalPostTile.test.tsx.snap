@@ -7,18 +7,20 @@ exports[`HorizontalPostTile renders correctly 1`] = `
     href="/blog/blog-url/"
   >
     <div
-      class="media"
+      class="card"
     >
-      <figure
-        class="media-left my-auto"
-      >
-        <img
-          alt="blog image"
-          image="[object Object]"
-        />
-      </figure>
       <div
-        class="media-content"
+        class="card-image"
+      >
+        <figure>
+          <img
+            alt="blog image"
+            image="[object Object]"
+          />
+        </figure>
+      </div>
+      <div
+        class="card-content"
       >
         <div
           class="content"

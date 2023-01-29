@@ -184,6 +184,7 @@ exports[`Blog Index Page renders and filters correctly 1`] = `
                     name="searchPost"
                     placeholder="Find a post"
                     type="text"
+                    value=""
                   />
                 </p>
                 <p
@@ -979,6 +980,7 @@ exports[`Blog Index Page searches correctly 1`] = `
                     name="searchPost"
                     placeholder="Find a post"
                     type="text"
+                    value=""
                   />
                 </p>
                 <p
