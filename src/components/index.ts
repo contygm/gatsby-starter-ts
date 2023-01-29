@@ -2,7 +2,7 @@ export { default as AuthorBlurb } from './AuthorBlurb';
 export { default as ContactForm } from './ContactForm';
 export { default as FaIconLink } from './FaIconLink';
 export { default as Footer } from './Footer';
-export { default as HorizontalPostTile } from './HorizontalPostTile';
+export { default as HorizontalPostTile } from './SideBarPostTile';
 export { default as Layout } from './Layout';
 export { default as NavBar } from './NavBar';
 export { default as OutsideClicker } from './OutsideClicker';

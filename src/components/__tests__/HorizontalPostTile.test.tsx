@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import HorizontalPostTile, { PostTileProps } from '../HorizontalPostTile';
+import HorizontalPostTile, { PostTileProps } from '../SideBarPostTile';
 import { IGatsbyImageData } from 'gatsby-plugin-image';
 
 const mockData: PostTileProps = {

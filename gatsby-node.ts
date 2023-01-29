@@ -11,6 +11,7 @@ export const createPages: GatsbyNode['createPages'] = async ({
 
     // Define a templates for posts
     const blogTemplate = path.resolve(`./src/templates/blog-post.tsx`);
+    const wikiTemplate = path.resolve(`./src/templates/wiki-post.tsx`);
 
     // Get all markdown posts
     const result = await graphql(`
@@ -91,7 +92,7 @@ export const createPages: GatsbyNode['createPages'] = async ({
                 index === allWikis.length - 1 ? null : allWikis[index + 1].id;
             createPage({
                 path: `wiki${post.fields.slug}`,
-                component: blogTemplate,
+                component: wikiTemplate,
                 context: {
                     id: post.id,
                     slug: post.fields.slug,

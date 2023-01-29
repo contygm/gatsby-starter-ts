@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
 import TagsList from './TagsList';
 
-
 const SearchFilterRow = (props: {
     tags: Array<{
         fieldValue: string;
@@ -26,10 +25,10 @@ const SearchFilterRow = (props: {
     // TODO: make X button work
     //     const hasQuery = props.searchQuery !== "";
     // const btnContent = hasQuery
-    //     ? <FontAwesomeIcon icon={faX} /> 
+    //     ? <FontAwesomeIcon icon={faX} />
     //     : "Search";
-    
-    const btnContent = "Search";
+
+    const btnContent = 'Search';
 
     return (
         <section className="section ">
@@ -49,7 +48,7 @@ const SearchFilterRow = (props: {
                                     placeholder="Find a post"
                                     value={value}
                                     onChange={handleChange}
-                                />  
+                                />
                             </p>
                             <p className="control">
                                 <button

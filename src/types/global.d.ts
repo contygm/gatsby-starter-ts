@@ -1,6 +1,8 @@
 export {};
 
 declare global {
+    type PostType = 'blog' | 'wiki';
+
     interface SiteMetadata {
         title: string;
         siteUrl: string;

@@ -17,18 +17,17 @@ const HorizontalPostTile = ({ title, excerpt, slug, image }: PostTileProps) => {
         >
             <div className="card">
                 <div className="card-image">
-                {image && (
-                    <figure>
-                        <GatsbyImage
-                            alt="blog image"
-                            image={image}
-                            className="image "
-                        />
-                    </figure>
-                )}
+                    {image && (
+                        <figure>
+                            <GatsbyImage
+                                alt="blog image"
+                                image={image}
+                                className="image "
+                            />
+                        </figure>
+                    )}
                 </div>
                 <div className="card-content">
-
                     <div className="content">
                         <h6>{title}</h6>
                         <p>{excerpt}</p>

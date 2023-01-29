@@ -3,6 +3,7 @@ import React from 'react';
 
 const PostCard = (props: {
     post: IndexElements;
+    type: PostType;
     handleFilterUpdate: (e: any) => void;
 }) => {
     return (
@@ -36,7 +37,7 @@ const PostCard = (props: {
                 </div>
                 <div className="content">
                     <p>{props.post.frontmatter.description}</p>
-                    <Link to={`/blog${props.post.fields.slug}`}>
+                    <Link to={`/${props.type}${props.post.fields.slug}`}>
                         Read more...
                     </Link>
                 </div>

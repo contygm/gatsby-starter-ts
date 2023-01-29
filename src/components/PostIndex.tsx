@@ -4,12 +4,14 @@ import PostCard from './PostCard';
 interface PostIndexProps {
     allPosts: Array<IndexElements>;
     increment: number;
+    type: PostType;
     handleFilterUpdate: (e: any) => void;
 }
 
 const PostIndex: FunctionComponent<PostIndexProps> = ({
     allPosts,
     increment,
+    type,
     handleFilterUpdate
 }: PostIndexProps) => {
     const [displayPosts, setDisplayPosts] = useState([
@@ -58,6 +60,7 @@ const PostIndex: FunctionComponent<PostIndexProps> = ({
                                     key={post.frontmatter.title}
                                 >
                                     <PostCard
+                                        type={type}
                                         post={post}
                                         handleFilterUpdate={handleFilterUpdate}
                                     />

@@ -12,7 +12,7 @@ export interface PostPageProps {
         nodes: Array<IndexElements>;
         totalCount: number;
     };
-    type: 'blog' | 'wiki';
+    type: PostType;
 }
 
 const INCREMENT = 6;
@@ -41,7 +41,7 @@ const PostPage: FunctionComponent<PostPageProps> = ({
     };
 
     const clearSearchQuery = () => {
-        console.log('hey')
+        console.log('hey');
         setSearchQuery('');
         window.history.replaceState(null, '', `/${type}`);
     };
@@ -108,6 +108,7 @@ const PostPage: FunctionComponent<PostPageProps> = ({
                 allPosts={allPosts}
                 increment={INCREMENT}
                 handleFilterUpdate={handleFilterUpdate}
+                type={type}
             />
         </>
     );

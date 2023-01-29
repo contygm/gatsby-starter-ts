@@ -1,7 +1,7 @@
 import React from 'react';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import HorizontalPostTile from './HorizontalPostTile';
+import HorizontalPostTile from './SideBarPostTile';
 import { getImage } from 'gatsby-plugin-image';
 
 export interface SideBarProps {
