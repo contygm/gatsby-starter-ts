@@ -15,17 +15,20 @@ const HorizontalPostTile = ({ title, excerpt, slug, image }: PostTileProps) => {
             to={`/blog${slug}`}
             className="horizontal-post-tile"
         >
-            <div className="media">
+            <div className="card">
+                <div className="card-image">
                 {image && (
-                    <figure className="media-left my-auto">
+                    <figure>
                         <GatsbyImage
                             alt="blog image"
                             image={image}
-                            className="image is-64x64 post-tile-image"
+                            className="image "
                         />
                     </figure>
                 )}
-                <div className="media-content">
+                </div>
+                <div className="card-content">
+
                     <div className="content">
                         <h6>{title}</h6>
                         <p>{excerpt}</p>

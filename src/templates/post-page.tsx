@@ -40,6 +40,12 @@ const PostPage: FunctionComponent<PostPageProps> = ({
         setTagFilter(e.target.id);
     };
 
+    const clearSearchQuery = () => {
+        console.log('hey')
+        setSearchQuery('');
+        window.history.replaceState(null, '', `/${type}`);
+    };
+
     const handleSubmitSearch = (e: any) => {
         e.preventDefault();
         const queryValue =
@@ -93,8 +99,10 @@ const PostPage: FunctionComponent<PostPageProps> = ({
                 tags={tags}
                 activeTag={tagFilter}
                 totalPostCount={index.totalCount}
+                clearSearchQuery={clearSearchQuery}
                 handleFilterUpdate={handleFilterUpdate}
                 handleSubmitSearch={handleSubmitSearch}
+                searchQuery={searchQuery}
             />
             <PostIndex
                 allPosts={allPosts}
