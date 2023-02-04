@@ -1,6 +1,7 @@
 import React, { FunctionComponent, useEffect, useState } from 'react';
-import { SearchFilterRow, PostIndex } from '../components';
+import { SearchFilterRow, PostIndex, GlossaryIndex } from '../components';
 
+// TODO all btn always goes to blog
 export interface PostPageProps {
     allTags: {
         group: Array<{
@@ -8,8 +9,12 @@ export interface PostPageProps {
             totalCount: number;
         }>;
     };
-    index: {
+    postIndex?: {
         nodes: Array<IndexElements>;
+        totalCount: number;
+    };
+    glossaryIndex?: {
+        nodes: Array<GlossaryElements>;
         totalCount: number;
     };
     type: PostType;
@@ -18,12 +23,13 @@ export interface PostPageProps {
 const INCREMENT = 6;
 
 const PostPage: FunctionComponent<PostPageProps> = ({
-    index,
+    postIndex,
+    glossaryIndex,
     allTags,
     type
 }: PostPageProps) => {
-    const unfilteredPosts = index.nodes;
-    const [allPosts, setAllPosts] = useState(index.nodes);
+    const unfilteredPosts = postIndex?.nodes;
+    const [allPosts, setAllPosts] = useState(postIndex?.nodes);
 
     const searchFromQuery = location.search.match(/(?<=\bsearch=)\w+/g);
     const [searchQuery, setSearchQuery] = useState(
@@ -41,7 +47,6 @@ const PostPage: FunctionComponent<PostPageProps> = ({
     };
 
     const clearSearchQuery = () => {
-        console.log('hey');
         setSearchQuery('');
         window.history.replaceState(null, '', `/${type}`);
     };
@@ -64,7 +69,7 @@ const PostPage: FunctionComponent<PostPageProps> = ({
         if (tagFilter === 'all') {
             setAllPosts(unfilteredPosts);
         } else {
-            const filtered = unfilteredPosts.filter((post) =>
+            const filtered = unfilteredPosts?.filter((post) =>
                 post.frontmatter.tags.includes(tagFilter)
             );
             setAllPosts(filtered);
@@ -98,18 +103,24 @@ const PostPage: FunctionComponent<PostPageProps> = ({
             <SearchFilterRow
                 tags={tags}
                 activeTag={tagFilter}
-                totalPostCount={index.totalCount}
+                totalPostCount={postIndex?.totalCount || 0}
                 clearSearchQuery={clearSearchQuery}
                 handleFilterUpdate={handleFilterUpdate}
                 handleSubmitSearch={handleSubmitSearch}
                 searchQuery={searchQuery}
             />
-            <PostIndex
-                allPosts={allPosts}
-                increment={INCREMENT}
-                handleFilterUpdate={handleFilterUpdate}
-                type={type}
-            />
+            { 
+            type !== 'glossary'
+                ? <PostIndex
+                    allPosts={allPosts || []}
+                    increment={INCREMENT}
+                    handleFilterUpdate={handleFilterUpdate}
+                    type={type}
+                />
+                : <GlossaryIndex allDefinitions={glossaryIndex?.nodes || []}/>
+                                        
+                                        
+            }     
         </>
     );
 };

@@ -1,7 +1,7 @@
 export {};
 
 declare global {
-    type PostType = 'blog' | 'wiki';
+    type PostType = 'blog' | 'wiki' | 'glossary';
 
     interface SiteMetadata {
         title: string;
@@ -42,6 +42,21 @@ declare global {
                     gatsbyImageData: GatsbyImageProps.image;
                 };
             };
+        };
+    }
+
+    interface GlossaryElements {
+        html: string;
+        frontmatter: {
+            title: string;
+            letter: string;
+            date: string;
+            type: string;
+            syllables: string;
+            phonetics: string;
+            similarWords: Array<string>;
+            relatedPosts: Array<string>;
+            tags: Array<string>;
         };
     }
 

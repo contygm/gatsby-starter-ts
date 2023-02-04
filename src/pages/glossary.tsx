@@ -3,7 +3,7 @@ import { graphql, HeadProps, PageProps } from 'gatsby';
 import { Layout, SEO, PageHeader } from '../components';
 import PostPage from '../templates/post-page';
 
-export interface BlogIndexProps {
+export interface GlossaryPageProps {
     site: SiteMetadata;
     allTags: {
         group: Array<{
@@ -12,45 +12,47 @@ export interface BlogIndexProps {
         }>;
     };
     index: {
-        nodes: Array<IndexElements>;
+        nodes: Array<GlossaryElements>;
         totalCount: number;
     };
     featured: {
-        nodes: Array<IndexElements>;
+        nodes: Array<GlossaryElements>;
     };
 }
 
-const BlogIndex: FunctionComponent<PageProps<BlogIndexProps>> = ({
+const GlossaryPage: FunctionComponent<PageProps<GlossaryPageProps>> = ({
     data: { index, allTags }
-}: PageProps<BlogIndexProps>) => {
+}: PageProps<GlossaryPageProps>) => {
     return (
         <Layout>
             <PageHeader
-                title={`Blog Index`}
+                title={`Glossary Index`}
                 alignCenter={true}
             />
+			{/* TODO: make PostPage have a glossary option, no read more*/}
             <PostPage
-                postIndex={index}
+                // indexComponent={<GlossaryPage allDefinitions={index.nodes}/>}
+				glossaryIndex={index}
                 allTags={allTags}
-                type={'blog'}
+                type={'glossary'}
             />
         </Layout>
     );
 };
 
-export default BlogIndex;
+export default GlossaryPage;
 
-export function Head({ data: { site } }: HeadProps<BlogIndexProps>) {
+export function Head({ data: { site } }: HeadProps<GlossaryPageProps>) {
     return <SEO title={site.title} />;
 }
 
 export const pageQuery = graphql`
-    query BlogQuery {
+    query GlossaryQuery {
         site: site {
             ...SiteMetadata
         }
         allTags: allMarkdownRemark(
-            filter: { frontmatter: { type: { eq: "blog" } } }
+            filter: { frontmatter: { type: { eq: "glossary" } } }
         ) {
             group(field: frontmatter___tags) {
                 fieldValue
@@ -58,23 +60,23 @@ export const pageQuery = graphql`
             }
         }
         index: allMarkdownRemark(
-            sort: { fields: [frontmatter___date], order: DESC }
-            filter: { frontmatter: { type: { eq: "blog" } } }
+            sort: { fields: [frontmatter___title], order: ASC }
+            filter: { frontmatter: { type: { eq: "glossary" } } }
         ) {
             nodes {
-                ...IndexElements
+                ...GlossaryElements
             }
             totalCount
         }
         featured: allMarkdownRemark(
             limit: 5
-            sort: { fields: [frontmatter___date], order: DESC }
+            sort: { fields: [frontmatter___letter], order: ASC }
             filter: {
-                frontmatter: { type: { eq: "blog" }, featured: { eq: true } }
+                frontmatter: { type: { eq: "glossary" }, featured: { eq: true } }
             }
         ) {
             nodes {
-                ...IndexElements
+                ...GlossaryElements
             }
         }
     }

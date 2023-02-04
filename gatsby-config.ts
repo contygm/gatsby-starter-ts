@@ -84,11 +84,18 @@ const config: GatsbyConfig = {
             }
         },
         {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                path: `${__dirname}/content/glossary`,
+                name: `glossary`
+            }
+        },
+        {
             resolve: 'gatsby-plugin-eslint',
             options: {
                 // Gatsby required rules directory
                 rulePaths: [gatsbyRequiredRules],
-                // Default settings that may be ommitted or customized
+                // Default settings that may be omitted or customized
                 stages: ['develop'],
                 extensions: ['js', 'jsx', 'ts', 'tsx'],
                 exclude: [

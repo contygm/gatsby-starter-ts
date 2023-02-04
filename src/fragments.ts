@@ -35,6 +35,22 @@ export const fragments = graphql`
             }
         }
     }
+
+    fragment GlossaryElements on MarkdownRemark {
+        html
+        frontmatter {
+            title
+            letter
+            date(formatString: "DD MMMM YYYY")
+            type
+            syllables
+            phonetics
+            similarWords
+            relatedPosts
+            tags
+        }
+    }
+
     fragment PostElements on MarkdownRemark {
         id
         excerpt(pruneLength: 160)

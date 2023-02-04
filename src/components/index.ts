@@ -15,3 +15,4 @@ export { default as SideBar } from './SideBar';
 export { default as StickySocialMedia } from './StickySocialMedia';
 export { default as TagsList } from './TagsList';
 export { default as ToC } from './ToC';
+export { default as GlossaryIndex } from './GlossaryIndex';

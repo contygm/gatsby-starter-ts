@@ -63,7 +63,7 @@ const NavBar = () => {
             >
                 <div className="navbar-start">
                     <Link
-                        to="/"
+                        to="/404"
                         className="navbar-item"
                         data-cy="nav-link-home"
                     >
@@ -84,7 +84,7 @@ const NavBar = () => {
                         Wiki
                     </Link>
                     <Link
-                        to="/404"
+                        to="/glossary"
                         className="navbar-item"
                         data-cy="nav-link-glossary"
                     >
