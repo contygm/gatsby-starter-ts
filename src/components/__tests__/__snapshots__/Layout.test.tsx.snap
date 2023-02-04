@@ -53,7 +53,7 @@ exports[`Layout renders correctly 1`] = `
           <a
             class="navbar-item"
             data-cy="nav-link-home"
-            href="/"
+            href="/404"
           >
             Home
           </a>
@@ -74,7 +74,7 @@ exports[`Layout renders correctly 1`] = `
           <a
             class="navbar-item"
             data-cy="nav-link-glossary"
-            href="/404"
+            href="/glossary"
           >
             Glossary
           </a>

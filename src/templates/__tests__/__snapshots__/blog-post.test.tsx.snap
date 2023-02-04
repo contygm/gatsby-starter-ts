@@ -53,7 +53,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
           <a
             class="navbar-item"
             data-cy="nav-link-home"
-            href="/"
+            href="/404"
           >
             Home
           </a>
@@ -74,7 +74,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
           <a
             class="navbar-item"
             data-cy="nav-link-glossary"
-            href="/404"
+            href="/glossary"
           >
             Glossary
           </a>
@@ -1237,7 +1237,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
           <a
             class="navbar-item"
             data-cy="nav-link-home"
-            href="/"
+            href="/404"
           >
             Home
           </a>
@@ -1258,7 +1258,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
           <a
             class="navbar-item"
             data-cy="nav-link-glossary"
-            href="/404"
+            href="/glossary"
           >
             Glossary
           </a>
@@ -2421,7 +2421,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
           <a
             class="navbar-item"
             data-cy="nav-link-home"
-            href="/"
+            href="/404"
           >
             Home
           </a>
@@ -2442,7 +2442,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
           <a
             class="navbar-item"
             data-cy="nav-link-glossary"
-            href="/404"
+            href="/glossary"
           >
             Glossary
           </a>
@@ -3625,7 +3625,7 @@ exports[`Blog Posts Page renders correctly 1`] = `
           <a
             class="navbar-item"
             data-cy="nav-link-home"
-            href="/"
+            href="/404"
           >
             Home
           </a>
@@ -3646,7 +3646,7 @@ exports[`Blog Posts Page renders correctly 1`] = `
           <a
             class="navbar-item"
             data-cy="nav-link-glossary"
-            href="/404"
+            href="/glossary"
           >
             Glossary
           </a>
@@ -4789,7 +4789,7 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
           <a
             class="navbar-item"
             data-cy="nav-link-home"
-            href="/"
+            href="/404"
           >
             Home
           </a>
@@ -4810,7 +4810,7 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
           <a
             class="navbar-item"
             data-cy="nav-link-glossary"
-            href="/404"
+            href="/glossary"
           >
             Glossary
           </a>
@@ -5973,7 +5973,7 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
           <a
             class="navbar-item"
             data-cy="nav-link-home"
-            href="/"
+            href="/404"
           >
             Home
           </a>
@@ -5994,7 +5994,7 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
           <a
             class="navbar-item"
             data-cy="nav-link-glossary"
-            href="/404"
+            href="/glossary"
           >
             Glossary
           </a>

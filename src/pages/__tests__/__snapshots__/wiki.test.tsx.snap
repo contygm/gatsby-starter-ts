@@ -73,7 +73,7 @@ exports[`Wiki Index Page renders correctly 1`] = `
           <a
             class="navbar-item"
             data-cy="nav-link-home"
-            href="/"
+            href="/404"
           >
             Home
           </a>
@@ -94,7 +94,7 @@ exports[`Wiki Index Page renders correctly 1`] = `
           <a
             class="navbar-item"
             data-cy="nav-link-glossary"
-            href="/404"
+            href="/glossary"
           >
             Glossary
           </a>
@@ -343,7 +343,7 @@ exports[`Wiki Index Page renders correctly 1`] = `
                       a baking tutorial
                     </p>
                     <a
-                      href="/blog/baking-tutorial/"
+                      href="/wiki/baking-tutorial/"
                     >
                       Read more...
                     </a>
@@ -428,7 +428,7 @@ exports[`Wiki Index Page renders correctly 1`] = `
                       a list of the ten best things
                     </p>
                     <a
-                      href="/blog/ten-best-things/"
+                      href="/wiki/ten-best-things/"
                     >
                       Read more...
                     </a>
@@ -513,7 +513,7 @@ exports[`Wiki Index Page renders correctly 1`] = `
                       a guide
                     </p>
                     <a
-                      href="/blog/guide/"
+                      href="/wiki/guide/"
                     >
                       Read more...
                     </a>

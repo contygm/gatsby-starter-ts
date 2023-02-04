@@ -53,7 +53,7 @@ exports[`LegalPage Cookie Page renders correctly 1`] = `
           <a
             class="navbar-item"
             data-cy="nav-link-home"
-            href="/"
+            href="/404"
           >
             Home
           </a>
@@ -74,7 +74,7 @@ exports[`LegalPage Cookie Page renders correctly 1`] = `
           <a
             class="navbar-item"
             data-cy="nav-link-glossary"
-            href="/404"
+            href="/glossary"
           >
             Glossary
           </a>
@@ -530,7 +530,7 @@ exports[`LegalPage Copyright Page renders correctly 1`] = `
           <a
             class="navbar-item"
             data-cy="nav-link-home"
-            href="/"
+            href="/404"
           >
             Home
           </a>
@@ -551,7 +551,7 @@ exports[`LegalPage Copyright Page renders correctly 1`] = `
           <a
             class="navbar-item"
             data-cy="nav-link-glossary"
-            href="/404"
+            href="/glossary"
           >
             Glossary
           </a>
@@ -1007,7 +1007,7 @@ exports[`LegalPage Disclaimer Page renders correctly 1`] = `
           <a
             class="navbar-item"
             data-cy="nav-link-home"
-            href="/"
+            href="/404"
           >
             Home
           </a>
@@ -1028,7 +1028,7 @@ exports[`LegalPage Disclaimer Page renders correctly 1`] = `
           <a
             class="navbar-item"
             data-cy="nav-link-glossary"
-            href="/404"
+            href="/glossary"
           >
             Glossary
           </a>
@@ -1504,7 +1504,7 @@ exports[`LegalPage Legal renders correctly 1`] = `
           <a
             class="navbar-item"
             data-cy="nav-link-home"
-            href="/"
+            href="/404"
           >
             Home
           </a>
@@ -1525,7 +1525,7 @@ exports[`LegalPage Legal renders correctly 1`] = `
           <a
             class="navbar-item"
             data-cy="nav-link-glossary"
-            href="/404"
+            href="/glossary"
           >
             Glossary
           </a>
@@ -2061,7 +2061,7 @@ exports[`LegalPage Privacy Policy Page renders correctly 1`] = `
           <a
             class="navbar-item"
             data-cy="nav-link-home"
-            href="/"
+            href="/404"
           >
             Home
           </a>
@@ -2082,7 +2082,7 @@ exports[`LegalPage Privacy Policy Page renders correctly 1`] = `
           <a
             class="navbar-item"
             data-cy="nav-link-glossary"
-            href="/404"
+            href="/glossary"
           >
             Glossary
           </a>
@@ -2538,7 +2538,7 @@ exports[`LegalPage Terms and Conditions Page renders correctly 1`] = `
           <a
             class="navbar-item"
             data-cy="nav-link-home"
-            href="/"
+            href="/404"
           >
             Home
           </a>
@@ -2559,7 +2559,7 @@ exports[`LegalPage Terms and Conditions Page renders correctly 1`] = `
           <a
             class="navbar-item"
             data-cy="nav-link-glossary"
-            href="/404"
+            href="/glossary"
           >
             Glossary
           </a>
