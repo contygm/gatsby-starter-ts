@@ -27,8 +27,8 @@ const DefinitionCard = (props: {
                     <p className="mt-2 ml-2 mr-2">Tags:</p>
 
                     <div className="tags">
-                        {props.definition.frontmatter.tags
-                            .map((tag: string) => {
+                        {props.definition.frontmatter.tags.map(
+                            (tag: string) => {
                                 return (
                                     <Link
                                         to={`?tag=${tag}`}
@@ -40,7 +40,8 @@ const DefinitionCard = (props: {
                                         {tag}
                                     </Link>
                                 );
-                            })}
+                            }
+                        )}
                     </div>
                 </div>
             </div>

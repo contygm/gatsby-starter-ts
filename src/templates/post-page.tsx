@@ -109,18 +109,16 @@ const PostPage: FunctionComponent<PostPageProps> = ({
                 handleSubmitSearch={handleSubmitSearch}
                 searchQuery={searchQuery}
             />
-            { 
-            type !== 'glossary'
-                ? <PostIndex
+            {type !== 'glossary' ? (
+                <PostIndex
                     allPosts={allPosts || []}
                     increment={INCREMENT}
                     handleFilterUpdate={handleFilterUpdate}
                     type={type}
                 />
-                : <GlossaryIndex allDefinitions={glossaryIndex?.nodes || []}/>
-                                        
-                                        
-            }     
+            ) : (
+                <GlossaryIndex allDefinitions={glossaryIndex?.nodes || []} />
+            )}
         </>
     );
 };

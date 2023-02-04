@@ -7,10 +7,9 @@ interface GlossaryIndexProps {
 }
 
 const GlossaryIndex: FunctionComponent<GlossaryIndexProps> = ({
-    allDefinitions,
-    // handleFilterUpdate
-}: GlossaryIndexProps) => {
-
+    allDefinitions
+}: // handleFilterUpdate
+GlossaryIndexProps) => {
     return (
         <article className="section">
             <section className="container is-max-desktop">
@@ -27,11 +26,12 @@ const GlossaryIndex: FunctionComponent<GlossaryIndexProps> = ({
                                     <DefinitionCard
                                         definition={def}
                                         // handleFilterUpdate={handleFilterUpdate}
-                                    /> 
+                                    />
                                 </div>
                             );
-                        }) 
-                    ) : (// TODO make no results look like something
+                        })
+                    ) : (
+                        // TODO make no results look like something
                         <div>No results</div>
                     )}
                 </div>

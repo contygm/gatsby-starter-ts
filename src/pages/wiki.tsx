@@ -31,7 +31,6 @@ const WikiIndex = ({ data: { index, allTags } }: PageProps<WikiIndexProps>) => {
                 postIndex={index}
                 allTags={allTags}
                 type={'wiki'}
-
             />
         </Layout>
     );

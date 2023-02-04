@@ -29,10 +29,10 @@ const GlossaryPage: FunctionComponent<PageProps<GlossaryPageProps>> = ({
                 title={`Glossary Index`}
                 alignCenter={true}
             />
-			{/* TODO: make PostPage have a glossary option, no read more*/}
+            {/* TODO: make PostPage have a glossary option, no read more*/}
             <PostPage
                 // indexComponent={<GlossaryPage allDefinitions={index.nodes}/>}
-				glossaryIndex={index}
+                glossaryIndex={index}
                 allTags={allTags}
                 type={'glossary'}
             />
@@ -72,7 +72,10 @@ export const pageQuery = graphql`
             limit: 5
             sort: { fields: [frontmatter___letter], order: ASC }
             filter: {
-                frontmatter: { type: { eq: "glossary" }, featured: { eq: true } }
+                frontmatter: {
+                    type: { eq: "glossary" }
+                    featured: { eq: true }
+                }
             }
         ) {
             nodes {

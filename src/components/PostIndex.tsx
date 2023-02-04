@@ -63,11 +63,12 @@ const PostIndex: FunctionComponent<PostIndexProps> = ({
                                         type={type}
                                         post={post}
                                         handleFilterUpdate={handleFilterUpdate}
-                                    /> 
+                                    />
                                 </div>
                             );
-                        }) 
-                    ) : (// TODO make no results look like something
+                        })
+                    ) : (
+                        // TODO make no results look like something
                         <div>No results</div>
                     )}
                 </div>
