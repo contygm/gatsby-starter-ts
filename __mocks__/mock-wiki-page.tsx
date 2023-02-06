@@ -1,9 +1,9 @@
 /* istanbul ignore file */
-import { BlogIndexProps } from '../src/pages/blog';
+import { WikiIndexProps } from '../src/pages/wiki';
 import { mockHeadProps, mockPageProps } from '../src/utils/test-props';
 import { HeadProps, PageProps } from 'gatsby';
 
-const mockBlogs: BlogIndexProps = {
+const mockWikis: WikiIndexProps  = {
     site: {
         title: `Starter`,
         siteUrl: `https://www.domain.com`,
@@ -144,9 +144,10 @@ const mockBlogs: BlogIndexProps = {
     }
 };
 
-export const mockBlogPageData = mockPageProps(
-    mockBlogs
-) as PageProps<BlogIndexProps>;
-export const mockBlogHeadData = mockHeadProps(
-    mockBlogs
-) as HeadProps<BlogIndexProps>;
+export const mockWikiPageData = mockPageProps(
+    mockWikis
+) as PageProps<WikiIndexProps>;
+
+export const mockWikiHeadData = mockHeadProps(
+    mockWikis
+) as HeadProps<WikiIndexProps>;
