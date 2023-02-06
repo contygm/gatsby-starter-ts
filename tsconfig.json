@@ -106,5 +106,5 @@
         "./gatsby-node.ts",
         "./gatsby-config.ts",
         "./plugins/**/*"
-    ]
+, "__mocks__/mock-blog-post.tsx"    ]
 }

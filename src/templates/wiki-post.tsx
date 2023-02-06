@@ -16,7 +16,7 @@ import {
     StickySocialMedia
 } from '../components';
 
-export interface BlogPostProps {
+export interface WikiPostProps {
     site: {
         siteMetadata: SiteMetadata;
     };
@@ -33,7 +33,7 @@ export interface BlogPostProps {
 
 const BlogPost = ({
     data: { site, markdownRemark, previous, next, featured, related }
-}: PageProps<BlogPostProps>) => {
+}: PageProps<WikiPostProps>) => {
     // const winSize = window.innerWidth <= 1215;
     const [showMobileToc, setShowMobileToc] = useState(false);
     const [isMobile, setIsMobile] = useState(useCheckMobileScreen());
@@ -179,7 +179,7 @@ const BlogPost = ({
 };
 
 export default BlogPost;
-export function Head({ data: { markdownRemark } }: HeadProps<BlogPostProps>) {
+export function Head({ data: { markdownRemark } }: HeadProps<WikiPostProps>) {
     return <SEO title={markdownRemark.frontmatter.title} />;
 }
 

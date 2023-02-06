@@ -1,14 +1,14 @@
 import React from 'react';
 import { fireEvent, render } from '@testing-library/react';
-import BlogPost, { Head } from '../../templates/blog-post';
-import { mockBlogPostHeadData, mockBlogPostData } from '../../../__mocks__/mock-blog-post';
+import WikiPost, { Head } from '../../templates/wiki-post';
+import { mockWikiPostHeadData, mockWikiPostData } from '../../../__mocks__/mock-wiki-post';
 
 const resizeWindow = (x: number) => {
     window.innerWidth = x;
     window.dispatchEvent(new Event('resize'));
 };
 
-describe('Blog Posts Page', () => {
+describe('Wiki Posts Page', () => {
     beforeEach(() => {
         // IntersectionObserver isn't available in test environment
         const mockIntersectionObserver = jest.fn();
@@ -22,31 +22,31 @@ describe('Blog Posts Page', () => {
     });
 
     it('renders correctly', () => {
-        const { asFragment } = render(<BlogPost {...mockBlogPostData} />);
+        const { asFragment } = render(<WikiPost {...mockWikiPostData} />);
         expect(asFragment()).toMatchSnapshot();
     });
 
     it('header meta data renders correctly', () => {
-        const { asFragment } = render(<Head {...mockBlogPostHeadData} />);
+        const { asFragment } = render(<Head {...mockWikiPostHeadData} />);
         expect(asFragment()).toMatchSnapshot();
     });
 
     it('renders correctly on mobile view', () => {
         resizeWindow(1000);
-        const { asFragment } = render(<BlogPost {...mockBlogPostData} />);
+        const { asFragment } = render(<WikiPost {...mockWikiPostData} />);
         expect(asFragment()).toMatchSnapshot();
     });
 
     it('renders correctly on medium view', () => {
         resizeWindow(1100);
-        const { asFragment } = render(<BlogPost {...mockBlogPostData} />);
+        const { asFragment } = render(<WikiPost {...mockWikiPostData} />);
         expect(asFragment()).toMatchSnapshot();
     });
 
     it('ToC shows properly on mobile', () => {
         resizeWindow(1000);
         const { asFragment, getByTestId, queryByRole } = render(
-            <BlogPost {...mockBlogPostData} />
+            <WikiPost {...mockWikiPostData} />
         );
         expect(asFragment()).toMatchSnapshot('closed table of contents');
 

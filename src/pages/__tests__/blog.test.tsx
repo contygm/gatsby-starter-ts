@@ -4,7 +4,7 @@ import BlogIndex, { Head } from '../blog';
 import {
     mockBlogHeadData,
     mockBlogPageData
-} from '../../../__mocks__/mock-page-data';
+} from '../../../__mocks__/mock-blog-page';
 
 describe('Blog Index Page', () => {
     it('renders and filters correctly', () => {
