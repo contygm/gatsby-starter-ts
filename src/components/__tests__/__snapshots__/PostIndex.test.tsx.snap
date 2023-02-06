@@ -68,7 +68,7 @@ exports[`PostIndex default renders and load btn works correctly 1`] = `
                   a baking tutorial
                 </p>
                 <a
-                  href="/undefined/baking-tutorial/"
+                  href="/blog/baking-tutorial/"
                 >
                   Read more...
                 </a>
@@ -139,9 +139,9 @@ exports[`PostIndex default renders and load btn works correctly 1`] = `
                     class="subtitle is-6"
                   >
                     <time
-                      datetime="12-2-2021"
+                      datetime="2-2-2021"
                     >
-                      12-2-2021
+                      2-2-2021
                     </time>
                   </p>
                 </div>
@@ -153,7 +153,7 @@ exports[`PostIndex default renders and load btn works correctly 1`] = `
                   a list of the ten best things
                 </p>
                 <a
-                  href="/undefined/ten-best-things/"
+                  href="/blog/ten-best-things/"
                 >
                   Read more...
                 </a>
@@ -169,6 +169,13 @@ exports[`PostIndex default renders and load btn works correctly 1`] = `
                 <div
                   class="tags"
                 >
+                  <a
+                    class="tag mt-2"
+                    href="?tag=two"
+                    id="two"
+                  >
+                    two
+                  </a>
                   <a
                     class="tag mt-2"
                     href="?tag=three"

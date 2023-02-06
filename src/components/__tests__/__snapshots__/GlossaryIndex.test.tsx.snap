@@ -1,0 +1,359 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GlossaryIndex default renders correctly 1`] = `
+<DocumentFragment>
+  <article
+    class="section"
+  >
+    <section
+      class="container"
+    >
+      <div
+        class="is-centered"
+      >
+        <div
+          class="my-5"
+          data-testid="definition-card"
+        >
+          <div
+            class="card"
+          >
+            <div
+              class="card-content"
+            >
+              <div
+                class="media"
+              >
+                <div
+                  class="media-content"
+                >
+                  <h2
+                    class="title is-4"
+                  >
+                    Air
+                  </h2>
+                </div>
+              </div>
+              <div
+                class="content"
+              >
+                <div
+                  class="container"
+                >
+                  <h3>
+                    Definition
+                  </h3>
+                  <p>
+                    Lemon drops pastry danish halvah. Lemon drops pastry danish halvah.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="card-footer"
+              >
+                <p
+                  class="mt-2 ml-2 mr-2"
+                >
+                  Tags:
+                </p>
+                <div
+                  class="tags"
+                >
+                  <a
+                    class="tag mt-2"
+                    href="?tag=two"
+                    id="two"
+                  >
+                    two
+                  </a>
+                  <a
+                    class="tag mt-2"
+                    href="?tag=three"
+                    id="three"
+                  >
+                    three
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="my-5"
+          data-testid="definition-card"
+        >
+          <div
+            class="card"
+          >
+            <div
+              class="card-content"
+            >
+              <div
+                class="media"
+              >
+                <div
+                  class="media-content"
+                >
+                  <h2
+                    class="title is-4"
+                  >
+                    Atom
+                  </h2>
+                </div>
+              </div>
+              <div
+                class="content"
+              >
+                <div
+                  class="container"
+                >
+                  <h3>
+                    Definition
+                  </h3>
+                  <p>
+                    Lemon drops pastry danish halvah. Lemon drops pastry danish halvah.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="card-footer"
+              >
+                <p
+                  class="mt-2 ml-2 mr-2"
+                >
+                  Tags:
+                </p>
+                <div
+                  class="tags"
+                >
+                  <a
+                    class="tag mt-2"
+                    href="?tag=two"
+                    id="two"
+                  >
+                    two
+                  </a>
+                  <a
+                    class="tag mt-2"
+                    href="?tag=one"
+                    id="one"
+                  >
+                    one
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="my-5"
+          data-testid="definition-card"
+        >
+          <div
+            class="card"
+          >
+            <div
+              class="card-content"
+            >
+              <div
+                class="media"
+              >
+                <div
+                  class="media-content"
+                >
+                  <h2
+                    class="title is-4"
+                  >
+                    Cloud
+                  </h2>
+                </div>
+              </div>
+              <div
+                class="content"
+              >
+                <div
+                  class="container"
+                >
+                  <h3>
+                    Definition
+                  </h3>
+                  <p>
+                    Lemon drops pastry danish halvah. Lemon drops pastry danish halvah.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="card-footer"
+              >
+                <p
+                  class="mt-2 ml-2 mr-2"
+                >
+                  Tags:
+                </p>
+                <div
+                  class="tags"
+                >
+                  <a
+                    class="tag mt-2"
+                    href="?tag=two"
+                    id="two"
+                  >
+                    two
+                  </a>
+                  <a
+                    class="tag mt-2"
+                    href="?tag=one"
+                    id="one"
+                  >
+                    one
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="my-5"
+          data-testid="definition-card"
+        >
+          <div
+            class="card"
+          >
+            <div
+              class="card-content"
+            >
+              <div
+                class="media"
+              >
+                <div
+                  class="media-content"
+                >
+                  <h2
+                    class="title is-4"
+                  >
+                    Moon
+                  </h2>
+                </div>
+              </div>
+              <div
+                class="content"
+              >
+                <div
+                  class="container"
+                >
+                  <h3>
+                    Definition
+                  </h3>
+                  <p>
+                    Lemon drops pastry danish halvah. Lemon drops pastry danish halvah.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="card-footer"
+              >
+                <p
+                  class="mt-2 ml-2 mr-2"
+                >
+                  Tags:
+                </p>
+                <div
+                  class="tags"
+                >
+                  <a
+                    class="tag mt-2"
+                    href="?tag=two"
+                    id="two"
+                  >
+                    two
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="my-5"
+          data-testid="definition-card"
+        >
+          <div
+            class="card"
+          >
+            <div
+              class="card-content"
+            >
+              <div
+                class="media"
+              >
+                <div
+                  class="media-content"
+                >
+                  <h2
+                    class="title is-4"
+                  >
+                    Window
+                  </h2>
+                </div>
+              </div>
+              <div
+                class="content"
+              >
+                <div
+                  class="container"
+                >
+                  <h3>
+                    Definition
+                  </h3>
+                  <p>
+                    Lemon drops pastry danish halvah. Lemon drops pastry danish halvah.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="card-footer"
+              >
+                <p
+                  class="mt-2 ml-2 mr-2"
+                >
+                  Tags:
+                </p>
+                <div
+                  class="tags"
+                >
+                  <a
+                    class="tag mt-2"
+                    href="?tag=three"
+                    id="three"
+                  >
+                    three
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </article>
+</DocumentFragment>
+`;
+
+exports[`GlossaryIndex default renders correctly with no results 1`] = `
+<DocumentFragment>
+  <article
+    class="section"
+  >
+    <section
+      class="container"
+    >
+      <div
+        class="is-centered"
+      >
+        <div>
+          No results
+        </div>
+      </div>
+    </section>
+  </article>
+</DocumentFragment>
+`;

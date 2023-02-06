@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import DefinitionCard from './DefinitionCard';
 
-interface GlossaryIndexProps {
+export interface GlossaryIndexProps {
     allDefinitions: Array<GlossaryElements>;
     // handleFilterUpdate: (e: any) => void;
 }

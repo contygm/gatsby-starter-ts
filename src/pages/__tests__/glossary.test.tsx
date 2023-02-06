@@ -1,52 +1,64 @@
 import React from 'react';
 import { fireEvent, render } from '@testing-library/react';
-import WikiPost, { Head } from '../../templates/wiki-post';
-import { mockWikiPostHeadData, mockWikiPostData } from '../../../__mocks__/mock-wiki-post';
+import GlossaryPage, { Head } from '../glossary';
+import {
+    mockGlossaryPageData,
+    mockGlossaryPageHeadData
+} from '../../../__mocks__/mock-glossary-page';
 
 const resizeWindow = (x: number) => {
     window.innerWidth = x;
     window.dispatchEvent(new Event('resize'));
 };
 
-describe('Wiki Posts Page', () => {
-    beforeEach(() => {
+describe('Glossaary Index Page', () => {
+	beforeEach(() => {
         // IntersectionObserver isn't available in test environment
-        const mockIntersectionObserver = jest.fn();
-        mockIntersectionObserver.mockReturnValue({
-            observe: () => null,
-            unobserve: () => null,
-            disconnect: () => null
-        });
-        window.IntersectionObserver = mockIntersectionObserver;
+        // const mockIntersectionObserver = jest.fn();
+        // mockIntersectionObserver.mockReturnValue({
+        //     observe: () => null,
+        //     unobserve: () => null,
+        //     disconnect: () => null
+        // });
+        // window.IntersectionObserver = mockIntersectionObserver;
         resizeWindow(1216);
     });
 
     it('renders correctly', () => {
-        const { asFragment } = render(<WikiPost {...mockWikiPostData} />);
+        const { asFragment } = render(<GlossaryPage {...mockGlossaryPageData} />);
         expect(asFragment()).toMatchSnapshot();
     });
 
     it('header meta data renders correctly', () => {
-        const { asFragment } = render(<Head {...mockWikiPostHeadData} />);
+        const { asFragment } = render(<Head {...mockGlossaryPageHeadData} />);
         expect(asFragment()).toMatchSnapshot();
     });
 
-    it('renders correctly on mobile view', () => {
+	it.skip('filters correctly', () => {
+        // const { asFragment, getByTestId, getAllByTestId  } = render(<GlossaryPage {...mockGlossaryPageData} />);
+        // expect(asFragment()).toMatchSnapshot();
+		// expect(getAllByTestId('definition-card').length).toEqual(5);
+
+        // fireEvent.click(getByTestId('three'));
+        // expect(getAllByTestId('definition-card').length).toEqual(3);
+    });
+
+	it('renders correctly on mobile view', () => {
         resizeWindow(1000);
-        const { asFragment } = render(<WikiPost {...mockWikiPostData} />);
+        const { asFragment } = render(<GlossaryPage {...mockGlossaryPageData} />);
         expect(asFragment()).toMatchSnapshot();
     });
 
     it('renders correctly on medium view', () => {
         resizeWindow(1100);
-        const { asFragment } = render(<WikiPost {...mockWikiPostData} />);
+        const { asFragment } = render(<GlossaryPage {...mockGlossaryPageData} />);
         expect(asFragment()).toMatchSnapshot();
     });
 
     it('ToC shows properly on mobile', () => {
         resizeWindow(1000);
         const { asFragment, getByTestId, queryByRole } = render(
-            <WikiPost {...mockWikiPostData} />
+            <GlossaryPage {...mockGlossaryPageData} />
         );
         expect(asFragment()).toMatchSnapshot('closed table of contents');
 

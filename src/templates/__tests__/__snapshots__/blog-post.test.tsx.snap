@@ -566,7 +566,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                           aria-label="social media link"
                           class="faicon-link with-label is-black"
                           data-cy="faicon-link"
-                          href="/blog/blog-post-before"
+                          href="/blog/post-before"
                         >
                           <svg
                             aria-hidden="true"
@@ -584,7 +584,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                             />
                           </svg>
                           <span>
-                            Before - A Blog About Things
+                            Before - A Post About Things
                           </span>
                         </a>
                       </li>
@@ -603,10 +603,10 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                           aria-label="social media link"
                           class="faicon-link with-label is-black"
                           data-cy="faicon-link"
-                          href="/blog/blog-post-after"
+                          href="/blog/post-after"
                         >
                           <span>
-                            After - A Blog About Things
+                            After - A Post About Things
                           </span>
                           <svg
                             aria-hidden="true"
@@ -1750,7 +1750,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                           aria-label="social media link"
                           class="faicon-link with-label is-black"
                           data-cy="faicon-link"
-                          href="/blog/blog-post-before"
+                          href="/blog/post-before"
                         >
                           <svg
                             aria-hidden="true"
@@ -1768,7 +1768,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                             />
                           </svg>
                           <span>
-                            Before - A Blog About Things
+                            Before - A Post About Things
                           </span>
                         </a>
                       </li>
@@ -1787,10 +1787,10 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                           aria-label="social media link"
                           class="faicon-link with-label is-black"
                           data-cy="faicon-link"
-                          href="/blog/blog-post-after"
+                          href="/blog/post-after"
                         >
                           <span>
-                            After - A Blog About Things
+                            After - A Post About Things
                           </span>
                           <svg
                             aria-hidden="true"
@@ -2934,7 +2934,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
                           aria-label="social media link"
                           class="faicon-link with-label is-black"
                           data-cy="faicon-link"
-                          href="/blog/blog-post-before"
+                          href="/blog/post-before"
                         >
                           <svg
                             aria-hidden="true"
@@ -2952,7 +2952,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
                             />
                           </svg>
                           <span>
-                            Before - A Blog About Things
+                            Before - A Post About Things
                           </span>
                         </a>
                       </li>
@@ -2971,10 +2971,10 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
                           aria-label="social media link"
                           class="faicon-link with-label is-black"
                           data-cy="faicon-link"
-                          href="/blog/blog-post-after"
+                          href="/blog/post-after"
                         >
                           <span>
-                            After - A Blog About Things
+                            After - A Post About Things
                           </span>
                           <svg
                             aria-hidden="true"
@@ -4048,7 +4048,7 @@ exports[`Blog Posts Page renders correctly 1`] = `
                           aria-label="social media link"
                           class="faicon-link with-label is-black"
                           data-cy="faicon-link"
-                          href="/blog/blog-post-before"
+                          href="/blog/post-before"
                         >
                           <svg
                             aria-hidden="true"
@@ -4066,7 +4066,7 @@ exports[`Blog Posts Page renders correctly 1`] = `
                             />
                           </svg>
                           <span>
-                            Before - A Blog About Things
+                            Before - A Post About Things
                           </span>
                         </a>
                       </li>
@@ -4085,10 +4085,10 @@ exports[`Blog Posts Page renders correctly 1`] = `
                           aria-label="social media link"
                           class="faicon-link with-label is-black"
                           data-cy="faicon-link"
-                          href="/blog/blog-post-after"
+                          href="/blog/post-after"
                         >
                           <span>
-                            After - A Blog About Things
+                            After - A Post About Things
                           </span>
                           <svg
                             aria-hidden="true"
@@ -5302,7 +5302,7 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
                           aria-label="social media link"
                           class="faicon-link with-label is-black"
                           data-cy="faicon-link"
-                          href="/blog/blog-post-before"
+                          href="/blog/post-before"
                         >
                           <svg
                             aria-hidden="true"
@@ -5320,7 +5320,7 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
                             />
                           </svg>
                           <span>
-                            Before - A Blog About Things
+                            Before - A Post About Things
                           </span>
                         </a>
                       </li>
@@ -5339,10 +5339,10 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
                           aria-label="social media link"
                           class="faicon-link with-label is-black"
                           data-cy="faicon-link"
-                          href="/blog/blog-post-after"
+                          href="/blog/post-after"
                         >
                           <span>
-                            After - A Blog About Things
+                            After - A Post About Things
                           </span>
                           <svg
                             aria-hidden="true"
@@ -6486,7 +6486,7 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
                           aria-label="social media link"
                           class="faicon-link with-label is-black"
                           data-cy="faicon-link"
-                          href="/blog/blog-post-before"
+                          href="/blog/post-before"
                         >
                           <svg
                             aria-hidden="true"
@@ -6504,7 +6504,7 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
                             />
                           </svg>
                           <span>
-                            Before - A Blog About Things
+                            Before - A Post About Things
                           </span>
                         </a>
                       </li>
@@ -6523,10 +6523,10 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
                           aria-label="social media link"
                           class="faicon-link with-label is-black"
                           data-cy="faicon-link"
-                          href="/blog/blog-post-after"
+                          href="/blog/post-after"
                         >
                           <span>
-                            After - A Blog About Things
+                            After - A Post About Things
                           </span>
                           <svg
                             aria-hidden="true"
