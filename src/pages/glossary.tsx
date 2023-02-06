@@ -1,6 +1,14 @@
 import React, { FunctionComponent, useEffect, useState } from 'react';
 import { graphql, HeadProps, PageProps } from 'gatsby';
-import { Layout, SEO, PageHeader, OutsideClicker, ToC, SideBar, StickySocialMedia } from '../components';
+import {
+    Layout,
+    SEO,
+    PageHeader,
+    OutsideClicker,
+    ToC,
+    SideBar,
+    StickySocialMedia
+} from '../components';
 import PostPage from '../templates/post-page';
 import { faEllipsis, faXmark } from '@fortawesome/free-solid-svg-icons';
 import useCheckMobileScreen from '../utils/useCheckMobileScreen';
@@ -22,15 +30,15 @@ export interface GlossaryPageProps {
     blogFeatured: {
         nodes: Array<IndexElements>;
     };
-	wikiFeatured: {
+    wikiFeatured: {
         nodes: Array<IndexElements>;
     };
 }
 
 const GlossaryPage: FunctionComponent<PageProps<GlossaryPageProps>> = ({
-    data: { index, allTags, blogFeatured, wikiFeatured}
+    data: { index, allTags, blogFeatured, wikiFeatured }
 }: PageProps<GlossaryPageProps>) => {
-	const [showMobileToc, setShowMobileToc] = useState(false);
+    const [showMobileToc, setShowMobileToc] = useState(false);
     const [isMobile, setIsMobile] = useState(useCheckMobileScreen());
     const [isBigScreen, setIsBigScreen] = useState(useCheckBigScreen());
     const [btnIcon, setBtnIcon] = useState(faEllipsis);
@@ -69,7 +77,7 @@ const GlossaryPage: FunctionComponent<PageProps<GlossaryPageProps>> = ({
         }
     };
 
-	useEffect(() => {
+    useEffect(() => {
         window.addEventListener('resize', handleResize);
     });
 
@@ -79,60 +87,60 @@ const GlossaryPage: FunctionComponent<PageProps<GlossaryPageProps>> = ({
                 title={`Glossary Index`}
                 alignCenter={true}
             />
-				{/* sticky table of contents */}
-				<div className="columns ">
-					<div className="column ">
-						<section
-							className={
-								isMobile ? 'mobile-blog-toc' : 'web-blog-toc'
-							}
-							style={{
-								display:
-									!isMobile || (isMobile && showMobileToc)
-										? 'block'
-										: 'none'
-							}}
-						>
-							<OutsideClicker
-								callback={isMobile ? handleClickOutside : undefined}
-							>
-								{/* <ToC tocHtml={markdownRemark.tableOfContents} /> */}
-								<h2>TOC</h2>
-							</OutsideClicker>
-						</section>
-						<button
-							className="button is-rounded is-primary"
-							style={{ display: isMobile ? 'block' : 'none' }}
-							onClick={handleTocBtnClick}
-							data-testid="blog-toc-mobile-btn"
-						>
-							<i className="icon">
-								<FontAwesomeIcon
-									className="icon"
-									icon={btnIcon}
-									size="xl"
-									id="toc-button"
-								/>
-							</i>
-						</button>
-					</div>
-					<div className="column is-four-fifths-desktop">
-						<PostPage
-							glossaryIndex={index}
-							allTags={allTags}
-							type={'glossary'}
-						/>
-					</div>	
-					<div className="column mr-1 mt-6 is-one-fifth-widescreen">
-						<div className="blog-sidebar">
-							<SideBar
-								featured={blogFeatured.nodes}
-								related={wikiFeatured.nodes}
-							/>
-						</div>
-						{isBigScreen && <StickySocialMedia isVertical={false} />}
-					</div>
-				</div>
+            {/* sticky table of contents */}
+            <div className="columns ">
+                <div className="column ">
+                    <section
+                        className={
+                            isMobile ? 'mobile-blog-toc' : 'web-blog-toc'
+                        }
+                        style={{
+                            display:
+                                !isMobile || (isMobile && showMobileToc)
+                                    ? 'block'
+                                    : 'none'
+                        }}
+                    >
+                        <OutsideClicker
+                            callback={isMobile ? handleClickOutside : undefined}
+                        >
+                            {/* <ToC tocHtml={markdownRemark.tableOfContents} /> */}
+                            <h2>TOC</h2>
+                        </OutsideClicker>
+                    </section>
+                    <button
+                        className="button is-rounded is-primary"
+                        style={{ display: isMobile ? 'block' : 'none' }}
+                        onClick={handleTocBtnClick}
+                        data-testid="blog-toc-mobile-btn"
+                    >
+                        <i className="icon">
+                            <FontAwesomeIcon
+                                className="icon"
+                                icon={btnIcon}
+                                size="xl"
+                                id="toc-button"
+                            />
+                        </i>
+                    </button>
+                </div>
+                <div className="column is-four-fifths-desktop">
+                    <PostPage
+                        glossaryIndex={index}
+                        allTags={allTags}
+                        type={'glossary'}
+                    />
+                </div>
+                <div className="column mr-1 mt-6 is-one-fifth-widescreen">
+                    <div className="blog-sidebar">
+                        <SideBar
+                            featured={blogFeatured.nodes}
+                            related={wikiFeatured.nodes}
+                        />
+                    </div>
+                    {isBigScreen && <StickySocialMedia isVertical={false} />}
+                </div>
+            </div>
         </Layout>
     );
 };
@@ -168,24 +176,18 @@ export const pageQuery = graphql`
             limit: 5
             sort: { fields: [frontmatter___letter], order: ASC }
             filter: {
-                frontmatter: {
-                    type: { eq: "blog" }
-                    featured: { eq: true }
-                }
+                frontmatter: { type: { eq: "blog" }, featured: { eq: true } }
             }
         ) {
             nodes {
                 ...IndexElements
             }
         }
-		wikiFeatured: allMarkdownRemark(
+        wikiFeatured: allMarkdownRemark(
             limit: 5
             sort: { fields: [frontmatter___letter], order: ASC }
             filter: {
-                frontmatter: {
-                    type: { eq: "wiki" }
-                    featured: { eq: true }
-                }
+                frontmatter: { type: { eq: "wiki" }, featured: { eq: true } }
             }
         ) {
             nodes {

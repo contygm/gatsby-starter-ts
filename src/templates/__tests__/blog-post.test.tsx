@@ -1,7 +1,10 @@
 import React from 'react';
 import { fireEvent, render } from '@testing-library/react';
 import BlogPost, { Head } from '../../templates/blog-post';
-import { mockBlogPostHeadData, mockBlogPostData } from '../../../__mocks__/mock-blog-post';
+import {
+    mockBlogPostHeadData,
+    mockBlogPostData
+} from '../../../__mocks__/mock-blog-post';
 
 const resizeWindow = (x: number) => {
     window.innerWidth = x;

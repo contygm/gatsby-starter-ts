@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import  { SideBar, SideBarProps } from '../SideBar';
+import { SideBar, SideBarProps } from '../SideBar';
 import { mockBlogPost } from '../../../__mocks__/mock-blog-post';
 
 const mockData: SideBarProps = {

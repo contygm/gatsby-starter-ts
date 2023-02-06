@@ -1,6 +1,6 @@
 import React from 'react';
 import { fireEvent, render } from '@testing-library/react';
-import {StickySocialMedia} from '../StickySocialMedia';
+import { StickySocialMedia } from '../StickySocialMedia';
 
 describe('Sticky Social Media bar', () => {
     it('renders correctly horizontally', () => {

@@ -2,7 +2,11 @@
 import { GlossaryPageProps } from '../src/pages/glossary';
 import { mockHeadProps, mockPageProps } from '../src/utils/test-props';
 import { HeadProps, PageProps } from 'gatsby';
-import { glossaryDefinitions, featuredOrRelatedPosts, siteData } from './constants';
+import {
+    glossaryDefinitions,
+    featuredOrRelatedPosts,
+    siteData
+} from './constants';
 
 const mockGlossary: GlossaryPageProps = {
     site: siteData,
@@ -22,7 +26,7 @@ const mockGlossary: GlossaryPageProps = {
     },
     wikiFeatured: {
         nodes: featuredOrRelatedPosts
-    },
+    }
 };
 
 export const mockGlossaryPageData = mockPageProps(

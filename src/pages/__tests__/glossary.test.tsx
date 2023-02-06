@@ -12,7 +12,7 @@ const resizeWindow = (x: number) => {
 };
 
 describe('Glossary Page', () => {
-	beforeEach(() => {
+    beforeEach(() => {
         // TODO this is for ToC which isn't implemented yet
         // IntersectionObserver isn't available in test environment
         // const mockIntersectionObserver = jest.fn();
@@ -26,7 +26,9 @@ describe('Glossary Page', () => {
     });
 
     it('renders correctly', () => {
-        const { asFragment } = render(<GlossaryPage {...mockGlossaryPageData} />);
+        const { asFragment } = render(
+            <GlossaryPage {...mockGlossaryPageData} />
+        );
         expect(asFragment()).toMatchSnapshot();
     });
 
@@ -35,24 +37,27 @@ describe('Glossary Page', () => {
         expect(asFragment()).toMatchSnapshot();
     });
 
-	it.skip('filters correctly', () => {
+    it.skip('filters correctly', () => {
         // const { asFragment, getByTestId, getAllByTestId  } = render(<GlossaryPage {...mockGlossaryPageData} />);
         // expect(asFragment()).toMatchSnapshot();
-		// expect(getAllByTestId('definition-card').length).toEqual(5);
-
+        // expect(getAllByTestId('definition-card').length).toEqual(5);
         // fireEvent.click(getByTestId('three'));
         // expect(getAllByTestId('definition-card').length).toEqual(3);
     });
 
-	it('renders correctly on mobile view', () => {
+    it('renders correctly on mobile view', () => {
         resizeWindow(1000);
-        const { asFragment } = render(<GlossaryPage {...mockGlossaryPageData} />);
+        const { asFragment } = render(
+            <GlossaryPage {...mockGlossaryPageData} />
+        );
         expect(asFragment()).toMatchSnapshot();
     });
 
     it('renders correctly on medium view', () => {
         resizeWindow(1100);
-        const { asFragment } = render(<GlossaryPage {...mockGlossaryPageData} />);
+        const { asFragment } = render(
+            <GlossaryPage {...mockGlossaryPageData} />
+        );
         expect(asFragment()).toMatchSnapshot();
     });
 

@@ -9,7 +9,12 @@ export interface PostTileProps {
     image?: IGatsbyImageData;
 }
 
-export const SideBarPostTile = ({ title, excerpt, slug, image }: PostTileProps) => {
+export const SideBarPostTile = ({
+    title,
+    excerpt,
+    slug,
+    image
+}: PostTileProps) => {
     return (
         <Link
             to={`/blog${slug}`}

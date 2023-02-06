@@ -4,7 +4,7 @@ import { mockHeadProps, mockPageProps } from '../src/utils/test-props';
 import { HeadProps, PageProps } from 'gatsby';
 import { featuredOrRelatedPosts } from './constants';
 
-const mockWikis: WikiIndexProps  = {
+const mockWikis: WikiIndexProps = {
     site: {
         title: `Starter`,
         siteUrl: `https://www.domain.com`,

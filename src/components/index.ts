@@ -15,4 +15,4 @@ export * from './SideBar';
 export * from './StickySocialMedia';
 export * from './TagsList';
 export * from './ToC';
-export * from "./GlossaryIndex";
+export * from './GlossaryIndex';

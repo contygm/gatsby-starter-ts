@@ -1,7 +1,10 @@
 import React from 'react';
 import { fireEvent, render } from '@testing-library/react';
 import WikiPost, { Head } from '../../templates/wiki-post';
-import { mockWikiPostHeadData, mockWikiPostData } from '../../../__mocks__/mock-wiki-post';
+import {
+    mockWikiPostHeadData,
+    mockWikiPostData
+} from '../../../__mocks__/mock-wiki-post';
 
 const resizeWindow = (x: number) => {
     window.innerWidth = x;
