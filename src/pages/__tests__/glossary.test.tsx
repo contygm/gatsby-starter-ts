@@ -11,8 +11,9 @@ const resizeWindow = (x: number) => {
     window.dispatchEvent(new Event('resize'));
 };
 
-describe('Glossaary Index Page', () => {
+describe('Glossary Page', () => {
 	beforeEach(() => {
+        // TODO this is for ToC which isn't implemented yet
         // IntersectionObserver isn't available in test environment
         // const mockIntersectionObserver = jest.fn();
         // mockIntersectionObserver.mockReturnValue({

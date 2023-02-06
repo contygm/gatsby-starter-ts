@@ -16,7 +16,7 @@ interface FaIconLinkProps {
  * footer styles
  * @param faIcon - IconProp, faicon name
  */
-const FaIconLink = ({
+export const FaIconLink = ({
     faIcon,
     label,
     url = '/',
@@ -45,5 +45,3 @@ const FaIconLink = ({
         </li>
     );
 };
-
-export default FaIconLink;

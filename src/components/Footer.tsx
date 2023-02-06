@@ -8,7 +8,7 @@ import {
     faGhost,
     faAngleUp
 } from '@fortawesome/free-solid-svg-icons';
-import FaIconLink from './FaIconLink';
+import { FaIconLink } from './FaIconLink';
 
 /**
  * @description A text link with footer styles
@@ -110,7 +110,7 @@ const DropDownLinkBtn = () => {
  * @description Site wide footer, mobile friendly
  * @param author - author of site, passed in from layour
  */
-const Footer = (props: { author: string }) => {
+export const Footer = (props: { author: string }) => {
     return (
         <footer className="footer">
             <div className="columns mb-1 is-vcentered has-text-centered-mobile">
@@ -178,5 +178,3 @@ const Footer = (props: { author: string }) => {
         </footer>
     );
 };
-
-export default Footer;

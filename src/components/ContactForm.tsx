@@ -5,7 +5,7 @@ import React from 'react';
  * @param title - the page title to be displayed
  * @param alignCenter - boolean;
  */
-const ContactForm = () => {
+export const ContactForm = () => {
     // console.log form values on submit
     function onSubmit(e: React.SyntheticEvent) {
         e.preventDefault();
@@ -87,5 +87,3 @@ const ContactForm = () => {
         </form>
     );
 };
-
-export default ContactForm;

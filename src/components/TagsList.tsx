@@ -1,7 +1,7 @@
 import { Link } from 'gatsby';
 import React from 'react';
 
-const TagsList = (props: {
+export const TagsList = (props: {
     tags: Array<{
         fieldValue: string;
         totalCount: number;
@@ -57,5 +57,3 @@ const TagsList = (props: {
         </div>
     );
 };
-
-export default TagsList;

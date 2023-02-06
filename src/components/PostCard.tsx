@@ -1,7 +1,7 @@
 import { Link } from 'gatsby';
 import React from 'react';
 
-const PostCard = (props: {
+export const PostCard = (props: {
     post: IndexElements;
     type: PostType;
     handleFilterUpdate: (e: any) => void;
@@ -66,5 +66,3 @@ const PostCard = (props: {
         </div>
     );
 };
-
-export default PostCard;

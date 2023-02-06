@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import AuthorBlurb, { AuthorBlurbProps } from '../AuthorBlurb';
+import { AuthorBlurb, AuthorBlurbProps } from '../AuthorBlurb';
 
 const mockData: AuthorBlurbProps = {
     author: {

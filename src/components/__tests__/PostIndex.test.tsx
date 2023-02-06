@@ -1,6 +1,6 @@
 import React from 'react';
 import { fireEvent, render } from '@testing-library/react';
-import PostIndex from '../PostIndex';
+import {PostIndex} from '../PostIndex';
 import { mockBlogPageData } from '../../../__mocks__/mock-blog-page';
 
 describe('PostIndex', () => {

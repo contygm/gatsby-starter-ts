@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`HorizontalPostTile renders correctly 1`] = `
+exports[`SideBarPostTile renders correctly 1`] = `
 <DocumentFragment>
   <a
     class="horizontal-post-tile"

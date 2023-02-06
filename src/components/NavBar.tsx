@@ -9,7 +9,7 @@ import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
  * navigation has the logo on the right, navigation links center, and a
  * search bar on the right.
  */
-const NavBar = () => {
+export const NavBar = () => {
     const [showBurger, setShowBurger] = useState('');
 
     /**
@@ -110,5 +110,3 @@ const NavBar = () => {
         </nav>
     );
 };
-
-export default NavBar;

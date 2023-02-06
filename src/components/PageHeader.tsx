@@ -5,7 +5,7 @@ import {
     faEnvelope,
     faPaperclip
 } from '@fortawesome/free-solid-svg-icons';
-import FaIconLink from './FaIconLink';
+import { FaIconLink } from './FaIconLink';
 
 const SocialMediaRow = () => {
     return (
@@ -35,7 +35,7 @@ const Subtitle = (props: { subtitle: string }) => {
  * @param title - the page title to be displayed
  * @param alignCenter - boolean;
  */
-const PageHeader = (props: {
+export const PageHeader = (props: {
     title: string;
     alignCenter?: boolean;
     subtitle?: string;
@@ -58,5 +58,3 @@ const PageHeader = (props: {
         </header>
     );
 };
-
-export default PageHeader;

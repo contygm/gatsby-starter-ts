@@ -1,5 +1,5 @@
 import React, { FunctionComponent, useEffect, useState } from 'react';
-import PostCard from './PostCard';
+import { PostCard } from './PostCard';
 
 interface PostIndexProps {
     allPosts: Array<IndexElements>;
@@ -8,7 +8,7 @@ interface PostIndexProps {
     handleFilterUpdate: (e: any) => void;
 }
 
-const PostIndex: FunctionComponent<PostIndexProps> = ({
+export const PostIndex: FunctionComponent<PostIndexProps> = ({
     allPosts,
     increment,
     type,
@@ -86,5 +86,3 @@ const PostIndex: FunctionComponent<PostIndexProps> = ({
         </article>
     );
 };
-
-export default PostIndex;

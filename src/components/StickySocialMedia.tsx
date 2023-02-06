@@ -8,7 +8,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const StickySocialMedia = (props: {
+export const StickySocialMedia = (props: {
     isVertical: boolean;
     classes?: string;
 }) => {
@@ -85,5 +85,3 @@ const StickySocialMedia = (props: {
         </div>
     );
 };
-
-export default StickySocialMedia;

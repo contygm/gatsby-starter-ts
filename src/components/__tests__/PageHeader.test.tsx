@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import PageHeader from '../PageHeader';
+import {PageHeader} from '../PageHeader';
 
 describe('PageHeader', () => {
     it('default renders correctly', () => {

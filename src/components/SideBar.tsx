@@ -1,7 +1,7 @@
 import React from 'react';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import HorizontalPostTile from './SideBarPostTile';
+import {SideBarPostTile} from './SideBarPostTile';
 import { getImage } from 'gatsby-plugin-image';
 
 export interface SideBarProps {
@@ -9,7 +9,7 @@ export interface SideBarProps {
     related: Array<IndexElements>;
 }
 
-const SideBar = ({ featured, related }: SideBarProps) => {
+export const SideBar = ({ featured, related }: SideBarProps) => {
     return (
         <aside className="menu sidebar">
             <div className="box">
@@ -38,7 +38,7 @@ const SideBar = ({ featured, related }: SideBarProps) => {
 
                                 return (
                                     <li key={post.frontmatter.title}>
-                                        <HorizontalPostTile
+                                        <SideBarPostTile
                                             title={post.frontmatter.title}
                                             excerpt={post.excerpt}
                                             slug={post.fields.slug}
@@ -57,7 +57,7 @@ const SideBar = ({ featured, related }: SideBarProps) => {
                         const image = getImage(post.frontmatter.headerImage);
                         return (
                             <li key={post.frontmatter.title}>
-                                <HorizontalPostTile
+                                <SideBarPostTile
                                     title={post.frontmatter.title}
                                     slug={post.fields.slug}
                                     excerpt={post.excerpt}
@@ -71,5 +71,3 @@ const SideBar = ({ featured, related }: SideBarProps) => {
         </aside>
     );
 };
-
-export default SideBar;

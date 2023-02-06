@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import HorizontalPostTile, { PostTileProps } from '../SideBarPostTile';
+import { SideBarPostTile, PostTileProps } from '../SideBarPostTile';
 import { IGatsbyImageData } from 'gatsby-plugin-image';
 
 const mockData: PostTileProps = {
@@ -10,9 +10,9 @@ const mockData: PostTileProps = {
     image: {} as IGatsbyImageData
 };
 
-describe('HorizontalPostTile', () => {
+describe('SideBarPostTile', () => {
     it('renders correctly', () => {
-        const { asFragment } = render(<HorizontalPostTile {...mockData} />);
+        const { asFragment } = render(<SideBarPostTile {...mockData} />);
         expect(asFragment()).toMatchSnapshot();
     });
 });

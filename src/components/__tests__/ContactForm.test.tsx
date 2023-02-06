@@ -1,6 +1,6 @@
 import React from 'react';
 import { fireEvent, render } from '@testing-library/react';
-import ContactForm from '../ContactForm';
+import {ContactForm} from '../ContactForm';
 
 describe('ContactForm', () => {
     it('renders correctly', () => {

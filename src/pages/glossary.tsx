@@ -136,7 +136,6 @@ const GlossaryPage: FunctionComponent<PageProps<GlossaryPageProps>> = ({
         </Layout>
     );
 };
-
 export default GlossaryPage;
 
 export function Head({ data: { site } }: HeadProps<GlossaryPageProps>) {

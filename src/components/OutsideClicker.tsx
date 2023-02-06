@@ -25,7 +25,7 @@ const useOutsideClick = (
     }, [ref]);
 };
 
-export default function OutsideClicker(props: {
+export function OutsideClicker(props: {
     children: React.ReactNode;
     callback?: () => void;
 }) {

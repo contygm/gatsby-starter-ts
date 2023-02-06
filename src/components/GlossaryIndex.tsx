@@ -1,12 +1,12 @@
 import React, { FunctionComponent } from 'react';
-import DefinitionCard from './DefinitionCard';
+import { DefinitionCard } from './DefinitionCard';
 
 export interface GlossaryIndexProps {
     allDefinitions: Array<GlossaryElements>;
     // handleFilterUpdate: (e: any) => void;
 }
 
-const GlossaryIndex: FunctionComponent<GlossaryIndexProps> = ({
+export const GlossaryIndex: FunctionComponent<GlossaryIndexProps> = ({
     allDefinitions
 }: // handleFilterUpdate
 GlossaryIndexProps) => {
@@ -40,4 +40,4 @@ GlossaryIndexProps) => {
     );
 };
 
-export default GlossaryIndex;
+// export default GlossaryIndex;

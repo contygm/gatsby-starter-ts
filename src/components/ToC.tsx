@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo } from 'react';
 import { useActiveHash } from '../utils/useActiveHash';
 
-export default function TableOfContents(props: { tocHtml: string }) {
+export function ToC(props: { tocHtml: string }) {
     const targetedIds = useMemo(() => {
         // extract anchor hrefs
         // NOTE: can't use 'postive lookbehind' because of browser compatibility

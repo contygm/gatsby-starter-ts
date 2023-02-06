@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import GlossaryIndex from '../GlossaryIndex';
+import {GlossaryIndex} from '../GlossaryIndex';
 import { glossaryDefinitions } from '../../../__mocks__/constants';
 
 describe('GlossaryIndex', () => {

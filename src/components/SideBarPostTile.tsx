@@ -9,7 +9,7 @@ export interface PostTileProps {
     image?: IGatsbyImageData;
 }
 
-const HorizontalPostTile = ({ title, excerpt, slug, image }: PostTileProps) => {
+export const SideBarPostTile = ({ title, excerpt, slug, image }: PostTileProps) => {
     return (
         <Link
             to={`/blog${slug}`}
@@ -37,5 +37,3 @@ const HorizontalPostTile = ({ title, excerpt, slug, image }: PostTileProps) => {
         </Link>
     );
 };
-
-export default HorizontalPostTile;

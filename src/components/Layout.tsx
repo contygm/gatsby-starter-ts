@@ -1,6 +1,6 @@
 import React from 'react';
-import NavBar from './NavBar';
-import Footer from './Footer';
+import { NavBar } from './NavBar';
+import { Footer } from './Footer';
 import { useSiteMetadata } from '../utils/useSiteMetadata';
 import '../styles.scss';
 
@@ -13,7 +13,7 @@ interface LayoutProps {
  * and a footer
  * @param children - the page content that's passed in
  */
-const Layout = ({ children }: LayoutProps) => {
+export const Layout = ({ children }: LayoutProps) => {
     const { author } = useSiteMetadata();
 
     return (
@@ -25,4 +25,4 @@ const Layout = ({ children }: LayoutProps) => {
     );
 };
 
-export default Layout;
+// export default Layout;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSiteMetadata } from '../utils/useSiteMetadata';
 
-const SEO = (props: {
+export const SEO = (props: {
     title?: string;
     description?: string;
     children?: React.ReactNode;
@@ -38,5 +38,3 @@ const SEO = (props: {
         </>
     );
 };
-
-export default SEO;

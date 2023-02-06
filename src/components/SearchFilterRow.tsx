@@ -1,9 +1,7 @@
-import { faX } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
-import TagsList from './TagsList';
+import { TagsList } from './TagsList';
 
-const SearchFilterRow = (props: {
+export const SearchFilterRow = (props: {
     tags: Array<{
         fieldValue: string;
         totalCount: number;
@@ -74,5 +72,3 @@ const SearchFilterRow = (props: {
         </section>
     );
 };
-
-export default SearchFilterRow;

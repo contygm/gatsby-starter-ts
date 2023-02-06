@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
-import FaIconLink from './FaIconLink';
+import { FaIconLink } from './FaIconLink';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'gatsby';
 
@@ -103,7 +103,7 @@ const NextAndPrevious = (props: {
     );
 };
 
-const AuthorBlurb = (props: AuthorBlurbProps) => {
+export const AuthorBlurb = (props: AuthorBlurbProps) => {
     return (
         <section className="section">
             <div className="container author-container">
@@ -123,5 +123,3 @@ const AuthorBlurb = (props: AuthorBlurbProps) => {
         </section>
     );
 };
-
-export default AuthorBlurb;

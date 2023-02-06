@@ -1,14 +1,7 @@
 import { Link } from 'gatsby';
 import React from 'react';
 
-<details>
-<summary>Seeder onion</summary>
-
-Seeder onion. Quack hammers eggplant is utters nails garden. Post pounder calf, hay or duck is, tool shed horse. . Coo with rabbits ect. Blue berries pigeons buzz and bean prairie dogs nails at est. Outhouse at nails mower.
-
-</details>
-
-const DefinitionCard = (props: {
+export const DefinitionCard = (props: {
     definition: GlossaryElements;
     // handleFilterUpdate: (e: any) => void;
 }) => {
@@ -55,5 +48,3 @@ const DefinitionCard = (props: {
         </div>
     );
 };
-
-export default DefinitionCard;
