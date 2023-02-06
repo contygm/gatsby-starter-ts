@@ -12,15 +12,15 @@ const GlossaryIndex: FunctionComponent<GlossaryIndexProps> = ({
 GlossaryIndexProps) => {
     return (
         <article className="section">
-            <section className="container is-max-desktop">
+            <section className="container">
                 {/* post cards */}
-                <div className="columns is-multiline is-centered">
+                <div className="is-centered">
                     {allDefinitions.length > 0 ? (
                         allDefinitions.map((def: GlossaryElements) => {
                             return (
                                 <div
-                                    data-testid={'post-card'}
-                                    className="column is-4"
+                                    data-testid={'definition-card'}
+                                    className="my-5"
                                     key={def.frontmatter.title.toLowerCase()}
                                 >
                                     <DefinitionCard
