@@ -210,7 +210,8 @@ exports[`Wiki Index Page renders correctly 1`] = `
                 >
                   <a
                     class="tag is-success"
-                    href="/blog"
+                    data-testid="all"
+                    href="/wiki"
                     id="all"
                   >
                     All

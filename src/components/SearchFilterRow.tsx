@@ -9,6 +9,7 @@ export const SearchFilterRow = (props: {
     totalPostCount: number;
     activeTag: string;
     searchQuery: string;
+    type: PostType;
     clearSearchQuery: () => void;
     handleFilterUpdate: (e: any) => void;
     handleSubmitSearch: (e: any) => void;
@@ -65,6 +66,7 @@ export const SearchFilterRow = (props: {
                             tags={props.tags}
                             activeTag={props.activeTag}
                             handleFilterUpdate={props.handleFilterUpdate}
+                            type={props.type}
                         />
                     </div>
                 </div>

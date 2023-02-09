@@ -1,10 +1,11 @@
 import React, { useEffect, useMemo } from 'react';
 import { useActiveHash } from '../utils/useActiveHash';
 
-export function ToC(props: { tocHtml: string }) {
+export function ToC(props: { tocHtml: string; includeTitle: boolean }) {
     const targetedIds = useMemo(() => {
+        if(!props.includeTitle) return [];
         // extract anchor hrefs
-        // NOTE: can't use 'postive lookbehind' because of browser compatibility
+        // NOTE: can't use 'positive lookbehind' because of browser compatibility
         // so must leave in # instead of using `(?<=\#)(.*?)(?=\")`
         const anchors = props.tocHtml.match(/#(.*?)(?=")/gi) ?? [];
 
@@ -22,7 +23,7 @@ export function ToC(props: { tocHtml: string }) {
             a.classList.remove('is-active');
         });
 
-        // find actice link and set class
+        // find active link and set class
         const activeLink = document.querySelectorAll(
             `.toc-links a[href$="${'#' + activeHash}"]`
         );
@@ -32,7 +33,7 @@ export function ToC(props: { tocHtml: string }) {
         }
     }, [activeHash]);
 
-    const tocHtmlWtihHeading = `<h6>Table of Contents</h6>${props.tocHtml}`;
+    const tocHtmlWithHeading = props.includeTitle ? `<h6>Table of Contents</h6>${props.tocHtml}` : props.tocHtml;
 
     return (
         <div
@@ -42,7 +43,7 @@ export function ToC(props: { tocHtml: string }) {
         >
             <div
                 className="container toc-links"
-                dangerouslySetInnerHTML={{ __html: tocHtmlWtihHeading }}
+                dangerouslySetInnerHTML={{ __html: tocHtmlWithHeading }}
             />
         </div>
     );

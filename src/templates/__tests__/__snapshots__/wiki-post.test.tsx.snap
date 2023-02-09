@@ -288,9 +288,6 @@ exports[`Wiki Posts Page ToC shows properly on mobile: closed table of contents 
                 <div
                   class="container toc-links"
                 >
-                  <h6>
-                    Table of Contents
-                  </h6>
                   <ul>
                     <li>
                       <p>
@@ -1472,9 +1469,6 @@ exports[`Wiki Posts Page ToC shows properly on mobile: closed table of contents 
                 <div
                   class="container toc-links"
                 >
-                  <h6>
-                    Table of Contents
-                  </h6>
                   <ul>
                     <li>
                       <p>
@@ -2656,9 +2650,6 @@ exports[`Wiki Posts Page ToC shows properly on mobile: open table of contents 1`
                 <div
                   class="container toc-links"
                 >
-                  <h6>
-                    Table of Contents
-                  </h6>
                   <ul>
                     <li>
                       <p>
@@ -3860,9 +3851,6 @@ exports[`Wiki Posts Page renders correctly 1`] = `
                 <div
                   class="container toc-links"
                 >
-                  <h6>
-                    Table of Contents
-                  </h6>
                   <ul>
                     <li>
                       <p>
@@ -5024,9 +5012,6 @@ exports[`Wiki Posts Page renders correctly on medium view 1`] = `
                 <div
                   class="container toc-links"
                 >
-                  <h6>
-                    Table of Contents
-                  </h6>
                   <ul>
                     <li>
                       <p>
@@ -6208,9 +6193,6 @@ exports[`Wiki Posts Page renders correctly on mobile view 1`] = `
                 <div
                   class="container toc-links"
                 >
-                  <h6>
-                    Table of Contents
-                  </h6>
                   <ul>
                     <li>
                       <p>

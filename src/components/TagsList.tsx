@@ -8,14 +8,16 @@ export const TagsList = (props: {
     }>;
     totalPostCount: number;
     activeTag: string;
+    type: PostType;
     handleFilterUpdate: (e: any) => void;
 }) => {
     return (
         <div className="field is-grouped is-grouped-multiline">
             <div className="tags has-addons mx-2 tag-align">
                 <Link
-                    to={`/blog`}
+                    to={`/${props.type}`}
                     id="all"
+                    data-testid="all"
                     className={`tag ${
                         'all' === props.activeTag
                             ? 'is-success'

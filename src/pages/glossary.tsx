@@ -35,6 +35,12 @@ export interface GlossaryPageProps {
     };
 }
 
+const fakeHtml = `<ul>
+	<h6>A</h6>
+	<h6>B</h6>
+	<h6>C</h6>
+</ul>`
+
 const GlossaryPage: FunctionComponent<PageProps<GlossaryPageProps>> = ({
     data: { index, allTags, blogFeatured, wikiFeatured }
 }: PageProps<GlossaryPageProps>) => {
@@ -87,12 +93,12 @@ const GlossaryPage: FunctionComponent<PageProps<GlossaryPageProps>> = ({
                 title={`Glossary Index`}
                 alignCenter={true}
             />
-            {/* sticky table of contents */}
-            <div className="columns ">
-                <div className="column ">
+            <div className="columns is-multiline">
+                {/* sticky table of contents */}
+                <div className="column mt-4 glossary-toc">
                     <section
                         className={
-                            isMobile ? 'mobile-blog-toc' : 'web-blog-toc'
+                            'web-blog-toc box'
                         }
                         style={{
                             display:
@@ -101,11 +107,11 @@ const GlossaryPage: FunctionComponent<PageProps<GlossaryPageProps>> = ({
                                     : 'none'
                         }}
                     >
+						
                         <OutsideClicker
                             callback={isMobile ? handleClickOutside : undefined}
                         >
-                            {/* <ToC tocHtml={markdownRemark.tableOfContents} /> */}
-                            <h2>TOC</h2>
+                            <ToC tocHtml={fakeHtml} includeTitle={false}/>
                         </OutsideClicker>
                     </section>
                     <button
@@ -124,14 +130,14 @@ const GlossaryPage: FunctionComponent<PageProps<GlossaryPageProps>> = ({
                         </i>
                     </button>
                 </div>
-                <div className="column is-four-fifths-desktop">
+                <div className="column is-three-fifths-widescreen is-four-fifths">
                     <PostPage
-                        glossaryIndex={index}
+                        index={index}
                         allTags={allTags}
                         type={'glossary'}
                     />
                 </div>
-                <div className="column mr-1 mt-6 is-one-fifth-widescreen">
+                <div className="column mt-6 is-one-fifth-widescreen">
                     <div className="blog-sidebar">
                         <SideBar
                             featured={blogFeatured.nodes}

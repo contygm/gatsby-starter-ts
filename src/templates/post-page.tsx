@@ -1,7 +1,6 @@
 import React, { FunctionComponent, useEffect, useState } from 'react';
 import { SearchFilterRow, PostIndex, GlossaryIndex } from '../components';
 
-// TODO all btn always goes to blog
 export interface PostPageProps {
     allTags: {
         group: Array<{
@@ -9,12 +8,8 @@ export interface PostPageProps {
             totalCount: number;
         }>;
     };
-    postIndex?: {
-        nodes: Array<IndexElements>;
-        totalCount: number;
-    };
-    glossaryIndex?: {
-        nodes: Array<GlossaryElements>;
+    index: {
+        nodes: Array<GlossaryElements | IndexElements>;
         totalCount: number;
     };
     type: PostType;
@@ -22,14 +17,14 @@ export interface PostPageProps {
 
 const INCREMENT = 6;
 
+// TODO should be index page or something
 const PostPage: FunctionComponent<PostPageProps> = ({
-    postIndex,
-    glossaryIndex,
+    index,
     allTags,
     type
 }: PostPageProps) => {
-    const unfilteredPosts = postIndex?.nodes;
-    const [allPosts, setAllPosts] = useState(postIndex?.nodes);
+    const unfilteredPosts = index.nodes;
+    const [allPosts, setAllPosts] = useState(index.nodes);
 
     const searchFromQuery = location.search.match(/(?<=\bsearch=)\w+/g);
     const [searchQuery, setSearchQuery] = useState(
@@ -66,44 +61,47 @@ const PostPage: FunctionComponent<PostPageProps> = ({
     };
 
     useEffect(() => {
+        console.log(tagFilter)
         if (tagFilter === 'all') {
             setAllPosts(unfilteredPosts);
         } else {
-            const filtered = unfilteredPosts?.filter((post) =>
+            const filtered = unfilteredPosts.filter((post) =>
                 post.frontmatter.tags.includes(tagFilter)
             );
+            console.log(filtered.length)
             setAllPosts(filtered);
         }
     }, [tagFilter]);
 
-    useEffect(() => {
-        if (searchQuery === '') {
-            setAllPosts(unfilteredPosts);
-        } else {
-            const posts = unfilteredPosts ?? []; // start w all posts
+    // useEffect(() => {
+    //     if (searchQuery === '') {
+    //         setAllPosts(unfilteredPosts);
+    //     } else {
+    //         const posts = unfilteredPosts ?? []; // start w all posts
 
-            const filteredData = posts.filter((post) => {
-                const { description, title } = post.frontmatter;
+    //         const filteredData = posts.filter((post) => {
+    //             const { description, title } = post.frontmatter;
 
-                return (
-                    // standardize data with .toLowerCase()
-                    // return true if the description or title
-                    description
-                        .toLowerCase()
-                        .includes(searchQuery.toLowerCase()) ||
-                    title.toLowerCase().includes(searchQuery.toLowerCase())
-                );
-            });
-            setAllPosts(filteredData);
-        }
-    }, [searchQuery]);
-
+    //             return (
+    //                 // standardize data with .toLowerCase()
+    //                 // return true if the description or title
+    //                 description
+    //                     .toLowerCase()
+    //                     .includes(searchQuery.toLowerCase()) ||
+    //                 title.toLowerCase().includes(searchQuery.toLowerCase())
+    //             );
+    //         });
+    //         setAllPosts(filteredData);
+    //     }
+    // }, [searchQuery]);
+      
     return (
         <>
             <SearchFilterRow
+                type={type}
                 tags={tags}
                 activeTag={tagFilter}
-                totalPostCount={postIndex?.totalCount || 0}
+                totalPostCount={index.totalCount}
                 clearSearchQuery={clearSearchQuery}
                 handleFilterUpdate={handleFilterUpdate}
                 handleSubmitSearch={handleSubmitSearch}
@@ -111,13 +109,13 @@ const PostPage: FunctionComponent<PostPageProps> = ({
             />
             {type !== 'glossary' ? (
                 <PostIndex
-                    allPosts={allPosts || []}
+                    allPosts={allPosts as Array<IndexElements>}
                     increment={INCREMENT}
                     handleFilterUpdate={handleFilterUpdate}
                     type={type}
                 />
             ) : (
-                <GlossaryIndex allDefinitions={glossaryIndex?.nodes || []} />
+                <GlossaryIndex allDefinitions={allPosts as Array<GlossaryElements>} />
             )}
         </>
     );

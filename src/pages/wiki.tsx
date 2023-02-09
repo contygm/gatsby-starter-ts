@@ -28,7 +28,7 @@ const WikiIndex = ({ data: { index, allTags } }: PageProps<WikiIndexProps>) => {
                 alignCenter={true}
             />
             <PostPage
-                postIndex={index}
+                index={index}
                 allTags={allTags}
                 type={'wiki'}
             />

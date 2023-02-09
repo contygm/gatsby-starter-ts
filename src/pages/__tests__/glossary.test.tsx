@@ -13,15 +13,14 @@ const resizeWindow = (x: number) => {
 
 describe('Glossary Page', () => {
     beforeEach(() => {
-        // TODO this is for ToC which isn't implemented yet
         // IntersectionObserver isn't available in test environment
-        // const mockIntersectionObserver = jest.fn();
-        // mockIntersectionObserver.mockReturnValue({
-        //     observe: () => null,
-        //     unobserve: () => null,
-        //     disconnect: () => null
-        // });
-        // window.IntersectionObserver = mockIntersectionObserver;
+        const mockIntersectionObserver = jest.fn();
+        mockIntersectionObserver.mockReturnValue({
+            observe: () => null,
+            unobserve: () => null,
+            disconnect: () => null
+        });
+        window.IntersectionObserver = mockIntersectionObserver;
         resizeWindow(1216);
     });
 
@@ -37,12 +36,15 @@ describe('Glossary Page', () => {
         expect(asFragment()).toMatchSnapshot();
     });
 
-    it.skip('filters correctly', () => {
-        // const { asFragment, getByTestId, getAllByTestId  } = render(<GlossaryPage {...mockGlossaryPageData} />);
-        // expect(asFragment()).toMatchSnapshot();
-        // expect(getAllByTestId('definition-card').length).toEqual(5);
-        // fireEvent.click(getByTestId('three'));
-        // expect(getAllByTestId('definition-card').length).toEqual(3);
+    it('filters correctly', () => {
+        const { asFragment, getByTestId, getAllByTestId  } = render(<GlossaryPage {...mockGlossaryPageData} />);
+        expect(asFragment()).toMatchSnapshot();
+        expect(getAllByTestId('definition-card').length).toEqual(5);
+        fireEvent.click(getByTestId('three'));
+        expect(getAllByTestId('definition-card').length).toEqual(2);
+
+        fireEvent.click(getByTestId('all'));
+        expect(getAllByTestId('definition-card').length).toEqual(5);
     });
 
     it('renders correctly on mobile view', () => {

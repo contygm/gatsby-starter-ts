@@ -210,6 +210,7 @@ exports[`Blog Index Page renders and filters correctly 1`] = `
                 >
                   <a
                     class="tag is-success"
+                    data-testid="all"
                     href="/blog"
                     id="all"
                   >
@@ -1006,6 +1007,7 @@ exports[`Blog Index Page searches correctly 1`] = `
                 >
                   <a
                     class="tag is-success"
+                    data-testid="all"
                     href="/blog"
                     id="all"
                   >

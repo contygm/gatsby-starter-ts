@@ -30,7 +30,7 @@ const BlogIndex: FunctionComponent<PageProps<BlogIndexProps>> = ({
                 alignCenter={true}
             />
             <PostPage
-                postIndex={index}
+                index={index}
                 allTags={allTags}
                 type={'blog'}
             />

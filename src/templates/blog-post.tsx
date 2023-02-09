@@ -90,7 +90,7 @@ const BlogPost = ({
             />
             {/* main body: ToC, sidebar, post content */}
             <div className="columns is-multiline">
-                {/* stickey table of contetnts */}
+                {/* sticky table of contents */}
                 <div className="column blog-toc is-one-fifth-widescreen is-one-fifth-desktop is-narrow">
                     <section
                         className={
@@ -106,7 +106,7 @@ const BlogPost = ({
                         <OutsideClicker
                             callback={isMobile ? handleClickOutside : undefined}
                         >
-                            <ToC tocHtml={markdownRemark.tableOfContents} />
+                            <ToC tocHtml={markdownRemark.tableOfContents} includeTitle={true} />
                         </OutsideClicker>
                     </section>
                     <button
