@@ -91,7 +91,7 @@ const BlogPost = ({
             {/* main body: ToC, sidebar, post content */}
             <div className="columns is-multiline">
                 {/* sticky table of contents */}
-                <div className="column blog-toc is-one-fifth-widescreen is-one-fifth-desktop is-narrow">
+                <div className="column blog-toc is-one-fifth-desktop is-narrow">
                     <section
                         className={
                             isMobile ? 'mobile-blog-toc' : 'web-blog-toc'

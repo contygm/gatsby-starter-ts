@@ -3,32 +3,80 @@ import { DefinitionCard } from './DefinitionCard';
 
 export interface GlossaryIndexProps {
     allDefinitions: Array<GlossaryElements>;
+    allLetters?: {
+        group: Array<{
+            fieldValue: string;
+        }>;
+    };
     // handleFilterUpdate: (e: any) => void;
 }
 
+const letterDefinitionObjectArray = (
+    allLetters: GlossaryIndexProps["allLetters"], 
+    allDefinitions:  GlossaryIndexProps["allDefinitions"]
+) => {
+    let index = 0;
+    const resArray: any[] = [];
+    allLetters?.group.forEach((letterObj) => {
+        
+        const newLetterDefObj = {
+            letter: letterObj.fieldValue,
+            definitions: [] as Array<GlossaryElements>
+        };
+
+        while(
+            index < allDefinitions.length 
+            && letterObj.fieldValue === allDefinitions[index].frontmatter.letter
+        ) {
+            newLetterDefObj.definitions.push(allDefinitions[index])
+            index++;
+        } 
+        resArray.push(newLetterDefObj);       
+        
+    })
+    return resArray;
+};
+
 export const GlossaryIndex: FunctionComponent<GlossaryIndexProps> = ({
-    allDefinitions
+    allDefinitions,
+    allLetters
 }: // handleFilterUpdate
 GlossaryIndexProps) => {
+
+    const letterDefinitions = letterDefinitionObjectArray(allLetters, allDefinitions);
+
     return (
         <article className="section">
             <section className="container">
                 {/* post cards */}
                 <div className="is-centered">
-                    {allDefinitions.length > 0 ? (
-                        allDefinitions.map((def: GlossaryElements) => {
-                            return (
-                                <div
-                                    data-testid={'definition-card'}
-                                    className="my-5"
-                                    key={def.frontmatter.title.toLowerCase()}
-                                >
-                                    <DefinitionCard
-                                        definition={def}
-                                        // handleFilterUpdate={handleFilterUpdate}
-                                    />
-                                </div>
-                            );
+                    {letterDefinitions.length > 0 ? (
+                        letterDefinitions.map((defObj) => {
+                            if (defObj.definitions.length > 0) {
+                                return (
+                                    <section className='section' key={defObj.letter}>
+                                        <h2 className="title is-size-2" id={`${defObj.letter}`}>{defObj.letter}</h2>
+                                        {
+                                            defObj.definitions.map((definition: GlossaryElements) => {
+                                                return (
+                                                    <div
+                                                        data-testid={'definition-card'}
+                                                        className=""
+                                                        key={definition.frontmatter.title.toLowerCase()}
+                                                    >
+                                                        <DefinitionCard
+                                                            definition={definition}
+                                                            // handleFilterUpdate={handleFilterUpdate}
+                                                        />
+                                                    </div>
+                                                )
+                                            })
+                                        }
+                                        
+                                    </section>
+                                    
+                                );
+                            } 
                         })
                     ) : (
                         // TODO make no results look like something

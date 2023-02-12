@@ -27,6 +27,11 @@ export interface GlossaryPageProps {
         nodes: Array<GlossaryElements>;
         totalCount: number;
     };
+    allLetters: {
+        group: Array<{
+            fieldValue: string;
+        }>
+    };
     blogFeatured: {
         nodes: Array<IndexElements>;
     };
@@ -35,14 +40,20 @@ export interface GlossaryPageProps {
     };
 }
 
-const fakeHtml = `<ul>
-	<h6>A</h6>
-	<h6>B</h6>
-	<h6>C</h6>
-</ul>`
+const makeGlossToC = (letterObjs: Array<{ fieldValue: string; }>) => {
+    let letterElements = ``;
+
+    letterObjs.forEach((letter) => {
+        const letterListElement = `<li>\n<p><a href="#${letter.fieldValue}">${letter.fieldValue}</a></p>\n</li>`;
+        letterElements += letterListElement;
+    })
+    
+    const finalToC = `<ul>\n${letterElements}\n</ul>`;
+    return finalToC;
+};
 
 const GlossaryPage: FunctionComponent<PageProps<GlossaryPageProps>> = ({
-    data: { index, allTags, blogFeatured, wikiFeatured }
+    data: { index, allTags, blogFeatured, wikiFeatured, allLetters }
 }: PageProps<GlossaryPageProps>) => {
     const [showMobileToc, setShowMobileToc] = useState(false);
     const [isMobile, setIsMobile] = useState(useCheckMobileScreen());
@@ -111,7 +122,7 @@ const GlossaryPage: FunctionComponent<PageProps<GlossaryPageProps>> = ({
                         <OutsideClicker
                             callback={isMobile ? handleClickOutside : undefined}
                         >
-                            <ToC tocHtml={fakeHtml} includeTitle={false}/>
+                            <ToC tocHtml={makeGlossToC(allLetters.group)} includeTitle={false}/>
                         </OutsideClicker>
                     </section>
                     <button
@@ -130,9 +141,10 @@ const GlossaryPage: FunctionComponent<PageProps<GlossaryPageProps>> = ({
                         </i>
                     </button>
                 </div>
-                <div className="column is-three-fifths-widescreen is-four-fifths">
+                <div className="column is-three-fifths-widescreen is-four-fifths is-narrow">
                     <PostPage
                         index={index}
+                        allLetters={allLetters}
                         allTags={allTags}
                         type={'glossary'}
                     />
@@ -167,6 +179,13 @@ export const pageQuery = graphql`
             group(field: frontmatter___tags) {
                 fieldValue
                 totalCount
+            }
+        }
+        allLetters: allMarkdownRemark(
+            filter: { frontmatter: { type: { eq: "glossary" } } }
+        ) {
+            group(field: frontmatter___letter) {
+                fieldValue
             }
         }
         index: allMarkdownRemark(

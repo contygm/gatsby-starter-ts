@@ -13,15 +13,21 @@ export interface PostPageProps {
         totalCount: number;
     };
     type: PostType;
+    allLetters?: {
+        group: Array<{
+            fieldValue: string;
+        }>;
+    };
 }
 
 const INCREMENT = 6;
 
-// TODO should be index page or something
+// TODO should be named index page or something
 const PostPage: FunctionComponent<PostPageProps> = ({
     index,
     allTags,
-    type
+    type,
+    allLetters
 }: PostPageProps) => {
     const unfilteredPosts = index.nodes;
     const [allPosts, setAllPosts] = useState(index.nodes);
@@ -115,7 +121,10 @@ const PostPage: FunctionComponent<PostPageProps> = ({
                     type={type}
                 />
             ) : (
-                <GlossaryIndex allDefinitions={allPosts as Array<GlossaryElements>} />
+                <GlossaryIndex 
+                    allDefinitions={allPosts as Array<GlossaryElements>} 
+                    allLetters={allLetters}
+                />
             )}
         </>
     );

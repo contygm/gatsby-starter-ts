@@ -3,7 +3,6 @@ import { useActiveHash } from '../utils/useActiveHash';
 
 export function ToC(props: { tocHtml: string; includeTitle: boolean }) {
     const targetedIds = useMemo(() => {
-        if(!props.includeTitle) return [];
         // extract anchor hrefs
         // NOTE: can't use 'positive lookbehind' because of browser compatibility
         // so must leave in # instead of using `(?<=\#)(.*?)(?=\")`

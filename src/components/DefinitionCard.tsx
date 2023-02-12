@@ -10,9 +10,31 @@ export const DefinitionCard = (props: {
             <div className="card-content">
                 <div className="media">
                     <div className="media-content">
-                        <h2 className="title is-4">
-                            {props.definition.frontmatter.title}
-                        </h2>
+                        
+                        <div className="level">
+                            <div className="level-left">
+                                <div className="level-item">
+                                    <h3 className="title is-3" id={props.definition.frontmatter.title.toLowerCase()}>
+                                        {props.definition.frontmatter.title}
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <div className="level-right">
+                                <div className="level-item has-text-centered">
+                                    <div>
+                                        <p className="heading">Syllables</p>
+                                        <p className="subheading">{props.definition.frontmatter.syllables}</p>
+                                    </div>
+                                </div>
+                                <div className="level-item has-text-centered">
+                                    <div>
+                                        <p className="heading">Phonetics</p>
+                                        <p className="subheading">{props.definition.frontmatter.phonetics}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div className="content">
@@ -23,7 +45,25 @@ export const DefinitionCard = (props: {
                         }}
                     />
                 </div>
-                <div className="card-footer">
+                <div className="content">
+                    <h4>Similar Words: </h4>
+                    <ol>
+                    {
+                        props.definition.frontmatter.similarWords.map((word: string) => {
+                            return (<li key={word}><Link
+                                to={`#${word}`}
+                                className=""
+                                
+                            >
+                                {word}
+                            </Link></li>)
+                        })
+                    }
+                    </ol>
+                </div>
+                
+            </div>
+            <div className="card-footer">
                     <p className="mt-2 ml-2 mr-2">Tags:</p>
 
                     <div className="tags">
@@ -33,7 +73,7 @@ export const DefinitionCard = (props: {
                                     <Link
                                         to={`?tag=${tag}`}
                                         id={tag}
-                                        className="tag mt-2"
+                                        className="tag mt-2 is-success is-light"
                                         key={tag}
                                         // onClick={props.handleFilterUpdate}
                                     >
@@ -44,7 +84,6 @@ export const DefinitionCard = (props: {
                         )}
                     </div>
                 </div>
-            </div>
         </div>
     );
 };
