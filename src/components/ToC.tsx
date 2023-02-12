@@ -32,7 +32,9 @@ export function ToC(props: { tocHtml: string; includeTitle: boolean }) {
         }
     }, [activeHash]);
 
-    const tocHtmlWithHeading = props.includeTitle ? `<h6>Table of Contents</h6>${props.tocHtml}` : props.tocHtml;
+    const tocHtmlWithHeading = props.includeTitle
+        ? `<h6>Table of Contents</h6>${props.tocHtml}`
+        : props.tocHtml;
 
     return (
         <div

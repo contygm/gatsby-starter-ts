@@ -12,28 +12,26 @@ export interface GlossaryIndexProps {
 }
 
 const letterDefinitionObjectArray = (
-    allLetters: GlossaryIndexProps["allLetters"], 
-    allDefinitions:  GlossaryIndexProps["allDefinitions"]
+    allLetters: GlossaryIndexProps['allLetters'],
+    allDefinitions: GlossaryIndexProps['allDefinitions']
 ) => {
     let index = 0;
     const resArray: any[] = [];
     allLetters?.group.forEach((letterObj) => {
-        
         const newLetterDefObj = {
             letter: letterObj.fieldValue,
             definitions: [] as Array<GlossaryElements>
         };
 
-        while(
-            index < allDefinitions.length 
-            && letterObj.fieldValue === allDefinitions[index].frontmatter.letter
+        while (
+            index < allDefinitions.length &&
+            letterObj.fieldValue === allDefinitions[index].frontmatter.letter
         ) {
-            newLetterDefObj.definitions.push(allDefinitions[index])
+            newLetterDefObj.definitions.push(allDefinitions[index]);
             index++;
-        } 
-        resArray.push(newLetterDefObj);       
-        
-    })
+        }
+        resArray.push(newLetterDefObj);
+    });
     return resArray;
 };
 
@@ -42,8 +40,10 @@ export const GlossaryIndex: FunctionComponent<GlossaryIndexProps> = ({
     allLetters
 }: // handleFilterUpdate
 GlossaryIndexProps) => {
-
-    const letterDefinitions = letterDefinitionObjectArray(allLetters, allDefinitions);
+    const letterDefinitions = letterDefinitionObjectArray(
+        allLetters,
+        allDefinitions
+    );
 
     return (
         <article className="section">
@@ -54,29 +54,39 @@ GlossaryIndexProps) => {
                         letterDefinitions.map((defObj) => {
                             if (defObj.definitions.length > 0) {
                                 return (
-                                    <section className='section' key={defObj.letter}>
-                                        <h2 className="title is-size-2" id={`${defObj.letter}`}>{defObj.letter}</h2>
-                                        {
-                                            defObj.definitions.map((definition: GlossaryElements) => {
+                                    <section
+                                        className="section"
+                                        key={defObj.letter}
+                                    >
+                                        <h2
+                                            className="title is-size-2"
+                                            id={`${defObj.letter}`}
+                                        >
+                                            {defObj.letter}
+                                        </h2>
+                                        {defObj.definitions.map(
+                                            (definition: GlossaryElements) => {
                                                 return (
                                                     <div
-                                                        data-testid={'definition-card'}
+                                                        data-testid={
+                                                            'definition-card'
+                                                        }
                                                         className=""
                                                         key={definition.frontmatter.title.toLowerCase()}
                                                     >
                                                         <DefinitionCard
-                                                            definition={definition}
+                                                            definition={
+                                                                definition
+                                                            }
                                                             // handleFilterUpdate={handleFilterUpdate}
                                                         />
                                                     </div>
-                                                )
-                                            })
-                                        }
-                                        
+                                                );
+                                            }
+                                        )}
                                     </section>
-                                    
                                 );
-                            } 
+                            }
                         })
                     ) : (
                         // TODO make no results look like something

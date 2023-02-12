@@ -30,7 +30,7 @@ export interface GlossaryPageProps {
     allLetters: {
         group: Array<{
             fieldValue: string;
-        }>
+        }>;
     };
     blogFeatured: {
         nodes: Array<IndexElements>;
@@ -40,14 +40,14 @@ export interface GlossaryPageProps {
     };
 }
 
-const makeGlossToC = (letterObjs: Array<{ fieldValue: string; }>) => {
+const makeGlossToC = (letterObjs: Array<{ fieldValue: string }>) => {
     let letterElements = ``;
 
     letterObjs.forEach((letter) => {
         const letterListElement = `<li>\n<p><a href="#${letter.fieldValue}">${letter.fieldValue}</a></p>\n</li>`;
         letterElements += letterListElement;
-    })
-    
+    });
+
     const finalToC = `<ul>\n${letterElements}\n</ul>`;
     return finalToC;
 };
@@ -108,9 +108,7 @@ const GlossaryPage: FunctionComponent<PageProps<GlossaryPageProps>> = ({
                 {/* sticky table of contents */}
                 <div className="column mt-4 glossary-toc">
                     <section
-                        className={
-                            'web-blog-toc box'
-                        }
+                        className={'web-blog-toc box'}
                         style={{
                             display:
                                 !isMobile || (isMobile && showMobileToc)
@@ -118,11 +116,13 @@ const GlossaryPage: FunctionComponent<PageProps<GlossaryPageProps>> = ({
                                     : 'none'
                         }}
                     >
-						
                         <OutsideClicker
                             callback={isMobile ? handleClickOutside : undefined}
                         >
-                            <ToC tocHtml={makeGlossToC(allLetters.group)} includeTitle={false}/>
+                            <ToC
+                                tocHtml={makeGlossToC(allLetters.group)}
+                                includeTitle={false}
+                            />
                         </OutsideClicker>
                     </section>
                     <button

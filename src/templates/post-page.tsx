@@ -67,14 +67,14 @@ const PostPage: FunctionComponent<PostPageProps> = ({
     };
 
     useEffect(() => {
-        console.log(tagFilter)
+        console.log(tagFilter);
         if (tagFilter === 'all') {
             setAllPosts(unfilteredPosts);
         } else {
             const filtered = unfilteredPosts.filter((post) =>
                 post.frontmatter.tags.includes(tagFilter)
             );
-            console.log(filtered.length)
+            console.log(filtered.length);
             setAllPosts(filtered);
         }
     }, [tagFilter]);
@@ -100,7 +100,7 @@ const PostPage: FunctionComponent<PostPageProps> = ({
     //         setAllPosts(filteredData);
     //     }
     // }, [searchQuery]);
-      
+
     return (
         <>
             <SearchFilterRow
@@ -121,8 +121,8 @@ const PostPage: FunctionComponent<PostPageProps> = ({
                     type={type}
                 />
             ) : (
-                <GlossaryIndex 
-                    allDefinitions={allPosts as Array<GlossaryElements>} 
+                <GlossaryIndex
+                    allDefinitions={allPosts as Array<GlossaryElements>}
                     allLetters={allLetters}
                 />
             )}

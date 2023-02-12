@@ -37,7 +37,9 @@ describe('Glossary Page', () => {
     });
 
     it('filters correctly', () => {
-        const { asFragment, getByTestId, getAllByTestId  } = render(<GlossaryPage {...mockGlossaryPageData} />);
+        const { asFragment, getByTestId, getAllByTestId } = render(
+            <GlossaryPage {...mockGlossaryPageData} />
+        );
         expect(asFragment()).toMatchSnapshot();
         expect(getAllByTestId('definition-card').length).toEqual(5);
         fireEvent.click(getByTestId('three'));

@@ -106,7 +106,10 @@ const BlogPost = ({
                         <OutsideClicker
                             callback={isMobile ? handleClickOutside : undefined}
                         >
-                            <ToC tocHtml={markdownRemark.tableOfContents} includeTitle={true} />
+                            <ToC
+                                tocHtml={markdownRemark.tableOfContents}
+                                includeTitle={true}
+                            />
                         </OutsideClicker>
                     </section>
                     <button

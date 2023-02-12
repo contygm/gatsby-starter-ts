@@ -7,7 +7,10 @@ import { mockGlossaryPageData } from '../../../__mocks__/mock-glossary-page';
 describe('GlossaryIndex', () => {
     it('default renders correctly', () => {
         const { asFragment, getAllByTestId } = render(
-            <GlossaryIndex allDefinitions={glossaryDefinitions} allLetters={mockGlossaryPageData.data.allLetters}/>
+            <GlossaryIndex
+                allDefinitions={glossaryDefinitions}
+                allLetters={mockGlossaryPageData.data.allLetters}
+            />
         );
         expect(asFragment()).toMatchSnapshot();
         expect(getAllByTestId('definition-card').length).toEqual(5);
