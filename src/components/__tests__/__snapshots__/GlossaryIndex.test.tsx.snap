@@ -11,41 +11,125 @@ exports[`GlossaryIndex default renders correctly 1`] = `
       <div
         class="is-centered"
       >
-        <div
-          class="my-5"
-          data-testid="definition-card"
+        <section
+          class="section"
         >
+          <h2
+            class="title is-size-2"
+            id="A"
+          >
+            A
+          </h2>
           <div
-            class="card"
+            class=""
+            data-testid="definition-card"
           >
             <div
-              class="card-content"
+              class="card"
             >
               <div
-                class="media"
+                class="card-content"
               >
                 <div
-                  class="media-content"
+                  class="media"
                 >
-                  <h2
-                    class="title is-4"
+                  <div
+                    class="media-content"
                   >
-                    Air
-                  </h2>
+                    <div
+                      class="level"
+                    >
+                      <div
+                        class="level-left"
+                      >
+                        <div
+                          class="level-item"
+                        >
+                          <h3
+                            class="title is-3"
+                            id="air"
+                          >
+                            Air
+                          </h3>
+                        </div>
+                      </div>
+                      <div
+                        class="level-right"
+                      >
+                        <div
+                          class="level-item has-text-centered"
+                        >
+                          <div>
+                            <p
+                              class="heading"
+                            >
+                              Syllables
+                            </p>
+                            <p
+                              class="subheading"
+                            >
+                              a·ban·don
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="level-item has-text-centered"
+                        >
+                          <div>
+                            <p
+                              class="heading"
+                            >
+                              Phonetics
+                            </p>
+                            <p
+                              class="subheading"
+                            >
+                              əˈbandən
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div
-                class="content"
-              >
                 <div
-                  class="container"
+                  class="content"
                 >
-                  <h3>
-                    Definition
-                  </h3>
-                  <p>
-                    Lemon drops pastry danish halvah. Lemon drops pastry danish halvah.
-                  </p>
+                  <div
+                    class="container"
+                  >
+                    <h3>
+                      Definition
+                    </h3>
+                    <p>
+                      Lemon drops pastry danish halvah. Lemon drops pastry danish halvah.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="content"
+                >
+                  <h4>
+                    Similar Words: 
+                  </h4>
+                  <ol>
+                    <li>
+                      <a
+                        class=""
+                        href="#/blog/test"
+                      >
+                        /blog/test
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class=""
+                        href="#/wiki/test"
+                      >
+                        /wiki/test
+                      </a>
+                    </li>
+                  </ol>
                 </div>
               </div>
               <div
@@ -60,14 +144,14 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                   class="tags"
                 >
                   <a
-                    class="tag mt-2"
+                    class="tag mt-2 is-success is-light"
                     href="?tag=two"
                     id="two"
                   >
                     two
                   </a>
                   <a
-                    class="tag mt-2"
+                    class="tag mt-2 is-success is-light"
                     href="?tag=three"
                     id="three"
                   >
@@ -77,42 +161,116 @@ exports[`GlossaryIndex default renders correctly 1`] = `
               </div>
             </div>
           </div>
-        </div>
-        <div
-          class="my-5"
-          data-testid="definition-card"
-        >
           <div
-            class="card"
+            class=""
+            data-testid="definition-card"
           >
             <div
-              class="card-content"
+              class="card"
             >
               <div
-                class="media"
+                class="card-content"
               >
                 <div
-                  class="media-content"
+                  class="media"
                 >
-                  <h2
-                    class="title is-4"
+                  <div
+                    class="media-content"
                   >
-                    Atom
-                  </h2>
+                    <div
+                      class="level"
+                    >
+                      <div
+                        class="level-left"
+                      >
+                        <div
+                          class="level-item"
+                        >
+                          <h3
+                            class="title is-3"
+                            id="atom"
+                          >
+                            Atom
+                          </h3>
+                        </div>
+                      </div>
+                      <div
+                        class="level-right"
+                      >
+                        <div
+                          class="level-item has-text-centered"
+                        >
+                          <div>
+                            <p
+                              class="heading"
+                            >
+                              Syllables
+                            </p>
+                            <p
+                              class="subheading"
+                            >
+                              a·ban·don
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="level-item has-text-centered"
+                        >
+                          <div>
+                            <p
+                              class="heading"
+                            >
+                              Phonetics
+                            </p>
+                            <p
+                              class="subheading"
+                            >
+                              əˈbandən
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div
-                class="content"
-              >
                 <div
-                  class="container"
+                  class="content"
                 >
-                  <h3>
-                    Definition
-                  </h3>
-                  <p>
-                    Lemon drops pastry danish halvah. Lemon drops pastry danish halvah.
-                  </p>
+                  <div
+                    class="container"
+                  >
+                    <h3>
+                      Definition
+                    </h3>
+                    <p>
+                      Lemon drops pastry danish halvah. Lemon drops pastry danish halvah.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="content"
+                >
+                  <h4>
+                    Similar Words: 
+                  </h4>
+                  <ol>
+                    <li>
+                      <a
+                        class=""
+                        href="#/blog/test"
+                      >
+                        /blog/test
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class=""
+                        href="#/wiki/test"
+                      >
+                        /wiki/test
+                      </a>
+                    </li>
+                  </ol>
                 </div>
               </div>
               <div
@@ -127,14 +285,14 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                   class="tags"
                 >
                   <a
-                    class="tag mt-2"
+                    class="tag mt-2 is-success is-light"
                     href="?tag=two"
                     id="two"
                   >
                     two
                   </a>
                   <a
-                    class="tag mt-2"
+                    class="tag mt-2 is-success is-light"
                     href="?tag=one"
                     id="one"
                   >
@@ -144,42 +302,126 @@ exports[`GlossaryIndex default renders correctly 1`] = `
               </div>
             </div>
           </div>
-        </div>
-        <div
-          class="my-5"
-          data-testid="definition-card"
+        </section>
+        <section
+          class="section"
         >
+          <h2
+            class="title is-size-2"
+            id="C"
+          >
+            C
+          </h2>
           <div
-            class="card"
+            class=""
+            data-testid="definition-card"
           >
             <div
-              class="card-content"
+              class="card"
             >
               <div
-                class="media"
+                class="card-content"
               >
                 <div
-                  class="media-content"
+                  class="media"
                 >
-                  <h2
-                    class="title is-4"
+                  <div
+                    class="media-content"
                   >
-                    Cloud
-                  </h2>
+                    <div
+                      class="level"
+                    >
+                      <div
+                        class="level-left"
+                      >
+                        <div
+                          class="level-item"
+                        >
+                          <h3
+                            class="title is-3"
+                            id="cloud"
+                          >
+                            Cloud
+                          </h3>
+                        </div>
+                      </div>
+                      <div
+                        class="level-right"
+                      >
+                        <div
+                          class="level-item has-text-centered"
+                        >
+                          <div>
+                            <p
+                              class="heading"
+                            >
+                              Syllables
+                            </p>
+                            <p
+                              class="subheading"
+                            >
+                              a·ban·don
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="level-item has-text-centered"
+                        >
+                          <div>
+                            <p
+                              class="heading"
+                            >
+                              Phonetics
+                            </p>
+                            <p
+                              class="subheading"
+                            >
+                              əˈbandən
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div
-                class="content"
-              >
                 <div
-                  class="container"
+                  class="content"
                 >
-                  <h3>
-                    Definition
-                  </h3>
-                  <p>
-                    Lemon drops pastry danish halvah. Lemon drops pastry danish halvah.
-                  </p>
+                  <div
+                    class="container"
+                  >
+                    <h3>
+                      Definition
+                    </h3>
+                    <p>
+                      Lemon drops pastry danish halvah. Lemon drops pastry danish halvah.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="content"
+                >
+                  <h4>
+                    Similar Words: 
+                  </h4>
+                  <ol>
+                    <li>
+                      <a
+                        class=""
+                        href="#/blog/test"
+                      >
+                        /blog/test
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class=""
+                        href="#/wiki/test"
+                      >
+                        /wiki/test
+                      </a>
+                    </li>
+                  </ol>
                 </div>
               </div>
               <div
@@ -194,14 +436,14 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                   class="tags"
                 >
                   <a
-                    class="tag mt-2"
+                    class="tag mt-2 is-success is-light"
                     href="?tag=two"
                     id="two"
                   >
                     two
                   </a>
                   <a
-                    class="tag mt-2"
+                    class="tag mt-2 is-success is-light"
                     href="?tag=one"
                     id="one"
                   >
@@ -211,42 +453,126 @@ exports[`GlossaryIndex default renders correctly 1`] = `
               </div>
             </div>
           </div>
-        </div>
-        <div
-          class="my-5"
-          data-testid="definition-card"
+        </section>
+        <section
+          class="section"
         >
+          <h2
+            class="title is-size-2"
+            id="M"
+          >
+            M
+          </h2>
           <div
-            class="card"
+            class=""
+            data-testid="definition-card"
           >
             <div
-              class="card-content"
+              class="card"
             >
               <div
-                class="media"
+                class="card-content"
               >
                 <div
-                  class="media-content"
+                  class="media"
                 >
-                  <h2
-                    class="title is-4"
+                  <div
+                    class="media-content"
                   >
-                    Moon
-                  </h2>
+                    <div
+                      class="level"
+                    >
+                      <div
+                        class="level-left"
+                      >
+                        <div
+                          class="level-item"
+                        >
+                          <h3
+                            class="title is-3"
+                            id="moon"
+                          >
+                            Moon
+                          </h3>
+                        </div>
+                      </div>
+                      <div
+                        class="level-right"
+                      >
+                        <div
+                          class="level-item has-text-centered"
+                        >
+                          <div>
+                            <p
+                              class="heading"
+                            >
+                              Syllables
+                            </p>
+                            <p
+                              class="subheading"
+                            >
+                              a·ban·don
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="level-item has-text-centered"
+                        >
+                          <div>
+                            <p
+                              class="heading"
+                            >
+                              Phonetics
+                            </p>
+                            <p
+                              class="subheading"
+                            >
+                              əˈbandən
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div
-                class="content"
-              >
                 <div
-                  class="container"
+                  class="content"
                 >
-                  <h3>
-                    Definition
-                  </h3>
-                  <p>
-                    Lemon drops pastry danish halvah. Lemon drops pastry danish halvah.
-                  </p>
+                  <div
+                    class="container"
+                  >
+                    <h3>
+                      Definition
+                    </h3>
+                    <p>
+                      Lemon drops pastry danish halvah. Lemon drops pastry danish halvah.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="content"
+                >
+                  <h4>
+                    Similar Words: 
+                  </h4>
+                  <ol>
+                    <li>
+                      <a
+                        class=""
+                        href="#/blog/test"
+                      >
+                        /blog/test
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class=""
+                        href="#/wiki/test"
+                      >
+                        /wiki/test
+                      </a>
+                    </li>
+                  </ol>
                 </div>
               </div>
               <div
@@ -261,7 +587,7 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                   class="tags"
                 >
                   <a
-                    class="tag mt-2"
+                    class="tag mt-2 is-success is-light"
                     href="?tag=two"
                     id="two"
                   >
@@ -271,42 +597,126 @@ exports[`GlossaryIndex default renders correctly 1`] = `
               </div>
             </div>
           </div>
-        </div>
-        <div
-          class="my-5"
-          data-testid="definition-card"
+        </section>
+        <section
+          class="section"
         >
+          <h2
+            class="title is-size-2"
+            id="W"
+          >
+            W
+          </h2>
           <div
-            class="card"
+            class=""
+            data-testid="definition-card"
           >
             <div
-              class="card-content"
+              class="card"
             >
               <div
-                class="media"
+                class="card-content"
               >
                 <div
-                  class="media-content"
+                  class="media"
                 >
-                  <h2
-                    class="title is-4"
+                  <div
+                    class="media-content"
                   >
-                    Window
-                  </h2>
+                    <div
+                      class="level"
+                    >
+                      <div
+                        class="level-left"
+                      >
+                        <div
+                          class="level-item"
+                        >
+                          <h3
+                            class="title is-3"
+                            id="window"
+                          >
+                            Window
+                          </h3>
+                        </div>
+                      </div>
+                      <div
+                        class="level-right"
+                      >
+                        <div
+                          class="level-item has-text-centered"
+                        >
+                          <div>
+                            <p
+                              class="heading"
+                            >
+                              Syllables
+                            </p>
+                            <p
+                              class="subheading"
+                            >
+                              a·ban·don
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="level-item has-text-centered"
+                        >
+                          <div>
+                            <p
+                              class="heading"
+                            >
+                              Phonetics
+                            </p>
+                            <p
+                              class="subheading"
+                            >
+                              əˈbandən
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div
-                class="content"
-              >
                 <div
-                  class="container"
+                  class="content"
                 >
-                  <h3>
-                    Definition
-                  </h3>
-                  <p>
-                    Lemon drops pastry danish halvah. Lemon drops pastry danish halvah.
-                  </p>
+                  <div
+                    class="container"
+                  >
+                    <h3>
+                      Definition
+                    </h3>
+                    <p>
+                      Lemon drops pastry danish halvah. Lemon drops pastry danish halvah.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="content"
+                >
+                  <h4>
+                    Similar Words: 
+                  </h4>
+                  <ol>
+                    <li>
+                      <a
+                        class=""
+                        href="#/blog/test"
+                      >
+                        /blog/test
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class=""
+                        href="#/wiki/test1"
+                      >
+                        /wiki/test1
+                      </a>
+                    </li>
+                  </ol>
                 </div>
               </div>
               <div
@@ -321,7 +731,7 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                   class="tags"
                 >
                   <a
-                    class="tag mt-2"
+                    class="tag mt-2 is-success is-light"
                     href="?tag=three"
                     id="three"
                   >
@@ -331,7 +741,7 @@ exports[`GlossaryIndex default renders correctly 1`] = `
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </div>
     </section>
   </article>

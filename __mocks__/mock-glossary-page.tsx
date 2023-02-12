@@ -17,6 +17,14 @@ const mockGlossary: GlossaryPageProps = {
             { fieldValue: 'one', totalCount: 2 }
         ]
     },
+    allLetters: {
+        group: [
+            { fieldValue: 'A' },
+            { fieldValue: 'C' },
+            { fieldValue: 'M' },
+            { fieldValue: 'W' }
+        ]
+    },
     index: {
         totalCount: 5,
         nodes: glossaryDefinitions

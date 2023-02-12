@@ -273,7 +273,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
         class="columns is-multiline"
       >
         <div
-          class="column blog-toc is-one-fifth-widescreen is-one-fifth-desktop is-narrow"
+          class="column blog-toc is-one-fifth-desktop is-narrow"
         >
           <section
             class="mobile-blog-toc"
@@ -1457,7 +1457,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
         class="columns is-multiline"
       >
         <div
-          class="column blog-toc is-one-fifth-widescreen is-one-fifth-desktop is-narrow"
+          class="column blog-toc is-one-fifth-desktop is-narrow"
         >
           <section
             class="mobile-blog-toc"
@@ -2641,7 +2641,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
         class="columns is-multiline"
       >
         <div
-          class="column blog-toc is-one-fifth-widescreen is-one-fifth-desktop is-narrow"
+          class="column blog-toc is-one-fifth-desktop is-narrow"
         >
           <section
             class="mobile-blog-toc"
@@ -3845,7 +3845,7 @@ exports[`Blog Posts Page renders correctly 1`] = `
         class="columns is-multiline"
       >
         <div
-          class="column blog-toc is-one-fifth-widescreen is-one-fifth-desktop is-narrow"
+          class="column blog-toc is-one-fifth-desktop is-narrow"
         >
           <section
             class="web-blog-toc"
@@ -5009,7 +5009,7 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
         class="columns is-multiline"
       >
         <div
-          class="column blog-toc is-one-fifth-widescreen is-one-fifth-desktop is-narrow"
+          class="column blog-toc is-one-fifth-desktop is-narrow"
         >
           <section
             class="web-blog-toc"
@@ -6193,7 +6193,7 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
         class="columns is-multiline"
       >
         <div
-          class="column blog-toc is-one-fifth-widescreen is-one-fifth-desktop is-narrow"
+          class="column blog-toc is-one-fifth-desktop is-narrow"
         >
           <section
             class="mobile-blog-toc"

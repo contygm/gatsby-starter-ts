@@ -2,11 +2,12 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import { GlossaryIndex } from '../GlossaryIndex';
 import { glossaryDefinitions } from '../../../__mocks__/constants';
+import { mockGlossaryPageData } from '../../../__mocks__/mock-glossary-page';
 
 describe('GlossaryIndex', () => {
     it('default renders correctly', () => {
         const { asFragment, getAllByTestId } = render(
-            <GlossaryIndex allDefinitions={glossaryDefinitions} />
+            <GlossaryIndex allDefinitions={glossaryDefinitions} allLetters={mockGlossaryPageData.data.allLetters}/>
         );
         expect(asFragment()).toMatchSnapshot();
         expect(getAllByTestId('definition-card').length).toEqual(5);
