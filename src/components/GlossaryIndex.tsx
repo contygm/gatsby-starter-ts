@@ -67,14 +67,14 @@ GlossaryIndexProps) => {
                                         (definition: GlossaryElements) => {
                                             return (
                                                 <div
-                                                    data-testid={'definition-card'}
+                                                    data-testid={
+                                                        'definition-card'
+                                                    }
                                                     className=""
                                                     key={definition.frontmatter.title.toLowerCase()}
                                                 >
                                                     <DefinitionCard
-                                                        definition={
-                                                            definition
-                                                        }
+                                                        definition={definition}
                                                         // handleFilterUpdate={handleFilterUpdate}
                                                     />
                                                 </div>

@@ -11,11 +11,13 @@ export interface SideBarProps {
 }
 
 export const SideBar = ({ featured, related, type }: SideBarProps) => {
-    const searchPlaceholder = type === "glossary" ? "A word..." : "Title...";
-    const firstSectionTitle = type === "glossary" ? "Featured Blog Posts" : "Related posts";
-    const firstSectionSlugPrefix = type === "glossary" ? "/blog" : `/${type}`;
-    const secondSectionTitle = type === "glossary" ? "Featured Wiki Posts" : "Featured posts";
-    const secondSectionSlugPrefix = type === "glossary" ? "/wiki" : `/${type}`;
+    const searchPlaceholder = type === 'glossary' ? 'A word...' : 'Title...';
+    const firstSectionTitle =
+        type === 'glossary' ? 'Featured Blog Posts' : 'Related posts';
+    const firstSectionSlugPrefix = type === 'glossary' ? '/blog' : `/${type}`;
+    const secondSectionTitle =
+        type === 'glossary' ? 'Featured Wiki Posts' : 'Featured posts';
+    const secondSectionSlugPrefix = type === 'glossary' ? '/wiki' : `/${type}`;
 
     return (
         <aside className="menu sidebar">

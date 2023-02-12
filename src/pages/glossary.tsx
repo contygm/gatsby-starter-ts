@@ -152,7 +152,7 @@ const GlossaryPage: FunctionComponent<PageProps<GlossaryPageProps>> = ({
                 <div className="column mt-6 is-one-fifth-widescreen">
                     <div className="blog-sidebar">
                         <SideBar
-                            type={"glossary"}
+                            type={'glossary'}
                             featured={wikiFeatured.nodes}
                             related={blogFeatured.nodes}
                         />

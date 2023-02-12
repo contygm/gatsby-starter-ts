@@ -170,7 +170,7 @@ const BlogPost = ({
                 <div className="column mt-6 is-one-fifth-widescreen">
                     <div className="blog-sidebar">
                         <SideBar
-                            type={"wiki"}
+                            type={'wiki'}
                             featured={featured.nodes}
                             related={related?.nodes}
                         />

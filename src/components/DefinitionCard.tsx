@@ -86,7 +86,7 @@ export const DefinitionCard = (props: {
                         <div className="level-item is-justify-content-left">
                             <div>
                                 <h4>RelatedPosts:</h4>
-                                <ol >
+                                <ol>
                                     {props.definition.frontmatter.relatedPosts.map(
                                         (postUrl: string) => {
                                             return (
