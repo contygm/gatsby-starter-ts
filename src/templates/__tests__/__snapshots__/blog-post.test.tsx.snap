@@ -674,7 +674,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                   <input
                     aria-label="blog-search"
                     class="input is-rounded"
-                    placeholder="A Blog Title..."
+                    placeholder="Title..."
                     type="text"
                   />
                 </p>
@@ -1858,7 +1858,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                   <input
                     aria-label="blog-search"
                     class="input is-rounded"
-                    placeholder="A Blog Title..."
+                    placeholder="Title..."
                     type="text"
                   />
                 </p>
@@ -3042,7 +3042,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
                   <input
                     aria-label="blog-search"
                     class="input is-rounded"
-                    placeholder="A Blog Title..."
+                    placeholder="Title..."
                     type="text"
                   />
                 </p>
@@ -4156,7 +4156,7 @@ exports[`Blog Posts Page renders correctly 1`] = `
                   <input
                     aria-label="blog-search"
                     class="input is-rounded"
-                    placeholder="A Blog Title..."
+                    placeholder="Title..."
                     type="text"
                   />
                 </p>
@@ -5410,7 +5410,7 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
                   <input
                     aria-label="blog-search"
                     class="input is-rounded"
-                    placeholder="A Blog Title..."
+                    placeholder="Title..."
                     type="text"
                   />
                 </p>
@@ -6594,7 +6594,7 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
                   <input
                     aria-label="blog-search"
                     class="input is-rounded"
-                    placeholder="A Blog Title..."
+                    placeholder="Title..."
                     type="text"
                   />
                 </p>

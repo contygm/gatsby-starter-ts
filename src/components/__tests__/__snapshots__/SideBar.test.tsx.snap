@@ -11,7 +11,7 @@ exports[`SideBar renders correctly 1`] = `
       <p
         class="menu-label"
       >
-        Search the blog
+        Search the undefined
       </p>
       <p
         class="menu-list control has-icons-left"
@@ -38,7 +38,7 @@ exports[`SideBar renders correctly 1`] = `
         <input
           aria-label="blog-search"
           class="input is-rounded"
-          placeholder="A Blog Title..."
+          placeholder="Title..."
           type="text"
         />
       </p>
@@ -57,7 +57,7 @@ exports[`SideBar renders correctly 1`] = `
         <li>
           <a
             class="horizontal-post-tile"
-            href="/blog/baking-tutorial/"
+            href="/undefined/baking-tutorial/"
           >
             <div
               class="card"
@@ -92,7 +92,7 @@ exports[`SideBar renders correctly 1`] = `
         <li>
           <a
             class="horizontal-post-tile"
-            href="/blog/ten-best-things/"
+            href="/undefined/ten-best-things/"
           >
             <div
               class="card"
@@ -127,7 +127,7 @@ exports[`SideBar renders correctly 1`] = `
         <li>
           <a
             class="horizontal-post-tile"
-            href="/blog/guide/"
+            href="/undefined/guide/"
           >
             <div
               class="card"
@@ -175,7 +175,7 @@ exports[`SideBar renders correctly 1`] = `
         <li>
           <a
             class="horizontal-post-tile"
-            href="/blog/baking-tutorial/"
+            href="/undefined/baking-tutorial/"
           >
             <div
               class="card"
@@ -210,7 +210,7 @@ exports[`SideBar renders correctly 1`] = `
         <li>
           <a
             class="horizontal-post-tile"
-            href="/blog/ten-best-things/"
+            href="/undefined/ten-best-things/"
           >
             <div
               class="card"
@@ -245,7 +245,7 @@ exports[`SideBar renders correctly 1`] = `
         <li>
           <a
             class="horizontal-post-tile"
-            href="/blog/guide/"
+            href="/undefined/guide/"
           >
             <div
               class="card"
@@ -294,7 +294,7 @@ exports[`SideBar renders correctly without related posts 1`] = `
       <p
         class="menu-label"
       >
-        Search the blog
+        Search the undefined
       </p>
       <p
         class="menu-list control has-icons-left"
@@ -321,7 +321,7 @@ exports[`SideBar renders correctly without related posts 1`] = `
         <input
           aria-label="blog-search"
           class="input is-rounded"
-          placeholder="A Blog Title..."
+          placeholder="Title..."
           type="text"
         />
       </p>
@@ -340,7 +340,7 @@ exports[`SideBar renders correctly without related posts 1`] = `
         <li>
           <a
             class="horizontal-post-tile"
-            href="/blog/baking-tutorial/"
+            href="/undefined/baking-tutorial/"
           >
             <div
               class="card"
@@ -375,7 +375,7 @@ exports[`SideBar renders correctly without related posts 1`] = `
         <li>
           <a
             class="horizontal-post-tile"
-            href="/blog/ten-best-things/"
+            href="/undefined/ten-best-things/"
           >
             <div
               class="card"
@@ -410,7 +410,7 @@ exports[`SideBar renders correctly without related posts 1`] = `
         <li>
           <a
             class="horizontal-post-tile"
-            href="/blog/guide/"
+            href="/undefined/guide/"
           >
             <div
               class="card"
