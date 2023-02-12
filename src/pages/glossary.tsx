@@ -152,8 +152,9 @@ const GlossaryPage: FunctionComponent<PageProps<GlossaryPageProps>> = ({
                 <div className="column mt-6 is-one-fifth-widescreen">
                     <div className="blog-sidebar">
                         <SideBar
-                            featured={blogFeatured.nodes}
-                            related={wikiFeatured.nodes}
+                            type={"glossary"}
+                            featured={wikiFeatured.nodes}
+                            related={blogFeatured.nodes}
                         />
                     </div>
                     {isBigScreen && <StickySocialMedia isVertical={false} />}
@@ -198,7 +199,7 @@ export const pageQuery = graphql`
             totalCount
         }
         blogFeatured: allMarkdownRemark(
-            limit: 5
+            limit: 3
             sort: { fields: [frontmatter___letter], order: ASC }
             filter: {
                 frontmatter: { type: { eq: "blog" }, featured: { eq: true } }
@@ -209,7 +210,7 @@ export const pageQuery = graphql`
             }
         }
         wikiFeatured: allMarkdownRemark(
-            limit: 5
+            limit: 3
             sort: { fields: [frontmatter___letter], order: ASC }
             filter: {
                 frontmatter: { type: { eq: "wiki" }, featured: { eq: true } }

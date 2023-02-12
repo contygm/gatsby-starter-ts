@@ -17,7 +17,7 @@ export const SideBarPostTile = ({
 }: PostTileProps) => {
     return (
         <Link
-            to={`/blog${slug}`}
+            to={slug}
             className="horizontal-post-tile"
         >
             <div className="card">

@@ -46,54 +46,50 @@ GlossaryIndexProps) => {
     );
 
     return (
-        <article className="section">
-            <section className="container">
-                {/* post cards */}
-                <div className="is-centered">
-                    {letterDefinitions.length > 0 ? (
-                        letterDefinitions.map((defObj) => {
-                            if (defObj.definitions.length > 0) {
-                                return (
-                                    <section
-                                        className="section"
-                                        key={defObj.letter}
+        <article className="container">
+            {/* post cards */}
+            <div className="is-centered">
+                {letterDefinitions.length > 0 ? (
+                    letterDefinitions.map((defObj) => {
+                        if (defObj.definitions.length > 0) {
+                            return (
+                                <section
+                                    className="section pt-0"
+                                    key={defObj.letter}
+                                >
+                                    <h2
+                                        className="title is-size-2"
+                                        id={`${defObj.letter}`}
                                     >
-                                        <h2
-                                            className="title is-size-2"
-                                            id={`${defObj.letter}`}
-                                        >
-                                            {defObj.letter}
-                                        </h2>
-                                        {defObj.definitions.map(
-                                            (definition: GlossaryElements) => {
-                                                return (
-                                                    <div
-                                                        data-testid={
-                                                            'definition-card'
+                                        {defObj.letter}
+                                    </h2>
+                                    {defObj.definitions.map(
+                                        (definition: GlossaryElements) => {
+                                            return (
+                                                <div
+                                                    data-testid={'definition-card'}
+                                                    className=""
+                                                    key={definition.frontmatter.title.toLowerCase()}
+                                                >
+                                                    <DefinitionCard
+                                                        definition={
+                                                            definition
                                                         }
-                                                        className=""
-                                                        key={definition.frontmatter.title.toLowerCase()}
-                                                    >
-                                                        <DefinitionCard
-                                                            definition={
-                                                                definition
-                                                            }
-                                                            // handleFilterUpdate={handleFilterUpdate}
-                                                        />
-                                                    </div>
-                                                );
-                                            }
-                                        )}
-                                    </section>
-                                );
-                            }
-                        })
-                    ) : (
-                        // TODO make no results look like something
-                        <div>No results</div>
-                    )}
-                </div>
-            </section>
+                                                        // handleFilterUpdate={handleFilterUpdate}
+                                                    />
+                                                </div>
+                                            );
+                                        }
+                                    )}
+                                </section>
+                            );
+                        }
+                    })
+                ) : (
+                    // TODO make no results look like something
+                    <div>No results</div>
+                )}
+            </div>
         </article>
     );
 };

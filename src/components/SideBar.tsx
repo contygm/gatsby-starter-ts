@@ -5,15 +5,22 @@ import { SideBarPostTile } from './SideBarPostTile';
 import { getImage } from 'gatsby-plugin-image';
 
 export interface SideBarProps {
+    type: PostType;
     featured: Array<IndexElements>;
     related: Array<IndexElements>;
 }
 
-export const SideBar = ({ featured, related }: SideBarProps) => {
+export const SideBar = ({ featured, related, type }: SideBarProps) => {
+    const searchPlaceholder = type === "glossary" ? "A word..." : "Title...";
+    const firstSectionTitle = type === "glossary" ? "Featured Blog Posts" : "Related posts";
+    const firstSectionSlugPrefix = type === "glossary" ? "/blog" : `/${type}`;
+    const secondSectionTitle = type === "glossary" ? "Featured Wiki Posts" : "Featured posts";
+    const secondSectionSlugPrefix = type === "glossary" ? "/wiki" : `/${type}`;
+
     return (
         <aside className="menu sidebar">
             <div className="box">
-                <p className="menu-label">Search the blog</p>
+                <p className="menu-label">{`Search the ${type}`}</p>
                 <p className="menu-list control has-icons-left">
                     <span className="icon">
                         <FontAwesomeIcon icon={faMagnifyingGlass} />
@@ -21,14 +28,14 @@ export const SideBar = ({ featured, related }: SideBarProps) => {
                     <input
                         className="input is-rounded"
                         type="text"
-                        placeholder="A Blog Title..."
+                        placeholder={searchPlaceholder}
                         aria-label="blog-search"
                     />
                 </p>
             </div>
             {related && related.length > 0 && (
                 <div className="box">
-                    <p className="menu-label">Related posts</p>
+                    <p className="menu-label">{firstSectionTitle}</p>
                     <ul className="menu-list">
                         {related.length > 0 &&
                             related.map((post) => {
@@ -41,7 +48,7 @@ export const SideBar = ({ featured, related }: SideBarProps) => {
                                         <SideBarPostTile
                                             title={post.frontmatter.title}
                                             excerpt={post.excerpt}
-                                            slug={post.fields.slug}
+                                            slug={`${firstSectionSlugPrefix}${post.fields.slug}`}
                                             image={image}
                                         />
                                     </li>
@@ -51,7 +58,7 @@ export const SideBar = ({ featured, related }: SideBarProps) => {
                 </div>
             )}
             <div className="box">
-                <p className="menu-label">Featured posts</p>
+                <p className="menu-label">{secondSectionTitle}</p>
                 <ul className="menu-list">
                     {featured.map((post) => {
                         const image = getImage(post.frontmatter.headerImage);
@@ -59,7 +66,7 @@ export const SideBar = ({ featured, related }: SideBarProps) => {
                             <li key={post.frontmatter.title}>
                                 <SideBarPostTile
                                     title={post.frontmatter.title}
-                                    slug={post.fields.slug}
+                                    slug={`${secondSectionSlugPrefix}${post.fields.slug}`}
                                     excerpt={post.excerpt}
                                     image={image}
                                 />

@@ -6,8 +6,9 @@ export const DefinitionCard = (props: {
     // handleFilterUpdate: (e: any) => void;
 }) => {
     return (
-        <div className="card">
+        <div className="card mb-5">
             <div className="card-content">
+                {/* title section: word, phonetics and syllables */}
                 <div className="media">
                     <div className="media-content">
                         <div className="level">
@@ -49,6 +50,7 @@ export const DefinitionCard = (props: {
                         </div>
                     </div>
                 </div>
+                {/* definition html */}
                 <div className="content">
                     <div
                         className="container"
@@ -57,28 +59,57 @@ export const DefinitionCard = (props: {
                         }}
                     />
                 </div>
+                {/* similar words and related posts */}
                 <div className="content">
-                    <h4>Similar Words: </h4>
-                    <ol>
-                        {props.definition.frontmatter.similarWords.map(
-                            (word: string) => {
-                                return (
-                                    <li key={word}>
-                                        <Link
-                                            to={`#${word}`}
-                                            className=""
-                                        >
-                                            {word}
-                                        </Link>
-                                    </li>
-                                );
-                            }
-                        )}
-                    </ol>
+                    <div className="level ">
+                        <div className="level-item is-justify-content-left">
+                            <div>
+                                <h4>Similar Words:</h4>
+                                <ol>
+                                    {props.definition.frontmatter.similarWords.map(
+                                        (word: string) => {
+                                            return (
+                                                <li key={word}>
+                                                    <Link
+                                                        to={`#${word}`}
+                                                        className=""
+                                                    >
+                                                        {word}
+                                                    </Link>
+                                                </li>
+                                            );
+                                        }
+                                    )}
+                                </ol>
+                            </div>
+                        </div>
+                        <div className="level-item is-justify-content-left">
+                            <div>
+                                <h4>RelatedPosts:</h4>
+                                <ol >
+                                    {props.definition.frontmatter.relatedPosts.map(
+                                        (postUrl: string) => {
+                                            return (
+                                                <li key={postUrl}>
+                                                    <Link
+                                                        to={`${postUrl}`}
+                                                        className=""
+                                                    >
+                                                        {postUrl}
+                                                    </Link>
+                                                </li>
+                                            );
+                                        }
+                                    )}
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            {/* tag footer */}
             <div className="card-footer">
-                <p className="mt-2 ml-2 mr-2">Tags:</p>
+                <p className="my-2 ml-5 mr-2">Tags:</p>
 
                 <div className="tags">
                     {props.definition.frontmatter.tags.map((tag: string) => {
@@ -86,7 +117,7 @@ export const DefinitionCard = (props: {
                             <Link
                                 to={`?tag=${tag}`}
                                 id={tag}
-                                className="tag mt-2 is-success is-light"
+                                className="tag is-success is-light"
                                 key={tag}
                                 // onClick={props.handleFilterUpdate}
                             >

@@ -170,6 +170,7 @@ const BlogPost = ({
                 <div className="column mt-6 is-one-fifth-widescreen">
                     <div className="blog-sidebar">
                         <SideBar
+                            type={"wiki"}
                             featured={featured.nodes}
                             related={related?.nodes}
                         />
@@ -202,7 +203,7 @@ export const pageQuery = graphql`
         related: allMarkdownRemark(
             filter: {
                 fields: { slug: { in: $relatedPosts } }
-                frontmatter: { type: { eq: "blog" } }
+                frontmatter: { type: { eq: "wiki" } }
             }
         ) {
             nodes {
@@ -213,7 +214,7 @@ export const pageQuery = graphql`
             limit: 3
             sort: { fields: [frontmatter___date], order: DESC }
             filter: {
-                frontmatter: { type: { eq: "blog" }, featured: { eq: true } }
+                frontmatter: { type: { eq: "wiki" }, featured: { eq: true } }
             }
         ) {
             nodes {
