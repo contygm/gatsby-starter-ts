@@ -45,6 +45,29 @@ declare global {
         };
     }
 
+    interface WikiPostElements {
+        id: string;
+        excerpt: string;
+        html: string;
+        tableOfContents: string;
+        frontmatter: {
+            title: string;
+            date: string;
+            description: string;
+            related: Array<string>;
+            tags: Array<string>;
+            summary: Array<{
+                field: string;
+                value: string;
+            }>;
+            headerImage: {
+                childImageSharp: {
+                    gatsbyImageData: GatsbyImageProps.image;
+                };
+            };
+        };
+    }
+
     interface GlossaryElements {
         html: string;
         frontmatter: {
@@ -55,7 +78,10 @@ declare global {
             syllables: string;
             phonetics: string;
             similarWords: Array<string>;
-            relatedPosts: Array<string>;
+            relatedPosts: Array<{
+                title: string;
+                slug: string;
+            }>;
             tags: Array<string>;
         };
     }

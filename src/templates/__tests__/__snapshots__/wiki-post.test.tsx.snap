@@ -358,21 +358,80 @@ exports[`Wiki Posts Page ToC shows properly on mobile: closed table of contents 
           class="column is-three-fifths-widescreen is-four-fifths"
         >
           <article
-            class="content"
+            class="content mb-6"
           >
             <section
-              class="container has-text-centered mb-2 mt-6"
-            >
-              <img
-                alt="blog-post-header"
-                image="[object Object]"
-              />
-            </section>
-            <section
-              class="section"
+              class="container mb-2 mt-6"
             >
               <div
-                class="container"
+                class="card baseball-card"
+              >
+                <div
+                  class="card-content wiki-summary"
+                >
+                  <div
+                    class="media"
+                  >
+                    <figure
+                      class="image baseball-card-img"
+                    >
+                      <img
+                        alt="wiki-post-header"
+                        image="[object Object]"
+                      />
+                    </figure>
+                  </div>
+                  <div
+                    class="content has-text-centered"
+                  >
+                    <p
+                      class="title is-5"
+                    >
+                      Topic
+                    </p>
+                  </div>
+                  <div
+                    class="content has-text-left"
+                  >
+                    <table
+                      class="table is-fullwidth"
+                    >
+                      <tbody>
+                        <tr
+                          class="wiki-summary-row"
+                        >
+                          <td
+                            class="has-text-weight-semibold"
+                          >
+                            Color
+                          </td>
+                          <td>
+                            Green
+                          </td>
+                        </tr>
+                        <tr
+                          class="wiki-summary-row"
+                        >
+                          <td
+                            class="has-text-weight-semibold"
+                          >
+                            Number
+                          </td>
+                          <td>
+                            0
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section
+              class=""
+            >
+              <div
+                class="container wiki-post-content"
               >
                 <h2>
                   Header
@@ -473,83 +532,11 @@ exports[`Wiki Posts Page ToC shows properly on mobile: closed table of contents 
               </ul>
             </div>
             <section
-              class="section"
+              class="section px-0"
             >
               <div
                 class="container author-container"
               >
-                <div
-                  class="level mb-2"
-                >
-                  <div
-                    class="level-left"
-                  >
-                    <div
-                      class="level-item"
-                    >
-                      <p>
-                        Published: 
-                        <time>
-                          December 02, 2022
-                        </time>
-                      </p>
-                    </div>
-                  </div>
-                  <div
-                    class="level-right"
-                  >
-                    <div
-                      class="level-item"
-                    >
-                      <a
-                        class="post-tag"
-                        href="/blog?tag=one"
-                      >
-                        one
-                      </a>
-                      <a
-                        class="post-tag"
-                        href="/blog?tag=two"
-                      >
-                        two
-                      </a>
-                      <a
-                        class="post-tag"
-                        href="/blog?tag=three"
-                      >
-                        three
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="media p-2 m-2"
-                >
-                  <figure
-                    class="media-left ml-0 mb-0"
-                  >
-                    <img
-                      alt="author image"
-                      placeholder="blurred"
-                      src="../images/icon.png"
-                    />
-                  </figure>
-                  <div
-                    class="media-content m-auto"
-                  >
-                    <div
-                      class="content"
-                    >
-                      <p>
-                        <strong>
-                          Writer B. Author
-                        </strong>
-                        <br />
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit
-                      </p>
-                    </div>
-                  </div>
-                </div>
                 <div
                   class="level my-3"
                 >
@@ -558,74 +545,14 @@ exports[`Wiki Posts Page ToC shows properly on mobile: closed table of contents 
                   >
                     <div
                       class="level-item"
-                    >
-                      <li
-                        class="faicon-link-container"
-                      >
-                        <a
-                          aria-label="social media link"
-                          class="faicon-link with-label is-black"
-                          data-cy="faicon-link"
-                          href="/blog/post-before"
-                        >
-                          <svg
-                            aria-hidden="true"
-                            class="svg-inline--fa fa-arrow-left fa-xl icon"
-                            data-icon="arrow-left"
-                            data-prefix="fas"
-                            focusable="false"
-                            role="img"
-                            viewBox="0 0 448 512"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
-                              fill="currentColor"
-                            />
-                          </svg>
-                          <span>
-                            Before - A Post About Things
-                          </span>
-                        </a>
-                      </li>
-                    </div>
+                    />
                   </div>
                   <div
                     class="level-right"
                   >
                     <div
                       class="level-item"
-                    >
-                      <li
-                        class="faicon-link-container"
-                      >
-                        <a
-                          aria-label="social media link"
-                          class="faicon-link with-label is-black"
-                          data-cy="faicon-link"
-                          href="/blog/post-after"
-                        >
-                          <span>
-                            After - A Post About Things
-                          </span>
-                          <svg
-                            aria-hidden="true"
-                            class="svg-inline--fa fa-arrow-right fa-xl icon"
-                            data-icon="arrow-right"
-                            data-prefix="fas"
-                            focusable="false"
-                            role="img"
-                            viewBox="0 0 448 512"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
-                              fill="currentColor"
-                            />
-                          </svg>
-                        </a>
-                      </li>
-                    </div>
+                    />
                   </div>
                 </div>
               </div>
@@ -1542,21 +1469,80 @@ exports[`Wiki Posts Page ToC shows properly on mobile: closed table of contents 
           class="column is-three-fifths-widescreen is-four-fifths"
         >
           <article
-            class="content"
+            class="content mb-6"
           >
             <section
-              class="container has-text-centered mb-2 mt-6"
-            >
-              <img
-                alt="blog-post-header"
-                image="[object Object]"
-              />
-            </section>
-            <section
-              class="section"
+              class="container mb-2 mt-6"
             >
               <div
-                class="container"
+                class="card baseball-card"
+              >
+                <div
+                  class="card-content wiki-summary"
+                >
+                  <div
+                    class="media"
+                  >
+                    <figure
+                      class="image baseball-card-img"
+                    >
+                      <img
+                        alt="wiki-post-header"
+                        image="[object Object]"
+                      />
+                    </figure>
+                  </div>
+                  <div
+                    class="content has-text-centered"
+                  >
+                    <p
+                      class="title is-5"
+                    >
+                      Topic
+                    </p>
+                  </div>
+                  <div
+                    class="content has-text-left"
+                  >
+                    <table
+                      class="table is-fullwidth"
+                    >
+                      <tbody>
+                        <tr
+                          class="wiki-summary-row"
+                        >
+                          <td
+                            class="has-text-weight-semibold"
+                          >
+                            Color
+                          </td>
+                          <td>
+                            Green
+                          </td>
+                        </tr>
+                        <tr
+                          class="wiki-summary-row"
+                        >
+                          <td
+                            class="has-text-weight-semibold"
+                          >
+                            Number
+                          </td>
+                          <td>
+                            0
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section
+              class=""
+            >
+              <div
+                class="container wiki-post-content"
               >
                 <h2>
                   Header
@@ -1657,83 +1643,11 @@ exports[`Wiki Posts Page ToC shows properly on mobile: closed table of contents 
               </ul>
             </div>
             <section
-              class="section"
+              class="section px-0"
             >
               <div
                 class="container author-container"
               >
-                <div
-                  class="level mb-2"
-                >
-                  <div
-                    class="level-left"
-                  >
-                    <div
-                      class="level-item"
-                    >
-                      <p>
-                        Published: 
-                        <time>
-                          December 02, 2022
-                        </time>
-                      </p>
-                    </div>
-                  </div>
-                  <div
-                    class="level-right"
-                  >
-                    <div
-                      class="level-item"
-                    >
-                      <a
-                        class="post-tag"
-                        href="/blog?tag=one"
-                      >
-                        one
-                      </a>
-                      <a
-                        class="post-tag"
-                        href="/blog?tag=two"
-                      >
-                        two
-                      </a>
-                      <a
-                        class="post-tag"
-                        href="/blog?tag=three"
-                      >
-                        three
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="media p-2 m-2"
-                >
-                  <figure
-                    class="media-left ml-0 mb-0"
-                  >
-                    <img
-                      alt="author image"
-                      placeholder="blurred"
-                      src="../images/icon.png"
-                    />
-                  </figure>
-                  <div
-                    class="media-content m-auto"
-                  >
-                    <div
-                      class="content"
-                    >
-                      <p>
-                        <strong>
-                          Writer B. Author
-                        </strong>
-                        <br />
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit
-                      </p>
-                    </div>
-                  </div>
-                </div>
                 <div
                   class="level my-3"
                 >
@@ -1742,74 +1656,14 @@ exports[`Wiki Posts Page ToC shows properly on mobile: closed table of contents 
                   >
                     <div
                       class="level-item"
-                    >
-                      <li
-                        class="faicon-link-container"
-                      >
-                        <a
-                          aria-label="social media link"
-                          class="faicon-link with-label is-black"
-                          data-cy="faicon-link"
-                          href="/blog/post-before"
-                        >
-                          <svg
-                            aria-hidden="true"
-                            class="svg-inline--fa fa-arrow-left fa-xl icon"
-                            data-icon="arrow-left"
-                            data-prefix="fas"
-                            focusable="false"
-                            role="img"
-                            viewBox="0 0 448 512"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
-                              fill="currentColor"
-                            />
-                          </svg>
-                          <span>
-                            Before - A Post About Things
-                          </span>
-                        </a>
-                      </li>
-                    </div>
+                    />
                   </div>
                   <div
                     class="level-right"
                   >
                     <div
                       class="level-item"
-                    >
-                      <li
-                        class="faicon-link-container"
-                      >
-                        <a
-                          aria-label="social media link"
-                          class="faicon-link with-label is-black"
-                          data-cy="faicon-link"
-                          href="/blog/post-after"
-                        >
-                          <span>
-                            After - A Post About Things
-                          </span>
-                          <svg
-                            aria-hidden="true"
-                            class="svg-inline--fa fa-arrow-right fa-xl icon"
-                            data-icon="arrow-right"
-                            data-prefix="fas"
-                            focusable="false"
-                            role="img"
-                            viewBox="0 0 448 512"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
-                              fill="currentColor"
-                            />
-                          </svg>
-                        </a>
-                      </li>
-                    </div>
+                    />
                   </div>
                 </div>
               </div>
@@ -2726,21 +2580,80 @@ exports[`Wiki Posts Page ToC shows properly on mobile: open table of contents 1`
           class="column is-three-fifths-widescreen is-four-fifths"
         >
           <article
-            class="content"
+            class="content mb-6"
           >
             <section
-              class="container has-text-centered mb-2 mt-6"
-            >
-              <img
-                alt="blog-post-header"
-                image="[object Object]"
-              />
-            </section>
-            <section
-              class="section"
+              class="container mb-2 mt-6"
             >
               <div
-                class="container"
+                class="card baseball-card"
+              >
+                <div
+                  class="card-content wiki-summary"
+                >
+                  <div
+                    class="media"
+                  >
+                    <figure
+                      class="image baseball-card-img"
+                    >
+                      <img
+                        alt="wiki-post-header"
+                        image="[object Object]"
+                      />
+                    </figure>
+                  </div>
+                  <div
+                    class="content has-text-centered"
+                  >
+                    <p
+                      class="title is-5"
+                    >
+                      Topic
+                    </p>
+                  </div>
+                  <div
+                    class="content has-text-left"
+                  >
+                    <table
+                      class="table is-fullwidth"
+                    >
+                      <tbody>
+                        <tr
+                          class="wiki-summary-row"
+                        >
+                          <td
+                            class="has-text-weight-semibold"
+                          >
+                            Color
+                          </td>
+                          <td>
+                            Green
+                          </td>
+                        </tr>
+                        <tr
+                          class="wiki-summary-row"
+                        >
+                          <td
+                            class="has-text-weight-semibold"
+                          >
+                            Number
+                          </td>
+                          <td>
+                            0
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section
+              class=""
+            >
+              <div
+                class="container wiki-post-content"
               >
                 <h2>
                   Header
@@ -2841,83 +2754,11 @@ exports[`Wiki Posts Page ToC shows properly on mobile: open table of contents 1`
               </ul>
             </div>
             <section
-              class="section"
+              class="section px-0"
             >
               <div
                 class="container author-container"
               >
-                <div
-                  class="level mb-2"
-                >
-                  <div
-                    class="level-left"
-                  >
-                    <div
-                      class="level-item"
-                    >
-                      <p>
-                        Published: 
-                        <time>
-                          December 02, 2022
-                        </time>
-                      </p>
-                    </div>
-                  </div>
-                  <div
-                    class="level-right"
-                  >
-                    <div
-                      class="level-item"
-                    >
-                      <a
-                        class="post-tag"
-                        href="/blog?tag=one"
-                      >
-                        one
-                      </a>
-                      <a
-                        class="post-tag"
-                        href="/blog?tag=two"
-                      >
-                        two
-                      </a>
-                      <a
-                        class="post-tag"
-                        href="/blog?tag=three"
-                      >
-                        three
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="media p-2 m-2"
-                >
-                  <figure
-                    class="media-left ml-0 mb-0"
-                  >
-                    <img
-                      alt="author image"
-                      placeholder="blurred"
-                      src="../images/icon.png"
-                    />
-                  </figure>
-                  <div
-                    class="media-content m-auto"
-                  >
-                    <div
-                      class="content"
-                    >
-                      <p>
-                        <strong>
-                          Writer B. Author
-                        </strong>
-                        <br />
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit
-                      </p>
-                    </div>
-                  </div>
-                </div>
                 <div
                   class="level my-3"
                 >
@@ -2926,74 +2767,14 @@ exports[`Wiki Posts Page ToC shows properly on mobile: open table of contents 1`
                   >
                     <div
                       class="level-item"
-                    >
-                      <li
-                        class="faicon-link-container"
-                      >
-                        <a
-                          aria-label="social media link"
-                          class="faicon-link with-label is-black"
-                          data-cy="faicon-link"
-                          href="/blog/post-before"
-                        >
-                          <svg
-                            aria-hidden="true"
-                            class="svg-inline--fa fa-arrow-left fa-xl icon"
-                            data-icon="arrow-left"
-                            data-prefix="fas"
-                            focusable="false"
-                            role="img"
-                            viewBox="0 0 448 512"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
-                              fill="currentColor"
-                            />
-                          </svg>
-                          <span>
-                            Before - A Post About Things
-                          </span>
-                        </a>
-                      </li>
-                    </div>
+                    />
                   </div>
                   <div
                     class="level-right"
                   >
                     <div
                       class="level-item"
-                    >
-                      <li
-                        class="faicon-link-container"
-                      >
-                        <a
-                          aria-label="social media link"
-                          class="faicon-link with-label is-black"
-                          data-cy="faicon-link"
-                          href="/blog/post-after"
-                        >
-                          <span>
-                            After - A Post About Things
-                          </span>
-                          <svg
-                            aria-hidden="true"
-                            class="svg-inline--fa fa-arrow-right fa-xl icon"
-                            data-icon="arrow-right"
-                            data-prefix="fas"
-                            focusable="false"
-                            role="img"
-                            viewBox="0 0 448 512"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
-                              fill="currentColor"
-                            />
-                          </svg>
-                        </a>
-                      </li>
-                    </div>
+                    />
                   </div>
                 </div>
               </div>
@@ -3930,21 +3711,80 @@ exports[`Wiki Posts Page renders correctly 1`] = `
           class="column is-three-fifths-widescreen is-four-fifths"
         >
           <article
-            class="content"
+            class="content mb-6"
           >
             <section
-              class="container has-text-centered mb-2 mt-6"
-            >
-              <img
-                alt="blog-post-header"
-                image="[object Object]"
-              />
-            </section>
-            <section
-              class="section"
+              class="container mb-2 mt-6"
             >
               <div
-                class="container"
+                class="card baseball-card"
+              >
+                <div
+                  class="card-content wiki-summary"
+                >
+                  <div
+                    class="media"
+                  >
+                    <figure
+                      class="image baseball-card-img"
+                    >
+                      <img
+                        alt="wiki-post-header"
+                        image="[object Object]"
+                      />
+                    </figure>
+                  </div>
+                  <div
+                    class="content has-text-centered"
+                  >
+                    <p
+                      class="title is-5"
+                    >
+                      Topic
+                    </p>
+                  </div>
+                  <div
+                    class="content has-text-left"
+                  >
+                    <table
+                      class="table is-fullwidth"
+                    >
+                      <tbody>
+                        <tr
+                          class="wiki-summary-row"
+                        >
+                          <td
+                            class="has-text-weight-semibold"
+                          >
+                            Color
+                          </td>
+                          <td>
+                            Green
+                          </td>
+                        </tr>
+                        <tr
+                          class="wiki-summary-row"
+                        >
+                          <td
+                            class="has-text-weight-semibold"
+                          >
+                            Number
+                          </td>
+                          <td>
+                            0
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section
+              class=""
+            >
+              <div
+                class="container wiki-post-content"
               >
                 <h2>
                   Header
@@ -3955,83 +3795,11 @@ exports[`Wiki Posts Page renders correctly 1`] = `
               </div>
             </section>
             <section
-              class="section"
+              class="section px-0"
             >
               <div
                 class="container author-container"
               >
-                <div
-                  class="level mb-2"
-                >
-                  <div
-                    class="level-left"
-                  >
-                    <div
-                      class="level-item"
-                    >
-                      <p>
-                        Published: 
-                        <time>
-                          December 02, 2022
-                        </time>
-                      </p>
-                    </div>
-                  </div>
-                  <div
-                    class="level-right"
-                  >
-                    <div
-                      class="level-item"
-                    >
-                      <a
-                        class="post-tag"
-                        href="/blog?tag=one"
-                      >
-                        one
-                      </a>
-                      <a
-                        class="post-tag"
-                        href="/blog?tag=two"
-                      >
-                        two
-                      </a>
-                      <a
-                        class="post-tag"
-                        href="/blog?tag=three"
-                      >
-                        three
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="media p-2 m-2"
-                >
-                  <figure
-                    class="media-left ml-0 mb-0"
-                  >
-                    <img
-                      alt="author image"
-                      placeholder="blurred"
-                      src="../images/icon.png"
-                    />
-                  </figure>
-                  <div
-                    class="media-content m-auto"
-                  >
-                    <div
-                      class="content"
-                    >
-                      <p>
-                        <strong>
-                          Writer B. Author
-                        </strong>
-                        <br />
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit
-                      </p>
-                    </div>
-                  </div>
-                </div>
                 <div
                   class="level my-3"
                 >
@@ -4040,74 +3808,14 @@ exports[`Wiki Posts Page renders correctly 1`] = `
                   >
                     <div
                       class="level-item"
-                    >
-                      <li
-                        class="faicon-link-container"
-                      >
-                        <a
-                          aria-label="social media link"
-                          class="faicon-link with-label is-black"
-                          data-cy="faicon-link"
-                          href="/blog/post-before"
-                        >
-                          <svg
-                            aria-hidden="true"
-                            class="svg-inline--fa fa-arrow-left fa-xl icon"
-                            data-icon="arrow-left"
-                            data-prefix="fas"
-                            focusable="false"
-                            role="img"
-                            viewBox="0 0 448 512"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
-                              fill="currentColor"
-                            />
-                          </svg>
-                          <span>
-                            Before - A Post About Things
-                          </span>
-                        </a>
-                      </li>
-                    </div>
+                    />
                   </div>
                   <div
                     class="level-right"
                   >
                     <div
                       class="level-item"
-                    >
-                      <li
-                        class="faicon-link-container"
-                      >
-                        <a
-                          aria-label="social media link"
-                          class="faicon-link with-label is-black"
-                          data-cy="faicon-link"
-                          href="/blog/post-after"
-                        >
-                          <span>
-                            After - A Post About Things
-                          </span>
-                          <svg
-                            aria-hidden="true"
-                            class="svg-inline--fa fa-arrow-right fa-xl icon"
-                            data-icon="arrow-right"
-                            data-prefix="fas"
-                            focusable="false"
-                            role="img"
-                            viewBox="0 0 448 512"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
-                              fill="currentColor"
-                            />
-                          </svg>
-                        </a>
-                      </li>
-                    </div>
+                    />
                   </div>
                 </div>
               </div>
@@ -5094,21 +4802,80 @@ exports[`Wiki Posts Page renders correctly on medium view 1`] = `
           class="column is-three-fifths-widescreen is-four-fifths"
         >
           <article
-            class="content"
+            class="content mb-6"
           >
             <section
-              class="container has-text-centered mb-2 mt-6"
-            >
-              <img
-                alt="blog-post-header"
-                image="[object Object]"
-              />
-            </section>
-            <section
-              class="section"
+              class="container mb-2 mt-6"
             >
               <div
-                class="container"
+                class="card baseball-card"
+              >
+                <div
+                  class="card-content wiki-summary"
+                >
+                  <div
+                    class="media"
+                  >
+                    <figure
+                      class="image baseball-card-img"
+                    >
+                      <img
+                        alt="wiki-post-header"
+                        image="[object Object]"
+                      />
+                    </figure>
+                  </div>
+                  <div
+                    class="content has-text-centered"
+                  >
+                    <p
+                      class="title is-5"
+                    >
+                      Topic
+                    </p>
+                  </div>
+                  <div
+                    class="content has-text-left"
+                  >
+                    <table
+                      class="table is-fullwidth"
+                    >
+                      <tbody>
+                        <tr
+                          class="wiki-summary-row"
+                        >
+                          <td
+                            class="has-text-weight-semibold"
+                          >
+                            Color
+                          </td>
+                          <td>
+                            Green
+                          </td>
+                        </tr>
+                        <tr
+                          class="wiki-summary-row"
+                        >
+                          <td
+                            class="has-text-weight-semibold"
+                          >
+                            Number
+                          </td>
+                          <td>
+                            0
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section
+              class=""
+            >
+              <div
+                class="container wiki-post-content"
               >
                 <h2>
                   Header
@@ -5209,83 +4976,11 @@ exports[`Wiki Posts Page renders correctly on medium view 1`] = `
               </ul>
             </div>
             <section
-              class="section"
+              class="section px-0"
             >
               <div
                 class="container author-container"
               >
-                <div
-                  class="level mb-2"
-                >
-                  <div
-                    class="level-left"
-                  >
-                    <div
-                      class="level-item"
-                    >
-                      <p>
-                        Published: 
-                        <time>
-                          December 02, 2022
-                        </time>
-                      </p>
-                    </div>
-                  </div>
-                  <div
-                    class="level-right"
-                  >
-                    <div
-                      class="level-item"
-                    >
-                      <a
-                        class="post-tag"
-                        href="/blog?tag=one"
-                      >
-                        one
-                      </a>
-                      <a
-                        class="post-tag"
-                        href="/blog?tag=two"
-                      >
-                        two
-                      </a>
-                      <a
-                        class="post-tag"
-                        href="/blog?tag=three"
-                      >
-                        three
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="media p-2 m-2"
-                >
-                  <figure
-                    class="media-left ml-0 mb-0"
-                  >
-                    <img
-                      alt="author image"
-                      placeholder="blurred"
-                      src="../images/icon.png"
-                    />
-                  </figure>
-                  <div
-                    class="media-content m-auto"
-                  >
-                    <div
-                      class="content"
-                    >
-                      <p>
-                        <strong>
-                          Writer B. Author
-                        </strong>
-                        <br />
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit
-                      </p>
-                    </div>
-                  </div>
-                </div>
                 <div
                   class="level my-3"
                 >
@@ -5294,74 +4989,14 @@ exports[`Wiki Posts Page renders correctly on medium view 1`] = `
                   >
                     <div
                       class="level-item"
-                    >
-                      <li
-                        class="faicon-link-container"
-                      >
-                        <a
-                          aria-label="social media link"
-                          class="faicon-link with-label is-black"
-                          data-cy="faicon-link"
-                          href="/blog/post-before"
-                        >
-                          <svg
-                            aria-hidden="true"
-                            class="svg-inline--fa fa-arrow-left fa-xl icon"
-                            data-icon="arrow-left"
-                            data-prefix="fas"
-                            focusable="false"
-                            role="img"
-                            viewBox="0 0 448 512"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
-                              fill="currentColor"
-                            />
-                          </svg>
-                          <span>
-                            Before - A Post About Things
-                          </span>
-                        </a>
-                      </li>
-                    </div>
+                    />
                   </div>
                   <div
                     class="level-right"
                   >
                     <div
                       class="level-item"
-                    >
-                      <li
-                        class="faicon-link-container"
-                      >
-                        <a
-                          aria-label="social media link"
-                          class="faicon-link with-label is-black"
-                          data-cy="faicon-link"
-                          href="/blog/post-after"
-                        >
-                          <span>
-                            After - A Post About Things
-                          </span>
-                          <svg
-                            aria-hidden="true"
-                            class="svg-inline--fa fa-arrow-right fa-xl icon"
-                            data-icon="arrow-right"
-                            data-prefix="fas"
-                            focusable="false"
-                            role="img"
-                            viewBox="0 0 448 512"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
-                              fill="currentColor"
-                            />
-                          </svg>
-                        </a>
-                      </li>
-                    </div>
+                    />
                   </div>
                 </div>
               </div>
@@ -6278,21 +5913,80 @@ exports[`Wiki Posts Page renders correctly on mobile view 1`] = `
           class="column is-three-fifths-widescreen is-four-fifths"
         >
           <article
-            class="content"
+            class="content mb-6"
           >
             <section
-              class="container has-text-centered mb-2 mt-6"
-            >
-              <img
-                alt="blog-post-header"
-                image="[object Object]"
-              />
-            </section>
-            <section
-              class="section"
+              class="container mb-2 mt-6"
             >
               <div
-                class="container"
+                class="card baseball-card"
+              >
+                <div
+                  class="card-content wiki-summary"
+                >
+                  <div
+                    class="media"
+                  >
+                    <figure
+                      class="image baseball-card-img"
+                    >
+                      <img
+                        alt="wiki-post-header"
+                        image="[object Object]"
+                      />
+                    </figure>
+                  </div>
+                  <div
+                    class="content has-text-centered"
+                  >
+                    <p
+                      class="title is-5"
+                    >
+                      Topic
+                    </p>
+                  </div>
+                  <div
+                    class="content has-text-left"
+                  >
+                    <table
+                      class="table is-fullwidth"
+                    >
+                      <tbody>
+                        <tr
+                          class="wiki-summary-row"
+                        >
+                          <td
+                            class="has-text-weight-semibold"
+                          >
+                            Color
+                          </td>
+                          <td>
+                            Green
+                          </td>
+                        </tr>
+                        <tr
+                          class="wiki-summary-row"
+                        >
+                          <td
+                            class="has-text-weight-semibold"
+                          >
+                            Number
+                          </td>
+                          <td>
+                            0
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section
+              class=""
+            >
+              <div
+                class="container wiki-post-content"
               >
                 <h2>
                   Header
@@ -6393,83 +6087,11 @@ exports[`Wiki Posts Page renders correctly on mobile view 1`] = `
               </ul>
             </div>
             <section
-              class="section"
+              class="section px-0"
             >
               <div
                 class="container author-container"
               >
-                <div
-                  class="level mb-2"
-                >
-                  <div
-                    class="level-left"
-                  >
-                    <div
-                      class="level-item"
-                    >
-                      <p>
-                        Published: 
-                        <time>
-                          December 02, 2022
-                        </time>
-                      </p>
-                    </div>
-                  </div>
-                  <div
-                    class="level-right"
-                  >
-                    <div
-                      class="level-item"
-                    >
-                      <a
-                        class="post-tag"
-                        href="/blog?tag=one"
-                      >
-                        one
-                      </a>
-                      <a
-                        class="post-tag"
-                        href="/blog?tag=two"
-                      >
-                        two
-                      </a>
-                      <a
-                        class="post-tag"
-                        href="/blog?tag=three"
-                      >
-                        three
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="media p-2 m-2"
-                >
-                  <figure
-                    class="media-left ml-0 mb-0"
-                  >
-                    <img
-                      alt="author image"
-                      placeholder="blurred"
-                      src="../images/icon.png"
-                    />
-                  </figure>
-                  <div
-                    class="media-content m-auto"
-                  >
-                    <div
-                      class="content"
-                    >
-                      <p>
-                        <strong>
-                          Writer B. Author
-                        </strong>
-                        <br />
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit
-                      </p>
-                    </div>
-                  </div>
-                </div>
                 <div
                   class="level my-3"
                 >
@@ -6478,74 +6100,14 @@ exports[`Wiki Posts Page renders correctly on mobile view 1`] = `
                   >
                     <div
                       class="level-item"
-                    >
-                      <li
-                        class="faicon-link-container"
-                      >
-                        <a
-                          aria-label="social media link"
-                          class="faicon-link with-label is-black"
-                          data-cy="faicon-link"
-                          href="/blog/post-before"
-                        >
-                          <svg
-                            aria-hidden="true"
-                            class="svg-inline--fa fa-arrow-left fa-xl icon"
-                            data-icon="arrow-left"
-                            data-prefix="fas"
-                            focusable="false"
-                            role="img"
-                            viewBox="0 0 448 512"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
-                              fill="currentColor"
-                            />
-                          </svg>
-                          <span>
-                            Before - A Post About Things
-                          </span>
-                        </a>
-                      </li>
-                    </div>
+                    />
                   </div>
                   <div
                     class="level-right"
                   >
                     <div
                       class="level-item"
-                    >
-                      <li
-                        class="faicon-link-container"
-                      >
-                        <a
-                          aria-label="social media link"
-                          class="faicon-link with-label is-black"
-                          data-cy="faicon-link"
-                          href="/blog/post-after"
-                        >
-                          <span>
-                            After - A Post About Things
-                          </span>
-                          <svg
-                            aria-hidden="true"
-                            class="svg-inline--fa fa-arrow-right fa-xl icon"
-                            data-icon="arrow-right"
-                            data-prefix="fas"
-                            focusable="false"
-                            role="img"
-                            viewBox="0 0 448 512"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
-                              fill="currentColor"
-                            />
-                          </svg>
-                        </a>
-                      </li>
-                    </div>
+                    />
                   </div>
                 </div>
               </div>

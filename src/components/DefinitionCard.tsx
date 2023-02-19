@@ -84,25 +84,25 @@ export const DefinitionCard = (props: {
                             </div>
                         </div>
                         <div className="level-item is-justify-content-left">
-                            <div>
+                           {props.definition.frontmatter.relatedPosts && <div>
                                 <h4>RelatedPosts:</h4>
                                 <ol>
                                     {props.definition.frontmatter.relatedPosts.map(
-                                        (postUrl: string) => {
+                                        (post: {title: string, slug: string}) => {
                                             return (
-                                                <li key={postUrl}>
+                                                <li key={post.slug}>
                                                     <Link
-                                                        to={`${postUrl}`}
+                                                        to={`${post.slug}`}
                                                         className=""
                                                     >
-                                                        {postUrl}
+                                                        {post.title}
                                                     </Link>
                                                 </li>
                                             );
                                         }
                                     )}
                                 </ol>
-                            </div>
+                            </div>}
                         </div>
                     </div>
                 </div>

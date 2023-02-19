@@ -5,6 +5,7 @@ export * from './Footer';
 export * from './SideBarPostTile';
 export * from './Layout';
 export * from './NavBar';
+export * from './NextAndPrevious';
 export * from './OutsideClicker';
 export * from './PageHeader';
 export * from './PostCard';

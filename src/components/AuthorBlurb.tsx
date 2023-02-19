@@ -1,8 +1,7 @@
 import * as React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
-import { FaIconLink } from './FaIconLink';
-import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'gatsby';
+import { NextAndPrevious } from './NextAndPrevious';
 
 export interface AuthorBlurbProps {
     author: {
@@ -68,41 +67,6 @@ const DateAndTags = (props: { tags: Array<string>; date: string }) => {
     );
 };
 
-const NextAndPrevious = (props: {
-    next?: NeighborPost;
-    previous?: NeighborPost;
-}) => {
-    return (
-        <div className="level my-3">
-            <div className="level-left">
-                <div className="level-item">
-                    {props.previous && (
-                        <FaIconLink
-                            faIcon={faArrowLeft}
-                            url={`/blog${props.previous.fields.slug}`}
-                            label={props.previous.frontmatter.title}
-                            labelLeft={false}
-                            color="black"
-                        />
-                    )}
-                </div>
-            </div>
-            <div className="level-right">
-                <div className="level-item">
-                    {props.next && (
-                        <FaIconLink
-                            faIcon={faArrowRight}
-                            url={`/blog${props.next.fields.slug}`}
-                            label={props.next.frontmatter.title}
-                            color="black"
-                        />
-                    )}
-                </div>
-            </div>
-        </div>
-    );
-};
-
 export const AuthorBlurb = (props: AuthorBlurbProps) => {
     return (
         <section className="section">
@@ -118,6 +82,7 @@ export const AuthorBlurb = (props: AuthorBlurbProps) => {
                 <NextAndPrevious
                     next={props.nextPost}
                     previous={props.previousPost}
+                    type={"blog"}
                 />
             </div>
         </section>

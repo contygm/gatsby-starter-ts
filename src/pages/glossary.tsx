@@ -126,17 +126,18 @@ const GlossaryPage: FunctionComponent<PageProps<GlossaryPageProps>> = ({
                         </OutsideClicker>
                     </section>
                     <button
+                        id="toc-button"
                         className="button is-rounded is-primary"
                         style={{ display: isMobile ? 'block' : 'none' }}
                         onClick={handleTocBtnClick}
                         data-testid="blog-toc-mobile-btn"
                     >
-                        <i className="icon">
+                        <i className="icon" id="icon-button">
                             <FontAwesomeIcon
                                 className="icon"
                                 icon={btnIcon}
                                 size="xl"
-                                id="toc-button"
+                                id="toc-button-icon"
                             />
                         </i>
                     </button>

@@ -149,7 +149,7 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                             class=""
                             href="/blog/test1"
                           >
-                            /blog/test1
+                            BlogPost
                           </a>
                         </li>
                         <li>
@@ -157,7 +157,7 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                             class=""
                             href="/wiki/test1"
                           >
-                            /wiki/test1
+                            WikiPost
                           </a>
                         </li>
                       </ol>
@@ -327,7 +327,7 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                             class=""
                             href="/blog/test1"
                           >
-                            /blog/test1
+                            BlogPost
                           </a>
                         </li>
                         <li>
@@ -335,7 +335,7 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                             class=""
                             href="/wiki/test1"
                           >
-                            /wiki/test1
+                            WikiPost
                           </a>
                         </li>
                       </ol>
@@ -515,7 +515,7 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                             class=""
                             href="/blog/test1"
                           >
-                            /blog/test1
+                            BlogPost
                           </a>
                         </li>
                         <li>
@@ -523,7 +523,7 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                             class=""
                             href="/wiki/test1"
                           >
-                            /wiki/test1
+                            WikiPost
                           </a>
                         </li>
                       </ol>
@@ -703,7 +703,7 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                             class=""
                             href="/blog/test1"
                           >
-                            /blog/test1
+                            BlogPost
                           </a>
                         </li>
                         <li>
@@ -711,7 +711,7 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                             class=""
                             href="/wiki/test1"
                           >
-                            /wiki/test1
+                            WikiPost
                           </a>
                         </li>
                       </ol>
@@ -878,24 +878,7 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                       <h4>
                         RelatedPosts:
                       </h4>
-                      <ol>
-                        <li>
-                          <a
-                            class=""
-                            href="/wiki/test"
-                          >
-                            /wiki/test
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            class=""
-                            href="/blog/test1"
-                          >
-                            /blog/test1
-                          </a>
-                        </li>
-                      </ol>
+                      <ol />
                     </div>
                   </div>
                 </div>

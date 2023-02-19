@@ -403,6 +403,21 @@ pre[class*="language-"] {
 			background-color: $white;
 		}
 	}
+
+	.glossary-toc {
+		position: fixed; 
+		max-width: 30%;
+		z-index: 99;
+		height: 100vh;
+		overflow-x: scroll;
+		
+		button {
+			position: fixed; 
+			bottom: 20px; 
+			right: 30px; 
+			z-index: 99; 
+		}
+	}
 }
 
 @media only screen and (min-width : 1216px) {
@@ -473,4 +488,47 @@ pre[class*="language-"] {
 
 .tag-align {
 	align-items: inherit;
+}
+
+/*******************************
+* Wiki Post Styles
+********************************/
+.baseball-card-img {
+	height: auto;
+	width: 300px;
+}
+
+.baseball-card {
+	width: 40%;
+	float: right;
+	margin-right: 0.5rem;
+	@extend .ml-2;
+	figure {
+		@extend .mx-0;
+	}
+}
+
+.wiki-summary-row {
+	width: 100%;
+}
+
+.wiki-summary {
+	.content {
+		table {
+			margin: 0 0 !important;
+		}
+	}
+}
+
+.wiki-post-content {
+	.gatsby-resp-image-wrapper {
+		margin: 0 !important;
+		max-width: 350px !important;
+		max-height: auto;
+		img {
+			float: left;
+			clear: both;
+		}
+	}
+	
 }

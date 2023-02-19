@@ -67,14 +67,12 @@ const PostPage: FunctionComponent<PostPageProps> = ({
     };
 
     useEffect(() => {
-        console.log(tagFilter);
         if (tagFilter === 'all') {
             setAllPosts(unfilteredPosts);
         } else {
             const filtered = unfilteredPosts.filter((post) =>
                 post.frontmatter.tags.includes(tagFilter)
             );
-            console.log(filtered.length);
             setAllPosts(filtered);
         }
     }, [tagFilter]);

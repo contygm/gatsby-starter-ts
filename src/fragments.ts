@@ -46,7 +46,10 @@ export const fragments = graphql`
             syllables
             phonetics
             similarWords
-            relatedPosts
+            relatedPosts {
+                title
+                slug
+            }
             tags
         }
     }
@@ -73,6 +76,34 @@ export const fragments = graphql`
             }
         }
     }
+
+    fragment WikiPostElements on MarkdownRemark {
+        id
+        excerpt(pruneLength: 160)
+        tableOfContents
+        html
+        frontmatter {
+            title
+            date(formatString: "DD MMMM YYYY, hh:mm a")
+            description
+            related
+            tags
+            summary {
+                field
+                value
+            }
+            headerImage {
+                childImageSharp {
+                    gatsbyImageData(
+                        layout: FULL_WIDTH
+                        placeholder: BLURRED
+                        formats: [AUTO, WEBP, AVIF]
+                    )
+                }
+            }
+        }
+    }
+
     fragment NeighborPost on MarkdownRemark {
         fields {
             slug

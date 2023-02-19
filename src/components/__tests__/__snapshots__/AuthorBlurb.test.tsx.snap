@@ -96,7 +96,7 @@ exports[`PageHeader default renders correctly 1`] = `
                 aria-label="social media link"
                 class="faicon-link with-label is-black"
                 data-cy="faicon-link"
-                href="/blog/blog-post-before"
+                href="/wiki/blog-post-before"
               >
                 <svg
                   aria-hidden="true"
@@ -133,7 +133,7 @@ exports[`PageHeader default renders correctly 1`] = `
                 aria-label="social media link"
                 class="faicon-link with-label is-black"
                 data-cy="faicon-link"
-                href="/blog/blog-post-before"
+                href="/wiki/blog-post-before"
               >
                 <span>
                   Next - A Blog About Things
@@ -369,7 +369,7 @@ exports[`PageHeader renders when previousPost is undefined 1`] = `
                 aria-label="social media link"
                 class="faicon-link with-label is-black"
                 data-cy="faicon-link"
-                href="/blog/blog-post-before"
+                href="/wiki/blog-post-before"
               >
                 <span>
                   Next - A Blog About Things

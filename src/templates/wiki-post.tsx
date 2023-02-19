@@ -9,18 +9,18 @@ import {
     Layout,
     PageHeader,
     SEO,
-    AuthorBlurb,
     SideBar,
     ToC,
     OutsideClicker,
-    StickySocialMedia
+    StickySocialMedia,
+    NextAndPrevious
 } from '../components';
 
 export interface WikiPostProps {
     site: {
         siteMetadata: SiteMetadata;
     };
-    markdownRemark: PostElements;
+    markdownRemark: WikiPostElements;
     previous: NeighborPost;
     next: NeighborPost;
     featured: {
@@ -31,8 +31,11 @@ export interface WikiPostProps {
     };
 }
 
-const BlogPost = ({
-    data: { site, markdownRemark, previous, next, featured, related }
+
+
+
+const WikiPost = ({
+    data: { markdownRemark, featured, related, next, previous }
 }: PageProps<WikiPostProps>) => {
     // const winSize = window.innerWidth <= 1215;
     const [showMobileToc, setShowMobileToc] = useState(false);
@@ -90,7 +93,7 @@ const BlogPost = ({
             />
             {/* main body: ToC, sidebar, post content */}
             <div className="columns is-multiline">
-                {/* stickey table of contetnts */}
+                {/* sticky table of contents */}
                 <div className="column blog-toc is-one-fifth-widescreen is-one-fifth-desktop is-narrow">
                     <section
                         className={
@@ -129,21 +132,49 @@ const BlogPost = ({
                     </button>
                 </div>
                 <div className="column is-three-fifths-widescreen is-four-fifths">
-                    <article className="content">
-                        {/* image header */}
+                    <article className="content mb-6">
+                        {/* baseball card */}
                         {image && (
-                            <section className="container has-text-centered mb-2 mt-6">
-                                <GatsbyImage
-                                    alt={'blog-post-header'}
-                                    image={image}
-                                    className="post-header-image"
-                                />
-                            </section>
-                        )}
+                                <section className="container mb-2 mt-6">
+                                    <div className="card baseball-card">
+                                        <div className="card-content wiki-summary">
+                                            <div className="media">
+                                                <figure className="image baseball-card-img">
+                                                    <GatsbyImage
+                                                        alt={'wiki-post-header'}
+                                                        image={image}
+                                                    />
+                                                </figure>
+                                            </div>
+
+                                            <div className="content has-text-centered">
+                                                <p className="title is-5">Topic</p>
+                                            </div>
+
+                                            <div className="content has-text-left">
+                                                <table className='table is-fullwidth'>
+                                                    <tbody>
+                                                        {
+                                                            markdownRemark.frontmatter.summary.map((attrObj) => {
+                                                                return (
+                                                                    <tr key={attrObj.field} className={"wiki-summary-row"}>
+                                                                        <td className='has-text-weight-semibold'>{attrObj.field}</td>
+                                                                        <td>{attrObj.value}</td>
+                                                                    </tr>
+                                                                )
+                                                            })
+                                                        }
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            )}
                         {/* main post content */}
-                        <section className="section">
+                        <section className="">
                             <div
-                                className="container"
+                                className="container wiki-post-content"
                                 dangerouslySetInnerHTML={{
                                     __html: markdownRemark.html
                                 }}
@@ -152,15 +183,11 @@ const BlogPost = ({
                         {!isBigScreen && (
                             <StickySocialMedia isVertical={true} />
                         )}
-
-                        {/* author, tags, and prev/next post nav */}
-                        <AuthorBlurb
-                            author={site.siteMetadata.author}
-                            postDate={markdownRemark.frontmatter.date}
-                            postTags={markdownRemark.frontmatter.tags}
-                            previousPost={previous}
-                            nextPost={next}
-                        />
+                        <section className="section px-0">
+                            <div className="container author-container">
+                            <NextAndPrevious next={next} previous={previous} type={"wiki"}/>
+                            </div>
+                        </section>
                     </article>
                 </div>
                 {/* 
@@ -182,13 +209,13 @@ const BlogPost = ({
     );
 };
 
-export default BlogPost;
+export default WikiPost;
 export function Head({ data: { markdownRemark } }: HeadProps<WikiPostProps>) {
     return <SEO title={markdownRemark.frontmatter.title} />;
 }
 
 export const pageQuery = graphql`
-    query BlogPostBySlug(
+    query WikiPostBySlug(
         $id: String!
         $previousPostId: String
         $nextPostId: String
@@ -198,7 +225,7 @@ export const pageQuery = graphql`
             ...SiteMetadata
         }
         markdownRemark(id: { eq: $id }) {
-            ...PostElements
+            ...WikiPostElements
         }
         related: allMarkdownRemark(
             filter: {
