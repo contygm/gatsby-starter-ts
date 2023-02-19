@@ -224,10 +224,12 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
           <button
             class="button is-rounded is-primary"
             data-testid="blog-toc-mobile-btn"
+            id="toc-button"
             style="display: block;"
           >
             <i
               class="icon"
+              id="icon-button"
             >
               <svg
                 aria-hidden="true"
@@ -235,7 +237,7 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
                 data-icon="ellipsis"
                 data-prefix="fas"
                 focusable="false"
-                id="toc-button"
+                id="toc-button-icon"
                 role="img"
                 viewBox="0 0 448 512"
                 xmlns="http://www.w3.org/2000/svg"
@@ -516,7 +518,7 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
                                     class=""
                                     href="/blog/test1"
                                   >
-                                    /blog/test1
+                                    BlogPost
                                   </a>
                                 </li>
                                 <li>
@@ -524,7 +526,7 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
                                     class=""
                                     href="/wiki/test1"
                                   >
-                                    /wiki/test1
+                                    WikiPost
                                   </a>
                                 </li>
                               </ol>
@@ -694,7 +696,7 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
                                     class=""
                                     href="/blog/test1"
                                   >
-                                    /blog/test1
+                                    BlogPost
                                   </a>
                                 </li>
                                 <li>
@@ -702,7 +704,7 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
                                     class=""
                                     href="/wiki/test1"
                                   >
-                                    /wiki/test1
+                                    WikiPost
                                   </a>
                                 </li>
                               </ol>
@@ -882,7 +884,7 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
                                     class=""
                                     href="/blog/test1"
                                   >
-                                    /blog/test1
+                                    BlogPost
                                   </a>
                                 </li>
                                 <li>
@@ -890,7 +892,7 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
                                     class=""
                                     href="/wiki/test1"
                                   >
-                                    /wiki/test1
+                                    WikiPost
                                   </a>
                                 </li>
                               </ol>
@@ -1070,7 +1072,7 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
                                     class=""
                                     href="/blog/test1"
                                   >
-                                    /blog/test1
+                                    BlogPost
                                   </a>
                                 </li>
                                 <li>
@@ -1078,7 +1080,7 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
                                     class=""
                                     href="/wiki/test1"
                                   >
-                                    /wiki/test1
+                                    WikiPost
                                   </a>
                                 </li>
                               </ol>
@@ -1245,24 +1247,7 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
                               <h4>
                                 RelatedPosts:
                               </h4>
-                              <ol>
-                                <li>
-                                  <a
-                                    class=""
-                                    href="/wiki/test"
-                                  >
-                                    /wiki/test
-                                  </a>
-                                </li>
-                                <li>
-                                  <a
-                                    class=""
-                                    href="/blog/test1"
-                                  >
-                                    /blog/test1
-                                  </a>
-                                </li>
-                              </ol>
+                              <ol />
                             </div>
                           </div>
                         </div>
@@ -2070,10 +2055,12 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
           <button
             class="button is-rounded is-primary"
             data-testid="blog-toc-mobile-btn"
+            id="toc-button"
             style="display: block;"
           >
             <i
               class="icon"
+              id="icon-button"
             >
               <svg
                 aria-hidden="true"
@@ -2081,7 +2068,7 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
                 data-icon="ellipsis"
                 data-prefix="fas"
                 focusable="false"
-                id="toc-button"
+                id="toc-button-icon"
                 role="img"
                 viewBox="0 0 448 512"
                 xmlns="http://www.w3.org/2000/svg"
@@ -2362,7 +2349,7 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
                                     class=""
                                     href="/blog/test1"
                                   >
-                                    /blog/test1
+                                    BlogPost
                                   </a>
                                 </li>
                                 <li>
@@ -2370,7 +2357,7 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
                                     class=""
                                     href="/wiki/test1"
                                   >
-                                    /wiki/test1
+                                    WikiPost
                                   </a>
                                 </li>
                               </ol>
@@ -2540,7 +2527,7 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
                                     class=""
                                     href="/blog/test1"
                                   >
-                                    /blog/test1
+                                    BlogPost
                                   </a>
                                 </li>
                                 <li>
@@ -2548,7 +2535,7 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
                                     class=""
                                     href="/wiki/test1"
                                   >
-                                    /wiki/test1
+                                    WikiPost
                                   </a>
                                 </li>
                               </ol>
@@ -2728,7 +2715,7 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
                                     class=""
                                     href="/blog/test1"
                                   >
-                                    /blog/test1
+                                    BlogPost
                                   </a>
                                 </li>
                                 <li>
@@ -2736,7 +2723,7 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
                                     class=""
                                     href="/wiki/test1"
                                   >
-                                    /wiki/test1
+                                    WikiPost
                                   </a>
                                 </li>
                               </ol>
@@ -2916,7 +2903,7 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
                                     class=""
                                     href="/blog/test1"
                                   >
-                                    /blog/test1
+                                    BlogPost
                                   </a>
                                 </li>
                                 <li>
@@ -2924,7 +2911,7 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
                                     class=""
                                     href="/wiki/test1"
                                   >
-                                    /wiki/test1
+                                    WikiPost
                                   </a>
                                 </li>
                               </ol>
@@ -3091,24 +3078,7 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
                               <h4>
                                 RelatedPosts:
                               </h4>
-                              <ol>
-                                <li>
-                                  <a
-                                    class=""
-                                    href="/wiki/test"
-                                  >
-                                    /wiki/test
-                                  </a>
-                                </li>
-                                <li>
-                                  <a
-                                    class=""
-                                    href="/blog/test1"
-                                  >
-                                    /blog/test1
-                                  </a>
-                                </li>
-                              </ol>
+                              <ol />
                             </div>
                           </div>
                         </div>
@@ -3916,10 +3886,12 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
           <button
             class="button is-rounded is-primary"
             data-testid="blog-toc-mobile-btn"
+            id="toc-button"
             style="display: block;"
           >
             <i
               class="icon"
+              id="icon-button"
             >
               <svg
                 aria-hidden="true"
@@ -3927,7 +3899,7 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
                 data-icon="xmark"
                 data-prefix="fas"
                 focusable="false"
-                id="toc-button"
+                id="toc-button-icon"
                 role="img"
                 viewBox="0 0 320 512"
                 xmlns="http://www.w3.org/2000/svg"
@@ -4208,7 +4180,7 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
                                     class=""
                                     href="/blog/test1"
                                   >
-                                    /blog/test1
+                                    BlogPost
                                   </a>
                                 </li>
                                 <li>
@@ -4216,7 +4188,7 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
                                     class=""
                                     href="/wiki/test1"
                                   >
-                                    /wiki/test1
+                                    WikiPost
                                   </a>
                                 </li>
                               </ol>
@@ -4386,7 +4358,7 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
                                     class=""
                                     href="/blog/test1"
                                   >
-                                    /blog/test1
+                                    BlogPost
                                   </a>
                                 </li>
                                 <li>
@@ -4394,7 +4366,7 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
                                     class=""
                                     href="/wiki/test1"
                                   >
-                                    /wiki/test1
+                                    WikiPost
                                   </a>
                                 </li>
                               </ol>
@@ -4574,7 +4546,7 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
                                     class=""
                                     href="/blog/test1"
                                   >
-                                    /blog/test1
+                                    BlogPost
                                   </a>
                                 </li>
                                 <li>
@@ -4582,7 +4554,7 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
                                     class=""
                                     href="/wiki/test1"
                                   >
-                                    /wiki/test1
+                                    WikiPost
                                   </a>
                                 </li>
                               </ol>
@@ -4762,7 +4734,7 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
                                     class=""
                                     href="/blog/test1"
                                   >
-                                    /blog/test1
+                                    BlogPost
                                   </a>
                                 </li>
                                 <li>
@@ -4770,7 +4742,7 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
                                     class=""
                                     href="/wiki/test1"
                                   >
-                                    /wiki/test1
+                                    WikiPost
                                   </a>
                                 </li>
                               </ol>
@@ -4937,24 +4909,7 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
                               <h4>
                                 RelatedPosts:
                               </h4>
-                              <ol>
-                                <li>
-                                  <a
-                                    class=""
-                                    href="/wiki/test"
-                                  >
-                                    /wiki/test
-                                  </a>
-                                </li>
-                                <li>
-                                  <a
-                                    class=""
-                                    href="/blog/test1"
-                                  >
-                                    /blog/test1
-                                  </a>
-                                </li>
-                              </ol>
+                              <ol />
                             </div>
                           </div>
                         </div>
@@ -5762,10 +5717,12 @@ exports[`Glossary Page filters correctly 1`] = `
           <button
             class="button is-rounded is-primary"
             data-testid="blog-toc-mobile-btn"
+            id="toc-button"
             style="display: none;"
           >
             <i
               class="icon"
+              id="icon-button"
             >
               <svg
                 aria-hidden="true"
@@ -5773,7 +5730,7 @@ exports[`Glossary Page filters correctly 1`] = `
                 data-icon="ellipsis"
                 data-prefix="fas"
                 focusable="false"
-                id="toc-button"
+                id="toc-button-icon"
                 role="img"
                 viewBox="0 0 448 512"
                 xmlns="http://www.w3.org/2000/svg"
@@ -6054,7 +6011,7 @@ exports[`Glossary Page filters correctly 1`] = `
                                     class=""
                                     href="/blog/test1"
                                   >
-                                    /blog/test1
+                                    BlogPost
                                   </a>
                                 </li>
                                 <li>
@@ -6062,7 +6019,7 @@ exports[`Glossary Page filters correctly 1`] = `
                                     class=""
                                     href="/wiki/test1"
                                   >
-                                    /wiki/test1
+                                    WikiPost
                                   </a>
                                 </li>
                               </ol>
@@ -6232,7 +6189,7 @@ exports[`Glossary Page filters correctly 1`] = `
                                     class=""
                                     href="/blog/test1"
                                   >
-                                    /blog/test1
+                                    BlogPost
                                   </a>
                                 </li>
                                 <li>
@@ -6240,7 +6197,7 @@ exports[`Glossary Page filters correctly 1`] = `
                                     class=""
                                     href="/wiki/test1"
                                   >
-                                    /wiki/test1
+                                    WikiPost
                                   </a>
                                 </li>
                               </ol>
@@ -6420,7 +6377,7 @@ exports[`Glossary Page filters correctly 1`] = `
                                     class=""
                                     href="/blog/test1"
                                   >
-                                    /blog/test1
+                                    BlogPost
                                   </a>
                                 </li>
                                 <li>
@@ -6428,7 +6385,7 @@ exports[`Glossary Page filters correctly 1`] = `
                                     class=""
                                     href="/wiki/test1"
                                   >
-                                    /wiki/test1
+                                    WikiPost
                                   </a>
                                 </li>
                               </ol>
@@ -6608,7 +6565,7 @@ exports[`Glossary Page filters correctly 1`] = `
                                     class=""
                                     href="/blog/test1"
                                   >
-                                    /blog/test1
+                                    BlogPost
                                   </a>
                                 </li>
                                 <li>
@@ -6616,7 +6573,7 @@ exports[`Glossary Page filters correctly 1`] = `
                                     class=""
                                     href="/wiki/test1"
                                   >
-                                    /wiki/test1
+                                    WikiPost
                                   </a>
                                 </li>
                               </ol>
@@ -6783,24 +6740,7 @@ exports[`Glossary Page filters correctly 1`] = `
                               <h4>
                                 RelatedPosts:
                               </h4>
-                              <ol>
-                                <li>
-                                  <a
-                                    class=""
-                                    href="/wiki/test"
-                                  >
-                                    /wiki/test
-                                  </a>
-                                </li>
-                                <li>
-                                  <a
-                                    class=""
-                                    href="/blog/test1"
-                                  >
-                                    /blog/test1
-                                  </a>
-                                </li>
-                              </ol>
+                              <ol />
                             </div>
                           </div>
                         </div>
@@ -7698,10 +7638,12 @@ exports[`Glossary Page renders correctly 1`] = `
           <button
             class="button is-rounded is-primary"
             data-testid="blog-toc-mobile-btn"
+            id="toc-button"
             style="display: none;"
           >
             <i
               class="icon"
+              id="icon-button"
             >
               <svg
                 aria-hidden="true"
@@ -7709,7 +7651,7 @@ exports[`Glossary Page renders correctly 1`] = `
                 data-icon="ellipsis"
                 data-prefix="fas"
                 focusable="false"
-                id="toc-button"
+                id="toc-button-icon"
                 role="img"
                 viewBox="0 0 448 512"
                 xmlns="http://www.w3.org/2000/svg"
@@ -7990,7 +7932,7 @@ exports[`Glossary Page renders correctly 1`] = `
                                     class=""
                                     href="/blog/test1"
                                   >
-                                    /blog/test1
+                                    BlogPost
                                   </a>
                                 </li>
                                 <li>
@@ -7998,7 +7940,7 @@ exports[`Glossary Page renders correctly 1`] = `
                                     class=""
                                     href="/wiki/test1"
                                   >
-                                    /wiki/test1
+                                    WikiPost
                                   </a>
                                 </li>
                               </ol>
@@ -8168,7 +8110,7 @@ exports[`Glossary Page renders correctly 1`] = `
                                     class=""
                                     href="/blog/test1"
                                   >
-                                    /blog/test1
+                                    BlogPost
                                   </a>
                                 </li>
                                 <li>
@@ -8176,7 +8118,7 @@ exports[`Glossary Page renders correctly 1`] = `
                                     class=""
                                     href="/wiki/test1"
                                   >
-                                    /wiki/test1
+                                    WikiPost
                                   </a>
                                 </li>
                               </ol>
@@ -8356,7 +8298,7 @@ exports[`Glossary Page renders correctly 1`] = `
                                     class=""
                                     href="/blog/test1"
                                   >
-                                    /blog/test1
+                                    BlogPost
                                   </a>
                                 </li>
                                 <li>
@@ -8364,7 +8306,7 @@ exports[`Glossary Page renders correctly 1`] = `
                                     class=""
                                     href="/wiki/test1"
                                   >
-                                    /wiki/test1
+                                    WikiPost
                                   </a>
                                 </li>
                               </ol>
@@ -8544,7 +8486,7 @@ exports[`Glossary Page renders correctly 1`] = `
                                     class=""
                                     href="/blog/test1"
                                   >
-                                    /blog/test1
+                                    BlogPost
                                   </a>
                                 </li>
                                 <li>
@@ -8552,7 +8494,7 @@ exports[`Glossary Page renders correctly 1`] = `
                                     class=""
                                     href="/wiki/test1"
                                   >
-                                    /wiki/test1
+                                    WikiPost
                                   </a>
                                 </li>
                               </ol>
@@ -8719,24 +8661,7 @@ exports[`Glossary Page renders correctly 1`] = `
                               <h4>
                                 RelatedPosts:
                               </h4>
-                              <ol>
-                                <li>
-                                  <a
-                                    class=""
-                                    href="/wiki/test"
-                                  >
-                                    /wiki/test
-                                  </a>
-                                </li>
-                                <li>
-                                  <a
-                                    class=""
-                                    href="/blog/test1"
-                                  >
-                                    /blog/test1
-                                  </a>
-                                </li>
-                              </ol>
+                              <ol />
                             </div>
                           </div>
                         </div>
@@ -9614,10 +9539,12 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
           <button
             class="button is-rounded is-primary"
             data-testid="blog-toc-mobile-btn"
+            id="toc-button"
             style="display: none;"
           >
             <i
               class="icon"
+              id="icon-button"
             >
               <svg
                 aria-hidden="true"
@@ -9625,7 +9552,7 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
                 data-icon="ellipsis"
                 data-prefix="fas"
                 focusable="false"
-                id="toc-button"
+                id="toc-button-icon"
                 role="img"
                 viewBox="0 0 448 512"
                 xmlns="http://www.w3.org/2000/svg"
@@ -9906,7 +9833,7 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
                                     class=""
                                     href="/blog/test1"
                                   >
-                                    /blog/test1
+                                    BlogPost
                                   </a>
                                 </li>
                                 <li>
@@ -9914,7 +9841,7 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
                                     class=""
                                     href="/wiki/test1"
                                   >
-                                    /wiki/test1
+                                    WikiPost
                                   </a>
                                 </li>
                               </ol>
@@ -10084,7 +10011,7 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
                                     class=""
                                     href="/blog/test1"
                                   >
-                                    /blog/test1
+                                    BlogPost
                                   </a>
                                 </li>
                                 <li>
@@ -10092,7 +10019,7 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
                                     class=""
                                     href="/wiki/test1"
                                   >
-                                    /wiki/test1
+                                    WikiPost
                                   </a>
                                 </li>
                               </ol>
@@ -10272,7 +10199,7 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
                                     class=""
                                     href="/blog/test1"
                                   >
-                                    /blog/test1
+                                    BlogPost
                                   </a>
                                 </li>
                                 <li>
@@ -10280,7 +10207,7 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
                                     class=""
                                     href="/wiki/test1"
                                   >
-                                    /wiki/test1
+                                    WikiPost
                                   </a>
                                 </li>
                               </ol>
@@ -10460,7 +10387,7 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
                                     class=""
                                     href="/blog/test1"
                                   >
-                                    /blog/test1
+                                    BlogPost
                                   </a>
                                 </li>
                                 <li>
@@ -10468,7 +10395,7 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
                                     class=""
                                     href="/wiki/test1"
                                   >
-                                    /wiki/test1
+                                    WikiPost
                                   </a>
                                 </li>
                               </ol>
@@ -10635,24 +10562,7 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
                               <h4>
                                 RelatedPosts:
                               </h4>
-                              <ol>
-                                <li>
-                                  <a
-                                    class=""
-                                    href="/wiki/test"
-                                  >
-                                    /wiki/test
-                                  </a>
-                                </li>
-                                <li>
-                                  <a
-                                    class=""
-                                    href="/blog/test1"
-                                  >
-                                    /blog/test1
-                                  </a>
-                                </li>
-                              </ol>
+                              <ol />
                             </div>
                           </div>
                         </div>
@@ -11460,10 +11370,12 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
           <button
             class="button is-rounded is-primary"
             data-testid="blog-toc-mobile-btn"
+            id="toc-button"
             style="display: block;"
           >
             <i
               class="icon"
+              id="icon-button"
             >
               <svg
                 aria-hidden="true"
@@ -11471,7 +11383,7 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
                 data-icon="ellipsis"
                 data-prefix="fas"
                 focusable="false"
-                id="toc-button"
+                id="toc-button-icon"
                 role="img"
                 viewBox="0 0 448 512"
                 xmlns="http://www.w3.org/2000/svg"
@@ -11752,7 +11664,7 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
                                     class=""
                                     href="/blog/test1"
                                   >
-                                    /blog/test1
+                                    BlogPost
                                   </a>
                                 </li>
                                 <li>
@@ -11760,7 +11672,7 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
                                     class=""
                                     href="/wiki/test1"
                                   >
-                                    /wiki/test1
+                                    WikiPost
                                   </a>
                                 </li>
                               </ol>
@@ -11930,7 +11842,7 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
                                     class=""
                                     href="/blog/test1"
                                   >
-                                    /blog/test1
+                                    BlogPost
                                   </a>
                                 </li>
                                 <li>
@@ -11938,7 +11850,7 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
                                     class=""
                                     href="/wiki/test1"
                                   >
-                                    /wiki/test1
+                                    WikiPost
                                   </a>
                                 </li>
                               </ol>
@@ -12118,7 +12030,7 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
                                     class=""
                                     href="/blog/test1"
                                   >
-                                    /blog/test1
+                                    BlogPost
                                   </a>
                                 </li>
                                 <li>
@@ -12126,7 +12038,7 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
                                     class=""
                                     href="/wiki/test1"
                                   >
-                                    /wiki/test1
+                                    WikiPost
                                   </a>
                                 </li>
                               </ol>
@@ -12306,7 +12218,7 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
                                     class=""
                                     href="/blog/test1"
                                   >
-                                    /blog/test1
+                                    BlogPost
                                   </a>
                                 </li>
                                 <li>
@@ -12314,7 +12226,7 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
                                     class=""
                                     href="/wiki/test1"
                                   >
-                                    /wiki/test1
+                                    WikiPost
                                   </a>
                                 </li>
                               </ol>
@@ -12481,24 +12393,7 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
                               <h4>
                                 RelatedPosts:
                               </h4>
-                              <ol>
-                                <li>
-                                  <a
-                                    class=""
-                                    href="/wiki/test"
-                                  >
-                                    /wiki/test
-                                  </a>
-                                </li>
-                                <li>
-                                  <a
-                                    class=""
-                                    href="/blog/test1"
-                                  >
-                                    /blog/test1
-                                  </a>
-                                </li>
-                              </ol>
+                              <ol />
                             </div>
                           </div>
                         </div>

@@ -9,7 +9,13 @@ const glossaryDefinitions: Array<GlossaryElements> = [
             syllables: 'a·ban·don',
             phonetics: 'əˈbandən',
             similarWords: ['/blog/test', '/wiki/test'],
-            relatedPosts: ['/blog/test1', '/wiki/test1'],
+            relatedPosts: [{
+                title: "BlogPost",
+                slug: '/blog/test1'
+            }, {
+                title: "WikiPost",
+                slug: '/wiki/test1'
+            }],
             tags: ['two', 'three']
         }
     },
@@ -23,7 +29,13 @@ const glossaryDefinitions: Array<GlossaryElements> = [
             syllables: 'a·ban·don',
             phonetics: 'əˈbandən',
             similarWords: ['/blog/test', '/wiki/test'],
-            relatedPosts: ['/blog/test1', '/wiki/test1'],
+            relatedPosts: [{
+                title: "BlogPost",
+                slug: '/blog/test1'
+            }, {
+                title: "WikiPost",
+                slug: '/wiki/test1'
+            }],
             tags: ['two', 'one']
         }
     },
@@ -37,7 +49,13 @@ const glossaryDefinitions: Array<GlossaryElements> = [
             syllables: 'a·ban·don',
             phonetics: 'əˈbandən',
             similarWords: ['/blog/test', '/wiki/test'],
-            relatedPosts: ['/blog/test1', '/wiki/test1'],
+            relatedPosts: [{
+                title: "BlogPost",
+                slug: '/blog/test1'
+            }, {
+                title: "WikiPost",
+                slug: '/wiki/test1'
+            }],
             tags: ['two', 'one']
         }
     },
@@ -51,7 +69,13 @@ const glossaryDefinitions: Array<GlossaryElements> = [
             syllables: 'a·ban·don',
             phonetics: 'əˈbandən',
             similarWords: ['/blog/test', '/wiki/test'],
-            relatedPosts: ['/blog/test1', '/wiki/test1'],
+            relatedPosts: [{
+                title: "BlogPost",
+                slug: '/blog/test1'
+            }, {
+                title: "WikiPost",
+                slug: '/wiki/test1'
+            }],
             tags: ['two']
         }
     },
@@ -65,7 +89,7 @@ const glossaryDefinitions: Array<GlossaryElements> = [
             syllables: 'a·ban·don',
             phonetics: 'əˈbandən',
             similarWords: ['/blog/test', '/wiki/test1'],
-            relatedPosts: ['/wiki/test', '/blog/test1'],
+            relatedPosts: [],
             tags: ['three']
         }
     }

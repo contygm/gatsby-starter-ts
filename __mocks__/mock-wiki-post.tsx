@@ -20,6 +20,14 @@ export const mockWikiPost: WikiPostProps = {
             description: 'a baking tutorial',
             related: ['/one-url/', '/two-url/', '/three-url/'],
             tags: ['one', 'two', 'three'],
+            summary: [{
+                field: "Color",
+                value: "Green"
+            },
+            {
+                field: "Number",
+                value: "0"
+            }],
             headerImage: {
                 childImageSharp: {
                     gatsbyImageData: {}
@@ -27,8 +35,8 @@ export const mockWikiPost: WikiPostProps = {
             }
         }
     },
-    previous: previous,
-    next: next,
+    // previous: previous,
+    // next: next,
     featured: {
         nodes: featuredOrRelatedPosts
     },
