@@ -7,5 +7,4 @@ coverage/
 cypress/screenshots
 cypress/downloads
 cypress/videos
-content/
 package-lock.json
