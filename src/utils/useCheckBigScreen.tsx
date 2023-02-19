@@ -1,19 +1,26 @@
 import { useEffect, useState } from 'react';
 
 const useCheckBigScreen = () => {
-    const [width, setWidth] = useState(window.innerWidth);
-    const handleWindowSizeChange = () => {
-        setWidth(window.innerWidth);
-    };
+    const hasWindow = typeof window !== "undefined";
 
-    useEffect(() => {
-        window.addEventListener('resize', handleWindowSizeChange);
-        return () => {
-            window.removeEventListener('resize', handleWindowSizeChange);
+    if (hasWindow) {
+        const [width, setWidth] = useState(window.innerWidth);
+        const handleWindowSizeChange = () => {
+            setWidth(window.innerWidth);
         };
-    }, []);
 
-    return width >= 1216;
+        useEffect(() => {
+            window.addEventListener('resize', handleWindowSizeChange);
+            return () => {
+                window.removeEventListener('resize', handleWindowSizeChange);
+            };
+        }, []);
+
+        return width >= 1216;
+    }
+
+    return true;
+    
 };
 
 export default useCheckBigScreen;

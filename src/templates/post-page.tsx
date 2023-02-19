@@ -29,16 +29,17 @@ const PostPage: FunctionComponent<PostPageProps> = ({
     type,
     allLetters
 }: PostPageProps) => {
+    const hasLocation = typeof location !== "undefined";
     const unfilteredPosts = index.nodes;
     const [allPosts, setAllPosts] = useState(index.nodes);
 
-    const searchFromQuery = location.search.match(/(?<=\bsearch=)\w+/g);
+    const searchFromQuery = hasLocation ? location.search.match(/(?<=\bsearch=)\w+/g) : null;
     const [searchQuery, setSearchQuery] = useState(
         searchFromQuery ? searchFromQuery[0] : ''
     );
 
     const tags = allTags.group;
-    const tagFromQuery = location.search.match(/(?<=\btag=)\w+/g);
+    const tagFromQuery = hasLocation ? location.search.match(/(?<=\btag=)\w+/g) : null;
     const [tagFilter, setTagFilter] = useState(
         tagFromQuery ? tagFromQuery[0] : 'all'
     );
