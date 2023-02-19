@@ -75,6 +75,7 @@ GlossaryIndexProps) => {
                                                 >
                                                     <DefinitionCard
                                                         definition={definition}
+                                                        includeAll={true}
                                                         // handleFilterUpdate={handleFilterUpdate}
                                                     />
                                                 </div>
