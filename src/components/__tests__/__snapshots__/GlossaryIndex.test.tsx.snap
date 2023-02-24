@@ -920,9 +920,11 @@ exports[`GlossaryIndex default renders correctly with no results 1`] = `
     <div
       class="is-centered"
     >
-      <div>
+      <h2
+        class="title is-size-3"
+      >
         No results
-      </div>
+      </h2>
     </div>
   </article>
 </DocumentFragment>

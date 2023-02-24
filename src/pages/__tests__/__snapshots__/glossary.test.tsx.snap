@@ -79,42 +79,6 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
             Glossary
           </a>
         </div>
-        <div
-          class="navbar-end"
-        >
-          <div
-            class="field nav-side-width"
-          >
-            <p
-              class="control has-icons-left has-icons-right"
-            >
-              <input
-                class="input is-rounded is-small"
-                placeholder="Search..."
-                type="text"
-              />
-              <span
-                class="icon is-small is-left"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="svg-inline--fa fa-magnifying-glass "
-                  data-icon="magnifying-glass"
-                  data-prefix="fas"
-                  focusable="false"
-                  role="img"
-                  viewBox="0 0 512 512"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </span>
-            </p>
-          </div>
-        </div>
       </div>
     </nav>
     <main>
@@ -269,14 +233,14 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
                     class="field has-addons"
                   >
                     <p
-                      class="control"
+                      class="control has-icons-right"
                     >
                       <input
                         class="input"
                         data-testid="searchPost"
                         name="searchPost"
                         placeholder="Find a post"
-                        type="text"
+                        type="search"
                         value=""
                       />
                     </p>
@@ -284,7 +248,7 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
                       class="control"
                     >
                       <button
-                        class="button"
+                        class="button is-success"
                         data-testid="searchPostSubmit"
                       >
                         Search
@@ -299,16 +263,15 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
                     class="field is-grouped is-grouped-multiline"
                   >
                     <div
-                      class="tags has-addons mx-2 tag-align"
+                      class="tags has-addons mx-2 tag-align show-pointer"
                     >
-                      <a
-                        class="tag is-success"
+                      <div
+                        class="tag tag is-success is-light"
                         data-testid="all"
-                        href="/glossary"
                         id="all"
                       >
                         All
-                      </a>
+                      </div>
                       <span
                         class="tag is-dark"
                       >
@@ -316,16 +279,15 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
                       </span>
                     </div>
                     <div
-                      class="tags has-addons mx-2 tag-align"
+                      class="tags has-addons mx-2 tag-align show-pointer"
                     >
-                      <a
+                      <div
                         class="tag is-success is-light"
                         data-testid="three"
-                        href="?tag=three"
                         id="three"
                       >
                         three
-                      </a>
+                      </div>
                       <span
                         class="tag is-dark"
                       >
@@ -333,16 +295,15 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
                       </span>
                     </div>
                     <div
-                      class="tags has-addons mx-2 tag-align"
+                      class="tags has-addons mx-2 tag-align show-pointer"
                     >
-                      <a
+                      <div
                         class="tag is-success is-light"
                         data-testid="two"
-                        href="?tag=two"
                         id="two"
                       >
                         two
-                      </a>
+                      </div>
                       <span
                         class="tag is-dark"
                       >
@@ -350,16 +311,15 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
                       </span>
                     </div>
                     <div
-                      class="tags has-addons mx-2 tag-align"
+                      class="tags has-addons mx-2 tag-align show-pointer"
                     >
-                      <a
+                      <div
                         class="tag is-success is-light"
                         data-testid="one"
-                        href="?tag=one"
                         id="one"
                       >
                         one
-                      </a>
+                      </div>
                       <span
                         class="tag is-dark"
                       >
@@ -1288,44 +1248,6 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
             <aside
               class="menu sidebar"
             >
-              <div
-                class="box"
-              >
-                <p
-                  class="menu-label"
-                >
-                  Search the glossary
-                </p>
-                <p
-                  class="menu-list control has-icons-left"
-                >
-                  <span
-                    class="icon"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      class="svg-inline--fa fa-magnifying-glass "
-                      data-icon="magnifying-glass"
-                      data-prefix="fas"
-                      focusable="false"
-                      role="img"
-                      viewBox="0 0 512 512"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"
-                        fill="currentColor"
-                      />
-                    </svg>
-                  </span>
-                  <input
-                    aria-label="blog-search"
-                    class="input is-rounded"
-                    placeholder="A word..."
-                    type="text"
-                  />
-                </p>
-              </div>
               <div
                 class="box"
               >
@@ -1910,42 +1832,6 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
             Glossary
           </a>
         </div>
-        <div
-          class="navbar-end"
-        >
-          <div
-            class="field nav-side-width"
-          >
-            <p
-              class="control has-icons-left has-icons-right"
-            >
-              <input
-                class="input is-rounded is-small"
-                placeholder="Search..."
-                type="text"
-              />
-              <span
-                class="icon is-small is-left"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="svg-inline--fa fa-magnifying-glass "
-                  data-icon="magnifying-glass"
-                  data-prefix="fas"
-                  focusable="false"
-                  role="img"
-                  viewBox="0 0 512 512"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </span>
-            </p>
-          </div>
-        </div>
       </div>
     </nav>
     <main>
@@ -2100,14 +1986,14 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
                     class="field has-addons"
                   >
                     <p
-                      class="control"
+                      class="control has-icons-right"
                     >
                       <input
                         class="input"
                         data-testid="searchPost"
                         name="searchPost"
                         placeholder="Find a post"
-                        type="text"
+                        type="search"
                         value=""
                       />
                     </p>
@@ -2115,7 +2001,7 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
                       class="control"
                     >
                       <button
-                        class="button"
+                        class="button is-success"
                         data-testid="searchPostSubmit"
                       >
                         Search
@@ -2130,16 +2016,15 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
                     class="field is-grouped is-grouped-multiline"
                   >
                     <div
-                      class="tags has-addons mx-2 tag-align"
+                      class="tags has-addons mx-2 tag-align show-pointer"
                     >
-                      <a
-                        class="tag is-success"
+                      <div
+                        class="tag tag is-success is-light"
                         data-testid="all"
-                        href="/glossary"
                         id="all"
                       >
                         All
-                      </a>
+                      </div>
                       <span
                         class="tag is-dark"
                       >
@@ -2147,16 +2032,15 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
                       </span>
                     </div>
                     <div
-                      class="tags has-addons mx-2 tag-align"
+                      class="tags has-addons mx-2 tag-align show-pointer"
                     >
-                      <a
+                      <div
                         class="tag is-success is-light"
                         data-testid="three"
-                        href="?tag=three"
                         id="three"
                       >
                         three
-                      </a>
+                      </div>
                       <span
                         class="tag is-dark"
                       >
@@ -2164,16 +2048,15 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
                       </span>
                     </div>
                     <div
-                      class="tags has-addons mx-2 tag-align"
+                      class="tags has-addons mx-2 tag-align show-pointer"
                     >
-                      <a
+                      <div
                         class="tag is-success is-light"
                         data-testid="two"
-                        href="?tag=two"
                         id="two"
                       >
                         two
-                      </a>
+                      </div>
                       <span
                         class="tag is-dark"
                       >
@@ -2181,16 +2064,15 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
                       </span>
                     </div>
                     <div
-                      class="tags has-addons mx-2 tag-align"
+                      class="tags has-addons mx-2 tag-align show-pointer"
                     >
-                      <a
+                      <div
                         class="tag is-success is-light"
                         data-testid="one"
-                        href="?tag=one"
                         id="one"
                       >
                         one
-                      </a>
+                      </div>
                       <span
                         class="tag is-dark"
                       >
@@ -3119,44 +3001,6 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
             <aside
               class="menu sidebar"
             >
-              <div
-                class="box"
-              >
-                <p
-                  class="menu-label"
-                >
-                  Search the glossary
-                </p>
-                <p
-                  class="menu-list control has-icons-left"
-                >
-                  <span
-                    class="icon"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      class="svg-inline--fa fa-magnifying-glass "
-                      data-icon="magnifying-glass"
-                      data-prefix="fas"
-                      focusable="false"
-                      role="img"
-                      viewBox="0 0 512 512"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"
-                        fill="currentColor"
-                      />
-                    </svg>
-                  </span>
-                  <input
-                    aria-label="blog-search"
-                    class="input is-rounded"
-                    placeholder="A word..."
-                    type="text"
-                  />
-                </p>
-              </div>
               <div
                 class="box"
               >
@@ -3741,42 +3585,6 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
             Glossary
           </a>
         </div>
-        <div
-          class="navbar-end"
-        >
-          <div
-            class="field nav-side-width"
-          >
-            <p
-              class="control has-icons-left has-icons-right"
-            >
-              <input
-                class="input is-rounded is-small"
-                placeholder="Search..."
-                type="text"
-              />
-              <span
-                class="icon is-small is-left"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="svg-inline--fa fa-magnifying-glass "
-                  data-icon="magnifying-glass"
-                  data-prefix="fas"
-                  focusable="false"
-                  role="img"
-                  viewBox="0 0 512 512"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </span>
-            </p>
-          </div>
-        </div>
       </div>
     </nav>
     <main>
@@ -3931,14 +3739,14 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
                     class="field has-addons"
                   >
                     <p
-                      class="control"
+                      class="control has-icons-right"
                     >
                       <input
                         class="input"
                         data-testid="searchPost"
                         name="searchPost"
                         placeholder="Find a post"
-                        type="text"
+                        type="search"
                         value=""
                       />
                     </p>
@@ -3946,7 +3754,7 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
                       class="control"
                     >
                       <button
-                        class="button"
+                        class="button is-success"
                         data-testid="searchPostSubmit"
                       >
                         Search
@@ -3961,16 +3769,15 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
                     class="field is-grouped is-grouped-multiline"
                   >
                     <div
-                      class="tags has-addons mx-2 tag-align"
+                      class="tags has-addons mx-2 tag-align show-pointer"
                     >
-                      <a
-                        class="tag is-success"
+                      <div
+                        class="tag tag is-success is-light"
                         data-testid="all"
-                        href="/glossary"
                         id="all"
                       >
                         All
-                      </a>
+                      </div>
                       <span
                         class="tag is-dark"
                       >
@@ -3978,16 +3785,15 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
                       </span>
                     </div>
                     <div
-                      class="tags has-addons mx-2 tag-align"
+                      class="tags has-addons mx-2 tag-align show-pointer"
                     >
-                      <a
+                      <div
                         class="tag is-success is-light"
                         data-testid="three"
-                        href="?tag=three"
                         id="three"
                       >
                         three
-                      </a>
+                      </div>
                       <span
                         class="tag is-dark"
                       >
@@ -3995,16 +3801,15 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
                       </span>
                     </div>
                     <div
-                      class="tags has-addons mx-2 tag-align"
+                      class="tags has-addons mx-2 tag-align show-pointer"
                     >
-                      <a
+                      <div
                         class="tag is-success is-light"
                         data-testid="two"
-                        href="?tag=two"
                         id="two"
                       >
                         two
-                      </a>
+                      </div>
                       <span
                         class="tag is-dark"
                       >
@@ -4012,16 +3817,15 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
                       </span>
                     </div>
                     <div
-                      class="tags has-addons mx-2 tag-align"
+                      class="tags has-addons mx-2 tag-align show-pointer"
                     >
-                      <a
+                      <div
                         class="tag is-success is-light"
                         data-testid="one"
-                        href="?tag=one"
                         id="one"
                       >
                         one
-                      </a>
+                      </div>
                       <span
                         class="tag is-dark"
                       >
@@ -4950,44 +4754,6 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
             <aside
               class="menu sidebar"
             >
-              <div
-                class="box"
-              >
-                <p
-                  class="menu-label"
-                >
-                  Search the glossary
-                </p>
-                <p
-                  class="menu-list control has-icons-left"
-                >
-                  <span
-                    class="icon"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      class="svg-inline--fa fa-magnifying-glass "
-                      data-icon="magnifying-glass"
-                      data-prefix="fas"
-                      focusable="false"
-                      role="img"
-                      viewBox="0 0 512 512"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"
-                        fill="currentColor"
-                      />
-                    </svg>
-                  </span>
-                  <input
-                    aria-label="blog-search"
-                    class="input is-rounded"
-                    placeholder="A word..."
-                    type="text"
-                  />
-                </p>
-              </div>
               <div
                 class="box"
               >
@@ -5572,42 +5338,6 @@ exports[`Glossary Page filters correctly 1`] = `
             Glossary
           </a>
         </div>
-        <div
-          class="navbar-end"
-        >
-          <div
-            class="field nav-side-width"
-          >
-            <p
-              class="control has-icons-left has-icons-right"
-            >
-              <input
-                class="input is-rounded is-small"
-                placeholder="Search..."
-                type="text"
-              />
-              <span
-                class="icon is-small is-left"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="svg-inline--fa fa-magnifying-glass "
-                  data-icon="magnifying-glass"
-                  data-prefix="fas"
-                  focusable="false"
-                  role="img"
-                  viewBox="0 0 512 512"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </span>
-            </p>
-          </div>
-        </div>
       </div>
     </nav>
     <main>
@@ -5762,14 +5492,14 @@ exports[`Glossary Page filters correctly 1`] = `
                     class="field has-addons"
                   >
                     <p
-                      class="control"
+                      class="control has-icons-right"
                     >
                       <input
                         class="input"
                         data-testid="searchPost"
                         name="searchPost"
                         placeholder="Find a post"
-                        type="text"
+                        type="search"
                         value=""
                       />
                     </p>
@@ -5777,7 +5507,7 @@ exports[`Glossary Page filters correctly 1`] = `
                       class="control"
                     >
                       <button
-                        class="button"
+                        class="button is-success"
                         data-testid="searchPostSubmit"
                       >
                         Search
@@ -5792,16 +5522,15 @@ exports[`Glossary Page filters correctly 1`] = `
                     class="field is-grouped is-grouped-multiline"
                   >
                     <div
-                      class="tags has-addons mx-2 tag-align"
+                      class="tags has-addons mx-2 tag-align show-pointer"
                     >
-                      <a
-                        class="tag is-success"
+                      <div
+                        class="tag tag is-success is-light"
                         data-testid="all"
-                        href="/glossary"
                         id="all"
                       >
                         All
-                      </a>
+                      </div>
                       <span
                         class="tag is-dark"
                       >
@@ -5809,16 +5538,15 @@ exports[`Glossary Page filters correctly 1`] = `
                       </span>
                     </div>
                     <div
-                      class="tags has-addons mx-2 tag-align"
+                      class="tags has-addons mx-2 tag-align show-pointer"
                     >
-                      <a
+                      <div
                         class="tag is-success is-light"
                         data-testid="three"
-                        href="?tag=three"
                         id="three"
                       >
                         three
-                      </a>
+                      </div>
                       <span
                         class="tag is-dark"
                       >
@@ -5826,16 +5554,15 @@ exports[`Glossary Page filters correctly 1`] = `
                       </span>
                     </div>
                     <div
-                      class="tags has-addons mx-2 tag-align"
+                      class="tags has-addons mx-2 tag-align show-pointer"
                     >
-                      <a
+                      <div
                         class="tag is-success is-light"
                         data-testid="two"
-                        href="?tag=two"
                         id="two"
                       >
                         two
-                      </a>
+                      </div>
                       <span
                         class="tag is-dark"
                       >
@@ -5843,16 +5570,15 @@ exports[`Glossary Page filters correctly 1`] = `
                       </span>
                     </div>
                     <div
-                      class="tags has-addons mx-2 tag-align"
+                      class="tags has-addons mx-2 tag-align show-pointer"
                     >
-                      <a
+                      <div
                         class="tag is-success is-light"
                         data-testid="one"
-                        href="?tag=one"
                         id="one"
                       >
                         one
-                      </a>
+                      </div>
                       <span
                         class="tag is-dark"
                       >
@@ -6781,44 +6507,6 @@ exports[`Glossary Page filters correctly 1`] = `
             <aside
               class="menu sidebar"
             >
-              <div
-                class="box"
-              >
-                <p
-                  class="menu-label"
-                >
-                  Search the glossary
-                </p>
-                <p
-                  class="menu-list control has-icons-left"
-                >
-                  <span
-                    class="icon"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      class="svg-inline--fa fa-magnifying-glass "
-                      data-icon="magnifying-glass"
-                      data-prefix="fas"
-                      focusable="false"
-                      role="img"
-                      viewBox="0 0 512 512"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"
-                        fill="currentColor"
-                      />
-                    </svg>
-                  </span>
-                  <input
-                    aria-label="blog-search"
-                    class="input is-rounded"
-                    placeholder="A word..."
-                    type="text"
-                  />
-                </p>
-              </div>
               <div
                 class="box"
               >
@@ -7493,42 +7181,6 @@ exports[`Glossary Page renders correctly 1`] = `
             Glossary
           </a>
         </div>
-        <div
-          class="navbar-end"
-        >
-          <div
-            class="field nav-side-width"
-          >
-            <p
-              class="control has-icons-left has-icons-right"
-            >
-              <input
-                class="input is-rounded is-small"
-                placeholder="Search..."
-                type="text"
-              />
-              <span
-                class="icon is-small is-left"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="svg-inline--fa fa-magnifying-glass "
-                  data-icon="magnifying-glass"
-                  data-prefix="fas"
-                  focusable="false"
-                  role="img"
-                  viewBox="0 0 512 512"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </span>
-            </p>
-          </div>
-        </div>
       </div>
     </nav>
     <main>
@@ -7683,14 +7335,14 @@ exports[`Glossary Page renders correctly 1`] = `
                     class="field has-addons"
                   >
                     <p
-                      class="control"
+                      class="control has-icons-right"
                     >
                       <input
                         class="input"
                         data-testid="searchPost"
                         name="searchPost"
                         placeholder="Find a post"
-                        type="text"
+                        type="search"
                         value=""
                       />
                     </p>
@@ -7698,7 +7350,7 @@ exports[`Glossary Page renders correctly 1`] = `
                       class="control"
                     >
                       <button
-                        class="button"
+                        class="button is-success"
                         data-testid="searchPostSubmit"
                       >
                         Search
@@ -7713,16 +7365,15 @@ exports[`Glossary Page renders correctly 1`] = `
                     class="field is-grouped is-grouped-multiline"
                   >
                     <div
-                      class="tags has-addons mx-2 tag-align"
+                      class="tags has-addons mx-2 tag-align show-pointer"
                     >
-                      <a
-                        class="tag is-success"
+                      <div
+                        class="tag tag is-success is-light"
                         data-testid="all"
-                        href="/glossary"
                         id="all"
                       >
                         All
-                      </a>
+                      </div>
                       <span
                         class="tag is-dark"
                       >
@@ -7730,16 +7381,15 @@ exports[`Glossary Page renders correctly 1`] = `
                       </span>
                     </div>
                     <div
-                      class="tags has-addons mx-2 tag-align"
+                      class="tags has-addons mx-2 tag-align show-pointer"
                     >
-                      <a
+                      <div
                         class="tag is-success is-light"
                         data-testid="three"
-                        href="?tag=three"
                         id="three"
                       >
                         three
-                      </a>
+                      </div>
                       <span
                         class="tag is-dark"
                       >
@@ -7747,16 +7397,15 @@ exports[`Glossary Page renders correctly 1`] = `
                       </span>
                     </div>
                     <div
-                      class="tags has-addons mx-2 tag-align"
+                      class="tags has-addons mx-2 tag-align show-pointer"
                     >
-                      <a
+                      <div
                         class="tag is-success is-light"
                         data-testid="two"
-                        href="?tag=two"
                         id="two"
                       >
                         two
-                      </a>
+                      </div>
                       <span
                         class="tag is-dark"
                       >
@@ -7764,16 +7413,15 @@ exports[`Glossary Page renders correctly 1`] = `
                       </span>
                     </div>
                     <div
-                      class="tags has-addons mx-2 tag-align"
+                      class="tags has-addons mx-2 tag-align show-pointer"
                     >
-                      <a
+                      <div
                         class="tag is-success is-light"
                         data-testid="one"
-                        href="?tag=one"
                         id="one"
                       >
                         one
-                      </a>
+                      </div>
                       <span
                         class="tag is-dark"
                       >
@@ -8702,44 +8350,6 @@ exports[`Glossary Page renders correctly 1`] = `
             <aside
               class="menu sidebar"
             >
-              <div
-                class="box"
-              >
-                <p
-                  class="menu-label"
-                >
-                  Search the glossary
-                </p>
-                <p
-                  class="menu-list control has-icons-left"
-                >
-                  <span
-                    class="icon"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      class="svg-inline--fa fa-magnifying-glass "
-                      data-icon="magnifying-glass"
-                      data-prefix="fas"
-                      focusable="false"
-                      role="img"
-                      viewBox="0 0 512 512"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"
-                        fill="currentColor"
-                      />
-                    </svg>
-                  </span>
-                  <input
-                    aria-label="blog-search"
-                    class="input is-rounded"
-                    placeholder="A word..."
-                    type="text"
-                  />
-                </p>
-              </div>
               <div
                 class="box"
               >
@@ -9394,42 +9004,6 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
             Glossary
           </a>
         </div>
-        <div
-          class="navbar-end"
-        >
-          <div
-            class="field nav-side-width"
-          >
-            <p
-              class="control has-icons-left has-icons-right"
-            >
-              <input
-                class="input is-rounded is-small"
-                placeholder="Search..."
-                type="text"
-              />
-              <span
-                class="icon is-small is-left"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="svg-inline--fa fa-magnifying-glass "
-                  data-icon="magnifying-glass"
-                  data-prefix="fas"
-                  focusable="false"
-                  role="img"
-                  viewBox="0 0 512 512"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </span>
-            </p>
-          </div>
-        </div>
       </div>
     </nav>
     <main>
@@ -9584,14 +9158,14 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
                     class="field has-addons"
                   >
                     <p
-                      class="control"
+                      class="control has-icons-right"
                     >
                       <input
                         class="input"
                         data-testid="searchPost"
                         name="searchPost"
                         placeholder="Find a post"
-                        type="text"
+                        type="search"
                         value=""
                       />
                     </p>
@@ -9599,7 +9173,7 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
                       class="control"
                     >
                       <button
-                        class="button"
+                        class="button is-success"
                         data-testid="searchPostSubmit"
                       >
                         Search
@@ -9614,16 +9188,15 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
                     class="field is-grouped is-grouped-multiline"
                   >
                     <div
-                      class="tags has-addons mx-2 tag-align"
+                      class="tags has-addons mx-2 tag-align show-pointer"
                     >
-                      <a
-                        class="tag is-success"
+                      <div
+                        class="tag tag is-success is-light"
                         data-testid="all"
-                        href="/glossary"
                         id="all"
                       >
                         All
-                      </a>
+                      </div>
                       <span
                         class="tag is-dark"
                       >
@@ -9631,16 +9204,15 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
                       </span>
                     </div>
                     <div
-                      class="tags has-addons mx-2 tag-align"
+                      class="tags has-addons mx-2 tag-align show-pointer"
                     >
-                      <a
+                      <div
                         class="tag is-success is-light"
                         data-testid="three"
-                        href="?tag=three"
                         id="three"
                       >
                         three
-                      </a>
+                      </div>
                       <span
                         class="tag is-dark"
                       >
@@ -9648,16 +9220,15 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
                       </span>
                     </div>
                     <div
-                      class="tags has-addons mx-2 tag-align"
+                      class="tags has-addons mx-2 tag-align show-pointer"
                     >
-                      <a
+                      <div
                         class="tag is-success is-light"
                         data-testid="two"
-                        href="?tag=two"
                         id="two"
                       >
                         two
-                      </a>
+                      </div>
                       <span
                         class="tag is-dark"
                       >
@@ -9665,16 +9236,15 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
                       </span>
                     </div>
                     <div
-                      class="tags has-addons mx-2 tag-align"
+                      class="tags has-addons mx-2 tag-align show-pointer"
                     >
-                      <a
+                      <div
                         class="tag is-success is-light"
                         data-testid="one"
-                        href="?tag=one"
                         id="one"
                       >
                         one
-                      </a>
+                      </div>
                       <span
                         class="tag is-dark"
                       >
@@ -10603,44 +10173,6 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
             <aside
               class="menu sidebar"
             >
-              <div
-                class="box"
-              >
-                <p
-                  class="menu-label"
-                >
-                  Search the glossary
-                </p>
-                <p
-                  class="menu-list control has-icons-left"
-                >
-                  <span
-                    class="icon"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      class="svg-inline--fa fa-magnifying-glass "
-                      data-icon="magnifying-glass"
-                      data-prefix="fas"
-                      focusable="false"
-                      role="img"
-                      viewBox="0 0 512 512"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"
-                        fill="currentColor"
-                      />
-                    </svg>
-                  </span>
-                  <input
-                    aria-label="blog-search"
-                    class="input is-rounded"
-                    placeholder="A word..."
-                    type="text"
-                  />
-                </p>
-              </div>
               <div
                 class="box"
               >
@@ -11225,42 +10757,6 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
             Glossary
           </a>
         </div>
-        <div
-          class="navbar-end"
-        >
-          <div
-            class="field nav-side-width"
-          >
-            <p
-              class="control has-icons-left has-icons-right"
-            >
-              <input
-                class="input is-rounded is-small"
-                placeholder="Search..."
-                type="text"
-              />
-              <span
-                class="icon is-small is-left"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="svg-inline--fa fa-magnifying-glass "
-                  data-icon="magnifying-glass"
-                  data-prefix="fas"
-                  focusable="false"
-                  role="img"
-                  viewBox="0 0 512 512"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </span>
-            </p>
-          </div>
-        </div>
       </div>
     </nav>
     <main>
@@ -11415,14 +10911,14 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
                     class="field has-addons"
                   >
                     <p
-                      class="control"
+                      class="control has-icons-right"
                     >
                       <input
                         class="input"
                         data-testid="searchPost"
                         name="searchPost"
                         placeholder="Find a post"
-                        type="text"
+                        type="search"
                         value=""
                       />
                     </p>
@@ -11430,7 +10926,7 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
                       class="control"
                     >
                       <button
-                        class="button"
+                        class="button is-success"
                         data-testid="searchPostSubmit"
                       >
                         Search
@@ -11445,16 +10941,15 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
                     class="field is-grouped is-grouped-multiline"
                   >
                     <div
-                      class="tags has-addons mx-2 tag-align"
+                      class="tags has-addons mx-2 tag-align show-pointer"
                     >
-                      <a
-                        class="tag is-success"
+                      <div
+                        class="tag tag is-success is-light"
                         data-testid="all"
-                        href="/glossary"
                         id="all"
                       >
                         All
-                      </a>
+                      </div>
                       <span
                         class="tag is-dark"
                       >
@@ -11462,16 +10957,15 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
                       </span>
                     </div>
                     <div
-                      class="tags has-addons mx-2 tag-align"
+                      class="tags has-addons mx-2 tag-align show-pointer"
                     >
-                      <a
+                      <div
                         class="tag is-success is-light"
                         data-testid="three"
-                        href="?tag=three"
                         id="three"
                       >
                         three
-                      </a>
+                      </div>
                       <span
                         class="tag is-dark"
                       >
@@ -11479,16 +10973,15 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
                       </span>
                     </div>
                     <div
-                      class="tags has-addons mx-2 tag-align"
+                      class="tags has-addons mx-2 tag-align show-pointer"
                     >
-                      <a
+                      <div
                         class="tag is-success is-light"
                         data-testid="two"
-                        href="?tag=two"
                         id="two"
                       >
                         two
-                      </a>
+                      </div>
                       <span
                         class="tag is-dark"
                       >
@@ -11496,16 +10989,15 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
                       </span>
                     </div>
                     <div
-                      class="tags has-addons mx-2 tag-align"
+                      class="tags has-addons mx-2 tag-align show-pointer"
                     >
-                      <a
+                      <div
                         class="tag is-success is-light"
                         data-testid="one"
-                        href="?tag=one"
                         id="one"
                       >
                         one
-                      </a>
+                      </div>
                       <span
                         class="tag is-dark"
                       >
@@ -12434,44 +11926,6 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
             <aside
               class="menu sidebar"
             >
-              <div
-                class="box"
-              >
-                <p
-                  class="menu-label"
-                >
-                  Search the glossary
-                </p>
-                <p
-                  class="menu-list control has-icons-left"
-                >
-                  <span
-                    class="icon"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      class="svg-inline--fa fa-magnifying-glass "
-                      data-icon="magnifying-glass"
-                      data-prefix="fas"
-                      focusable="false"
-                      role="img"
-                      viewBox="0 0 512 512"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"
-                        fill="currentColor"
-                      />
-                    </svg>
-                  </span>
-                  <input
-                    aria-label="blog-search"
-                    class="input is-rounded"
-                    placeholder="A word..."
-                    type="text"
-                  />
-                </p>
-              </div>
               <div
                 class="box"
               >
