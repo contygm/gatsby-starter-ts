@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`IndexPage header meta data renders correctly 1`] = `
+exports[`HomePage header meta data renders correctly 1`] = `
 <DocumentFragment>
   <title>
-    Home
+    Starter
   </title>
   <meta
     content="a super duper site!"
@@ -20,7 +20,7 @@ exports[`IndexPage header meta data renders correctly 1`] = `
 </DocumentFragment>
 `;
 
-exports[`IndexPage renders correctly 1`] = `
+exports[`HomePage renders correctly 1`] = `
 <DocumentFragment>
   <div
     id="app-container"
@@ -73,7 +73,7 @@ exports[`IndexPage renders correctly 1`] = `
           <a
             class="navbar-item"
             data-cy="nav-link-home"
-            href="/404"
+            href="/"
           >
             Home
           </a>
@@ -138,55 +138,1076 @@ exports[`IndexPage renders correctly 1`] = `
       </div>
     </nav>
     <main>
+      <section
+        class="hero is-dark is-fullheight "
+      >
+        <div
+          class="hero-head"
+        >
+          <div
+            class="container has-text-centered section has-text-white"
+          >
+            <p
+              class="title home-title"
+            >
+              Welcome!
+            </p>
+            <p
+              class="subtitle is-size-2"
+            >
+              A subtitle describing the site
+            </p>
+          </div>
+        </div>
+        <div
+          class="hero-body"
+        >
+          <div
+            class="container"
+          >
+            <div
+              class="columns is-vcentered is-multiline"
+            >
+              <div
+                class="column is-9-desktop is-full-tablet"
+              >
+                <div
+                  class="card is-radiusless footer-logo"
+                >
+                  <div
+                    class="card-image"
+                  >
+                    <figure
+                      class="image is-3by2"
+                    >
+                      <img
+                        src="https://bulma.io/images/placeholders/128x128.png"
+                      />
+                    </figure>
+                  </div>
+                  <div
+                    class="card-content is-overlay home-header-tile-overlay"
+                  >
+                    <div
+                      class="content"
+                    >
+                      <p
+                        class="title is-size-3 has-text-black"
+                      >
+                        Baking Tutorial
+                      </p>
+                      <p
+                        class="subtitle is-size-6 has-text-black"
+                      >
+                        <time
+                          datetime="3-2-2021"
+                        >
+                          3-2-2021
+                        </time>
+                      </p>
+                      <p
+                        class="is-size-5"
+                      >
+                        a baking tutorial
+                      </p>
+                      <a
+                        href="/blog/baking-tutorial/"
+                      >
+                        Read more...
+                      </a>
+                    </div>
+                  </div>
+                  <div
+                    class="card-content is-overlay"
+                  >
+                    <span
+                      class="tag is-link is-large"
+                    >
+                      FEATURED
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="column is-3-desktop is-full-tablet"
+              >
+                <div
+                  class=""
+                >
+                  <a
+                    href="/wiki/ten-best-things/"
+                  >
+                    <div
+                      class="card footer-logo is-radiusless mb-5"
+                    >
+                      <div
+                        class="card-image "
+                      >
+                        <figure
+                          class="image is-5by3 "
+                        >
+                          <img
+                            src="https://bulma.io/images/placeholders/128x128.png"
+                          />
+                        </figure>
+                      </div>
+                      <div
+                        class="card-content is-overlay home-header-tile-overlay"
+                      >
+                        <div
+                          class="content"
+                        >
+                          <p
+                            class="title is-size-5 has-text-black"
+                          >
+                            10 Best Things
+                          </p>
+                          <p
+                            class="subtitle is-size-6 has-text-black"
+                          >
+                            <time
+                              datetime="2-2-2021"
+                            >
+                              2-2-2021
+                            </time>
+                          </p>
+                        </div>
+                      </div>
+                      <div
+                        class="card-content is-overlay"
+                      >
+                        <span
+                          class="tag is-link"
+                        >
+                          FEATURED
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                  <a
+                    href="/blog/guide/"
+                  >
+                    <div
+                      class="card footer-logo is-radiusless mb-0"
+                    >
+                      <div
+                        class="card-image "
+                      >
+                        <figure
+                          class="image is-5by3 "
+                        >
+                          <img
+                            src="https://bulma.io/images/placeholders/128x128.png"
+                          />
+                        </figure>
+                      </div>
+                      <div
+                        class="card-content is-overlay home-header-tile-overlay"
+                      >
+                        <div
+                          class="content"
+                        >
+                          <p
+                            class="title is-size-5 has-text-black"
+                          >
+                            Guide
+                          </p>
+                          <p
+                            class="subtitle is-size-6 has-text-black"
+                          >
+                            <time
+                              datetime="5-2-2021"
+                            >
+                              5-2-2021
+                            </time>
+                          </p>
+                        </div>
+                      </div>
+                      <div
+                        class="card-content is-overlay"
+                      >
+                        <span
+                          class="tag is-link"
+                        >
+                          FEATURED
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <div
-        class="content"
+        class="container"
       >
         <section
-          class="section pb-2"
+          class="section"
         >
-          <h1
-            class="title is-1"
+          <div
+            class="level"
           >
-            You're Home!
-          </h1>
+            <div
+              class="level-left"
+            >
+              <h2
+                class="title"
+              >
+                Blog Posts
+              </h2>
+            </div>
+          </div>
+          <div
+            class="columns is-multiline"
+          >
+            <div
+              class="column is-half"
+            >
+              <div
+                class="box home-blog-tile"
+              >
+                <div
+                  class="media p-2 m-2"
+                >
+                  <figure
+                    class="media-left my-auto"
+                  >
+                    <p
+                      class="image is-128x128"
+                    >
+                      <img
+                        src="https://bulma.io/images/placeholders/128x128.png"
+                      />
+                    </p>
+                  </figure>
+                  <div
+                    class="media-content m-auto"
+                  >
+                    <div
+                      class="content"
+                    >
+                      <p
+                        class="title is-4"
+                      >
+                        Baking Tutorial
+                      </p>
+                      <p
+                        class="subtitle is-6"
+                      >
+                        <time
+                          datetime="3-2-2021"
+                        >
+                          3-2-2021
+                        </time>
+                      </p>
+                      <p>
+                        a baking tutorial
+                      </p>
+                      <a
+                        href="/blog/baking-tutorial/"
+                      >
+                        Read more...
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="column is-half"
+            >
+              <div
+                class="box home-blog-tile"
+              >
+                <div
+                  class="media p-2 m-2"
+                >
+                  <figure
+                    class="media-left my-auto"
+                  >
+                    <p
+                      class="image is-128x128"
+                    >
+                      <img
+                        src="https://bulma.io/images/placeholders/128x128.png"
+                      />
+                    </p>
+                  </figure>
+                  <div
+                    class="media-content m-auto"
+                  >
+                    <div
+                      class="content"
+                    >
+                      <p
+                        class="title is-4"
+                      >
+                        10 Best Things
+                      </p>
+                      <p
+                        class="subtitle is-6"
+                      >
+                        <time
+                          datetime="2-2-2021"
+                        >
+                          2-2-2021
+                        </time>
+                      </p>
+                      <p>
+                        a list of the ten best things
+                      </p>
+                      <a
+                        href="/blog/ten-best-things/"
+                      >
+                        Read more...
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="column is-half"
+            >
+              <div
+                class="box home-blog-tile"
+              >
+                <div
+                  class="media p-2 m-2"
+                >
+                  <figure
+                    class="media-left my-auto"
+                  >
+                    <p
+                      class="image is-128x128"
+                    >
+                      <img
+                        src="https://bulma.io/images/placeholders/128x128.png"
+                      />
+                    </p>
+                  </figure>
+                  <div
+                    class="media-content m-auto"
+                  >
+                    <div
+                      class="content"
+                    >
+                      <p
+                        class="title is-4"
+                      >
+                        Guide
+                      </p>
+                      <p
+                        class="subtitle is-6"
+                      >
+                        <time
+                          datetime="5-2-2021"
+                        >
+                          5-2-2021
+                        </time>
+                      </p>
+                      <p>
+                        a guide
+                      </p>
+                      <a
+                        href="/blog/guide/"
+                      >
+                        Read more...
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
         <section
-          class="section pt-2"
+          class="section"
         >
-          <img
-            alt="Logo"
-            layout="constrained"
-            placeholder="blurred"
-            src="../images/xlarge.png"
-          />
-          <p>
-            Ice cream danish cookie muffin soufflé lollipop. Bonbon sweet roll topping candy canes halvah pastry jelly-o. Candy canes candy chocolate bar shortbread gummi bears muffin cake bear claw icing.
-          </p>
-          <p>
-            Candy canes chocolate cake caramels bonbon sesame snaps soufflé gummi bears powder chupa chups. Tiramisu oat cake shortbread tootsie roll candy gingerbread. Carrot cake halvah soufflé pudding macaroon marshmallow marzipan carrot cake bonbon.
-          </p>
-          <h2
-            class="title is-2"
+          <div
+            class="level"
           >
-            Second Heading
-          </h2>
-          <p>
-            Chocolate cake cotton candy chupa chups marzipan topping. Caramels bonbon bonbon lollipop jujubes cupcake cookie. Cookie tiramisu cake pie pudding chocolate cake dessert carrot cake.
-          </p>
-          <p>
-            Brownie sweet roll chupa chups cotton candy marshmallow pudding wafer. Donut macaroon danish topping pastry brownie carrot cake. Pudding chocolate tootsie roll bear claw toffee toffee bear claw. Biscuit tootsie roll sweet roll caramels gingerbread toffee.
-          </p>
-          <h3
-            class="title is-3"
+            <div
+              class="level-left"
+            >
+              <h2
+                class="title"
+              >
+                Wiki Posts
+              </h2>
+            </div>
+          </div>
+          <div
+            class="columns is-multiline is-centered"
           >
-            Third Heading
-          </h3>
-          <p>
-            Chocolate cake cotton candy chupa chups marzipan topping. Caramels bonbon bonbon lollipop jujubes cupcake cookie. Cookie tiramisu cake pie pudding chocolate cake dessert carrot cake.
-          </p>
-          <p>
-            Brownie sweet roll chupa chups cotton candy marshmallow pudding wafer. Donut macaroon danish topping pastry brownie carrot cake. Pudding chocolate tootsie roll bear claw toffee toffee bear claw. Biscuit tootsie roll sweet roll caramels gingerbread toffee.
-          </p>
+            <div
+              class="column is-3"
+            >
+              <div
+                class="card"
+              >
+                <div
+                  class="card-image"
+                >
+                  <figure
+                    class="image "
+                  >
+                    <p
+                      class="is-128x128"
+                    >
+                      <img
+                        src="https://bulma.io/images/placeholders/128x128.png"
+                      />
+                    </p>
+                  </figure>
+                </div>
+                <div
+                  class="card-content"
+                >
+                  <div
+                    class="content"
+                  >
+                    <p
+                      class="title is-4"
+                    >
+                      Baking Tutorial
+                    </p>
+                    <p
+                      class="subtitle is-6"
+                    >
+                      <time
+                        datetime="3-2-2021"
+                      >
+                        3-2-2021
+                      </time>
+                    </p>
+                    <p>
+                      a baking tutorial
+                    </p>
+                    <a
+                      href="/wiki/baking-tutorial/"
+                    >
+                      Read more...
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="column is-3"
+            >
+              <div
+                class="card"
+              >
+                <div
+                  class="card-image"
+                >
+                  <figure
+                    class="image "
+                  >
+                    <p
+                      class="is-128x128"
+                    >
+                      <img
+                        src="https://bulma.io/images/placeholders/128x128.png"
+                      />
+                    </p>
+                  </figure>
+                </div>
+                <div
+                  class="card-content"
+                >
+                  <div
+                    class="content"
+                  >
+                    <p
+                      class="title is-4"
+                    >
+                      10 Best Things
+                    </p>
+                    <p
+                      class="subtitle is-6"
+                    >
+                      <time
+                        datetime="2-2-2021"
+                      >
+                        2-2-2021
+                      </time>
+                    </p>
+                    <p>
+                      a list of the ten best things
+                    </p>
+                    <a
+                      href="/wiki/ten-best-things/"
+                    >
+                      Read more...
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="column is-3"
+            >
+              <div
+                class="card"
+              >
+                <div
+                  class="card-image"
+                >
+                  <figure
+                    class="image "
+                  >
+                    <p
+                      class="is-128x128"
+                    >
+                      <img
+                        src="https://bulma.io/images/placeholders/128x128.png"
+                      />
+                    </p>
+                  </figure>
+                </div>
+                <div
+                  class="card-content"
+                >
+                  <div
+                    class="content"
+                  >
+                    <p
+                      class="title is-4"
+                    >
+                      Guide
+                    </p>
+                    <p
+                      class="subtitle is-6"
+                    >
+                      <time
+                        datetime="5-2-2021"
+                      >
+                        5-2-2021
+                      </time>
+                    </p>
+                    <p>
+                      a guide
+                    </p>
+                    <a
+                      href="/wiki/guide/"
+                    >
+                      Read more...
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="section"
+        >
+          <div
+            class="level"
+          >
+            <div
+              class="level-left"
+            >
+              <h2
+                class="title"
+              >
+                Glossary Posts
+              </h2>
+            </div>
+          </div>
+          <div
+            class="columns is-multiline"
+          >
+            <div
+              class="column is-half"
+            >
+              <div
+                class="card mb-5"
+              >
+                <div
+                  class="card-content"
+                >
+                  <div
+                    class="media"
+                  >
+                    <div
+                      class="media-content"
+                    >
+                      <div
+                        class="level"
+                      >
+                        <div
+                          class="level-left"
+                        >
+                          <div
+                            class="level-item"
+                          >
+                            <h3
+                              class="title is-3"
+                              id="air"
+                            >
+                              Air
+                            </h3>
+                          </div>
+                        </div>
+                        <div
+                          class="level-right"
+                        >
+                          <div
+                            class="level-item has-text-centered"
+                          >
+                            <div>
+                              <p
+                                class="heading"
+                              >
+                                Syllables
+                              </p>
+                              <p
+                                class="subheading"
+                              >
+                                a·ban·don
+                              </p>
+                            </div>
+                          </div>
+                          <div
+                            class="level-item has-text-centered"
+                          >
+                            <div>
+                              <p
+                                class="heading"
+                              >
+                                Phonetics
+                              </p>
+                              <p
+                                class="subheading"
+                              >
+                                əˈbandən
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="content"
+                  >
+                    <div
+                      class="container"
+                    >
+                      <h3>
+                        Definition
+                      </h3>
+                      <p>
+                        Lemon drops pastry danish halvah. Lemon drops pastry danish halvah.
+                      </p>
+                    </div>
+                    <div
+                      class="has-text-centered"
+                    >
+                      <a
+                        href="/glossary#Air"
+                      >
+                        Read more...
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="column is-half"
+            >
+              <div
+                class="card mb-5"
+              >
+                <div
+                  class="card-content"
+                >
+                  <div
+                    class="media"
+                  >
+                    <div
+                      class="media-content"
+                    >
+                      <div
+                        class="level"
+                      >
+                        <div
+                          class="level-left"
+                        >
+                          <div
+                            class="level-item"
+                          >
+                            <h3
+                              class="title is-3"
+                              id="atom"
+                            >
+                              Atom
+                            </h3>
+                          </div>
+                        </div>
+                        <div
+                          class="level-right"
+                        >
+                          <div
+                            class="level-item has-text-centered"
+                          >
+                            <div>
+                              <p
+                                class="heading"
+                              >
+                                Syllables
+                              </p>
+                              <p
+                                class="subheading"
+                              >
+                                a·ban·don
+                              </p>
+                            </div>
+                          </div>
+                          <div
+                            class="level-item has-text-centered"
+                          >
+                            <div>
+                              <p
+                                class="heading"
+                              >
+                                Phonetics
+                              </p>
+                              <p
+                                class="subheading"
+                              >
+                                əˈbandən
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="content"
+                  >
+                    <div
+                      class="container"
+                    >
+                      <h3>
+                        Definition
+                      </h3>
+                      <p>
+                        Lemon drops pastry danish halvah. Lemon drops pastry danish halvah.
+                      </p>
+                    </div>
+                    <div
+                      class="has-text-centered"
+                    >
+                      <a
+                        href="/glossary#Atom"
+                      >
+                        Read more...
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="column is-half"
+            >
+              <div
+                class="card mb-5"
+              >
+                <div
+                  class="card-content"
+                >
+                  <div
+                    class="media"
+                  >
+                    <div
+                      class="media-content"
+                    >
+                      <div
+                        class="level"
+                      >
+                        <div
+                          class="level-left"
+                        >
+                          <div
+                            class="level-item"
+                          >
+                            <h3
+                              class="title is-3"
+                              id="cloud"
+                            >
+                              Cloud
+                            </h3>
+                          </div>
+                        </div>
+                        <div
+                          class="level-right"
+                        >
+                          <div
+                            class="level-item has-text-centered"
+                          >
+                            <div>
+                              <p
+                                class="heading"
+                              >
+                                Syllables
+                              </p>
+                              <p
+                                class="subheading"
+                              >
+                                a·ban·don
+                              </p>
+                            </div>
+                          </div>
+                          <div
+                            class="level-item has-text-centered"
+                          >
+                            <div>
+                              <p
+                                class="heading"
+                              >
+                                Phonetics
+                              </p>
+                              <p
+                                class="subheading"
+                              >
+                                əˈbandən
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="content"
+                  >
+                    <div
+                      class="container"
+                    >
+                      <h3>
+                        Definition
+                      </h3>
+                      <p>
+                        Lemon drops pastry danish halvah. Lemon drops pastry danish halvah.
+                      </p>
+                    </div>
+                    <div
+                      class="has-text-centered"
+                    >
+                      <a
+                        href="/glossary#Cloud"
+                      >
+                        Read more...
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="column is-half"
+            >
+              <div
+                class="card mb-5"
+              >
+                <div
+                  class="card-content"
+                >
+                  <div
+                    class="media"
+                  >
+                    <div
+                      class="media-content"
+                    >
+                      <div
+                        class="level"
+                      >
+                        <div
+                          class="level-left"
+                        >
+                          <div
+                            class="level-item"
+                          >
+                            <h3
+                              class="title is-3"
+                              id="moon"
+                            >
+                              Moon
+                            </h3>
+                          </div>
+                        </div>
+                        <div
+                          class="level-right"
+                        >
+                          <div
+                            class="level-item has-text-centered"
+                          >
+                            <div>
+                              <p
+                                class="heading"
+                              >
+                                Syllables
+                              </p>
+                              <p
+                                class="subheading"
+                              >
+                                a·ban·don
+                              </p>
+                            </div>
+                          </div>
+                          <div
+                            class="level-item has-text-centered"
+                          >
+                            <div>
+                              <p
+                                class="heading"
+                              >
+                                Phonetics
+                              </p>
+                              <p
+                                class="subheading"
+                              >
+                                əˈbandən
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="content"
+                  >
+                    <div
+                      class="container"
+                    >
+                      <h3>
+                        Definition
+                      </h3>
+                      <p>
+                        Lemon drops pastry danish halvah. Lemon drops pastry danish halvah.
+                      </p>
+                    </div>
+                    <div
+                      class="has-text-centered"
+                    >
+                      <a
+                        href="/glossary#Moon"
+                      >
+                        Read more...
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="column is-half"
+            >
+              <div
+                class="card mb-5"
+              >
+                <div
+                  class="card-content"
+                >
+                  <div
+                    class="media"
+                  >
+                    <div
+                      class="media-content"
+                    >
+                      <div
+                        class="level"
+                      >
+                        <div
+                          class="level-left"
+                        >
+                          <div
+                            class="level-item"
+                          >
+                            <h3
+                              class="title is-3"
+                              id="window"
+                            >
+                              Window
+                            </h3>
+                          </div>
+                        </div>
+                        <div
+                          class="level-right"
+                        >
+                          <div
+                            class="level-item has-text-centered"
+                          >
+                            <div>
+                              <p
+                                class="heading"
+                              >
+                                Syllables
+                              </p>
+                              <p
+                                class="subheading"
+                              >
+                                a·ban·don
+                              </p>
+                            </div>
+                          </div>
+                          <div
+                            class="level-item has-text-centered"
+                          >
+                            <div>
+                              <p
+                                class="heading"
+                              >
+                                Phonetics
+                              </p>
+                              <p
+                                class="subheading"
+                              >
+                                əˈbandən
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="content"
+                  >
+                    <div
+                      class="container"
+                    >
+                      <h3>
+                        Definition
+                      </h3>
+                      <p>
+                        Lemon drops pastry danish halvah. Lemon drops pastry danish halvah.
+                      </p>
+                    </div>
+                    <div
+                      class="has-text-centered"
+                    >
+                      <a
+                        href="/glossary#Window"
+                      >
+                        Read more...
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
     </main>

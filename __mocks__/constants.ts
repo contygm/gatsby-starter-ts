@@ -105,6 +105,7 @@ const featuredOrRelatedPosts: Array<IndexElements> = [
         frontmatter: {
             title: 'Baking Tutorial',
             date: '3-2-2021',
+            type: 'blog',
             description: 'a baking tutorial',
             tags: ['two', 'three'],
             headerImage: {
@@ -124,6 +125,7 @@ const featuredOrRelatedPosts: Array<IndexElements> = [
             title: '10 Best Things',
             description: 'a list of the ten best things',
             tags: ['one', 'two', 'three'],
+            type: 'wiki',
             date: '2-2-2021',
             headerImage: {
                 childImageSharp: {
@@ -141,6 +143,7 @@ const featuredOrRelatedPosts: Array<IndexElements> = [
             title: 'Guide',
             description: 'a guide',
             tags: ['one', 'two'],
+            type: 'blog',
             date: '5-2-2021',
             headerImage: {
                 childImageSharp: {

@@ -73,7 +73,7 @@ exports[`About renders correctly 1`] = `
           <a
             class="navbar-item"
             data-cy="nav-link-home"
-            href="/404"
+            href="/"
           >
             Home
           </a>

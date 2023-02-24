@@ -53,7 +53,7 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
           <a
             class="navbar-item"
             data-cy="nav-link-home"
-            href="/404"
+            href="/"
           >
             Home
           </a>
@@ -1884,7 +1884,7 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
           <a
             class="navbar-item"
             data-cy="nav-link-home"
-            href="/404"
+            href="/"
           >
             Home
           </a>
@@ -3715,7 +3715,7 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
           <a
             class="navbar-item"
             data-cy="nav-link-home"
-            href="/404"
+            href="/"
           >
             Home
           </a>
@@ -5546,7 +5546,7 @@ exports[`Glossary Page filters correctly 1`] = `
           <a
             class="navbar-item"
             data-cy="nav-link-home"
-            href="/404"
+            href="/"
           >
             Home
           </a>
@@ -7467,7 +7467,7 @@ exports[`Glossary Page renders correctly 1`] = `
           <a
             class="navbar-item"
             data-cy="nav-link-home"
-            href="/404"
+            href="/"
           >
             Home
           </a>
@@ -9368,7 +9368,7 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
           <a
             class="navbar-item"
             data-cy="nav-link-home"
-            href="/404"
+            href="/"
           >
             Home
           </a>
@@ -11199,7 +11199,7 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
           <a
             class="navbar-item"
             data-cy="nav-link-home"
-            href="/404"
+            href="/"
           >
             Home
           </a>
