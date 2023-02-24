@@ -38,9 +38,9 @@ export const SearchFilterRow = (props: {
                             className="field has-addons"
                             onSubmit={props.handleSubmitSearch}
                         >
-                            <p className="control has-icons-right is-100-wide">
+                            <p className="control has-icons-right">
                                 <input
-                                    className="input is-100-wide"
+                                    className="input"
                                     name="searchPost"
                                     data-testid="searchPost"
                                     type="search"
@@ -63,9 +63,9 @@ export const SearchFilterRow = (props: {
                                 }
                                  
                             </p>
-                            <p className="control is-100-wide">
+                            <p className="control">
                                 <button
-                                    className="button is-60-wide is-success"
+                                    className="button is-success"
                                     data-testid="searchPostSubmit"
                                     disabled={props.activeTag !== '' && props.activeTag !== 'all'}
                                 >

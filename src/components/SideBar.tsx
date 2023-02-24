@@ -11,7 +11,8 @@ export interface SideBarProps {
 }
 
 export const SideBar = ({ featured, related, type }: SideBarProps) => {
-    const searchPlaceholder = type === 'glossary' ? 'A word...' : 'Title...';
+    // TODO: working search requires queries, tabling for now
+    // const searchPlaceholder = type === 'glossary' ? 'A word...' : 'Title...';
     const firstSectionTitle =
         type === 'glossary' ? 'Featured Blog Posts' : 'Related posts';
     const firstSectionSlugPrefix = type === 'glossary' ? '/blog' : `/${type}`;
@@ -21,7 +22,7 @@ export const SideBar = ({ featured, related, type }: SideBarProps) => {
 
     return (
         <aside className="menu sidebar">
-            <div className="box">
+            {/* <div className="box">
                 <p className="menu-label">{`Search the ${type}`}</p>
                 <p className="menu-list control has-icons-left">
                     <span className="icon">
@@ -34,7 +35,7 @@ export const SideBar = ({ featured, related, type }: SideBarProps) => {
                         aria-label="blog-search"
                     />
                 </p>
-            </div>
+            </div> */}
             {related && related.length > 0 && (
                 <div className="box">
                     <p className="menu-label">{firstSectionTitle}</p>

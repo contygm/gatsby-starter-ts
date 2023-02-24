@@ -91,8 +91,9 @@ export const NavBar = () => {
                         Glossary
                     </Link>
                 </div>
-                {/* Search bar */}
-                <div className="navbar-end">
+                {/* TODO: requires using a search query set up */}
+                {/*  Search bar */}
+                {/* <div className="navbar-end">
                     <div className="field nav-side-width">
                         <p className="control has-icons-left has-icons-right">
                             <input
@@ -105,7 +106,7 @@ export const NavBar = () => {
                             </span>
                         </p>
                     </div>
-                </div>
+                </div> */}
             </div>
         </nav>
     );
