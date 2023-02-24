@@ -53,7 +53,7 @@ This paragraph has some `code` in it.
 -   Blue
 -   `code goes` here in this line
 -   **bold** goes here
--   __italics__ go here
+-   **italics** go here
 
 ```markdown
 -   Red
@@ -66,7 +66,7 @@ This paragraph has some `code` in it.
 
 -   `code goes` here in this line
 -   **bold** goes here
--   __italics__ go here
+-   **italics** go here
 ```
 
 1. Buy flour and salt
@@ -84,6 +84,7 @@ This paragraph has some `code` in it.
 ```
 
 ## Line
+
 ---
 
     * * *

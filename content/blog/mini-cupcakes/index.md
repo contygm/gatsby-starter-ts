@@ -1,5 +1,5 @@
 ---
-title: Cupcakes Are Just Small Cakes
+title: Mini Cupcakes Are Super Small Cakes
 date: '2022-12-02T22:12:03.284Z'
 description: Macaroon dessert chocolate bar sugar plum candy canes wafer tart carrot cake chocolate. Liquorice croissant macaroon chupa
 type: blog
@@ -67,19 +67,19 @@ doF();
 
 Bonbon marshmallow apple pie brownie pudding tootsie roll pastry dessert dragée. Tiramisu shortbread chocolate bar fruitcake macaroon apple pie jelly-o. Jelly-o donut cotton candy tootsie roll cupcake icing sesame snaps. Topping cupcake gingerbread lollipop caramels gummi bears.
 
->Powder danish candy muffin fruitcake. Cookie chocolate apple pie candy croissant donut. Tiramisu sweet chocolate bar fruitcake jujubes. Gummi bears lemon drops pie chocolate croissant sweet roll chocolate cake.
+> Powder danish candy muffin fruitcake. Cookie chocolate apple pie candy croissant donut. Tiramisu sweet chocolate bar fruitcake jujubes. Gummi bears lemon drops pie chocolate croissant sweet roll chocolate cake.
 
 Icing sesame snaps lollipop wafer macaroon. Caramels topping tiramisu pie chupa chups cake chupa chups. Oat cake candy carrot cake tiramisu dessert. Marzipan chocolate tiramisu shortbread cake croissant croissant cupcake.
 
-### Chupa chups carrot cake 
+### Chupa chups carrot cake
 
 Chupa chups carrot cake cheesecake marzipan fruitcake sweet. Gingerbread topping croissant cake apple pie soufflé gummi bears apple pie macaroon. Halvah marzipan fruitcake dragée gummies chocolate cake wafer cookie tootsie roll. Shortbread cotton candy gummies jelly beans chocolate cake halvah toffee bonbon.
 
-1. Macaroon gingerbread icing soufflé jelly-o gummies. 
-2. Chocolate cake chupa chups cake tiramisu brownie. 
+1. Macaroon gingerbread icing soufflé jelly-o gummies.
+2. Chocolate cake chupa chups cake tiramisu brownie.
 3. Tiramisu marzipan marzipan cupcake bonbon bonbon pastry.
-4. Lollipop candy canes cheesecake shortbread pastry. 
-5. Sugar plum cake soufflé tiramisu soufflé icing caramels. 
+4. Lollipop candy canes cheesecake shortbread pastry.
+5. Sugar plum cake soufflé tiramisu soufflé icing caramels.
 
 Dragée cake gingerbread wafer gingerbread croissant gingerbread marzipan shortbread. Chocolate cupcake tart sugar plum sweet cake pie croissant. Candy canes halvah danish soufflé carrot cake cake croissant.
 
@@ -107,18 +107,18 @@ Chocolate bar biscuit jujubes bear claw jelly fruitcake bear claw. Sweet gummies
 
 Cake sweet jujubes sweet roll pastry chocolate cake bear claw shortbread. Jelly beans powder chocolate gummies danish. Bear claw topping pastry gummies tiramisu cookie tiramisu chupa chups. Icing soufflé cookie sugar plum chupa chups icing sugar plum cupcake gingerbread.
 
-- Marshmallow candy canes cookie 
-    - jelly bear claw pastry. 
-    - Danish bonbon fruitcake toffee dessert. 
-- Halvah tart chocolate cake liquorice 
-    - biscuit sesame snaps 
-    - tart fruitcake liquorice.
-    - cotton candy jelly.
-- Sweet halvah wafer candy canes 
-    - candy canes muffin candy cake. 
-    - Cookie tootsie roll jelly cheesecake 
-    - tart macaroon danish marshmallow. 
-    - Biscuit jelly beans marzipan 
+-   Marshmallow candy canes cookie
+    -   jelly bear claw pastry.
+    -   Danish bonbon fruitcake toffee dessert.
+-   Halvah tart chocolate cake liquorice
+    -   biscuit sesame snaps
+    -   tart fruitcake liquorice.
+    -   cotton candy jelly.
+-   Sweet halvah wafer candy canes
+    -   candy canes muffin candy cake.
+    -   Cookie tootsie roll jelly cheesecake
+    -   tart macaroon danish marshmallow.
+    -   Biscuit jelly beans marzipan
 
 ### Brownie carrot cake
 

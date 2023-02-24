@@ -1,5 +1,5 @@
 ---
-title: Code Tutorial For People Who Code Things  
+title: Code Tutorial For People Who Code Things
 date: 2022-02-02T22:12:03.284Z
 description: See all of the code ditor variations and how to use them.
 featured: true
@@ -21,7 +21,7 @@ Cookie gummies cheesecake gingerbread bear claw cupcake. Chocolate cake marzipan
 
 Here is a showcase of the code editor options.
 
-### Default Editor 
+### Default Editor
 
 The default editor has no line numbers or highlights.
 
@@ -58,12 +58,12 @@ doF();
 ```
 
 ### Show Line Numbers
-You can highlight one line or a block. 
+
+You can highlight one line or a block.
 
     ```js{numberLines: true}
         // insert code
     ```
-
 
 ```js{numberLines: true}
 doA(function () {
@@ -77,7 +77,8 @@ doF();
 ```
 
 ### Highlight lines
-You can highlight one line or a block. 
+
+You can highlight one line or a block.
 
     ```js{2,5-7}
         // insert code
@@ -115,7 +116,7 @@ doA(function () {
 doF();
 ```
 
-Longer lines will trigger a horizontal scroll. No options need to be modified. 
+Longer lines will trigger a horizontal scroll. No options need to be modified.
 
 ```js{2,5-7}
 function doA(cb) {
@@ -151,7 +152,7 @@ doF();
 
 ### Highlight lines and Show Line Numbers
 
-You can highlight one line or a block. 
+You can highlight one line or a block.
 
     ```js{2,5-7}{numberLines: true}
     // insert code
@@ -168,7 +169,7 @@ doA(function () {
 doF();
 ```
 
-Longer lines will trigger a horizontal scroll. No options need to be modified. 
+Longer lines will trigger a horizontal scroll. No options need to be modified.
 
 ```js{2,5-7}{numberLines: true}
 function doA(cb) {
@@ -201,7 +202,6 @@ doA(function () {
 });
 doF();
 ```
-
 
 </details>
 

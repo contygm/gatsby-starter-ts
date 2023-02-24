@@ -1,7 +1,7 @@
 ---
 featured: false
 type: blog
-title: Check Out All the Theme Styles
+title: Another Theme Styles
 date: 2015-05-01T22:12:03.284Z
 description: 'This one shows you all the markdown possibilities'
 tags:
@@ -53,7 +53,7 @@ This paragraph has some `code` in it.
 -   Blue
 -   `code goes` here in this line
 -   **bold** goes here
--   __italics__ go here
+-   **italics** go here
 
 ```markdown
 -   Red
@@ -66,7 +66,7 @@ This paragraph has some `code` in it.
 
 -   `code goes` here in this line
 -   **bold** goes here
--   __italics__ go here
+-   **italics** go here
 ```
 
 1. Buy flour and salt
@@ -84,6 +84,7 @@ This paragraph has some `code` in it.
 ```
 
 ## Line
+
 ---
 
     * * *

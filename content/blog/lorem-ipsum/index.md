@@ -1,5 +1,5 @@
 ---
-title: A Standard Lorem Ipsum Blog 
+title: A Standard Lorem Ipsum Blog
 date: '2015-05-28T22:40:32.169Z'
 type: blog
 description: Lorem ipsum dolor sit amet, alii facilisis argumentum est an, elitr sententiae mea ex, cum ex antiopam sapientem. Vix facer.
@@ -15,11 +15,11 @@ related:
     - /farm-animals/
 ---
 
-[Check out Lorem ipsum!](https://generator.lorem-ipsum.info/https://generator.lorem-ipsum.info/) Lorem ipsum dolor sit amet, alii facilisis argumentum est an, elitr sententiae mea ex, cum ex antiopam sapientem. Vix facer doming disputando ne, ei noluisse corrumpit has, et his harum aeterno mediocrem. 
+[Check out Lorem ipsum!](https://generator.lorem-ipsum.info/https://generator.lorem-ipsum.info/) Lorem ipsum dolor sit amet, alii facilisis argumentum est an, elitr sententiae mea ex, cum ex antiopam sapientem. Vix facer doming disputando ne, ei noluisse corrumpit has, et his harum aeterno mediocrem.
 
 Cum noster feugait recteque ea, ei his debet zril deleniti. Et has soluta mucius detraxit, eruditi consequat at sea. Aliquam inermis comprehensam ex per, cum cu eruditi principes, cu agam dicunt nominavi eum. Tota molestie in eos.
 
-Tritani oblique ne usu, eu everti qualisque forensibus vix. Per ut praesent consulatu, sapientem pertinacia te vel. Ea ridens qualisque iudicabit sea, ne alia veri est, pro ignota aperiam id. 
+Tritani oblique ne usu, eu everti qualisque forensibus vix. Per ut praesent consulatu, sapientem pertinacia te vel. Ea ridens qualisque iudicabit sea, ne alia veri est, pro ignota aperiam id.
 
 Qui odio mutat ei, ut elitr tollit dissentias sit, quis meis quidam ad pro. Eu mea nominavi indoctum electram, id sed natum disputationi, ne nonumy quaeque delicatissimi ius.
 
