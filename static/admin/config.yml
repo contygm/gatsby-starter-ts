@@ -1,8 +1,9 @@
 backend:
-  name: test-repo
-  branch: main
+  name: github
+  repo: contygm/gatsby-starter-ts
+  branch: content
 media_folder: static/assets
-ppublic_folder: /images
+public_folder: /images
 # publish_mode: editorial_workflow
 collections:
   - name: blog
@@ -16,7 +17,6 @@ collections:
     editor:
       preview: true
     fields:
-      # - { name: path, label: Path }
       - { name: type, label: Type, widget: hidden, default: blog}
       - { name: title, label: Title, widget: string }
       - { name: date, label: Date, widget: datetime }
@@ -30,7 +30,7 @@ collections:
           widget: list,
           fields:
           [
-            { label: Title, name: title, widget: string },
+            { label: Slug, name: slug, widget: string },
           ],
         }
       - { name: body, label: Body, widget: markdown }
@@ -43,13 +43,21 @@ collections:
     editor:
       preview: true
     fields:
-      # - { name: path, label: Path }
       - { name: type, label: Type, widget: hidden, default: wiki}
       - { name: title, label: Title, widget: string }
       - { name: date, label: Date, widget: datetime }
       - { name: description, label: Description,  widget: text}
       - { name: thumbnail, label: Thumbnail,  widget: image}
       - { name: featured, label: Featured, widget: boolean, default: false  }
+      - {
+          name: related,
+          label: Related-Blogs,
+          widget: list,
+          fields:
+          [
+            { label: Slug, name: slug, widget: string },
+          ],
+        }
       - { name: tags, label: Tags, widget: list } # TODO: pull from wiki tags, make list
       - {
           label: Summary,
@@ -60,5 +68,41 @@ collections:
               { label: Field, name: field, widget: string },
               { label: Value, name: value, widget: string },
             ],
+        }
+      - { name: body, label: Body, widget: markdown }
+  - name: glossary
+    label: Glossary
+    folder: 'content/glossary'
+    create: true
+    slug: 'index'
+    path: '{{title}}/index'
+    editor:
+      preview: true
+    fields:
+      - { name: type, label: Type, widget: hidden, default: wiki}
+      - { name: title, label: Title, widget: string }
+      - { name: date, label: Date, widget: datetime }
+      - { name: syllables, label: Syllables, widget: string }
+      - { name: phonetics, label: Phonetics, widget: string }
+      - { name: featured, label: Featured, widget: boolean, default: false  }
+      - {
+          name: relatedPosts,
+          label: Related-Blogs,
+          widget: list,
+          fields:
+          [
+            { label: Title, name: title, widget: string },
+            { label: Slug, name: slug, widget: string },
+          ],
+        }
+      - { name: similarWords, label: Similar Words, widget: list }
+      - { name: tags, label: Tags, widget: list } 
+      - { 
+          name: letter, 
+          label: Letter, 
+          widget: select, 
+          multiple: false, 
+          default: [], 
+          options: [ "#!@", "0-9", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"] 
         }
       - { name: body, label: Body, widget: markdown }
