@@ -29,28 +29,16 @@ const PostPage: FunctionComponent<PostPageProps> = ({
     type,
     allLetters
 }: PostPageProps) => {
-    const hasLocation = typeof location !== "undefined";
     const unfilteredPosts = index.nodes;
-    const [allPosts, setAllPosts] = useState(index.nodes);
-
-    const searchFromQuery = hasLocation ? location.search.match(/(?<=\bsearch=)\w+/g) : null;
-    const [searchQuery, setSearchQuery] = useState(
-        searchFromQuery ? searchFromQuery[0] : ''
-    );
-
     const tags = allTags.group;
-    const tagFromQuery = hasLocation ? location.search.match(/(?<=\btag=)\w+/g) : null;
-    const [tagFilter, setTagFilter] = useState(
-        tagFromQuery ? tagFromQuery[0] : 'all'
-    );
+    const [allPosts, setAllPosts] = useState(index.nodes);
+    const [searchQuery, setSearchQuery] = useState('');
+    const [tagFilter, setTagFilter] = useState('');
 
     const handleFilterUpdate = (e: any) => {
-        setTagFilter(e.target.id);
-    };
-
-    const clearSearchQuery = () => {
-        setSearchQuery('');
-        window.history.replaceState(null, '', `/${type}`);
+        if(searchQuery === '') {
+            setTagFilter(e.target.id);
+        } 
     };
 
     const handleSubmitSearch = (e: any) => {
@@ -61,14 +49,17 @@ const PostPage: FunctionComponent<PostPageProps> = ({
                 : '';
 
         setSearchQuery(queryValue);
-
-        const queryStr =
-            queryValue === '' ? `/${type}` : `?search=${queryValue}`;
-        window.history.replaceState(null, '', queryStr);
     };
 
+    const clearSearchQuery = () => {
+        setSearchQuery('')
+        setTagFilter('')
+    }
+
     useEffect(() => {
-        if (tagFilter === 'all') {
+        if (tagFilter === '') {
+            setAllPosts(unfilteredPosts);
+        } else if (tagFilter === 'all') {
             setAllPosts(unfilteredPosts);
         } else {
             const filtered = unfilteredPosts.filter((post) =>
@@ -78,27 +69,45 @@ const PostPage: FunctionComponent<PostPageProps> = ({
         }
     }, [tagFilter]);
 
-    // useEffect(() => {
-    //     if (searchQuery === '') {
-    //         setAllPosts(unfilteredPosts);
-    //     } else {
-    //         const posts = unfilteredPosts ?? []; // start w all posts
+    useEffect(() => {
+        if (searchQuery === '') {
+            setAllPosts(unfilteredPosts);
+            
+        } else {
+            const posts = unfilteredPosts ?? []; // start w all posts
 
-    //         const filteredData = posts.filter((post) => {
-    //             const { description, title } = post.frontmatter;
+            const filteredData = posts.filter((post) => {
+                const { title } = post.frontmatter;
 
-    //             return (
-    //                 // standardize data with .toLowerCase()
-    //                 // return true if the description or title
-    //                 description
-    //                     .toLowerCase()
-    //                     .includes(searchQuery.toLowerCase()) ||
-    //                 title.toLowerCase().includes(searchQuery.toLowerCase())
-    //             );
-    //         });
-    //         setAllPosts(filteredData);
-    //     }
-    // }, [searchQuery]);
+                if ("description" in post.frontmatter) { // wiki or blog post
+                    const { description } = post.frontmatter;
+
+                    return (
+                        // standardize data with .toLowerCase()
+                        // return true if the searchQuery is in the description or title
+                        description
+                            .toLowerCase()
+                            .includes(searchQuery.toLowerCase()) ||
+                        title.toLowerCase().includes(searchQuery.toLowerCase())
+                    );
+                } else if ("html" in post) { // glossary
+                    const { html } = post;
+                    
+                    return (
+                        // standardize data with .toLowerCase()
+                        // return true if the searchQuery is in the definition or title
+                        html
+                            .toLowerCase()
+                            .includes(searchQuery.toLowerCase()) ||
+                        title.toLowerCase().includes(searchQuery.toLowerCase())
+                    );
+                }
+
+                return posts;
+            });
+            setAllPosts(filteredData);
+        }
+    }, [searchQuery]);
 
     return (
         <>

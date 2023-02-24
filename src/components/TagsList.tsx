@@ -1,4 +1,3 @@
-import { Link } from 'gatsby';
 import React from 'react';
 
 export const TagsList = (props: {
@@ -8,48 +7,51 @@ export const TagsList = (props: {
     }>;
     totalPostCount: number;
     activeTag: string;
+    isSearchActive: boolean;
     type: PostType;
     handleFilterUpdate: (e: any) => void;
 }) => {
+
+    const classForAllTag = `tag ${props.isSearchActive || 'all' === props.activeTag
+        ? 'is-success'
+        : 'is-success is-light'
+    }`;
+
     return (
         <div className="field is-grouped is-grouped-multiline">
-            <div className="tags has-addons mx-2 tag-align">
-                <Link
-                    to={`/${props.type}`}
+            <div className="tags has-addons mx-2 tag-align show-pointer">
+                <div
                     id="all"
                     data-testid="all"
-                    className={`tag ${
-                        'all' === props.activeTag
-                            ? 'is-success'
-                            : 'is-success is-light'
-                    }`}
+                    className={`tag ${classForAllTag}`}
                     onClick={props.handleFilterUpdate}
                 >
                     All
-                </Link>
+                </div>
                 <span className="tag is-dark">{props.totalPostCount}</span>
             </div>
             {props.tags.map(
                 (tag: { fieldValue: string; totalCount: number }) => {
+                    const classForTag = props.isSearchActive 
+                        ? ''
+                        : tag.fieldValue === props.activeTag
+                            ? 'is-success'
+                            : 'is-success is-light';
+
                     return (
                         <div
-                            className="tags has-addons mx-2 tag-align"
+                            className="tags has-addons mx-2 tag-align show-pointer"
                             key={tag.fieldValue}
                         >
-                            <Link
-                                to={`?tag=${tag.fieldValue}`}
+                            <div
                                 id={tag.fieldValue}
                                 data-testid={tag.fieldValue}
-                                className={`tag ${
-                                    tag.fieldValue === props.activeTag
-                                        ? 'is-success'
-                                        : 'is-success is-light'
-                                }`}
+                                className={`tag ${classForTag}`}
                                 onClick={props.handleFilterUpdate}
                             >
                                 {tag.fieldValue}
-                            </Link>
-                            <span className="tag is-dark">
+                            </div>
+                            <span className={`tag ${props.isSearchActive ? 'is-light' : 'is-dark'}`}>
                                 {tag.totalCount}
                             </span>
                         </div>

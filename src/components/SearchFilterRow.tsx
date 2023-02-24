@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import { faCircleXmark } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React, { useEffect, useState } from 'react';
 import { TagsList } from './TagsList';
 
 export const SearchFilterRow = (props: {
@@ -21,13 +23,11 @@ export const SearchFilterRow = (props: {
         setValue(val);
     };
 
-    // TODO: make X button work
-    //     const hasQuery = props.searchQuery !== "";
-    // const btnContent = hasQuery
-    //     ? <FontAwesomeIcon icon={faX} />
-    //     : "Search";
+    useEffect(() => {
+        setValue(props.searchQuery);
+    }, [props.searchQuery]);
 
-    const btnContent = 'Search';
+    const hasQuery = props.searchQuery !== "";
 
     return (
         <section className="section ">
@@ -38,23 +38,38 @@ export const SearchFilterRow = (props: {
                             className="field has-addons"
                             onSubmit={props.handleSubmitSearch}
                         >
-                            <p className="control">
+                            <p className="control has-icons-right is-100-wide">
                                 <input
-                                    className="input"
+                                    className="input is-100-wide"
                                     name="searchPost"
                                     data-testid="searchPost"
-                                    type="text"
+                                    type="search"
                                     placeholder="Find a post"
                                     value={value}
+                                    key={props.searchQuery}
                                     onChange={handleChange}
+                                    disabled={props.activeTag !== '' && props.activeTag !== 'all'}
                                 />
+
+                                {hasQuery && 
+                                    <span>
+                                        <FontAwesomeIcon 
+                                        size="2xs" 
+                                        className="icon is-small is-right search-clear-btn" 
+                                        icon={faCircleXmark} 
+                                        onClick={props.clearSearchQuery}
+                                    />
+                                    </span>
+                                }
+                                 
                             </p>
-                            <p className="control">
+                            <p className="control is-100-wide">
                                 <button
-                                    className="button"
+                                    className="button is-60-wide is-success"
                                     data-testid="searchPostSubmit"
+                                    disabled={props.activeTag !== '' && props.activeTag !== 'all'}
                                 >
-                                    {btnContent}
+                                    Search
                                 </button>
                             </p>
                         </form>
@@ -67,6 +82,7 @@ export const SearchFilterRow = (props: {
                             activeTag={props.activeTag}
                             handleFilterUpdate={props.handleFilterUpdate}
                             type={props.type}
+                            isSearchActive={hasQuery}
                         />
                     </div>
                 </div>

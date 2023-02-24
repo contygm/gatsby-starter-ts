@@ -68,8 +68,7 @@ export const PostIndex: FunctionComponent<PostIndexProps> = ({
                             );
                         })
                     ) : (
-                        // TODO make no results look like something
-                        <div>No results</div>
+                        <h2 className='title is-size-3'>No results</h2>
                     )}
                 </div>
                 {hasMore && (
