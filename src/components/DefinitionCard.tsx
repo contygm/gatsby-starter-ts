@@ -59,6 +59,13 @@ export const DefinitionCard = (props: {
                             __html: props.definition.html
                         }}
                     />
+                    {
+                        !props.includeAll && <div className='has-text-centered'>
+                            <Link to={`/glossary#${props.definition.frontmatter.title}`}>
+                                Read more...
+                            </Link>
+                        </div>
+                    }
                 </div>
 
                 {/* similar words and related posts */}
@@ -108,9 +115,11 @@ export const DefinitionCard = (props: {
                                 </div>}
                             </div>
                         </div>
+                        
                     </div>
                 }
             </div>
+            
             {/* tag footer */} 
             {
                 props.includeAll && <div className="card-footer">

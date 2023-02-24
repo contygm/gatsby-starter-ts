@@ -22,7 +22,7 @@ const BlogTile = (props: {
     return (
         <div className='box home-blog-tile'>
             <div className="media p-2 m-2">
-            <figure className="media-left">
+            <figure className="media-left my-auto">
                 <p className="image is-128x128">
                     <img src="https://bulma.io/images/placeholders/128x128.png" />
                 </p>
@@ -86,31 +86,65 @@ const NewTile = (props: {
     nodes: Array<IndexElements>;
 }) => {
     return (
-        <div className="columns">
-            <div className="column is-8 ">
-                <div className="box home-blog-tile">
-                    <p className="">{props.nodes[0].frontmatter.title}</p>
-                    <p>{props.nodes[0].frontmatter.description}</p>
+        <div className="columns is-vcentered is-multiline">
+            <div className="column is-9-desktop is-full-tablet">
+                <div className="card is-radiusless footer-logo">
+                    <div className="card-image">
+                        <figure className="image is-3by2">
+                            <img src="https://bulma.io/images/placeholders/128x128.png" />
+                        </figure>
+                    </div>
+                    <div className='card-content is-overlay home-header-tile-overlay'>
+                        <div className="content">
+                            <p className="title is-size-3 has-text-black">{props.nodes[0].frontmatter.title}</p>
+                            <p className="subtitle is-size-6 has-text-black">
+                                <time dateTime={props.nodes[0].frontmatter.date}>
+                                    {props.nodes[0].frontmatter.date}
+                                </time>
+                            </p>
+                            <p className="is-size-5">{props.nodes[0].frontmatter.description}</p>
+                            <Link to={`/${props.nodes[0].frontmatter.type}${props.nodes[0].fields.slug}`}>
+                                Read more...
+                            </Link>
+                        </div>
+                    </div>
+                    <div className='card-content is-overlay'>
+                        <span className="tag is-link is-large">FEATURED</span>
+                    </div>
+                    
                 </div>
             </div>
-            <div className="column is-4">
+            <div className="column is-3-desktop is-full-tablet">
                 <div className="">
-                    <div className=""> 
                         {
-                            props.nodes.slice(1).map((post: IndexElements) => {
+                            props.nodes.slice(1).map((post: IndexElements, i: number) => {
                                 return (
-                                    <div
-                                        // data-testid={'post-card'}
-                                        className="box"
-                                        key={post.frontmatter.title}
-                                    >
-                                        <p className="">{post.frontmatter.title}</p>
-                                        <p>{post.frontmatter.description}</p>
-                                    </div>
+                                    <Link to={`/${post.frontmatter.type}${post.fields.slug}`} key={post.frontmatter.title}>
+                                        <div className={`card footer-logo is-radiusless ${i === props.nodes.length -2 ? "mb-0" : "mb-5"}`}>
+                                            <div className="card-image ">
+                                                <figure className="image is-5by3 ">
+                                                    <img src="https://bulma.io/images/placeholders/128x128.png" />
+                                                </figure>
+                                            </div>
+                                            <div className='card-content is-overlay home-header-tile-overlay'>
+                                                <div className="content">
+                                                    <p className="title is-size-5 has-text-black">{post.frontmatter.title}</p>
+                                                    <p className="subtitle is-size-6 has-text-black">
+                                                        <time dateTime={post.frontmatter.date}>
+                                                            {post.frontmatter.date}
+                                                        </time>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div className='card-content is-overlay'>
+                                                <span className="tag is-link">FEATURED</span>
+                                            </div>
+                                        </div>
+                                    </Link>
                                 );
                             })
                         }
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -123,8 +157,6 @@ const NewTile = (props: {
  */
 const HomePage: FunctionComponent<PageProps<HomeProps>> = ({
     data: {blogFeatured, wikiFeatured, glossaryFeatured}
-    // wikiFeatured,
-    // glossaryFeatured
 }: PageProps<HomeProps>) => {
     return (
         <Layout>
@@ -156,7 +188,7 @@ const HomePage: FunctionComponent<PageProps<HomeProps>> = ({
                             <h2  className='title'>Blog Posts</h2>
                         </div>
                     </div>
-                    <div className="columns is-multiline is-mobile">
+                    <div className="columns is-multiline">
                         {
                             blogFeatured.nodes.map((post: IndexElements) => {
                                 return (
@@ -204,7 +236,7 @@ const HomePage: FunctionComponent<PageProps<HomeProps>> = ({
                             <h2  className='title'>Glossary Posts</h2>
                         </div>
                     </div>
-                    <div className="columns is-multiline is-mobile">
+                    <div className="columns is-multiline">
                     {
                         glossaryFeatured.nodes.map((def: GlossaryElements) => {
                             return (

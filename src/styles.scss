@@ -543,3 +543,25 @@ pre[class*="language-"] {
 .home-title {
 	font-size: 8rem;
 }
+
+.home-header-tile-overlay {
+	top: auto;
+}
+
+.is-100-wide  {
+	width: 100%;
+}
+
+.is-60-wide  {
+	width: 60%;
+}
+
+.search-clear-btn {
+	top: 50% !important;
+	transform: translate(-50%, -50%);
+	pointer-events: all !important;
+}
+
+.show-pointer {
+	cursor: default !important;
+}

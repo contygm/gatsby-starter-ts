@@ -63,7 +63,7 @@ export const NavBar = () => {
             >
                 <div className="navbar-start">
                     <Link
-                        to="/404"
+                        to="/"
                         className="navbar-item"
                         data-cy="nav-link-home"
                     >

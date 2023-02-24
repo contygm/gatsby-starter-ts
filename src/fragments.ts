@@ -24,6 +24,7 @@ export const fragments = graphql`
             date(formatString: "DD MMMM YYYY")
             description
             tags
+            type
             headerImage {
                 childImageSharp {
                     gatsbyImageData(

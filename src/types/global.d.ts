@@ -96,6 +96,7 @@ declare global {
             date: string;
             description: string;
             tags: Array<string>;
+            type: string;
             headerImage: {
                 childImageSharp: {
                     gatsbyImageData: GatsbyImageProps.image;
