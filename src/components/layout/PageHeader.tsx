@@ -5,7 +5,7 @@ import {
     faEnvelope,
     faPaperclip
 } from '@fortawesome/free-solid-svg-icons';
-import { FaIconLink } from './FaIconLink';
+import { FaIconLink } from '../common/FaIconLink';
 
 const SocialMediaRow = () => {
     return (

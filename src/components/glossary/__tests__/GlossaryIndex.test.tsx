@@ -1,8 +1,8 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import { GlossaryIndex } from '../GlossaryIndex';
-import { glossaryDefinitions } from '../../../__mocks__/constants';
-import { mockGlossaryPageData } from '../../../__mocks__/mock-glossary-page';
+import { glossaryDefinitions } from '../../../../__mocks__/constants';
+import { mockGlossaryPageData } from '../../../../__mocks__/mock-glossary-page';
 
 describe('GlossaryIndex', () => {
     it('default renders correctly', () => {

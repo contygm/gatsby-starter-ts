@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import { SearchFilterRow } from '../SearchFilterRow';
-import { mockBlogs } from '../../../__mocks__/mock-blog-page';
+import { mockBlogs } from '../../../../__mocks__/mock-blog-page';
 
 describe('SearchFilterRow', () => {
     it('renders correctly with a query', () => {

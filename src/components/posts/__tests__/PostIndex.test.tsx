@@ -1,7 +1,7 @@
 import React from 'react';
-import { fireEvent, render, waitFor } from '@testing-library/react';
+import { fireEvent, render } from '@testing-library/react';
 import { PostIndex } from '../PostIndex';
-import { mockBlogPageData } from '../../../__mocks__/mock-blog-page';
+import { mockBlogPageData } from '../../../../__mocks__/mock-blog-page';
 
 describe('PostIndex', () => {
     it('default renders and load btn works correctly', () => {

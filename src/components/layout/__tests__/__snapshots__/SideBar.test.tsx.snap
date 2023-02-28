@@ -19,7 +19,7 @@ exports[`SideBar renders correctly 1`] = `
         <li>
           <a
             class="horizontal-post-tile"
-            href="/undefined/baking-tutorial/"
+            href="/blog/baking-tutorial/"
           >
             <div
               class="card"
@@ -54,7 +54,7 @@ exports[`SideBar renders correctly 1`] = `
         <li>
           <a
             class="horizontal-post-tile"
-            href="/undefined/ten-best-things/"
+            href="/blog/ten-best-things/"
           >
             <div
               class="card"
@@ -89,7 +89,7 @@ exports[`SideBar renders correctly 1`] = `
         <li>
           <a
             class="horizontal-post-tile"
-            href="/undefined/guide/"
+            href="/blog/guide/"
           >
             <div
               class="card"
@@ -137,7 +137,7 @@ exports[`SideBar renders correctly 1`] = `
         <li>
           <a
             class="horizontal-post-tile"
-            href="/undefined/baking-tutorial/"
+            href="/blog/baking-tutorial/"
           >
             <div
               class="card"
@@ -172,7 +172,7 @@ exports[`SideBar renders correctly 1`] = `
         <li>
           <a
             class="horizontal-post-tile"
-            href="/undefined/ten-best-things/"
+            href="/blog/ten-best-things/"
           >
             <div
               class="card"
@@ -207,7 +207,7 @@ exports[`SideBar renders correctly 1`] = `
         <li>
           <a
             class="horizontal-post-tile"
-            href="/undefined/guide/"
+            href="/blog/guide/"
           >
             <div
               class="card"
@@ -264,7 +264,7 @@ exports[`SideBar renders correctly without related posts 1`] = `
         <li>
           <a
             class="horizontal-post-tile"
-            href="/undefined/baking-tutorial/"
+            href="/blog/baking-tutorial/"
           >
             <div
               class="card"
@@ -299,7 +299,7 @@ exports[`SideBar renders correctly without related posts 1`] = `
         <li>
           <a
             class="horizontal-post-tile"
-            href="/undefined/ten-best-things/"
+            href="/blog/ten-best-things/"
           >
             <div
               class="card"
@@ -334,7 +334,7 @@ exports[`SideBar renders correctly without related posts 1`] = `
         <li>
           <a
             class="horizontal-post-tile"
-            href="/undefined/guide/"
+            href="/blog/guide/"
           >
             <div
               class="card"

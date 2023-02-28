@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavBar } from './NavBar';
 import { Footer } from './Footer';
-import { useSiteMetadata } from '../utils/useSiteMetadata';
+import { useSiteMetadata } from '../../utils/useSiteMetadata';
 import '../styles.scss';
 
 interface LayoutProps {

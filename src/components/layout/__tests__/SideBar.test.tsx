@@ -1,9 +1,10 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import { SideBar, SideBarProps } from '../SideBar';
-import { mockBlogPost } from '../../../__mocks__/mock-blog-post';
+import { mockBlogPost } from '../../../../__mocks__/mock-blog-post';
 
 const mockData: SideBarProps = {
+    type: 'blog',
     featured: mockBlogPost.featured.nodes,
     related: mockBlogPost.related.nodes
 };

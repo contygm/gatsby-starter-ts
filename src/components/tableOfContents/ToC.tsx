@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo } from 'react';
-import { useActiveHash } from '../utils/useActiveHash';
+import { useActiveHash } from '../../utils/useActiveHash';
 
 export function ToC(props: { tocHtml: string; includeTitle: boolean }) {
     const targetedIds = useMemo(() => {

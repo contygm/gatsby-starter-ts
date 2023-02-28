@@ -8,7 +8,7 @@ import {
     faGhost,
     faAngleUp
 } from '@fortawesome/free-solid-svg-icons';
-import { FaIconLink } from './FaIconLink';
+import { FaIconLink } from '../common/FaIconLink';
 
 /**
  * @description A text link with footer styles

@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import { SEO, Layout } from '../components';
 import { graphql, Link, HeadProps, PageProps } from 'gatsby';
-import { DefinitionCard } from '../components/DefinitionCard';
+import { DefinitionCard } from '../components/glossary/DefinitionCard';
 
 export interface HomeProps {
     site: SiteMetadata;
