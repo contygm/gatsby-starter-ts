@@ -31,9 +31,6 @@ export interface WikiPostProps {
     };
 }
 
-
-
-
 const WikiPost = ({
     data: { markdownRemark, featured, related, next, previous }
 }: PageProps<WikiPostProps>) => {
@@ -135,42 +132,57 @@ const WikiPost = ({
                     <article className="content mb-6">
                         {/* baseball card */}
                         {image && (
-                                <section className="container mb-2 mt-6">
-                                    <div className="card baseball-card">
-                                        <div className="card-content wiki-summary">
-                                            <div className="media">
-                                                <figure className="image baseball-card-img">
-                                                    <GatsbyImage
-                                                        alt={'wiki-post-header'}
-                                                        image={image}
-                                                    />
-                                                </figure>
-                                            </div>
+                            <section className="container mb-2 mt-6">
+                                <div className="card baseball-card">
+                                    <div className="card-content wiki-summary">
+                                        <div className="media">
+                                            <figure className="image baseball-card-img">
+                                                <GatsbyImage
+                                                    alt={'wiki-post-header'}
+                                                    image={image}
+                                                />
+                                            </figure>
+                                        </div>
 
-                                            <div className="content has-text-centered">
-                                                <p className="title is-5">Topic</p>
-                                            </div>
+                                        <div className="content has-text-centered">
+                                            <p className="title is-5">Topic</p>
+                                        </div>
 
-                                            <div className="content has-text-left">
-                                                <table className='table is-fullwidth'>
-                                                    <tbody>
-                                                        {
-                                                            markdownRemark.frontmatter.summary.map((attrObj) => {
-                                                                return (
-                                                                    <tr key={attrObj.field} className={"wiki-summary-row"}>
-                                                                        <td className='has-text-weight-semibold'>{attrObj.field}</td>
-                                                                        <td>{attrObj.value}</td>
-                                                                    </tr>
-                                                                )
-                                                            })
+                                        <div className="content has-text-left">
+                                            <table className="table is-fullwidth">
+                                                <tbody>
+                                                    {markdownRemark.frontmatter.summary.map(
+                                                        (attrObj) => {
+                                                            return (
+                                                                <tr
+                                                                    key={
+                                                                        attrObj.field
+                                                                    }
+                                                                    className={
+                                                                        'wiki-summary-row'
+                                                                    }
+                                                                >
+                                                                    <td className="has-text-weight-semibold">
+                                                                        {
+                                                                            attrObj.field
+                                                                        }
+                                                                    </td>
+                                                                    <td>
+                                                                        {
+                                                                            attrObj.value
+                                                                        }
+                                                                    </td>
+                                                                </tr>
+                                                            );
                                                         }
-                                                    </tbody>
-                                                </table>
-                                            </div>
+                                                    )}
+                                                </tbody>
+                                            </table>
                                         </div>
                                     </div>
-                                </section>
-                            )}
+                                </div>
+                            </section>
+                        )}
                         {/* main post content */}
                         <section className="">
                             <div
@@ -185,7 +197,11 @@ const WikiPost = ({
                         )}
                         <section className="section px-0">
                             <div className="container author-container">
-                            <NextAndPrevious next={next} previous={previous} type={"wiki"}/>
+                                <NextAndPrevious
+                                    next={next}
+                                    previous={previous}
+                                    type={'wiki'}
+                                />
                             </div>
                         </section>
                     </article>

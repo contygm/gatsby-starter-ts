@@ -24,7 +24,7 @@ summary:
     - field: Month
       value: March
     - field: Number
-      value: "7"
+      value: '7'
 ---
 
 [Check out Cheese Ipsum!](http://www.cheeseipsum.co.uk/) Cheese triangles fondue camembert de normandie. Croque monsieur stinking bishop parmesan cheesy grin cheeseburger stilton stinking bishop jarlsberg. Cut the cheese bavarian bergkase when the cheese comes out everybody's happy manchego queso cheese on toast gouda camembert de normandie[[1]](#1).

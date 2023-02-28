@@ -2,7 +2,11 @@
 import { HomeProps } from '../src/pages/index';
 import { mockHeadProps, mockPageProps } from '../src/utils/test-props';
 import { HeadProps, PageProps } from 'gatsby';
-import { featuredOrRelatedPosts, glossaryDefinitions, siteData } from './constants';
+import {
+    featuredOrRelatedPosts,
+    glossaryDefinitions,
+    siteData
+} from './constants';
 
 const mockHome: HomeProps = {
     site: siteData,
@@ -17,10 +21,6 @@ const mockHome: HomeProps = {
     }
 };
 
-export const mockHomePageData = mockPageProps(
-    mockHome
-) as PageProps<HomeProps>;
+export const mockHomePageData = mockPageProps(mockHome) as PageProps<HomeProps>;
 
-export const mockHomeHeadData = mockHeadProps(
-    mockHome
-) as HeadProps<HomeProps>;
+export const mockHomeHeadData = mockHeadProps(mockHome) as HeadProps<HomeProps>;

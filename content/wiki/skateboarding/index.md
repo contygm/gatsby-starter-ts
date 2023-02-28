@@ -20,7 +20,7 @@ summary:
     - field: Direction
       value: North
     - field: Number
-      value: "7"
+      value: '7'
     - field: Day
       value: Friday
     - field: Animal

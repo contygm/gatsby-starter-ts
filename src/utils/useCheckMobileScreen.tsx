@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 // TODO combine with big screen
 const useCheckMobileScreen = () => {
-    const hasWindow = typeof window !== "undefined";
+    const hasWindow = typeof window !== 'undefined';
 
     if (hasWindow) {
         const [width, setWidth] = useState(window.innerWidth);

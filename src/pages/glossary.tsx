@@ -132,7 +132,10 @@ const GlossaryPage: FunctionComponent<PageProps<GlossaryPageProps>> = ({
                         onClick={handleTocBtnClick}
                         data-testid="blog-toc-mobile-btn"
                     >
-                        <i className="icon" id="icon-button">
+                        <i
+                            className="icon"
+                            id="icon-button"
+                        >
                             <FontAwesomeIcon
                                 className="icon"
                                 icon={btnIcon}

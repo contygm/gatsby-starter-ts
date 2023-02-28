@@ -87,7 +87,7 @@ GlossaryIndexProps) => {
                         }
                     })
                 ) : (
-                    <h2 className='title is-size-3'>No results</h2>
+                    <h2 className="title is-size-3">No results</h2>
                 )}
             </div>
         </article>

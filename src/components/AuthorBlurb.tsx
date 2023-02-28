@@ -82,7 +82,7 @@ export const AuthorBlurb = (props: AuthorBlurbProps) => {
                 <NextAndPrevious
                     next={props.nextPost}
                     previous={props.previousPost}
-                    type={"blog"}
+                    type={'blog'}
                 />
             </div>
         </section>

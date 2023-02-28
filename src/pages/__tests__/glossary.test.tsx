@@ -86,17 +86,19 @@ describe('Glossary Page', () => {
 
     it('searches glossary html correctly', () => {
         const { asFragment, getByTestId, getAllByTestId } = render(
-			<GlossaryPage {...mockGlossaryPageData} />
+            <GlossaryPage {...mockGlossaryPageData} />
         );
-		
+
         expect(asFragment()).toMatchSnapshot();
         expect(getAllByTestId('definition-card').length).toEqual(5);
 
         const input = getByTestId('searchPost') as HTMLInputElement;
-        fireEvent.change(input, {target: {value: 'lemon'}})
-        expect(input.value).toBe('lemon')
-        
+        fireEvent.change(input, { target: { value: 'lemon' } });
+        expect(input.value).toBe('lemon');
+
         fireEvent.click(getByTestId('searchPostSubmit'));
-        waitFor(() => expect(getAllByTestId('definition-card').length).toEqual(5));
+        waitFor(() =>
+            expect(getAllByTestId('definition-card').length).toEqual(5)
+        );
     });
 });

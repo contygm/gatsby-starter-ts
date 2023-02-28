@@ -27,7 +27,7 @@ export const SearchFilterRow = (props: {
         setValue(props.searchQuery);
     }, [props.searchQuery]);
 
-    const hasQuery = props.searchQuery !== "";
+    const hasQuery = props.searchQuery !== '';
 
     return (
         <section className="section ">
@@ -48,27 +48,32 @@ export const SearchFilterRow = (props: {
                                     value={value}
                                     key={props.searchQuery}
                                     onChange={handleChange}
-                                    disabled={props.activeTag !== '' && props.activeTag !== 'all'}
+                                    disabled={
+                                        props.activeTag !== '' &&
+                                        props.activeTag !== 'all'
+                                    }
                                 />
 
-                                {hasQuery && 
+                                {hasQuery && (
                                     <span>
-                                        <FontAwesomeIcon 
-                                        size="2xs" 
-                                        className="icon is-small is-right search-clear-btn" 
-                                        data-testid="clearSearch"
-                                        icon={faCircleXmark} 
-                                        onClick={props.clearSearchQuery}
-                                    />
+                                        <FontAwesomeIcon
+                                            size="2xs"
+                                            className="icon is-small is-right search-clear-btn"
+                                            data-testid="clearSearch"
+                                            icon={faCircleXmark}
+                                            onClick={props.clearSearchQuery}
+                                        />
                                     </span>
-                                }
-                                 
+                                )}
                             </p>
                             <p className="control">
                                 <button
                                     className="button is-success"
                                     data-testid="searchPostSubmit"
-                                    disabled={props.activeTag !== '' && props.activeTag !== 'all'}
+                                    disabled={
+                                        props.activeTag !== '' &&
+                                        props.activeTag !== 'all'
+                                    }
                                 >
                                     Search
                                 </button>

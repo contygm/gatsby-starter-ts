@@ -59,18 +59,20 @@ export const DefinitionCard = (props: {
                             __html: props.definition.html
                         }}
                     />
-                    {
-                        !props.includeAll && <div className='has-text-centered'>
-                            <Link to={`/glossary#${props.definition.frontmatter.title}`}>
+                    {!props.includeAll && (
+                        <div className="has-text-centered">
+                            <Link
+                                to={`/glossary#${props.definition.frontmatter.title}`}
+                            >
                                 Read more...
                             </Link>
                         </div>
-                    }
+                    )}
                 </div>
 
                 {/* similar words and related posts */}
-                {
-                    props.includeAll && <div className="content">
+                {props.includeAll && (
+                    <div className="content">
                         <div className="level ">
                             <div className="level-item is-justify-content-left">
                                 <div>
@@ -94,55 +96,60 @@ export const DefinitionCard = (props: {
                                 </div>
                             </div>
                             <div className="level-item is-justify-content-left">
-                            {props.definition.frontmatter.relatedPosts && <div>
-                                    <h4>RelatedPosts:</h4>
-                                    <ol>
-                                        {props.definition.frontmatter.relatedPosts.map(
-                                            (post: {title: string, slug: string}) => {
-                                                return (
-                                                    <li key={post.slug}>
-                                                        <Link
-                                                            to={`${post.slug}`}
-                                                            className=""
-                                                        >
-                                                            {post.title}
-                                                        </Link>
-                                                    </li>
-                                                );
-                                            }
-                                        )}
-                                    </ol>
-                                </div>}
+                                {props.definition.frontmatter.relatedPosts && (
+                                    <div>
+                                        <h4>RelatedPosts:</h4>
+                                        <ol>
+                                            {props.definition.frontmatter.relatedPosts.map(
+                                                (post: {
+                                                    title: string;
+                                                    slug: string;
+                                                }) => {
+                                                    return (
+                                                        <li key={post.slug}>
+                                                            <Link
+                                                                to={`${post.slug}`}
+                                                                className=""
+                                                            >
+                                                                {post.title}
+                                                            </Link>
+                                                        </li>
+                                                    );
+                                                }
+                                            )}
+                                        </ol>
+                                    </div>
+                                )}
                             </div>
                         </div>
-                        
                     </div>
-                }
+                )}
             </div>
-            
-            {/* tag footer */} 
-            {
-                props.includeAll && <div className="card-footer">
+
+            {/* tag footer */}
+            {props.includeAll && (
+                <div className="card-footer">
                     <p className="my-2 ml-5 mr-2">Tags:</p>
 
                     <div className="tags">
-                        {props.definition.frontmatter.tags.map((tag: string) => {
-                            return (
-                                <Link
-                                    to={`?tag=${tag}`}
-                                    id={tag}
-                                    className="tag is-success is-light"
-                                    key={tag}
-                                    // onClick={props.handleFilterUpdate}
-                                >
-                                    {tag}
-                                </Link>
-                            );
-                        })}
+                        {props.definition.frontmatter.tags.map(
+                            (tag: string) => {
+                                return (
+                                    <Link
+                                        to={`?tag=${tag}`}
+                                        id={tag}
+                                        className="tag is-success is-light"
+                                        key={tag}
+                                        // onClick={props.handleFilterUpdate}
+                                    >
+                                        {tag}
+                                    </Link>
+                                );
+                            }
+                        )}
                     </div>
                 </div>
-            }
-            
+            )}
         </div>
     );
 };

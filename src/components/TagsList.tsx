@@ -11,10 +11,10 @@ export const TagsList = (props: {
     type: PostType;
     handleFilterUpdate: (e: any) => void;
 }) => {
-
-    const classForAllTag = `tag ${props.isSearchActive || 'all' === props.activeTag
-        ? 'is-success'
-        : 'is-success is-light'
+    const classForAllTag = `tag ${
+        props.isSearchActive || 'all' === props.activeTag
+            ? 'is-success'
+            : 'is-success is-light'
     }`;
 
     return (
@@ -32,11 +32,11 @@ export const TagsList = (props: {
             </div>
             {props.tags.map(
                 (tag: { fieldValue: string; totalCount: number }) => {
-                    const classForTag = props.isSearchActive 
+                    const classForTag = props.isSearchActive
                         ? ''
                         : tag.fieldValue === props.activeTag
-                            ? 'is-success'
-                            : 'is-success is-light';
+                        ? 'is-success'
+                        : 'is-success is-light';
 
                     return (
                         <div
@@ -51,7 +51,13 @@ export const TagsList = (props: {
                             >
                                 {tag.fieldValue}
                             </div>
-                            <span className={`tag ${props.isSearchActive ? 'is-light' : 'is-dark'}`}>
+                            <span
+                                className={`tag ${
+                                    props.isSearchActive
+                                        ? 'is-light'
+                                        : 'is-dark'
+                                }`}
+                            >
                                 {tag.totalCount}
                             </span>
                         </div>

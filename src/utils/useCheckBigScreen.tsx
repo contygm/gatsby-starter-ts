@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 // TODO combine with small screen
 const useCheckBigScreen = () => {
-    const hasWindow = typeof window !== "undefined";
+    const hasWindow = typeof window !== 'undefined';
 
     if (hasWindow) {
         const [width, setWidth] = useState(window.innerWidth);
@@ -21,7 +21,6 @@ const useCheckBigScreen = () => {
     }
 
     return true;
-    
 };
 
 export default useCheckBigScreen;

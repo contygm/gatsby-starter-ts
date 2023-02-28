@@ -5,7 +5,7 @@ import { FaIconLink } from './FaIconLink';
 export const NextAndPrevious = (props: {
     next?: NeighborPost;
     previous?: NeighborPost;
-    type: PostType
+    type: PostType;
 }) => {
     return (
         <div className="level my-3">

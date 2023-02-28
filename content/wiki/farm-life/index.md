@@ -22,7 +22,7 @@ summary:
     - field: Date
       value: 2-2-2222
     - field: Number
-      value: "7"
+      value: '7'
     - field: Day
       value: Friday
     - field: Animal

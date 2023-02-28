@@ -23,7 +23,7 @@ summary:
     - field: Month
       value: March
     - field: Number
-      value: "7"
+      value: '7'
     - field: Day
       value: Friday
 ---

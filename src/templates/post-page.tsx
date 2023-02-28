@@ -37,9 +37,9 @@ const PostPage: FunctionComponent<PostPageProps> = ({
     const [tagFilter, setTagFilter] = useState('');
 
     const handleFilterUpdate = (e: any) => {
-        if(searchQuery === '') {
+        if (searchQuery === '') {
             setTagFilter(e.target.id);
-        } 
+        }
     };
 
     const handleSubmitSearch = (e: any) => {
@@ -53,9 +53,9 @@ const PostPage: FunctionComponent<PostPageProps> = ({
     };
 
     const clearSearchQuery = () => {
-        setSearchQuery('')
-        setTagFilter('')
-    }
+        setSearchQuery('');
+        setTagFilter('');
+    };
 
     useEffect(() => {
         // TODO move to hook
@@ -73,7 +73,10 @@ const PostPage: FunctionComponent<PostPageProps> = ({
 
     useEffect(() => {
         // TODO handle the if else in the new hook
-        const filteredData = filterWithSearchQuery(unfilteredPosts, searchQuery);
+        const filteredData = filterWithSearchQuery(
+            unfilteredPosts,
+            searchQuery
+        );
         setAllPosts(filteredData);
     }, [searchQuery]);
 

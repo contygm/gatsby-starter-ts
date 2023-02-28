@@ -84,19 +84,16 @@ Keep it short and informative. The message should begin with **one** of the foll
 -   `add`: feature additions
 -   `fix`: bug fixes
 
-
-
 ## Content
 
-The blog content will be stored on this branch. This will keep the content commits seperate from the main branch. 
+The blog content will be stored on this branch. This will keep the content commits seperate from the main branch.
 
 ### Blog Post Frontmatter
 
-This below is the expected frontmatter for a Blog Post. 
+This below is the expected frontmatter for a Blog Post.
 
 ```markdown
 ---
-
 title: Cupcakes Are Just Small Cakes
 date: '2022-12-02T22:12:03.284Z'
 description: Macaroon dessert chocolate bar sugar plum candy canes wafer tart carrot cake chocolate. Liquorice croissant macaroon chupa
@@ -109,7 +106,6 @@ tags:
 related:
     - /pirate-world/
     - /theme-styles/
-
 ---
 ```
 
@@ -117,7 +113,6 @@ related:
 
 ```markdown
 ---
-
 title: Is There Ever Enough Cheese? - Deep Dive
 date: '2015-05-28T22:40:32.169Z'
 type: wiki
@@ -135,7 +130,6 @@ thumbnail: ./thumbnail.png
 summary:
     - field: Color
       value: BlueRed
-
 ---
 ```
 
@@ -143,7 +137,6 @@ summary:
 
 ```markdown
 ---
-
 title: Air
 letter: A
 date: '2015-05-28T22:40:32.169Z'
@@ -160,6 +153,5 @@ relatedPosts:
 tags:
     - north
     - south
-    
 ---
 ```

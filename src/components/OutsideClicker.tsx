@@ -12,10 +12,9 @@ const useOutsideClick = (
                 ref.current &&
                 !ref.current.contains(event.target as Node) &&
                 callback &&
-                element.id !== 'toc-button' && 
+                element.id !== 'toc-button' &&
                 element.id !== 'toc-button-icon' &&
                 element.parentElement?.id !== 'toc-button-icon'
-
             ) {
                 callback();
             }
