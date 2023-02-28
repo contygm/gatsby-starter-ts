@@ -4,7 +4,7 @@ import { mockHeadProps, mockPageProps } from '../src/utils/test-props';
 import { HeadProps, PageProps } from 'gatsby';
 import { featuredOrRelatedPosts, siteData } from './constants';
 
-const mockBlogs: BlogIndexProps = {
+export const mockBlogs: BlogIndexProps = {
     site: siteData,
     allTags: {
         group: [

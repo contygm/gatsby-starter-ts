@@ -28,4 +28,10 @@ describe('useCheckBigScreen', () => {
         });
         expect(asFragment()).toMatchSnapshot('big');
     });
+
+    it('return window undefined', () => {
+        // @ts-ignore
+        delete global.window;
+        expect(useCheckMobileScreen()).toBe(false);
+    });
 });

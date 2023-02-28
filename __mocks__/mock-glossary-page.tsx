@@ -8,7 +8,7 @@ import {
     siteData
 } from './constants';
 
-const mockGlossary: GlossaryPageProps = {
+export const mockGlossary: GlossaryPageProps = {
     site: siteData,
     allTags: {
         group: [

@@ -1,0 +1,2446 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Posts Page searches blog correctly and clears search bar 1`] = `
+<DocumentFragment>
+  <section
+    class="section "
+  >
+    <div
+      class="container is-max-desktop"
+    >
+      <div
+        class="columns"
+      >
+        <div
+          class="column"
+        >
+          <form
+            class="field has-addons"
+          >
+            <p
+              class="control has-icons-right"
+            >
+              <input
+                class="input"
+                data-testid="searchPost"
+                name="searchPost"
+                placeholder="Find a post"
+                type="search"
+                value=""
+              />
+            </p>
+            <p
+              class="control"
+            >
+              <button
+                class="button is-success"
+                data-testid="searchPostSubmit"
+              >
+                Search
+              </button>
+            </p>
+          </form>
+        </div>
+        <div
+          class="column is-two-thirds m-auto"
+        >
+          <div
+            class="field is-grouped is-grouped-multiline"
+          >
+            <div
+              class="tags has-addons mx-2 tag-align show-pointer"
+            >
+              <div
+                class="tag tag is-success is-light"
+                data-testid="all"
+                id="all"
+              >
+                All
+              </div>
+              <span
+                class="tag is-dark"
+              >
+                3
+              </span>
+            </div>
+            <div
+              class="tags has-addons mx-2 tag-align show-pointer"
+            >
+              <div
+                class="tag is-success is-light"
+                data-testid="three"
+                id="three"
+              >
+                three
+              </div>
+              <span
+                class="tag is-dark"
+              >
+                3
+              </span>
+            </div>
+            <div
+              class="tags has-addons mx-2 tag-align show-pointer"
+            >
+              <div
+                class="tag is-success is-light"
+                data-testid="two"
+                id="two"
+              >
+                two
+              </div>
+              <span
+                class="tag is-dark"
+              >
+                2
+              </span>
+            </div>
+            <div
+              class="tags has-addons mx-2 tag-align show-pointer"
+            >
+              <div
+                class="tag is-success is-light"
+                data-testid="one"
+                id="one"
+              >
+                one
+              </div>
+              <span
+                class="tag is-dark"
+              >
+                1
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <article
+    class="section"
+  >
+    <section
+      class="container is-max-desktop"
+    >
+      <div
+        class="columns is-multiline is-centered"
+      >
+        <div
+          class="column is-4"
+          data-testid="post-card"
+        >
+          <div
+            class="card"
+          >
+            <div
+              class="card-image"
+            >
+              <a
+                class="tag is-primary sticky-tag"
+                href="?tag=two"
+              >
+                two
+              </a>
+              <figure
+                class="image is-4by3 blog-card-image"
+              >
+                <img
+                  alt="Placeholder image"
+                  src="https://bulma.io/images/placeholders/1280x960.png"
+                />
+              </figure>
+            </div>
+            <div
+              class="card-content"
+            >
+              <div
+                class="media"
+              >
+                <div
+                  class="media-content"
+                >
+                  <p
+                    class="title is-4"
+                  >
+                    Baking Tutorial
+                  </p>
+                  <p
+                    class="subtitle is-6"
+                  >
+                    <time
+                      datetime="3-2-2021"
+                    >
+                      3-2-2021
+                    </time>
+                  </p>
+                </div>
+              </div>
+              <div
+                class="content"
+              >
+                <p>
+                  a baking tutorial
+                </p>
+                <a
+                  href="/blog/baking-tutorial/"
+                >
+                  Read more...
+                </a>
+              </div>
+              <div
+                class="card-footer"
+              >
+                <p
+                  class="mt-2 ml-2 mr-2"
+                >
+                  Tags:
+                </p>
+                <div
+                  class="tags"
+                >
+                  <a
+                    class="tag mt-2"
+                    href="?tag=three"
+                    id="three"
+                  >
+                    three
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="column is-4"
+          data-testid="post-card"
+        >
+          <div
+            class="card"
+          >
+            <div
+              class="card-image"
+            >
+              <a
+                class="tag is-primary sticky-tag"
+                href="?tag=one"
+              >
+                one
+              </a>
+              <figure
+                class="image is-4by3 blog-card-image"
+              >
+                <img
+                  alt="Placeholder image"
+                  src="https://bulma.io/images/placeholders/1280x960.png"
+                />
+              </figure>
+            </div>
+            <div
+              class="card-content"
+            >
+              <div
+                class="media"
+              >
+                <div
+                  class="media-content"
+                >
+                  <p
+                    class="title is-4"
+                  >
+                    10 Best Things
+                  </p>
+                  <p
+                    class="subtitle is-6"
+                  >
+                    <time
+                      datetime="2-2-2021"
+                    >
+                      2-2-2021
+                    </time>
+                  </p>
+                </div>
+              </div>
+              <div
+                class="content"
+              >
+                <p>
+                  a list of the ten best things
+                </p>
+                <a
+                  href="/blog/ten-best-things/"
+                >
+                  Read more...
+                </a>
+              </div>
+              <div
+                class="card-footer"
+              >
+                <p
+                  class="mt-2 ml-2 mr-2"
+                >
+                  Tags:
+                </p>
+                <div
+                  class="tags"
+                >
+                  <a
+                    class="tag mt-2"
+                    href="?tag=two"
+                    id="two"
+                  >
+                    two
+                  </a>
+                  <a
+                    class="tag mt-2"
+                    href="?tag=three"
+                    id="three"
+                  >
+                    three
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="column is-4"
+          data-testid="post-card"
+        >
+          <div
+            class="card"
+          >
+            <div
+              class="card-image"
+            >
+              <a
+                class="tag is-primary sticky-tag"
+                href="?tag=one"
+              >
+                one
+              </a>
+              <figure
+                class="image is-4by3 blog-card-image"
+              >
+                <img
+                  alt="Placeholder image"
+                  src="https://bulma.io/images/placeholders/1280x960.png"
+                />
+              </figure>
+            </div>
+            <div
+              class="card-content"
+            >
+              <div
+                class="media"
+              >
+                <div
+                  class="media-content"
+                >
+                  <p
+                    class="title is-4"
+                  >
+                    Guide
+                  </p>
+                  <p
+                    class="subtitle is-6"
+                  >
+                    <time
+                      datetime="5-2-2021"
+                    >
+                      5-2-2021
+                    </time>
+                  </p>
+                </div>
+              </div>
+              <div
+                class="content"
+              >
+                <p>
+                  a guide
+                </p>
+                <a
+                  href="/blog/guide/"
+                >
+                  Read more...
+                </a>
+              </div>
+              <div
+                class="card-footer"
+              >
+                <p
+                  class="mt-2 ml-2 mr-2"
+                >
+                  Tags:
+                </p>
+                <div
+                  class="tags"
+                >
+                  <a
+                    class="tag mt-2"
+                    href="?tag=two"
+                    id="two"
+                  >
+                    two
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </article>
+</DocumentFragment>
+`;
+
+exports[`Posts Page searches glossary correctly 1`] = `
+<DocumentFragment>
+  <section
+    class="section "
+  >
+    <div
+      class="container is-max-desktop"
+    >
+      <div
+        class="columns"
+      >
+        <div
+          class="column"
+        >
+          <form
+            class="field has-addons"
+          >
+            <p
+              class="control has-icons-right"
+            >
+              <input
+                class="input"
+                data-testid="searchPost"
+                name="searchPost"
+                placeholder="Find a post"
+                type="search"
+                value=""
+              />
+            </p>
+            <p
+              class="control"
+            >
+              <button
+                class="button is-success"
+                data-testid="searchPostSubmit"
+              >
+                Search
+              </button>
+            </p>
+          </form>
+        </div>
+        <div
+          class="column is-two-thirds m-auto"
+        >
+          <div
+            class="field is-grouped is-grouped-multiline"
+          >
+            <div
+              class="tags has-addons mx-2 tag-align show-pointer"
+            >
+              <div
+                class="tag tag is-success is-light"
+                data-testid="all"
+                id="all"
+              >
+                All
+              </div>
+              <span
+                class="tag is-dark"
+              >
+                5
+              </span>
+            </div>
+            <div
+              class="tags has-addons mx-2 tag-align show-pointer"
+            >
+              <div
+                class="tag is-success is-light"
+                data-testid="three"
+                id="three"
+              >
+                three
+              </div>
+              <span
+                class="tag is-dark"
+              >
+                3
+              </span>
+            </div>
+            <div
+              class="tags has-addons mx-2 tag-align show-pointer"
+            >
+              <div
+                class="tag is-success is-light"
+                data-testid="two"
+                id="two"
+              >
+                two
+              </div>
+              <span
+                class="tag is-dark"
+              >
+                4
+              </span>
+            </div>
+            <div
+              class="tags has-addons mx-2 tag-align show-pointer"
+            >
+              <div
+                class="tag is-success is-light"
+                data-testid="one"
+                id="one"
+              >
+                one
+              </div>
+              <span
+                class="tag is-dark"
+              >
+                2
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <article
+    class="container"
+  >
+    <div
+      class="is-centered"
+    >
+      <section
+        class="section pt-0"
+      >
+        <h2
+          class="title is-size-2"
+          id="A"
+        >
+          A
+        </h2>
+        <div
+          class=""
+          data-testid="definition-card"
+        >
+          <div
+            class="card mb-5"
+          >
+            <div
+              class="card-content"
+            >
+              <div
+                class="media"
+              >
+                <div
+                  class="media-content"
+                >
+                  <div
+                    class="level"
+                  >
+                    <div
+                      class="level-left"
+                    >
+                      <div
+                        class="level-item"
+                      >
+                        <h3
+                          class="title is-3"
+                          id="air"
+                        >
+                          Air
+                        </h3>
+                      </div>
+                    </div>
+                    <div
+                      class="level-right"
+                    >
+                      <div
+                        class="level-item has-text-centered"
+                      >
+                        <div>
+                          <p
+                            class="heading"
+                          >
+                            Syllables
+                          </p>
+                          <p
+                            class="subheading"
+                          >
+                            a·ban·don
+                          </p>
+                        </div>
+                      </div>
+                      <div
+                        class="level-item has-text-centered"
+                      >
+                        <div>
+                          <p
+                            class="heading"
+                          >
+                            Phonetics
+                          </p>
+                          <p
+                            class="subheading"
+                          >
+                            əˈbandən
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="content"
+              >
+                <div
+                  class="container"
+                >
+                  <h3>
+                    Definition
+                  </h3>
+                  <p>
+                    Lemon drops pastry danish halvah. Lemon drops pastry danish halvah.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="content"
+              >
+                <div
+                  class="level "
+                >
+                  <div
+                    class="level-item is-justify-content-left"
+                  >
+                    <div>
+                      <h4>
+                        Similar Words:
+                      </h4>
+                      <ol>
+                        <li>
+                          <a
+                            class=""
+                            href="#/blog/test"
+                          >
+                            /blog/test
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class=""
+                            href="#/wiki/test"
+                          >
+                            /wiki/test
+                          </a>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                  <div
+                    class="level-item is-justify-content-left"
+                  >
+                    <div>
+                      <h4>
+                        RelatedPosts:
+                      </h4>
+                      <ol>
+                        <li>
+                          <a
+                            class=""
+                            href="/blog/test1"
+                          >
+                            BlogPost
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class=""
+                            href="/wiki/test1"
+                          >
+                            WikiPost
+                          </a>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card-footer"
+            >
+              <p
+                class="my-2 ml-5 mr-2"
+              >
+                Tags:
+              </p>
+              <div
+                class="tags"
+              >
+                <a
+                  class="tag is-success is-light"
+                  href="?tag=two"
+                  id="two"
+                >
+                  two
+                </a>
+                <a
+                  class="tag is-success is-light"
+                  href="?tag=three"
+                  id="three"
+                >
+                  three
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class=""
+          data-testid="definition-card"
+        >
+          <div
+            class="card mb-5"
+          >
+            <div
+              class="card-content"
+            >
+              <div
+                class="media"
+              >
+                <div
+                  class="media-content"
+                >
+                  <div
+                    class="level"
+                  >
+                    <div
+                      class="level-left"
+                    >
+                      <div
+                        class="level-item"
+                      >
+                        <h3
+                          class="title is-3"
+                          id="atom"
+                        >
+                          Atom
+                        </h3>
+                      </div>
+                    </div>
+                    <div
+                      class="level-right"
+                    >
+                      <div
+                        class="level-item has-text-centered"
+                      >
+                        <div>
+                          <p
+                            class="heading"
+                          >
+                            Syllables
+                          </p>
+                          <p
+                            class="subheading"
+                          >
+                            a·ban·don
+                          </p>
+                        </div>
+                      </div>
+                      <div
+                        class="level-item has-text-centered"
+                      >
+                        <div>
+                          <p
+                            class="heading"
+                          >
+                            Phonetics
+                          </p>
+                          <p
+                            class="subheading"
+                          >
+                            əˈbandən
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="content"
+              >
+                <div
+                  class="container"
+                >
+                  <h3>
+                    Definition
+                  </h3>
+                  <p>
+                    Lemon drops pastry danish halvah. Lemon drops pastry danish halvah.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="content"
+              >
+                <div
+                  class="level "
+                >
+                  <div
+                    class="level-item is-justify-content-left"
+                  >
+                    <div>
+                      <h4>
+                        Similar Words:
+                      </h4>
+                      <ol>
+                        <li>
+                          <a
+                            class=""
+                            href="#/blog/test"
+                          >
+                            /blog/test
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class=""
+                            href="#/wiki/test"
+                          >
+                            /wiki/test
+                          </a>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                  <div
+                    class="level-item is-justify-content-left"
+                  >
+                    <div>
+                      <h4>
+                        RelatedPosts:
+                      </h4>
+                      <ol>
+                        <li>
+                          <a
+                            class=""
+                            href="/blog/test1"
+                          >
+                            BlogPost
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class=""
+                            href="/wiki/test1"
+                          >
+                            WikiPost
+                          </a>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card-footer"
+            >
+              <p
+                class="my-2 ml-5 mr-2"
+              >
+                Tags:
+              </p>
+              <div
+                class="tags"
+              >
+                <a
+                  class="tag is-success is-light"
+                  href="?tag=two"
+                  id="two"
+                >
+                  two
+                </a>
+                <a
+                  class="tag is-success is-light"
+                  href="?tag=one"
+                  id="one"
+                >
+                  one
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="section pt-0"
+      >
+        <h2
+          class="title is-size-2"
+          id="C"
+        >
+          C
+        </h2>
+        <div
+          class=""
+          data-testid="definition-card"
+        >
+          <div
+            class="card mb-5"
+          >
+            <div
+              class="card-content"
+            >
+              <div
+                class="media"
+              >
+                <div
+                  class="media-content"
+                >
+                  <div
+                    class="level"
+                  >
+                    <div
+                      class="level-left"
+                    >
+                      <div
+                        class="level-item"
+                      >
+                        <h3
+                          class="title is-3"
+                          id="cloud"
+                        >
+                          Cloud
+                        </h3>
+                      </div>
+                    </div>
+                    <div
+                      class="level-right"
+                    >
+                      <div
+                        class="level-item has-text-centered"
+                      >
+                        <div>
+                          <p
+                            class="heading"
+                          >
+                            Syllables
+                          </p>
+                          <p
+                            class="subheading"
+                          >
+                            a·ban·don
+                          </p>
+                        </div>
+                      </div>
+                      <div
+                        class="level-item has-text-centered"
+                      >
+                        <div>
+                          <p
+                            class="heading"
+                          >
+                            Phonetics
+                          </p>
+                          <p
+                            class="subheading"
+                          >
+                            əˈbandən
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="content"
+              >
+                <div
+                  class="container"
+                >
+                  <h3>
+                    Definition
+                  </h3>
+                  <p>
+                    Lemon drops pastry danish halvah. Lemon drops pastry danish halvah.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="content"
+              >
+                <div
+                  class="level "
+                >
+                  <div
+                    class="level-item is-justify-content-left"
+                  >
+                    <div>
+                      <h4>
+                        Similar Words:
+                      </h4>
+                      <ol>
+                        <li>
+                          <a
+                            class=""
+                            href="#/blog/test"
+                          >
+                            /blog/test
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class=""
+                            href="#/wiki/test"
+                          >
+                            /wiki/test
+                          </a>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                  <div
+                    class="level-item is-justify-content-left"
+                  >
+                    <div>
+                      <h4>
+                        RelatedPosts:
+                      </h4>
+                      <ol>
+                        <li>
+                          <a
+                            class=""
+                            href="/blog/test1"
+                          >
+                            BlogPost
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class=""
+                            href="/wiki/test1"
+                          >
+                            WikiPost
+                          </a>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card-footer"
+            >
+              <p
+                class="my-2 ml-5 mr-2"
+              >
+                Tags:
+              </p>
+              <div
+                class="tags"
+              >
+                <a
+                  class="tag is-success is-light"
+                  href="?tag=two"
+                  id="two"
+                >
+                  two
+                </a>
+                <a
+                  class="tag is-success is-light"
+                  href="?tag=one"
+                  id="one"
+                >
+                  one
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="section pt-0"
+      >
+        <h2
+          class="title is-size-2"
+          id="M"
+        >
+          M
+        </h2>
+        <div
+          class=""
+          data-testid="definition-card"
+        >
+          <div
+            class="card mb-5"
+          >
+            <div
+              class="card-content"
+            >
+              <div
+                class="media"
+              >
+                <div
+                  class="media-content"
+                >
+                  <div
+                    class="level"
+                  >
+                    <div
+                      class="level-left"
+                    >
+                      <div
+                        class="level-item"
+                      >
+                        <h3
+                          class="title is-3"
+                          id="moon"
+                        >
+                          Moon
+                        </h3>
+                      </div>
+                    </div>
+                    <div
+                      class="level-right"
+                    >
+                      <div
+                        class="level-item has-text-centered"
+                      >
+                        <div>
+                          <p
+                            class="heading"
+                          >
+                            Syllables
+                          </p>
+                          <p
+                            class="subheading"
+                          >
+                            a·ban·don
+                          </p>
+                        </div>
+                      </div>
+                      <div
+                        class="level-item has-text-centered"
+                      >
+                        <div>
+                          <p
+                            class="heading"
+                          >
+                            Phonetics
+                          </p>
+                          <p
+                            class="subheading"
+                          >
+                            əˈbandən
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="content"
+              >
+                <div
+                  class="container"
+                >
+                  <h3>
+                    Definition
+                  </h3>
+                  <p>
+                    Lemon drops pastry danish halvah. Lemon drops pastry danish halvah.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="content"
+              >
+                <div
+                  class="level "
+                >
+                  <div
+                    class="level-item is-justify-content-left"
+                  >
+                    <div>
+                      <h4>
+                        Similar Words:
+                      </h4>
+                      <ol>
+                        <li>
+                          <a
+                            class=""
+                            href="#/blog/test"
+                          >
+                            /blog/test
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class=""
+                            href="#/wiki/test"
+                          >
+                            /wiki/test
+                          </a>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                  <div
+                    class="level-item is-justify-content-left"
+                  >
+                    <div>
+                      <h4>
+                        RelatedPosts:
+                      </h4>
+                      <ol>
+                        <li>
+                          <a
+                            class=""
+                            href="/blog/test1"
+                          >
+                            BlogPost
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class=""
+                            href="/wiki/test1"
+                          >
+                            WikiPost
+                          </a>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card-footer"
+            >
+              <p
+                class="my-2 ml-5 mr-2"
+              >
+                Tags:
+              </p>
+              <div
+                class="tags"
+              >
+                <a
+                  class="tag is-success is-light"
+                  href="?tag=two"
+                  id="two"
+                >
+                  two
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="section pt-0"
+      >
+        <h2
+          class="title is-size-2"
+          id="W"
+        >
+          W
+        </h2>
+        <div
+          class=""
+          data-testid="definition-card"
+        >
+          <div
+            class="card mb-5"
+          >
+            <div
+              class="card-content"
+            >
+              <div
+                class="media"
+              >
+                <div
+                  class="media-content"
+                >
+                  <div
+                    class="level"
+                  >
+                    <div
+                      class="level-left"
+                    >
+                      <div
+                        class="level-item"
+                      >
+                        <h3
+                          class="title is-3"
+                          id="window"
+                        >
+                          Window
+                        </h3>
+                      </div>
+                    </div>
+                    <div
+                      class="level-right"
+                    >
+                      <div
+                        class="level-item has-text-centered"
+                      >
+                        <div>
+                          <p
+                            class="heading"
+                          >
+                            Syllables
+                          </p>
+                          <p
+                            class="subheading"
+                          >
+                            a·ban·don
+                          </p>
+                        </div>
+                      </div>
+                      <div
+                        class="level-item has-text-centered"
+                      >
+                        <div>
+                          <p
+                            class="heading"
+                          >
+                            Phonetics
+                          </p>
+                          <p
+                            class="subheading"
+                          >
+                            əˈbandən
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="content"
+              >
+                <div
+                  class="container"
+                >
+                  <h3>
+                    Definition
+                  </h3>
+                  <p>
+                    Lemon drops pastry danish halvah. Lemon drops pastry danish halvah.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="content"
+              >
+                <div
+                  class="level "
+                >
+                  <div
+                    class="level-item is-justify-content-left"
+                  >
+                    <div>
+                      <h4>
+                        Similar Words:
+                      </h4>
+                      <ol>
+                        <li>
+                          <a
+                            class=""
+                            href="#/blog/test"
+                          >
+                            /blog/test
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class=""
+                            href="#/wiki/test1"
+                          >
+                            /wiki/test1
+                          </a>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                  <div
+                    class="level-item is-justify-content-left"
+                  >
+                    <div>
+                      <h4>
+                        RelatedPosts:
+                      </h4>
+                      <ol />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card-footer"
+            >
+              <p
+                class="my-2 ml-5 mr-2"
+              >
+                Tags:
+              </p>
+              <div
+                class="tags"
+              >
+                <a
+                  class="tag is-success is-light"
+                  href="?tag=three"
+                  id="three"
+                >
+                  three
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </article>
+</DocumentFragment>
+`;
+
+exports[`Posts Page searches glossary html correctly 1`] = `
+<DocumentFragment>
+  <section
+    class="section "
+  >
+    <div
+      class="container is-max-desktop"
+    >
+      <div
+        class="columns"
+      >
+        <div
+          class="column"
+        >
+          <form
+            class="field has-addons"
+          >
+            <p
+              class="control has-icons-right"
+            >
+              <input
+                class="input"
+                data-testid="searchPost"
+                name="searchPost"
+                placeholder="Find a post"
+                type="search"
+                value=""
+              />
+            </p>
+            <p
+              class="control"
+            >
+              <button
+                class="button is-success"
+                data-testid="searchPostSubmit"
+              >
+                Search
+              </button>
+            </p>
+          </form>
+        </div>
+        <div
+          class="column is-two-thirds m-auto"
+        >
+          <div
+            class="field is-grouped is-grouped-multiline"
+          >
+            <div
+              class="tags has-addons mx-2 tag-align show-pointer"
+            >
+              <div
+                class="tag tag is-success is-light"
+                data-testid="all"
+                id="all"
+              >
+                All
+              </div>
+              <span
+                class="tag is-dark"
+              >
+                5
+              </span>
+            </div>
+            <div
+              class="tags has-addons mx-2 tag-align show-pointer"
+            >
+              <div
+                class="tag is-success is-light"
+                data-testid="three"
+                id="three"
+              >
+                three
+              </div>
+              <span
+                class="tag is-dark"
+              >
+                3
+              </span>
+            </div>
+            <div
+              class="tags has-addons mx-2 tag-align show-pointer"
+            >
+              <div
+                class="tag is-success is-light"
+                data-testid="two"
+                id="two"
+              >
+                two
+              </div>
+              <span
+                class="tag is-dark"
+              >
+                4
+              </span>
+            </div>
+            <div
+              class="tags has-addons mx-2 tag-align show-pointer"
+            >
+              <div
+                class="tag is-success is-light"
+                data-testid="one"
+                id="one"
+              >
+                one
+              </div>
+              <span
+                class="tag is-dark"
+              >
+                2
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <article
+    class="container"
+  >
+    <div
+      class="is-centered"
+    >
+      <section
+        class="section pt-0"
+      >
+        <h2
+          class="title is-size-2"
+          id="A"
+        >
+          A
+        </h2>
+        <div
+          class=""
+          data-testid="definition-card"
+        >
+          <div
+            class="card mb-5"
+          >
+            <div
+              class="card-content"
+            >
+              <div
+                class="media"
+              >
+                <div
+                  class="media-content"
+                >
+                  <div
+                    class="level"
+                  >
+                    <div
+                      class="level-left"
+                    >
+                      <div
+                        class="level-item"
+                      >
+                        <h3
+                          class="title is-3"
+                          id="air"
+                        >
+                          Air
+                        </h3>
+                      </div>
+                    </div>
+                    <div
+                      class="level-right"
+                    >
+                      <div
+                        class="level-item has-text-centered"
+                      >
+                        <div>
+                          <p
+                            class="heading"
+                          >
+                            Syllables
+                          </p>
+                          <p
+                            class="subheading"
+                          >
+                            a·ban·don
+                          </p>
+                        </div>
+                      </div>
+                      <div
+                        class="level-item has-text-centered"
+                      >
+                        <div>
+                          <p
+                            class="heading"
+                          >
+                            Phonetics
+                          </p>
+                          <p
+                            class="subheading"
+                          >
+                            əˈbandən
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="content"
+              >
+                <div
+                  class="container"
+                >
+                  <h3>
+                    Definition
+                  </h3>
+                  <p>
+                    Lemon drops pastry danish halvah. Lemon drops pastry danish halvah.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="content"
+              >
+                <div
+                  class="level "
+                >
+                  <div
+                    class="level-item is-justify-content-left"
+                  >
+                    <div>
+                      <h4>
+                        Similar Words:
+                      </h4>
+                      <ol>
+                        <li>
+                          <a
+                            class=""
+                            href="#/blog/test"
+                          >
+                            /blog/test
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class=""
+                            href="#/wiki/test"
+                          >
+                            /wiki/test
+                          </a>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                  <div
+                    class="level-item is-justify-content-left"
+                  >
+                    <div>
+                      <h4>
+                        RelatedPosts:
+                      </h4>
+                      <ol>
+                        <li>
+                          <a
+                            class=""
+                            href="/blog/test1"
+                          >
+                            BlogPost
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class=""
+                            href="/wiki/test1"
+                          >
+                            WikiPost
+                          </a>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card-footer"
+            >
+              <p
+                class="my-2 ml-5 mr-2"
+              >
+                Tags:
+              </p>
+              <div
+                class="tags"
+              >
+                <a
+                  class="tag is-success is-light"
+                  href="?tag=two"
+                  id="two"
+                >
+                  two
+                </a>
+                <a
+                  class="tag is-success is-light"
+                  href="?tag=three"
+                  id="three"
+                >
+                  three
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class=""
+          data-testid="definition-card"
+        >
+          <div
+            class="card mb-5"
+          >
+            <div
+              class="card-content"
+            >
+              <div
+                class="media"
+              >
+                <div
+                  class="media-content"
+                >
+                  <div
+                    class="level"
+                  >
+                    <div
+                      class="level-left"
+                    >
+                      <div
+                        class="level-item"
+                      >
+                        <h3
+                          class="title is-3"
+                          id="atom"
+                        >
+                          Atom
+                        </h3>
+                      </div>
+                    </div>
+                    <div
+                      class="level-right"
+                    >
+                      <div
+                        class="level-item has-text-centered"
+                      >
+                        <div>
+                          <p
+                            class="heading"
+                          >
+                            Syllables
+                          </p>
+                          <p
+                            class="subheading"
+                          >
+                            a·ban·don
+                          </p>
+                        </div>
+                      </div>
+                      <div
+                        class="level-item has-text-centered"
+                      >
+                        <div>
+                          <p
+                            class="heading"
+                          >
+                            Phonetics
+                          </p>
+                          <p
+                            class="subheading"
+                          >
+                            əˈbandən
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="content"
+              >
+                <div
+                  class="container"
+                >
+                  <h3>
+                    Definition
+                  </h3>
+                  <p>
+                    Lemon drops pastry danish halvah. Lemon drops pastry danish halvah.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="content"
+              >
+                <div
+                  class="level "
+                >
+                  <div
+                    class="level-item is-justify-content-left"
+                  >
+                    <div>
+                      <h4>
+                        Similar Words:
+                      </h4>
+                      <ol>
+                        <li>
+                          <a
+                            class=""
+                            href="#/blog/test"
+                          >
+                            /blog/test
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class=""
+                            href="#/wiki/test"
+                          >
+                            /wiki/test
+                          </a>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                  <div
+                    class="level-item is-justify-content-left"
+                  >
+                    <div>
+                      <h4>
+                        RelatedPosts:
+                      </h4>
+                      <ol>
+                        <li>
+                          <a
+                            class=""
+                            href="/blog/test1"
+                          >
+                            BlogPost
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class=""
+                            href="/wiki/test1"
+                          >
+                            WikiPost
+                          </a>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card-footer"
+            >
+              <p
+                class="my-2 ml-5 mr-2"
+              >
+                Tags:
+              </p>
+              <div
+                class="tags"
+              >
+                <a
+                  class="tag is-success is-light"
+                  href="?tag=two"
+                  id="two"
+                >
+                  two
+                </a>
+                <a
+                  class="tag is-success is-light"
+                  href="?tag=one"
+                  id="one"
+                >
+                  one
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="section pt-0"
+      >
+        <h2
+          class="title is-size-2"
+          id="C"
+        >
+          C
+        </h2>
+        <div
+          class=""
+          data-testid="definition-card"
+        >
+          <div
+            class="card mb-5"
+          >
+            <div
+              class="card-content"
+            >
+              <div
+                class="media"
+              >
+                <div
+                  class="media-content"
+                >
+                  <div
+                    class="level"
+                  >
+                    <div
+                      class="level-left"
+                    >
+                      <div
+                        class="level-item"
+                      >
+                        <h3
+                          class="title is-3"
+                          id="cloud"
+                        >
+                          Cloud
+                        </h3>
+                      </div>
+                    </div>
+                    <div
+                      class="level-right"
+                    >
+                      <div
+                        class="level-item has-text-centered"
+                      >
+                        <div>
+                          <p
+                            class="heading"
+                          >
+                            Syllables
+                          </p>
+                          <p
+                            class="subheading"
+                          >
+                            a·ban·don
+                          </p>
+                        </div>
+                      </div>
+                      <div
+                        class="level-item has-text-centered"
+                      >
+                        <div>
+                          <p
+                            class="heading"
+                          >
+                            Phonetics
+                          </p>
+                          <p
+                            class="subheading"
+                          >
+                            əˈbandən
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="content"
+              >
+                <div
+                  class="container"
+                >
+                  <h3>
+                    Definition
+                  </h3>
+                  <p>
+                    Lemon drops pastry danish halvah. Lemon drops pastry danish halvah.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="content"
+              >
+                <div
+                  class="level "
+                >
+                  <div
+                    class="level-item is-justify-content-left"
+                  >
+                    <div>
+                      <h4>
+                        Similar Words:
+                      </h4>
+                      <ol>
+                        <li>
+                          <a
+                            class=""
+                            href="#/blog/test"
+                          >
+                            /blog/test
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class=""
+                            href="#/wiki/test"
+                          >
+                            /wiki/test
+                          </a>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                  <div
+                    class="level-item is-justify-content-left"
+                  >
+                    <div>
+                      <h4>
+                        RelatedPosts:
+                      </h4>
+                      <ol>
+                        <li>
+                          <a
+                            class=""
+                            href="/blog/test1"
+                          >
+                            BlogPost
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class=""
+                            href="/wiki/test1"
+                          >
+                            WikiPost
+                          </a>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card-footer"
+            >
+              <p
+                class="my-2 ml-5 mr-2"
+              >
+                Tags:
+              </p>
+              <div
+                class="tags"
+              >
+                <a
+                  class="tag is-success is-light"
+                  href="?tag=two"
+                  id="two"
+                >
+                  two
+                </a>
+                <a
+                  class="tag is-success is-light"
+                  href="?tag=one"
+                  id="one"
+                >
+                  one
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="section pt-0"
+      >
+        <h2
+          class="title is-size-2"
+          id="M"
+        >
+          M
+        </h2>
+        <div
+          class=""
+          data-testid="definition-card"
+        >
+          <div
+            class="card mb-5"
+          >
+            <div
+              class="card-content"
+            >
+              <div
+                class="media"
+              >
+                <div
+                  class="media-content"
+                >
+                  <div
+                    class="level"
+                  >
+                    <div
+                      class="level-left"
+                    >
+                      <div
+                        class="level-item"
+                      >
+                        <h3
+                          class="title is-3"
+                          id="moon"
+                        >
+                          Moon
+                        </h3>
+                      </div>
+                    </div>
+                    <div
+                      class="level-right"
+                    >
+                      <div
+                        class="level-item has-text-centered"
+                      >
+                        <div>
+                          <p
+                            class="heading"
+                          >
+                            Syllables
+                          </p>
+                          <p
+                            class="subheading"
+                          >
+                            a·ban·don
+                          </p>
+                        </div>
+                      </div>
+                      <div
+                        class="level-item has-text-centered"
+                      >
+                        <div>
+                          <p
+                            class="heading"
+                          >
+                            Phonetics
+                          </p>
+                          <p
+                            class="subheading"
+                          >
+                            əˈbandən
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="content"
+              >
+                <div
+                  class="container"
+                >
+                  <h3>
+                    Definition
+                  </h3>
+                  <p>
+                    Lemon drops pastry danish halvah. Lemon drops pastry danish halvah.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="content"
+              >
+                <div
+                  class="level "
+                >
+                  <div
+                    class="level-item is-justify-content-left"
+                  >
+                    <div>
+                      <h4>
+                        Similar Words:
+                      </h4>
+                      <ol>
+                        <li>
+                          <a
+                            class=""
+                            href="#/blog/test"
+                          >
+                            /blog/test
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class=""
+                            href="#/wiki/test"
+                          >
+                            /wiki/test
+                          </a>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                  <div
+                    class="level-item is-justify-content-left"
+                  >
+                    <div>
+                      <h4>
+                        RelatedPosts:
+                      </h4>
+                      <ol>
+                        <li>
+                          <a
+                            class=""
+                            href="/blog/test1"
+                          >
+                            BlogPost
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class=""
+                            href="/wiki/test1"
+                          >
+                            WikiPost
+                          </a>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card-footer"
+            >
+              <p
+                class="my-2 ml-5 mr-2"
+              >
+                Tags:
+              </p>
+              <div
+                class="tags"
+              >
+                <a
+                  class="tag is-success is-light"
+                  href="?tag=two"
+                  id="two"
+                >
+                  two
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="section pt-0"
+      >
+        <h2
+          class="title is-size-2"
+          id="W"
+        >
+          W
+        </h2>
+        <div
+          class=""
+          data-testid="definition-card"
+        >
+          <div
+            class="card mb-5"
+          >
+            <div
+              class="card-content"
+            >
+              <div
+                class="media"
+              >
+                <div
+                  class="media-content"
+                >
+                  <div
+                    class="level"
+                  >
+                    <div
+                      class="level-left"
+                    >
+                      <div
+                        class="level-item"
+                      >
+                        <h3
+                          class="title is-3"
+                          id="window"
+                        >
+                          Window
+                        </h3>
+                      </div>
+                    </div>
+                    <div
+                      class="level-right"
+                    >
+                      <div
+                        class="level-item has-text-centered"
+                      >
+                        <div>
+                          <p
+                            class="heading"
+                          >
+                            Syllables
+                          </p>
+                          <p
+                            class="subheading"
+                          >
+                            a·ban·don
+                          </p>
+                        </div>
+                      </div>
+                      <div
+                        class="level-item has-text-centered"
+                      >
+                        <div>
+                          <p
+                            class="heading"
+                          >
+                            Phonetics
+                          </p>
+                          <p
+                            class="subheading"
+                          >
+                            əˈbandən
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="content"
+              >
+                <div
+                  class="container"
+                >
+                  <h3>
+                    Definition
+                  </h3>
+                  <p>
+                    Lemon drops pastry danish halvah. Lemon drops pastry danish halvah.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="content"
+              >
+                <div
+                  class="level "
+                >
+                  <div
+                    class="level-item is-justify-content-left"
+                  >
+                    <div>
+                      <h4>
+                        Similar Words:
+                      </h4>
+                      <ol>
+                        <li>
+                          <a
+                            class=""
+                            href="#/blog/test"
+                          >
+                            /blog/test
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class=""
+                            href="#/wiki/test1"
+                          >
+                            /wiki/test1
+                          </a>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                  <div
+                    class="level-item is-justify-content-left"
+                  >
+                    <div>
+                      <h4>
+                        RelatedPosts:
+                      </h4>
+                      <ol />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card-footer"
+            >
+              <p
+                class="my-2 ml-5 mr-2"
+              >
+                Tags:
+              </p>
+              <div
+                class="tags"
+              >
+                <a
+                  class="tag is-success is-light"
+                  href="?tag=three"
+                  id="three"
+                >
+                  three
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </article>
+</DocumentFragment>
+`;

@@ -1,5 +1,6 @@
 import React, { FunctionComponent, useEffect, useState } from 'react';
 import { SearchFilterRow, PostIndex, GlossaryIndex } from '../components';
+import { filterWithSearchQuery } from '../utils/searchFunctions';
 
 export interface PostPageProps {
     allTags: {
@@ -57,6 +58,7 @@ const PostPage: FunctionComponent<PostPageProps> = ({
     }
 
     useEffect(() => {
+        // TODO move to hook
         if (tagFilter === '') {
             setAllPosts(unfilteredPosts);
         } else if (tagFilter === 'all') {
@@ -70,47 +72,14 @@ const PostPage: FunctionComponent<PostPageProps> = ({
     }, [tagFilter]);
 
     useEffect(() => {
-        if (searchQuery === '') {
-            setAllPosts(unfilteredPosts);
-            
-        } else {
-            const posts = unfilteredPosts ?? []; // start w all posts
-
-            const filteredData = posts.filter((post) => {
-                const { title } = post.frontmatter;
-
-                if ("description" in post.frontmatter) { // wiki or blog post
-                    const { description } = post.frontmatter;
-
-                    return (
-                        // standardize data with .toLowerCase()
-                        // return true if the searchQuery is in the description or title
-                        description
-                            .toLowerCase()
-                            .includes(searchQuery.toLowerCase()) ||
-                        title.toLowerCase().includes(searchQuery.toLowerCase())
-                    );
-                } else if ("html" in post) { // glossary
-                    const { html } = post;
-                    
-                    return (
-                        // standardize data with .toLowerCase()
-                        // return true if the searchQuery is in the definition or title
-                        html
-                            .toLowerCase()
-                            .includes(searchQuery.toLowerCase()) ||
-                        title.toLowerCase().includes(searchQuery.toLowerCase())
-                    );
-                }
-
-                return posts;
-            });
-            setAllPosts(filteredData);
-        }
+        // TODO handle the if else in the new hook
+        const filteredData = filterWithSearchQuery(unfilteredPosts, searchQuery);
+        setAllPosts(filteredData);
     }, [searchQuery]);
 
     return (
         <>
+            {/* TODO test on searchFilterRow to get all the btn states n such */}
             <SearchFilterRow
                 type={type}
                 tags={tags}

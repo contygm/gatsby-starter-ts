@@ -56,6 +56,7 @@ export const SearchFilterRow = (props: {
                                         <FontAwesomeIcon 
                                         size="2xs" 
                                         className="icon is-small is-right search-clear-btn" 
+                                        data-testid="clearSearch"
                                         icon={faCircleXmark} 
                                         onClick={props.clearSearchQuery}
                                     />

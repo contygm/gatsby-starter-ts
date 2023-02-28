@@ -1,5 +1,5 @@
 import React from 'react';
-import { fireEvent, render } from '@testing-library/react';
+import { fireEvent, render, waitFor } from '@testing-library/react';
 import GlossaryPage, { Head } from '../glossary';
 import {
     mockGlossaryPageData,
@@ -82,5 +82,21 @@ describe('Glossary Page', () => {
         fireEvent.click(getByTestId('blog-toc-mobile-btn'));
         expect(asFragment()).toMatchSnapshot('closed table of contents w btn');
         expect(queryByRole('widget', { hidden: false })).toBeNull();
+    });
+
+    it('searches glossary html correctly', () => {
+        const { asFragment, getByTestId, getAllByTestId } = render(
+			<GlossaryPage {...mockGlossaryPageData} />
+        );
+		
+        expect(asFragment()).toMatchSnapshot();
+        expect(getAllByTestId('definition-card').length).toEqual(5);
+
+        const input = getByTestId('searchPost') as HTMLInputElement;
+        fireEvent.change(input, {target: {value: 'lemon'}})
+        expect(input.value).toBe('lemon')
+        
+        fireEvent.click(getByTestId('searchPostSubmit'));
+        waitFor(() => expect(getAllByTestId('definition-card').length).toEqual(5));
     });
 });

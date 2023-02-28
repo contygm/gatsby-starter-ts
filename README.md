@@ -83,3 +83,83 @@ Keep it short and informative. The message should begin with **one** of the foll
 -   `update`: larger tech debt tasks that are more involved than a chore. Ex: test package upgrade involving extensive breaking changes.
 -   `add`: feature additions
 -   `fix`: bug fixes
+
+
+
+## Content
+
+The blog content will be stored on this branch. This will keep the content commits seperate from the main branch. 
+
+### Blog Post Frontmatter
+
+This below is the expected frontmatter for a Blog Post. 
+
+```markdown
+---
+
+title: Cupcakes Are Just Small Cakes
+date: '2022-12-02T22:12:03.284Z'
+description: Macaroon dessert chocolate bar sugar plum candy canes wafer tart carrot cake chocolate. Liquorice croissant macaroon chupa
+type: blog
+headerImage: ./headerImg.png
+featured: true
+tags:
+    - purple
+    - green
+related:
+    - /pirate-world/
+    - /theme-styles/
+
+---
+```
+
+### Wiki Post Frontmatter
+
+```markdown
+---
+
+title: Is There Ever Enough Cheese? - Deep Dive
+date: '2015-05-28T22:40:32.169Z'
+type: wiki
+description: Mascarpone cheeseburger chalk and cheese. Dolcelatte pecorino hard cheese cheeseburger queso fromage stilton danish fontina.
+headerImage: ./headerImg.png
+featured: false
+tags:
+    - three
+    - two
+    - four
+related:
+    - /pirates/
+    - /cupcakes-baking/
+thumbnail: ./thumbnail.png
+summary:
+    - field: Color
+      value: BlueRed
+
+---
+```
+
+### Glossary Definition Frontmatter
+
+```markdown
+---
+
+title: Air
+letter: A
+date: '2015-05-28T22:40:32.169Z'
+type: glossary
+syllables: 'a·ban·don'
+phonetics: 'əˈbandən'
+featured: false
+similarWords:
+    - bacon
+    - cheese
+relatedPosts:
+    - title: Is There Ever Enough Cheese? - Deep Dive
+      slug: /blog/cheesy-enough/
+tags:
+    - north
+    - south
+    
+---
+```

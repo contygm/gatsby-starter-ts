@@ -1,0 +1,378 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchFilterRow renders correctly with a query 1`] = `
+<DocumentFragment>
+  <section
+    class="section "
+  >
+    <div
+      class="container is-max-desktop"
+    >
+      <div
+        class="columns"
+      >
+        <div
+          class="column"
+        >
+          <form
+            class="field has-addons"
+          >
+            <p
+              class="control has-icons-right"
+            >
+              <input
+                class="input"
+                data-testid="searchPost"
+                name="searchPost"
+                placeholder="Find a post"
+                type="search"
+                value="hello"
+              />
+              <span>
+                <svg
+                  aria-hidden="true"
+                  class="svg-inline--fa fa-circle-xmark fa-2xs icon is-small is-right search-clear-btn"
+                  data-icon="circle-xmark"
+                  data-prefix="fas"
+                  data-testid="clearSearch"
+                  focusable="false"
+                  role="img"
+                  viewBox="0 0 512 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+            </p>
+            <p
+              class="control"
+            >
+              <button
+                class="button is-success"
+                data-testid="searchPostSubmit"
+              >
+                Search
+              </button>
+            </p>
+          </form>
+        </div>
+        <div
+          class="column is-two-thirds m-auto"
+        >
+          <div
+            class="field is-grouped is-grouped-multiline"
+          >
+            <div
+              class="tags has-addons mx-2 tag-align show-pointer"
+            >
+              <div
+                class="tag tag is-success"
+                data-testid="all"
+                id="all"
+              >
+                All
+              </div>
+              <span
+                class="tag is-dark"
+              >
+                3
+              </span>
+            </div>
+            <div
+              class="tags has-addons mx-2 tag-align show-pointer"
+            >
+              <div
+                class="tag "
+                data-testid="three"
+                id="three"
+              >
+                three
+              </div>
+              <span
+                class="tag is-light"
+              >
+                3
+              </span>
+            </div>
+            <div
+              class="tags has-addons mx-2 tag-align show-pointer"
+            >
+              <div
+                class="tag "
+                data-testid="two"
+                id="two"
+              >
+                two
+              </div>
+              <span
+                class="tag is-light"
+              >
+                2
+              </span>
+            </div>
+            <div
+              class="tags has-addons mx-2 tag-align show-pointer"
+            >
+              <div
+                class="tag "
+                data-testid="one"
+                id="one"
+              >
+                one
+              </div>
+              <span
+                class="tag is-light"
+              >
+                1
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;
+
+exports[`SearchFilterRow renders correctly with an active tag 1`] = `
+<DocumentFragment>
+  <section
+    class="section "
+  >
+    <div
+      class="container is-max-desktop"
+    >
+      <div
+        class="columns"
+      >
+        <div
+          class="column"
+        >
+          <form
+            class="field has-addons"
+          >
+            <p
+              class="control has-icons-right"
+            >
+              <input
+                class="input"
+                data-testid="searchPost"
+                disabled=""
+                name="searchPost"
+                placeholder="Find a post"
+                type="search"
+                value=""
+              />
+            </p>
+            <p
+              class="control"
+            >
+              <button
+                class="button is-success"
+                data-testid="searchPostSubmit"
+                disabled=""
+              >
+                Search
+              </button>
+            </p>
+          </form>
+        </div>
+        <div
+          class="column is-two-thirds m-auto"
+        >
+          <div
+            class="field is-grouped is-grouped-multiline"
+          >
+            <div
+              class="tags has-addons mx-2 tag-align show-pointer"
+            >
+              <div
+                class="tag tag is-success is-light"
+                data-testid="all"
+                id="all"
+              >
+                All
+              </div>
+              <span
+                class="tag is-dark"
+              >
+                3
+              </span>
+            </div>
+            <div
+              class="tags has-addons mx-2 tag-align show-pointer"
+            >
+              <div
+                class="tag is-success is-light"
+                data-testid="three"
+                id="three"
+              >
+                three
+              </div>
+              <span
+                class="tag is-dark"
+              >
+                3
+              </span>
+            </div>
+            <div
+              class="tags has-addons mx-2 tag-align show-pointer"
+            >
+              <div
+                class="tag is-success is-light"
+                data-testid="two"
+                id="two"
+              >
+                two
+              </div>
+              <span
+                class="tag is-dark"
+              >
+                2
+              </span>
+            </div>
+            <div
+              class="tags has-addons mx-2 tag-align show-pointer"
+            >
+              <div
+                class="tag is-success"
+                data-testid="one"
+                id="one"
+              >
+                one
+              </div>
+              <span
+                class="tag is-dark"
+              >
+                1
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;
+
+exports[`SearchFilterRow renders correctly without a query 1`] = `
+<DocumentFragment>
+  <section
+    class="section "
+  >
+    <div
+      class="container is-max-desktop"
+    >
+      <div
+        class="columns"
+      >
+        <div
+          class="column"
+        >
+          <form
+            class="field has-addons"
+          >
+            <p
+              class="control has-icons-right"
+            >
+              <input
+                class="input"
+                data-testid="searchPost"
+                name="searchPost"
+                placeholder="Find a post"
+                type="search"
+                value=""
+              />
+            </p>
+            <p
+              class="control"
+            >
+              <button
+                class="button is-success"
+                data-testid="searchPostSubmit"
+              >
+                Search
+              </button>
+            </p>
+          </form>
+        </div>
+        <div
+          class="column is-two-thirds m-auto"
+        >
+          <div
+            class="field is-grouped is-grouped-multiline"
+          >
+            <div
+              class="tags has-addons mx-2 tag-align show-pointer"
+            >
+              <div
+                class="tag tag is-success is-light"
+                data-testid="all"
+                id="all"
+              >
+                All
+              </div>
+              <span
+                class="tag is-dark"
+              >
+                3
+              </span>
+            </div>
+            <div
+              class="tags has-addons mx-2 tag-align show-pointer"
+            >
+              <div
+                class="tag is-success is-light"
+                data-testid="three"
+                id="three"
+              >
+                three
+              </div>
+              <span
+                class="tag is-dark"
+              >
+                3
+              </span>
+            </div>
+            <div
+              class="tags has-addons mx-2 tag-align show-pointer"
+            >
+              <div
+                class="tag is-success is-light"
+                data-testid="two"
+                id="two"
+              >
+                two
+              </div>
+              <span
+                class="tag is-dark"
+              >
+                2
+              </span>
+            </div>
+            <div
+              class="tags has-addons mx-2 tag-align show-pointer"
+            >
+              <div
+                class="tag is-success is-light"
+                data-testid="one"
+                id="one"
+              >
+                one
+              </div>
+              <span
+                class="tag is-dark"
+              >
+                1
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;
