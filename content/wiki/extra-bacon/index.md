@@ -3,7 +3,6 @@ title: The Line Between Extra Crispy and Burnt
 date: '2015-05-28T22:40:32.169Z'
 type: wiki
 description: Flank shoulder alcatra chuck, tri-tip salami capicola rump kielbasa buffalo hamburger. Leberkas shankle landjaeger, swine brisket.
-headerImage: ./headerImg.png
 featured: false
 tags:
     - three
@@ -13,7 +12,7 @@ related:
     - /my-code-tutorial/
     - /extra-crispy-bacon/
     - /farm-life/
-thumbnail: ./thumbnail.png
+headerImage: ./thumbnail.png
 summary:
     - field: Day
       value: Friday

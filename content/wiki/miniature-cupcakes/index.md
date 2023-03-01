@@ -3,7 +3,6 @@ title: Mini Cupcakes Are Super Small Cakes
 date: '2022-12-02T22:12:03.284Z'
 description: Macaroon dessert chocolate bar sugar plum candy canes wafer tart carrot cake chocolate. Liquorice croissant macaroon chupa
 type: wiki
-headerImage: ./headerImg.png
 featured: false
 tags:
     - one
@@ -13,7 +12,7 @@ related:
     - /extra-crispy-bacon/
     - /delorean-mclfy/
     - /skaters/
-thumbnail: ./thumbnail.png
+headerImage: ./thumbnail.png
 summary:
     - field: Color
       value: BlueRed

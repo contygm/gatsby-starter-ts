@@ -3,7 +3,7 @@ title: Skaters Gonna Skate
 date: '2015-05-28T22:40:32.169Z'
 type: wiki
 description: Skate ipsum dolor sit amet, chicken wing bank nose-bump ledge. Ledge gnar bucket Bill Danforth rip grip cab flip. Camel back 50-50 pogo rad.
-headerImage: ./headerImg.png
+headerImage: ./thumbnail.png
 featured: false
 tags:
     - three
@@ -13,7 +13,6 @@ related:
     - /pirates/
     - /farm-life/
     - /delorean/
-thumbnail: ./thumbnail.png
 summary:
     - field: Color
       value: BlueRed

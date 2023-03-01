@@ -8,11 +8,10 @@ tags:
     - one
     - two
 featured: false
-headerImage: ./headerImg.png
+headerImage: ./thumbnail.png
 related:
     - /more-cheeses/
     - /creating-bacon/
-thumbnail: ./thumbnail.png
 summary:
     - field: Color
       value: BlueRed

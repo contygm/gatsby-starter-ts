@@ -4,13 +4,12 @@ date: '2022-05-28T22:40:32.169Z'
 type: wiki
 description: Hulk trysail shrouds transom barkadeer lanyard piracy strike colors. Weigh anchor salmagundi killick to go on account spyglass list .
 featured: false
-headerImage: ./headerImg.png
+headerImage: ./thumbnail.png
 tags:
     - one
     - six
     - three
 related: []
-thumbnail: ./thumbnail.png
 summary:
     - field: Color
       value: BlueRed

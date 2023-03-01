@@ -8,10 +8,9 @@ tags:
     - two
     - three
     - six
-headerImage: ./headerImg.png
 related:
     - /wiki-theme-styles/
-thumbnail: ./thumbnail.png
+headerImage: ./thumbnail.png
 summary:
     - field: Color
       value: BlueRed

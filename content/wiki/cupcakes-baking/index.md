@@ -3,7 +3,6 @@ title: Cupcakes Are Just Small Cakes
 date: '2022-12-02T22:12:03.284Z'
 description: Macaroon dessert chocolate bar sugar plum candy canes wafer tart carrot cake chocolate. Liquorice croissant macaroon chupa
 type: wiki
-headerImage: ./headerImg.png
 featured: true
 tags:
     - one
@@ -13,7 +12,7 @@ related:
     - /pirates/
     - /wiki-theme-styles/
     - /cheeses/
-thumbnail: ./thumbnail.png
+headerImage: ./thumbnail.png
 summary:
     - field: Color
       value: BlueRed

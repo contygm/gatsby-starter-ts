@@ -3,7 +3,6 @@ title: Back to the Future in a DeLorean
 date: '2015-05-28T22:40:32.169Z'
 type: wiki
 description: Marty. Marty. Marty. Quiet, quiet. I'm gonna read your thoughts. Let's see now, you've come from a great distance?
-headerImage: ./headerImg.png
 featured: false
 tags:
     - three
@@ -13,7 +12,7 @@ related:
     - /cheeses/
     - /cupcakes-baking/
     - /creating-bacon/
-thumbnail: ./thumbnail.png
+headerImage: ./thumbnail.png
 summary:
     - field: Color
       value: BlueRed

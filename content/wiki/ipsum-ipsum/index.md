@@ -3,7 +3,6 @@ title: A Standard Lorem Ipsum Blog
 date: '2015-05-28T22:40:32.169Z'
 type: wiki
 description: Lorem ipsum dolor sit amet, alii facilisis argumentum est an, elitr sententiae mea ex, cum ex antiopam sapientem. Vix facer.
-headerImage: ./headerImg.png
 featured: false
 tags:
     - one
@@ -13,7 +12,7 @@ related:
     - /creating-bacon/
     - /cupcakes-baking/
     - /farm-life/
-thumbnail: ./thumbnail.png
+headerImage: ./thumbnail.png
 summary:
     - field: Color
       value: BlueRed

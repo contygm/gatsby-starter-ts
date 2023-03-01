@@ -4,14 +4,13 @@ date: '2022-05-28T22:40:32.169Z'
 type: wiki
 description: Ho salmagundi loot keelhaul rigging careen draft plunder. Topgallant fire ship fathom yawl pirate bounty bilge rat schooner.
 featured: true
-headerImage: ./headerImg.png
+headerImage: ./thumbnail.png
 tags:
     - four
     - two
     - six
     - three
 related: []
-thumbnail: ./thumbnail.png
 summary:
     - field: Color
       value: BlueRed

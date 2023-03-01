@@ -3,7 +3,6 @@ title: Farms With Animals and Veggies
 date: '2015-05-28T22:40:32.169Z'
 type: wiki
 description: Zucchini carrots scrap metal. bull bowels cat chicken cow, calf donkey duck. Mallet herbs basil nest, in welding equipment pens quail.
-headerImage: ./headerImg.png
 featured: false
 tags:
     - three
@@ -14,7 +13,7 @@ related:
     - /cheeses/
     - /cupcakes-baking/
     - /delorean/
-thumbnail: ./thumbnail.png
+headerImage: ./thumbnail.png
 summary:
     - field: Direction
       value: North

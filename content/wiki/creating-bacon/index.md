@@ -3,7 +3,6 @@ title: How Crispy Should Bacon Be?
 date: '2015-05-28T22:40:32.169Z'
 type: wiki
 description: Spicy jalapeno bacon ipsum dolor amet frankfurter drumstick capicola, short loin brisket spare ribs turducken corned beef tenderloin.
-headerImage: ./headerImg.png
 featured: true
 tags:
     - three
@@ -13,7 +12,7 @@ related:
     - /pirates/
     - /cupcakes-baking/
     - /wiki-theme-styles/
-thumbnail: ./thumbnail.png
+headerImage: ./thumbnail.png
 summary:
     - field: Date
       value: 2-2-2222

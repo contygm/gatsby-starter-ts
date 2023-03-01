@@ -3,7 +3,6 @@ title: Old McDonald Had a Farm
 date: '2015-05-28T22:40:32.169Z'
 type: wiki
 description: Coo with rabbits ect. Petting zoo at carrots alligators quack. Mallet herbs basil nest, in welding equipment pens quail.
-headerImage: ./headerImg.png
 featured: false
 tags:
     - three
@@ -13,7 +12,7 @@ related:
     - /cheeses/
     - /cupcakes-baking/
     - /delorean/
-thumbnail: ./thumbnail.png
+headerImage: ./thumbnail.png
 summary:
     - field: Color
       value: BlueRed

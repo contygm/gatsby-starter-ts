@@ -8,10 +8,9 @@ tags:
     - one
     - three
     - four
-headerImage: headerimg.png
 related:
     - /code-concepts/
-thumbnail: ./thumbnail.png
+headerImage: ./thumbnail.png
 summary:
     - field: Color
       value: BlueRed

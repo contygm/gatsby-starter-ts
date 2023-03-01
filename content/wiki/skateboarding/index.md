@@ -3,7 +3,6 @@ title: Skaters Do All the Skate Things
 date: '2015-05-28T22:40:32.169Z'
 type: wiki
 description: Rip grip Steve Robert transfer fast plant acid drop. Hang up downhill slam Randy Ruiz boneless. Switch carve gnarly Spanky impossible.
-headerImage: ./headerImg.png
 featured: false
 tags:
     - three
@@ -13,7 +12,7 @@ related:
     - /skateboarding/
     - /pirate-plunder/
     - /boredom/
-thumbnail: ./thumbnail.png
+headerImage: ./thumbnail.png
 summary:
     - field: Color
       value: BlueRed

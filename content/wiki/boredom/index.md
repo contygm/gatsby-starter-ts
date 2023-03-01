@@ -3,7 +3,6 @@ title: A Boring Lorem Ipsum Blog
 date: '2015-05-28T22:40:32.169Z'
 type: wiki
 description: Tritani oblique ne usu, eu everti qualisque forensibus vix. Per ut praesent consulatu, sapientem pertinacia te vel. Ea ridens qualisque iudicabit.
-headerImage: ./headerImg.png
 featured: false
 tags:
     - one
@@ -13,7 +12,7 @@ related:
     - /creating-bacon/
     - /cupcakes-baking/
     - /farm-life/
-thumbnail: ./thumbnail.png
+headerImage: ./thumbnail.png
 summary:
     - field: Color
       value: BlueRed

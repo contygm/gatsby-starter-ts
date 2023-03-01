@@ -3,7 +3,6 @@ title: Why Isn't There Enough Cheese?
 date: '2015-05-28T22:40:32.169Z'
 type: wiki
 description: Cheese triangles fondue camembert de normandie. Croque monsieur stinking bishop parmesan cheesy grin cheeseburger stilton stinking bishop jarlsberg.
-headerImage: ./headerImg.png
 featured: false
 tags:
     - three
@@ -13,7 +12,7 @@ related:
     - /pirates/
     - /cupcakes-baking/
     - /wiki-theme-styles/
-thumbnail: ./thumbnail.png
+headerImage: ./thumbnail.png
 summary:
     - field: Color
       value: BlueRed

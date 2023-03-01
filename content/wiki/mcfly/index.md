@@ -3,7 +3,6 @@ title: Back to the Future II
 date: '2015-05-28T22:40:32.169Z'
 type: wiki
 description: Ronald Reagon, the actor? Then who's vice president, Jerry Lewis? I suppose Jane Wymann is the first lady.
-headerImage: ./headerImg.png
 featured: false
 tags:
     - three
@@ -13,7 +12,7 @@ related:
     - /delorian-mcfly/
     - /skaters/
     - /farm-life/
-thumbnail: ./thumbnail.png
+headerImage: ./thumbnail.png
 summary:
     - field: Color
       value: BlueRed

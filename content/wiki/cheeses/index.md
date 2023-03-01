@@ -3,7 +3,6 @@ title: Is There Ever Enough Cheese? - Deep Dive
 date: '2015-05-28T22:40:32.169Z'
 type: wiki
 description: Mascarpone cheeseburger chalk and cheese. Dolcelatte pecorino hard cheese cheeseburger queso fromage stilton danish fontina.
-headerImage: ./headerImg.png
 featured: false
 tags:
     - three
@@ -13,7 +12,7 @@ related:
     - /pirates/
     - /cupcakes-baking/
     - /wiki-theme-styles/
-thumbnail: ./thumbnail.png
+headerImage: ./thumbnail.png
 summary:
     - field: Color
       value: BlueRed
