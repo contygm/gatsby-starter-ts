@@ -1,6 +1,4 @@
 import React from 'react';
-import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { SideBarPostTile } from './SideBarPostTile';
 import { getImage } from 'gatsby-plugin-image';
 
@@ -14,10 +12,10 @@ export const SideBar = ({ featured, related, type }: SideBarProps) => {
     // TODO: working search requires queries, tabling for now
     // const searchPlaceholder = type === 'glossary' ? 'A word...' : 'Title...';
     const firstSectionTitle =
-        type === 'glossary' ? 'Featured Blog Posts' : 'Related posts';
+        type === 'glossary' ? 'Featured Blog Posts' : `Related ${type}s`;
     const firstSectionSlugPrefix = type === 'glossary' ? '/blog' : `/${type}`;
     const secondSectionTitle =
-        type === 'glossary' ? 'Featured Wiki Posts' : 'Featured posts';
+        type === 'glossary' ? 'Featured Wiki Posts' : `Featured ${type}s`;
     const secondSectionSlugPrefix = type === 'glossary' ? '/wiki' : `/${type}`;
 
     return (

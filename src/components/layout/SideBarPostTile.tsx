@@ -27,7 +27,7 @@ export const SideBarPostTile = ({
                             <GatsbyImage
                                 alt="blog image"
                                 image={image}
-                                className="image "
+                                className="image sidebar-tile-image"
                             />
                         </figure>
                     )}
