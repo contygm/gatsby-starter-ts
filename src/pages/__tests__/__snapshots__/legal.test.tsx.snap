@@ -22,7 +22,7 @@ exports[`LegalPage Cookie Page renders correctly 1`] = `
             data-cy="nav-link-logo"
             layout="constrained"
             placeholder="blurred"
-            src="../images/bulma-logo-white.png"
+            src="../../images/bulma-logo-white.png"
           />
         </a>
         <button
@@ -178,7 +178,7 @@ exports[`LegalPage Cookie Page renders correctly 1`] = `
                 alt="Logo"
                 layout="constrained"
                 placeholder="blurred"
-                src="../images/bulma-logo-white.png"
+                src="../../images/bulma-logo-white.png"
                 width="128"
               />
             </figure>
@@ -463,7 +463,7 @@ exports[`LegalPage Copyright Page renders correctly 1`] = `
             data-cy="nav-link-logo"
             layout="constrained"
             placeholder="blurred"
-            src="../images/bulma-logo-white.png"
+            src="../../images/bulma-logo-white.png"
           />
         </a>
         <button
@@ -619,7 +619,7 @@ exports[`LegalPage Copyright Page renders correctly 1`] = `
                 alt="Logo"
                 layout="constrained"
                 placeholder="blurred"
-                src="../images/bulma-logo-white.png"
+                src="../../images/bulma-logo-white.png"
                 width="128"
               />
             </figure>
@@ -904,7 +904,7 @@ exports[`LegalPage Disclaimer Page renders correctly 1`] = `
             data-cy="nav-link-logo"
             layout="constrained"
             placeholder="blurred"
-            src="../images/bulma-logo-white.png"
+            src="../../images/bulma-logo-white.png"
           />
         </a>
         <button
@@ -1060,7 +1060,7 @@ exports[`LegalPage Disclaimer Page renders correctly 1`] = `
                 alt="Logo"
                 layout="constrained"
                 placeholder="blurred"
-                src="../images/bulma-logo-white.png"
+                src="../../images/bulma-logo-white.png"
                 width="128"
               />
             </figure>
@@ -1365,7 +1365,7 @@ exports[`LegalPage Legal renders correctly 1`] = `
             data-cy="nav-link-logo"
             layout="constrained"
             placeholder="blurred"
-            src="../images/bulma-logo-white.png"
+            src="../../images/bulma-logo-white.png"
           />
         </a>
         <button
@@ -1621,7 +1621,7 @@ exports[`LegalPage Legal renders correctly 1`] = `
                 alt="Logo"
                 layout="constrained"
                 placeholder="blurred"
-                src="../images/bulma-logo-white.png"
+                src="../../images/bulma-logo-white.png"
                 width="128"
               />
             </figure>
@@ -1886,7 +1886,7 @@ exports[`LegalPage Privacy Policy Page renders correctly 1`] = `
             data-cy="nav-link-logo"
             layout="constrained"
             placeholder="blurred"
-            src="../images/bulma-logo-white.png"
+            src="../../images/bulma-logo-white.png"
           />
         </a>
         <button
@@ -2042,7 +2042,7 @@ exports[`LegalPage Privacy Policy Page renders correctly 1`] = `
                 alt="Logo"
                 layout="constrained"
                 placeholder="blurred"
-                src="../images/bulma-logo-white.png"
+                src="../../images/bulma-logo-white.png"
                 width="128"
               />
             </figure>
@@ -2327,7 +2327,7 @@ exports[`LegalPage Terms and Conditions Page renders correctly 1`] = `
             data-cy="nav-link-logo"
             layout="constrained"
             placeholder="blurred"
-            src="../images/bulma-logo-white.png"
+            src="../../images/bulma-logo-white.png"
           />
         </a>
         <button
@@ -2483,7 +2483,7 @@ exports[`LegalPage Terms and Conditions Page renders correctly 1`] = `
                 alt="Logo"
                 layout="constrained"
                 placeholder="blurred"
-                src="../images/bulma-logo-white.png"
+                src="../../images/bulma-logo-white.png"
                 width="128"
               />
             </figure>

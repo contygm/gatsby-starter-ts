@@ -23,7 +23,7 @@ exports[`Footer renders correctly 1`] = `
               alt="Logo"
               layout="constrained"
               placeholder="blurred"
-              src="../images/bulma-logo-white.png"
+              src="../../images/bulma-logo-white.png"
               width="128"
             />
           </figure>

@@ -22,7 +22,7 @@ exports[`Wiki Posts Page ToC shows properly on mobile: closed table of contents 
             data-cy="nav-link-logo"
             layout="constrained"
             placeholder="blurred"
-            src="../images/bulma-logo-white.png"
+            src="../../images/bulma-logo-white.png"
           />
         </a>
         <button
@@ -538,7 +538,7 @@ exports[`Wiki Posts Page ToC shows properly on mobile: closed table of contents 
                 <p
                   class="menu-label"
                 >
-                  Related posts
+                  Related wikis
                 </p>
                 <ul
                   class="menu-list"
@@ -656,7 +656,7 @@ exports[`Wiki Posts Page ToC shows properly on mobile: closed table of contents 
                 <p
                   class="menu-label"
                 >
-                  Featured posts
+                  Featured wikis
                 </p>
                 <ul
                   class="menu-list"
@@ -794,7 +794,7 @@ exports[`Wiki Posts Page ToC shows properly on mobile: closed table of contents 
                 alt="Logo"
                 layout="constrained"
                 placeholder="blurred"
-                src="../images/bulma-logo-white.png"
+                src="../../images/bulma-logo-white.png"
                 width="128"
               />
             </figure>
@@ -1059,7 +1059,7 @@ exports[`Wiki Posts Page ToC shows properly on mobile: closed table of contents 
             data-cy="nav-link-logo"
             layout="constrained"
             placeholder="blurred"
-            src="../images/bulma-logo-white.png"
+            src="../../images/bulma-logo-white.png"
           />
         </a>
         <button
@@ -1575,7 +1575,7 @@ exports[`Wiki Posts Page ToC shows properly on mobile: closed table of contents 
                 <p
                   class="menu-label"
                 >
-                  Related posts
+                  Related wikis
                 </p>
                 <ul
                   class="menu-list"
@@ -1693,7 +1693,7 @@ exports[`Wiki Posts Page ToC shows properly on mobile: closed table of contents 
                 <p
                   class="menu-label"
                 >
-                  Featured posts
+                  Featured wikis
                 </p>
                 <ul
                   class="menu-list"
@@ -1831,7 +1831,7 @@ exports[`Wiki Posts Page ToC shows properly on mobile: closed table of contents 
                 alt="Logo"
                 layout="constrained"
                 placeholder="blurred"
-                src="../images/bulma-logo-white.png"
+                src="../../images/bulma-logo-white.png"
                 width="128"
               />
             </figure>
@@ -2096,7 +2096,7 @@ exports[`Wiki Posts Page ToC shows properly on mobile: open table of contents 1`
             data-cy="nav-link-logo"
             layout="constrained"
             placeholder="blurred"
-            src="../images/bulma-logo-white.png"
+            src="../../images/bulma-logo-white.png"
           />
         </a>
         <button
@@ -2612,7 +2612,7 @@ exports[`Wiki Posts Page ToC shows properly on mobile: open table of contents 1`
                 <p
                   class="menu-label"
                 >
-                  Related posts
+                  Related wikis
                 </p>
                 <ul
                   class="menu-list"
@@ -2730,7 +2730,7 @@ exports[`Wiki Posts Page ToC shows properly on mobile: open table of contents 1`
                 <p
                   class="menu-label"
                 >
-                  Featured posts
+                  Featured wikis
                 </p>
                 <ul
                   class="menu-list"
@@ -2868,7 +2868,7 @@ exports[`Wiki Posts Page ToC shows properly on mobile: open table of contents 1`
                 alt="Logo"
                 layout="constrained"
                 placeholder="blurred"
-                src="../images/bulma-logo-white.png"
+                src="../../images/bulma-logo-white.png"
                 width="128"
               />
             </figure>
@@ -3153,7 +3153,7 @@ exports[`Wiki Posts Page renders correctly 1`] = `
             data-cy="nav-link-logo"
             layout="constrained"
             placeholder="blurred"
-            src="../images/bulma-logo-white.png"
+            src="../../images/bulma-logo-white.png"
           />
         </a>
         <button
@@ -3579,7 +3579,7 @@ exports[`Wiki Posts Page renders correctly 1`] = `
                 <p
                   class="menu-label"
                 >
-                  Related posts
+                  Related wikis
                 </p>
                 <ul
                   class="menu-list"
@@ -3697,7 +3697,7 @@ exports[`Wiki Posts Page renders correctly 1`] = `
                 <p
                   class="menu-label"
                 >
-                  Featured posts
+                  Featured wikis
                 </p>
                 <ul
                   class="menu-list"
@@ -3905,7 +3905,7 @@ exports[`Wiki Posts Page renders correctly 1`] = `
                 alt="Logo"
                 layout="constrained"
                 placeholder="blurred"
-                src="../images/bulma-logo-white.png"
+                src="../../images/bulma-logo-white.png"
                 width="128"
               />
             </figure>
@@ -4170,7 +4170,7 @@ exports[`Wiki Posts Page renders correctly on medium view 1`] = `
             data-cy="nav-link-logo"
             layout="constrained"
             placeholder="blurred"
-            src="../images/bulma-logo-white.png"
+            src="../../images/bulma-logo-white.png"
           />
         </a>
         <button
@@ -4686,7 +4686,7 @@ exports[`Wiki Posts Page renders correctly on medium view 1`] = `
                 <p
                   class="menu-label"
                 >
-                  Related posts
+                  Related wikis
                 </p>
                 <ul
                   class="menu-list"
@@ -4804,7 +4804,7 @@ exports[`Wiki Posts Page renders correctly on medium view 1`] = `
                 <p
                   class="menu-label"
                 >
-                  Featured posts
+                  Featured wikis
                 </p>
                 <ul
                   class="menu-list"
@@ -4942,7 +4942,7 @@ exports[`Wiki Posts Page renders correctly on medium view 1`] = `
                 alt="Logo"
                 layout="constrained"
                 placeholder="blurred"
-                src="../images/bulma-logo-white.png"
+                src="../../images/bulma-logo-white.png"
                 width="128"
               />
             </figure>
@@ -5207,7 +5207,7 @@ exports[`Wiki Posts Page renders correctly on mobile view 1`] = `
             data-cy="nav-link-logo"
             layout="constrained"
             placeholder="blurred"
-            src="../images/bulma-logo-white.png"
+            src="../../images/bulma-logo-white.png"
           />
         </a>
         <button
@@ -5723,7 +5723,7 @@ exports[`Wiki Posts Page renders correctly on mobile view 1`] = `
                 <p
                   class="menu-label"
                 >
-                  Related posts
+                  Related wikis
                 </p>
                 <ul
                   class="menu-list"
@@ -5841,7 +5841,7 @@ exports[`Wiki Posts Page renders correctly on mobile view 1`] = `
                 <p
                   class="menu-label"
                 >
-                  Featured posts
+                  Featured wikis
                 </p>
                 <ul
                   class="menu-list"
@@ -5979,7 +5979,7 @@ exports[`Wiki Posts Page renders correctly on mobile view 1`] = `
                 alt="Logo"
                 layout="constrained"
                 placeholder="blurred"
-                src="../images/bulma-logo-white.png"
+                src="../../images/bulma-logo-white.png"
                 width="128"
               />
             </figure>

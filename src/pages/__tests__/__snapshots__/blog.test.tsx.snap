@@ -42,7 +42,7 @@ exports[`Blog Index Page renders and filters correctly 1`] = `
             data-cy="nav-link-logo"
             layout="constrained"
             placeholder="blurred"
-            src="../images/bulma-logo-white.png"
+            src="../../images/bulma-logo-white.png"
           />
         </a>
         <button
@@ -534,7 +534,7 @@ exports[`Blog Index Page renders and filters correctly 1`] = `
                 alt="Logo"
                 layout="constrained"
                 placeholder="blurred"
-                src="../images/bulma-logo-white.png"
+                src="../../images/bulma-logo-white.png"
                 width="128"
               />
             </figure>
@@ -799,7 +799,7 @@ exports[`Blog Index Page searches correctly 1`] = `
             data-cy="nav-link-logo"
             layout="constrained"
             placeholder="blurred"
-            src="../images/bulma-logo-white.png"
+            src="../../images/bulma-logo-white.png"
           />
         </a>
         <button
@@ -1291,7 +1291,7 @@ exports[`Blog Index Page searches correctly 1`] = `
                 alt="Logo"
                 layout="constrained"
                 placeholder="blurred"
-                src="../images/bulma-logo-white.png"
+                src="../../images/bulma-logo-white.png"
                 width="128"
               />
             </figure>

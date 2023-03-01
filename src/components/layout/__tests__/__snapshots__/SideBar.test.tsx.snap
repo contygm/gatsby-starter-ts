@@ -11,7 +11,7 @@ exports[`SideBar renders correctly 1`] = `
       <p
         class="menu-label"
       >
-        Related posts
+        Related blogs
       </p>
       <ul
         class="menu-list"
@@ -129,7 +129,7 @@ exports[`SideBar renders correctly 1`] = `
       <p
         class="menu-label"
       >
-        Featured posts
+        Featured blogs
       </p>
       <ul
         class="menu-list"
@@ -256,7 +256,7 @@ exports[`SideBar renders correctly without related posts 1`] = `
       <p
         class="menu-label"
       >
-        Featured posts
+        Featured blogs
       </p>
       <ul
         class="menu-list"

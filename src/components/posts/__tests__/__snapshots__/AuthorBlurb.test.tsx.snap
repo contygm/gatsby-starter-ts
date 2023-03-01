@@ -61,7 +61,7 @@ exports[`PageHeader default renders correctly 1`] = `
           <img
             alt="author image"
             placeholder="blurred"
-            src="../images/icon.png"
+            src="../../images/icon.png"
           />
         </figure>
         <div
@@ -224,7 +224,7 @@ exports[`PageHeader renders when previousPost is defined 1`] = `
           <img
             alt="author image"
             placeholder="blurred"
-            src="../images/icon.png"
+            src="../../images/icon.png"
           />
         </figure>
         <div
@@ -327,7 +327,7 @@ exports[`PageHeader renders when previousPost is undefined 1`] = `
           <img
             alt="author image"
             placeholder="blurred"
-            src="../images/icon.png"
+            src="../../images/icon.png"
           />
         </figure>
         <div

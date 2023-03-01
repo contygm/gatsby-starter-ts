@@ -19,7 +19,7 @@ exports[`NavBar renders correctly 1`] = `
           data-cy="nav-link-logo"
           layout="constrained"
           placeholder="blurred"
-          src="../images/bulma-logo-white.png"
+          src="../../images/bulma-logo-white.png"
         />
       </a>
       <button

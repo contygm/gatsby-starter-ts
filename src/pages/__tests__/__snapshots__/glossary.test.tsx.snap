@@ -22,7 +22,7 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
             data-cy="nav-link-logo"
             layout="constrained"
             placeholder="blurred"
-            src="../images/bulma-logo-white.png"
+            src="../../images/bulma-logo-white.png"
           />
         </a>
         <button
@@ -1510,7 +1510,7 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
                 alt="Logo"
                 layout="constrained"
                 placeholder="blurred"
-                src="../images/bulma-logo-white.png"
+                src="../../images/bulma-logo-white.png"
                 width="128"
               />
             </figure>
@@ -1775,7 +1775,7 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
             data-cy="nav-link-logo"
             layout="constrained"
             placeholder="blurred"
-            src="../images/bulma-logo-white.png"
+            src="../../images/bulma-logo-white.png"
           />
         </a>
         <button
@@ -3263,7 +3263,7 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
                 alt="Logo"
                 layout="constrained"
                 placeholder="blurred"
-                src="../images/bulma-logo-white.png"
+                src="../../images/bulma-logo-white.png"
                 width="128"
               />
             </figure>
@@ -3528,7 +3528,7 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
             data-cy="nav-link-logo"
             layout="constrained"
             placeholder="blurred"
-            src="../images/bulma-logo-white.png"
+            src="../../images/bulma-logo-white.png"
           />
         </a>
         <button
@@ -5016,7 +5016,7 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
                 alt="Logo"
                 layout="constrained"
                 placeholder="blurred"
-                src="../images/bulma-logo-white.png"
+                src="../../images/bulma-logo-white.png"
                 width="128"
               />
             </figure>
@@ -5281,7 +5281,7 @@ exports[`Glossary Page filters correctly 1`] = `
             data-cy="nav-link-logo"
             layout="constrained"
             placeholder="blurred"
-            src="../images/bulma-logo-white.png"
+            src="../../images/bulma-logo-white.png"
           />
         </a>
         <button
@@ -6839,7 +6839,7 @@ exports[`Glossary Page filters correctly 1`] = `
                 alt="Logo"
                 layout="constrained"
                 placeholder="blurred"
-                src="../images/bulma-logo-white.png"
+                src="../../images/bulma-logo-white.png"
                 width="128"
               />
             </figure>
@@ -7124,7 +7124,7 @@ exports[`Glossary Page renders correctly 1`] = `
             data-cy="nav-link-logo"
             layout="constrained"
             placeholder="blurred"
-            src="../images/bulma-logo-white.png"
+            src="../../images/bulma-logo-white.png"
           />
         </a>
         <button
@@ -8682,7 +8682,7 @@ exports[`Glossary Page renders correctly 1`] = `
                 alt="Logo"
                 layout="constrained"
                 placeholder="blurred"
-                src="../images/bulma-logo-white.png"
+                src="../../images/bulma-logo-white.png"
                 width="128"
               />
             </figure>
@@ -8947,7 +8947,7 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
             data-cy="nav-link-logo"
             layout="constrained"
             placeholder="blurred"
-            src="../images/bulma-logo-white.png"
+            src="../../images/bulma-logo-white.png"
           />
         </a>
         <button
@@ -10435,7 +10435,7 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
                 alt="Logo"
                 layout="constrained"
                 placeholder="blurred"
-                src="../images/bulma-logo-white.png"
+                src="../../images/bulma-logo-white.png"
                 width="128"
               />
             </figure>
@@ -10700,7 +10700,7 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
             data-cy="nav-link-logo"
             layout="constrained"
             placeholder="blurred"
-            src="../images/bulma-logo-white.png"
+            src="../../images/bulma-logo-white.png"
           />
         </a>
         <button
@@ -12188,7 +12188,7 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
                 alt="Logo"
                 layout="constrained"
                 placeholder="blurred"
-                src="../images/bulma-logo-white.png"
+                src="../../images/bulma-logo-white.png"
                 width="128"
               />
             </figure>
@@ -12453,7 +12453,7 @@ exports[`Glossary Page searches glossary html correctly 1`] = `
             data-cy="nav-link-logo"
             layout="constrained"
             placeholder="blurred"
-            src="../images/bulma-logo-white.png"
+            src="../../images/bulma-logo-white.png"
           />
         </a>
         <button
@@ -14011,7 +14011,7 @@ exports[`Glossary Page searches glossary html correctly 1`] = `
                 alt="Logo"
                 layout="constrained"
                 placeholder="blurred"
-                src="../images/bulma-logo-white.png"
+                src="../../images/bulma-logo-white.png"
                 width="128"
               />
             </figure>
