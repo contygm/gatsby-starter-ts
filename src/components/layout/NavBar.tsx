@@ -34,7 +34,7 @@ export const NavBar = () => {
                     to="/"
                 >
                     <StaticImage
-                        src="../images/bulma-logo-white.png"
+                        src="../../images/bulma-logo-white.png"
                         alt="Logo"
                         placeholder="blurred"
                         className="nav-side-width"

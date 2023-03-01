@@ -123,7 +123,7 @@ export const Footer = (props: { author: string }) => {
                     >
                         <figure className="image footer-logo">
                             <StaticImage
-                                src="../images/bulma-logo-white.png"
+                                src="../../images/bulma-logo-white.png"
                                 alt="Logo"
                                 placeholder="blurred"
                                 layout="constrained"

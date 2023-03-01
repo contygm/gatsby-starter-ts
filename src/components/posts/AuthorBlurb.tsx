@@ -19,7 +19,7 @@ const AuthorMedia = ({ name, description }: AuthorBlurbProps['author']) => {
         <div className="media p-2 m-2">
             <figure className="media-left ml-0 mb-0">
                 <StaticImage
-                    src="../images/icon.png"
+                    src="../../images/icon.png"
                     alt="author image"
                     placeholder="blurred"
                     className="image is-96x96"
