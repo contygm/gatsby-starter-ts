@@ -961,7 +961,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                     <a
                       class="footer-drawer-link"
                       data-cy="footer-link-copyright"
-                      href="/legal/copyright"
+                      href="/legal/copyrightcopyright"
                     >
                       Copyright
                     </a>
@@ -971,8 +971,8 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-cookie"
-                      href="/legal/cookie-policy"
+                      data-cy="footer-link-cookie-policy"
+                      href="/legal/copyrightcookie-policy"
                     >
                       Cookie Policy
                     </a>
@@ -982,8 +982,8 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-terms"
-                      href="/legal/terms-and-conditions"
+                      data-cy="footer-link-terms-and-conditions"
+                      href="/legal/copyrightterms-and-conditions"
                     >
                       Terms and Conditions
                     </a>
@@ -994,7 +994,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                     <a
                       class="footer-drawer-link"
                       data-cy="footer-link-disclaimer"
-                      href="/legal/disclaimer"
+                      href="/legal/copyrightdisclaimer"
                     >
                       Disclaimer
                     </a>
@@ -2071,7 +2071,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                     <a
                       class="footer-drawer-link"
                       data-cy="footer-link-copyright"
-                      href="/legal/copyright"
+                      href="/legal/copyrightcopyright"
                     >
                       Copyright
                     </a>
@@ -2081,8 +2081,8 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-cookie"
-                      href="/legal/cookie-policy"
+                      data-cy="footer-link-cookie-policy"
+                      href="/legal/copyrightcookie-policy"
                     >
                       Cookie Policy
                     </a>
@@ -2092,8 +2092,8 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-terms"
-                      href="/legal/terms-and-conditions"
+                      data-cy="footer-link-terms-and-conditions"
+                      href="/legal/copyrightterms-and-conditions"
                     >
                       Terms and Conditions
                     </a>
@@ -2104,7 +2104,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                     <a
                       class="footer-drawer-link"
                       data-cy="footer-link-disclaimer"
-                      href="/legal/disclaimer"
+                      href="/legal/copyrightdisclaimer"
                     >
                       Disclaimer
                     </a>
@@ -3181,7 +3181,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
                     <a
                       class="footer-drawer-link"
                       data-cy="footer-link-copyright"
-                      href="/legal/copyright"
+                      href="/legal/copyrightcopyright"
                     >
                       Copyright
                     </a>
@@ -3191,8 +3191,8 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-cookie"
-                      href="/legal/cookie-policy"
+                      data-cy="footer-link-cookie-policy"
+                      href="/legal/copyrightcookie-policy"
                     >
                       Cookie Policy
                     </a>
@@ -3202,8 +3202,8 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-terms"
-                      href="/legal/terms-and-conditions"
+                      data-cy="footer-link-terms-and-conditions"
+                      href="/legal/copyrightterms-and-conditions"
                     >
                       Terms and Conditions
                     </a>
@@ -3214,7 +3214,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
                     <a
                       class="footer-drawer-link"
                       data-cy="footer-link-disclaimer"
-                      href="/legal/disclaimer"
+                      href="/legal/copyrightdisclaimer"
                     >
                       Disclaimer
                     </a>
@@ -4291,7 +4291,7 @@ exports[`Blog Posts Page renders correctly 1`] = `
                     <a
                       class="footer-drawer-link"
                       data-cy="footer-link-copyright"
-                      href="/legal/copyright"
+                      href="/legal/copyrightcopyright"
                     >
                       Copyright
                     </a>
@@ -4301,8 +4301,8 @@ exports[`Blog Posts Page renders correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-cookie"
-                      href="/legal/cookie-policy"
+                      data-cy="footer-link-cookie-policy"
+                      href="/legal/copyrightcookie-policy"
                     >
                       Cookie Policy
                     </a>
@@ -4312,8 +4312,8 @@ exports[`Blog Posts Page renders correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-terms"
-                      href="/legal/terms-and-conditions"
+                      data-cy="footer-link-terms-and-conditions"
+                      href="/legal/copyrightterms-and-conditions"
                     >
                       Terms and Conditions
                     </a>
@@ -4324,7 +4324,7 @@ exports[`Blog Posts Page renders correctly 1`] = `
                     <a
                       class="footer-drawer-link"
                       data-cy="footer-link-disclaimer"
-                      href="/legal/disclaimer"
+                      href="/legal/copyrightdisclaimer"
                     >
                       Disclaimer
                     </a>
@@ -5401,7 +5401,7 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
                     <a
                       class="footer-drawer-link"
                       data-cy="footer-link-copyright"
-                      href="/legal/copyright"
+                      href="/legal/copyrightcopyright"
                     >
                       Copyright
                     </a>
@@ -5411,8 +5411,8 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-cookie"
-                      href="/legal/cookie-policy"
+                      data-cy="footer-link-cookie-policy"
+                      href="/legal/copyrightcookie-policy"
                     >
                       Cookie Policy
                     </a>
@@ -5422,8 +5422,8 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-terms"
-                      href="/legal/terms-and-conditions"
+                      data-cy="footer-link-terms-and-conditions"
+                      href="/legal/copyrightterms-and-conditions"
                     >
                       Terms and Conditions
                     </a>
@@ -5434,7 +5434,7 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
                     <a
                       class="footer-drawer-link"
                       data-cy="footer-link-disclaimer"
-                      href="/legal/disclaimer"
+                      href="/legal/copyrightdisclaimer"
                     >
                       Disclaimer
                     </a>
@@ -6511,7 +6511,7 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
                     <a
                       class="footer-drawer-link"
                       data-cy="footer-link-copyright"
-                      href="/legal/copyright"
+                      href="/legal/copyrightcopyright"
                     >
                       Copyright
                     </a>
@@ -6521,8 +6521,8 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-cookie"
-                      href="/legal/cookie-policy"
+                      data-cy="footer-link-cookie-policy"
+                      href="/legal/copyrightcookie-policy"
                     >
                       Cookie Policy
                     </a>
@@ -6532,8 +6532,8 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-terms"
-                      href="/legal/terms-and-conditions"
+                      data-cy="footer-link-terms-and-conditions"
+                      href="/legal/copyrightterms-and-conditions"
                     >
                       Terms and Conditions
                     </a>
@@ -6544,7 +6544,7 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
                     <a
                       class="footer-drawer-link"
                       data-cy="footer-link-disclaimer"
-                      href="/legal/disclaimer"
+                      href="/legal/copyrightdisclaimer"
                     >
                       Disclaimer
                     </a>

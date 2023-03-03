@@ -272,7 +272,7 @@ exports[`LegalPage Cookie Page renders correctly 1`] = `
                     <a
                       class="footer-drawer-link"
                       data-cy="footer-link-copyright"
-                      href="/legal/copyright"
+                      href="/legal/copyrightcopyright"
                     >
                       Copyright
                     </a>
@@ -282,8 +282,8 @@ exports[`LegalPage Cookie Page renders correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-cookie"
-                      href="/legal/cookie-policy"
+                      data-cy="footer-link-cookie-policy"
+                      href="/legal/copyrightcookie-policy"
                     >
                       Cookie Policy
                     </a>
@@ -293,8 +293,8 @@ exports[`LegalPage Cookie Page renders correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-terms"
-                      href="/legal/terms-and-conditions"
+                      data-cy="footer-link-terms-and-conditions"
+                      href="/legal/copyrightterms-and-conditions"
                     >
                       Terms and Conditions
                     </a>
@@ -305,7 +305,7 @@ exports[`LegalPage Cookie Page renders correctly 1`] = `
                     <a
                       class="footer-drawer-link"
                       data-cy="footer-link-disclaimer"
-                      href="/legal/disclaimer"
+                      href="/legal/copyrightdisclaimer"
                     >
                       Disclaimer
                     </a>
@@ -713,7 +713,7 @@ exports[`LegalPage Copyright Page renders correctly 1`] = `
                     <a
                       class="footer-drawer-link"
                       data-cy="footer-link-copyright"
-                      href="/legal/copyright"
+                      href="/legal/copyrightcopyright"
                     >
                       Copyright
                     </a>
@@ -723,8 +723,8 @@ exports[`LegalPage Copyright Page renders correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-cookie"
-                      href="/legal/cookie-policy"
+                      data-cy="footer-link-cookie-policy"
+                      href="/legal/copyrightcookie-policy"
                     >
                       Cookie Policy
                     </a>
@@ -734,8 +734,8 @@ exports[`LegalPage Copyright Page renders correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-terms"
-                      href="/legal/terms-and-conditions"
+                      data-cy="footer-link-terms-and-conditions"
+                      href="/legal/copyrightterms-and-conditions"
                     >
                       Terms and Conditions
                     </a>
@@ -746,7 +746,7 @@ exports[`LegalPage Copyright Page renders correctly 1`] = `
                     <a
                       class="footer-drawer-link"
                       data-cy="footer-link-disclaimer"
-                      href="/legal/disclaimer"
+                      href="/legal/copyrightdisclaimer"
                     >
                       Disclaimer
                     </a>
@@ -1154,7 +1154,7 @@ exports[`LegalPage Disclaimer Page renders correctly 1`] = `
                     <a
                       class="footer-drawer-link"
                       data-cy="footer-link-copyright"
-                      href="/legal/copyright"
+                      href="/legal/copyrightcopyright"
                     >
                       Copyright
                     </a>
@@ -1164,8 +1164,8 @@ exports[`LegalPage Disclaimer Page renders correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-cookie"
-                      href="/legal/cookie-policy"
+                      data-cy="footer-link-cookie-policy"
+                      href="/legal/copyrightcookie-policy"
                     >
                       Cookie Policy
                     </a>
@@ -1175,8 +1175,8 @@ exports[`LegalPage Disclaimer Page renders correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-terms"
-                      href="/legal/terms-and-conditions"
+                      data-cy="footer-link-terms-and-conditions"
+                      href="/legal/copyrightterms-and-conditions"
                     >
                       Terms and Conditions
                     </a>
@@ -1187,7 +1187,7 @@ exports[`LegalPage Disclaimer Page renders correctly 1`] = `
                     <a
                       class="footer-drawer-link"
                       data-cy="footer-link-disclaimer"
-                      href="/legal/disclaimer"
+                      href="/legal/copyrightdisclaimer"
                     >
                       Disclaimer
                     </a>
@@ -1715,7 +1715,7 @@ exports[`LegalPage Legal renders correctly 1`] = `
                     <a
                       class="footer-drawer-link"
                       data-cy="footer-link-copyright"
-                      href="/legal/copyright"
+                      href="/legal/copyrightcopyright"
                     >
                       Copyright
                     </a>
@@ -1725,8 +1725,8 @@ exports[`LegalPage Legal renders correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-cookie"
-                      href="/legal/cookie-policy"
+                      data-cy="footer-link-cookie-policy"
+                      href="/legal/copyrightcookie-policy"
                     >
                       Cookie Policy
                     </a>
@@ -1736,8 +1736,8 @@ exports[`LegalPage Legal renders correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-terms"
-                      href="/legal/terms-and-conditions"
+                      data-cy="footer-link-terms-and-conditions"
+                      href="/legal/copyrightterms-and-conditions"
                     >
                       Terms and Conditions
                     </a>
@@ -1748,7 +1748,7 @@ exports[`LegalPage Legal renders correctly 1`] = `
                     <a
                       class="footer-drawer-link"
                       data-cy="footer-link-disclaimer"
-                      href="/legal/disclaimer"
+                      href="/legal/copyrightdisclaimer"
                     >
                       Disclaimer
                     </a>
@@ -2136,7 +2136,7 @@ exports[`LegalPage Privacy Policy Page renders correctly 1`] = `
                     <a
                       class="footer-drawer-link"
                       data-cy="footer-link-copyright"
-                      href="/legal/copyright"
+                      href="/legal/copyrightcopyright"
                     >
                       Copyright
                     </a>
@@ -2146,8 +2146,8 @@ exports[`LegalPage Privacy Policy Page renders correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-cookie"
-                      href="/legal/cookie-policy"
+                      data-cy="footer-link-cookie-policy"
+                      href="/legal/copyrightcookie-policy"
                     >
                       Cookie Policy
                     </a>
@@ -2157,8 +2157,8 @@ exports[`LegalPage Privacy Policy Page renders correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-terms"
-                      href="/legal/terms-and-conditions"
+                      data-cy="footer-link-terms-and-conditions"
+                      href="/legal/copyrightterms-and-conditions"
                     >
                       Terms and Conditions
                     </a>
@@ -2169,7 +2169,7 @@ exports[`LegalPage Privacy Policy Page renders correctly 1`] = `
                     <a
                       class="footer-drawer-link"
                       data-cy="footer-link-disclaimer"
-                      href="/legal/disclaimer"
+                      href="/legal/copyrightdisclaimer"
                     >
                       Disclaimer
                     </a>
@@ -2577,7 +2577,7 @@ exports[`LegalPage Terms and Conditions Page renders correctly 1`] = `
                     <a
                       class="footer-drawer-link"
                       data-cy="footer-link-copyright"
-                      href="/legal/copyright"
+                      href="/legal/copyrightcopyright"
                     >
                       Copyright
                     </a>
@@ -2587,8 +2587,8 @@ exports[`LegalPage Terms and Conditions Page renders correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-cookie"
-                      href="/legal/cookie-policy"
+                      data-cy="footer-link-cookie-policy"
+                      href="/legal/copyrightcookie-policy"
                     >
                       Cookie Policy
                     </a>
@@ -2598,8 +2598,8 @@ exports[`LegalPage Terms and Conditions Page renders correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-terms"
-                      href="/legal/terms-and-conditions"
+                      data-cy="footer-link-terms-and-conditions"
+                      href="/legal/copyrightterms-and-conditions"
                     >
                       Terms and Conditions
                     </a>
@@ -2610,7 +2610,7 @@ exports[`LegalPage Terms and Conditions Page renders correctly 1`] = `
                     <a
                       class="footer-drawer-link"
                       data-cy="footer-link-disclaimer"
-                      href="/legal/disclaimer"
+                      href="/legal/copyrightdisclaimer"
                     >
                       Disclaimer
                     </a>
