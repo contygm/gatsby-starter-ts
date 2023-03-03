@@ -8,3 +8,4 @@ cypress/screenshots
 cypress/downloads
 cypress/videos
 package-lock.json
+/docs

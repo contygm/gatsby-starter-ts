@@ -2,20 +2,45 @@ import React from 'react';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FaIconLink } from './FaIconLink';
 
-export const NextAndPrevious = (props: {
+/**
+ * props needed for next and previous component
+ *
+ * @interface NextAndPreviousProps
+ * @typedef {NextAndPreviousProps}
+ * @property {NeighborPost} next - next post alphabetically 
+ * @property {NeighborPost} previous - previous post alphabetically 
+ * @property {PostType} type - post type 
+ * @see PostType
+ * @see NeighborPost
+ */
+interface  NextAndPreviousProps {
     next?: NeighborPost;
     previous?: NeighborPost;
     type: PostType;
-}) => {
+}
+
+/**
+ * A component with links to the next and previous posts (alphabetically by title). Links show as arrows
+ *
+ * @export
+ * @component
+ * @param {NextAndPreviousProps} props - next and previous posts + post type
+ * @see NextAndPreviousProps
+ */
+export const NextAndPrevious = ({
+    next,
+    previous,
+    type
+}: NextAndPreviousProps) => {
     return (
         <div className="level my-3">
             <div className="level-left">
                 <div className="level-item">
-                    {props.previous && (
+                    {previous && (
                         <FaIconLink
                             faIcon={faArrowLeft}
-                            url={`/${props.type}${props.previous.fields.slug}`}
-                            label={props.previous.frontmatter.title}
+                            url={`/${type}${previous.fields.slug}`}
+                            label={previous.frontmatter.title}
                             labelLeft={false}
                             color="black"
                         />
@@ -24,11 +49,11 @@ export const NextAndPrevious = (props: {
             </div>
             <div className="level-right">
                 <div className="level-item">
-                    {props.next && (
+                    {next && (
                         <FaIconLink
                             faIcon={faArrowRight}
-                            url={`/${props.type}${props.next.fields.slug}`}
-                            label={props.next.frontmatter.title}
+                            url={`/${type}${next.fields.slug}`}
+                            label={next.frontmatter.title}
                             color="black"
                         />
                     )}

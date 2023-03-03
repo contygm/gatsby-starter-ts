@@ -1,11 +1,36 @@
 import React from 'react';
 import { useSiteMetadata } from '../../utils/useSiteMetadata';
 
-export const SEO = (props: {
+/**
+ * properties for reusable SEO component
+ *
+ * @interface SeoProps
+ * @typedef {SeoProps}
+ * @property {string} [title] - page title
+ * @property {string} [description] - page meta description
+ * @property {React.ReactNode} [children] - the page contents
+ * 
+ * @see SEO
+ */
+interface SeoProps {
     title?: string;
     description?: string;
     children?: React.ReactNode;
-}) => {
+}
+
+/**
+ * A reusable SEO wrapper for page components. This will give the page all attributes listed in SeoProps
+ * @param {SeoProps} props - post details needed for SideBar tiles
+ * 
+ * @component 
+ * @see SeoProps
+ */
+export const SEO = ({
+    title,
+    description,
+    children
+}: SeoProps) => {
+    // set the title + description from SiteMetaData as default title + desc
     const {
         title: defaultTitle,
         description: defaultDescription,
@@ -13,9 +38,10 @@ export const SEO = (props: {
         siteUrl
     } = useSiteMetadata();
 
+    // use provided title if it exists
     const seo = {
-        title: props.title || defaultTitle,
-        description: props.description || defaultDescription,
+        title: title || defaultTitle,
+        description: description || defaultDescription,
         image: `${siteUrl}${image}`
     };
 
@@ -34,7 +60,7 @@ export const SEO = (props: {
                 rel="icon"
                 href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>👤</text></svg>"
             />
-            {props.children}
+            {children}
         </>
     );
 };
