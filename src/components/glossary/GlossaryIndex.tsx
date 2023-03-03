@@ -1,46 +1,34 @@
-import React, { FunctionComponent } from 'react';
+import React from 'react';
+import { makeLetterDefinitions } from '../../utils/helpers/makeLetterDefinitions';
 import { DefinitionCard } from './DefinitionCard';
 
+/**
+ * Props for the Glossary Index component
+ *
+ * @export
+ * @interface GlossaryIndexProps
+ * @typedef {GlossaryIndexProps}
+ * @property {GlossaryElements[]} allDefinitions - all glossary definitions 
+ * @property {Object} [allLetters] - nesting that will be REMOVEd 
+ * @property {Array<{fieldValue: string}>} allLetters.group - all starting letters using in the glossary in alphabetical order
+ * 
+ * @see GlossaryElements
+ */
+// TODO just pass the group
 export interface GlossaryIndexProps {
-    allDefinitions: Array<GlossaryElements>;
+    allDefinitions: GlossaryElements[];
     allLetters?: {
         group: Array<{
             fieldValue: string;
         }>;
     };
-    // handleFilterUpdate: (e: any) => void;
 }
 
-const letterDefinitionObjectArray = (
-    allLetters: GlossaryIndexProps['allLetters'],
-    allDefinitions: GlossaryIndexProps['allDefinitions']
-) => {
-    let index = 0;
-    const resArray: any[] = [];
-    allLetters?.group.forEach((letterObj) => {
-        const newLetterDefObj = {
-            letter: letterObj.fieldValue,
-            definitions: [] as Array<GlossaryElements>
-        };
-
-        while (
-            index < allDefinitions.length &&
-            letterObj.fieldValue === allDefinitions[index].frontmatter.letter
-        ) {
-            newLetterDefObj.definitions.push(allDefinitions[index]);
-            index++;
-        }
-        resArray.push(newLetterDefObj);
-    });
-    return resArray;
-};
-
-export const GlossaryIndex: FunctionComponent<GlossaryIndexProps> = ({
+export const GlossaryIndex = ({
     allDefinitions,
     allLetters
-}: // handleFilterUpdate
-GlossaryIndexProps) => {
-    const letterDefinitions = letterDefinitionObjectArray(
+}: GlossaryIndexProps) => {
+    const letterDefinitions = makeLetterDefinitions(
         allLetters,
         allDefinitions
     );
@@ -76,7 +64,6 @@ GlossaryIndexProps) => {
                                                     <DefinitionCard
                                                         definition={definition}
                                                         includeAll={true}
-                                                        // handleFilterUpdate={handleFilterUpdate}
                                                     />
                                                 </div>
                                             );
@@ -93,5 +80,3 @@ GlossaryIndexProps) => {
         </article>
     );
 };
-
-// export default GlossaryIndex;

@@ -1,11 +1,43 @@
 import { Link } from 'gatsby';
 import React from 'react';
-
-export const DefinitionCard = (props: {
+/**
+ * Props for the DefinitionCard component
+ *
+ * @interface DefinitionCardProps
+ * @typedef {DefinitionCardProps}
+ * @property {GlossaryElements} definition - The definition includes frontmatter and content. 
+ * Frontmatter contains: similar words, related posts, tags, title, etc.
+ * @property {boolean} includeAll - A setting to indicate which of the 2 card forms to use. When set to  true, the all definition elements will be displayed. Otherwise, the following elements will not be displayed: similar words, related posts, and tag footer.
+ * 
+ * @see GlossaryElements
+ * @see DefinitionCard 
+ */
+interface DefinitionCardProps {
     definition: GlossaryElements;
     includeAll: boolean;
-    // handleFilterUpdate: (e: any) => void;
-}) => {
+}
+
+/**
+ * A component for Glossary definitions. By default, this card will always include: 
+ * - definition content (html form)
+ * - syllables
+ * - phonetics
+ * 
+ * This card has two forms: include all elements or not. 
+ * - **Include all elements**: This form includes similar words, related posts, and tags within the Definition card.
+ * - **not**: This form includes a "read more" link to word on glossary index page. It does not include any of the elements from the above form.
+ * @param {DefinitionCardProps} props - definition content, frontmatter, and includeAll setting 
+ * 
+ * @component 
+ * @see DefinitionCardProps
+ */
+
+// TODO break up into local components
+// TODO name forms better
+export const DefinitionCard = ({
+    definition,
+    includeAll
+}: DefinitionCardProps) => {
     return (
         <div className="card mb-5">
             <div className="card-content">
@@ -17,9 +49,9 @@ export const DefinitionCard = (props: {
                                 <div className="level-item">
                                     <h3
                                         className="title is-3"
-                                        id={props.definition.frontmatter.title.toLowerCase()}
+                                        id={definition.frontmatter.title.toLowerCase()}
                                     >
-                                        {props.definition.frontmatter.title}
+                                        {definition.frontmatter.title}
                                     </h3>
                                 </div>
                             </div>
@@ -29,10 +61,7 @@ export const DefinitionCard = (props: {
                                     <div>
                                         <p className="heading">Syllables</p>
                                         <p className="subheading">
-                                            {
-                                                props.definition.frontmatter
-                                                    .syllables
-                                            }
+                                            {definition.frontmatter.syllables}
                                         </p>
                                     </div>
                                 </div>
@@ -40,10 +69,7 @@ export const DefinitionCard = (props: {
                                     <div>
                                         <p className="heading">Phonetics</p>
                                         <p className="subheading">
-                                            {
-                                                props.definition.frontmatter
-                                                    .phonetics
-                                            }
+                                            {definition.frontmatter.phonetics}
                                         </p>
                                     </div>
                                 </div>
@@ -56,13 +82,13 @@ export const DefinitionCard = (props: {
                     <div
                         className="container"
                         dangerouslySetInnerHTML={{
-                            __html: props.definition.html
+                            __html: definition.html
                         }}
                     />
-                    {!props.includeAll && (
+                    {!includeAll && (
                         <div className="has-text-centered">
                             <Link
-                                to={`/glossary#${props.definition.frontmatter.title}`}
+                                to={`/glossary#${definition.frontmatter.title}`}
                             >
                                 Read more...
                             </Link>
@@ -71,14 +97,14 @@ export const DefinitionCard = (props: {
                 </div>
 
                 {/* similar words and related posts */}
-                {props.includeAll && (
+                {includeAll && (
                     <div className="content">
                         <div className="level ">
                             <div className="level-item is-justify-content-left">
                                 <div>
                                     <h4>Similar Words:</h4>
                                     <ol>
-                                        {props.definition.frontmatter.similarWords.map(
+                                        {definition.frontmatter.similarWords.map(
                                             (word: string) => {
                                                 return (
                                                     <li key={word}>
@@ -96,11 +122,11 @@ export const DefinitionCard = (props: {
                                 </div>
                             </div>
                             <div className="level-item is-justify-content-left">
-                                {props.definition.frontmatter.relatedPosts && (
+                                {definition.frontmatter.relatedPosts && (
                                     <div>
                                         <h4>RelatedPosts:</h4>
                                         <ol>
-                                            {props.definition.frontmatter.relatedPosts.map(
+                                            {definition.frontmatter.relatedPosts.map(
                                                 (post: {
                                                     title: string;
                                                     slug: string;
@@ -127,12 +153,12 @@ export const DefinitionCard = (props: {
             </div>
 
             {/* tag footer */}
-            {props.includeAll && (
+            {includeAll && (
                 <div className="card-footer">
                     <p className="my-2 ml-5 mr-2">Tags:</p>
 
                     <div className="tags">
-                        {props.definition.frontmatter.tags.map(
+                        {definition.frontmatter.tags.map(
                             (tag: string) => {
                                 return (
                                     <Link
