@@ -11,11 +11,39 @@ import {
 import { FaIconLink } from '../common/FaIconLink';
 
 /**
- * @description A text link with footer styles
- * @param pageUrl - string, destination url
- * @param label - string, link text
+ * All the legal page links with labels
+ * @constant {Object[]}
+ * @property {string} label - The display label for the page
+ * @property {string} slug - The slug-friendly version of the label. Should be lowercase and replace spaces with `-`
+ * @memberof Footer
+ * @see DropDownLinkBtn
  */
-const PageLink = (props: { pageUrl: string; label: string }) => {
+const LEGAL_LINKS = [
+    {
+        label: 'Copyright',
+        slug: 'copyright'
+    },
+    {
+        label: 'Cookie Policy',
+        slug: 'cookie-policy'
+    },
+    {
+        label: 'Terms and Conditions',
+        slug: 'terms-and-conditions'
+    },
+    {
+        label: 'Disclaimer',
+        slug: 'disclaimer'
+    },
+];
+
+/**
+ * A text link with footer styles
+ * @param {string} pageUrl - string, destination url
+ * @param {string} label - string, link text
+ * @memberof Footer
+ */
+const PageLink = ({ pageUrl, label }: { pageUrl: string; label: string }) => {
     return (
         <li
             className="is-inline-desktop is-inline-tablet m-4 footer-link"
@@ -23,18 +51,46 @@ const PageLink = (props: { pageUrl: string; label: string }) => {
         >
             <Link
                 className="footer-link"
-                to={props.pageUrl}
-                data-cy={`footer-link-${props.label}`}
+                to={pageUrl}
+                data-cy={`footer-link-${label}`}
             >
-                {props.label}
+                {label}
             </Link>
         </li>
     );
 };
 
 /**
- * @description A link dropdown that routes to the legal pages: Copyright,
- * Cookie Policy, Terms and Conditions, Disclaimer. Dropdown actually drops UP
+ * A link with dropdown styles that will go to a specific legal page
+ * 
+ * @param {string} label - string, link text
+ * @param {string} slug - string, destination url
+ * @memberof Footer
+ */
+const DrawerLegalLink = ({ label, slug }: { label: string; slug: string;  }) => {
+    return (
+        <div className="dropdown-item">
+            <Link
+                className="footer-drawer-link"
+                to={`/legal/copyright${slug}`}
+                data-cy={`footer-link-${slug}`}
+            >
+                {label}
+            </Link>
+        </div>
+    );
+};
+
+/**
+ * A link dropdown that routes to the legal page index and the individual legal pages (hardcoded values): 
+ * - Copyright
+ * - Cookie Policy
+ * - Terms and Conditions
+ * - Disclaimer. 
+ * 
+ * Dropdown actually drops UP.
+ * 
+ * @memberof Footer
  */
 const DropDownLinkBtn = () => {
     return (
@@ -64,42 +120,11 @@ const DropDownLinkBtn = () => {
                 role="menu"
             >
                 <div className="dropdown-content">
-                    <div className="dropdown-item">
-                        <Link
-                            className="footer-drawer-link"
-                            to="/legal/copyright"
-                            data-cy="footer-link-copyright"
-                        >
-                            Copyright
-                        </Link>
-                    </div>
-                    <div className="dropdown-item">
-                        <Link
-                            className="footer-drawer-link"
-                            to="/legal/cookie-policy"
-                            data-cy="footer-link-cookie"
-                        >
-                            Cookie Policy
-                        </Link>
-                    </div>
-                    <div className="dropdown-item">
-                        <Link
-                            className="footer-drawer-link"
-                            to="/legal/terms-and-conditions"
-                            data-cy="footer-link-terms"
-                        >
-                            Terms and Conditions
-                        </Link>
-                    </div>
-                    <div className="dropdown-item">
-                        <Link
-                            className="footer-drawer-link"
-                            to="/legal/disclaimer"
-                            data-cy="footer-link-disclaimer"
-                        >
-                            Disclaimer
-                        </Link>
-                    </div>
+                    {
+                        LEGAL_LINKS.map((link) => 
+                            <DrawerLegalLink label={link.label} slug={link.slug} />
+                        )
+                    }
                 </div>
             </div>
         </li>
@@ -107,10 +132,16 @@ const DropDownLinkBtn = () => {
 };
 
 /**
- * @description Site wide footer, mobile friendly
- * @param author - author of site, passed in from layour
+ * Site-wide, mobile-friendly footer that includes: 
+ * - copyright with site author
+ * - legal page links in a dropdown button
+ * - site logo
+ * - links to privacy, contact and about pages
+ * - social media links
+ * @component
+ * @param author - author of site, passed in from layout
  */
-export const Footer = (props: { author: string }) => {
+export const Footer = ({ author } : { author: string }) => {
     return (
         <footer className="footer">
             <div className="columns mb-1 is-vcentered has-text-centered-mobile">
@@ -152,7 +183,7 @@ export const Footer = (props: { author: string }) => {
                             label="Privacy"
                             pageUrl="/legal/privacy-policy"
                         />
-                        {/* contians the rest of the 'legal' pages */}
+                        {/* contains the rest of the 'legal' pages */}
                         <DropDownLinkBtn />
                     </div>
                 </ul>
@@ -172,7 +203,7 @@ export const Footer = (props: { author: string }) => {
                     data-testid="copyright"
                 >
                     © <time>{new Date().getFullYear()}</time>, Built by{' '}
-                    {props.author}
+                    {author}
                 </p>
             </div>
         </footer>
