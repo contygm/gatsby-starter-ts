@@ -22,7 +22,6 @@ interface  NextAndPreviousProps {
 /**
  * A component with links to the next and previous posts (alphabetically by title). Links show as arrows
  *
- * @export
  * @component
  * @param {NextAndPreviousProps} props - next and previous posts + post type
  * @see NextAndPreviousProps
