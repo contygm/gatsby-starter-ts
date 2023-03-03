@@ -1,5 +1,6 @@
 import { useStaticQuery, graphql } from 'gatsby';
 
+// TODO: not a hook
 export const useSiteMetadata = () => {
     const { site } = useStaticQuery(
         graphql`

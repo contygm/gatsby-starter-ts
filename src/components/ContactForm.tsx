@@ -7,6 +7,7 @@ import React from 'react';
  */
 export const ContactForm = () => {
     // console.log form values on submit
+    // TODO: make an alert 
     function onSubmit(e: React.SyntheticEvent) {
         e.preventDefault();
 

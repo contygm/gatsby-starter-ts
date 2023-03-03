@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
 import { TagsList } from './TagsList';
 
+
 export const SearchFilterRow = (props: {
     tags: Array<{
         fieldValue: string;
