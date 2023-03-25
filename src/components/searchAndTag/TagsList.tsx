@@ -1,5 +1,21 @@
 import React from 'react';
 
+/**
+ * A component used within the SearchFilterRow component. This is the tag filter component, which includes a hard-coded 'all' tag
+ * as well as all the tags passed in a parameter.
+ * @component
+ *
+ * @param {Array<{fieldValue: string, totalCount: number}>} tags - array of all tags with total tag count
+ * @param {number} totalPostCount - total amount of posts
+ * @param {string} activeTag - the current tag being used for filtering
+ * @param {boolean} isSearchActive - true when the user is interacting with the search bar. When true, filter 
+ * will be disabled.
+ * @param {PostType} type - the type of post being filtered/searched
+ * @param {void} handleFilterUpdate - void function used as the action when filter is updated
+ * 
+ * @see SearchFilterRow
+ */
+// TODO Interface containing properties used for search+filter row
 export const TagsList = (props: {
     tags: Array<{
         fieldValue: string;
