@@ -4,15 +4,13 @@ import { DefinitionCard } from './DefinitionCard';
 
 /**
  * Props for the Glossary Index component
- *
- * @export
  * @interface GlossaryIndexProps
- * @typedef {GlossaryIndexProps}
+ * 
  * @property {GlossaryElements[]} allDefinitions - all glossary definitions 
  * @property {Object} [allLetters] - nesting that will be REMOVEd 
  * @property {Array<{fieldValue: string}>} allLetters.group - all starting letters using in the glossary in alphabetical order
- * 
  * @see GlossaryElements
+ * @see GlossaryIndex
  */
 // TODO just pass the group
 export interface GlossaryIndexProps {
@@ -24,6 +22,13 @@ export interface GlossaryIndexProps {
     };
 }
 
+/**
+ * Props for the Glossary Index component
+ * @component
+ * 
+ * @property {GlossaryIndexProps} props - includes all available definitions and all letters used
+ * @see GlossaryIndexProps
+ */
 export const GlossaryIndex = ({
     allDefinitions,
     allLetters
