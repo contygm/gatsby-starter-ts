@@ -1,5 +1,5 @@
 export * from './posts/AuthorBlurb';
-export * from './ContactForm';
+export * from './common/ContactForm';
 export * from './common/FaIconLink';
 export * from './layout/Footer';
 export * from './layout/SideBarPostTile';
