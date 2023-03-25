@@ -3,9 +3,8 @@ import { useSiteMetadata } from '../../utils/useSiteMetadata';
 
 /**
  * properties for reusable SEO component
- *
  * @interface SeoProps
- * @typedef {SeoProps}
+ * 
  * @property {string} [title] - page title
  * @property {string} [description] - page meta description
  * @property {React.ReactNode} [children] - the page contents

@@ -1,0 +1,277 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContactForm renders correctly 1`] = `
+<DocumentFragment>
+  <form
+    class="is-small"
+    enctype="text/plain"
+    method="get"
+  >
+    <div
+      class="field"
+    >
+      <label
+        class="label"
+      >
+        Name
+      </label>
+      <div
+        class="control"
+      >
+        <input
+          class="input"
+          name="name"
+          placeholder="Name"
+          type="text"
+        />
+      </div>
+    </div>
+    <div
+      class="field"
+    >
+      <label
+        class="label"
+      >
+        YourEmail
+      </label>
+      <div
+        class="control"
+      >
+        <input
+          class="input"
+          name="email"
+          placeholder="email@email.com"
+          type="text"
+        />
+      </div>
+    </div>
+    <div
+      class="field"
+    >
+      <label
+        class="label"
+      >
+        Message
+      </label>
+      <div
+        class="control"
+      >
+        <textarea
+          class="textarea"
+          name="message"
+          placeholder="Your messages"
+        />
+      </div>
+    </div>
+    <div
+      class="field is-grouped"
+    >
+      <div
+        class="control"
+      >
+        <button
+          class="button is-primary"
+          type="submit"
+        >
+          Submit
+        </button>
+      </div>
+      <div
+        class="control"
+      >
+        <button
+          class="button has-background-grey-lighter"
+          name="reset"
+          type="reset"
+        >
+          Cancel
+        </button>
+      </div>
+    </div>
+  </form>
+</DocumentFragment>
+`;
+
+exports[`ContactForm submit does nothing 1`] = `
+<DocumentFragment>
+  <form
+    class="is-small"
+    enctype="text/plain"
+    method="get"
+  >
+    <div
+      class="field"
+    >
+      <label
+        class="label"
+      >
+        Name
+      </label>
+      <div
+        class="control"
+      >
+        <input
+          class="input"
+          name="name"
+          placeholder="Name"
+          type="text"
+        />
+      </div>
+    </div>
+    <div
+      class="field"
+    >
+      <label
+        class="label"
+      >
+        YourEmail
+      </label>
+      <div
+        class="control"
+      >
+        <input
+          class="input"
+          name="email"
+          placeholder="email@email.com"
+          type="text"
+        />
+      </div>
+    </div>
+    <div
+      class="field"
+    >
+      <label
+        class="label"
+      >
+        Message
+      </label>
+      <div
+        class="control"
+      >
+        <textarea
+          class="textarea"
+          name="message"
+          placeholder="Your messages"
+        />
+      </div>
+    </div>
+    <div
+      class="field is-grouped"
+    >
+      <div
+        class="control"
+      >
+        <button
+          class="button is-primary"
+          type="submit"
+        >
+          Submit
+        </button>
+      </div>
+      <div
+        class="control"
+      >
+        <button
+          class="button has-background-grey-lighter"
+          name="reset"
+          type="reset"
+        >
+          Cancel
+        </button>
+      </div>
+    </div>
+  </form>
+</DocumentFragment>
+`;
+
+exports[`ContactForm submit does nothing 2`] = `
+<DocumentFragment>
+  <form
+    class="is-small"
+    enctype="text/plain"
+    method="get"
+  >
+    <div
+      class="field"
+    >
+      <label
+        class="label"
+      >
+        Name
+      </label>
+      <div
+        class="control"
+      >
+        <input
+          class="input"
+          name="name"
+          placeholder="Name"
+          type="text"
+        />
+      </div>
+    </div>
+    <div
+      class="field"
+    >
+      <label
+        class="label"
+      >
+        YourEmail
+      </label>
+      <div
+        class="control"
+      >
+        <input
+          class="input"
+          name="email"
+          placeholder="email@email.com"
+          type="text"
+        />
+      </div>
+    </div>
+    <div
+      class="field"
+    >
+      <label
+        class="label"
+      >
+        Message
+      </label>
+      <div
+        class="control"
+      >
+        <textarea
+          class="textarea"
+          name="message"
+          placeholder="Your messages"
+        />
+      </div>
+    </div>
+    <div
+      class="field is-grouped"
+    >
+      <div
+        class="control"
+      >
+        <button
+          class="button is-primary"
+          type="submit"
+        >
+          Submit
+        </button>
+      </div>
+      <div
+        class="control"
+      >
+        <button
+          class="button has-background-grey-lighter"
+          name="reset"
+          type="reset"
+        >
+          Cancel
+        </button>
+      </div>
+    </div>
+  </form>
+</DocumentFragment>
+`;
