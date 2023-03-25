@@ -1,6 +1,20 @@
 import React, { FunctionComponent, useEffect, useState } from 'react';
 import { PostCard } from './PostCard';
 
+/**
+ * All props needed for the PostIndex component.
+ *
+ * @interface PostIndexProps
+ * 
+ * @property {IndexElements[]} allPosts - a list of allPosts available. This included front matter and other index elements
+ * @property {number} increment - when the user clicks the 'see more posts' button, this is how many more posts should show
+ * @property {PostType} type - the type of post
+ * @property {void} handleFilterUpdate - a void function for when the a user interacts with the filter; `(e: any) => void`
+ * 
+ * @see IndexElements
+ * @see PostType
+ * @see PostIndex
+ */
 interface PostIndexProps {
     allPosts: Array<IndexElements>;
     increment: number;
@@ -8,6 +22,16 @@ interface PostIndexProps {
     handleFilterUpdate: (e: any) => void;
 }
 
+/**
+ * A post index component that displays basic post info in PostCards. The component can also filter available posts based on tags. 
+ * Additionally, a 'see more button' that will display more posts. The initial amount of posts displayed as well as additional amount
+ * of posts displayed with the button are both based on the increment passed in. 
+ * @component
+ *
+ * @param {PostIndexProps} props - includes allPosts, increment, type, handleFilterUpdate
+ * @see PostIndexProps
+ * @see PostCard
+ */
 export const PostIndex: FunctionComponent<PostIndexProps> = ({
     allPosts,
     increment,
