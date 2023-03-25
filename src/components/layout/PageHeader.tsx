@@ -7,6 +7,10 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { FaIconLink } from '../common/FaIconLink';
 
+/**
+ * Sub-component containing 4 hardcoded social media links
+ * @memberof PageHeader
+ */
 const SocialMediaRow = () => {
     return (
         <p className="subtitle header-icon-row">
@@ -26,33 +30,61 @@ const SocialMediaRow = () => {
     );
 };
 
-const Subtitle = (props: { subtitle: string }) => {
-    return <p className="subtitle has-text-white">{props.subtitle}</p>;
+/**
+ * Sub-component for the subtitle
+ * @memberof PageHeader
+ * 
+ * @param {string} subtitle - a subtitle for the main header component
+ */
+const Subtitle = ({subtitle}: { subtitle: string }) => {
+    return <p className="subtitle has-text-white">{subtitle}</p>;
 };
 
 /**
- * @description Page header for standard pages
- * @param title - the page title to be displayed
- * @param alignCenter - boolean;
+ * Page header for standard pages
+ * @interface PageHeaderProps
+ * 
+ * @property {string} title - the page title to be displayed
+ * @property {boolean} [alignCenter = false] - Setting to center the header content
+ * @property {string} [subtitle] - optional subtitle the displays under title
+ * @property {boolean} [hasSocial] - optional. Add social media buttons under title and subtitle
+ * 
+ * @see PageHeader
  */
-export const PageHeader = (props: {
+interface PageHeaderProps {
     title: string;
     alignCenter?: boolean;
     subtitle?: string;
     hasSocial?: boolean;
-}) => {
-    const centerClass = props.alignCenter ? 'has-text-centered' : '';
+}
+
+/**
+ * Page header for standard pages
+ * @component
+ * 
+ * @param {PageHeaderProps} props - includes the title, subtitle, hasSocial option,
+ * and align center option
+ * 
+ * @see PageHeaderProps
+ */
+export const PageHeader = ({
+    title,
+    alignCenter = false,
+    subtitle,
+    hasSocial
+}: PageHeaderProps) => {
+    const centerClass = alignCenter ? 'has-text-centered' : '';
 
     return (
         <header className="hero is-medium">
             <div className="hero-body has-background-black">
                 <div className={`container ${centerClass}`}>
                     <h1 className="title has-text-white is-1">
-                        {props.title}
+                        {title}
                         <span className="pg-header-period">.</span>
                     </h1>
-                    {props.subtitle && <Subtitle subtitle={props.subtitle} />}
-                    {props.hasSocial && <SocialMediaRow />}
+                    {subtitle && <Subtitle subtitle={subtitle} />}
+                    {hasSocial && <SocialMediaRow />}
                 </div>
             </div>
         </header>

@@ -4,10 +4,8 @@ import React from 'react';
 
 /**
  * properties for SideBarPostTile component
- *
- * @export
  * @interface SideBarPostTileProps
- * @typedef {SideBarPostTileProps}
+ * 
  * @property {string} title - title of the post
  * @property {string} excerpt - post excerpt 
  * @property {string} slug - post slug
@@ -24,9 +22,10 @@ export interface SideBarPostTileProps {
 
 /**
  * post tile component for site's SideBar
+ * @component 
+ * 
  * @param {SideBarPostTileProps} props - post details needed for SideBar tiles
  * 
- * @component 
  * @see SideBarPostTileProps
  */
 export const SideBarPostTile = ({

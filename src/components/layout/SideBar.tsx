@@ -2,12 +2,31 @@ import React from 'react';
 import { SideBarPostTile } from './SideBarPostTile';
 import { getImage } from 'gatsby-plugin-image';
 
+/**
+ * Vertical sidebar for post templates
+ * @interface SideBarProps
+ * 
+ * @property {PostType} type - the page title to be displayed
+ * @property {IndexElements[]} featured - post(s) to be used in the featured section
+ * @property {IndexElements[]} related - post(s) to be used in the related section
+ * 
+ * @see Sidebar
+ */
 export interface SideBarProps {
     type: PostType;
-    featured: Array<IndexElements>;
-    related: Array<IndexElements>;
+    featured: IndexElements[];
+    related: IndexElements[];
 }
 
+/**
+ * A vertical sidebar component with optional featured and related posts. Related posts sit 
+ * on top of the featured posts. 
+ * @component
+ *
+ * @param {SideBarProps} - props including featured posts, related posts, and type of post
+ * 
+ * @see SideBarProps
+ */
 export const SideBar = ({ featured, related, type }: SideBarProps) => {
     // TODO: working search requires queries, tabling for now
     // const searchPlaceholder = type === 'glossary' ? 'A word...' : 'Title...';

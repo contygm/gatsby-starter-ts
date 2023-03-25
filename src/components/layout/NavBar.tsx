@@ -1,20 +1,21 @@
 import React, { useState } from 'react';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
 /**
- * @description Site wide navigation used in layout. This nobile friendly
+ * Site wide navigation used in layout. This nobile friendly
  * navigation has the logo on the right, navigation links center, and a
  * search bar on the right.
+ * @component
  */
 export const NavBar = () => {
     const [showBurger, setShowBurger] = useState('');
 
     /**
-     * @description Set active class for 'hamburger' menu. When active,
-     * the mobile navigation options will show
+     * Toggle active class for 'hamburger' menu. When active,
+     * the mobile navigation will show
+     * @function handleUpdateShowBurger
+     * @memberof NavBar
      */
     function handleUpdateShowBurger() {
         const newVal = showBurger === '' ? 'is-active' : '';
@@ -91,22 +92,6 @@ export const NavBar = () => {
                         Glossary
                     </Link>
                 </div>
-                {/* TODO: requires using a search query set up */}
-                {/*  Search bar */}
-                {/* <div className="navbar-end">
-                    <div className="field nav-side-width">
-                        <p className="control has-icons-left has-icons-right">
-                            <input
-                                className="input is-rounded is-small"
-                                type="text"
-                                placeholder="Search..."
-                            />
-                            <span className="icon is-small is-left">
-                                <FontAwesomeIcon icon={faMagnifyingGlass} />
-                            </span>
-                        </p>
-                    </div>
-                </div> */}
             </div>
         </nav>
     );

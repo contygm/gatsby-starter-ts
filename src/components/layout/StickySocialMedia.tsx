@@ -8,13 +8,23 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-export const StickySocialMedia = (props: {
+/**
+ * A mobile and web friendly social media bar. When scrolling, the bar will stick to the top 
+ * of the page. The isVertical mode is ideal for mobile devices. The horizontal mode is ideal
+ * for placement with in the sidebar component. 
+ * @component
+ * 
+ * @param {boolean} isVertical - when true the social media bar will show 
+ * vertically. This state is meant for mobile devices.
+ * @param {string} [classes] - css classes to customize the look of the component
+ */
+export const StickySocialMedia = ({isVertical, classes}: {
     isVertical: boolean;
     classes?: string;
 }) => {
     const [showMedia, setShowMedia] = useState(true);
 
-    const verticalClass = props.isVertical ? 'is-vertical' : '';
+    const verticalClass = isVertical ? 'is-vertical' : '';
 
     const handleCollapse = () => {
         setShowMedia(!showMedia);
@@ -23,18 +33,18 @@ export const StickySocialMedia = (props: {
     return (
         <div
             className={`menu sticky box mt-4 ${verticalClass} ${
-                props.classes ?? ''
+                classes ?? ''
             }`}
         >
             <p className="menu-label">
-                {props.isVertical ? 'Share' : 'Share this post'}
+                {isVertical ? 'Share' : 'Share this post'}
             </p>
             <ul
                 className={`has-text-black has-text-centered ${
-                    props.isVertical ? '' : 'columns'
+                    isVertical ? '' : 'columns'
                 }`}
             >
-                {((props.isVertical && showMedia) || !props.isVertical) && (
+                {((isVertical && showMedia) || !isVertical) && (
                     <>
                         <div className="column">
                             <FontAwesomeIcon
@@ -59,7 +69,7 @@ export const StickySocialMedia = (props: {
                         </div>
                     </>
                 )}
-                {props.isVertical && showMedia && (
+                {isVertical && showMedia && (
                     <div className="column has-text-grey-lighter pt-4 pb-2">
                         <FontAwesomeIcon
                             className="faicon-link"
@@ -70,7 +80,7 @@ export const StickySocialMedia = (props: {
                         />
                     </div>
                 )}
-                {props.isVertical && !showMedia && (
+                {isVertical && !showMedia && (
                     <div className="has-text-grey-lighter">
                         <FontAwesomeIcon
                             className="faicon-link"

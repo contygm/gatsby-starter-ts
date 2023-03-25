@@ -12,12 +12,14 @@ import { FaIconLink } from '../common/FaIconLink';
 
 /**
  * All the legal page links with labels
- * @constant {Object[]}
+ * @constant {Object[]} 
+ * 
  * @property {string} label - The display label for the page
  * @property {string} slug - The slug-friendly version of the label. Should be lowercase and replace spaces with `-`
  * @memberof Footer
  * @see DropDownLinkBtn
  */
+// TODO: move to const folder
 const LEGAL_LINKS = [
     {
         label: 'Copyright',
@@ -39,9 +41,10 @@ const LEGAL_LINKS = [
 
 /**
  * A text link with footer styles
+ * @memberof Footer
+ * 
  * @param {string} pageUrl - string, destination url
  * @param {string} label - string, link text
- * @memberof Footer
  */
 const PageLink = ({ pageUrl, label }: { pageUrl: string; label: string }) => {
     return (
@@ -62,11 +65,14 @@ const PageLink = ({ pageUrl, label }: { pageUrl: string; label: string }) => {
 
 /**
  * A link with dropdown styles that will go to a specific legal page
+ * @memberof Footer
  * 
  * @param {string} label - string, link text
  * @param {string} slug - string, destination url
- * @memberof Footer
  */
+// TODO: move to dropdown btn file
+// TODO: pass full slug
+// TODO: make general footer dropdown link
 const DrawerLegalLink = ({ label, slug }: { label: string; slug: string;  }) => {
     return (
         <div className="dropdown-item">
@@ -89,9 +95,10 @@ const DrawerLegalLink = ({ label, slug }: { label: string; slug: string;  }) => 
  * - Disclaimer. 
  * 
  * Dropdown actually drops UP.
- * 
  * @memberof Footer
  */
+// TODO: modify to take legal links as an arg
+// TODO: move to dropdown btn file
 const DropDownLinkBtn = () => {
     return (
         <li
@@ -122,7 +129,7 @@ const DropDownLinkBtn = () => {
                 <div className="dropdown-content">
                     {
                         LEGAL_LINKS.map((link) => 
-                            <DrawerLegalLink label={link.label} slug={link.slug} />
+                            <DrawerLegalLink key={link.label} label={link.label} slug={link.slug} />
                         )
                     }
                 </div>
@@ -139,6 +146,7 @@ const DropDownLinkBtn = () => {
  * - links to privacy, contact and about pages
  * - social media links
  * @component
+ * 
  * @param author - author of site, passed in from layout
  */
 export const Footer = ({ author } : { author: string }) => {
@@ -184,6 +192,7 @@ export const Footer = ({ author } : { author: string }) => {
                             pageUrl="/legal/privacy-policy"
                         />
                         {/* contains the rest of the 'legal' pages */}
+                        {/* TODO: pass legal pages */}
                         <DropDownLinkBtn />
                     </div>
                 </ul>
