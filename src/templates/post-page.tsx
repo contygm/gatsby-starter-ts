@@ -2,6 +2,28 @@ import React, { FunctionComponent, useEffect, useState } from 'react';
 import { SearchFilterRow, PostIndex, GlossaryIndex } from '../components';
 import { filterWithSearchQuery } from '../utils/searchFunctions';
 
+// TODO get rid of nesting if possible
+// TODO types for tags + letters + index
+/**
+ * All properties needed for post page, including: all tags used for post type, all posts for type,
+ * post type, and all letters used (optional, for glossary)
+ *
+ * @interface PostPageProps
+ * @property {{group: Array}} allTags - all tags used for post type
+ * @property {Array<{fieldValue: string, totalCount: number }>} allTags.group - inner object array with tag value and count
+ * @property {Object} index - all posts of given type
+ * @property {GlossaryElements[] | IndexElements[]} index.nodes - all posts of given type
+ * @property {number} index.totalCount - all posts of given type
+ * @property {PostType} type - post type: blog, wiki, glossary
+ * @property {{group: Array}} [allLetters] - all letters used in glossary
+ * @property {Array<{fieldValue: string}>} [allLetters.group] - inner object with letter value
+ * 
+ * @see PostType
+ * @see IndexElements
+ * @see GlossaryElements
+ * @memberof PostPage
+ * @category Template
+ */
 export interface PostPageProps {
     allTags: {
         group: Array<{
@@ -24,6 +46,13 @@ export interface PostPageProps {
 const INCREMENT = 6;
 
 // TODO should be named index page or something
+/**
+ * A general index page component that works with all post types. Includes search, filter, and card based index.
+ * @category Template
+ * @class
+ * 
+ * @param {PostPageProps} props - all posts, all tags, type, and all letters (optional, for glossary)
+ */
 const PostPage: FunctionComponent<PostPageProps> = ({
     index,
     allTags,

@@ -16,6 +16,24 @@ import {
     StickySocialMedia
 } from '../components';
 
+/**
+ * All properties of a basic blog post including content, frontmatter and header image
+ *
+ * @interface BlogPostProp
+ * @property {{siteMetadata: SiteMetadata}} site - site metadata
+ * @property {PostElements} markdown - includes frontmatter, image, etc
+ * @property {NeighborPost} previous - previous post (by date)
+ * @property {NeighborPost} next - next post (by date)
+ * @property {{nodes: IndexElements[]}} featured - featured blog posts
+ * @property {{nodes: IndexElements[]}} related - related blog posts
+ * 
+ * @see SiteMetadata
+ * @see IndexElements
+ * @see PostElements
+ * @see NeighborPost
+ * @memberof BlogPost
+ * @category Template
+ */
 export interface BlogPostProps {
     site: {
         siteMetadata: SiteMetadata;
@@ -24,13 +42,26 @@ export interface BlogPostProps {
     previous: NeighborPost;
     next: NeighborPost;
     featured: {
-        nodes: Array<IndexElements>;
+        nodes: IndexElements[];
     };
     related: {
-        nodes: Array<IndexElements>;
+        nodes: IndexElements[];
     };
 }
 
+/**
+ * A template for a blog post, including: sidebar, table of contents, blog content, and author section.
+ * @category Template
+ * @class
+ * 
+ * @param {Object} data 
+ * @param {{siteMetadata: SiteMetadata}} data.site - site metadata
+ * @param {PostElements} data.markdown - includes frontmatter, image, etc
+ * @param {NeighborPost} data.previous - previous post (by date)
+ * @param {NeighborPost} data.next - next post (by date)
+ * @param {{nodes: IndexElements[]}} data.featured - featured blog posts
+ * @param {{nodes: IndexElements[]}} data.related - related blog posts
+ */
 const BlogPost = ({
     data: { site, markdownRemark, previous, next, featured, related }
 }: PageProps<BlogPostProps>) => {
@@ -183,6 +214,13 @@ const BlogPost = ({
 };
 
 export default BlogPost;
+
+/**
+ * A basic component for SEO focused information
+ * @param {HeadProps<BlogPostProps>} site - site meta data
+ * 
+ * @memberof BlogPost
+ */
 export function Head({ data: { markdownRemark } }: HeadProps<BlogPostProps>) {
     return <SEO title={markdownRemark.frontmatter.title} />;
 }
