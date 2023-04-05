@@ -6,7 +6,7 @@ import { StaticImage } from 'gatsby-plugin-image';
  * Site wide navigation used in layout. This nobile friendly
  * navigation has the logo on the right, navigation links center, and a
  * search bar on the right.
- * @component
+ * @category Components
  */
 export const NavBar = () => {
     const [showBurger, setShowBurger] = useState('');

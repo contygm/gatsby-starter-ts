@@ -4,13 +4,12 @@ import { Footer } from './Footer';
 import { useSiteMetadata } from '../../utils/useSiteMetadata';
 import '../../styles.scss';
 
-
 /**
- * Layout props including only the children 
+ * Layout props including only the children
  * @interface LayoutProps
- * 
- * @property {React.ReactNode} children - the content to be wrapped by layout component 
- *  
+ *
+ * @property {React.ReactNode} children - the content to be wrapped by layout component
+ *
  * @see Layout
  */
 interface LayoutProps {
@@ -18,9 +17,9 @@ interface LayoutProps {
 }
 
 /**
- * Main layout wrapper for all pages. Includes navigation bar and footer. Passes author (from site meta data) to footer 
- * @component
- * 
+ * Main layout wrapper for all pages. Includes navigation bar and footer. Passes author (from site meta data) to footer
+ * @category Components
+ *
  * @param children - the page content that's passed in
  * @see LayoutProps
  */

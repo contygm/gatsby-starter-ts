@@ -3,12 +3,12 @@ import React from 'react';
 /**
  * Props for the DefinitionCard component
  * @interface DefinitionCardProps
- * 
- * @property {GlossaryElements} definition - The definition includes frontmatter and content. 
+ *
+ * @property {GlossaryElements} definition - The definition includes frontmatter and content.
  * Frontmatter contains: similar words, related posts, tags, title, etc.
  * @property {boolean} includeAll - A setting to indicate which of the 2 card forms to use. When set to  true, the all definition elements will be displayed. Otherwise, the following elements will not be displayed: similar words, related posts, and tag footer.
  * @see GlossaryElements
- * @see DefinitionCard 
+ * @see DefinitionCard
  */
 interface DefinitionCardProps {
     definition: GlossaryElements;
@@ -16,17 +16,17 @@ interface DefinitionCardProps {
 }
 
 /**
- * A component for Glossary definitions. By default, this card will always include: 
+ * A component for Glossary definitions. By default, this card will always include:
  * - definition content (html form)
  * - syllables
  * - phonetics
- * 
- * This card has two forms: include all elements or not. 
+ *
+ * This card has two forms: include all elements or not.
  * - **Include all elements**: This form includes similar words, related posts, and tags within the Definition card.
  * - **not**: This form includes a "read more" link to word on glossary index page. It does not include any of the elements from the above form.
- * @component 
- * 
- * @param {DefinitionCardProps} props - definition content, frontmatter, and includeAll setting 
+ * @category Components
+ *
+ * @param {DefinitionCardProps} props - definition content, frontmatter, and includeAll setting
  * @see DefinitionCardProps
  */
 
@@ -156,21 +156,19 @@ export const DefinitionCard = ({
                     <p className="my-2 ml-5 mr-2">Tags:</p>
 
                     <div className="tags">
-                        {definition.frontmatter.tags.map(
-                            (tag: string) => {
-                                return (
-                                    <Link
-                                        to={`?tag=${tag}`}
-                                        id={tag}
-                                        className="tag is-success is-light"
-                                        key={tag}
-                                        // onClick={props.handleFilterUpdate}
-                                    >
-                                        {tag}
-                                    </Link>
-                                );
-                            }
-                        )}
+                        {definition.frontmatter.tags.map((tag: string) => {
+                            return (
+                                <Link
+                                    to={`?tag=${tag}`}
+                                    id={tag}
+                                    className="tag is-success is-light"
+                                    key={tag}
+                                    // onClick={props.handleFilterUpdate}
+                                >
+                                    {tag}
+                                </Link>
+                            );
+                        })}
                     </div>
                 </div>
             )}

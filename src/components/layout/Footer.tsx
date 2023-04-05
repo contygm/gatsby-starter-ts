@@ -12,8 +12,8 @@ import { FaIconLink } from '../common/FaIconLink';
 
 /**
  * All the legal page links with labels
- * @constant {Object[]} 
- * 
+ * @constant {Object[]}
+ *
  * @property {string} label - The display label for the page
  * @property {string} slug - The slug-friendly version of the label. Should be lowercase and replace spaces with `-`
  * @memberof Footer
@@ -36,13 +36,13 @@ const LEGAL_LINKS = [
     {
         label: 'Disclaimer',
         slug: 'disclaimer'
-    },
+    }
 ];
 
 /**
  * A text link with footer styles
  * @memberof Footer
- * 
+ *
  * @param {string} pageUrl - string, destination url
  * @param {string} label - string, link text
  */
@@ -66,14 +66,14 @@ const PageLink = ({ pageUrl, label }: { pageUrl: string; label: string }) => {
 /**
  * A link with dropdown styles that will go to a specific legal page
  * @memberof Footer
- * 
+ *
  * @param {string} label - string, link text
  * @param {string} slug - string, destination url
  */
 // TODO: move to dropdown btn file
 // TODO: pass full slug
 // TODO: make general footer dropdown link
-const DrawerLegalLink = ({ label, slug }: { label: string; slug: string;  }) => {
+const DrawerLegalLink = ({ label, slug }: { label: string; slug: string }) => {
     return (
         <div className="dropdown-item">
             <Link
@@ -88,12 +88,12 @@ const DrawerLegalLink = ({ label, slug }: { label: string; slug: string;  }) => 
 };
 
 /**
- * A link dropdown that routes to the legal page index and the individual legal pages (hardcoded values): 
+ * A link dropdown that routes to the legal page index and the individual legal pages (hardcoded values):
  * - Copyright
  * - Cookie Policy
  * - Terms and Conditions
- * - Disclaimer. 
- * 
+ * - Disclaimer.
+ *
  * Dropdown actually drops UP.
  * @memberof Footer
  */
@@ -127,11 +127,13 @@ const DropDownLinkBtn = () => {
                 role="menu"
             >
                 <div className="dropdown-content">
-                    {
-                        LEGAL_LINKS.map((link) => 
-                            <DrawerLegalLink key={link.label} label={link.label} slug={link.slug} />
-                        )
-                    }
+                    {LEGAL_LINKS.map((link) => (
+                        <DrawerLegalLink
+                            key={link.label}
+                            label={link.label}
+                            slug={link.slug}
+                        />
+                    ))}
                 </div>
             </div>
         </li>
@@ -139,17 +141,17 @@ const DropDownLinkBtn = () => {
 };
 
 /**
- * Site-wide, mobile-friendly footer that includes: 
+ * Site-wide, mobile-friendly footer that includes:
  * - copyright with site author
  * - legal page links in a dropdown button
  * - site logo
  * - links to privacy, contact and about pages
  * - social media links
- * @component
- * 
+ * @category Components
+ *
  * @param author - author of site, passed in from layout
  */
-export const Footer = ({ author } : { author: string }) => {
+export const Footer = ({ author }: { author: string }) => {
     return (
         <footer className="footer">
             <div className="columns mb-1 is-vcentered has-text-centered-mobile">
@@ -211,8 +213,7 @@ export const Footer = ({ author } : { author: string }) => {
                     className="pt-3"
                     data-testid="copyright"
                 >
-                    © <time>{new Date().getFullYear()}</time>, Built by{' '}
-                    {author}
+                    © <time>{new Date().getFullYear()}</time>, Built by {author}
                 </p>
             </div>
         </footer>

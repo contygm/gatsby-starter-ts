@@ -4,11 +4,11 @@ import { useSiteMetadata } from '../../utils/useSiteMetadata';
 /**
  * properties for reusable SEO component
  * @interface SeoProps
- * 
+ *
  * @property {string} [title] - page title
  * @property {string} [description] - page meta description
  * @property {React.ReactNode} [children] - the page contents
- * 
+ *
  * @see SEO
  */
 interface SeoProps {
@@ -20,15 +20,11 @@ interface SeoProps {
 /**
  * A reusable SEO wrapper for page components. This will give the page all attributes listed in SeoProps
  * @param {SeoProps} props - post details needed for SideBar tiles
- * 
- * @component 
+ *
+ * @category Components
  * @see SeoProps
  */
-export const SEO = ({
-    title,
-    description,
-    children
-}: SeoProps) => {
+export const SEO = ({ title, description, children }: SeoProps) => {
     // set the title + description from SiteMetaData as default title + desc
     const {
         title: defaultTitle,

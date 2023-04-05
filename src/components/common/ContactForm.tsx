@@ -2,13 +2,13 @@ import React from 'react';
 
 /**
  * A basic contact form. Fields: name, email, message, submit, and cancel.
- * 
+ *
  * Currently, there is no submission action.
- * @component
+ * @category Components
  */
 export const ContactForm = () => {
     // console.log form values on submit
-    // TODO: make an alert 
+    // TODO: make an alert
     function onSubmit(e: React.SyntheticEvent) {
         e.preventDefault();
 

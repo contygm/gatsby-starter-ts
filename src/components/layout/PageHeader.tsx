@@ -33,22 +33,22 @@ const SocialMediaRow = () => {
 /**
  * Sub-component for the subtitle
  * @memberof PageHeader
- * 
+ *
  * @param {string} subtitle - a subtitle for the main header component
  */
-const Subtitle = ({subtitle}: { subtitle: string }) => {
+const Subtitle = ({ subtitle }: { subtitle: string }) => {
     return <p className="subtitle has-text-white">{subtitle}</p>;
 };
 
 /**
  * Page header for standard pages
  * @interface PageHeaderProps
- * 
+ *
  * @property {string} title - the page title to be displayed
  * @property {boolean} [alignCenter = false] - Setting to center the header content
  * @property {string} [subtitle] - optional subtitle the displays under title
  * @property {boolean} [hasSocial] - optional. Add social media buttons under title and subtitle
- * 
+ *
  * @see PageHeader
  */
 interface PageHeaderProps {
@@ -60,11 +60,11 @@ interface PageHeaderProps {
 
 /**
  * Page header for standard pages
- * @component
- * 
+ * @category Components
+ *
  * @param {PageHeaderProps} props - includes the title, subtitle, hasSocial option,
  * and align center option
- * 
+ *
  * @see PageHeaderProps
  */
 export const PageHeader = ({

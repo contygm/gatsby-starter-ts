@@ -4,12 +4,12 @@ import React from 'react';
 // TODO interface
 /**
  * A card component used to display minimal post information on the PostIndex
- * @component
- * 
+ * @category Components
+ *
  * @param {IndexElements} post - post frontmatter and other index elements
  * @param {PostType} type - the type of post
  * @param {void} handleFilterUpdate - a function for when the a user interacts with the filter; `(e: any) => void`
- * 
+ *
  * @see IndexElements
  * @see PostType
  * @see PostIndex

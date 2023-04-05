@@ -5,12 +5,12 @@ import React from 'react';
 /**
  * properties for SideBarPostTile component
  * @interface SideBarPostTileProps
- * 
+ *
  * @property {string} title - title of the post
- * @property {string} excerpt - post excerpt 
+ * @property {string} excerpt - post excerpt
  * @property {string} slug - post slug
  * @property {IGatsbyImageData} [image] - optional tile image
- * 
+ *
  * @see SideBarPostTile
  */
 export interface SideBarPostTileProps {
@@ -22,10 +22,10 @@ export interface SideBarPostTileProps {
 
 /**
  * post tile component for site's SideBar
- * @component 
- * 
+ * @category Components
+ *
  * @param {SideBarPostTileProps} props - post details needed for SideBar tiles
- * 
+ *
  * @see SideBarPostTileProps
  */
 export const SideBarPostTile = ({

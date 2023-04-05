@@ -2,16 +2,16 @@ import React, { useEffect, useMemo } from 'react';
 import { useActiveHash } from '../../utils/useActiveHash';
 
 /**
- * A table of contents component. This takes the ToC html returned via gatsby query and build an 
+ * A table of contents component. This takes the ToC html returned via gatsby query and build an
  * anchor tag to the appropriate heading. When a heading is at the top of the page, the corresponding
  * ToC link will be highlighted. This will update as the user scrolls through the page.
- * @component
- * 
- * @param {Object} props 
- * @param {string} props.tocHtml - the nested html for table of contents provided from gatsby graphql query. 
- * @param {boolean} props.includeTitle - option to include the title or not. When true, the following is added to 
+ * @category Components
+ *
+ * @param {Object} props
+ * @param {string} props.tocHtml - the nested html for table of contents provided from gatsby graphql query.
+ * @param {boolean} props.includeTitle - option to include the title or not. When true, the following is added to
  * the top of the ToC: `<h6>Table of Contents</h6>`
- * 
+ *
  * @see OutsideClicker
  */
 export function ToC(props: { tocHtml: string; includeTitle: boolean }) {

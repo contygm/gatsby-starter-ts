@@ -5,11 +5,11 @@ import { getImage } from 'gatsby-plugin-image';
 /**
  * Vertical sidebar for post templates
  * @interface SideBarProps
- * 
+ *
  * @property {PostType} type - the page title to be displayed
  * @property {IndexElements[]} featured - post(s) to be used in the featured section
  * @property {IndexElements[]} related - post(s) to be used in the related section
- * 
+ *
  * @see Sidebar
  */
 export interface SideBarProps {
@@ -19,12 +19,12 @@ export interface SideBarProps {
 }
 
 /**
- * A vertical sidebar component with optional featured and related posts. Related posts sit 
- * on top of the featured posts. 
- * @component
+ * A vertical sidebar component with optional featured and related posts. Related posts sit
+ * on top of the featured posts.
+ * @category Components
  *
  * @param {SideBarProps} - props including featured posts, related posts, and type of post
- * 
+ *
  * @see SideBarProps
  */
 export const SideBar = ({ featured, related, type }: SideBarProps) => {

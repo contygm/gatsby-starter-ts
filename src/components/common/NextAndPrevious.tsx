@@ -5,16 +5,16 @@ import { FaIconLink } from './FaIconLink';
 /**
  * props needed for next and previous component
  * @interface NextAndPreviousProps
- * 
- * @property {NeighborPost} next - next post alphabetically 
- * @property {NeighborPost} previous - previous post alphabetically 
- * @property {PostType} type - post type 
- * 
+ *
+ * @property {NeighborPost} next - next post alphabetically
+ * @property {NeighborPost} previous - previous post alphabetically
+ * @property {PostType} type - post type
+ *
  * @see PostType
  * @see NeighborPost
  * @see NextAndPrevious
  */
-interface  NextAndPreviousProps {
+interface NextAndPreviousProps {
     next?: NeighborPost;
     previous?: NeighborPost;
     type: PostType;
@@ -22,10 +22,10 @@ interface  NextAndPreviousProps {
 
 /**
  * A component with links to the next and previous posts (alphabetically by title). Links show as arrows
- * @component
- * 
+ * @category Components
+ *
  * @param {NextAndPreviousProps} props - next and previous posts + post type
- * 
+ *
  * @see NextAndPreviousProps
  */
 export const NextAndPrevious = ({
