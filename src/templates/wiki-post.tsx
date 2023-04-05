@@ -26,7 +26,7 @@ import {
  * @property {NeighborPost} next - next post (by date)
  * @property {{nodes: IndexElements[]}} featured - featured blog posts
  * @property {{nodes: IndexElements[]}} related - related blog posts
- * 
+ *
  * @see SiteMetadata
  * @see IndexElements
  * @see WikiPostElements
@@ -54,8 +54,8 @@ export interface WikiPostProps {
  * A template for a wiki post, including: sidebar, table of contents, blog content, and author section.
  * @category Template
  * @class
- * 
- * @param {Object} data 
+ *
+ * @param {Object} data
  * @param {WikiPostElements} data.markdown - includes frontmatter, image, etc
  * @param {NeighborPost} data.previous - previous post (by date)
  * @param {NeighborPost} data.next - next post (by date)
@@ -261,7 +261,7 @@ export default WikiPost;
 /**
  * A basic component for SEO focused information
  * @param {HeadProps<WikiPostProps>} site - site meta data
- * 
+ *
  * @memberof WikiPost
  */
 export function Head({ data: { markdownRemark } }: HeadProps<WikiPostProps>) {

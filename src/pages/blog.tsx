@@ -4,10 +4,10 @@ import { Layout, SEO, PageHeader } from '../components';
 import PostPage from '../templates/post-page';
 
 /**
- * All props needed for the blog index page. Props come from a graphQL page query.  
+ * All props needed for the blog index page. Props come from a graphQL page query.
  * @interface BlogIndexProps
  * @property {SiteMetadata} site - site meta data
- * @property {Object} allTags - all tags used 
+ * @property {Object} allTags - all tags used
  * @property {Array<{fieldValue: string, totalCount: number}>} allTags.group - all tags used
  * @property {Object} index - indexElements for all blog posts
  * @property {IndexElements[]} index.nodes - IndexElements for all blog posts
@@ -38,11 +38,11 @@ export interface BlogIndexProps {
  * Basic wiki page including page header and PostPage component
  * @class
  * @category Pages
- * 
+ *
  * @param {PageProps<BlogIndexProps>} data - all page query data
  * @param {BlogIndexProps.index} data.index - IndexElements for all wiki posts
  * @param {BlogIndexProps.allTags} data.allTags - all tags used in wiki posts
- * 
+ *
  * @see IndexElements
  * @see PostIndex
  * @see PageHeader
@@ -70,7 +70,7 @@ export default BlogIndex;
 /**
  * A basic component for SEO focused information
  * @param {HeadProps<BlogIndexProps>} site - site meta data
- * 
+ *
  * @see BlogIndexProps
  * @memberof BlogIndex
  */

@@ -36,7 +36,7 @@ export default NotFoundPage;
 
 /**
  * A basic component for SEO focused information
- * 
+ *
  * @memberof NotFoundPage
  */
 export const Head = () => <SEO title="404" />;

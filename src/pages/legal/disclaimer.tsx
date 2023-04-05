@@ -2,7 +2,6 @@ import React from 'react';
 import { Layout, SEO } from '../../components';
 import { useSiteMetadata } from '../../utils/useSiteMetadata';
 
-
 /**
  * Basic disclaimer page that uses the `businessName` and `siteUrl` from SiteMetadata
  *
@@ -11,7 +10,7 @@ import { useSiteMetadata } from '../../utils/useSiteMetadata';
  * @class
  * @see LegalPage
  * @see SiteMetadata
-*/
+ */
 const DisclaimerPage = () => {
     const { businessName, siteUrl } = useSiteMetadata();
 
@@ -142,7 +141,7 @@ export default DisclaimerPage;
 
 /**
  * A basic component for SEO focused information
- * 
+ *
  * @memberof DisclaimerPage
  */
 export const Head = () => <SEO title="Disclaimer" />;

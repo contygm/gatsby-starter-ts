@@ -5,17 +5,17 @@ import PostPage from '../templates/post-page';
 
 // TODO is this any different from the blog index?
 /**
- * All props needed for the wiki index page. Props come from a graphQL page query.  
+ * All props needed for the wiki index page. Props come from a graphQL page query.
  * @interface WikiIndexProps
  * @property {SiteMetadata} site - site meta data
- * @property {Object} allTags - all tags used 
+ * @property {Object} allTags - all tags used
  * @property {Array<{fieldValue: string, totalCount: number}>} allTags.group - all tags used
  * @property {Object} index - indexElements for all wiki posts
  * @property {IndexElements[]} index.nodes - IndexElements for all wiki posts
  * @property {number} index.totalCount - total number of wiki posts
  * @property {Object} featured - featured wiki articles
  * @property {IndexElements[]} featured.nodes - featured wiki articles content
- * 
+ *
  * @category Pages
  * @see IndexElements
  * @memberof WikiIndex
@@ -41,11 +41,11 @@ export interface WikiIndexProps {
  * Basic wiki page including page header and PostPage component
  * @class
  * @category Pages
- * 
+ *
  * @param {PageProps<WikiIndexProps>} data - all page query data
  * @param {WikiIndexProps.index} data.index - IndexElements for all wiki posts
  * @param {WikiIndexProps.allTags} data.allTags - all tags used in wiki posts
- * 
+ *
  * @see WikiIndexProps
  * @see PostIndex
  * @see PageHeader
@@ -71,7 +71,7 @@ export default WikiIndex;
 /**
  * A basic component for SEO focused information
  * @param {HeadProps<WikiIndexProps>} site - site meta data
- * 
+ *
  * @see WikiProps
  * @memberof WikiIndex
  */

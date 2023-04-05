@@ -26,7 +26,7 @@ import {
  * @property {NeighborPost} next - next post (by date)
  * @property {{nodes: IndexElements[]}} featured - featured blog posts
  * @property {{nodes: IndexElements[]}} related - related blog posts
- * 
+ *
  * @see SiteMetadata
  * @see IndexElements
  * @see PostElements
@@ -53,8 +53,8 @@ export interface BlogPostProps {
  * A template for a blog post, including: sidebar, table of contents, blog content, and author section.
  * @category Template
  * @class
- * 
- * @param {Object} data 
+ *
+ * @param {Object} data
  * @param {{siteMetadata: SiteMetadata}} data.site - site metadata
  * @param {PostElements} data.markdown - includes frontmatter, image, etc
  * @param {NeighborPost} data.previous - previous post (by date)
@@ -218,7 +218,7 @@ export default BlogPost;
 /**
  * A basic component for SEO focused information
  * @param {HeadProps<BlogPostProps>} site - site meta data
- * 
+ *
  * @memberof BlogPost
  */
 export function Head({ data: { markdownRemark } }: HeadProps<BlogPostProps>) {

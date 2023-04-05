@@ -4,13 +4,13 @@ import { graphql, Link, HeadProps, PageProps } from 'gatsby';
 import { DefinitionCard } from '../components/glossary/DefinitionCard';
 
 /**
- * All props needed for the site-wide home page  
+ * All props needed for the site-wide home page
  * @interface HomeProps
  * @property {SiteMetadata} site - site meta data
  * @property {{node: IndexElements[]}} blogFeatured - an array of featured blog info
  * @property {{node: IndexElements[]}} wikiFeatured - an array of featured wiki info
  * @property {{node: GlossaryElements[]}} glossaryFeatured - an array of featured glossary info
- * 
+ *
  * @see IndexElements
  * @see GlossaryElements
  * @see SiteMetadata
@@ -39,13 +39,13 @@ export interface HomeProps {
  * - blog publication date
  * - blog description
  * - link to post
- * 
+ *
  * The image is on the left and the rest of the info sites on the right
- * 
+ *
  * @memberof HomePage
- * 
+ *
  * @param {{ post: IndexElements }} props - a single blog with Index Elements
- * 
+ *
  * @see IndexElements
  */
 const BlogTile = (props: { post: IndexElements }) => {
@@ -85,13 +85,13 @@ const BlogTile = (props: { post: IndexElements }) => {
  * - wiki publication date
  * - wiki description
  * - link to post
- * 
+ *
  * The image is on the left and the rest of the info sites on the right
- * 
+ *
  * @memberof HomePage
- * 
+ *
  * @param {{ post: IndexElements }} props - a single wiki with Index Elements
- * 
+ *
  * @see IndexElements
  */
 const WikiTile = (props: { post: IndexElements }) => {
@@ -123,13 +123,13 @@ const WikiTile = (props: { post: IndexElements }) => {
 };
 
 /**
- * A component for the feature tile layout on the home page. Displays one large tile to the 
- * left and a column for the remaining tiles to the right. 
- * 
+ * A component for the feature tile layout on the home page. Displays one large tile to the
+ * left and a column for the remaining tiles to the right.
+ *
  * @memberof HomePage
- * 
+ *
  * @param {{node: IndexElements[]}} props - featured posts at the site wide level
- * 
+ *
  * @see IndexElements
  */
 const NewTile = (props: { nodes: Array<IndexElements> }) => {
@@ -227,15 +227,15 @@ const NewTile = (props: { nodes: Array<IndexElements> }) => {
  * The home page component contains the full layout for the site-wide home page. This is what displays
  * at `www.site-url.com`. This contains featured sections for each post type: wiki, glossary, and blog.
  * Above this, a site wide featured section displays those posts (currently only compatible with wiki and blogs).
- * 
+ *
  * @class
  * @category Pages
- * 
+ *
  * @param {Object} data
  * @param {{node: IndexElements[]}} data.blogFeatured - an array of featured blog info
  * @param {{node: IndexElements[]}} data.wikiFeatured - an array of featured wiki info
  * @param {{node: GlossaryElements[]}} data.glossaryFeatured - an array of featured glossary info
- * 
+ *
  * @see HomeProps
  */
 const HomePage: FunctionComponent<PageProps<HomeProps>> = ({
@@ -334,7 +334,7 @@ export default HomePage;
 /**
  * A basic component for SEO focused information
  * @param {HeadProps<HomeProps>} site - site meta data
- * 
+ *
  * @see HomeProps
  * @memberof HomePage
  */

@@ -10,7 +10,7 @@ import { useSiteMetadata } from '../../utils/useSiteMetadata';
  * @class
  * @see LegalPage
  * @see SiteMetadata
-*/
+ */
 const CookiesPage = () => {
     const { businessName, siteUrl } = useSiteMetadata();
 
@@ -141,7 +141,7 @@ export default CookiesPage;
 
 /**
  * A basic component for SEO focused information
- * 
+ *
  * @memberof CookiesPage
  */
 export const Head = () => <SEO title="Cookie Policy" />;

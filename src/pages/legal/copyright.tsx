@@ -10,7 +10,7 @@ import { useSiteMetadata } from '../../utils/useSiteMetadata';
  * @class
  * @see LegalPage
  * @see SiteMetadata
-*/
+ */
 const CopyrightPage = () => {
     const { businessName, siteUrl } = useSiteMetadata();
 
@@ -141,7 +141,7 @@ export default CopyrightPage;
 
 /**
  * A basic component for SEO focused information
- * 
+ *
  * @memberof CopyrightPage
  */
 export const Head = () => <SEO title="Copyright" />;

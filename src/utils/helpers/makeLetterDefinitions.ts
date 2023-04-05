@@ -1,22 +1,22 @@
-import { GlossaryIndexProps } from "../../components";
+import { GlossaryIndexProps } from '../../components';
 
 /**
- * An object containing a letter and definitions that begin with that letter. 
+ * An object containing a letter and definitions that begin with that letter.
  *
  * @typedef {LetterWithDefinitions}
- * 
+ *
  * @see GlossaryElements
  * @see makeLetterDefinitions
  */
 type LetterWithDefinitions = {
     /** The letter all definitions begin with. */
     letter: string;
-	/** An array of all the definitions that begin with the letter. */
-    definitions: GlossaryElements[]
-}
+    /** An array of all the definitions that begin with the letter. */
+    definitions: GlossaryElements[];
+};
 
 /**
- * A function that takes all the glossary definitions (sorted alphabetically) and splits the definitions based on the word's first letter. 
+ * A function that takes all the glossary definitions (sorted alphabetically) and splits the definitions based on the word's first letter.
  * The function returns an array of objects, each containing a letter and all definitions starting with that letter.
  *
  * @export
@@ -24,7 +24,7 @@ type LetterWithDefinitions = {
  * @param {GlossaryIndexProps.allLetters} allLetters - All letters used by the glossary. Unused letters should not be included.
  * @param {GlossaryIndexProps.allDefinitions} allDefinitions - All definitions in the glossary. Needs to be sorted alphabetically.
  * @return {LetterWithDefinitions[]} - An array of objects with definitions sorted by letter
- * 
+ *
  * @see GlossaryElements
  * @see GlossaryIndexProps
  */

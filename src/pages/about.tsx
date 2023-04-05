@@ -3,8 +3,8 @@ import { useSiteMetadata } from '../utils/useSiteMetadata';
 import { Layout, SEO, PageHeader, ContactForm } from '../components';
 
 /**
- * Basic about page that pulls businessName, phone number and email from site metadata. 
- * 
+ * Basic about page that pulls businessName, phone number and email from site metadata.
+ *
  * It uses the ContactForm component.
  *
  * @class
@@ -119,7 +119,7 @@ export default AboutPage;
 
 /**
  * A basic component for SEO focused information
- * 
+ *
  * @memberof AboutPage
  */
 export const Head = () => <SEO title="About" />;

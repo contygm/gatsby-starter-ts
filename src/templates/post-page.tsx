@@ -17,7 +17,7 @@ import { filterWithSearchQuery } from '../utils/searchFunctions';
  * @property {PostType} type - post type: blog, wiki, glossary
  * @property {{group: Array}} [allLetters] - all letters used in glossary
  * @property {Array<{fieldValue: string}>} [allLetters.group] - inner object with letter value
- * 
+ *
  * @see PostType
  * @see IndexElements
  * @see GlossaryElements
@@ -50,7 +50,7 @@ const INCREMENT = 6;
  * A general index page component that works with all post types. Includes search, filter, and card based index.
  * @category Template
  * @class
- * 
+ *
  * @param {PostPageProps} props - all posts, all tags, type, and all letters (optional, for glossary)
  */
 const PostPage: FunctionComponent<PostPageProps> = ({
