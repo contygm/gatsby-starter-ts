@@ -2,6 +2,15 @@ import React from 'react';
 import { Layout, SEO } from '../../components';
 import { useSiteMetadata } from '../../utils/useSiteMetadata';
 
+/**
+ * Basic copy right page that uses the `businessName` and `siteUrl` from SiteMetadata
+ *
+ * @category Pages
+ * @subcategory Legal Pages
+ * @class
+ * @see LegalPage
+ * @see SiteMetadata
+*/
 const CopyrightPage = () => {
     const { businessName, siteUrl } = useSiteMetadata();
 
@@ -129,4 +138,10 @@ const CopyrightPage = () => {
 };
 
 export default CopyrightPage;
+
+/**
+ * A basic component for SEO focused information
+ * 
+ * @memberof CopyrightPage
+ */
 export const Head = () => <SEO title="Copyright" />;

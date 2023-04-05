@@ -1,8 +1,16 @@
 import React from 'react';
 import { Layout, SEO } from '../../components';
-
 import { useSiteMetadata } from '../../utils/useSiteMetadata';
 
+/**
+ * Basic cookie policy page that uses the `businessName` and `siteUrl` from SiteMetadata
+ *
+ * @category Pages
+ * @subcategory Legal Pages
+ * @class
+ * @see LegalPage
+ * @see SiteMetadata
+*/
 const CookiesPage = () => {
     const { businessName, siteUrl } = useSiteMetadata();
 
@@ -130,4 +138,10 @@ const CookiesPage = () => {
 };
 
 export default CookiesPage;
+
+/**
+ * A basic component for SEO focused information
+ * 
+ * @memberof CookiesPage
+ */
 export const Head = () => <SEO title="Cookie Policy" />;

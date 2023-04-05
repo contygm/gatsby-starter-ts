@@ -3,8 +3,9 @@ import { Link } from 'gatsby';
 import { Layout, SEO } from '../components';
 
 /**
- * @description 404 page
- * @note placeholder content
+ * 404 page for the site
+ * @class
+ * @category Pages
  */
 const NotFoundPage = () => {
     return (
@@ -32,4 +33,10 @@ const NotFoundPage = () => {
 };
 
 export default NotFoundPage;
+
+/**
+ * A basic component for SEO focused information
+ * 
+ * @memberof NotFoundPage
+ */
 export const Head = () => <SEO title="404" />;

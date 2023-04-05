@@ -3,19 +3,47 @@ import { SEO, Layout } from '../components';
 import { graphql, Link, HeadProps, PageProps } from 'gatsby';
 import { DefinitionCard } from '../components/glossary/DefinitionCard';
 
+/**
+ * All props needed for the site-wide home page  
+ * @interface HomeProps
+ * @property {SiteMetadata} site - site meta data
+ * @property {{node: IndexElements[]}} blogFeatured - an array of featured blog info
+ * @property {{node: IndexElements[]}} wikiFeatured - an array of featured wiki info
+ * @property {{node: GlossaryElements[]}} glossaryFeatured - an array of featured glossary info
+ * 
+ * @see HomePage
+ */
 export interface HomeProps {
     site: SiteMetadata;
     blogFeatured: {
-        nodes: Array<IndexElements>;
+        nodes: IndexElements[];
     };
     wikiFeatured: {
-        nodes: Array<IndexElements>;
+        nodes: IndexElements[];
     };
     glossaryFeatured: {
-        nodes: Array<GlossaryElements>;
+        nodes: GlossaryElements[];
     };
 }
 
+// TODO do we need so many tiles? can these be combined w/ the other index tiles?
+// TODO break tiles out into separate components
+/**
+ * A horizontal tile for blog overview information including:
+ * - blog header image
+ * - blog title
+ * - blog publication date
+ * - blog description
+ * - link to post
+ * 
+ * The image is on the left and the rest of the info sites on the right
+ * 
+ * @memberof HomePage
+ * 
+ * @param {{ post: IndexElements }} props - a single blog with Index Elements
+ * 
+ * @see IndexElements
+ */
 const BlogTile = (props: { post: IndexElements }) => {
     return (
         <div className="box home-blog-tile">
@@ -46,6 +74,22 @@ const BlogTile = (props: { post: IndexElements }) => {
     );
 };
 
+/**
+ * A vertical tile for wiki overview information including:
+ * - wiki header image
+ * - wiki title
+ * - wiki publication date
+ * - wiki description
+ * - link to post
+ * 
+ * The image is on the left and the rest of the info sites on the right
+ * 
+ * @memberof HomePage
+ * 
+ * @param {{ post: IndexElements }} props - a single wiki with Index Elements
+ * 
+ * @see IndexElements
+ */
 const WikiTile = (props: { post: IndexElements }) => {
     return (
         <div className="card">
@@ -74,6 +118,16 @@ const WikiTile = (props: { post: IndexElements }) => {
     );
 };
 
+/**
+ * A component for the feature tile layout on the home page. Displays one large tile to the 
+ * left and a column for the remaining tiles to the right. 
+ * 
+ * @memberof HomePage
+ * 
+ * @param {{node: IndexElements[]}} props - featured posts at the site wide level
+ * 
+ * @see IndexElements
+ */
 const NewTile = (props: { nodes: Array<IndexElements> }) => {
     return (
         <div className="columns is-vcentered is-multiline">
@@ -166,8 +220,19 @@ const NewTile = (props: { nodes: Array<IndexElements> }) => {
 };
 
 /**
- * @description Main landing page for the site
- * @note place holder content and styles
+ * The home page component contains the full layout for the site-wide home page. This is what displays
+ * at `www.site-url.com`. This contains featured sections for each post type: wiki, glossary, and blog.
+ * Above this, a site wide featured section displays those posts (currently only compatible with wiki and blogs).
+ * 
+ * @class
+ * @category Pages
+ * 
+ * @param {Object} data
+ * @param {{node: IndexElements[]}} data.blogFeatured - an array of featured blog info
+ * @param {{node: IndexElements[]}} data.wikiFeatured - an array of featured wiki info
+ * @param {{node: GlossaryElements[]}} data.glossaryFeatured - an array of featured glossary info
+ * 
+ * @see HomeProps
  */
 const HomePage: FunctionComponent<PageProps<HomeProps>> = ({
     data: { blogFeatured, wikiFeatured, glossaryFeatured }
@@ -261,6 +326,14 @@ const HomePage: FunctionComponent<PageProps<HomeProps>> = ({
 };
 
 export default HomePage;
+
+/**
+ * A basic component for SEO focused information
+ * @param {HeadProps<HomeProps>} site - site meta data
+ * 
+ * @see HomeProps
+ * @memberof HomePage
+ */
 export function Head({ data: { site } }: HeadProps<HomeProps>) {
     return <SEO title={site.title} />;
 }

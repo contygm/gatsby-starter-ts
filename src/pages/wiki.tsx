@@ -3,6 +3,19 @@ import { graphql, HeadProps, PageProps } from 'gatsby';
 import { Layout, PageHeader, SEO } from '../components/';
 import PostPage from '../templates/post-page';
 
+// TODO is this any different from the blog index?
+/**
+ * All props needed for the wiki index page. Props come from a graphQL page query.  
+ * @interface WikiIndexProps
+ * @property {SiteMetadata} site - site meta data
+ * @property {Object} allTags - all tags used 
+ * @property {Array<{fieldValue: string, totalCount: number}>} allTags.group - all tags used
+ * @property {Object} index - indexElements for all wiki posts
+ * @property {IndexElements[]} index.nodes - IndexElements for all wiki posts
+ * @property {number} index.totalCount - total number of wiki posts
+ * @property {Object} featured - featured wiki articles
+ * @property {IndexElements[]} featured.nodes - featured wiki articles content
+ */
 export interface WikiIndexProps {
     site: SiteMetadata;
     allTags: {
@@ -20,6 +33,20 @@ export interface WikiIndexProps {
     };
 }
 
+/**
+ * Basic wiki page including page header and PostPage component
+ * @class
+ * @category Pages
+ * 
+ * @param {PageProps<WikiIndexProps>} data - all page query data
+ * @param {WikiIndexProps.index} data.index - IndexElements for all wiki posts
+ * @param {WikiIndexProps.allTags} data.allTags - all tags used in wiki posts
+ * 
+ * @see WikiIndexProps
+ * @see IndexElements
+ * @see PostIndex
+ * @see PageHeader
+ */
 const WikiIndex = ({ data: { index, allTags } }: PageProps<WikiIndexProps>) => {
     return (
         <Layout>
@@ -37,6 +64,14 @@ const WikiIndex = ({ data: { index, allTags } }: PageProps<WikiIndexProps>) => {
 };
 
 export default WikiIndex;
+
+/**
+ * A basic component for SEO focused information
+ * @param {HeadProps<WikiIndexProps>} site - site meta data
+ * 
+ * @see WikiProps
+ * @memberof WikiIndex
+ */
 export function Head({ data: { site } }: HeadProps<WikiIndexProps>) {
     return <SEO title={site.title} />;
 }

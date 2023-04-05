@@ -2,6 +2,12 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { Layout, SEO, PageHeader } from '../../components';
 
+// TODO move to constants
+
+/**
+ * All the legal page information as a constant. Object format is the same as the legal link props
+ * @memberof LegalPage
+ */
 const legalPageMap = [
     {
         title: 'Privacy Policy',
@@ -40,6 +46,17 @@ const legalPageMap = [
     }
 ];
 
+// TODO legal link interface
+
+/**
+ * A basic card component for all the legal pages
+ * @param {Object} props - legal page card information
+ * @param {string} props.title - display title for the link
+ * @param {string} props.cyTag - cypress testing tag for the link
+ * @param {string} props.url - relative url for the linked page
+ * @param {string} props.description - linked page description
+ * @memberof LegalPage
+ */
 const LegalLink = (props: {
     title: string;
     cyTag: string;
@@ -66,6 +83,13 @@ const LegalLink = (props: {
     );
 };
 
+/**
+ * Basic Legal index page that displays cards for each available legal page. Each card
+ * also links to the legal page
+ *
+ * @category Pages
+ * @class
+ */
 const LegalPage = () => {
     return (
         <Layout>
@@ -92,4 +116,10 @@ const LegalPage = () => {
 };
 
 export default LegalPage;
+
+/**
+ * A basic component for SEO focused information
+ * 
+ * @memberof LegalPage
+ */
 export const Head = () => <SEO title="Legal" />;

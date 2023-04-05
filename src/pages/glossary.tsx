@@ -15,6 +15,23 @@ import useCheckMobileScreen from '../utils/useCheckMobileScreen';
 import useCheckBigScreen from '../utils/useCheckBigScreen';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+/**
+ * All props needed for the glossary index page. Props come from a graphQL page query.  
+ * @interface GlossaryPageProps
+ * @property {SiteMetadata} site - site meta data
+ * @property {Object} allTags - all tags used 
+ * @property {Array<{fieldValue: string, totalCount: number}>} allTags.group - all tags used
+ * @property {Object} index - GlossaryElements for all glossary definitions
+ * @property {GlossaryElements[]} index.nodes - GlossaryElements for all glossary definitions
+ * @property {number} index.totalCount - total number of glossary definitions
+ * @property {Object} blogFeatured - featured glossary articles
+ * @property {IndexElements[]} blogFeatured.nodes - featured glossary articles content
+ * @property {Object} wikiFeatured - featured glossary articles
+ * @property {IndexElements[]} wikiFeatured.nodes - featured glossary articles content
+ * 
+ * @see GlossaryElements
+ * @see IndexElements 
+*/
 export interface GlossaryPageProps {
     site: SiteMetadata;
     allTags: {
@@ -24,7 +41,7 @@ export interface GlossaryPageProps {
         }>;
     };
     index: {
-        nodes: Array<GlossaryElements>;
+        nodes: GlossaryElements[];
         totalCount: number;
     };
     allLetters: {
@@ -40,6 +57,21 @@ export interface GlossaryPageProps {
     };
 }
 
+// TODO move to util
+/**
+ * A function that takes all the letters used in glossary definitions (sorted alphabetically) and 
+ * makes a table of contents based on these letters. Each letter will link to the appropriate header
+ * on the glossary index page
+ *
+ * @memberof GlossaryPage
+ * @function makeGlossToC
+ * 
+ * @param {Array<{ fieldValue: string }>} letterObjs - All letters used by the glossary. Unused letters should not be included.
+ * @return {string} - template string of ToC based on glossary letters
+ *
+ * @see GlossaryElements
+ * @see GlossaryIndexProps
+ */
 const makeGlossToC = (letterObjs: Array<{ fieldValue: string }>) => {
     let letterElements = ``;
 
@@ -52,6 +84,23 @@ const makeGlossToC = (letterObjs: Array<{ fieldValue: string }>) => {
     return finalToC;
 };
 
+/**
+ * Glossary index page including page header, PostPage component, ToC, and sidebar.
+ * @class
+ * @category Pages
+ * 
+ * @param {PageProps<WikiIndexProps>} data - all page query data
+ * @param {WikiIndexProps.index} data.index - IndexElements for all wiki posts
+ * @param {WikiIndexProps.allTags} data.allTags - all tags used in wiki posts
+ * 
+ * @see GlossaryPageProps
+ * @see GlossaryElements
+ * @see IndexElements
+ * @see PostIndex
+ * @see PageHeader
+ * @see OutsideClicker
+ * @see ToC
+ */
 const GlossaryPage: FunctionComponent<PageProps<GlossaryPageProps>> = ({
     data: { index, allTags, blogFeatured, wikiFeatured, allLetters }
 }: PageProps<GlossaryPageProps>) => {
@@ -169,6 +218,13 @@ const GlossaryPage: FunctionComponent<PageProps<GlossaryPageProps>> = ({
 };
 export default GlossaryPage;
 
+/**
+ * A basic component for SEO focused information
+ * @param {HeadProps<GlossaryPageProps>} site - site meta data
+ * 
+ * @see GlossaryPageProps
+ * @memberof GlossaryPage
+ */
 export function Head({ data: { site } }: HeadProps<GlossaryPageProps>) {
     return <SEO title={site.title} />;
 }
@@ -217,7 +273,7 @@ export const pageQuery = graphql`
             limit: 3
             sort: { fields: [frontmatter___letter], order: ASC }
             filter: {
-                frontmatter: { type: { eq: "wiki" }, featured: { eq: true } }
+                frontmatter: { type: { eq: "glossary" }, featured: { eq: true } }
             }
         ) {
             nodes {
