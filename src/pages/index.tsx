@@ -11,7 +11,11 @@ import { DefinitionCard } from '../components/glossary/DefinitionCard';
  * @property {{node: IndexElements[]}} wikiFeatured - an array of featured wiki info
  * @property {{node: GlossaryElements[]}} glossaryFeatured - an array of featured glossary info
  * 
- * @see HomePage
+ * @see IndexElements
+ * @see GlossaryElements
+ * @see SiteMetadata
+ * @memberof HomePage
+ * @category Pages
  */
 export interface HomeProps {
     site: SiteMetadata;

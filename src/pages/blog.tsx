@@ -14,6 +14,8 @@ import PostPage from '../templates/post-page';
  * @property {number} index.totalCount - total number of blog posts
  * @property {Object} featured - featured blog articles
  * @property {IndexElements[]} featured.nodes - featured blog articles content
+ * @memberof BlogIndex
+ * @category Pages
  */
 export interface BlogIndexProps {
     site: SiteMetadata;
@@ -41,7 +43,6 @@ export interface BlogIndexProps {
  * @param {BlogIndexProps.index} data.index - IndexElements for all wiki posts
  * @param {BlogIndexProps.allTags} data.allTags - all tags used in wiki posts
  * 
- * @see BlogIndexProps
  * @see IndexElements
  * @see PostIndex
  * @see PageHeader

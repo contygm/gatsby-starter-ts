@@ -31,6 +31,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
  * 
  * @see GlossaryElements
  * @see IndexElements 
+ * @memberof GlossaryPage
+ * @category Pages
 */
 export interface GlossaryPageProps {
     site: SiteMetadata;
@@ -89,13 +91,8 @@ const makeGlossToC = (letterObjs: Array<{ fieldValue: string }>) => {
  * @class
  * @category Pages
  * 
- * @param {PageProps<WikiIndexProps>} data - all page query data
- * @param {WikiIndexProps.index} data.index - IndexElements for all wiki posts
- * @param {WikiIndexProps.allTags} data.allTags - all tags used in wiki posts
+ * @param {PageProps<GlossaryIndexProps>} data 
  * 
- * @see GlossaryPageProps
- * @see GlossaryElements
- * @see IndexElements
  * @see PostIndex
  * @see PageHeader
  * @see OutsideClicker

@@ -15,6 +15,10 @@ import PostPage from '../templates/post-page';
  * @property {number} index.totalCount - total number of wiki posts
  * @property {Object} featured - featured wiki articles
  * @property {IndexElements[]} featured.nodes - featured wiki articles content
+ * 
+ * @category Pages
+ * @see IndexElements
+ * @memberof WikiIndex
  */
 export interface WikiIndexProps {
     site: SiteMetadata;
@@ -43,7 +47,6 @@ export interface WikiIndexProps {
  * @param {WikiIndexProps.allTags} data.allTags - all tags used in wiki posts
  * 
  * @see WikiIndexProps
- * @see IndexElements
  * @see PostIndex
  * @see PageHeader
  */
