@@ -38,9 +38,6 @@ export interface WikiIndexProps {
 
 /**
  * Basic wiki page including page header and PostPage component
- * @class
- * @category Pages
- *
  * @param {PageProps<WikiIndexProps>} data - all page query data
  * @param {WikiIndexProps.index} data.index - IndexElements for all wiki posts
  * @param {WikiIndexProps.allTags} data.allTags - all tags used in wiki posts
@@ -48,6 +45,8 @@ export interface WikiIndexProps {
  * @see WikiIndexProps
  * @see PostIndex
  * @see PageHeader
+ * @class
+ * @category Pages
  */
 const WikiIndex = ({ data: { index, allTags } }: PageProps<WikiIndexProps>) => {
     return (

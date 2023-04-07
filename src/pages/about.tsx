@@ -6,7 +6,6 @@ import { Layout, SEO, PageHeader, ContactForm } from '../components';
  * Basic about page that pulls businessName, phone number and email from site metadata.
  *
  * It uses the ContactForm component.
- *
  * @class
  * @category Pages
  * @see ContactForm
@@ -119,7 +118,6 @@ export default AboutPage;
 
 /**
  * A basic component for SEO focused information
- *
  * @memberof AboutPage
  */
 export const Head = () => <SEO title="About" />;

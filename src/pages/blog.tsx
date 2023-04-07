@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react';
+import React from 'react';
 import { graphql, HeadProps, PageProps } from 'gatsby';
 import { Layout, SEO, PageHeader } from '../components';
 import PostPage from '../templates/post-page';
@@ -13,6 +13,7 @@ import PostPage from '../templates/post-page';
  * @property {number} index.totalCount - total number of blog posts
  * @property {Object} featured - featured blog articles
  * @property {IndexElements[]} featured.nodes - featured blog articles content
+ * 
  * @memberof BlogIndex
  * @category Pages
  */
@@ -35,9 +36,6 @@ export interface BlogIndexProps {
 
 /**
  * Basic wiki page including page header and PostPage component
- * @class
- * @category Pages
- *
  * @param {PageProps<BlogIndexProps>} data - all page query data
  * @param {BlogIndexProps.index} data.index - IndexElements for all wiki posts
  * @param {BlogIndexProps.allTags} data.allTags - all tags used in wiki posts
@@ -45,8 +43,10 @@ export interface BlogIndexProps {
  * @see IndexElements
  * @see PostIndex
  * @see PageHeader
+ * @class
+ * @category Pages
  */
-const BlogIndex: FunctionComponent<PageProps<BlogIndexProps>> = ({
+const BlogIndex = ({
     data: { index, allTags }
 }: PageProps<BlogIndexProps>) => {
     return (

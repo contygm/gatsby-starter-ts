@@ -141,7 +141,6 @@ export default CopyrightPage;
 
 /**
  * A basic component for SEO focused information
- *
  * @memberof CopyrightPage
  */
 export const Head = () => <SEO title="Copyright" />;

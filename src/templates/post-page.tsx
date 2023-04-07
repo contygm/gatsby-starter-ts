@@ -1,4 +1,4 @@
-import React, { FunctionComponent, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { SearchFilterRow, PostIndex, GlossaryIndex } from '../components';
 import { filterWithSearchQuery } from '../utils/helpers/searchFunctions';
 
@@ -52,7 +52,7 @@ const INCREMENT = 6;
  *
  * @param {PostPageProps} props - all posts, all tags, type, and all letters (optional, for glossary)
  */
-const PostPage: FunctionComponent<PostPageProps> = ({
+const PostPage = ({
     index,
     allTags,
     type,

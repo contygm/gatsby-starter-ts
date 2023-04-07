@@ -141,7 +141,6 @@ export default PrivacyPage;
 
 /**
  * A basic component for SEO focused information
- *
  * @memberof PrivacyPage
  */
 export const Head = () => <SEO title="Privacy Policy" />;

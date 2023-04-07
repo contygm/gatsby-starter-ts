@@ -141,7 +141,6 @@ export default DisclaimerPage;
 
 /**
  * A basic component for SEO focused information
- *
  * @memberof DisclaimerPage
  */
 export const Head = () => <SEO title="Disclaimer" />;

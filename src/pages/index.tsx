@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react';
+import React from 'react';
 import { SEO, Layout } from '../components';
 import { graphql, Link, HeadProps, PageProps } from 'gatsby';
 import { DefinitionCard } from '../components/glossary/DefinitionCard';
@@ -40,12 +40,10 @@ export interface HomeProps {
  * - link to post
  *
  * The image is on the left and the rest of the info sites on the right
- *
- * @memberof HomePage
- *
  * @param {{ post: IndexElements }} props - a single blog with Index Elements
  *
  * @see IndexElements
+ * @memberof HomePage
  */
 const BlogTile = (props: { post: IndexElements }) => {
     return (
@@ -86,12 +84,10 @@ const BlogTile = (props: { post: IndexElements }) => {
  * - link to post
  *
  * The image is on the left and the rest of the info sites on the right
- *
- * @memberof HomePage
- *
  * @param {{ post: IndexElements }} props - a single wiki with Index Elements
  *
  * @see IndexElements
+ * @memberof HomePage
  */
 const WikiTile = (props: { post: IndexElements }) => {
     return (
@@ -124,12 +120,10 @@ const WikiTile = (props: { post: IndexElements }) => {
 /**
  * A component for the feature tile layout on the home page. Displays one large tile to the
  * left and a column for the remaining tiles to the right.
- *
- * @memberof HomePage
- *
  * @param {{node: IndexElements[]}} props - featured posts at the site wide level
  *
  * @see IndexElements
+ * @memberof HomePage
  */
 const NewTile = (props: { nodes: IndexElements[] }) => {
     return (
@@ -226,18 +220,16 @@ const NewTile = (props: { nodes: IndexElements[] }) => {
  * The home page component contains the full layout for the site-wide home page. This is what displays
  * at `www.site-url.com`. This contains featured sections for each post type: wiki, glossary, and blog.
  * Above this, a site wide featured section displays those posts (currently only compatible with wiki and blogs).
- *
- * @class
- * @category Pages
- *
  * @param {Object} data
  * @param {{node: IndexElements[]}} data.blogFeatured - an array of featured blog info
  * @param {{node: IndexElements[]}} data.wikiFeatured - an array of featured wiki info
  * @param {{node: GlossaryElements[]}} data.glossaryFeatured - an array of featured glossary info
  *
  * @see HomeProps
+ * @class
+ * @category Pages
  */
-const HomePage: FunctionComponent<PageProps<HomeProps>> = ({
+const HomePage = ({
     data: { blogFeatured, wikiFeatured, glossaryFeatured }
 }: PageProps<HomeProps>) => {
     return (

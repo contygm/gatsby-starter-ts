@@ -76,7 +76,6 @@ export default LegalPage;
 
 /**
  * A basic component for SEO focused information
- *
  * @memberof LegalPage
  */
 export const Head = () => <SEO title="Legal" />;

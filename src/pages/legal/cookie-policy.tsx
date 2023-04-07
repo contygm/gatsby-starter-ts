@@ -141,7 +141,6 @@ export default CookiesPage;
 
 /**
  * A basic component for SEO focused information
- *
  * @memberof CookiesPage
  */
 export const Head = () => <SEO title="Cookie Policy" />;

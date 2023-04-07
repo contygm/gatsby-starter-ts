@@ -143,7 +143,6 @@ export default TermsPage;
 
 /**
  * A basic component for SEO focused information
- *
  * @memberof TermsPage
  */
 export const Head = () => <SEO title="Terms and Conditions" />;

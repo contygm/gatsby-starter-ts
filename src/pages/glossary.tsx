@@ -1,4 +1,4 @@
-import React, { FunctionComponent, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { graphql, HeadProps, PageProps } from 'gatsby';
 import {
     Layout,
@@ -63,15 +63,13 @@ export interface GlossaryPageProps {
  * A function that takes all the letters used in glossary definitions (sorted alphabetically) and
  * makes a table of contents based on these letters. Each letter will link to the appropriate header
  * on the glossary index page
- *
- * @memberof GlossaryPage
- * @function makeGlossToC
- *
  * @param {{ fieldValue: string }[]} letterObjs - All letters used by the glossary. Unused letters should not be included.
  * @return {string} - template string of ToC based on glossary letters
  *
  * @see GlossaryElements
  * @see GlossaryIndexProps
+ * @memberof GlossaryPage
+ * @function makeGlossToC
  */
 const makeGlossToC = (letterObjs: { fieldValue: string }[]) => {
     let letterElements = ``;
@@ -87,17 +85,16 @@ const makeGlossToC = (letterObjs: { fieldValue: string }[]) => {
 
 /**
  * Glossary index page including page header, PostPage component, ToC, and sidebar.
- * @class
- * @category Pages
- *
  * @param {PageProps<GlossaryIndexProps>} data
  *
  * @see PostIndex
  * @see PageHeader
  * @see OutsideClicker
  * @see ToC
+ * @class
+ * @category Pages
  */
-const GlossaryPage: FunctionComponent<PageProps<GlossaryPageProps>> = ({
+const GlossaryPage = ({
     data: { index, allTags, blogFeatured, wikiFeatured, allLetters }
 }: PageProps<GlossaryPageProps>) => {
     const [showMobileToc, setShowMobileToc] = useState(false);
