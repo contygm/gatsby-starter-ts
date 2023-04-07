@@ -4,7 +4,6 @@ import { getImage } from 'gatsby-plugin-image';
 
 /**
  * Vertical sidebar for post templates
- *
  * @property {PostType} type - the page title to be displayed
  * @property {IndexElements[]} featured - post(s) to be used in the featured section
  * @property {IndexElements[]} related - post(s) to be used in the related section

@@ -15,9 +15,9 @@ interface PostFrontmatter {
     /** post description */
     description: string;
     /** array of related posts */
-    related: Array<string>;
+    related: string[];
     /** array of post tags */
-    tags: Array<string>;
+    tags: string[];
     /** header image info */
     headerImage: {
         childImageSharp: {
@@ -33,10 +33,10 @@ interface PostFrontmatter {
  */
 interface WikiPostFrontmatter extends PostFrontmatter {
     /** wiki post summary information */
-    summary: Array<{
+    summary: {
         field: string;
         value: string;
-    }>;
+    }[];
 }
 
 /**

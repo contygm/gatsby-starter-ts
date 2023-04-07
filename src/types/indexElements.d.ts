@@ -26,12 +26,12 @@ interface GlossaryElements {
         /** similar words from glossary */
         similarWords: string[];
         /** related posts (wiki and glossary) */
-        relatedPosts: Array<{
+        relatedPosts: {
             /** post title */
             title: string;
             /** relative url for post */
             slug: string;
-        }>;
+        }[];
     };
 }
 

@@ -5,7 +5,7 @@ import React from 'react';
  * as well as all the tags passed in a parameter.
  * @category Components
  *
- * @param {Array<{fieldValue: string, totalCount: number}>} tags - array of all tags with total tag count
+ * @param {{fieldValue: string, totalCount: number}[]} tags - array of all tags with total tag count
  * @param {number} totalPostCount - total amount of posts
  * @param {string} activeTag - the current tag being used for filtering
  * @param {boolean} isSearchActive - true when the user is interacting with the search bar. When true, filter
@@ -17,10 +17,10 @@ import React from 'react';
  */
 // TODO Interface containing properties used for search+filter row
 export const TagsList = (props: {
-    tags: Array<{
+    tags: {
         fieldValue: string;
         totalCount: number;
-    }>;
+    }[];
     totalPostCount: number;
     activeTag: string;
     isSearchActive: boolean;

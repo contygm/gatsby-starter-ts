@@ -15,7 +15,7 @@ import { PostCard } from './PostCard';
  * @category Components
  */
 interface PostIndexProps {
-    allPosts: Array<IndexElements>;
+    allPosts: IndexElements[];
     increment: number;
     type: PostType;
     handleFilterUpdate: (e: any) => void;

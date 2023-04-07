@@ -131,7 +131,7 @@ const WikiTile = (props: { post: IndexElements }) => {
  *
  * @see IndexElements
  */
-const NewTile = (props: { nodes: Array<IndexElements> }) => {
+const NewTile = (props: { nodes: IndexElements[] }) => {
     return (
         <div className="columns is-vcentered is-multiline">
             <div className="column is-9-desktop is-full-tablet">

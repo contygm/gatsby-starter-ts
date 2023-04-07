@@ -19,7 +19,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
  * All props needed for the glossary index page. Props come from a graphQL page query.
  * @property {SiteMetadata} site - site meta data
  * @property {Object} allTags - all tags used
- * @property {Array<{fieldValue: string, totalCount: number}>} allTags.group - all tags used
+ * @property {{fieldValue: string, totalCount: number}[]} allTags.group - all tags used
  * @property {Object} index - GlossaryElements for all glossary definitions
  * @property {GlossaryElements[]} index.nodes - GlossaryElements for all glossary definitions
  * @property {number} index.totalCount - total number of glossary definitions
@@ -36,25 +36,25 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 export interface GlossaryPageProps {
     site: SiteMetadata;
     allTags: {
-        group: Array<{
+        group: {
             fieldValue: string;
             totalCount: number;
-        }>;
+        }[];
     };
     index: {
         nodes: GlossaryElements[];
         totalCount: number;
     };
     allLetters: {
-        group: Array<{
+        group: {
             fieldValue: string;
-        }>;
+        }[];
     };
     blogFeatured: {
-        nodes: Array<IndexElements>;
+        nodes: IndexElements[];
     };
     wikiFeatured: {
-        nodes: Array<IndexElements>;
+        nodes: IndexElements[];
     };
 }
 
@@ -67,13 +67,13 @@ export interface GlossaryPageProps {
  * @memberof GlossaryPage
  * @function makeGlossToC
  *
- * @param {Array<{ fieldValue: string }>} letterObjs - All letters used by the glossary. Unused letters should not be included.
+ * @param {{ fieldValue: string }[]} letterObjs - All letters used by the glossary. Unused letters should not be included.
  * @return {string} - template string of ToC based on glossary letters
  *
  * @see GlossaryElements
  * @see GlossaryIndexProps
  */
-const makeGlossToC = (letterObjs: Array<{ fieldValue: string }>) => {
+const makeGlossToC = (letterObjs: { fieldValue: string }[]) => {
     let letterElements = ``;
 
     letterObjs.forEach((letter) => {

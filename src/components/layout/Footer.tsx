@@ -12,12 +12,12 @@ import { FaIconLink } from '../common/FaIconLink';
 
 /**
  * All the legal page links with labels
- * @constant {Object[]}
- *
  * @property {string} label - The display label for the page
  * @property {string} slug - The slug-friendly version of the label. Should be lowercase and replace spaces with `-`
+ * 
  * @memberof Footer
  * @see DropDownLinkBtn
+ * @constant {Object[]}
  */
 // TODO: move to const folder
 const LEGAL_LINKS = [
@@ -41,10 +41,10 @@ const LEGAL_LINKS = [
 
 /**
  * A text link with footer styles
- * @memberof Footer
- *
  * @param {string} pageUrl - string, destination url
  * @param {string} label - string, link text
+ * 
+ * @memberof Footer
  */
 const PageLink = ({ pageUrl, label }: { pageUrl: string; label: string }) => {
     return (
@@ -65,10 +65,10 @@ const PageLink = ({ pageUrl, label }: { pageUrl: string; label: string }) => {
 
 /**
  * A link with dropdown styles that will go to a specific legal page
- * @memberof Footer
- *
  * @param {string} label - string, link text
  * @param {string} slug - string, destination url
+ * 
+ * @memberof Footer
  */
 // TODO: move to dropdown btn file
 // TODO: pass full slug
@@ -147,9 +147,9 @@ const DropDownLinkBtn = () => {
  * - site logo
  * - links to privacy, contact and about pages
  * - social media links
- * @category Components
- *
  * @param author - author of site, passed in from layout
+ * 
+ * @category Components
  */
 export const Footer = ({ author }: { author: string }) => {
     return (

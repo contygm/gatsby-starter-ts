@@ -28,7 +28,7 @@ describe('Search Functions', () => {
     });
 
     it('filterWithSearchQuery works with empty array', () => {
-        const unfilteredIndexPosts: Array<IndexElements> = [];
+        const unfilteredIndexPosts: IndexElements[] = [];
         let filteredPosts = filterWithSearchQuery(
             unfilteredIndexPosts,
             'hello'

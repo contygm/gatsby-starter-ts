@@ -9,13 +9,13 @@ import { filterWithSearchQuery } from '../utils/helpers/searchFunctions';
  * post type, and all letters used (optional, for glossary)
  *
  * @property {{group: Array}} allTags - all tags used for post type
- * @property {Array<{fieldValue: string, totalCount: number }>} allTags.group - inner object array with tag value and count
+ * @property {{fieldValue: string, totalCount: number}[]} allTags.group - inner object array with tag value and count
  * @property {Object} index - all posts of given type
  * @property {GlossaryElements[] | IndexElements[]} index.nodes - all posts of given type
  * @property {number} index.totalCount - all posts of given type
  * @property {PostType} type - post type: blog, wiki, glossary
  * @property {{group: Array}} [allLetters] - all letters used in glossary
- * @property {Array<{fieldValue: string}>} [allLetters.group] - inner object with letter value
+ * @property {{fieldValue: string}[]} [allLetters.group] - inner object with letter value
  *
  * @see PostType
  * @see IndexElements
@@ -25,20 +25,20 @@ import { filterWithSearchQuery } from '../utils/helpers/searchFunctions';
  */
 export interface PostPageProps {
     allTags: {
-        group: Array<{
+        group: {
             fieldValue: string;
             totalCount: number;
-        }>;
+        }[];
     };
     index: {
-        nodes: Array<GlossaryElements | IndexElements>;
+        nodes: (GlossaryElements | IndexElements)[];
         totalCount: number;
     };
     type: PostType;
     allLetters?: {
-        group: Array<{
+        group: {
             fieldValue: string;
-        }>;
+        }[];
     };
 }
 
@@ -123,14 +123,14 @@ const PostPage: FunctionComponent<PostPageProps> = ({
             />
             {type !== 'glossary' ? (
                 <PostIndex
-                    allPosts={allPosts as Array<IndexElements>}
+                    allPosts={allPosts as IndexElements[]}
                     increment={INCREMENT}
                     handleFilterUpdate={handleFilterUpdate}
                     type={type}
                 />
             ) : (
                 <GlossaryIndex
-                    allDefinitions={allPosts as Array<GlossaryElements>}
+                    allDefinitions={allPosts as GlossaryElements[]}
                     allLetters={allLetters}
                 />
             )}

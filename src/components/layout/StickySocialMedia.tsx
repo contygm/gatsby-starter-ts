@@ -12,11 +12,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
  * A mobile and web friendly social media bar. When scrolling, the bar will stick to the top
  * of the page. The isVertical mode is ideal for mobile devices. The horizontal mode is ideal
  * for placement with in the sidebar component.
- * @category Components
- *
- * @param {boolean} isVertical - when true the social media bar will show
- * vertically. This state is meant for mobile devices.
+ * @param {boolean} isVertical - when true the social media bar will show vertically. This state is meant for mobile devices.
  * @param {string} [classes] - css classes to customize the look of the component
+ * 
+ * @category Components
  */
 export const StickySocialMedia = ({
     isVertical,

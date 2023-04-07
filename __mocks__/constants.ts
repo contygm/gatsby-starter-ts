@@ -1,4 +1,4 @@
-const glossaryDefinitions: Array<GlossaryElements> = [
+const glossaryDefinitions: GlossaryElements[] = [
     {
         html: `<h3>Definition</h3><p>Lemon drops pastry danish halvah. Lemon drops pastry danish halvah.</p>`,
         frontmatter: {
@@ -107,7 +107,7 @@ const glossaryDefinitions: Array<GlossaryElements> = [
     }
 ];
 
-const featuredOrRelatedPosts: Array<IndexElements> = [
+const featuredOrRelatedPosts: IndexElements[] = [
     {
         excerpt:
             'Lemon drops pastry danish halvah. Chupa chups fruitcake powder...',

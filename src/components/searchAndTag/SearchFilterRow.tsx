@@ -19,7 +19,7 @@ import { TagsList } from './TagsList';
  * **NOTE: The search functionality is currently not implemented**
  * @category Components
  *
- * @param {Array<{fieldValue: string, totalCount: number}>} tags - array of all tags with total tag count
+ * @param {{fieldValue: string, totalCount: number}[]} tags - array of all tags with total tag count
  * @param {number} totalPostCount - total amount of posts
  * @param {string} activeTag - the current tag being used for filtering
  * @param {boolean} isSearchActive - true when the user is interacting with the search bar. When true, filter
@@ -33,10 +33,10 @@ import { TagsList } from './TagsList';
  * @see PostPage
  */
 export const SearchFilterRow = (props: {
-    tags: Array<{
+    tags: {
         fieldValue: string;
         totalCount: number;
-    }>;
+    }[];
     totalPostCount: number;
     activeTag: string;
     searchQuery: string;
