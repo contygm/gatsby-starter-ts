@@ -18,8 +18,6 @@ import {
 
 /**
  * All properties of a basic blog post including content, frontmatter and header image
- * @category Template
- *
  * @property {{siteMetadata: SiteMetadata}} site - site metadata
  * @property {BlogPostElements} markdown - includes frontmatter, image, etc
  * @property {NeighborPost} previous - previous post (by date)
@@ -32,6 +30,7 @@ import {
  * @see PostElements
  * @see NeighborPost
  * @memberof BlogPost
+ * @category Template
  */
 export interface BlogPostProps {
     site: {
@@ -50,10 +49,10 @@ export interface BlogPostProps {
 
 /**
  * A template for a blog post, including: sidebar, table of contents, blog content, and author section.
+ * @param {BlogPostProps} data
+ * 
  * @category Template
  * @class
- *
- * @param {BlogPostProps} data
  */
 const BlogPost = ({
     data: { site, markdownRemark, previous, next, featured, related }

@@ -18,7 +18,6 @@ import {
 
 /**
  * All properties of a basic wiki post including content, frontmatter and header image
- *
  * @property {{siteMetadata: SiteMetadata}} site - site metadata
  * @property {WikiPostElements} markdown - includes frontmatter, image, etc
  * @property {NeighborPost} previous - previous post (by date)
@@ -51,15 +50,10 @@ export interface WikiPostProps {
 
 /**
  * A template for a wiki post, including: sidebar, table of contents, blog content, and author section.
+ * @param {WikiPostProps} data
+ * 
  * @category Template
  * @class
- *
- * @param {Object} data
- * @param {WikiPostElements} data.markdown - includes frontmatter, image, etc
- * @param {NeighborPost} data.previous - previous post (by date)
- * @param {NeighborPost} data.next - next post (by date)
- * @param {{nodes: IndexElements[]}} data.featured - featured blog posts
- * @param {{nodes: IndexElements[]}} data.related - related blog posts
  */
 const WikiPost = ({
     data: { markdownRemark, featured, related, next, previous }
