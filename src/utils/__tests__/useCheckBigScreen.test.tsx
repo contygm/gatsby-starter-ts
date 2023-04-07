@@ -1,6 +1,6 @@
 import { act, render } from '@testing-library/react';
 import React from 'react';
-import useCheckBigScreen from '../useCheckBigScreen';
+import useCheckBigScreen from '../hooks/useCheckBigScreen';
 
 const resizeWindow = (x: number) => {
     window.innerWidth = x;

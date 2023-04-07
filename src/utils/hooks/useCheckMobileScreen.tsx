@@ -1,11 +1,18 @@
 import { useEffect, useState } from 'react';
 
-// TODO combine with small screen
-const useCheckBigScreen = () => {
+// TODO combine with big screen
+
+/**
+ * a quick hook to check if the screen is mobile
+ * @function useCheckMobileScreen
+ * @returns {boolean}
+ */
+const useCheckMobileScreen = () => {
     const hasWindow = typeof window !== 'undefined';
 
     if (hasWindow) {
         const [width, setWidth] = useState(window.innerWidth);
+
         const handleWindowSizeChange = () => {
             setWidth(window.innerWidth);
         };
@@ -17,10 +24,9 @@ const useCheckBigScreen = () => {
             };
         }, []);
 
-        return width >= 1216;
+        return width <= 1023;
     }
-
-    return true;
+    return false;
 };
 
-export default useCheckBigScreen;
+export default useCheckMobileScreen;

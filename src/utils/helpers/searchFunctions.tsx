@@ -1,5 +1,17 @@
+/**
+ * A function that takes all the posts of a specific type and filters them based on a search query
+ *
+ * @function filterWithSearchQuery
+ * @param {GlossaryElements[] | IndexElements[]} unfilteredPosts - All posts
+ * @param {string} searchQuery - what to base the search on
+ * @return {GlossaryElements[] | IndexElements[]} - includes only posts that match the search query
+ *
+ * @see GlossaryElements
+ * @see IndexElements
+ */
+// TODO generic type?
 export const filterWithSearchQuery = (
-    unfilteredPosts: Array<GlossaryElements | IndexElements>,
+    unfilteredPosts: (GlossaryElements | IndexElements)[],
     searchQuery: string
 ) => {
     if (searchQuery !== '') {

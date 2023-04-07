@@ -1,6 +1,6 @@
 import { mockBlogs } from '../../../__mocks__/mock-blog-page';
 import { mockGlossary } from '../../../__mocks__/mock-glossary-page';
-import { filterWithSearchQuery } from '../searchFunctions';
+import { filterWithSearchQuery } from '../helpers/searchFunctions';
 
 describe('Search Functions', () => {
     it('filterWithSearchQuery works with GlossaryElements', () => {

@@ -1,7 +1,15 @@
 import { useEffect, useState } from 'react';
 
+/**
+ * A hook to find the current active element in a Table of contents. The function takes all the anchors (itemIds) from the ToC
+ * and registers when the active element is interacted with / changes.
+ * @function useActiveHash
+ * @param {string[]} itemIds - list of anchor tags connected to the ToC[]
+ * @param {string} [rootMargin=undefined] - 
+ * @returns {string} 
+ */
 export const useActiveHash = (
-    itemIds: Array<string>,
+    itemIds: string[],
     rootMargin = undefined
 ) => {
     const [activeHash, setActiveHash] = useState(``);

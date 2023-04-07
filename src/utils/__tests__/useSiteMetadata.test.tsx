@@ -1,4 +1,4 @@
-import { useSiteMetadata } from '../useSiteMetadata';
+import { useSiteMetadata } from '../hooks/useSiteMetadata';
 import * as gatsby from 'gatsby';
 
 describe('useSiteMetadata', () => {
