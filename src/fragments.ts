@@ -1,5 +1,15 @@
 import { graphql } from 'gatsby';
 
+/**
+ * These fragments are a gatsby set up to allow reusable queries. The fragments need to be aligned with their corresponding types.
+ * 
+ * @see SiteMetadata
+ * @see IndexElements
+ * @see GlossaryElements
+ * @see PostElements
+ * @see WikiPostElements
+ * @see NeighborPost
+ */
 export const fragments = graphql`
     fragment SiteMetadata on Site {
         siteMetadata {
