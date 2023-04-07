@@ -25,7 +25,7 @@ interface PostIndexProps {
  * Additionally, a 'see more button' that will display more posts. The initial amount of posts displayed as well as additional amount
  * of posts displayed with the button are both based on the increment passed in.
  * @param {PostIndexProps} props - includes allPosts, increment, type, handleFilterUpdate
- * 
+ *
  * @category Components
  * @see PostIndexProps
  * @see PostCard

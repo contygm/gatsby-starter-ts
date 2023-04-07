@@ -5,7 +5,7 @@ import React, { useRef, useEffect } from 'react';
  * A custom hook for determining if the user has clicked outside of the wrapped element.
  * @param {React.RefObject<HTMLElement>} ref - reference object
  * @param {void} callback - callback used as action for when user clicks outside of the component
- * 
+ *
  * @category Components
  * @memberOf OutsideClicker
  * @function useOutsideClick

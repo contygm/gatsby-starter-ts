@@ -15,7 +15,7 @@ import { LEGAL_LINKS } from '../../utils/constants/legalDropdownLinks';
  * A text link with footer styles
  * @param {string} pageUrl - string, destination url
  * @param {string} label - string, link text
- * 
+ *
  * @memberof Footer
  */
 const PageLink = ({ pageUrl, label }: { pageUrl: string; label: string }) => {
@@ -39,7 +39,7 @@ const PageLink = ({ pageUrl, label }: { pageUrl: string; label: string }) => {
  * A link with dropdown styles that will go to a specific legal page
  * @param {string} label - string, link text
  * @param {string} slug - string, destination url
- * 
+ *
  * @memberof Footer
  */
 // TODO: move to dropdown btn file
@@ -120,7 +120,7 @@ const DropDownLinkBtn = () => {
  * - links to privacy, contact and about pages
  * - social media links
  * @param author - author of site, passed in from layout
- * 
+ *
  * @category Components
  */
 export const Footer = ({ author }: { author: string }) => {

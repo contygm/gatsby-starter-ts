@@ -5,7 +5,7 @@ import React from 'react';
  * @property {GlossaryElements} definition - The definition includes frontmatter and content.
  * Frontmatter contains: similar words, related posts, tags, title, etc.
  * @property {boolean} includeAll - A setting to indicate which of the 2 card forms to use. When set to  true, the all definition elements will be displayed. Otherwise, the following elements will not be displayed: similar words, related posts, and tag footer.
- * 
+ *
  * @see GlossaryElements
  * @see DefinitionCard
  * @category Components
@@ -25,7 +25,7 @@ interface DefinitionCardProps {
  * - **Include all elements**: This form includes similar words, related posts, and tags within the Definition card.
  * - **not**: This form includes a "read more" link to word on glossary index page. It does not include any of the elements from the above form.
  * @param {DefinitionCardProps} props - definition content, frontmatter, and includeAll setting
- * 
+ *
  * @see DefinitionCardProps
  * @category Components
  */

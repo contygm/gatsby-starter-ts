@@ -14,7 +14,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
  * for placement with in the sidebar component.
  * @param {boolean} isVertical - when true the social media bar will show vertically. This state is meant for mobile devices.
  * @param {string} [classes] - css classes to customize the look of the component
- * 
+ *
  * @category Components
  */
 export const StickySocialMedia = ({

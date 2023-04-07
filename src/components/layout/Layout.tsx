@@ -18,7 +18,7 @@ interface LayoutProps {
 /**
  * Main layout wrapper for all pages. Includes navigation bar and footer. Passes author (from site meta data) to footer
  * @param children - the page content that's passed in
- * 
+ *
  * @category Components
  * @see LayoutProps
  */

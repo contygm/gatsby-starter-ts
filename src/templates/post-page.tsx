@@ -52,12 +52,7 @@ const INCREMENT = 6;
  *
  * @param {PostPageProps} props - all posts, all tags, type, and all letters (optional, for glossary)
  */
-const PostPage = ({
-    index,
-    allTags,
-    type,
-    allLetters
-}: PostPageProps) => {
+const PostPage = ({ index, allTags, type, allLetters }: PostPageProps) => {
     const unfilteredPosts = index.nodes;
     const tags = allTags.group;
     const [allPosts, setAllPosts] = useState(index.nodes);

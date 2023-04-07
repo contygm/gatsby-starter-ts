@@ -31,7 +31,7 @@ export interface AuthorBlurbProps {
 /**
  * The author media sub-component uses a placeholder author image and displays the author name + description next to the image.
  * @param {AuthorBlurbProps.author} - the author's name and description
- * 
+ *
  * @memberof AuthorBlurb
  */
 const AuthorMedia = ({ name, description }: AuthorBlurbProps['author']) => {
@@ -62,7 +62,7 @@ const AuthorMedia = ({ name, description }: AuthorBlurbProps['author']) => {
  * A row with the post's publish date and all the tags. This is the first row in the author blurb component
  * @param { AuthorBlurbProps.postTags } postTags - all post tags
  * @param { AuthorBlurbProps.postDate } postDate - the post's publication date
- * 
+ *
  * @memberof AuthorBlurb
  */
 const DateAndTags = ({

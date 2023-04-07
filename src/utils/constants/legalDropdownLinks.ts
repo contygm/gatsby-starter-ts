@@ -2,7 +2,7 @@
  * All the legal page links with labels
  * @property {string} label - The display label for the page
  * @property {string} slug - The slug-friendly version of the label. Should be lowercase and replace spaces with `-`
- * 
+ *
  * @memberof Footer
  * @see DropDownLinkBtn
  * @constant {Object[]}

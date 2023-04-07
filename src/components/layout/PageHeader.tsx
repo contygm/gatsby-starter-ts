@@ -32,7 +32,7 @@ const SocialMediaRow = () => {
 
 /**
  * Sub-component for the subtitle
- * 
+ *
  * @param {string} subtitle - a subtitle for the main header component
  * @memberof PageHeader
  */

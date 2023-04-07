@@ -13,7 +13,7 @@ import PostPage from '../templates/post-page';
  * @property {number} index.totalCount - total number of blog posts
  * @property {Object} featured - featured blog articles
  * @property {IndexElements[]} featured.nodes - featured blog articles content
- * 
+ *
  * @memberof BlogIndex
  * @category Pages
  */
@@ -46,9 +46,7 @@ export interface BlogIndexProps {
  * @class
  * @category Pages
  */
-const BlogIndex = ({
-    data: { index, allTags }
-}: PageProps<BlogIndexProps>) => {
+const BlogIndex = ({ data: { index, allTags } }: PageProps<BlogIndexProps>) => {
     return (
         <Layout>
             <PageHeader
