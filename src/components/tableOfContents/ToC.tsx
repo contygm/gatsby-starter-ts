@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo } from 'react';
-import { useActiveHash } from '../../utils/useActiveHash';
+import { useActiveHash } from '../../utils/hooks/useActiveHash';
 
 /**
  * A table of contents component. This takes the ToC html returned via gatsby query and build an

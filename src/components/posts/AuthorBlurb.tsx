@@ -105,7 +105,6 @@ const DateAndTags = ({
  * are displayed on the first row. Then the author image + description are on the second row. The last row contains
  * links to the next and previous post (sorted by date).
  * @category Components
- *
  * @param {AuthorBlurbProps} props - includes the author info as well as post tags + date. Also includes next and previous post
  *
  * @see AuthorBlurbProps

@@ -1,6 +1,6 @@
 import React, { FunctionComponent, useEffect, useState } from 'react';
 import { SearchFilterRow, PostIndex, GlossaryIndex } from '../components';
-import { filterWithSearchQuery } from '../utils/searchFunctions';
+import { filterWithSearchQuery } from '../utils/helpers/searchFunctions';
 
 // TODO get rid of nesting if possible
 // TODO types for tags + letters + index

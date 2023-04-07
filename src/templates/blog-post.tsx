@@ -3,8 +3,8 @@ import { graphql, PageProps, HeadProps } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEllipsis, faXmark } from '@fortawesome/free-solid-svg-icons';
-import useCheckMobileScreen from '../utils/useCheckMobileScreen';
-import useCheckBigScreen from '../utils/useCheckBigScreen';
+import useCheckMobileScreen from '../utils/hooks/useCheckMobileScreen';
+import useCheckBigScreen from '../utils/hooks/useCheckBigScreen';
 import {
     Layout,
     PageHeader,

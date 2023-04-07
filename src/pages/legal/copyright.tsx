@@ -1,6 +1,6 @@
 import React from 'react';
 import { Layout, SEO } from '../../components';
-import { useSiteMetadata } from '../../utils/useSiteMetadata';
+import { useSiteMetadata } from '../../utils/hooks/useSiteMetadata';
 
 /**
  * Basic copy right page that uses the `businessName` and `siteUrl` from SiteMetadata

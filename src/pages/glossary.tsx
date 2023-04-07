@@ -11,8 +11,8 @@ import {
 } from '../components';
 import PostPage from '../templates/post-page';
 import { faEllipsis, faXmark } from '@fortawesome/free-solid-svg-icons';
-import useCheckMobileScreen from '../utils/useCheckMobileScreen';
-import useCheckBigScreen from '../utils/useCheckBigScreen';
+import useCheckMobileScreen from '../utils/hooks/useCheckMobileScreen';
+import useCheckBigScreen from '../utils/hooks/useCheckBigScreen';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 /**

@@ -1,5 +1,5 @@
 import React from 'react';
-import { useSiteMetadata } from '../../utils/useSiteMetadata';
+import { useSiteMetadata } from '../../utils/hooks/useSiteMetadata';
 
 /**
  * properties for reusable SEO component

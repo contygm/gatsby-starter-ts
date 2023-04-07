@@ -1,53 +1,10 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import { legalPageMap } from '../../utils/constants/legalConstants';
 import { Layout, SEO, PageHeader } from '../../components';
 
-// TODO move to constants
-
-/**
- * All the legal page information as a constant. Object format is the same as the legal link props
- * @memberof LegalPage
- */
-const legalPageMap = [
-    {
-        title: 'Privacy Policy',
-        cyTag: 'legal-index-privacy',
-        url: '/legal/privacy-policy',
-        description:
-            'Bonbon tootsie roll lemon drops topping biscuit cookie. Icing gummi bears ice cream marshmallow jelly brownie icing soufflé.'
-    },
-    {
-        title: 'Copyright',
-        cyTag: 'legal-index-copyright',
-        url: '/legal/copyright',
-        description:
-            'Bonbon tootsie roll lemon drops topping biscuit cookie. Icing gummi bears ice cream marshmallow jelly brownie icing soufflé.'
-    },
-    {
-        title: 'Cookie Policy',
-        cyTag: 'legal-index-cookie',
-        url: '/legal/cookie-policy',
-        description:
-            'Bonbon tootsie roll lemon drops topping biscuit cookie. Icing gummi bears ice cream marshmallow jelly brownie icing soufflé.'
-    },
-    {
-        title: 'Terms and Conditions',
-        cyTag: 'legal-index-terms',
-        url: '/legal/terms-and-conditions',
-        description:
-            'Bonbon tootsie roll lemon drops topping biscuit cookie. Icing gummi bears ice cream marshmallow jelly brownie icing soufflé.'
-    },
-    {
-        title: 'Disclaimer',
-        cyTag: 'legal-index-disclaimer',
-        url: '/legal/disclaimer',
-        description:
-            'Bonbon tootsie roll lemon drops topping biscuit cookie. Icing gummi bears ice cream marshmallow jelly brownie icing soufflé.'
-    }
-];
-
 // TODO legal link interface
-
+// TODO construct cytag
 /**
  * A basic card component for all the legal pages
  * @param {Object} props - legal page card information
