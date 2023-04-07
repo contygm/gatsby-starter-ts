@@ -19,7 +19,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
  * All props needed for the glossary index page. Props come from a graphQL page query.
  * @property {SiteMetadata} site - site meta data
  * @property {Object} allTags - all tags used
- * @property {{fieldValue: string, totalCount: number}[]} allTags.group - all tags used
+ * @property {Array<{fieldValue: string, totalCount: number}>} allTags.group - all tags used
  * @property {Object} index - GlossaryElements for all glossary definitions
  * @property {GlossaryElements[]} index.nodes - GlossaryElements for all glossary definitions
  * @property {number} index.totalCount - total number of glossary definitions
@@ -63,7 +63,7 @@ export interface GlossaryPageProps {
  * A function that takes all the letters used in glossary definitions (sorted alphabetically) and
  * makes a table of contents based on these letters. Each letter will link to the appropriate header
  * on the glossary index page
- * @param {{ fieldValue: string }[]} letterObjs - All letters used by the glossary. Unused letters should not be included.
+ * @param {Array<{ fieldValue: string }>} letterObjs - All letters used by the glossary. Unused letters should not be included.
  * @return {string} - template string of ToC based on glossary letters
  *
  * @see GlossaryElements

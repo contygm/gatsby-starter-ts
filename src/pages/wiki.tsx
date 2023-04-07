@@ -8,7 +8,7 @@ import PostPage from '../templates/post-page';
  * All props needed for the wiki index page. Props come from a graphQL page query.
  * @property {SiteMetadata} site - site meta data
  * @property {Object} allTags - all tags used
- * @property {{fieldValue: string, totalCount: number}[]} allTags.group - all tags used
+ * @property {Array<{fieldValue: string, totalCount: number}>} allTags.group - all tags used
  * @property {Object} index - indexElements for all wiki posts
  * @property {IndexElements[]} index.nodes - IndexElements for all wiki posts
  * @property {number} index.totalCount - total number of wiki posts

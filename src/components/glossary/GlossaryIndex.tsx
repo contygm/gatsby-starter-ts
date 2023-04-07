@@ -6,7 +6,7 @@ import { DefinitionCard } from './DefinitionCard';
  * Props for the Glossary Index component
  * @property {GlossaryElements[]} allDefinitions - all glossary definitions
  * @property {Object} [allLetters] - nesting that will be REMOVEd
- * @property {{fieldValue: string}[]} allLetters.group - all starting letters using in the glossary in alphabetical order
+ * @property {Array<{fieldValue: string}>} allLetters.group - all starting letters using in the glossary in alphabetical order
  *
  * @see GlossaryElements
  * @see GlossaryIndex

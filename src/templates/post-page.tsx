@@ -9,13 +9,13 @@ import { filterWithSearchQuery } from '../utils/helpers/searchFunctions';
  * post type, and all letters used (optional, for glossary)
  *
  * @property {{group: Array}} allTags - all tags used for post type
- * @property {{fieldValue: string, totalCount: number}[]} allTags.group - inner object array with tag value and count
+ * @property {Array<{fieldValue: string, totalCount: number}>} allTags.group - inner object array with tag value and count
  * @property {Object} index - all posts of given type
  * @property {GlossaryElements[] | IndexElements[]} index.nodes - all posts of given type
  * @property {number} index.totalCount - all posts of given type
  * @property {PostType} type - post type: blog, wiki, glossary
  * @property {{group: Array}} [allLetters] - all letters used in glossary
- * @property {{fieldValue: string}[]} [allLetters.group] - inner object with letter value
+ * @property {Array<{fieldValue: string}>} [allLetters.group] - inner object with letter value
  *
  * @see PostType
  * @see IndexElements
@@ -47,10 +47,10 @@ const INCREMENT = 6;
 // TODO should be named index page or something
 /**
  * A general index page component that works with all post types. Includes search, filter, and card based index.
+ * @param {PostPageProps} props - all posts, all tags, type, and all letters (optional, for glossary)
+ * 
  * @category Template
  * @class
- *
- * @param {PostPageProps} props - all posts, all tags, type, and all letters (optional, for glossary)
  */
 const PostPage = ({ index, allTags, type, allLetters }: PostPageProps) => {
     const unfilteredPosts = index.nodes;

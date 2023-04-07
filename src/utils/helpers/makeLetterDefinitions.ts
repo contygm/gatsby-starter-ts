@@ -16,12 +16,11 @@ type LetterWithDefinitions = {
 /**
  * A function that takes all the glossary definitions (sorted alphabetically) and splits the definitions based on the word's first letter.
  * The function returns an array of objects, each containing a letter and all definitions starting with that letter.
- *
- * @function makeLetterDefinitions
  * @param {GlossaryIndexProps.allLetters} allLetters - All letters used by the glossary. Unused letters should not be included.
  * @param {GlossaryIndexProps.allDefinitions} allDefinitions - All definitions in the glossary. Needs to be sorted alphabetically.
  * @return {LetterWithDefinitions[]} - An array of objects with definitions sorted by letter
  *
+ * @function makeLetterDefinitions
  * @see GlossaryElements
  * @see GlossaryIndexProps
  */
