@@ -6,7 +6,6 @@ import PostPage from '../templates/post-page';
 // TODO is this any different from the blog index?
 /**
  * All props needed for the wiki index page. Props come from a graphQL page query.
- * @interface WikiIndexProps
  * @property {SiteMetadata} site - site meta data
  * @property {Object} allTags - all tags used
  * @property {Array<{fieldValue: string, totalCount: number}>} allTags.group - all tags used

@@ -5,7 +5,6 @@ import { DefinitionCard } from '../components/glossary/DefinitionCard';
 
 /**
  * All props needed for the site-wide home page
- * @interface HomeProps
  * @property {SiteMetadata} site - site meta data
  * @property {{node: IndexElements[]}} blogFeatured - an array of featured blog info
  * @property {{node: IndexElements[]}} wikiFeatured - an array of featured wiki info

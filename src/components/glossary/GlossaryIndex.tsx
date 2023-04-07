@@ -4,7 +4,6 @@ import { DefinitionCard } from './DefinitionCard';
 
 /**
  * Props for the Glossary Index component
- * @interface GlossaryIndexProps
  *
  * @property {GlossaryElements[]} allDefinitions - all glossary definitions
  * @property {Object} [allLetters] - nesting that will be REMOVEd

@@ -3,7 +3,6 @@ import { useSiteMetadata } from '../../utils/hooks/useSiteMetadata';
 
 /**
  * properties for reusable SEO component
- * @interface SeoProps
  *
  * @property {string} [title] - page title
  * @property {string} [description] - page meta description

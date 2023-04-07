@@ -5,7 +5,6 @@ import { NextAndPrevious } from '../common/NextAndPrevious';
 
 /**
  * All the properties needed for the Author section at the end of a post
- * @interface AuthorBlurbProps
  *
  * @property {Object} author - An object containing the author name and description
  * @property {string} author.name - the name of the author

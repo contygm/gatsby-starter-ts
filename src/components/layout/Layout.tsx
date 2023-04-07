@@ -6,7 +6,6 @@ import '../../styles.scss';
 
 /**
  * Layout props including only the children
- * @interface LayoutProps
  *
  * @property {React.ReactNode} children - the content to be wrapped by layout component
  *

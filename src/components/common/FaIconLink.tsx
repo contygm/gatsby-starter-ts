@@ -5,7 +5,6 @@ import { Link } from 'gatsby';
 
 /**
  * properties for FaIconLink component
- * @interface FaIconLinkProps
  *
  * @property {IconProp} faIcon - Font Awesome icon to be used
  * @property {string} [url] - url value (optional)

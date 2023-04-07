@@ -2,7 +2,6 @@ import { Link } from 'gatsby';
 import React from 'react';
 /**
  * Props for the DefinitionCard component
- * @interface DefinitionCardProps
  *
  * @property {GlossaryElements} definition - The definition includes frontmatter and content.
  * Frontmatter contains: similar words, related posts, tags, title, etc.

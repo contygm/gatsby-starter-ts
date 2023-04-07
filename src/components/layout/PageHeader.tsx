@@ -42,7 +42,6 @@ const Subtitle = ({ subtitle }: { subtitle: string }) => {
 
 /**
  * Page header for standard pages
- * @interface PageHeaderProps
  *
  * @property {string} title - the page title to be displayed
  * @property {boolean} [alignCenter = false] - Setting to center the header content

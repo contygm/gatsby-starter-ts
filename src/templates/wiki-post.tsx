@@ -19,7 +19,6 @@ import {
 /**
  * All properties of a basic wiki post including content, frontmatter and header image
  *
- * @interface BlogPostProp
  * @property {{siteMetadata: SiteMetadata}} site - site metadata
  * @property {WikiPostElements} markdown - includes frontmatter, image, etc
  * @property {NeighborPost} previous - previous post (by date)

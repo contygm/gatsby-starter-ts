@@ -4,7 +4,6 @@ import { FaIconLink } from './FaIconLink';
 
 /**
  * props needed for next and previous component
- * @interface NextAndPreviousProps
  *
  * @property {NeighborPost} next - next post alphabetically
  * @property {NeighborPost} previous - previous post alphabetically

@@ -4,8 +4,6 @@ import { PostCard } from './PostCard';
 /**
  * All props needed for the PostIndex component.
  *
- * @interface PostIndexProps
- *
  * @property {IndexElements[]} allPosts - a list of allPosts available. This included front matter and other index elements
  * @property {number} increment - when the user clicks the 'see more posts' button, this is how many more posts should show
  * @property {PostType} type - the type of post

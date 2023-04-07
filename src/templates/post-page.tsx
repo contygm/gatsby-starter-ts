@@ -8,7 +8,6 @@ import { filterWithSearchQuery } from '../utils/helpers/searchFunctions';
  * All properties needed for post page, including: all tags used for post type, all posts for type,
  * post type, and all letters used (optional, for glossary)
  *
- * @interface PostPageProps
  * @property {{group: Array}} allTags - all tags used for post type
  * @property {Array<{fieldValue: string, totalCount: number }>} allTags.group - inner object array with tag value and count
  * @property {Object} index - all posts of given type

@@ -17,7 +17,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 /**
  * All props needed for the glossary index page. Props come from a graphQL page query.
- * @interface GlossaryPageProps
  * @property {SiteMetadata} site - site meta data
  * @property {Object} allTags - all tags used
  * @property {Array<{fieldValue: string, totalCount: number}>} allTags.group - all tags used

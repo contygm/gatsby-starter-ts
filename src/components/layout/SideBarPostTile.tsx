@@ -4,7 +4,6 @@ import React from 'react';
 
 /**
  * properties for SideBarPostTile component
- * @interface SideBarPostTileProps
  *
  * @property {string} title - title of the post
  * @property {string} excerpt - post excerpt

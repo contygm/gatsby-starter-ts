@@ -18,10 +18,10 @@ import {
 
 /**
  * All properties of a basic blog post including content, frontmatter and header image
+ * @category Template
  *
- * @interface BlogPostProp
  * @property {{siteMetadata: SiteMetadata}} site - site metadata
- * @property {PostElements} markdown - includes frontmatter, image, etc
+ * @property {BlogPostElements} markdown - includes frontmatter, image, etc
  * @property {NeighborPost} previous - previous post (by date)
  * @property {NeighborPost} next - next post (by date)
  * @property {{nodes: IndexElements[]}} featured - featured blog posts
@@ -32,13 +32,12 @@ import {
  * @see PostElements
  * @see NeighborPost
  * @memberof BlogPost
- * @category Template
  */
 export interface BlogPostProps {
     site: {
         siteMetadata: SiteMetadata;
     };
-    markdownRemark: PostElements;
+    markdownRemark: BlogPostElements;
     previous: NeighborPost;
     next: NeighborPost;
     featured: {
@@ -54,13 +53,7 @@ export interface BlogPostProps {
  * @category Template
  * @class
  *
- * @param {Object} data
- * @param {{siteMetadata: SiteMetadata}} data.site - site metadata
- * @param {PostElements} data.markdown - includes frontmatter, image, etc
- * @param {NeighborPost} data.previous - previous post (by date)
- * @param {NeighborPost} data.next - next post (by date)
- * @param {{nodes: IndexElements[]}} data.featured - featured blog posts
- * @param {{nodes: IndexElements[]}} data.related - related blog posts
+ * @param {BlogPostProps} data
  */
 const BlogPost = ({
     data: { site, markdownRemark, previous, next, featured, related }
