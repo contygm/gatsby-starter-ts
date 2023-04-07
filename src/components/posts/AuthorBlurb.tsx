@@ -5,7 +5,6 @@ import { NextAndPrevious } from '../common/NextAndPrevious';
 
 /**
  * All the properties needed for the Author section at the end of a post
- *
  * @property {Object} author - An object containing the author name and description
  * @property {string} author.name - the name of the author
  * @property {string} author.description - the description of the author
@@ -31,9 +30,9 @@ export interface AuthorBlurbProps {
 
 /**
  * The author media sub-component uses a placeholder author image and displays the author name + description next to the image.
- * @memberof AuthorBlurb
- *
  * @param {AuthorBlurbProps.author} - the author's name and description
+ * 
+ * @memberof AuthorBlurb
  */
 const AuthorMedia = ({ name, description }: AuthorBlurbProps['author']) => {
     return (
@@ -61,9 +60,10 @@ const AuthorMedia = ({ name, description }: AuthorBlurbProps['author']) => {
 
 /**
  * A row with the post's publish date and all the tags. This is the first row in the author blurb component
- * @memberof AuthorBlurb
  * @param { AuthorBlurbProps.postTags } postTags - all post tags
  * @param { AuthorBlurbProps.postDate } postDate - the post's publication date
+ * 
+ * @memberof AuthorBlurb
  */
 const DateAndTags = ({
     postTags,
@@ -104,10 +104,10 @@ const DateAndTags = ({
  * A component to display author info and some post info at the bottom of the post. The post's tags and publish date
  * are displayed on the first row. Then the author image + description are on the second row. The last row contains
  * links to the next and previous post (sorted by date).
- * @category Components
  * @param {AuthorBlurbProps} props - includes the author info as well as post tags + date. Also includes next and previous post
  *
  * @see AuthorBlurbProps
+ * @category Components
  */
 export const AuthorBlurb = (props: AuthorBlurbProps) => {
     return (

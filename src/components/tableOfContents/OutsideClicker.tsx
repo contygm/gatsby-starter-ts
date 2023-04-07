@@ -3,12 +3,12 @@ import React, { useRef, useEffect } from 'react';
 // REVIEW should this be in the hooks folder?
 /**
  * A custom hook for determining if the user has clicked outside of the wrapped element.
- * @memberOf OutsideClicker
- * @function
- *
  * @param {React.RefObject<HTMLElement>} ref - reference object
  * @param {void} callback - callback used as action for when user clicks outside of the component
+ * 
  * @category Components
+ * @memberOf OutsideClicker
+ * @function useOutsideClick
  */
 const useOutsideClick = (
     ref: React.RefObject<HTMLElement>,
@@ -40,13 +40,12 @@ const useOutsideClick = (
 
 /**
  * A wrapper component to make the ToC aware of when the user clicks outside of it.
- * @category Components
- *
  * @param {React.ReactNode} children - the elements to be wrapped
  * @param {void} [callback] - callback used as action for when user clicks outside of the component
  * @returns {JSX.Element}
  *
  * @see ToC
+ * @category Components
  */
 export function OutsideClicker(props: {
     children: React.ReactNode;

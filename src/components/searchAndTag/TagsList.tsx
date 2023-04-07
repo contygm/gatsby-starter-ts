@@ -3,8 +3,6 @@ import React from 'react';
 /**
  * A component used within the SearchFilterRow component. This is the tag filter component, which includes a hard-coded 'all' tag
  * as well as all the tags passed in a parameter.
- * @category Components
- *
  * @param {{fieldValue: string, totalCount: number}[]} tags - array of all tags with total tag count
  * @param {number} totalPostCount - total amount of posts
  * @param {string} activeTag - the current tag being used for filtering
@@ -14,6 +12,7 @@ import React from 'react';
  * @param {void} handleFilterUpdate - void function used as the action when filter is updated
  *
  * @see SearchFilterRow
+ * @category Components
  */
 // TODO Interface containing properties used for search+filter row
 export const TagsList = (props: {
