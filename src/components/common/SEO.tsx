@@ -9,6 +9,7 @@ import { useSiteMetadata } from '../../utils/hooks/useSiteMetadata';
  * @property {React.ReactNode} [children] - the page contents
  *
  * @see SEO
+ * @category Components
  */
 interface SeoProps {
     title?: string;

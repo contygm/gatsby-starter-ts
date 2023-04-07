@@ -15,6 +15,7 @@ import { NextAndPrevious } from '../common/NextAndPrevious';
  * @property {NeighborPost} [nextPost] - the post published immediately *after* this post (sorted by postDate)
  *
  * @see AuthorBlurb
+ * @category Components
  */
 // TODO group objects for easy typing on sub components
 export interface AuthorBlurbProps {

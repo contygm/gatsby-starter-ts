@@ -49,6 +49,7 @@ const Subtitle = ({ subtitle }: { subtitle: string }) => {
  * @property {boolean} [hasSocial] - optional. Add social media buttons under title and subtitle
  *
  * @see PageHeader
+ * @category Components
  */
 interface PageHeaderProps {
     title: string;

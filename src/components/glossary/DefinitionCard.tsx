@@ -8,6 +8,7 @@ import React from 'react';
  * @property {boolean} includeAll - A setting to indicate which of the 2 card forms to use. When set to  true, the all definition elements will be displayed. Otherwise, the following elements will not be displayed: similar words, related posts, and tag footer.
  * @see GlossaryElements
  * @see DefinitionCard
+ * @category Components
  */
 interface DefinitionCardProps {
     definition: GlossaryElements;

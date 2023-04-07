@@ -10,6 +10,7 @@ import { DefinitionCard } from './DefinitionCard';
  * @property {Array<{fieldValue: string}>} allLetters.group - all starting letters using in the glossary in alphabetical order
  * @see GlossaryElements
  * @see GlossaryIndex
+ * @category Components
  */
 // TODO just pass the group
 export interface GlossaryIndexProps {

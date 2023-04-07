@@ -10,6 +10,7 @@ import { getImage } from 'gatsby-plugin-image';
  * @property {IndexElements[]} related - post(s) to be used in the related section
  *
  * @see Sidebar
+ * @category Components
  */
 export interface SideBarProps {
     type: PostType;

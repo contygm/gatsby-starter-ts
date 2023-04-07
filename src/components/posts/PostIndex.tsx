@@ -12,6 +12,7 @@ import { PostCard } from './PostCard';
  * @see IndexElements
  * @see PostType
  * @see PostIndex
+ * @category Components
  */
 interface PostIndexProps {
     allPosts: Array<IndexElements>;

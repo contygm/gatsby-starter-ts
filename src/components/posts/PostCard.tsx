@@ -13,6 +13,7 @@ import React from 'react';
  * @see IndexElements
  * @see PostType
  * @see PostIndex
+ * @category Components
  */
 export const PostCard = (props: {
     post: IndexElements;

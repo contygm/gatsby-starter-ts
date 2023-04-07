@@ -11,6 +11,7 @@ import React from 'react';
  * @property {IGatsbyImageData} [image] - optional tile image
  *
  * @see SideBarPostTile
+ * @category Components
  */
 export interface SideBarPostTileProps {
     title: string;

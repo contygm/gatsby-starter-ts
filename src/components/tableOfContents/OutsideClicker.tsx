@@ -8,7 +8,7 @@ import React, { useRef, useEffect } from 'react';
  *
  * @param {React.RefObject<HTMLElement>} ref - reference object
  * @param {void} callback - callback used as action for when user clicks outside of the component
- *
+ * @category Components
  */
 const useOutsideClick = (
     ref: React.RefObject<HTMLElement>,
