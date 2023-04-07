@@ -1,6 +1,6 @@
 /* istanbul ignore file */
 import { BlogIndexProps } from '../src/pages/blog';
-import { mockHeadProps, mockPageProps } from '../src/utils/test-props';
+import { mockHeadProps, mockPageProps } from './test-props';
 import { HeadProps, PageProps } from 'gatsby';
 import { featuredOrRelatedPosts, siteData } from './constants';
 

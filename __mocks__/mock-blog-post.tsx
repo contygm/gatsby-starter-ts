@@ -1,7 +1,7 @@
 /* istanbul ignore file */
 import { HeadProps, PageProps } from 'gatsby';
 import { BlogPostProps } from '../src/templates/blog-post';
-import { mockHeadProps, mockPageProps } from '../src/utils/test-props';
+import { mockHeadProps, mockPageProps } from './test-props';
 import { previous, next, featuredOrRelatedPosts, siteData } from './constants';
 
 export const mockBlogPost: BlogPostProps = {

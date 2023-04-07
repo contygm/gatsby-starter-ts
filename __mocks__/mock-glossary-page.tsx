@@ -1,6 +1,6 @@
 /* istanbul ignore file */
 import { GlossaryPageProps } from '../src/pages/glossary';
-import { mockHeadProps, mockPageProps } from '../src/utils/test-props';
+import { mockHeadProps, mockPageProps } from './test-props';
 import { HeadProps, PageProps } from 'gatsby';
 import {
     glossaryDefinitions,

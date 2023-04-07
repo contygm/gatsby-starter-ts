@@ -1,7 +1,7 @@
 /* istanbul ignore file */
 import { HeadProps, PageProps } from 'gatsby';
 import { WikiPostProps } from '../src/templates/wiki-post';
-import { mockHeadProps, mockPageProps } from '../src/utils/test-props';
+import { mockHeadProps, mockPageProps } from './test-props';
 import { featuredOrRelatedPosts, next, previous, siteData } from './constants';
 
 export const mockWikiPost: WikiPostProps = {
@@ -37,8 +37,8 @@ export const mockWikiPost: WikiPostProps = {
             }
         }
     },
-    // previous: previous,
-    // next: next,
+    previous: previous,
+    next: next,
     featured: {
         nodes: featuredOrRelatedPosts
     },
