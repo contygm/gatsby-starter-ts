@@ -5,13 +5,10 @@ import { useEffect, useState } from 'react';
  * and registers when the active element is interacted with / changes.
  * @function useActiveHash
  * @param {string[]} itemIds - list of anchor tags connected to the ToC[]
- * @param {string} [rootMargin=undefined] - 
- * @returns {string} 
+ * @param {string} [rootMargin=undefined] -
+ * @returns {string}
  */
-export const useActiveHash = (
-    itemIds: string[],
-    rootMargin = undefined
-) => {
+export const useActiveHash = (itemIds: string[], rootMargin = undefined) => {
     const [activeHash, setActiveHash] = useState(``);
 
     useEffect(() => {

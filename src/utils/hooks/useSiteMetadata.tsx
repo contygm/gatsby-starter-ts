@@ -15,7 +15,7 @@ export const useSiteMetadata = () => {
                         title
                         siteUrl
                         author {
-                            name 
+                            name
                             description
                         }
                         businessName
