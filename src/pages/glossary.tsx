@@ -66,8 +66,6 @@ export interface GlossaryPageProps {
  * @param {Array<{ fieldValue: string }>} letterObjs - All letters used by the glossary. Unused letters should not be included.
  * @return {string} - template string of ToC based on glossary letters
  *
- * @see GlossaryElements
- * @see GlossaryIndexProps
  * @memberof GlossaryPage
  * @function makeGlossToC
  */

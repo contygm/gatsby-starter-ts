@@ -12,7 +12,7 @@ import { Link } from 'gatsby';
  * @property {'white' | 'black'} [color] - color setting for label text (optional)
  *
  * @see FaIconLink
- * @memberOf FaIconLink
+ * @memberof FaIconLink
  * @category Components
  */
 interface FaIconLinkProps {

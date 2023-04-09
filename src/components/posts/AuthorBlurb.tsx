@@ -13,8 +13,8 @@ import { NextAndPrevious } from '../common/NextAndPrevious';
  * @property {NeighborPost} [previousPost] - the post published immediately *before* this post (sorted by postDate)
  * @property {NeighborPost} [nextPost] - the post published immediately *after* this post (sorted by postDate)
  *
- * @see AuthorBlurb
  * @category Components
+ * @memberof AuthorBlurb
  */
 // TODO group objects for easy typing on sub components
 export interface AuthorBlurbProps {
@@ -65,10 +65,7 @@ const AuthorMedia = ({ name, description }: AuthorBlurbProps['author']) => {
  *
  * @memberof AuthorBlurb
  */
-const DateAndTags = ({
-    postTags,
-    postDate
-}: {
+const DateAndTags = (props: {
     postTags: string[];
     postDate: string;
 }) => {
@@ -77,13 +74,13 @@ const DateAndTags = ({
             <div className="level-left">
                 <div className="level-item">
                     <p>
-                        Published: <time>{postDate}</time>
+                        Published: <time>{props.postDate}</time>
                     </p>
                 </div>
             </div>
             <div className="level-right">
                 <div className="level-item">
-                    {postTags.map((tag) => {
+                    {props.postTags.map((tag) => {
                         return (
                             <Link
                                 to={`/blog?tag=${tag}`}
@@ -108,6 +105,7 @@ const DateAndTags = ({
  *
  * @see AuthorBlurbProps
  * @category Components
+ * @class
  */
 export const AuthorBlurb = (props: AuthorBlurbProps) => {
     return (

@@ -7,8 +7,8 @@ import React, { useRef, useEffect } from 'react';
  * @param {void} callback - callback used as action for when user clicks outside of the component
  *
  * @category Components
- * @memberOf OutsideClicker
  * @function useOutsideClick
+ * @memberof OutsideClicker
  */
 const useOutsideClick = (
     ref: React.RefObject<HTMLElement>,
@@ -40,23 +40,24 @@ const useOutsideClick = (
 
 /**
  * A wrapper component to make the ToC aware of when the user clicks outside of it.
- * @param {React.ReactNode} children - the elements to be wrapped
- * @param {void} [callback] - callback used as action for when user clicks outside of the component
- * @returns {JSX.Element}
+ * @property {React.ReactNode} children - the elements to be wrapped
+ * @property {void} [callback] - callback used as action for when user clicks outside of the component
  *
  * @see ToC
+ * @class
  * @category Components
+ * @subcategory Table of Contents
  */
-export function OutsideClicker(props: {
+export const OutsideClicker = (props: {
     children: React.ReactNode;
     callback?: () => void;
-}) {
+}) => {
     if (props.callback) {
         const wrapperRef = useRef(null);
         useOutsideClick(wrapperRef, props.callback);
 
-        return <div ref={wrapperRef}>{props.children}</div>;
+        return (<div ref={wrapperRef}>{props.children}</div>);
     }
 
-    return <div>{props.children}</div>;
+    return (<div>{props.children}</div>);
 }

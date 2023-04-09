@@ -3,7 +3,34 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
 import { TagsList } from './TagsList';
 
-// TODO interface
+/**
+ * search + filter rows props
+ * @property {Array<{fieldValue: string, totalCount: number}>} tags - array of all tags with total tag count
+ * @property {number} totalPostCount - total amount of posts
+ * @property {string} activeTag - the current tag being used for filtering
+ * @property {boolean} isSearchActive - true when the user is interacting with the search bar. When true, filter
+ * will be disabled.
+ * @property {PostType} type - the type of post being filtered/searched
+ * @property {void} clearSearchQuery - void function used as the action when search is cleared
+ * @property {void} handleFilterUpdate - void function used as the action when filter is updated
+ * @property {void} handleSubmitSearch - void function used as the action when search is submitted
+ *
+ * @memberof SearchFilterRow
+ * @category Components
+ */
+interface SearchFilterRowProps {
+    tags: {
+        fieldValue: string;
+        totalCount: number;
+    }[];
+    totalPostCount: number;
+    activeTag: string;
+    searchQuery: string;
+    type: PostType;
+    clearSearchQuery: () => void;
+    handleFilterUpdate: (e: any) => void;
+    handleSubmitSearch: (e: any) => void;
+}
 /**
  * A component with search and filter based functionalities. The search and
  * filter functionalities cannot be used at the same time. The component can be used with all
@@ -17,33 +44,14 @@ import { TagsList } from './TagsList';
  * or description
  *
  * **NOTE: The search functionality is currently not implemented**
- * @param {Array<{fieldValue: string, totalCount: number}>} tags - array of all tags with total tag count
- * @param {number} totalPostCount - total amount of posts
- * @param {string} activeTag - the current tag being used for filtering
- * @param {boolean} isSearchActive - true when the user is interacting with the search bar. When true, filter
- * will be disabled.
- * @param {PostType} type - the type of post being filtered/searched
- * @param {void} clearSearchQuery - void function used as the action when search is cleared
- * @param {void} handleFilterUpdate - void function used as the action when filter is updated
- * @param {void} handleSubmitSearch - void function used as the action when search is submitted
+ * @param {SearchFilterRowProps} props
  *
  * @see TagsList
  * @see PostPage
+ * @class
  * @category Components
  */
-export const SearchFilterRow = (props: {
-    tags: {
-        fieldValue: string;
-        totalCount: number;
-    }[];
-    totalPostCount: number;
-    activeTag: string;
-    searchQuery: string;
-    type: PostType;
-    clearSearchQuery: () => void;
-    handleFilterUpdate: (e: any) => void;
-    handleSubmitSearch: (e: any) => void;
-}) => {
+export const SearchFilterRow = (props : SearchFilterRowProps) => {
     const [value, setValue] = useState(props.searchQuery);
 
     const handleChange = (event: any) => {
