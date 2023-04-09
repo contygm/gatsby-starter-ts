@@ -324,7 +324,7 @@ exports[`HomePage renders correctly 1`] = `
             </div>
           </div>
           <div
-            class="columns is-multiline"
+            class="col-multi-wrapper"
           >
             <div
               class="column is-half"
@@ -504,7 +504,7 @@ exports[`HomePage renders correctly 1`] = `
             </div>
           </div>
           <div
-            class="columns is-multiline is-centered"
+            class="col-multi-wrapper is-centered"
           >
             <div
               class="column is-3"
@@ -684,7 +684,7 @@ exports[`HomePage renders correctly 1`] = `
             </div>
           </div>
           <div
-            class="columns is-multiline"
+            class="col-multi-wrapper"
           >
             <div
               class="column is-half"

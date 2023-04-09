@@ -105,7 +105,7 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
         </div>
       </header>
       <div
-        class="columns is-multiline"
+        class="col-multi-wrapper"
       >
         <div
           class="column mt-4 glossary-toc"
@@ -1858,7 +1858,7 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
         </div>
       </header>
       <div
-        class="columns is-multiline"
+        class="col-multi-wrapper"
       >
         <div
           class="column mt-4 glossary-toc"
@@ -3611,7 +3611,7 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
         </div>
       </header>
       <div
-        class="columns is-multiline"
+        class="col-multi-wrapper"
       >
         <div
           class="column mt-4 glossary-toc"
@@ -5364,7 +5364,7 @@ exports[`Glossary Page filters correctly 1`] = `
         </div>
       </header>
       <div
-        class="columns is-multiline"
+        class="col-multi-wrapper"
       >
         <div
           class="column mt-4 glossary-toc"
@@ -7207,7 +7207,7 @@ exports[`Glossary Page renders correctly 1`] = `
         </div>
       </header>
       <div
-        class="columns is-multiline"
+        class="col-multi-wrapper"
       >
         <div
           class="column mt-4 glossary-toc"
@@ -9030,7 +9030,7 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
         </div>
       </header>
       <div
-        class="columns is-multiline"
+        class="col-multi-wrapper"
       >
         <div
           class="column mt-4 glossary-toc"
@@ -10783,7 +10783,7 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
         </div>
       </header>
       <div
-        class="columns is-multiline"
+        class="col-multi-wrapper"
       >
         <div
           class="column mt-4 glossary-toc"
@@ -12536,7 +12536,7 @@ exports[`Glossary Page searches glossary html correctly 1`] = `
         </div>
       </header>
       <div
-        class="columns is-multiline"
+        class="col-multi-wrapper"
       >
         <div
           class="column mt-4 glossary-toc"

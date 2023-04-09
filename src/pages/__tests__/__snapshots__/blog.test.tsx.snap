@@ -245,7 +245,7 @@ exports[`Blog Index Page renders and filters correctly 1`] = `
           class="container is-max-desktop"
         >
           <div
-            class="columns is-multiline is-centered"
+            class="col-multi-wrapper is-centered"
           >
             <div
               class="column is-4"
@@ -1002,7 +1002,7 @@ exports[`Blog Index Page searches correctly 1`] = `
           class="container is-max-desktop"
         >
           <div
-            class="columns is-multiline is-centered"
+            class="col-multi-wrapper is-centered"
           >
             <div
               class="column is-4"

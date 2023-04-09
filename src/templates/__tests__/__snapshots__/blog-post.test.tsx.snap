@@ -234,10 +234,10 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
         </div>
       </header>
       <div
-        class="columns is-multiline"
+        class="col-multi-wrapperr"
       >
         <div
-          class="column post-toc is-one-fifth-desktop is-narrow"
+          class="post-toc"
         >
           <section
             class="mobile-post-toc"
@@ -292,7 +292,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
             </div>
           </section>
           <button
-            class="button is-rounded is-primary"
+            class="post-toc-mobile-btn"
             data-testid="post-toc-mobile-btn"
             style="display: block;"
           >
@@ -319,13 +319,13 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
           </button>
         </div>
         <div
-          class="column is-three-fifths-widescreen is-four-fifths"
+          class="post-article-wrapper"
         >
           <article
             class="content"
           >
             <section
-              class="container has-text-centered mb-2 mt-6"
+              class="blog-post-header-wrapper"
             >
               <img
                 alt="blog-post-header"
@@ -597,10 +597,10 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
           </article>
         </div>
         <div
-          class="column mt-6 is-one-fifth-widescreen"
+          class="post-sidebar-wrapper"
         >
           <div
-            class="blog-sidebar"
+            class="post-sidebar"
           >
             <aside
               class="menu sidebar"
@@ -1344,10 +1344,10 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
         </div>
       </header>
       <div
-        class="columns is-multiline"
+        class="col-multi-wrapperr"
       >
         <div
-          class="column post-toc is-one-fifth-desktop is-narrow"
+          class="post-toc"
         >
           <section
             class="mobile-post-toc"
@@ -1402,7 +1402,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
             </div>
           </section>
           <button
-            class="button is-rounded is-primary"
+            class="post-toc-mobile-btn"
             data-testid="post-toc-mobile-btn"
             style="display: block;"
           >
@@ -1429,13 +1429,13 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
           </button>
         </div>
         <div
-          class="column is-three-fifths-widescreen is-four-fifths"
+          class="post-article-wrapper"
         >
           <article
             class="content"
           >
             <section
-              class="container has-text-centered mb-2 mt-6"
+              class="blog-post-header-wrapper"
             >
               <img
                 alt="blog-post-header"
@@ -1707,10 +1707,10 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
           </article>
         </div>
         <div
-          class="column mt-6 is-one-fifth-widescreen"
+          class="post-sidebar-wrapper"
         >
           <div
-            class="blog-sidebar"
+            class="post-sidebar"
           >
             <aside
               class="menu sidebar"
@@ -2454,10 +2454,10 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
         </div>
       </header>
       <div
-        class="columns is-multiline"
+        class="col-multi-wrapperr"
       >
         <div
-          class="column post-toc is-one-fifth-desktop is-narrow"
+          class="post-toc"
         >
           <section
             class="mobile-post-toc"
@@ -2512,7 +2512,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
             </div>
           </section>
           <button
-            class="button is-rounded is-primary"
+            class="post-toc-mobile-btn"
             data-testid="post-toc-mobile-btn"
             style="display: block;"
           >
@@ -2539,13 +2539,13 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
           </button>
         </div>
         <div
-          class="column is-three-fifths-widescreen is-four-fifths"
+          class="post-article-wrapper"
         >
           <article
             class="content"
           >
             <section
-              class="container has-text-centered mb-2 mt-6"
+              class="blog-post-header-wrapper"
             >
               <img
                 alt="blog-post-header"
@@ -2817,10 +2817,10 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
           </article>
         </div>
         <div
-          class="column mt-6 is-one-fifth-widescreen"
+          class="post-sidebar-wrapper"
         >
           <div
-            class="blog-sidebar"
+            class="post-sidebar"
           >
             <aside
               class="menu sidebar"
@@ -3584,10 +3584,10 @@ exports[`Blog Posts Page renders correctly 1`] = `
         </div>
       </header>
       <div
-        class="columns is-multiline"
+        class="col-multi-wrapperr"
       >
         <div
-          class="column post-toc is-one-fifth-desktop is-narrow"
+          class="post-toc"
         >
           <section
             class="web-post-toc"
@@ -3642,7 +3642,7 @@ exports[`Blog Posts Page renders correctly 1`] = `
             </div>
           </section>
           <button
-            class="button is-rounded is-primary"
+            class="post-toc-mobile-btn"
             data-testid="post-toc-mobile-btn"
             style="display: none;"
           >
@@ -3669,13 +3669,13 @@ exports[`Blog Posts Page renders correctly 1`] = `
           </button>
         </div>
         <div
-          class="column is-three-fifths-widescreen is-four-fifths"
+          class="post-article-wrapper"
         >
           <article
             class="content"
           >
             <section
-              class="container has-text-centered mb-2 mt-6"
+              class="blog-post-header-wrapper"
             >
               <img
                 alt="blog-post-header"
@@ -3857,10 +3857,10 @@ exports[`Blog Posts Page renders correctly 1`] = `
           </article>
         </div>
         <div
-          class="column mt-6 is-one-fifth-widescreen"
+          class="post-sidebar-wrapper"
         >
           <div
-            class="blog-sidebar"
+            class="post-sidebar"
           >
             <aside
               class="menu sidebar"
@@ -4674,10 +4674,10 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
         </div>
       </header>
       <div
-        class="columns is-multiline"
+        class="col-multi-wrapperr"
       >
         <div
-          class="column post-toc is-one-fifth-desktop is-narrow"
+          class="post-toc"
         >
           <section
             class="web-post-toc"
@@ -4732,7 +4732,7 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
             </div>
           </section>
           <button
-            class="button is-rounded is-primary"
+            class="post-toc-mobile-btn"
             data-testid="post-toc-mobile-btn"
             style="display: none;"
           >
@@ -4759,13 +4759,13 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
           </button>
         </div>
         <div
-          class="column is-three-fifths-widescreen is-four-fifths"
+          class="post-article-wrapper"
         >
           <article
             class="content"
           >
             <section
-              class="container has-text-centered mb-2 mt-6"
+              class="blog-post-header-wrapper"
             >
               <img
                 alt="blog-post-header"
@@ -5037,10 +5037,10 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
           </article>
         </div>
         <div
-          class="column mt-6 is-one-fifth-widescreen"
+          class="post-sidebar-wrapper"
         >
           <div
-            class="blog-sidebar"
+            class="post-sidebar"
           >
             <aside
               class="menu sidebar"
@@ -5784,10 +5784,10 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
         </div>
       </header>
       <div
-        class="columns is-multiline"
+        class="col-multi-wrapperr"
       >
         <div
-          class="column post-toc is-one-fifth-desktop is-narrow"
+          class="post-toc"
         >
           <section
             class="mobile-post-toc"
@@ -5842,7 +5842,7 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
             </div>
           </section>
           <button
-            class="button is-rounded is-primary"
+            class="post-toc-mobile-btn"
             data-testid="post-toc-mobile-btn"
             style="display: block;"
           >
@@ -5869,13 +5869,13 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
           </button>
         </div>
         <div
-          class="column is-three-fifths-widescreen is-four-fifths"
+          class="post-article-wrapper"
         >
           <article
             class="content"
           >
             <section
-              class="container has-text-centered mb-2 mt-6"
+              class="blog-post-header-wrapper"
             >
               <img
                 alt="blog-post-header"
@@ -6147,10 +6147,10 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
           </article>
         </div>
         <div
-          class="column mt-6 is-one-fifth-widescreen"
+          class="post-sidebar-wrapper"
         >
           <div
-            class="blog-sidebar"
+            class="post-sidebar"
           >
             <aside
               class="menu sidebar"

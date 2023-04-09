@@ -123,7 +123,7 @@ exports[`Posts Page searches blog correctly and clears search bar 1`] = `
       class="container is-max-desktop"
     >
       <div
-        class="columns is-multiline is-centered"
+        class="col-multi-wrapper is-centered"
       >
         <div
           class="column is-4"

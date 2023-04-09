@@ -1454,7 +1454,7 @@ exports[`LegalPage Legal renders correctly 1`] = `
           class="container"
         >
           <div
-            class="columns is-multiline"
+            class="col-multi-wrapper"
           >
             <div
               class="column is-half"

@@ -234,10 +234,10 @@ exports[`Wiki Posts Page ToC shows properly on mobile: closed table of contents 
         </div>
       </header>
       <div
-        class="columns is-multiline"
+        class="col-multi-wrapper"
       >
         <div
-          class="column post-toc is-one-fifth-widescreen is-one-fifth-desktop is-narrow"
+          class="post-toc"
         >
           <section
             class="mobile-post-toc"
@@ -292,7 +292,7 @@ exports[`Wiki Posts Page ToC shows properly on mobile: closed table of contents 
             </div>
           </section>
           <button
-            class="button is-rounded is-primary"
+            class="post-toc-mobile-btn"
             data-testid="post-toc-mobile-btn"
             style="display: block;"
           >
@@ -319,25 +319,25 @@ exports[`Wiki Posts Page ToC shows properly on mobile: closed table of contents 
           </button>
         </div>
         <div
-          class="column is-three-fifths-widescreen is-four-fifths"
+          class="post-article-wrapper"
         >
           <article
-            class="content mb-6"
+            class="wiki-post-article"
           >
             <section
-              class="container mb-2 mt-6"
+              class="baseball-card-wrapper"
             >
               <div
-                class="card baseball-card"
+                class="baseball-card"
               >
                 <div
-                  class="card-content wiki-summary"
+                  class="baseball-card-summary"
                 >
                   <div
                     class="media"
                   >
                     <figure
-                      class="image baseball-card-img"
+                      class="baseball-card-img"
                     >
                       <img
                         alt="wiki-post-header"
@@ -346,26 +346,26 @@ exports[`Wiki Posts Page ToC shows properly on mobile: closed table of contents 
                     </figure>
                   </div>
                   <div
-                    class="content has-text-centered"
+                    class="baseball-card-title-wrapper"
                   >
                     <p
-                      class="title is-5"
+                      class="baseball-card-title"
                     >
                       Topic
                     </p>
                   </div>
                   <div
-                    class="content has-text-left"
+                    class="baseball-card-table-wrapper"
                   >
                     <table
-                      class="table is-fullwidth"
+                      class="baseball-card-table"
                     >
                       <tbody>
                         <tr
-                          class="wiki-summary-row"
+                          class="baseball-card-row"
                         >
                           <td
-                            class="has-text-weight-semibold"
+                            class="baseball-card-table-label"
                           >
                             Color
                           </td>
@@ -374,10 +374,10 @@ exports[`Wiki Posts Page ToC shows properly on mobile: closed table of contents 
                           </td>
                         </tr>
                         <tr
-                          class="wiki-summary-row"
+                          class="baseball-card-row"
                         >
                           <td
-                            class="has-text-weight-semibold"
+                            class="baseball-card-table-label"
                           >
                             Number
                           </td>
@@ -395,7 +395,7 @@ exports[`Wiki Posts Page ToC shows properly on mobile: closed table of contents 
               class=""
             >
               <div
-                class="container wiki-post-content"
+                class="wiki-post-content"
               >
                 <h2>
                   Header
@@ -496,10 +496,10 @@ exports[`Wiki Posts Page ToC shows properly on mobile: closed table of contents 
               </ul>
             </div>
             <section
-              class="section px-0"
+              class="wiki-post-footer-wrapper"
             >
               <div
-                class="container author-container"
+                class="wiki-post-footer"
               >
                 <div
                   class="level my-3"
@@ -584,10 +584,10 @@ exports[`Wiki Posts Page ToC shows properly on mobile: closed table of contents 
           </article>
         </div>
         <div
-          class="column mt-6 is-one-fifth-widescreen"
+          class="post-sidebar-wrapper"
         >
           <div
-            class="blog-sidebar"
+            class="post-sidebar"
           >
             <aside
               class="menu sidebar"
@@ -1331,10 +1331,10 @@ exports[`Wiki Posts Page ToC shows properly on mobile: closed table of contents 
         </div>
       </header>
       <div
-        class="columns is-multiline"
+        class="col-multi-wrapper"
       >
         <div
-          class="column post-toc is-one-fifth-widescreen is-one-fifth-desktop is-narrow"
+          class="post-toc"
         >
           <section
             class="mobile-post-toc"
@@ -1389,7 +1389,7 @@ exports[`Wiki Posts Page ToC shows properly on mobile: closed table of contents 
             </div>
           </section>
           <button
-            class="button is-rounded is-primary"
+            class="post-toc-mobile-btn"
             data-testid="post-toc-mobile-btn"
             style="display: block;"
           >
@@ -1416,25 +1416,25 @@ exports[`Wiki Posts Page ToC shows properly on mobile: closed table of contents 
           </button>
         </div>
         <div
-          class="column is-three-fifths-widescreen is-four-fifths"
+          class="post-article-wrapper"
         >
           <article
-            class="content mb-6"
+            class="wiki-post-article"
           >
             <section
-              class="container mb-2 mt-6"
+              class="baseball-card-wrapper"
             >
               <div
-                class="card baseball-card"
+                class="baseball-card"
               >
                 <div
-                  class="card-content wiki-summary"
+                  class="baseball-card-summary"
                 >
                   <div
                     class="media"
                   >
                     <figure
-                      class="image baseball-card-img"
+                      class="baseball-card-img"
                     >
                       <img
                         alt="wiki-post-header"
@@ -1443,26 +1443,26 @@ exports[`Wiki Posts Page ToC shows properly on mobile: closed table of contents 
                     </figure>
                   </div>
                   <div
-                    class="content has-text-centered"
+                    class="baseball-card-title-wrapper"
                   >
                     <p
-                      class="title is-5"
+                      class="baseball-card-title"
                     >
                       Topic
                     </p>
                   </div>
                   <div
-                    class="content has-text-left"
+                    class="baseball-card-table-wrapper"
                   >
                     <table
-                      class="table is-fullwidth"
+                      class="baseball-card-table"
                     >
                       <tbody>
                         <tr
-                          class="wiki-summary-row"
+                          class="baseball-card-row"
                         >
                           <td
-                            class="has-text-weight-semibold"
+                            class="baseball-card-table-label"
                           >
                             Color
                           </td>
@@ -1471,10 +1471,10 @@ exports[`Wiki Posts Page ToC shows properly on mobile: closed table of contents 
                           </td>
                         </tr>
                         <tr
-                          class="wiki-summary-row"
+                          class="baseball-card-row"
                         >
                           <td
-                            class="has-text-weight-semibold"
+                            class="baseball-card-table-label"
                           >
                             Number
                           </td>
@@ -1492,7 +1492,7 @@ exports[`Wiki Posts Page ToC shows properly on mobile: closed table of contents 
               class=""
             >
               <div
-                class="container wiki-post-content"
+                class="wiki-post-content"
               >
                 <h2>
                   Header
@@ -1593,10 +1593,10 @@ exports[`Wiki Posts Page ToC shows properly on mobile: closed table of contents 
               </ul>
             </div>
             <section
-              class="section px-0"
+              class="wiki-post-footer-wrapper"
             >
               <div
-                class="container author-container"
+                class="wiki-post-footer"
               >
                 <div
                   class="level my-3"
@@ -1681,10 +1681,10 @@ exports[`Wiki Posts Page ToC shows properly on mobile: closed table of contents 
           </article>
         </div>
         <div
-          class="column mt-6 is-one-fifth-widescreen"
+          class="post-sidebar-wrapper"
         >
           <div
-            class="blog-sidebar"
+            class="post-sidebar"
           >
             <aside
               class="menu sidebar"
@@ -2428,10 +2428,10 @@ exports[`Wiki Posts Page ToC shows properly on mobile: open table of contents 1`
         </div>
       </header>
       <div
-        class="columns is-multiline"
+        class="col-multi-wrapper"
       >
         <div
-          class="column post-toc is-one-fifth-widescreen is-one-fifth-desktop is-narrow"
+          class="post-toc"
         >
           <section
             class="mobile-post-toc"
@@ -2486,7 +2486,7 @@ exports[`Wiki Posts Page ToC shows properly on mobile: open table of contents 1`
             </div>
           </section>
           <button
-            class="button is-rounded is-primary"
+            class="post-toc-mobile-btn"
             data-testid="post-toc-mobile-btn"
             style="display: block;"
           >
@@ -2513,25 +2513,25 @@ exports[`Wiki Posts Page ToC shows properly on mobile: open table of contents 1`
           </button>
         </div>
         <div
-          class="column is-three-fifths-widescreen is-four-fifths"
+          class="post-article-wrapper"
         >
           <article
-            class="content mb-6"
+            class="wiki-post-article"
           >
             <section
-              class="container mb-2 mt-6"
+              class="baseball-card-wrapper"
             >
               <div
-                class="card baseball-card"
+                class="baseball-card"
               >
                 <div
-                  class="card-content wiki-summary"
+                  class="baseball-card-summary"
                 >
                   <div
                     class="media"
                   >
                     <figure
-                      class="image baseball-card-img"
+                      class="baseball-card-img"
                     >
                       <img
                         alt="wiki-post-header"
@@ -2540,26 +2540,26 @@ exports[`Wiki Posts Page ToC shows properly on mobile: open table of contents 1`
                     </figure>
                   </div>
                   <div
-                    class="content has-text-centered"
+                    class="baseball-card-title-wrapper"
                   >
                     <p
-                      class="title is-5"
+                      class="baseball-card-title"
                     >
                       Topic
                     </p>
                   </div>
                   <div
-                    class="content has-text-left"
+                    class="baseball-card-table-wrapper"
                   >
                     <table
-                      class="table is-fullwidth"
+                      class="baseball-card-table"
                     >
                       <tbody>
                         <tr
-                          class="wiki-summary-row"
+                          class="baseball-card-row"
                         >
                           <td
-                            class="has-text-weight-semibold"
+                            class="baseball-card-table-label"
                           >
                             Color
                           </td>
@@ -2568,10 +2568,10 @@ exports[`Wiki Posts Page ToC shows properly on mobile: open table of contents 1`
                           </td>
                         </tr>
                         <tr
-                          class="wiki-summary-row"
+                          class="baseball-card-row"
                         >
                           <td
-                            class="has-text-weight-semibold"
+                            class="baseball-card-table-label"
                           >
                             Number
                           </td>
@@ -2589,7 +2589,7 @@ exports[`Wiki Posts Page ToC shows properly on mobile: open table of contents 1`
               class=""
             >
               <div
-                class="container wiki-post-content"
+                class="wiki-post-content"
               >
                 <h2>
                   Header
@@ -2690,10 +2690,10 @@ exports[`Wiki Posts Page ToC shows properly on mobile: open table of contents 1`
               </ul>
             </div>
             <section
-              class="section px-0"
+              class="wiki-post-footer-wrapper"
             >
               <div
-                class="container author-container"
+                class="wiki-post-footer"
               >
                 <div
                   class="level my-3"
@@ -2778,10 +2778,10 @@ exports[`Wiki Posts Page ToC shows properly on mobile: open table of contents 1`
           </article>
         </div>
         <div
-          class="column mt-6 is-one-fifth-widescreen"
+          class="post-sidebar-wrapper"
         >
           <div
-            class="blog-sidebar"
+            class="post-sidebar"
           >
             <aside
               class="menu sidebar"
@@ -3545,10 +3545,10 @@ exports[`Wiki Posts Page renders correctly 1`] = `
         </div>
       </header>
       <div
-        class="columns is-multiline"
+        class="col-multi-wrapper"
       >
         <div
-          class="column post-toc is-one-fifth-widescreen is-one-fifth-desktop is-narrow"
+          class="post-toc"
         >
           <section
             class="web-post-toc"
@@ -3603,7 +3603,7 @@ exports[`Wiki Posts Page renders correctly 1`] = `
             </div>
           </section>
           <button
-            class="button is-rounded is-primary"
+            class="post-toc-mobile-btn"
             data-testid="post-toc-mobile-btn"
             style="display: none;"
           >
@@ -3630,25 +3630,25 @@ exports[`Wiki Posts Page renders correctly 1`] = `
           </button>
         </div>
         <div
-          class="column is-three-fifths-widescreen is-four-fifths"
+          class="post-article-wrapper"
         >
           <article
-            class="content mb-6"
+            class="wiki-post-article"
           >
             <section
-              class="container mb-2 mt-6"
+              class="baseball-card-wrapper"
             >
               <div
-                class="card baseball-card"
+                class="baseball-card"
               >
                 <div
-                  class="card-content wiki-summary"
+                  class="baseball-card-summary"
                 >
                   <div
                     class="media"
                   >
                     <figure
-                      class="image baseball-card-img"
+                      class="baseball-card-img"
                     >
                       <img
                         alt="wiki-post-header"
@@ -3657,26 +3657,26 @@ exports[`Wiki Posts Page renders correctly 1`] = `
                     </figure>
                   </div>
                   <div
-                    class="content has-text-centered"
+                    class="baseball-card-title-wrapper"
                   >
                     <p
-                      class="title is-5"
+                      class="baseball-card-title"
                     >
                       Topic
                     </p>
                   </div>
                   <div
-                    class="content has-text-left"
+                    class="baseball-card-table-wrapper"
                   >
                     <table
-                      class="table is-fullwidth"
+                      class="baseball-card-table"
                     >
                       <tbody>
                         <tr
-                          class="wiki-summary-row"
+                          class="baseball-card-row"
                         >
                           <td
-                            class="has-text-weight-semibold"
+                            class="baseball-card-table-label"
                           >
                             Color
                           </td>
@@ -3685,10 +3685,10 @@ exports[`Wiki Posts Page renders correctly 1`] = `
                           </td>
                         </tr>
                         <tr
-                          class="wiki-summary-row"
+                          class="baseball-card-row"
                         >
                           <td
-                            class="has-text-weight-semibold"
+                            class="baseball-card-table-label"
                           >
                             Number
                           </td>
@@ -3706,7 +3706,7 @@ exports[`Wiki Posts Page renders correctly 1`] = `
               class=""
             >
               <div
-                class="container wiki-post-content"
+                class="wiki-post-content"
               >
                 <h2>
                   Header
@@ -3717,10 +3717,10 @@ exports[`Wiki Posts Page renders correctly 1`] = `
               </div>
             </section>
             <section
-              class="section px-0"
+              class="wiki-post-footer-wrapper"
             >
               <div
-                class="container author-container"
+                class="wiki-post-footer"
               >
                 <div
                   class="level my-3"
@@ -3805,10 +3805,10 @@ exports[`Wiki Posts Page renders correctly 1`] = `
           </article>
         </div>
         <div
-          class="column mt-6 is-one-fifth-widescreen"
+          class="post-sidebar-wrapper"
         >
           <div
-            class="blog-sidebar"
+            class="post-sidebar"
           >
             <aside
               class="menu sidebar"
@@ -4622,10 +4622,10 @@ exports[`Wiki Posts Page renders correctly on medium view 1`] = `
         </div>
       </header>
       <div
-        class="columns is-multiline"
+        class="col-multi-wrapper"
       >
         <div
-          class="column post-toc is-one-fifth-widescreen is-one-fifth-desktop is-narrow"
+          class="post-toc"
         >
           <section
             class="web-post-toc"
@@ -4680,7 +4680,7 @@ exports[`Wiki Posts Page renders correctly on medium view 1`] = `
             </div>
           </section>
           <button
-            class="button is-rounded is-primary"
+            class="post-toc-mobile-btn"
             data-testid="post-toc-mobile-btn"
             style="display: none;"
           >
@@ -4707,25 +4707,25 @@ exports[`Wiki Posts Page renders correctly on medium view 1`] = `
           </button>
         </div>
         <div
-          class="column is-three-fifths-widescreen is-four-fifths"
+          class="post-article-wrapper"
         >
           <article
-            class="content mb-6"
+            class="wiki-post-article"
           >
             <section
-              class="container mb-2 mt-6"
+              class="baseball-card-wrapper"
             >
               <div
-                class="card baseball-card"
+                class="baseball-card"
               >
                 <div
-                  class="card-content wiki-summary"
+                  class="baseball-card-summary"
                 >
                   <div
                     class="media"
                   >
                     <figure
-                      class="image baseball-card-img"
+                      class="baseball-card-img"
                     >
                       <img
                         alt="wiki-post-header"
@@ -4734,26 +4734,26 @@ exports[`Wiki Posts Page renders correctly on medium view 1`] = `
                     </figure>
                   </div>
                   <div
-                    class="content has-text-centered"
+                    class="baseball-card-title-wrapper"
                   >
                     <p
-                      class="title is-5"
+                      class="baseball-card-title"
                     >
                       Topic
                     </p>
                   </div>
                   <div
-                    class="content has-text-left"
+                    class="baseball-card-table-wrapper"
                   >
                     <table
-                      class="table is-fullwidth"
+                      class="baseball-card-table"
                     >
                       <tbody>
                         <tr
-                          class="wiki-summary-row"
+                          class="baseball-card-row"
                         >
                           <td
-                            class="has-text-weight-semibold"
+                            class="baseball-card-table-label"
                           >
                             Color
                           </td>
@@ -4762,10 +4762,10 @@ exports[`Wiki Posts Page renders correctly on medium view 1`] = `
                           </td>
                         </tr>
                         <tr
-                          class="wiki-summary-row"
+                          class="baseball-card-row"
                         >
                           <td
-                            class="has-text-weight-semibold"
+                            class="baseball-card-table-label"
                           >
                             Number
                           </td>
@@ -4783,7 +4783,7 @@ exports[`Wiki Posts Page renders correctly on medium view 1`] = `
               class=""
             >
               <div
-                class="container wiki-post-content"
+                class="wiki-post-content"
               >
                 <h2>
                   Header
@@ -4884,10 +4884,10 @@ exports[`Wiki Posts Page renders correctly on medium view 1`] = `
               </ul>
             </div>
             <section
-              class="section px-0"
+              class="wiki-post-footer-wrapper"
             >
               <div
-                class="container author-container"
+                class="wiki-post-footer"
               >
                 <div
                   class="level my-3"
@@ -4972,10 +4972,10 @@ exports[`Wiki Posts Page renders correctly on medium view 1`] = `
           </article>
         </div>
         <div
-          class="column mt-6 is-one-fifth-widescreen"
+          class="post-sidebar-wrapper"
         >
           <div
-            class="blog-sidebar"
+            class="post-sidebar"
           >
             <aside
               class="menu sidebar"
@@ -5719,10 +5719,10 @@ exports[`Wiki Posts Page renders correctly on mobile view 1`] = `
         </div>
       </header>
       <div
-        class="columns is-multiline"
+        class="col-multi-wrapper"
       >
         <div
-          class="column post-toc is-one-fifth-widescreen is-one-fifth-desktop is-narrow"
+          class="post-toc"
         >
           <section
             class="mobile-post-toc"
@@ -5777,7 +5777,7 @@ exports[`Wiki Posts Page renders correctly on mobile view 1`] = `
             </div>
           </section>
           <button
-            class="button is-rounded is-primary"
+            class="post-toc-mobile-btn"
             data-testid="post-toc-mobile-btn"
             style="display: block;"
           >
@@ -5804,25 +5804,25 @@ exports[`Wiki Posts Page renders correctly on mobile view 1`] = `
           </button>
         </div>
         <div
-          class="column is-three-fifths-widescreen is-four-fifths"
+          class="post-article-wrapper"
         >
           <article
-            class="content mb-6"
+            class="wiki-post-article"
           >
             <section
-              class="container mb-2 mt-6"
+              class="baseball-card-wrapper"
             >
               <div
-                class="card baseball-card"
+                class="baseball-card"
               >
                 <div
-                  class="card-content wiki-summary"
+                  class="baseball-card-summary"
                 >
                   <div
                     class="media"
                   >
                     <figure
-                      class="image baseball-card-img"
+                      class="baseball-card-img"
                     >
                       <img
                         alt="wiki-post-header"
@@ -5831,26 +5831,26 @@ exports[`Wiki Posts Page renders correctly on mobile view 1`] = `
                     </figure>
                   </div>
                   <div
-                    class="content has-text-centered"
+                    class="baseball-card-title-wrapper"
                   >
                     <p
-                      class="title is-5"
+                      class="baseball-card-title"
                     >
                       Topic
                     </p>
                   </div>
                   <div
-                    class="content has-text-left"
+                    class="baseball-card-table-wrapper"
                   >
                     <table
-                      class="table is-fullwidth"
+                      class="baseball-card-table"
                     >
                       <tbody>
                         <tr
-                          class="wiki-summary-row"
+                          class="baseball-card-row"
                         >
                           <td
-                            class="has-text-weight-semibold"
+                            class="baseball-card-table-label"
                           >
                             Color
                           </td>
@@ -5859,10 +5859,10 @@ exports[`Wiki Posts Page renders correctly on mobile view 1`] = `
                           </td>
                         </tr>
                         <tr
-                          class="wiki-summary-row"
+                          class="baseball-card-row"
                         >
                           <td
-                            class="has-text-weight-semibold"
+                            class="baseball-card-table-label"
                           >
                             Number
                           </td>
@@ -5880,7 +5880,7 @@ exports[`Wiki Posts Page renders correctly on mobile view 1`] = `
               class=""
             >
               <div
-                class="container wiki-post-content"
+                class="wiki-post-content"
               >
                 <h2>
                   Header
@@ -5981,10 +5981,10 @@ exports[`Wiki Posts Page renders correctly on mobile view 1`] = `
               </ul>
             </div>
             <section
-              class="section px-0"
+              class="wiki-post-footer-wrapper"
             >
               <div
-                class="container author-container"
+                class="wiki-post-footer"
               >
                 <div
                   class="level my-3"
@@ -6069,10 +6069,10 @@ exports[`Wiki Posts Page renders correctly on mobile view 1`] = `
           </article>
         </div>
         <div
-          class="column mt-6 is-one-fifth-widescreen"
+          class="post-sidebar-wrapper"
         >
           <div
-            class="blog-sidebar"
+            class="post-sidebar"
           >
             <aside
               class="menu sidebar"
