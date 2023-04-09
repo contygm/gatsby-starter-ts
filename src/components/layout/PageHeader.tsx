@@ -65,24 +65,19 @@ interface PageHeaderProps {
  * @see PageHeaderProps
  * @category Components
  */
-export const PageHeader = ({
-    title,
-    alignCenter = false,
-    subtitle,
-    hasSocial
-}: PageHeaderProps) => {
-    const centerClass = alignCenter ? 'has-text-centered' : '';
+export const PageHeader = (props: PageHeaderProps) => {
+    const centerClass = props.alignCenter ? 'has-text-centered' : '';
 
     return (
         <header className="hero is-medium">
             <div className="hero-body has-background-black">
                 <div className={`container ${centerClass}`}>
                     <h1 className="title has-text-white is-1">
-                        {title}
+                        {props.title}
                         <span className="pg-header-period">.</span>
                     </h1>
-                    {subtitle && <Subtitle subtitle={subtitle} />}
-                    {hasSocial && <SocialMediaRow />}
+                    {props.subtitle && <Subtitle subtitle={props.subtitle} />}
+                    {props.hasSocial && <SocialMediaRow />}
                 </div>
             </div>
         </header>

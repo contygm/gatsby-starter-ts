@@ -18,7 +18,7 @@ import { LEGAL_LINKS } from '../../utils/constants/legalDropdownLinks';
  *
  * @memberof Footer
  */
-const PageLink = ({ pageUrl, label }: { pageUrl: string; label: string }) => {
+const PageLink = (props: { pageUrl: string; label: string }) => {
     return (
         <li
             className="is-inline-desktop is-inline-tablet m-4 footer-link"
@@ -26,10 +26,10 @@ const PageLink = ({ pageUrl, label }: { pageUrl: string; label: string }) => {
         >
             <Link
                 className="footer-link"
-                to={pageUrl}
-                data-cy={`footer-link-${label}`}
+                to={props.pageUrl}
+                data-cy={`footer-link-${props.label}`}
             >
-                {label}
+                {props.label}
             </Link>
         </li>
     );
@@ -45,15 +45,15 @@ const PageLink = ({ pageUrl, label }: { pageUrl: string; label: string }) => {
 // TODO: move to dropdown btn file
 // TODO: pass full slug
 // TODO: make general footer dropdown link
-const DrawerLegalLink = ({ label, slug }: { label: string; slug: string }) => {
+const DrawerLegalLink = (props: { label: string; slug: string }) => {
     return (
         <div className="dropdown-item">
             <Link
                 className="footer-drawer-link"
-                to={`/legal/copyright${slug}`}
-                data-cy={`footer-link-${slug}`}
+                to={`/legal/copyright${props.slug}`}
+                data-cy={`footer-link-${props.slug}`}
             >
-                {label}
+                {props.label}
             </Link>
         </div>
     );
@@ -123,7 +123,7 @@ const DropDownLinkBtn = () => {
  *
  * @category Components
  */
-export const Footer = ({ author }: { author: string }) => {
+export const Footer = (props: { author: string }) => {
     return (
         <footer className="footer">
             <div className="columns mb-1 is-vcentered has-text-centered-mobile">
@@ -185,7 +185,7 @@ export const Footer = ({ author }: { author: string }) => {
                     className="pt-3"
                     data-testid="copyright"
                 >
-                    © <time>{new Date().getFullYear()}</time>, Built by {author}
+                    © <time>{new Date().getFullYear()}</time>, Built by {props.author}
                 </p>
             </div>
         </footer>

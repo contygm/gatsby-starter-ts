@@ -26,15 +26,15 @@ export interface SideBarProps {
  *
  * @see SideBarProps
  */
-export const SideBar = ({ featured, related, type }: SideBarProps) => {
+export const SideBar = (props: SideBarProps) => {
     // TODO: working search requires queries, tabling for now
     // const searchPlaceholder = type === 'glossary' ? 'A word...' : 'Title...';
     const firstSectionTitle =
-        type === 'glossary' ? 'Featured Blog Posts' : `Related ${type}s`;
-    const firstSectionSlugPrefix = type === 'glossary' ? '/blog' : `/${type}`;
+        props.type === 'glossary' ? 'Featured Blog Posts' : `Related ${props.type}s`;
+    const firstSectionSlugPrefix = props.type === 'glossary' ? '/blog' : `/${props.type}`;
     const secondSectionTitle =
-        type === 'glossary' ? 'Featured Wiki Posts' : `Featured ${type}s`;
-    const secondSectionSlugPrefix = type === 'glossary' ? '/wiki' : `/${type}`;
+        props.type === 'glossary' ? 'Featured Wiki Posts' : `Featured ${props.type}s`;
+    const secondSectionSlugPrefix = props.type === 'glossary' ? '/wiki' : `/${props.type}`;
 
     return (
         <aside className="menu sidebar">
@@ -52,12 +52,12 @@ export const SideBar = ({ featured, related, type }: SideBarProps) => {
                     />
                 </p>
             </div> */}
-            {related && related.length > 0 && (
+            {props.related && props.related.length > 0 && (
                 <div className="box">
                     <p className="menu-label">{firstSectionTitle}</p>
                     <ul className="menu-list">
-                        {related.length > 0 &&
-                            related.map((post) => {
+                        {props.related.length > 0 &&
+                            props.related.map((post) => {
                                 const image = getImage(
                                     post.frontmatter.headerImage
                                 );
@@ -79,7 +79,7 @@ export const SideBar = ({ featured, related, type }: SideBarProps) => {
             <div className="box">
                 <p className="menu-label">{secondSectionTitle}</p>
                 <ul className="menu-list">
-                    {featured.map((post) => {
+                    {props.featured.map((post) => {
                         const image = getImage(post.frontmatter.headerImage);
                         return (
                             <li key={post.frontmatter.title}>

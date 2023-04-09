@@ -26,24 +26,19 @@ export interface SideBarPostTileProps {
  * @see SideBarPostTileProps
  * @category Components
  */
-export const SideBarPostTile = ({
-    title,
-    excerpt,
-    slug,
-    image
-}: SideBarPostTileProps) => {
+export const SideBarPostTile = (props: SideBarPostTileProps) => {
     return (
         <Link
-            to={slug}
+            to={props.slug}
             className="horizontal-post-tile"
         >
             <div className="card">
                 <div className="card-image">
-                    {image && (
+                    {props.image && (
                         <figure>
                             <GatsbyImage
                                 alt="blog image"
-                                image={image}
+                                image={props.image}
                                 className="image sidebar-tile-image"
                             />
                         </figure>
@@ -51,8 +46,8 @@ export const SideBarPostTile = ({
                 </div>
                 <div className="card-content">
                     <div className="content">
-                        <h6>{title}</h6>
-                        <p>{excerpt}</p>
+                        <h6>{props.title}</h6>
+                        <p>{props.excerpt}</p>
                     </div>
                 </div>
             </div>

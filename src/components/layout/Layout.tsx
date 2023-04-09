@@ -22,13 +22,13 @@ interface LayoutProps {
  * @category Components
  * @see LayoutProps
  */
-export const Layout = ({ children }: LayoutProps) => {
+export const Layout = (props: LayoutProps) => {
     const { author } = useSiteMetadata();
 
     return (
         <div id="app-container">
             <NavBar />
-            <main>{children}</main>
+            <main>{props.children}</main>
             <Footer author={author.name} />
         </div>
     );

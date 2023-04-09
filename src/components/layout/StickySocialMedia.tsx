@@ -17,16 +17,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
  *
  * @category Components
  */
-export const StickySocialMedia = ({
-    isVertical,
-    classes
-}: {
+export const StickySocialMedia = (props: {
     isVertical: boolean;
     classes?: string;
 }) => {
     const [showMedia, setShowMedia] = useState(true);
 
-    const verticalClass = isVertical ? 'is-vertical' : '';
+    const verticalClass = props.isVertical ? 'is-vertical' : '';
 
     const handleCollapse = () => {
         setShowMedia(!showMedia);
@@ -34,17 +31,17 @@ export const StickySocialMedia = ({
 
     return (
         <div
-            className={`menu sticky box mt-4 ${verticalClass} ${classes ?? ''}`}
+            className={`menu sticky box mt-4 ${verticalClass} ${props.classes ?? ''}`}
         >
             <p className="menu-label">
-                {isVertical ? 'Share' : 'Share this post'}
+                {props.isVertical ? 'Share' : 'Share this post'}
             </p>
             <ul
                 className={`has-text-black has-text-centered ${
-                    isVertical ? '' : 'columns'
+                    props.isVertical ? '' : 'columns'
                 }`}
             >
-                {((isVertical && showMedia) || !isVertical) && (
+                {((props.isVertical && showMedia) || !props.isVertical) && (
                     <>
                         <div className="column">
                             <FontAwesomeIcon
@@ -69,7 +66,7 @@ export const StickySocialMedia = ({
                         </div>
                     </>
                 )}
-                {isVertical && showMedia && (
+                {props.isVertical && showMedia && (
                     <div className="column has-text-grey-lighter pt-4 pb-2">
                         <FontAwesomeIcon
                             className="faicon-link"
@@ -80,7 +77,7 @@ export const StickySocialMedia = ({
                         />
                     </div>
                 )}
-                {isVertical && !showMedia && (
+                {props.isVertical && !showMedia && (
                     <div className="has-text-grey-lighter">
                         <FontAwesomeIcon
                             className="faicon-link"
