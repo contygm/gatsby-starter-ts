@@ -53,7 +53,7 @@ const LegalPage = () => {
             <PageHeader title="Legal Pages" />
             <section className="section my-4">
                 <div className="container">
-                    <div className="columns is-multiline">
+                    <div className="col-multi-wrapper">
                         {legalPageMap.map((page) => {
                             return (
                                 <LegalLink

@@ -73,13 +73,13 @@ describe('Glossary Page', () => {
         expect(asFragment()).toMatchSnapshot('closed table of contents');
 
         // open with ToC button
-        fireEvent.click(getByTestId('blog-toc-mobile-btn'));
+        fireEvent.click(getByTestId('post-toc-mobile-btn'));
         expect(asFragment()).toMatchSnapshot('open table of contents');
         // ToC section has role of widget
         expect(queryByRole('widget', { hidden: false })).toBeDefined();
 
         // close with ToC button
-        fireEvent.click(getByTestId('blog-toc-mobile-btn'));
+        fireEvent.click(getByTestId('post-toc-mobile-btn'));
         expect(asFragment()).toMatchSnapshot('closed table of contents w btn');
         expect(queryByRole('widget', { hidden: false })).toBeNull();
     });

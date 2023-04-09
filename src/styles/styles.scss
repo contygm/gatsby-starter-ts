@@ -112,6 +112,8 @@ main {
 	@include fa(1rem, 2rem);
 }
 
+
+
 /*******************************
 * Custom Styles
 ********************************/
@@ -249,11 +251,12 @@ pre[class*="language-"] {
 }
 
 /*******************************
-* Post Styles
+* General Styles
 ********************************/
 
-.post-header-image {
-	max-height: 500px;
+.col-multi-wrapper {
+	@extend .columns;
+	@extend .is-multiline;
 }
 
 .header-icon-row {
@@ -261,7 +264,6 @@ pre[class*="language-"] {
 		margin: 0 1rem;
 	}
 }
-
 
 // for vertical social media buttons
 .is-vertical {
@@ -333,8 +335,6 @@ pre[class*="language-"] {
 	@extend .ml-2;
 }
 
-
-
 /*******************************
 * Table of Contents Styles
 ********************************/
@@ -370,84 +370,9 @@ pre[class*="language-"] {
 	max-width: 10%;
 }
 
-
-// blog and wiki toc
-.web-blog-toc{
-	@extend .pb-0;
-	@extend .mt-5;
-	@extend .sticky;
-}
-
-@media only screen and (max-width : 1215px) {
-    .blog-toc {
-		section {
-			display: none; 
-		}
-
-		button {
-			position: fixed; 
-			bottom: 20px; 
-			right: 30px; 
-			z-index: 99; 
-		}
-
-		.mobile-blog-toc{
-			position: fixed; 
-			top: 0;
-			left: 0; 
-			z-index: 99;
-			height: 100vh;
-			overflow-x: scroll;
-			background-color: $white;
-		}
-	}
-
-	.glossary-toc {
-		position: fixed; 
-		max-width: 30%;
-		z-index: 99;
-		height: 100vh;
-		overflow-x: scroll;
-		
-		button {
-			position: fixed; 
-			bottom: 20px; 
-			right: 30px; 
-			z-index: 99; 
-		}
-	}
-}
-
-@media only screen and (min-width : 1216px) {
-    .blog-toc {
-		section {
-			height: 100vh;
-			// overflow-x: scroll;
-		}
-	
-		button {
-			display: none; 
-		}
-	}
-}
-
 /*******************************
 * Side Bar Styles
 ********************************/
-
-@media only screen and (max-width : 1023px) {
-	.blog-sidebar {
-		margin-bottom: 1rem;
-	}
-}
-
-@media only screen and (min-width:1024px) and (max-width:1215px) {
-	.blog-sidebar {
-		max-width: 50%;
-		margin: auto;
-		margin-bottom: 1rem;
-	}
-}
 
 // horizontal post tile component
 .horizontal-post-tile {
@@ -489,49 +414,6 @@ pre[class*="language-"] {
 }
 
 /*******************************
-* Wiki Post Styles
-********************************/
-.baseball-card-img {
-	height: auto;
-	width: 100%;
-}
-
-.baseball-card {
-	width: 40%;
-	float: right;
-	margin-right: 0.5rem;
-	@extend .ml-2;
-	figure {
-		@extend .mx-0;
-	}
-}
-
-.wiki-summary-row {
-	width: 100%;
-}
-
-.wiki-summary {
-	.content {
-		table {
-			margin: 0 0 !important;
-		}
-	}
-}
-
-.wiki-post-content {
-	.gatsby-resp-image-wrapper {
-		margin: 0 !important;
-		max-width: 350px !important;
-		max-height: auto;
-		img {
-			float: left;
-			clear: both;
-		}
-	}
-	
-}
-
-/*******************************
 * Home Page Styles
 ********************************/
 .home-blog-tile {
@@ -559,3 +441,5 @@ pre[class*="language-"] {
 .sidebar-tile-image {
 	max-height: 185px;
 }
+
+@import "post-styles.scss"

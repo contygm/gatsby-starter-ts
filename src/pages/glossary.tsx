@@ -144,11 +144,11 @@ const GlossaryPage = ({
                 title={`Glossary Index`}
                 alignCenter={true}
             />
-            <div className="columns is-multiline">
+            <div className="col-multi-wrapper">
                 {/* sticky table of contents */}
                 <div className="column mt-4 glossary-toc">
                     <section
-                        className={'web-blog-toc box'}
+                        className={'web-post-toc box'}
                         style={{
                             display:
                                 !isMobile || (isMobile && showMobileToc)
@@ -170,7 +170,7 @@ const GlossaryPage = ({
                         className="button is-rounded is-primary"
                         style={{ display: isMobile ? 'block' : 'none' }}
                         onClick={handleTocBtnClick}
-                        data-testid="blog-toc-mobile-btn"
+                        data-testid="post-toc-mobile-btn"
                     >
                         <i
                             className="icon"

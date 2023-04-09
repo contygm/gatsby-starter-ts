@@ -67,7 +67,7 @@ export const PostIndex = (props: PostIndexProps) => {
         <article className="section">
             <section className="container is-max-desktop">
                 {/* post cards */}
-                <div className="columns is-multiline is-centered">
+                <div className="col-multi-wrapper is-centered">
                     {displayPosts.length > 0 ? (
                         displayPosts.map((post: IndexElements) => {
                             return (

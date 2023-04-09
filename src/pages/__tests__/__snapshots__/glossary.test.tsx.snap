@@ -111,7 +111,7 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
           class="column mt-4 glossary-toc"
         >
           <section
-            class="web-blog-toc box"
+            class="web-post-toc box"
             style="display: none;"
           >
             <div>
@@ -187,7 +187,7 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
           </section>
           <button
             class="button is-rounded is-primary"
-            data-testid="blog-toc-mobile-btn"
+            data-testid="post-toc-mobile-btn"
             id="toc-button"
             style="display: block;"
           >
@@ -1864,7 +1864,7 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
           class="column mt-4 glossary-toc"
         >
           <section
-            class="web-blog-toc box"
+            class="web-post-toc box"
             style="display: none;"
           >
             <div>
@@ -1940,7 +1940,7 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
           </section>
           <button
             class="button is-rounded is-primary"
-            data-testid="blog-toc-mobile-btn"
+            data-testid="post-toc-mobile-btn"
             id="toc-button"
             style="display: block;"
           >
@@ -3617,7 +3617,7 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
           class="column mt-4 glossary-toc"
         >
           <section
-            class="web-blog-toc box"
+            class="web-post-toc box"
             style="display: block;"
           >
             <div>
@@ -3693,7 +3693,7 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
           </section>
           <button
             class="button is-rounded is-primary"
-            data-testid="blog-toc-mobile-btn"
+            data-testid="post-toc-mobile-btn"
             id="toc-button"
             style="display: block;"
           >
@@ -5370,7 +5370,7 @@ exports[`Glossary Page filters correctly 1`] = `
           class="column mt-4 glossary-toc"
         >
           <section
-            class="web-blog-toc box"
+            class="web-post-toc box"
             style="display: block;"
           >
             <div>
@@ -5446,7 +5446,7 @@ exports[`Glossary Page filters correctly 1`] = `
           </section>
           <button
             class="button is-rounded is-primary"
-            data-testid="blog-toc-mobile-btn"
+            data-testid="post-toc-mobile-btn"
             id="toc-button"
             style="display: none;"
           >
@@ -7213,7 +7213,7 @@ exports[`Glossary Page renders correctly 1`] = `
           class="column mt-4 glossary-toc"
         >
           <section
-            class="web-blog-toc box"
+            class="web-post-toc box"
             style="display: block;"
           >
             <div>
@@ -7289,7 +7289,7 @@ exports[`Glossary Page renders correctly 1`] = `
           </section>
           <button
             class="button is-rounded is-primary"
-            data-testid="blog-toc-mobile-btn"
+            data-testid="post-toc-mobile-btn"
             id="toc-button"
             style="display: none;"
           >
@@ -9036,7 +9036,7 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
           class="column mt-4 glossary-toc"
         >
           <section
-            class="web-blog-toc box"
+            class="web-post-toc box"
             style="display: block;"
           >
             <div>
@@ -9112,7 +9112,7 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
           </section>
           <button
             class="button is-rounded is-primary"
-            data-testid="blog-toc-mobile-btn"
+            data-testid="post-toc-mobile-btn"
             id="toc-button"
             style="display: none;"
           >
@@ -10789,7 +10789,7 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
           class="column mt-4 glossary-toc"
         >
           <section
-            class="web-blog-toc box"
+            class="web-post-toc box"
             style="display: none;"
           >
             <div>
@@ -10865,7 +10865,7 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
           </section>
           <button
             class="button is-rounded is-primary"
-            data-testid="blog-toc-mobile-btn"
+            data-testid="post-toc-mobile-btn"
             id="toc-button"
             style="display: block;"
           >
@@ -12542,7 +12542,7 @@ exports[`Glossary Page searches glossary html correctly 1`] = `
           class="column mt-4 glossary-toc"
         >
           <section
-            class="web-blog-toc box"
+            class="web-post-toc box"
             style="display: block;"
           >
             <div>
@@ -12618,7 +12618,7 @@ exports[`Glossary Page searches glossary html correctly 1`] = `
           </section>
           <button
             class="button is-rounded is-primary"
-            data-testid="blog-toc-mobile-btn"
+            data-testid="post-toc-mobile-btn"
             id="toc-button"
             style="display: none;"
           >

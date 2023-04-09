@@ -1,0 +1,207 @@
+
+/*******************************
+* Post Styles
+********************************/
+
+// blog and wiki toc
+.web-post-toc{
+	@extend .pb-0;
+	@extend .mt-5;
+	@extend .sticky;
+}
+
+.post-toc {
+	@extend .column;
+	@extend .is-one-fifth-desktop;
+	@extend .is-narrow;
+}
+
+.post-toc-mobile-btn {
+	@extend .button;
+	@extend .is-rounded;
+	@extend .is-primary;
+}
+
+.post-article-wrapper {
+	@extend .column;
+	@extend .is-three-fifths-widescreen;
+	@extend .is-four-fifths;
+}
+
+.post-sidebar-wrapper {
+	@extend .column;
+	@extend .is-one-fifth-widescreen;
+	@extend .mt-6;
+}
+
+@media only screen and (max-width : 1215px) {
+    .post-toc {
+		section {
+			display: none; 
+		}
+
+		button {
+			position: fixed; 
+			bottom: 20px; 
+			right: 30px; 
+			z-index: 99; 
+		}
+
+		.mobile-post-toc{
+			position: fixed; 
+			top: 0;
+			left: 0; 
+			z-index: 99;
+			height: 100vh;
+			overflow-x: scroll;
+			background-color: $white;
+		}
+	}
+
+	.glossary-toc {
+		position: fixed; 
+		max-width: 30%;
+		z-index: 99;
+		height: 100vh;
+		overflow-x: scroll;
+		
+		button {
+			position: fixed; 
+			bottom: 20px; 
+			right: 30px; 
+			z-index: 99; 
+		}
+	}
+}
+
+@media only screen and (min-width : 1216px) {
+    .post-toc {
+		section {
+			height: 100vh;
+			// overflow-x: scroll;
+		}
+	
+		button {
+			display: none; 
+		}
+	}
+}
+
+@media only screen and (max-width : 1023px) {
+	.post-sidebar {
+		margin-bottom: 1rem;
+	}
+}
+
+@media only screen and (min-width:1024px) and (max-width:1215px) {
+	.post-sidebar {
+		max-width: 50%;
+		margin: auto;
+		margin-bottom: 1rem;
+	}
+}
+
+/*******************************
+* Blog Post Styles
+********************************/
+
+.blog-post-header-wrapper {
+	@extend .container;
+	@extend .has-text-centered;
+	@extend .mb-2;
+	@extend .mt-6;
+}
+
+.blog-post-header-image {
+	max-height: 500px;
+}
+
+/*******************************
+* Wiki Post Styles
+********************************/
+.baseball-card-wrapper {
+	@extend .container;
+	@extend .mb-2;
+	@extend .mt-6;
+}
+
+.baseball-card-title-wrapper {
+	@extend .has-text-centered;
+}
+
+.baseball-card-table-wrapper {
+	@extend .has-text-left;
+}
+
+.baseball-card-table {
+	@extend .table;
+	@extend .is-fullwidth;
+}
+
+.baseball-card-table-label {
+	@extend .has-text-weight-semibold;
+}
+
+.baseball-card-title {
+	@extend .title;
+	@extend .is-5;
+}
+
+.baseball-card-img {
+	@extend .image;
+	height: auto;
+	width: 100%;
+}
+
+.baseball-card {
+	@extend .card;
+	width: 40%;
+	float: right;
+	margin-right: 0.5rem;
+	@extend .ml-2;
+	figure {
+		@extend .mx-0;
+	}
+}
+
+.baseball-card-summary-row {
+	width: 100%;
+}
+
+.baseball-card-summary {
+	@extend .card-content;
+	.content {
+		table {
+			margin: 0 0 !important;
+		}
+	}
+}
+
+.wiki-post-article {
+	@extend .content;
+	@extend .mb-6;
+}
+
+.wiki-post-footer-wrapper {
+	@extend .section;
+	@extend .px-0;
+}
+
+.wiki-post-footer {
+	@extend .container;
+	border-top: 0.1rem solid $grey-light;
+}
+
+.wiki-post-content {
+	@extend .container;
+	.gatsby-resp-image-wrapper {
+		margin: 0 !important;
+		max-width: 350px !important;
+		max-height: auto;
+		img {
+			float: left;
+			clear: both;
+		}
+	}
+	
+}

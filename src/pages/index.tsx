@@ -258,7 +258,7 @@ const HomePage = ({
                             <h2 className="title">Blog Posts</h2>
                         </div>
                     </div>
-                    <div className="columns is-multiline">
+                    <div className="col-multi-wrapper">
                         {blogFeatured.nodes.map((post: IndexElements) => {
                             return (
                                 <div
@@ -278,7 +278,7 @@ const HomePage = ({
                             <h2 className="title">Wiki Posts</h2>
                         </div>
                     </div>
-                    <div className="columns is-multiline is-centered">
+                    <div className="col-multi-wrapper is-centered">
                         {wikiFeatured.nodes.map((post: IndexElements) => {
                             return (
                                 <div
@@ -298,7 +298,7 @@ const HomePage = ({
                             <h2 className="title">Glossary Posts</h2>
                         </div>
                     </div>
-                    <div className="columns is-multiline">
+                    <div className="col-multi-wrapper">
                         {glossaryFeatured.nodes.map((def: GlossaryElements) => {
                             return (
                                 <div

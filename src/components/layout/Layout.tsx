@@ -2,7 +2,7 @@ import React from 'react';
 import { NavBar } from './NavBar';
 import { Footer } from './Footer';
 import { useSiteMetadata } from '../../utils/hooks/useSiteMetadata';
-import '../../styles.scss';
+import '../../styles/styles.scss';
 
 /**
  * Layout props including only the children
