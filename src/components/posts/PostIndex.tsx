@@ -30,17 +30,12 @@ interface PostIndexProps {
  * @see PostIndexProps
  * @see PostCard
  */
-export const PostIndex = ({
-    allPosts,
-    increment,
-    type,
-    handleFilterUpdate
-}: PostIndexProps) => {
+export const PostIndex = (props: PostIndexProps) => {
     const [displayPosts, setDisplayPosts] = useState([
-        ...allPosts.slice(0, increment)
+        ...props.allPosts.slice(0, props.increment)
     ]);
     const [loadMore, setLoadMore] = useState(false);
-    const [hasMore, setHasMore] = useState(allPosts.length > increment);
+    const [hasMore, setHasMore] = useState(props.allPosts.length > props.increment);
 
     const handleLoadMore = () => {
         setLoadMore(true);
@@ -49,9 +44,9 @@ export const PostIndex = ({
     useEffect(() => {
         if (loadMore && hasMore) {
             const postCount = displayPosts.length;
-            const stillHasMore = postCount < allPosts.length;
+            const stillHasMore = postCount < props.allPosts.length;
             const nextResults = stillHasMore
-                ? allPosts.slice(postCount, postCount + increment)
+                ? props.allPosts.slice(postCount, postCount + props.increment)
                 : [];
             // combine old displayPosts with next batch of posts
             setDisplayPosts([...displayPosts, ...nextResults]);
@@ -60,11 +55,11 @@ export const PostIndex = ({
     }, [loadMore, hasMore]);
 
     useEffect(() => {
-        setDisplayPosts([...allPosts.slice(0, increment)]);
-    }, [allPosts]);
+        setDisplayPosts([...props.allPosts.slice(0, props.increment)]);
+    }, [props.allPosts]);
 
     useEffect(() => {
-        const stillHasMore = displayPosts.length < allPosts.length;
+        const stillHasMore = displayPosts.length < props.allPosts.length;
         setHasMore(stillHasMore);
     }, [displayPosts]);
 
@@ -82,9 +77,9 @@ export const PostIndex = ({
                                     key={post.frontmatter.title}
                                 >
                                     <PostCard
-                                        type={type}
+                                        type={props.type}
                                         post={post}
-                                        handleFilterUpdate={handleFilterUpdate}
+                                        handleFilterUpdate={props.handleFilterUpdate}
                                     />
                                 </div>
                             );

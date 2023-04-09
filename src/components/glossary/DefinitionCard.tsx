@@ -32,10 +32,7 @@ interface DefinitionCardProps {
 
 // TODO break up into local components
 // TODO name forms better
-export const DefinitionCard = ({
-    definition,
-    includeAll
-}: DefinitionCardProps) => {
+export const DefinitionCard = (props: DefinitionCardProps) => {
     return (
         <div className="card mb-5">
             <div className="card-content">
@@ -47,9 +44,9 @@ export const DefinitionCard = ({
                                 <div className="level-item">
                                     <h3
                                         className="title is-3"
-                                        id={definition.frontmatter.title.toLowerCase()}
+                                        id={props.definition.frontmatter.title.toLowerCase()}
                                     >
-                                        {definition.frontmatter.title}
+                                        {props.definition.frontmatter.title}
                                     </h3>
                                 </div>
                             </div>
@@ -59,7 +56,7 @@ export const DefinitionCard = ({
                                     <div>
                                         <p className="heading">Syllables</p>
                                         <p className="subheading">
-                                            {definition.frontmatter.syllables}
+                                            {props.definition.frontmatter.syllables}
                                         </p>
                                     </div>
                                 </div>
@@ -67,7 +64,7 @@ export const DefinitionCard = ({
                                     <div>
                                         <p className="heading">Phonetics</p>
                                         <p className="subheading">
-                                            {definition.frontmatter.phonetics}
+                                            {props.definition.frontmatter.phonetics}
                                         </p>
                                     </div>
                                 </div>
@@ -80,13 +77,13 @@ export const DefinitionCard = ({
                     <div
                         className="container"
                         dangerouslySetInnerHTML={{
-                            __html: definition.html
+                            __html:props.definition.html
                         }}
                     />
-                    {!includeAll && (
+                    {!props.includeAll && (
                         <div className="has-text-centered">
                             <Link
-                                to={`/glossary#${definition.frontmatter.title}`}
+                                to={`/glossary#${props.definition.frontmatter.title}`}
                             >
                                 Read more...
                             </Link>
@@ -95,14 +92,14 @@ export const DefinitionCard = ({
                 </div>
 
                 {/* similar words and related posts */}
-                {includeAll && (
+                {props.includeAll && (
                     <div className="content">
                         <div className="level ">
                             <div className="level-item is-justify-content-left">
                                 <div>
                                     <h4>Similar Words:</h4>
                                     <ol>
-                                        {definition.frontmatter.similarWords.map(
+                                        {props.definition.frontmatter.similarWords.map(
                                             (word: string) => {
                                                 return (
                                                     <li key={word}>
@@ -120,11 +117,11 @@ export const DefinitionCard = ({
                                 </div>
                             </div>
                             <div className="level-item is-justify-content-left">
-                                {definition.frontmatter.relatedPosts && (
+                                {props.definition.frontmatter.relatedPosts && (
                                     <div>
                                         <h4>RelatedPosts:</h4>
                                         <ol>
-                                            {definition.frontmatter.relatedPosts.map(
+                                            {props.definition.frontmatter.relatedPosts.map(
                                                 (post: {
                                                     title: string;
                                                     slug: string;
@@ -151,12 +148,12 @@ export const DefinitionCard = ({
             </div>
 
             {/* tag footer */}
-            {includeAll && (
+            {props.includeAll && (
                 <div className="card-footer">
                     <p className="my-2 ml-5 mr-2">Tags:</p>
 
                     <div className="tags">
-                        {definition.frontmatter.tags.map((tag: string) => {
+                        {props.definition.frontmatter.tags.map((tag: string) => {
                             return (
                                 <Link
                                     to={`?tag=${tag}`}

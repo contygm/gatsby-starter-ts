@@ -5,7 +5,7 @@ import { DefinitionCard } from './DefinitionCard';
 /**
  * Props for the Glossary Index component
  * @property {GlossaryElements[]} allDefinitions - all glossary definitions
- * @property {Object} [allLetters] - nesting that will be REMOVEd
+ * @property {Object} [allLetters] - nesting for letters
  * @property {Array<{fieldValue: string}>} allLetters.group - all starting letters using in the glossary in alphabetical order
  *
  * @see GlossaryElements
@@ -29,11 +29,8 @@ export interface GlossaryIndexProps {
  * @category Components
  * @see GlossaryIndexProps
  */
-export const GlossaryIndex = ({
-    allDefinitions,
-    allLetters
-}: GlossaryIndexProps) => {
-    const letterDefinitions = makeLetterDefinitions(allLetters, allDefinitions);
+export const GlossaryIndex = (props: GlossaryIndexProps) => {
+    const letterDefinitions = makeLetterDefinitions(props.allLetters, props.allDefinitions);
 
     return (
         <article className="container">
