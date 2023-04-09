@@ -30,18 +30,17 @@ interface FaIconLinkProps {
  * @param {string} [props.labelLeft=true] - default value is true. If a label is present, it will show up to the left  of the icon as a default
  * @param {string} [props.color='white'] - default value is white. This color applies to icon and label text color
  *
+ * url = '/',
+    labelLeft = true,
+    color = 'white'
  * @see FaIconLinkProps
  * @category Components
  */
-export const FaIconLink = ({
-    faIcon,
-    label,
-    url = '/',
-    labelLeft = true,
-    color = 'white'
-}: FaIconLinkProps) => {
-    const labelClass = label ? 'with-label' : 'no-label';
-    const colorClass = color === 'white' ? 'is-white' : 'is-black';
+export const FaIconLink = (props: FaIconLinkProps) => {
+    const hasLeftLabel = props.labelLeft === undefined ? true : props.labelLeft;
+    const url = props.url === undefined ? '/' : props.url;
+    const labelClass = props.label ? 'with-label' : 'no-label';
+    const colorClass = (props.color === undefined || props.color === 'white') ? 'is-white' : 'is-black';
 
     return (
         <li className={`faicon-link-container`}>
@@ -51,13 +50,13 @@ export const FaIconLink = ({
                 data-cy={`faicon-link`}
                 aria-label="social media link"
             >
-                {label && labelLeft && <span>{label}</span>}
+                {props.label && hasLeftLabel && <span>{props.label}</span>}
                 <FontAwesomeIcon
                     className="icon"
-                    icon={faIcon}
+                    icon={props.faIcon}
                     size="xl"
                 />
-                {label && !labelLeft && <span>{label}</span>}
+                {props.label && !hasLeftLabel && <span>{props.label}</span>}
             </Link>
         </li>
     );

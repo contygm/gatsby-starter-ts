@@ -26,20 +26,16 @@ interface NextAndPreviousProps {
  * @see NextAndPreviousProps
  * @category Components
  */
-export const NextAndPrevious = ({
-    next,
-    previous,
-    type
-}: NextAndPreviousProps) => {
+export const NextAndPrevious = (props: NextAndPreviousProps) => {
     return (
         <div className="level my-3">
             <div className="level-left">
                 <div className="level-item">
-                    {previous && (
+                    {props.previous && (
                         <FaIconLink
                             faIcon={faArrowLeft}
-                            url={`/${type}${previous.fields.slug}`}
-                            label={previous.frontmatter.title}
+                            url={`/${props.type}${props.previous.fields.slug}`}
+                            label={props.previous.frontmatter.title}
                             labelLeft={false}
                             color="black"
                         />
@@ -48,11 +44,11 @@ export const NextAndPrevious = ({
             </div>
             <div className="level-right">
                 <div className="level-item">
-                    {next && (
+                    {props.next && (
                         <FaIconLink
                             faIcon={faArrowRight}
-                            url={`/${type}${next.fields.slug}`}
-                            label={next.frontmatter.title}
+                            url={`/${props.type}${props.next.fields.slug}`}
+                            label={props.next.frontmatter.title}
                             color="black"
                         />
                     )}

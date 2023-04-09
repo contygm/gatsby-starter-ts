@@ -24,7 +24,7 @@ interface SeoProps {
  * @category Components
  * @see SeoProps
  */
-export const SEO = ({ title, description, children }: SeoProps) => {
+export const SEO = (props: SeoProps) => {
     // set the title + description from SiteMetaData as default title + desc
     const {
         title: defaultTitle,
@@ -35,8 +35,8 @@ export const SEO = ({ title, description, children }: SeoProps) => {
 
     // use provided title if it exists
     const seo = {
-        title: title || defaultTitle,
-        description: description || defaultDescription,
+        title: props.title || defaultTitle,
+        description: props.description || defaultDescription,
         image: `${siteUrl}${image}`
     };
 
@@ -55,7 +55,7 @@ export const SEO = ({ title, description, children }: SeoProps) => {
                 rel="icon"
                 href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>👤</text></svg>"
             />
-            {children}
+            {props.children}
         </>
     );
 };
