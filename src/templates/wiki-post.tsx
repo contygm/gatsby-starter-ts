@@ -113,12 +113,12 @@ const WikiPost = ({
                 subtitle={markdownRemark.frontmatter.description}
             />
             {/* main body: ToC, sidebar, post content */}
-            <div className="columns is-multiline">
+            <div className="col-multi-wrapper">
                 {/* sticky table of contents */}
-                <div className="column blog-toc is-one-fifth-widescreen is-one-fifth-desktop is-narrow">
+                <div className="post-toc">
                     <section
                         className={
-                            isMobile ? 'mobile-blog-toc' : 'web-blog-toc'
+                            isMobile ? 'mobile-post-toc' : 'web-post-toc'
                         }
                         style={{
                             display:
@@ -137,10 +137,10 @@ const WikiPost = ({
                         </OutsideClicker>
                     </section>
                     <button
-                        className="button is-rounded is-primary"
+                        className="post-toc-mobile-btn"
                         style={{ display: isMobile ? 'block' : 'none' }}
                         onClick={handleTocBtnClick}
-                        data-testid="blog-toc-mobile-btn"
+                        data-testid="post-toc-mobile-btn"
                     >
                         <i className="icon">
                             <FontAwesomeIcon
@@ -152,15 +152,16 @@ const WikiPost = ({
                         </i>
                     </button>
                 </div>
-                <div className="column is-three-fifths-widescreen is-four-fifths">
-                    <article className="content mb-6">
+                <div className="post-article-wrapper">
+                    <article className="wiki-post-article">
                         {/* baseball card */}
                         {image && (
-                            <section className="container mb-2 mt-6">
-                                <div className="card baseball-card">
-                                    <div className="card-content wiki-summary">
+                            <section className="baseball-card-wrapper">
+                                {/* TODO component */}
+                                <div className="baseball-card">
+                                    <div className="baseball-card-summary">
                                         <div className="media">
-                                            <figure className="image baseball-card-img">
+                                            <figure className="baseball-card-img">
                                                 <GatsbyImage
                                                     alt={'wiki-post-header'}
                                                     image={image}
@@ -168,33 +169,25 @@ const WikiPost = ({
                                             </figure>
                                         </div>
 
-                                        <div className="content has-text-centered">
-                                            <p className="title is-5">Topic</p>
+                                        <div className="baseball-card-title-wrapper">
+                                            <p className="baseball-card-title">Topic</p>
                                         </div>
 
-                                        <div className="content has-text-left">
-                                            <table className="table is-fullwidth">
+                                        <div className="baseball-card-table-wrapper">
+                                            <table className="baseball-card-table">
                                                 <tbody>
                                                     {markdownRemark.frontmatter.summary.map(
                                                         (attrObj) => {
                                                             return (
                                                                 <tr
-                                                                    key={
-                                                                        attrObj.field
-                                                                    }
-                                                                    className={
-                                                                        'wiki-summary-row'
-                                                                    }
+                                                                    key={attrObj.field}
+                                                                    className={'baseball-card-row'}
                                                                 >
-                                                                    <td className="has-text-weight-semibold">
-                                                                        {
-                                                                            attrObj.field
-                                                                        }
+                                                                    <td className="baseball-card-table-label">
+                                                                        {attrObj.field}
                                                                     </td>
                                                                     <td>
-                                                                        {
-                                                                            attrObj.value
-                                                                        }
+                                                                        {attrObj.value}
                                                                     </td>
                                                                 </tr>
                                                             );
@@ -210,7 +203,7 @@ const WikiPost = ({
                         {/* main post content */}
                         <section className="">
                             <div
-                                className="container wiki-post-content"
+                                className="wiki-post-content"
                                 dangerouslySetInnerHTML={{
                                     __html: markdownRemark.html
                                 }}
@@ -219,8 +212,9 @@ const WikiPost = ({
                         {!isBigScreen && (
                             <StickySocialMedia isVertical={true} />
                         )}
-                        <section className="section px-0">
-                            <div className="container author-container">
+                        {/* TODO need tags */}
+                        <section className="wiki-post-footer-wrapper">
+                            <div className="wiki-post-footer">
                                 <NextAndPrevious
                                     next={next}
                                     previous={previous}
@@ -234,8 +228,8 @@ const WikiPost = ({
                     side bar with related + featured posts 
                     and sticky social share btns 
                 */}
-                <div className="column mt-6 is-one-fifth-widescreen">
-                    <div className="blog-sidebar">
+                <div className="post-sidebar-wrapper">
+                    <div className="post-sidebar">
                         <SideBar
                             type={'wiki'}
                             featured={featured.nodes}

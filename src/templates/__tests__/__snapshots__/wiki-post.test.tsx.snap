@@ -237,10 +237,10 @@ exports[`Wiki Posts Page ToC shows properly on mobile: closed table of contents 
         class="columns is-multiline"
       >
         <div
-          class="column blog-toc is-one-fifth-widescreen is-one-fifth-desktop is-narrow"
+          class="column post-toc is-one-fifth-widescreen is-one-fifth-desktop is-narrow"
         >
           <section
-            class="mobile-blog-toc"
+            class="mobile-post-toc"
             style="display: none;"
           >
             <div>
@@ -293,7 +293,7 @@ exports[`Wiki Posts Page ToC shows properly on mobile: closed table of contents 
           </section>
           <button
             class="button is-rounded is-primary"
-            data-testid="blog-toc-mobile-btn"
+            data-testid="post-toc-mobile-btn"
             style="display: block;"
           >
             <i
@@ -1334,10 +1334,10 @@ exports[`Wiki Posts Page ToC shows properly on mobile: closed table of contents 
         class="columns is-multiline"
       >
         <div
-          class="column blog-toc is-one-fifth-widescreen is-one-fifth-desktop is-narrow"
+          class="column post-toc is-one-fifth-widescreen is-one-fifth-desktop is-narrow"
         >
           <section
-            class="mobile-blog-toc"
+            class="mobile-post-toc"
             style="display: none;"
           >
             <div>
@@ -1390,7 +1390,7 @@ exports[`Wiki Posts Page ToC shows properly on mobile: closed table of contents 
           </section>
           <button
             class="button is-rounded is-primary"
-            data-testid="blog-toc-mobile-btn"
+            data-testid="post-toc-mobile-btn"
             style="display: block;"
           >
             <i
@@ -2431,10 +2431,10 @@ exports[`Wiki Posts Page ToC shows properly on mobile: open table of contents 1`
         class="columns is-multiline"
       >
         <div
-          class="column blog-toc is-one-fifth-widescreen is-one-fifth-desktop is-narrow"
+          class="column post-toc is-one-fifth-widescreen is-one-fifth-desktop is-narrow"
         >
           <section
-            class="mobile-blog-toc"
+            class="mobile-post-toc"
             style="display: block;"
           >
             <div>
@@ -2487,7 +2487,7 @@ exports[`Wiki Posts Page ToC shows properly on mobile: open table of contents 1`
           </section>
           <button
             class="button is-rounded is-primary"
-            data-testid="blog-toc-mobile-btn"
+            data-testid="post-toc-mobile-btn"
             style="display: block;"
           >
             <i
@@ -3548,10 +3548,10 @@ exports[`Wiki Posts Page renders correctly 1`] = `
         class="columns is-multiline"
       >
         <div
-          class="column blog-toc is-one-fifth-widescreen is-one-fifth-desktop is-narrow"
+          class="column post-toc is-one-fifth-widescreen is-one-fifth-desktop is-narrow"
         >
           <section
-            class="web-blog-toc"
+            class="web-post-toc"
             style="display: block;"
           >
             <div>
@@ -3604,7 +3604,7 @@ exports[`Wiki Posts Page renders correctly 1`] = `
           </section>
           <button
             class="button is-rounded is-primary"
-            data-testid="blog-toc-mobile-btn"
+            data-testid="post-toc-mobile-btn"
             style="display: none;"
           >
             <i
@@ -4625,10 +4625,10 @@ exports[`Wiki Posts Page renders correctly on medium view 1`] = `
         class="columns is-multiline"
       >
         <div
-          class="column blog-toc is-one-fifth-widescreen is-one-fifth-desktop is-narrow"
+          class="column post-toc is-one-fifth-widescreen is-one-fifth-desktop is-narrow"
         >
           <section
-            class="web-blog-toc"
+            class="web-post-toc"
             style="display: block;"
           >
             <div>
@@ -4681,7 +4681,7 @@ exports[`Wiki Posts Page renders correctly on medium view 1`] = `
           </section>
           <button
             class="button is-rounded is-primary"
-            data-testid="blog-toc-mobile-btn"
+            data-testid="post-toc-mobile-btn"
             style="display: none;"
           >
             <i
@@ -5722,10 +5722,10 @@ exports[`Wiki Posts Page renders correctly on mobile view 1`] = `
         class="columns is-multiline"
       >
         <div
-          class="column blog-toc is-one-fifth-widescreen is-one-fifth-desktop is-narrow"
+          class="column post-toc is-one-fifth-widescreen is-one-fifth-desktop is-narrow"
         >
           <section
-            class="mobile-blog-toc"
+            class="mobile-post-toc"
             style="display: none;"
           >
             <div>
@@ -5778,7 +5778,7 @@ exports[`Wiki Posts Page renders correctly on mobile view 1`] = `
           </section>
           <button
             class="button is-rounded is-primary"
-            data-testid="blog-toc-mobile-btn"
+            data-testid="post-toc-mobile-btn"
             style="display: block;"
           >
             <i

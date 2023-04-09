@@ -64,7 +64,8 @@ const BlogPost = ({
     const [btnIcon, setBtnIcon] = useState(faEllipsis);
     const image = getImage(markdownRemark.frontmatter.headerImage);
 
-    // TODO:
+    // TODO: generally gross
+    // TODO: move to joint function/component cuz same as wiki
     const handleResize = () => {
         if (window.innerWidth < 1024) {
             // mobile screen
@@ -83,11 +84,13 @@ const BlogPost = ({
         }
     };
 
+    // TODO: move to joint function/component cuz same as wiki
     const handleClickOutside = () => {
         setShowMobileToc(false);
         setBtnIcon(faEllipsis);
     };
 
+    // TODO: move to joint function/component cuz same as wiki
     const handleTocBtnClick = () => {
         if (btnIcon === faEllipsis && !showMobileToc) {
             setShowMobileToc(true);
@@ -104,6 +107,7 @@ const BlogPost = ({
 
     return (
         <Layout>
+            {/* TODO: move to joint function/component cuz same as wiki */}
             {/* full page header with social share */}
             <PageHeader
                 title={markdownRemark.frontmatter.title}
@@ -112,12 +116,12 @@ const BlogPost = ({
                 subtitle={markdownRemark.frontmatter.description}
             />
             {/* main body: ToC, sidebar, post content */}
-            <div className="columns is-multiline">
+            <div className="col-multi-wrapperr">
                 {/* sticky table of contents */}
-                <div className="column blog-toc is-one-fifth-desktop is-narrow">
+                <div className="post-toc">
                     <section
                         className={
-                            isMobile ? 'mobile-blog-toc' : 'web-blog-toc'
+                            isMobile ? 'mobile-post-toc' : 'web-post-toc'
                         }
                         style={{
                             display:
@@ -136,10 +140,10 @@ const BlogPost = ({
                         </OutsideClicker>
                     </section>
                     <button
-                        className="button is-rounded is-primary"
+                        className="post-toc-mobile-btn"
                         style={{ display: isMobile ? 'block' : 'none' }}
                         onClick={handleTocBtnClick}
-                        data-testid="blog-toc-mobile-btn"
+                        data-testid="post-toc-mobile-btn"
                     >
                         <i className="icon">
                             <FontAwesomeIcon
@@ -151,15 +155,15 @@ const BlogPost = ({
                         </i>
                     </button>
                 </div>
-                <div className="column is-three-fifths-widescreen is-four-fifths">
+                <div className="post-article-wrapper">
                     <article className="content">
                         {/* image header */}
                         {image && (
-                            <section className="container has-text-centered mb-2 mt-6">
+                            <section className="blog-post-header-wrapper">
                                 <GatsbyImage
                                     alt={'blog-post-header'}
                                     image={image}
-                                    className="post-header-image"
+                                    className="blog-post-header-image"
                                 />
                             </section>
                         )}
@@ -190,8 +194,8 @@ const BlogPost = ({
                     side bar with related + featured posts 
                     and sticky social share btns 
                 */}
-                <div className="column mt-6 is-one-fifth-widescreen">
-                    <div className="blog-sidebar">
+                <div className="post-sidebar-wrapper">
+                    <div className="post-sidebar">
                         <SideBar
                             type={'blog'}
                             featured={featured.nodes}
