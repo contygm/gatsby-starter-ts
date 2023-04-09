@@ -50,7 +50,7 @@ export interface BlogPostProps {
 /**
  * A template for a blog post, including: sidebar, table of contents, blog content, and author section.
  * @param {BlogPostProps} data
- * 
+ *
  * @category Template
  * @class
  */

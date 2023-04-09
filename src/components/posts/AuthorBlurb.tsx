@@ -65,10 +65,7 @@ const AuthorMedia = ({ name, description }: AuthorBlurbProps['author']) => {
  *
  * @memberof AuthorBlurb
  */
-const DateAndTags = (props: {
-    postTags: string[];
-    postDate: string;
-}) => {
+const DateAndTags = (props: { postTags: string[]; postDate: string }) => {
     return (
         <div className="level mb-2">
             <div className="level-left">

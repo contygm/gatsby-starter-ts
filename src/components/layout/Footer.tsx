@@ -185,7 +185,8 @@ export const Footer = (props: { author: string }) => {
                     className="pt-3"
                     data-testid="copyright"
                 >
-                    © <time>{new Date().getFullYear()}</time>, Built by {props.author}
+                    © <time>{new Date().getFullYear()}</time>, Built by{' '}
+                    {props.author}
                 </p>
             </div>
         </footer>

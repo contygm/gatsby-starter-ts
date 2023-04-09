@@ -56,8 +56,8 @@ export const OutsideClicker = (props: {
         const wrapperRef = useRef(null);
         useOutsideClick(wrapperRef, props.callback);
 
-        return (<div ref={wrapperRef}>{props.children}</div>);
+        return <div ref={wrapperRef}>{props.children}</div>;
     }
 
-    return (<div>{props.children}</div>);
-}
+    return <div>{props.children}</div>;
+};

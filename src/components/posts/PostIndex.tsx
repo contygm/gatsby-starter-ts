@@ -35,7 +35,9 @@ export const PostIndex = (props: PostIndexProps) => {
         ...props.allPosts.slice(0, props.increment)
     ]);
     const [loadMore, setLoadMore] = useState(false);
-    const [hasMore, setHasMore] = useState(props.allPosts.length > props.increment);
+    const [hasMore, setHasMore] = useState(
+        props.allPosts.length > props.increment
+    );
 
     const handleLoadMore = () => {
         setLoadMore(true);
@@ -79,7 +81,9 @@ export const PostIndex = (props: PostIndexProps) => {
                                     <PostCard
                                         type={props.type}
                                         post={post}
-                                        handleFilterUpdate={props.handleFilterUpdate}
+                                        handleFilterUpdate={
+                                            props.handleFilterUpdate
+                                        }
                                     />
                                 </div>
                             );

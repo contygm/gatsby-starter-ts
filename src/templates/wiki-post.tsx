@@ -51,7 +51,7 @@ export interface WikiPostProps {
 /**
  * A template for a wiki post, including: sidebar, table of contents, blog content, and author section.
  * @param {WikiPostProps} data
- * 
+ *
  * @category Template
  * @class
  */
@@ -170,7 +170,9 @@ const WikiPost = ({
                                         </div>
 
                                         <div className="baseball-card-title-wrapper">
-                                            <p className="baseball-card-title">Topic</p>
+                                            <p className="baseball-card-title">
+                                                Topic
+                                            </p>
                                         </div>
 
                                         <div className="baseball-card-table-wrapper">
@@ -180,14 +182,22 @@ const WikiPost = ({
                                                         (attrObj) => {
                                                             return (
                                                                 <tr
-                                                                    key={attrObj.field}
-                                                                    className={'baseball-card-row'}
+                                                                    key={
+                                                                        attrObj.field
+                                                                    }
+                                                                    className={
+                                                                        'baseball-card-row'
+                                                                    }
                                                                 >
                                                                     <td className="baseball-card-table-label">
-                                                                        {attrObj.field}
+                                                                        {
+                                                                            attrObj.field
+                                                                        }
                                                                     </td>
                                                                     <td>
-                                                                        {attrObj.value}
+                                                                        {
+                                                                            attrObj.value
+                                                                        }
                                                                     </td>
                                                                 </tr>
                                                             );

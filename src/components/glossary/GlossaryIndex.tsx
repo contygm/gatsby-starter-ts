@@ -30,7 +30,10 @@ export interface GlossaryIndexProps {
  * @see GlossaryIndexProps
  */
 export const GlossaryIndex = (props: GlossaryIndexProps) => {
-    const letterDefinitions = makeLetterDefinitions(props.allLetters, props.allDefinitions);
+    const letterDefinitions = makeLetterDefinitions(
+        props.allLetters,
+        props.allDefinitions
+    );
 
     return (
         <article className="container">

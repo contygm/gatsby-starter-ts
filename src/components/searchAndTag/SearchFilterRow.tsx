@@ -51,7 +51,7 @@ interface SearchFilterRowProps {
  * @class
  * @category Components
  */
-export const SearchFilterRow = (props : SearchFilterRowProps) => {
+export const SearchFilterRow = (props: SearchFilterRowProps) => {
     const [value, setValue] = useState(props.searchQuery);
 
     const handleChange = (event: any) => {

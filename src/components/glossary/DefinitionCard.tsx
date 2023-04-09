@@ -56,7 +56,10 @@ export const DefinitionCard = (props: DefinitionCardProps) => {
                                     <div>
                                         <p className="heading">Syllables</p>
                                         <p className="subheading">
-                                            {props.definition.frontmatter.syllables}
+                                            {
+                                                props.definition.frontmatter
+                                                    .syllables
+                                            }
                                         </p>
                                     </div>
                                 </div>
@@ -64,7 +67,10 @@ export const DefinitionCard = (props: DefinitionCardProps) => {
                                     <div>
                                         <p className="heading">Phonetics</p>
                                         <p className="subheading">
-                                            {props.definition.frontmatter.phonetics}
+                                            {
+                                                props.definition.frontmatter
+                                                    .phonetics
+                                            }
                                         </p>
                                     </div>
                                 </div>
@@ -77,7 +83,7 @@ export const DefinitionCard = (props: DefinitionCardProps) => {
                     <div
                         className="container"
                         dangerouslySetInnerHTML={{
-                            __html:props.definition.html
+                            __html: props.definition.html
                         }}
                     />
                     {!props.includeAll && (
@@ -153,19 +159,21 @@ export const DefinitionCard = (props: DefinitionCardProps) => {
                     <p className="my-2 ml-5 mr-2">Tags:</p>
 
                     <div className="tags">
-                        {props.definition.frontmatter.tags.map((tag: string) => {
-                            return (
-                                <Link
-                                    to={`?tag=${tag}`}
-                                    id={tag}
-                                    className="tag is-success is-light"
-                                    key={tag}
-                                    // onClick={props.handleFilterUpdate}
-                                >
-                                    {tag}
-                                </Link>
-                            );
-                        })}
+                        {props.definition.frontmatter.tags.map(
+                            (tag: string) => {
+                                return (
+                                    <Link
+                                        to={`?tag=${tag}`}
+                                        id={tag}
+                                        className="tag is-success is-light"
+                                        key={tag}
+                                        // onClick={props.handleFilterUpdate}
+                                    >
+                                        {tag}
+                                    </Link>
+                                );
+                            }
+                        )}
                     </div>
                 </div>
             )}

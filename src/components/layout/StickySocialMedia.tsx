@@ -31,7 +31,9 @@ export const StickySocialMedia = (props: {
 
     return (
         <div
-            className={`menu sticky box mt-4 ${verticalClass} ${props.classes ?? ''}`}
+            className={`menu sticky box mt-4 ${verticalClass} ${
+                props.classes ?? ''
+            }`}
         >
             <p className="menu-label">
                 {props.isVertical ? 'Share' : 'Share this post'}

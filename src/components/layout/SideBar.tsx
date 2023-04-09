@@ -30,11 +30,17 @@ export const SideBar = (props: SideBarProps) => {
     // TODO: working search requires queries, tabling for now
     // const searchPlaceholder = type === 'glossary' ? 'A word...' : 'Title...';
     const firstSectionTitle =
-        props.type === 'glossary' ? 'Featured Blog Posts' : `Related ${props.type}s`;
-    const firstSectionSlugPrefix = props.type === 'glossary' ? '/blog' : `/${props.type}`;
+        props.type === 'glossary'
+            ? 'Featured Blog Posts'
+            : `Related ${props.type}s`;
+    const firstSectionSlugPrefix =
+        props.type === 'glossary' ? '/blog' : `/${props.type}`;
     const secondSectionTitle =
-        props.type === 'glossary' ? 'Featured Wiki Posts' : `Featured ${props.type}s`;
-    const secondSectionSlugPrefix = props.type === 'glossary' ? '/wiki' : `/${props.type}`;
+        props.type === 'glossary'
+            ? 'Featured Wiki Posts'
+            : `Featured ${props.type}s`;
+    const secondSectionSlugPrefix =
+        props.type === 'glossary' ? '/wiki' : `/${props.type}`;
 
     return (
         <aside className="menu sidebar">

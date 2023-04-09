@@ -60,4 +60,4 @@ export const ToC = (props: { tocHtml: string; includeTitle: boolean }) => {
             />
         </div>
     );
-}
+};
