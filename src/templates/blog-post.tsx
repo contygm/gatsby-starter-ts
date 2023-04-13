@@ -116,7 +116,7 @@ const BlogPost = ({
                 subtitle={markdownRemark.frontmatter.description}
             />
             {/* main body: ToC, sidebar, post content */}
-            <div className="col-multi-wrapperr">
+            <div className="col-multi-wrapper">
                 {/* sticky table of contents */}
                 <div className="post-toc">
                     <section
@@ -140,7 +140,7 @@ const BlogPost = ({
                         </OutsideClicker>
                     </section>
                     <button
-                        className="post-toc-mobile-btn"
+                        className="primary-button-rounded"
                         style={{ display: isMobile ? 'block' : 'none' }}
                         onClick={handleTocBtnClick}
                         data-testid="post-toc-mobile-btn"

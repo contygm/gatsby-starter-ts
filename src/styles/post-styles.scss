@@ -16,12 +16,6 @@
 	@extend .is-narrow;
 }
 
-.post-toc-mobile-btn {
-	@extend .button;
-	@extend .is-rounded;
-	@extend .is-primary;
-}
-
 .post-article-wrapper {
 	@extend .column;
 	@extend .is-three-fifths-widescreen;
@@ -55,21 +49,6 @@
 			height: 100vh;
 			overflow-x: scroll;
 			background-color: $white;
-		}
-	}
-
-	.glossary-toc {
-		position: fixed; 
-		max-width: 30%;
-		z-index: 99;
-		height: 100vh;
-		overflow-x: scroll;
-		
-		button {
-			position: fixed; 
-			bottom: 20px; 
-			right: 30px; 
-			z-index: 99; 
 		}
 	}
 }

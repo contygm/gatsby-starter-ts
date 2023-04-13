@@ -137,7 +137,7 @@ const WikiPost = ({
                         </OutsideClicker>
                     </section>
                     <button
-                        className="post-toc-mobile-btn"
+                        className="primary-button-rounded"
                         style={{ display: isMobile ? 'block' : 'none' }}
                         onClick={handleTocBtnClick}
                         data-testid="post-toc-mobile-btn"
