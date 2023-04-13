@@ -34,54 +34,52 @@ interface TagsListProps {
  * @class
  * @category Components
  */
-// TODO Interface containing properties used for search+filter row
 export const TagsList = (props: TagsListProps) => {
-    const classForAllTag = `tag ${
-        props.isSearchActive || 'all' === props.activeTag
-            ? 'is-success'
-            : 'is-success is-light'
-    }`;
+    const classForAllTag = (props.isSearchActive || 'all' === props.activeTag)
+        ? 'tag-active'
+        : 'tag-inactive';
 
     return (
-        <div className="field is-grouped is-grouped-multiline">
-            <div className="tags has-addons mx-2 tag-align show-pointer">
+        <div className="tag-list-wrapper">
+            <div className="tag-wrapper">
                 <div
                     id="all"
                     data-testid="all"
-                    className={`tag ${classForAllTag}`}
+                    className={`${classForAllTag}`}
                     onClick={props.handleFilterUpdate}
                 >
                     All
                 </div>
                 <span className="tag is-dark">{props.totalPostCount}</span>
             </div>
+            {/* TODO ? tag component */}
             {props.tags.map(
                 (tag: { fieldValue: string; totalCount: number }) => {
                     const classForTag = props.isSearchActive
-                        ? ''
+                        ? 'tag-base'
                         : tag.fieldValue === props.activeTag
-                        ? 'is-success'
-                        : 'is-success is-light';
+                            ? 'tag-active'
+                            : 'tag-inactive';
+
+                    const classForTagCount = props.isSearchActive
+                        ? 'tag-count-disabled'
+                        : 'tag-count-enabled';
 
                     return (
                         <div
-                            className="tags has-addons mx-2 tag-align show-pointer"
+                            className="tag-wrapper"
                             key={tag.fieldValue}
                         >
                             <div
                                 id={tag.fieldValue}
                                 data-testid={tag.fieldValue}
-                                className={`tag ${classForTag}`}
+                                className={`${classForTag}`}
                                 onClick={props.handleFilterUpdate}
                             >
                                 {tag.fieldValue}
                             </div>
                             <span
-                                className={`tag ${
-                                    props.isSearchActive
-                                        ? 'is-light'
-                                        : 'is-dark'
-                                }`}
+                                className={classForTagCount}
                             >
                                 {tag.totalCount}
                             </span>

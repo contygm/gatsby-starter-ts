@@ -39,11 +39,11 @@ interface FaIconLinkProps {
 export const FaIconLink = (props: FaIconLinkProps) => {
     const hasLeftLabel = props.labelLeft === undefined ? true : props.labelLeft;
     const url = props.url === undefined ? '/' : props.url;
-    const labelClass = props.label ? 'with-label' : 'no-label';
+    const labelClass = props.label ? 'with-label' : '';
     const colorClass =
-        props.color === undefined || props.color === 'white'
-            ? 'is-white'
-            : 'is-black';
+        props.color && props.color === 'black'
+            ? 'is-black'
+            : 'is-white';
 
     return (
         <li className={`faicon-link-container`}>

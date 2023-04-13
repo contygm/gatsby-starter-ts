@@ -36,16 +36,16 @@ export interface AuthorBlurbProps {
  */
 const AuthorMedia = ({ name, description }: AuthorBlurbProps['author']) => {
     return (
-        <div className="media p-2 m-2">
-            <figure className="media-left ml-0 mb-0">
+        <div className="author-media-wrapper">
+            <figure className="author-media-figure">
                 <StaticImage
                     src="../../images/icon.png"
                     alt="author image"
                     placeholder="blurred"
-                    className="image is-96x96"
+                    className="author-media-image"
                 />
             </figure>
-            <div className="media-content m-auto">
+            <div className="author-media-content">
                 <div className="content">
                     <p>
                         <strong>{name}</strong>
@@ -67,7 +67,7 @@ const AuthorMedia = ({ name, description }: AuthorBlurbProps['author']) => {
  */
 const DateAndTags = (props: { postTags: string[]; postDate: string }) => {
     return (
-        <div className="level mb-2">
+        <div className="author-dates-tags-wrapper">
             <div className="level-left">
                 <div className="level-item">
                     <p>
@@ -107,7 +107,7 @@ const DateAndTags = (props: { postTags: string[]; postDate: string }) => {
 export const AuthorBlurb = (props: AuthorBlurbProps) => {
     return (
         <section className="section">
-            <div className="container author-container">
+            <div className="author-container">
                 <DateAndTags
                     postTags={props.postTags}
                     postDate={props.postDate}

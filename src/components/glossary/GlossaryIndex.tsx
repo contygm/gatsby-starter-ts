@@ -44,11 +44,11 @@ export const GlossaryIndex = (props: GlossaryIndexProps) => {
                         if (defObj.definitions.length > 0) {
                             return (
                                 <section
-                                    className="section pt-0"
+                                    className="gloss-section-wrapper"
                                     key={defObj.letter}
                                 >
                                     <h2
-                                        className="title is-size-2"
+                                        className="title-two"
                                         id={`${defObj.letter}`}
                                     >
                                         {defObj.letter}
@@ -57,10 +57,7 @@ export const GlossaryIndex = (props: GlossaryIndexProps) => {
                                         (definition: GlossaryElements) => {
                                             return (
                                                 <div
-                                                    data-testid={
-                                                        'definition-card'
-                                                    }
-                                                    className=""
+                                                    data-testid="definition-card"
                                                     key={definition.frontmatter.title.toLowerCase()}
                                                 >
                                                     <DefinitionCard
@@ -76,7 +73,7 @@ export const GlossaryIndex = (props: GlossaryIndexProps) => {
                         }
                     })
                 ) : (
-                    <h2 className="title is-size-3">No results</h2>
+                    <h2 className="title-three">No results</h2>
                 )}
             </div>
         </article>

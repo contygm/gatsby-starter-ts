@@ -67,15 +67,15 @@ export const PostIndex = (props: PostIndexProps) => {
 
     return (
         <article className="section">
-            <section className="container is-max-desktop">
+            <section className="post-index-wrapper">
                 {/* post cards */}
-                <div className="col-multi-wrapper is-centered">
+                <div className="post-index-cards-wrapper">
                     {displayPosts.length > 0 ? (
                         displayPosts.map((post: IndexElements) => {
                             return (
                                 <div
                                     data-testid={'post-card'}
-                                    className="column is-4"
+                                    className="post-index-card-wrapper"
                                     key={post.frontmatter.title}
                                 >
                                     <PostCard
@@ -89,13 +89,13 @@ export const PostIndex = (props: PostIndexProps) => {
                             );
                         })
                     ) : (
-                        <h2 className="title is-size-3">No results</h2>
+                        <h2 className="title-three">No results</h2>
                     )}
                 </div>
                 {hasMore && (
-                    <div className="columns is-mobile is-centered">
+                    <div className="post-index-load-more-wrapper">
                         <button
-                            className="button is-dark"
+                            className="post-index-load-more"
                             onClick={handleLoadMore}
                         >
                             Load more...

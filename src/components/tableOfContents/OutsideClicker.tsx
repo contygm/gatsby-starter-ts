@@ -46,7 +46,6 @@ const useOutsideClick = (
  * @see ToC
  * @class
  * @category Components
- * @subcategory Table of Contents
  */
 export const OutsideClicker = (props: {
     children: React.ReactNode;

@@ -43,7 +43,7 @@ export const DefinitionCard = (props: DefinitionCardProps) => {
                             <div className="level-left">
                                 <div className="level-item">
                                     <h3
-                                        className="title is-3"
+                                        className="title-three"
                                         id={props.definition.frontmatter.title.toLowerCase()}
                                     >
                                         {props.definition.frontmatter.title}
@@ -52,7 +52,7 @@ export const DefinitionCard = (props: DefinitionCardProps) => {
                             </div>
 
                             <div className="level-right">
-                                <div className="level-item has-text-centered">
+                                <div className="centered-level">
                                     <div>
                                         <p className="heading">Syllables</p>
                                         <p className="subheading">
@@ -63,7 +63,7 @@ export const DefinitionCard = (props: DefinitionCardProps) => {
                                         </p>
                                     </div>
                                 </div>
-                                <div className="level-item has-text-centered">
+                                <div className="centered-level">
                                     <div>
                                         <p className="heading">Phonetics</p>
                                         <p className="subheading">
@@ -100,8 +100,8 @@ export const DefinitionCard = (props: DefinitionCardProps) => {
                 {/* similar words and related posts */}
                 {props.includeAll && (
                     <div className="content">
-                        <div className="level ">
-                            <div className="level-item is-justify-content-left">
+                        <div className="level">
+                            <div className="justified-left-level">
                                 <div>
                                     <h4>Similar Words:</h4>
                                     <ol>
@@ -122,7 +122,7 @@ export const DefinitionCard = (props: DefinitionCardProps) => {
                                     </ol>
                                 </div>
                             </div>
-                            <div className="level-item is-justify-content-left">
+                            <div className="justified-left-level">
                                 {props.definition.frontmatter.relatedPosts && (
                                     <div>
                                         <h4>RelatedPosts:</h4>
@@ -156,7 +156,7 @@ export const DefinitionCard = (props: DefinitionCardProps) => {
             {/* tag footer */}
             {props.includeAll && (
                 <div className="card-footer">
-                    <p className="my-2 ml-5 mr-2">Tags:</p>
+                    <p className="definition-card-tag-title">Tags:</p>
 
                     <div className="tags">
                         {props.definition.frontmatter.tags.map(
@@ -165,7 +165,7 @@ export const DefinitionCard = (props: DefinitionCardProps) => {
                                     <Link
                                         to={`?tag=${tag}`}
                                         id={tag}
-                                        className="tag is-success is-light"
+                                        className="definition-card-tag"
                                         key={tag}
                                         // onClick={props.handleFilterUpdate}
                                     >

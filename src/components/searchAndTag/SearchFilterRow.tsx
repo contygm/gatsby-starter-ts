@@ -66,15 +66,15 @@ export const SearchFilterRow = (props: SearchFilterRowProps) => {
     const hasQuery = props.searchQuery !== '';
 
     return (
-        <section className="section ">
-            <div className="container is-max-desktop">
+        <section className="section">
+            <div className="search-filter-wrapper">
                 <div className="columns">
                     <div className="column">
                         <form
-                            className="field has-addons"
+                            className="search-form"
                             onSubmit={props.handleSubmitSearch}
                         >
-                            <p className="control has-icons-right">
+                            <p className="search-form-input-wrapper">
                                 <input
                                     className="input"
                                     name="searchPost"
@@ -94,7 +94,7 @@ export const SearchFilterRow = (props: SearchFilterRowProps) => {
                                     <span>
                                         <FontAwesomeIcon
                                             size="2xs"
-                                            className="icon is-small is-right search-clear-btn"
+                                            className="search-clear-btn"
                                             data-testid="clearSearch"
                                             icon={faCircleXmark}
                                             onClick={props.clearSearchQuery}
@@ -104,7 +104,7 @@ export const SearchFilterRow = (props: SearchFilterRowProps) => {
                             </p>
                             <p className="control">
                                 <button
-                                    className="button is-success"
+                                    className="primary-button"
                                     data-testid="searchPostSubmit"
                                     disabled={
                                         props.activeTag !== '' &&
@@ -117,7 +117,7 @@ export const SearchFilterRow = (props: SearchFilterRowProps) => {
                         </form>
                     </div>
 
-                    <div className="column is-two-thirds m-auto">
+                    <div className="search-row-tags-wrapper">
                         <TagsList
                             totalPostCount={props.totalPostCount}
                             tags={props.tags}

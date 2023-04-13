@@ -67,11 +67,11 @@ export const ContactForm = () => {
                 </div>
             </div>
 
-            <div className="field is-grouped">
+            <div className="contact-action-buttons">
                 <div className="control">
                     <button
                         type="submit"
-                        className="button is-primary"
+                        className="primary-button"
                     >
                         Submit
                     </button>
@@ -80,7 +80,7 @@ export const ContactForm = () => {
                     <button
                         type="reset"
                         name="reset"
-                        className="button has-background-grey-lighter"
+                        className="light-grey-button"
                     >
                         Cancel
                     </button>

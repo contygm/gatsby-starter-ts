@@ -28,7 +28,7 @@ interface NextAndPreviousProps {
  */
 export const NextAndPrevious = (props: NextAndPreviousProps) => {
     return (
-        <div className="level my-3">
+        <div className="next-previous-wrapper">
             <div className="level-left">
                 <div className="level-item">
                     {props.previous && (

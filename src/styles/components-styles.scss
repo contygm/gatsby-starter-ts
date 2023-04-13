@@ -1,0 +1,279 @@
+/*******************************
+* Table of Contents (ToC)
+********************************/
+// table of contents 
+.toc-wrapper {
+	.container {
+		@extend .menu;
+		padding: 1.25rem; 
+		
+		// TOC string from graphQL query uses <p> to nest lists
+		p {
+			@extend .mb-0;
+			@extend .menu-list;
+			font-size: .875rem;
+		}
+
+		ul {
+			@extend .my-1;
+			@extend .menu-list;
+			list-style-type: none;
+			font-size: .875rem;
+		}
+
+		h6 {
+			@extend .menu-label;
+		}
+	}
+}
+
+// This is also used as a selector
+.toc-links {
+	@extend .container;
+}
+
+/*******************************
+* TagsList
+********************************/
+
+.tag-wrapper {
+	@extend .tags;
+	@extend .has-addons;
+	@extend .mx-2;
+	cursor: default !important;
+	align-items: inherit;
+}
+
+.tag-list-wrapper {
+	@extend .field;
+	@extend .is-grouped;
+	@extend .is-grouped-multiline;
+}
+
+.tag-base {
+	@extend .tag;
+	@extend .mr-0;
+}
+
+.tag-active {
+	@extend .tag-base;
+	@extend .is-primary;
+}
+
+.tag-inactive {
+	@extend .tag-active;
+	@extend .is-light;
+}
+
+.tag-count-enabled {
+	@extend .tag;
+	@extend .is-dark;
+}
+
+.tag-count-disabled {
+	@extend .tag;
+	@extend .is-light;
+}
+
+/*******************************
+* Search Filter Row
+********************************/
+
+.search-row-tags-wrapper {
+	@extend .column;
+	@extend .is-two-thirds;
+	@extend .m-auto;
+}
+
+.search-clear-btn {
+	@extend .icon;
+	@extend .is-small;
+	@extend .is-right;
+	top: 50% !important;
+	transform: translate(-50%, -50%);
+	pointer-events: all !important;
+}
+
+.search-filter-wrapper {
+	@extend .container;
+	@extend .is-max-desktop;
+}
+
+.search-form {
+	@extend .field;
+	@extend .has-addons;
+}
+
+.search-form-input-wrapper {
+	@extend .control;
+	@extend .has-icons-right;
+}
+
+/*******************************
+* Author Blurb
+********************************/
+
+.author-container {
+	@extend .container;
+	border-top: 0.1rem solid $grey-light;
+
+}
+
+.author-dates-tags-wrapper {
+	@extend .level;
+	@extend .mb-2;
+}
+
+.author-media-wrapper {
+	@extend .media;
+	@extend .p-2;
+	@extend .m-2;
+}
+
+.author-media-figure {
+	@extend .media-left;
+	@extend .ml-0;
+	@extend .mb-0;
+}
+
+.author-media-image {
+	@extend .image;
+	@extend .is-96x96;
+}
+
+.author-media-content {
+	@extend .media-content;
+	@extend .m-auto;
+}
+
+/*******************************
+* Post Index
+********************************/
+
+.post-index-wrapper {
+	@extend .container;
+	@extend .is-max-desktop;
+}
+
+.post-index-cards-wrapper {
+	@extend .col-multi-wrapper;
+	@extend .is-centered;
+}
+
+.post-index-card-wrapper {
+	@extend .column;
+	@extend .is-4;
+}
+
+.post-index-load-more-wrapper {
+	@extend .columns;
+	@extend .is-mobile;
+	@extend .is-centered;
+}
+
+.post-index-load-more {
+	@extend .button;
+	@extend .is-dark;
+}
+
+/*******************************
+* Post Card
+********************************/
+
+.post-card-main-tag {
+	@extend .tag;
+	@extend .is-primary;
+	// sticky styles
+	position: absolute; 
+	top: 0.5rem;
+	right: 0.5rem;
+	z-index: 99;
+}
+
+.post-card-image {
+	@extend .image;
+	@extend .is-4by3;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.post-card-tag-title {
+	@extend .mt-2;
+	@extend .ml-2;
+	@extend .mr-2;
+}
+
+.post-card-tag {
+	@extend .mt-2;
+	@extend .ml-2;
+	@extend .tag;
+	@extend .tag-inactive;
+}
+
+/*******************************
+* Glossary Components
+********************************/
+// index
+.gloss-section-wrapper {
+	@extend .section;
+	@extend .pt-0;
+}
+
+// definition card
+.definition-card-tag-title {
+	@extend .my-2;
+	@extend .ml-5;
+	@extend .mr-2;
+}
+
+.definition-card-tag {
+	@extend .ml-2;
+	@extend .tag;
+	@extend .tag-inactive;
+}
+
+/*******************************
+* Common Components
+********************************/
+// contact form
+.contact-action-buttons {
+	@extend .field;
+	@extend .is-grouped;
+}
+
+// next and previous
+.next-previous-wrapper {
+	@extend .level;
+	@extend .my-3;
+}
+
+// fa icon
+.faicon-link {
+	&:hover {
+		color: $primary;
+	}
+}
+
+.faicon-link.with-label {
+	color: $black;
+	text-decoration: none;
+	@extend .icon-text;
+}
+
+.faicon-link-container {
+	@extend .is-inline;
+}
+
+@media only screen and (max-width : 768px) {
+    .faicon-link-container {    
+		margin-left: 1rem;
+    	margin-right: 1rem;
+	}
+}
+
+@media only screen and (min-width : 769px) {
+    .faicon-link-container {    
+		margin-left: 0.5rem;
+		margin-right: 0.5rem;
+	}
+}

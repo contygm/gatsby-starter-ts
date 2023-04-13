@@ -55,7 +55,7 @@ export const ToC = (props: { tocHtml: string; includeTitle: boolean }) => {
             role="widget"
         >
             <div
-                className="container toc-links"
+                className="toc-links"
                 dangerouslySetInnerHTML={{ __html: tocHtmlWithHeading }}
             />
         </div>
