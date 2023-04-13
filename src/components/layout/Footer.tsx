@@ -21,11 +21,11 @@ import { LEGAL_LINKS } from '../../utils/constants/legalDropdownLinks';
 const PageLink = (props: { pageUrl: string; label: string }) => {
     return (
         <li
-            className="is-inline-desktop is-inline-tablet m-4 footer-link"
+            className="footer-pg-link-wrapper"
             role="listitem"
         >
             <Link
-                className="footer-link"
+                className="footer-link-base"
                 to={props.pageUrl}
                 data-cy={`footer-link-${props.label}`}
             >
@@ -74,12 +74,12 @@ const DrawerLegalLink = (props: { label: string; slug: string }) => {
 const DropDownLinkBtn = () => {
     return (
         <li
-            className="dropdown is-hoverable is-up"
+            className="footer-dropup"
             role="listitem"
         >
             <div className="dropdown-trigger">
                 <Link
-                    className="m-4 footer-link"
+                    className="footer-dropup-menu"
                     aria-haspopup="true"
                     aria-controls="footer-dropdown-menu"
                     to="/legal"
@@ -126,7 +126,7 @@ const DropDownLinkBtn = () => {
 export const Footer = (props: { author: string }) => {
     return (
         <footer className="footer">
-            <div className="columns mb-1 is-vcentered has-text-centered-mobile">
+            <div className="footer-main-content-wrapper">
                 {/* Logo to the left */}
                 <div className="column">
                     <Link
@@ -134,7 +134,7 @@ export const Footer = (props: { author: string }) => {
                         to="/"
                         data-cy="footer-logo"
                     >
-                        <figure className="image footer-logo">
+                        <figure className="footer-logo">
                             <StaticImage
                                 src="../../images/bulma-logo-white.png"
                                 alt="Logo"
@@ -148,7 +148,7 @@ export const Footer = (props: { author: string }) => {
                 {/* Navigation links centered */}
                 {/* NOTE: flex basis will keep dropdown btn in line with the links */}
                 <ul
-                    className="column has-text-centered"
+                    className="centered-col"
                     style={{ flexBasis: 'auto' }}
                     role="list"
                 >
@@ -172,7 +172,7 @@ export const Footer = (props: { author: string }) => {
                 </ul>
                 {/* Social media links to the left */}
                 <div className="column">
-                    <ul className="has-text-right has-text-centered-mobile footer-link">
+                    <ul className="footer-social-media">
                         <FaIconLink faIcon={faStar} />
                         <FaIconLink faIcon={faMugHot} />
                         <FaIconLink faIcon={faGhost} />
@@ -180,7 +180,7 @@ export const Footer = (props: { author: string }) => {
                 </div>
             </div>
             {/* Copy right section with border */}
-            <div className="footer-copyright has-text-centered has-text-grey-light is-size-7">
+            <div className="footer-copyright">
                 <p
                     className="pt-3"
                     data-testid="copyright"

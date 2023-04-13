@@ -1,0 +1,159 @@
+/*******************************
+* Footer Styles
+********************************/
+// NOTE: see main scss for sticky footer styles
+
+.footer-link {
+	color: $white-ter;
+	&:hover {
+		color: $primary;
+	}
+}
+
+.footer-link-base {
+	color: $white-ter;
+	&:hover {
+		color: $primary;
+	}
+}
+
+.footer-pg-link-wrapper {
+	@extend .is-inline-desktop;
+	@extend .is-inline-tablet;
+	@extend .m-4;
+}
+
+.footer-dropup {
+	@extend .dropdown;
+	@extend .is-hoverable; 
+	@extend .is-up;
+}
+
+.footer-dropup-menu {
+	@extend .footer-link; 
+	@extend .m-4;
+}
+
+.footer-drawer-link {
+	color: $grey-dark;
+	&:hover {
+		color: $primary;
+	}
+}
+
+.footer-main-content-wrapper {
+	@extend .columns;
+	@extend .mb-1;
+	@extend .is-vcentered;
+	@extend .has-text-centered-mobile;
+}
+
+.footer-logo {
+	@extend .green-hover-highlight;
+	@extend .image;
+}
+
+.footer-social-media {
+	@extend .footer-link-base;
+	@extend .has-text-centered-mobile;
+	@extend .has-text-right;
+}
+
+.footer-copyright {
+	border-top: 0.1rem solid;
+	@extend .has-text-centered;
+	@extend .has-text-grey-light;
+	@extend .is-size-7;
+}
+
+/*******************************
+* Page Header
+********************************/
+
+.pg-header-icon-row {
+	@extend .subtitle;
+	span {
+		margin: 0 1rem;
+	}
+}
+
+.pg-header-subtitle {
+	@extend .subtitle;
+	@extend .has-text-white;
+}
+
+.pg-header-title {
+	@extend .title-one;
+	@extend .has-text-white;
+}
+
+.pg-header-period {
+	color: $primary;
+}
+
+.pg-header-hero-black {
+	@extend .hero-body;
+	@extend .has-background-black;
+}
+
+/*******************************
+* Side Bar Styles
+********************************/
+
+.sidebar-post-tile {
+	@extend .py-2;
+	@extend .px-1;
+
+	h6 {
+		@extend .mb-0;
+		@extend .is-size-6;
+	}
+	p {
+		font-size: .875rem;
+		@extend .mb-1;
+	}
+}
+
+.sidebar-tile-image {
+	max-height: 185px;
+	@extend .image;
+}
+
+/*******************************
+* Sticky Social Media Styles
+********************************/
+
+.is-vertical {
+	z-index: 99;
+	top: 0;
+	right: 0;
+	max-width: 10%;
+	position: fixed;
+
+	ul {
+		margin-left: 0px;
+	}
+}
+
+.sticky-social-wrapper {
+	@extend .menu;
+	@extend .sticky;
+	@extend .box;
+	@extend .mt-4; 
+}
+
+.sticky-social-list-wrapper {
+	@extend .has-text-black;
+	@extend .has-text-centered;
+}
+
+.sticky-social-show {
+	@extend .has-text-grey-lighter;
+}
+
+.sticky-social-hidden {
+	@extend .sticky-social-show;
+	@extend .column;
+	@extend .pt-4;
+	@extend .pb-2;
+}

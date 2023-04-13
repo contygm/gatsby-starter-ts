@@ -31,7 +31,7 @@ export const StickySocialMedia = (props: {
 
     return (
         <div
-            className={`menu sticky box mt-4 ${verticalClass} ${
+            className={`sticky-social-wrapper ${verticalClass} ${
                 props.classes ?? ''
             }`}
         >
@@ -39,7 +39,7 @@ export const StickySocialMedia = (props: {
                 {props.isVertical ? 'Share' : 'Share this post'}
             </p>
             <ul
-                className={`has-text-black has-text-centered ${
+                className={`sticky-social-list-wrapper ${
                     props.isVertical ? '' : 'columns'
                 }`}
             >
@@ -68,8 +68,9 @@ export const StickySocialMedia = (props: {
                         </div>
                     </>
                 )}
+                {/* TODO should be an up arrow instead of side */}
                 {props.isVertical && showMedia && (
-                    <div className="column has-text-grey-lighter pt-4 pb-2">
+                    <div className="sticky-social-hidden">
                         <FontAwesomeIcon
                             className="faicon-link"
                             icon={faChevronRight}
@@ -80,7 +81,7 @@ export const StickySocialMedia = (props: {
                     </div>
                 )}
                 {props.isVertical && !showMedia && (
-                    <div className="has-text-grey-lighter">
+                    <div className="sticky-social-show">
                         <FontAwesomeIcon
                             className="faicon-link"
                             icon={faShare}

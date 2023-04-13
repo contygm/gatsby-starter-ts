@@ -26,11 +26,12 @@ export interface SideBarPostTileProps {
  * @see SideBarPostTileProps
  * @category Components
  */
+// TODO ? move to common and make "simple tile"
 export const SideBarPostTile = (props: SideBarPostTileProps) => {
     return (
         <Link
             to={props.slug}
-            className="horizontal-post-tile"
+            className="sidebar-post-tile"
         >
             <div className="card">
                 <div className="card-image">
@@ -39,7 +40,7 @@ export const SideBarPostTile = (props: SideBarPostTileProps) => {
                             <GatsbyImage
                                 alt="blog image"
                                 image={props.image}
-                                className="image sidebar-tile-image"
+                                className="sidebar-tile-image"
                             />
                         </figure>
                     )}

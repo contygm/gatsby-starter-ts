@@ -13,7 +13,7 @@ import { FaIconLink } from '../common/FaIconLink';
  */
 const SocialMediaRow = () => {
     return (
-        <p className="subtitle header-icon-row">
+        <p className="pg-header-icon-row">
             <span className="bulma-fa-mixin">
                 <FaIconLink faIcon={faMugHot} />
             </span>
@@ -37,7 +37,7 @@ const SocialMediaRow = () => {
  * @memberof PageHeader
  */
 const Subtitle = ({ subtitle }: { subtitle: string }) => {
-    return <p className="subtitle has-text-white">{subtitle}</p>;
+    return <p className="pg-header-subtitle">{subtitle}</p>;
 };
 
 /**
@@ -69,10 +69,10 @@ export const PageHeader = (props: PageHeaderProps) => {
     const centerClass = props.alignCenter ? 'has-text-centered' : '';
 
     return (
-        <header className="hero is-medium">
-            <div className="hero-body has-background-black">
+        <header className="medium-hero">
+            <div className="pg-header-hero-black">
                 <div className={`container ${centerClass}`}>
-                    <h1 className="title has-text-white is-1">
+                    <h1 className="pg-header-title">
                         {props.title}
                         <span className="pg-header-period">.</span>
                     </h1>
