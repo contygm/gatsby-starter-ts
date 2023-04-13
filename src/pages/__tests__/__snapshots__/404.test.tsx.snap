@@ -103,13 +103,13 @@ exports[`404 - NotFoundPage renders correctly 1`] = `
     </nav>
     <main>
       <section
-        class="hero is-fullheight"
+        class="full-hero"
       >
         <div
           class="hero-body"
         >
           <div
-            class="container has-text-centered"
+            class="not-found-container"
           >
             <h1
               class="title"
@@ -123,7 +123,7 @@ exports[`404 - NotFoundPage renders correctly 1`] = `
             </p>
             <p>
               <a
-                class="button is-primary"
+                class="primary-button"
                 href="/"
               >
                 Go home
@@ -137,7 +137,7 @@ exports[`404 - NotFoundPage renders correctly 1`] = `
       class="footer"
     >
       <div
-        class="columns mb-1 is-vcentered has-text-centered-mobile"
+        class="footer-main-content-wrapper"
       >
         <div
           class="column"
@@ -148,7 +148,7 @@ exports[`404 - NotFoundPage renders correctly 1`] = `
             href="/"
           >
             <figure
-              class="image footer-logo"
+              class="footer-logo"
             >
               <img
                 alt="Logo"
@@ -161,17 +161,17 @@ exports[`404 - NotFoundPage renders correctly 1`] = `
           </a>
         </div>
         <ul
-          class="column has-text-centered"
+          class="centered-col"
           role="list"
           style="flex-basis: auto;"
         >
           <div>
             <li
-              class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              class="footer-pg-link-wrapper"
               role="listitem"
             >
               <a
-                class="footer-link"
+                class="footer-link-base"
                 data-cy="footer-link-Contact"
                 href="/about#contact-us"
               >
@@ -179,11 +179,11 @@ exports[`404 - NotFoundPage renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              class="footer-pg-link-wrapper"
               role="listitem"
             >
               <a
-                class="footer-link"
+                class="footer-link-base"
                 data-cy="footer-link-About"
                 href="/about"
               >
@@ -191,11 +191,11 @@ exports[`404 - NotFoundPage renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              class="footer-pg-link-wrapper"
               role="listitem"
             >
               <a
-                class="footer-link"
+                class="footer-link-base"
                 data-cy="footer-link-Privacy"
                 href="/legal/privacy-policy"
               >
@@ -203,7 +203,7 @@ exports[`404 - NotFoundPage renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="dropdown is-hoverable is-up"
+              class="footer-dropup"
               role="listitem"
             >
               <div
@@ -212,7 +212,7 @@ exports[`404 - NotFoundPage renders correctly 1`] = `
                 <a
                   aria-controls="footer-dropdown-menu"
                   aria-haspopup="true"
-                  class="m-4 footer-link"
+                  class="footer-dropup-menu"
                   data-cy="footer-link-legal"
                   href="/legal"
                 >
@@ -295,14 +295,14 @@ exports[`404 - NotFoundPage renders correctly 1`] = `
           class="column"
         >
           <ul
-            class="has-text-right has-text-centered-mobile footer-link"
+            class="footer-social-media"
           >
             <li
               class="faicon-link-container"
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -328,7 +328,7 @@ exports[`404 - NotFoundPage renders correctly 1`] = `
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -354,7 +354,7 @@ exports[`404 - NotFoundPage renders correctly 1`] = `
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -379,7 +379,7 @@ exports[`404 - NotFoundPage renders correctly 1`] = `
         </div>
       </div>
       <div
-        class="footer-copyright has-text-centered has-text-grey-light is-size-7"
+        class="footer-copyright"
       >
         <p
           class="pt-3"

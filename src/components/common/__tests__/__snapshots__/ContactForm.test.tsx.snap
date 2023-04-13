@@ -64,13 +64,13 @@ exports[`ContactForm renders correctly 1`] = `
       </div>
     </div>
     <div
-      class="field is-grouped"
+      class="contact-action-buttons"
     >
       <div
         class="control"
       >
         <button
-          class="button is-primary"
+          class="primary-button"
           type="submit"
         >
           Submit
@@ -80,7 +80,7 @@ exports[`ContactForm renders correctly 1`] = `
         class="control"
       >
         <button
-          class="button has-background-grey-lighter"
+          class="light-grey-button"
           name="reset"
           type="reset"
         >
@@ -156,13 +156,13 @@ exports[`ContactForm submit does nothing 1`] = `
       </div>
     </div>
     <div
-      class="field is-grouped"
+      class="contact-action-buttons"
     >
       <div
         class="control"
       >
         <button
-          class="button is-primary"
+          class="primary-button"
           type="submit"
         >
           Submit
@@ -172,7 +172,7 @@ exports[`ContactForm submit does nothing 1`] = `
         class="control"
       >
         <button
-          class="button has-background-grey-lighter"
+          class="light-grey-button"
           name="reset"
           type="reset"
         >
@@ -248,13 +248,13 @@ exports[`ContactForm submit does nothing 2`] = `
       </div>
     </div>
     <div
-      class="field is-grouped"
+      class="contact-action-buttons"
     >
       <div
         class="control"
       >
         <button
-          class="button is-primary"
+          class="primary-button"
           type="submit"
         >
           Submit
@@ -264,7 +264,7 @@ exports[`ContactForm submit does nothing 2`] = `
         class="control"
       >
         <button
-          class="button has-background-grey-lighter"
+          class="light-grey-button"
           name="reset"
           type="reset"
         >

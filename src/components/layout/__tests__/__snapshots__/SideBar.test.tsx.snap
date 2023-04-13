@@ -18,7 +18,7 @@ exports[`SideBar renders correctly 1`] = `
       >
         <li>
           <a
-            class="horizontal-post-tile"
+            class="sidebar-post-tile"
             href="/blog/baking-tutorial/"
           >
             <div
@@ -53,7 +53,7 @@ exports[`SideBar renders correctly 1`] = `
         </li>
         <li>
           <a
-            class="horizontal-post-tile"
+            class="sidebar-post-tile"
             href="/blog/ten-best-things/"
           >
             <div
@@ -88,7 +88,7 @@ exports[`SideBar renders correctly 1`] = `
         </li>
         <li>
           <a
-            class="horizontal-post-tile"
+            class="sidebar-post-tile"
             href="/blog/guide/"
           >
             <div
@@ -136,7 +136,7 @@ exports[`SideBar renders correctly 1`] = `
       >
         <li>
           <a
-            class="horizontal-post-tile"
+            class="sidebar-post-tile"
             href="/blog/baking-tutorial/"
           >
             <div
@@ -171,7 +171,7 @@ exports[`SideBar renders correctly 1`] = `
         </li>
         <li>
           <a
-            class="horizontal-post-tile"
+            class="sidebar-post-tile"
             href="/blog/ten-best-things/"
           >
             <div
@@ -206,7 +206,7 @@ exports[`SideBar renders correctly 1`] = `
         </li>
         <li>
           <a
-            class="horizontal-post-tile"
+            class="sidebar-post-tile"
             href="/blog/guide/"
           >
             <div
@@ -263,7 +263,7 @@ exports[`SideBar renders correctly without related posts 1`] = `
       >
         <li>
           <a
-            class="horizontal-post-tile"
+            class="sidebar-post-tile"
             href="/blog/baking-tutorial/"
           >
             <div
@@ -298,7 +298,7 @@ exports[`SideBar renders correctly without related posts 1`] = `
         </li>
         <li>
           <a
-            class="horizontal-post-tile"
+            class="sidebar-post-tile"
             href="/blog/ten-best-things/"
           >
             <div
@@ -333,7 +333,7 @@ exports[`SideBar renders correctly without related posts 1`] = `
         </li>
         <li>
           <a
-            class="horizontal-post-tile"
+            class="sidebar-post-tile"
             href="/blog/guide/"
           >
             <div

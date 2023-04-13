@@ -83,16 +83,16 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
     </nav>
     <main>
       <header
-        class="hero is-medium"
+        class="medium-hero"
       >
         <div
-          class="hero-body has-background-black"
+          class="pg-header-hero-black"
         >
           <div
             class="container has-text-centered"
           >
             <h1
-              class="title has-text-white is-1"
+              class="pg-header-title"
             >
               Baking Tutorial
               <span
@@ -102,12 +102,12 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
               </span>
             </h1>
             <p
-              class="subtitle has-text-white"
+              class="pg-header-subtitle"
             >
               a baking tutorial
             </p>
             <p
-              class="subtitle header-icon-row"
+              class="pg-header-icon-row"
             >
               <span
                 class="bulma-fa-mixin"
@@ -118,7 +118,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -147,7 +147,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
               >
                 <a
                   aria-label="social media link"
-                  class="faicon-link no-label is-white"
+                  class="faicon-link  is-white"
                   data-cy="faicon-link"
                   href="/"
                 >
@@ -177,7 +177,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
               >
                 <a
                   aria-label="social media link"
-                  class="faicon-link no-label is-white"
+                  class="faicon-link  is-white"
                   data-cy="faicon-link"
                   href="/"
                 >
@@ -207,7 +207,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
               >
                 <a
                   aria-label="social media link"
-                  class="faicon-link no-label is-white"
+                  class="faicon-link  is-white"
                   data-cy="faicon-link"
                   href="/"
                 >
@@ -234,7 +234,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
         </div>
       </header>
       <div
-        class="col-multi-wrapperr"
+        class="col-multi-wrapper"
       >
         <div
           class="post-toc"
@@ -250,7 +250,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                 role="widget"
               >
                 <div
-                  class="container toc-links"
+                  class="toc-links"
                 >
                   <h6>
                     Table of Contents
@@ -292,7 +292,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
             </div>
           </section>
           <button
-            class="post-toc-mobile-btn"
+            class="primary-button-rounded"
             data-testid="post-toc-mobile-btn"
             style="display: block;"
           >
@@ -347,7 +347,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
               </div>
             </section>
             <div
-              class="menu sticky box mt-4 is-vertical "
+              class="sticky-social-wrapper is-vertical "
             >
               <p
                 class="menu-label"
@@ -355,7 +355,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                 Share
               </p>
               <ul
-                class="has-text-black has-text-centered "
+                class="sticky-social-list-wrapper "
               >
                 <div
                   class="column"
@@ -415,7 +415,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                   </svg>
                 </div>
                 <div
-                  class="column has-text-grey-lighter pt-4 pb-2"
+                  class="sticky-social-hidden"
                 >
                   <svg
                     aria-hidden="true"
@@ -440,10 +440,10 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
               class="section"
             >
               <div
-                class="container author-container"
+                class="author-container"
               >
                 <div
-                  class="level mb-2"
+                  class="author-dates-tags-wrapper"
                 >
                   <div
                     class="level-left"
@@ -487,10 +487,10 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                   </div>
                 </div>
                 <div
-                  class="media p-2 m-2"
+                  class="author-media-wrapper"
                 >
                   <figure
-                    class="media-left ml-0 mb-0"
+                    class="author-media-figure"
                   >
                     <img
                       alt="author image"
@@ -499,7 +499,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                     />
                   </figure>
                   <div
-                    class="media-content m-auto"
+                    class="author-media-content"
                   >
                     <div
                       class="content"
@@ -515,7 +515,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                   </div>
                 </div>
                 <div
-                  class="level my-3"
+                  class="next-previous-wrapper"
                 >
                   <div
                     class="level-left"
@@ -618,7 +618,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                 >
                   <li>
                     <a
-                      class="horizontal-post-tile"
+                      class="sidebar-post-tile"
                       href="/blog/baking-tutorial/"
                     >
                       <div
@@ -653,7 +653,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                   </li>
                   <li>
                     <a
-                      class="horizontal-post-tile"
+                      class="sidebar-post-tile"
                       href="/blog/ten-best-things/"
                     >
                       <div
@@ -688,7 +688,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                   </li>
                   <li>
                     <a
-                      class="horizontal-post-tile"
+                      class="sidebar-post-tile"
                       href="/blog/guide/"
                     >
                       <div
@@ -736,7 +736,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                 >
                   <li>
                     <a
-                      class="horizontal-post-tile"
+                      class="sidebar-post-tile"
                       href="/blog/baking-tutorial/"
                     >
                       <div
@@ -771,7 +771,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                   </li>
                   <li>
                     <a
-                      class="horizontal-post-tile"
+                      class="sidebar-post-tile"
                       href="/blog/ten-best-things/"
                     >
                       <div
@@ -806,7 +806,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                   </li>
                   <li>
                     <a
-                      class="horizontal-post-tile"
+                      class="sidebar-post-tile"
                       href="/blog/guide/"
                     >
                       <div
@@ -850,7 +850,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
       class="footer"
     >
       <div
-        class="columns mb-1 is-vcentered has-text-centered-mobile"
+        class="footer-main-content-wrapper"
       >
         <div
           class="column"
@@ -861,7 +861,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
             href="/"
           >
             <figure
-              class="image footer-logo"
+              class="footer-logo"
             >
               <img
                 alt="Logo"
@@ -874,17 +874,17 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
           </a>
         </div>
         <ul
-          class="column has-text-centered"
+          class="centered-col"
           role="list"
           style="flex-basis: auto;"
         >
           <div>
             <li
-              class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              class="footer-pg-link-wrapper"
               role="listitem"
             >
               <a
-                class="footer-link"
+                class="footer-link-base"
                 data-cy="footer-link-Contact"
                 href="/about#contact-us"
               >
@@ -892,11 +892,11 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
               </a>
             </li>
             <li
-              class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              class="footer-pg-link-wrapper"
               role="listitem"
             >
               <a
-                class="footer-link"
+                class="footer-link-base"
                 data-cy="footer-link-About"
                 href="/about"
               >
@@ -904,11 +904,11 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
               </a>
             </li>
             <li
-              class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              class="footer-pg-link-wrapper"
               role="listitem"
             >
               <a
-                class="footer-link"
+                class="footer-link-base"
                 data-cy="footer-link-Privacy"
                 href="/legal/privacy-policy"
               >
@@ -916,7 +916,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
               </a>
             </li>
             <li
-              class="dropdown is-hoverable is-up"
+              class="footer-dropup"
               role="listitem"
             >
               <div
@@ -925,7 +925,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                 <a
                   aria-controls="footer-dropdown-menu"
                   aria-haspopup="true"
-                  class="m-4 footer-link"
+                  class="footer-dropup-menu"
                   data-cy="footer-link-legal"
                   href="/legal"
                 >
@@ -1008,14 +1008,14 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
           class="column"
         >
           <ul
-            class="has-text-right has-text-centered-mobile footer-link"
+            class="footer-social-media"
           >
             <li
               class="faicon-link-container"
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -1041,7 +1041,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -1067,7 +1067,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -1092,7 +1092,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
         </div>
       </div>
       <div
-        class="footer-copyright has-text-centered has-text-grey-light is-size-7"
+        class="footer-copyright"
       >
         <p
           class="pt-3"
@@ -1193,16 +1193,16 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
     </nav>
     <main>
       <header
-        class="hero is-medium"
+        class="medium-hero"
       >
         <div
-          class="hero-body has-background-black"
+          class="pg-header-hero-black"
         >
           <div
             class="container has-text-centered"
           >
             <h1
-              class="title has-text-white is-1"
+              class="pg-header-title"
             >
               Baking Tutorial
               <span
@@ -1212,12 +1212,12 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
               </span>
             </h1>
             <p
-              class="subtitle has-text-white"
+              class="pg-header-subtitle"
             >
               a baking tutorial
             </p>
             <p
-              class="subtitle header-icon-row"
+              class="pg-header-icon-row"
             >
               <span
                 class="bulma-fa-mixin"
@@ -1228,7 +1228,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -1257,7 +1257,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
               >
                 <a
                   aria-label="social media link"
-                  class="faicon-link no-label is-white"
+                  class="faicon-link  is-white"
                   data-cy="faicon-link"
                   href="/"
                 >
@@ -1287,7 +1287,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
               >
                 <a
                   aria-label="social media link"
-                  class="faicon-link no-label is-white"
+                  class="faicon-link  is-white"
                   data-cy="faicon-link"
                   href="/"
                 >
@@ -1317,7 +1317,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
               >
                 <a
                   aria-label="social media link"
-                  class="faicon-link no-label is-white"
+                  class="faicon-link  is-white"
                   data-cy="faicon-link"
                   href="/"
                 >
@@ -1344,7 +1344,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
         </div>
       </header>
       <div
-        class="col-multi-wrapperr"
+        class="col-multi-wrapper"
       >
         <div
           class="post-toc"
@@ -1360,7 +1360,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                 role="widget"
               >
                 <div
-                  class="container toc-links"
+                  class="toc-links"
                 >
                   <h6>
                     Table of Contents
@@ -1402,7 +1402,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
             </div>
           </section>
           <button
-            class="post-toc-mobile-btn"
+            class="primary-button-rounded"
             data-testid="post-toc-mobile-btn"
             style="display: block;"
           >
@@ -1457,7 +1457,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
               </div>
             </section>
             <div
-              class="menu sticky box mt-4 is-vertical "
+              class="sticky-social-wrapper is-vertical "
             >
               <p
                 class="menu-label"
@@ -1465,7 +1465,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                 Share
               </p>
               <ul
-                class="has-text-black has-text-centered "
+                class="sticky-social-list-wrapper "
               >
                 <div
                   class="column"
@@ -1525,7 +1525,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                   </svg>
                 </div>
                 <div
-                  class="column has-text-grey-lighter pt-4 pb-2"
+                  class="sticky-social-hidden"
                 >
                   <svg
                     aria-hidden="true"
@@ -1550,10 +1550,10 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
               class="section"
             >
               <div
-                class="container author-container"
+                class="author-container"
               >
                 <div
-                  class="level mb-2"
+                  class="author-dates-tags-wrapper"
                 >
                   <div
                     class="level-left"
@@ -1597,10 +1597,10 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                   </div>
                 </div>
                 <div
-                  class="media p-2 m-2"
+                  class="author-media-wrapper"
                 >
                   <figure
-                    class="media-left ml-0 mb-0"
+                    class="author-media-figure"
                   >
                     <img
                       alt="author image"
@@ -1609,7 +1609,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                     />
                   </figure>
                   <div
-                    class="media-content m-auto"
+                    class="author-media-content"
                   >
                     <div
                       class="content"
@@ -1625,7 +1625,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                   </div>
                 </div>
                 <div
-                  class="level my-3"
+                  class="next-previous-wrapper"
                 >
                   <div
                     class="level-left"
@@ -1728,7 +1728,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                 >
                   <li>
                     <a
-                      class="horizontal-post-tile"
+                      class="sidebar-post-tile"
                       href="/blog/baking-tutorial/"
                     >
                       <div
@@ -1763,7 +1763,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                   </li>
                   <li>
                     <a
-                      class="horizontal-post-tile"
+                      class="sidebar-post-tile"
                       href="/blog/ten-best-things/"
                     >
                       <div
@@ -1798,7 +1798,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                   </li>
                   <li>
                     <a
-                      class="horizontal-post-tile"
+                      class="sidebar-post-tile"
                       href="/blog/guide/"
                     >
                       <div
@@ -1846,7 +1846,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                 >
                   <li>
                     <a
-                      class="horizontal-post-tile"
+                      class="sidebar-post-tile"
                       href="/blog/baking-tutorial/"
                     >
                       <div
@@ -1881,7 +1881,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                   </li>
                   <li>
                     <a
-                      class="horizontal-post-tile"
+                      class="sidebar-post-tile"
                       href="/blog/ten-best-things/"
                     >
                       <div
@@ -1916,7 +1916,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                   </li>
                   <li>
                     <a
-                      class="horizontal-post-tile"
+                      class="sidebar-post-tile"
                       href="/blog/guide/"
                     >
                       <div
@@ -1960,7 +1960,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
       class="footer"
     >
       <div
-        class="columns mb-1 is-vcentered has-text-centered-mobile"
+        class="footer-main-content-wrapper"
       >
         <div
           class="column"
@@ -1971,7 +1971,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
             href="/"
           >
             <figure
-              class="image footer-logo"
+              class="footer-logo"
             >
               <img
                 alt="Logo"
@@ -1984,17 +1984,17 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
           </a>
         </div>
         <ul
-          class="column has-text-centered"
+          class="centered-col"
           role="list"
           style="flex-basis: auto;"
         >
           <div>
             <li
-              class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              class="footer-pg-link-wrapper"
               role="listitem"
             >
               <a
-                class="footer-link"
+                class="footer-link-base"
                 data-cy="footer-link-Contact"
                 href="/about#contact-us"
               >
@@ -2002,11 +2002,11 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
               </a>
             </li>
             <li
-              class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              class="footer-pg-link-wrapper"
               role="listitem"
             >
               <a
-                class="footer-link"
+                class="footer-link-base"
                 data-cy="footer-link-About"
                 href="/about"
               >
@@ -2014,11 +2014,11 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
               </a>
             </li>
             <li
-              class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              class="footer-pg-link-wrapper"
               role="listitem"
             >
               <a
-                class="footer-link"
+                class="footer-link-base"
                 data-cy="footer-link-Privacy"
                 href="/legal/privacy-policy"
               >
@@ -2026,7 +2026,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
               </a>
             </li>
             <li
-              class="dropdown is-hoverable is-up"
+              class="footer-dropup"
               role="listitem"
             >
               <div
@@ -2035,7 +2035,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                 <a
                   aria-controls="footer-dropdown-menu"
                   aria-haspopup="true"
-                  class="m-4 footer-link"
+                  class="footer-dropup-menu"
                   data-cy="footer-link-legal"
                   href="/legal"
                 >
@@ -2118,14 +2118,14 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
           class="column"
         >
           <ul
-            class="has-text-right has-text-centered-mobile footer-link"
+            class="footer-social-media"
           >
             <li
               class="faicon-link-container"
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -2151,7 +2151,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -2177,7 +2177,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -2202,7 +2202,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
         </div>
       </div>
       <div
-        class="footer-copyright has-text-centered has-text-grey-light is-size-7"
+        class="footer-copyright"
       >
         <p
           class="pt-3"
@@ -2303,16 +2303,16 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
     </nav>
     <main>
       <header
-        class="hero is-medium"
+        class="medium-hero"
       >
         <div
-          class="hero-body has-background-black"
+          class="pg-header-hero-black"
         >
           <div
             class="container has-text-centered"
           >
             <h1
-              class="title has-text-white is-1"
+              class="pg-header-title"
             >
               Baking Tutorial
               <span
@@ -2322,12 +2322,12 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
               </span>
             </h1>
             <p
-              class="subtitle has-text-white"
+              class="pg-header-subtitle"
             >
               a baking tutorial
             </p>
             <p
-              class="subtitle header-icon-row"
+              class="pg-header-icon-row"
             >
               <span
                 class="bulma-fa-mixin"
@@ -2338,7 +2338,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -2367,7 +2367,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
               >
                 <a
                   aria-label="social media link"
-                  class="faicon-link no-label is-white"
+                  class="faicon-link  is-white"
                   data-cy="faicon-link"
                   href="/"
                 >
@@ -2397,7 +2397,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
               >
                 <a
                   aria-label="social media link"
-                  class="faicon-link no-label is-white"
+                  class="faicon-link  is-white"
                   data-cy="faicon-link"
                   href="/"
                 >
@@ -2427,7 +2427,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
               >
                 <a
                   aria-label="social media link"
-                  class="faicon-link no-label is-white"
+                  class="faicon-link  is-white"
                   data-cy="faicon-link"
                   href="/"
                 >
@@ -2454,7 +2454,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
         </div>
       </header>
       <div
-        class="col-multi-wrapperr"
+        class="col-multi-wrapper"
       >
         <div
           class="post-toc"
@@ -2470,7 +2470,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
                 role="widget"
               >
                 <div
-                  class="container toc-links"
+                  class="toc-links"
                 >
                   <h6>
                     Table of Contents
@@ -2512,7 +2512,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
             </div>
           </section>
           <button
-            class="post-toc-mobile-btn"
+            class="primary-button-rounded"
             data-testid="post-toc-mobile-btn"
             style="display: block;"
           >
@@ -2567,7 +2567,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
               </div>
             </section>
             <div
-              class="menu sticky box mt-4 is-vertical "
+              class="sticky-social-wrapper is-vertical "
             >
               <p
                 class="menu-label"
@@ -2575,7 +2575,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
                 Share
               </p>
               <ul
-                class="has-text-black has-text-centered "
+                class="sticky-social-list-wrapper "
               >
                 <div
                   class="column"
@@ -2635,7 +2635,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
                   </svg>
                 </div>
                 <div
-                  class="column has-text-grey-lighter pt-4 pb-2"
+                  class="sticky-social-hidden"
                 >
                   <svg
                     aria-hidden="true"
@@ -2660,10 +2660,10 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
               class="section"
             >
               <div
-                class="container author-container"
+                class="author-container"
               >
                 <div
-                  class="level mb-2"
+                  class="author-dates-tags-wrapper"
                 >
                   <div
                     class="level-left"
@@ -2707,10 +2707,10 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
                   </div>
                 </div>
                 <div
-                  class="media p-2 m-2"
+                  class="author-media-wrapper"
                 >
                   <figure
-                    class="media-left ml-0 mb-0"
+                    class="author-media-figure"
                   >
                     <img
                       alt="author image"
@@ -2719,7 +2719,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
                     />
                   </figure>
                   <div
-                    class="media-content m-auto"
+                    class="author-media-content"
                   >
                     <div
                       class="content"
@@ -2735,7 +2735,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
                   </div>
                 </div>
                 <div
-                  class="level my-3"
+                  class="next-previous-wrapper"
                 >
                   <div
                     class="level-left"
@@ -2838,7 +2838,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
                 >
                   <li>
                     <a
-                      class="horizontal-post-tile"
+                      class="sidebar-post-tile"
                       href="/blog/baking-tutorial/"
                     >
                       <div
@@ -2873,7 +2873,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
                   </li>
                   <li>
                     <a
-                      class="horizontal-post-tile"
+                      class="sidebar-post-tile"
                       href="/blog/ten-best-things/"
                     >
                       <div
@@ -2908,7 +2908,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
                   </li>
                   <li>
                     <a
-                      class="horizontal-post-tile"
+                      class="sidebar-post-tile"
                       href="/blog/guide/"
                     >
                       <div
@@ -2956,7 +2956,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
                 >
                   <li>
                     <a
-                      class="horizontal-post-tile"
+                      class="sidebar-post-tile"
                       href="/blog/baking-tutorial/"
                     >
                       <div
@@ -2991,7 +2991,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
                   </li>
                   <li>
                     <a
-                      class="horizontal-post-tile"
+                      class="sidebar-post-tile"
                       href="/blog/ten-best-things/"
                     >
                       <div
@@ -3026,7 +3026,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
                   </li>
                   <li>
                     <a
-                      class="horizontal-post-tile"
+                      class="sidebar-post-tile"
                       href="/blog/guide/"
                     >
                       <div
@@ -3070,7 +3070,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
       class="footer"
     >
       <div
-        class="columns mb-1 is-vcentered has-text-centered-mobile"
+        class="footer-main-content-wrapper"
       >
         <div
           class="column"
@@ -3081,7 +3081,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
             href="/"
           >
             <figure
-              class="image footer-logo"
+              class="footer-logo"
             >
               <img
                 alt="Logo"
@@ -3094,17 +3094,17 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
           </a>
         </div>
         <ul
-          class="column has-text-centered"
+          class="centered-col"
           role="list"
           style="flex-basis: auto;"
         >
           <div>
             <li
-              class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              class="footer-pg-link-wrapper"
               role="listitem"
             >
               <a
-                class="footer-link"
+                class="footer-link-base"
                 data-cy="footer-link-Contact"
                 href="/about#contact-us"
               >
@@ -3112,11 +3112,11 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
               </a>
             </li>
             <li
-              class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              class="footer-pg-link-wrapper"
               role="listitem"
             >
               <a
-                class="footer-link"
+                class="footer-link-base"
                 data-cy="footer-link-About"
                 href="/about"
               >
@@ -3124,11 +3124,11 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
               </a>
             </li>
             <li
-              class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              class="footer-pg-link-wrapper"
               role="listitem"
             >
               <a
-                class="footer-link"
+                class="footer-link-base"
                 data-cy="footer-link-Privacy"
                 href="/legal/privacy-policy"
               >
@@ -3136,7 +3136,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
               </a>
             </li>
             <li
-              class="dropdown is-hoverable is-up"
+              class="footer-dropup"
               role="listitem"
             >
               <div
@@ -3145,7 +3145,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
                 <a
                   aria-controls="footer-dropdown-menu"
                   aria-haspopup="true"
-                  class="m-4 footer-link"
+                  class="footer-dropup-menu"
                   data-cy="footer-link-legal"
                   href="/legal"
                 >
@@ -3228,14 +3228,14 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
           class="column"
         >
           <ul
-            class="has-text-right has-text-centered-mobile footer-link"
+            class="footer-social-media"
           >
             <li
               class="faicon-link-container"
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -3261,7 +3261,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -3287,7 +3287,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -3312,7 +3312,7 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
         </div>
       </div>
       <div
-        class="footer-copyright has-text-centered has-text-grey-light is-size-7"
+        class="footer-copyright"
       >
         <p
           class="pt-3"
@@ -3433,16 +3433,16 @@ exports[`Blog Posts Page renders correctly 1`] = `
     </nav>
     <main>
       <header
-        class="hero is-medium"
+        class="medium-hero"
       >
         <div
-          class="hero-body has-background-black"
+          class="pg-header-hero-black"
         >
           <div
             class="container has-text-centered"
           >
             <h1
-              class="title has-text-white is-1"
+              class="pg-header-title"
             >
               Baking Tutorial
               <span
@@ -3452,12 +3452,12 @@ exports[`Blog Posts Page renders correctly 1`] = `
               </span>
             </h1>
             <p
-              class="subtitle has-text-white"
+              class="pg-header-subtitle"
             >
               a baking tutorial
             </p>
             <p
-              class="subtitle header-icon-row"
+              class="pg-header-icon-row"
             >
               <span
                 class="bulma-fa-mixin"
@@ -3468,7 +3468,7 @@ exports[`Blog Posts Page renders correctly 1`] = `
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -3497,7 +3497,7 @@ exports[`Blog Posts Page renders correctly 1`] = `
               >
                 <a
                   aria-label="social media link"
-                  class="faicon-link no-label is-white"
+                  class="faicon-link  is-white"
                   data-cy="faicon-link"
                   href="/"
                 >
@@ -3527,7 +3527,7 @@ exports[`Blog Posts Page renders correctly 1`] = `
               >
                 <a
                   aria-label="social media link"
-                  class="faicon-link no-label is-white"
+                  class="faicon-link  is-white"
                   data-cy="faicon-link"
                   href="/"
                 >
@@ -3557,7 +3557,7 @@ exports[`Blog Posts Page renders correctly 1`] = `
               >
                 <a
                   aria-label="social media link"
-                  class="faicon-link no-label is-white"
+                  class="faicon-link  is-white"
                   data-cy="faicon-link"
                   href="/"
                 >
@@ -3584,7 +3584,7 @@ exports[`Blog Posts Page renders correctly 1`] = `
         </div>
       </header>
       <div
-        class="col-multi-wrapperr"
+        class="col-multi-wrapper"
       >
         <div
           class="post-toc"
@@ -3600,7 +3600,7 @@ exports[`Blog Posts Page renders correctly 1`] = `
                 role="widget"
               >
                 <div
-                  class="container toc-links"
+                  class="toc-links"
                 >
                   <h6>
                     Table of Contents
@@ -3642,7 +3642,7 @@ exports[`Blog Posts Page renders correctly 1`] = `
             </div>
           </section>
           <button
-            class="post-toc-mobile-btn"
+            class="primary-button-rounded"
             data-testid="post-toc-mobile-btn"
             style="display: none;"
           >
@@ -3700,10 +3700,10 @@ exports[`Blog Posts Page renders correctly 1`] = `
               class="section"
             >
               <div
-                class="container author-container"
+                class="author-container"
               >
                 <div
-                  class="level mb-2"
+                  class="author-dates-tags-wrapper"
                 >
                   <div
                     class="level-left"
@@ -3747,10 +3747,10 @@ exports[`Blog Posts Page renders correctly 1`] = `
                   </div>
                 </div>
                 <div
-                  class="media p-2 m-2"
+                  class="author-media-wrapper"
                 >
                   <figure
-                    class="media-left ml-0 mb-0"
+                    class="author-media-figure"
                   >
                     <img
                       alt="author image"
@@ -3759,7 +3759,7 @@ exports[`Blog Posts Page renders correctly 1`] = `
                     />
                   </figure>
                   <div
-                    class="media-content m-auto"
+                    class="author-media-content"
                   >
                     <div
                       class="content"
@@ -3775,7 +3775,7 @@ exports[`Blog Posts Page renders correctly 1`] = `
                   </div>
                 </div>
                 <div
-                  class="level my-3"
+                  class="next-previous-wrapper"
                 >
                   <div
                     class="level-left"
@@ -3878,7 +3878,7 @@ exports[`Blog Posts Page renders correctly 1`] = `
                 >
                   <li>
                     <a
-                      class="horizontal-post-tile"
+                      class="sidebar-post-tile"
                       href="/blog/baking-tutorial/"
                     >
                       <div
@@ -3913,7 +3913,7 @@ exports[`Blog Posts Page renders correctly 1`] = `
                   </li>
                   <li>
                     <a
-                      class="horizontal-post-tile"
+                      class="sidebar-post-tile"
                       href="/blog/ten-best-things/"
                     >
                       <div
@@ -3948,7 +3948,7 @@ exports[`Blog Posts Page renders correctly 1`] = `
                   </li>
                   <li>
                     <a
-                      class="horizontal-post-tile"
+                      class="sidebar-post-tile"
                       href="/blog/guide/"
                     >
                       <div
@@ -3996,7 +3996,7 @@ exports[`Blog Posts Page renders correctly 1`] = `
                 >
                   <li>
                     <a
-                      class="horizontal-post-tile"
+                      class="sidebar-post-tile"
                       href="/blog/baking-tutorial/"
                     >
                       <div
@@ -4031,7 +4031,7 @@ exports[`Blog Posts Page renders correctly 1`] = `
                   </li>
                   <li>
                     <a
-                      class="horizontal-post-tile"
+                      class="sidebar-post-tile"
                       href="/blog/ten-best-things/"
                     >
                       <div
@@ -4066,7 +4066,7 @@ exports[`Blog Posts Page renders correctly 1`] = `
                   </li>
                   <li>
                     <a
-                      class="horizontal-post-tile"
+                      class="sidebar-post-tile"
                       href="/blog/guide/"
                     >
                       <div
@@ -4104,7 +4104,7 @@ exports[`Blog Posts Page renders correctly 1`] = `
             </aside>
           </div>
           <div
-            class="menu sticky box mt-4  "
+            class="sticky-social-wrapper  "
           >
             <p
               class="menu-label"
@@ -4112,7 +4112,7 @@ exports[`Blog Posts Page renders correctly 1`] = `
               Share this post
             </p>
             <ul
-              class="has-text-black has-text-centered columns"
+              class="sticky-social-list-wrapper columns"
             >
               <div
                 class="column"
@@ -4180,7 +4180,7 @@ exports[`Blog Posts Page renders correctly 1`] = `
       class="footer"
     >
       <div
-        class="columns mb-1 is-vcentered has-text-centered-mobile"
+        class="footer-main-content-wrapper"
       >
         <div
           class="column"
@@ -4191,7 +4191,7 @@ exports[`Blog Posts Page renders correctly 1`] = `
             href="/"
           >
             <figure
-              class="image footer-logo"
+              class="footer-logo"
             >
               <img
                 alt="Logo"
@@ -4204,17 +4204,17 @@ exports[`Blog Posts Page renders correctly 1`] = `
           </a>
         </div>
         <ul
-          class="column has-text-centered"
+          class="centered-col"
           role="list"
           style="flex-basis: auto;"
         >
           <div>
             <li
-              class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              class="footer-pg-link-wrapper"
               role="listitem"
             >
               <a
-                class="footer-link"
+                class="footer-link-base"
                 data-cy="footer-link-Contact"
                 href="/about#contact-us"
               >
@@ -4222,11 +4222,11 @@ exports[`Blog Posts Page renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              class="footer-pg-link-wrapper"
               role="listitem"
             >
               <a
-                class="footer-link"
+                class="footer-link-base"
                 data-cy="footer-link-About"
                 href="/about"
               >
@@ -4234,11 +4234,11 @@ exports[`Blog Posts Page renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              class="footer-pg-link-wrapper"
               role="listitem"
             >
               <a
-                class="footer-link"
+                class="footer-link-base"
                 data-cy="footer-link-Privacy"
                 href="/legal/privacy-policy"
               >
@@ -4246,7 +4246,7 @@ exports[`Blog Posts Page renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="dropdown is-hoverable is-up"
+              class="footer-dropup"
               role="listitem"
             >
               <div
@@ -4255,7 +4255,7 @@ exports[`Blog Posts Page renders correctly 1`] = `
                 <a
                   aria-controls="footer-dropdown-menu"
                   aria-haspopup="true"
-                  class="m-4 footer-link"
+                  class="footer-dropup-menu"
                   data-cy="footer-link-legal"
                   href="/legal"
                 >
@@ -4338,14 +4338,14 @@ exports[`Blog Posts Page renders correctly 1`] = `
           class="column"
         >
           <ul
-            class="has-text-right has-text-centered-mobile footer-link"
+            class="footer-social-media"
           >
             <li
               class="faicon-link-container"
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -4371,7 +4371,7 @@ exports[`Blog Posts Page renders correctly 1`] = `
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -4397,7 +4397,7 @@ exports[`Blog Posts Page renders correctly 1`] = `
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -4422,7 +4422,7 @@ exports[`Blog Posts Page renders correctly 1`] = `
         </div>
       </div>
       <div
-        class="footer-copyright has-text-centered has-text-grey-light is-size-7"
+        class="footer-copyright"
       >
         <p
           class="pt-3"
@@ -4523,16 +4523,16 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
     </nav>
     <main>
       <header
-        class="hero is-medium"
+        class="medium-hero"
       >
         <div
-          class="hero-body has-background-black"
+          class="pg-header-hero-black"
         >
           <div
             class="container has-text-centered"
           >
             <h1
-              class="title has-text-white is-1"
+              class="pg-header-title"
             >
               Baking Tutorial
               <span
@@ -4542,12 +4542,12 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
               </span>
             </h1>
             <p
-              class="subtitle has-text-white"
+              class="pg-header-subtitle"
             >
               a baking tutorial
             </p>
             <p
-              class="subtitle header-icon-row"
+              class="pg-header-icon-row"
             >
               <span
                 class="bulma-fa-mixin"
@@ -4558,7 +4558,7 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -4587,7 +4587,7 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
               >
                 <a
                   aria-label="social media link"
-                  class="faicon-link no-label is-white"
+                  class="faicon-link  is-white"
                   data-cy="faicon-link"
                   href="/"
                 >
@@ -4617,7 +4617,7 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
               >
                 <a
                   aria-label="social media link"
-                  class="faicon-link no-label is-white"
+                  class="faicon-link  is-white"
                   data-cy="faicon-link"
                   href="/"
                 >
@@ -4647,7 +4647,7 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
               >
                 <a
                   aria-label="social media link"
-                  class="faicon-link no-label is-white"
+                  class="faicon-link  is-white"
                   data-cy="faicon-link"
                   href="/"
                 >
@@ -4674,7 +4674,7 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
         </div>
       </header>
       <div
-        class="col-multi-wrapperr"
+        class="col-multi-wrapper"
       >
         <div
           class="post-toc"
@@ -4690,7 +4690,7 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
                 role="widget"
               >
                 <div
-                  class="container toc-links"
+                  class="toc-links"
                 >
                   <h6>
                     Table of Contents
@@ -4732,7 +4732,7 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
             </div>
           </section>
           <button
-            class="post-toc-mobile-btn"
+            class="primary-button-rounded"
             data-testid="post-toc-mobile-btn"
             style="display: none;"
           >
@@ -4787,7 +4787,7 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
               </div>
             </section>
             <div
-              class="menu sticky box mt-4 is-vertical "
+              class="sticky-social-wrapper is-vertical "
             >
               <p
                 class="menu-label"
@@ -4795,7 +4795,7 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
                 Share
               </p>
               <ul
-                class="has-text-black has-text-centered "
+                class="sticky-social-list-wrapper "
               >
                 <div
                   class="column"
@@ -4855,7 +4855,7 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
                   </svg>
                 </div>
                 <div
-                  class="column has-text-grey-lighter pt-4 pb-2"
+                  class="sticky-social-hidden"
                 >
                   <svg
                     aria-hidden="true"
@@ -4880,10 +4880,10 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
               class="section"
             >
               <div
-                class="container author-container"
+                class="author-container"
               >
                 <div
-                  class="level mb-2"
+                  class="author-dates-tags-wrapper"
                 >
                   <div
                     class="level-left"
@@ -4927,10 +4927,10 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
                   </div>
                 </div>
                 <div
-                  class="media p-2 m-2"
+                  class="author-media-wrapper"
                 >
                   <figure
-                    class="media-left ml-0 mb-0"
+                    class="author-media-figure"
                   >
                     <img
                       alt="author image"
@@ -4939,7 +4939,7 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
                     />
                   </figure>
                   <div
-                    class="media-content m-auto"
+                    class="author-media-content"
                   >
                     <div
                       class="content"
@@ -4955,7 +4955,7 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
                   </div>
                 </div>
                 <div
-                  class="level my-3"
+                  class="next-previous-wrapper"
                 >
                   <div
                     class="level-left"
@@ -5058,7 +5058,7 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
                 >
                   <li>
                     <a
-                      class="horizontal-post-tile"
+                      class="sidebar-post-tile"
                       href="/blog/baking-tutorial/"
                     >
                       <div
@@ -5093,7 +5093,7 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
                   </li>
                   <li>
                     <a
-                      class="horizontal-post-tile"
+                      class="sidebar-post-tile"
                       href="/blog/ten-best-things/"
                     >
                       <div
@@ -5128,7 +5128,7 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
                   </li>
                   <li>
                     <a
-                      class="horizontal-post-tile"
+                      class="sidebar-post-tile"
                       href="/blog/guide/"
                     >
                       <div
@@ -5176,7 +5176,7 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
                 >
                   <li>
                     <a
-                      class="horizontal-post-tile"
+                      class="sidebar-post-tile"
                       href="/blog/baking-tutorial/"
                     >
                       <div
@@ -5211,7 +5211,7 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
                   </li>
                   <li>
                     <a
-                      class="horizontal-post-tile"
+                      class="sidebar-post-tile"
                       href="/blog/ten-best-things/"
                     >
                       <div
@@ -5246,7 +5246,7 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
                   </li>
                   <li>
                     <a
-                      class="horizontal-post-tile"
+                      class="sidebar-post-tile"
                       href="/blog/guide/"
                     >
                       <div
@@ -5290,7 +5290,7 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
       class="footer"
     >
       <div
-        class="columns mb-1 is-vcentered has-text-centered-mobile"
+        class="footer-main-content-wrapper"
       >
         <div
           class="column"
@@ -5301,7 +5301,7 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
             href="/"
           >
             <figure
-              class="image footer-logo"
+              class="footer-logo"
             >
               <img
                 alt="Logo"
@@ -5314,17 +5314,17 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
           </a>
         </div>
         <ul
-          class="column has-text-centered"
+          class="centered-col"
           role="list"
           style="flex-basis: auto;"
         >
           <div>
             <li
-              class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              class="footer-pg-link-wrapper"
               role="listitem"
             >
               <a
-                class="footer-link"
+                class="footer-link-base"
                 data-cy="footer-link-Contact"
                 href="/about#contact-us"
               >
@@ -5332,11 +5332,11 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
               </a>
             </li>
             <li
-              class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              class="footer-pg-link-wrapper"
               role="listitem"
             >
               <a
-                class="footer-link"
+                class="footer-link-base"
                 data-cy="footer-link-About"
                 href="/about"
               >
@@ -5344,11 +5344,11 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
               </a>
             </li>
             <li
-              class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              class="footer-pg-link-wrapper"
               role="listitem"
             >
               <a
-                class="footer-link"
+                class="footer-link-base"
                 data-cy="footer-link-Privacy"
                 href="/legal/privacy-policy"
               >
@@ -5356,7 +5356,7 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
               </a>
             </li>
             <li
-              class="dropdown is-hoverable is-up"
+              class="footer-dropup"
               role="listitem"
             >
               <div
@@ -5365,7 +5365,7 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
                 <a
                   aria-controls="footer-dropdown-menu"
                   aria-haspopup="true"
-                  class="m-4 footer-link"
+                  class="footer-dropup-menu"
                   data-cy="footer-link-legal"
                   href="/legal"
                 >
@@ -5448,14 +5448,14 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
           class="column"
         >
           <ul
-            class="has-text-right has-text-centered-mobile footer-link"
+            class="footer-social-media"
           >
             <li
               class="faicon-link-container"
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -5481,7 +5481,7 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -5507,7 +5507,7 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -5532,7 +5532,7 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
         </div>
       </div>
       <div
-        class="footer-copyright has-text-centered has-text-grey-light is-size-7"
+        class="footer-copyright"
       >
         <p
           class="pt-3"
@@ -5633,16 +5633,16 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
     </nav>
     <main>
       <header
-        class="hero is-medium"
+        class="medium-hero"
       >
         <div
-          class="hero-body has-background-black"
+          class="pg-header-hero-black"
         >
           <div
             class="container has-text-centered"
           >
             <h1
-              class="title has-text-white is-1"
+              class="pg-header-title"
             >
               Baking Tutorial
               <span
@@ -5652,12 +5652,12 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
               </span>
             </h1>
             <p
-              class="subtitle has-text-white"
+              class="pg-header-subtitle"
             >
               a baking tutorial
             </p>
             <p
-              class="subtitle header-icon-row"
+              class="pg-header-icon-row"
             >
               <span
                 class="bulma-fa-mixin"
@@ -5668,7 +5668,7 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -5697,7 +5697,7 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
               >
                 <a
                   aria-label="social media link"
-                  class="faicon-link no-label is-white"
+                  class="faicon-link  is-white"
                   data-cy="faicon-link"
                   href="/"
                 >
@@ -5727,7 +5727,7 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
               >
                 <a
                   aria-label="social media link"
-                  class="faicon-link no-label is-white"
+                  class="faicon-link  is-white"
                   data-cy="faicon-link"
                   href="/"
                 >
@@ -5757,7 +5757,7 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
               >
                 <a
                   aria-label="social media link"
-                  class="faicon-link no-label is-white"
+                  class="faicon-link  is-white"
                   data-cy="faicon-link"
                   href="/"
                 >
@@ -5784,7 +5784,7 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
         </div>
       </header>
       <div
-        class="col-multi-wrapperr"
+        class="col-multi-wrapper"
       >
         <div
           class="post-toc"
@@ -5800,7 +5800,7 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
                 role="widget"
               >
                 <div
-                  class="container toc-links"
+                  class="toc-links"
                 >
                   <h6>
                     Table of Contents
@@ -5842,7 +5842,7 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
             </div>
           </section>
           <button
-            class="post-toc-mobile-btn"
+            class="primary-button-rounded"
             data-testid="post-toc-mobile-btn"
             style="display: block;"
           >
@@ -5897,7 +5897,7 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
               </div>
             </section>
             <div
-              class="menu sticky box mt-4 is-vertical "
+              class="sticky-social-wrapper is-vertical "
             >
               <p
                 class="menu-label"
@@ -5905,7 +5905,7 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
                 Share
               </p>
               <ul
-                class="has-text-black has-text-centered "
+                class="sticky-social-list-wrapper "
               >
                 <div
                   class="column"
@@ -5965,7 +5965,7 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
                   </svg>
                 </div>
                 <div
-                  class="column has-text-grey-lighter pt-4 pb-2"
+                  class="sticky-social-hidden"
                 >
                   <svg
                     aria-hidden="true"
@@ -5990,10 +5990,10 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
               class="section"
             >
               <div
-                class="container author-container"
+                class="author-container"
               >
                 <div
-                  class="level mb-2"
+                  class="author-dates-tags-wrapper"
                 >
                   <div
                     class="level-left"
@@ -6037,10 +6037,10 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
                   </div>
                 </div>
                 <div
-                  class="media p-2 m-2"
+                  class="author-media-wrapper"
                 >
                   <figure
-                    class="media-left ml-0 mb-0"
+                    class="author-media-figure"
                   >
                     <img
                       alt="author image"
@@ -6049,7 +6049,7 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
                     />
                   </figure>
                   <div
-                    class="media-content m-auto"
+                    class="author-media-content"
                   >
                     <div
                       class="content"
@@ -6065,7 +6065,7 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
                   </div>
                 </div>
                 <div
-                  class="level my-3"
+                  class="next-previous-wrapper"
                 >
                   <div
                     class="level-left"
@@ -6168,7 +6168,7 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
                 >
                   <li>
                     <a
-                      class="horizontal-post-tile"
+                      class="sidebar-post-tile"
                       href="/blog/baking-tutorial/"
                     >
                       <div
@@ -6203,7 +6203,7 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
                   </li>
                   <li>
                     <a
-                      class="horizontal-post-tile"
+                      class="sidebar-post-tile"
                       href="/blog/ten-best-things/"
                     >
                       <div
@@ -6238,7 +6238,7 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
                   </li>
                   <li>
                     <a
-                      class="horizontal-post-tile"
+                      class="sidebar-post-tile"
                       href="/blog/guide/"
                     >
                       <div
@@ -6286,7 +6286,7 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
                 >
                   <li>
                     <a
-                      class="horizontal-post-tile"
+                      class="sidebar-post-tile"
                       href="/blog/baking-tutorial/"
                     >
                       <div
@@ -6321,7 +6321,7 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
                   </li>
                   <li>
                     <a
-                      class="horizontal-post-tile"
+                      class="sidebar-post-tile"
                       href="/blog/ten-best-things/"
                     >
                       <div
@@ -6356,7 +6356,7 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
                   </li>
                   <li>
                     <a
-                      class="horizontal-post-tile"
+                      class="sidebar-post-tile"
                       href="/blog/guide/"
                     >
                       <div
@@ -6400,7 +6400,7 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
       class="footer"
     >
       <div
-        class="columns mb-1 is-vcentered has-text-centered-mobile"
+        class="footer-main-content-wrapper"
       >
         <div
           class="column"
@@ -6411,7 +6411,7 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
             href="/"
           >
             <figure
-              class="image footer-logo"
+              class="footer-logo"
             >
               <img
                 alt="Logo"
@@ -6424,17 +6424,17 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
           </a>
         </div>
         <ul
-          class="column has-text-centered"
+          class="centered-col"
           role="list"
           style="flex-basis: auto;"
         >
           <div>
             <li
-              class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              class="footer-pg-link-wrapper"
               role="listitem"
             >
               <a
-                class="footer-link"
+                class="footer-link-base"
                 data-cy="footer-link-Contact"
                 href="/about#contact-us"
               >
@@ -6442,11 +6442,11 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
               </a>
             </li>
             <li
-              class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              class="footer-pg-link-wrapper"
               role="listitem"
             >
               <a
-                class="footer-link"
+                class="footer-link-base"
                 data-cy="footer-link-About"
                 href="/about"
               >
@@ -6454,11 +6454,11 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
               </a>
             </li>
             <li
-              class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              class="footer-pg-link-wrapper"
               role="listitem"
             >
               <a
-                class="footer-link"
+                class="footer-link-base"
                 data-cy="footer-link-Privacy"
                 href="/legal/privacy-policy"
               >
@@ -6466,7 +6466,7 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
               </a>
             </li>
             <li
-              class="dropdown is-hoverable is-up"
+              class="footer-dropup"
               role="listitem"
             >
               <div
@@ -6475,7 +6475,7 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
                 <a
                   aria-controls="footer-dropdown-menu"
                   aria-haspopup="true"
-                  class="m-4 footer-link"
+                  class="footer-dropup-menu"
                   data-cy="footer-link-legal"
                   href="/legal"
                 >
@@ -6558,14 +6558,14 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
           class="column"
         >
           <ul
-            class="has-text-right has-text-centered-mobile footer-link"
+            class="footer-social-media"
           >
             <li
               class="faicon-link-container"
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -6591,7 +6591,7 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -6617,7 +6617,7 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -6642,7 +6642,7 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
         </div>
       </div>
       <div
-        class="footer-copyright has-text-centered has-text-grey-light is-size-7"
+        class="footer-copyright"
       >
         <p
           class="pt-3"

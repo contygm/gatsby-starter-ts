@@ -6,10 +6,10 @@ exports[`PageHeader default renders correctly 1`] = `
     class="section"
   >
     <div
-      class="container author-container"
+      class="author-container"
     >
       <div
-        class="level mb-2"
+        class="author-dates-tags-wrapper"
       >
         <div
           class="level-left"
@@ -53,10 +53,10 @@ exports[`PageHeader default renders correctly 1`] = `
         </div>
       </div>
       <div
-        class="media p-2 m-2"
+        class="author-media-wrapper"
       >
         <figure
-          class="media-left ml-0 mb-0"
+          class="author-media-figure"
         >
           <img
             alt="author image"
@@ -65,7 +65,7 @@ exports[`PageHeader default renders correctly 1`] = `
           />
         </figure>
         <div
-          class="media-content m-auto"
+          class="author-media-content"
         >
           <div
             class="content"
@@ -81,7 +81,7 @@ exports[`PageHeader default renders correctly 1`] = `
         </div>
       </div>
       <div
-        class="level my-3"
+        class="next-previous-wrapper"
       >
         <div
           class="level-left"
@@ -169,10 +169,10 @@ exports[`PageHeader renders when previousPost is defined 1`] = `
     class="section"
   >
     <div
-      class="container author-container"
+      class="author-container"
     >
       <div
-        class="level mb-2"
+        class="author-dates-tags-wrapper"
       >
         <div
           class="level-left"
@@ -216,10 +216,10 @@ exports[`PageHeader renders when previousPost is defined 1`] = `
         </div>
       </div>
       <div
-        class="media p-2 m-2"
+        class="author-media-wrapper"
       >
         <figure
-          class="media-left ml-0 mb-0"
+          class="author-media-figure"
         >
           <img
             alt="author image"
@@ -228,7 +228,7 @@ exports[`PageHeader renders when previousPost is defined 1`] = `
           />
         </figure>
         <div
-          class="media-content m-auto"
+          class="author-media-content"
         >
           <div
             class="content"
@@ -244,7 +244,7 @@ exports[`PageHeader renders when previousPost is defined 1`] = `
         </div>
       </div>
       <div
-        class="level my-3"
+        class="next-previous-wrapper"
       >
         <div
           class="level-left"
@@ -272,10 +272,10 @@ exports[`PageHeader renders when previousPost is undefined 1`] = `
     class="section"
   >
     <div
-      class="container author-container"
+      class="author-container"
     >
       <div
-        class="level mb-2"
+        class="author-dates-tags-wrapper"
       >
         <div
           class="level-left"
@@ -319,10 +319,10 @@ exports[`PageHeader renders when previousPost is undefined 1`] = `
         </div>
       </div>
       <div
-        class="media p-2 m-2"
+        class="author-media-wrapper"
       >
         <figure
-          class="media-left ml-0 mb-0"
+          class="author-media-figure"
         >
           <img
             alt="author image"
@@ -331,7 +331,7 @@ exports[`PageHeader renders when previousPost is undefined 1`] = `
           />
         </figure>
         <div
-          class="media-content m-auto"
+          class="author-media-content"
         >
           <div
             class="content"
@@ -347,7 +347,7 @@ exports[`PageHeader renders when previousPost is undefined 1`] = `
         </div>
       </div>
       <div
-        class="level my-3"
+        class="next-previous-wrapper"
       >
         <div
           class="level-left"

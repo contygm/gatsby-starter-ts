@@ -3,16 +3,16 @@
 exports[`PageHeader centered renders correctly 1`] = `
 <DocumentFragment>
   <header
-    class="hero is-medium"
+    class="medium-hero"
   >
     <div
-      class="hero-body has-background-black"
+      class="pg-header-hero-black"
     >
       <div
         class="container has-text-centered"
       >
         <h1
-          class="title has-text-white is-1"
+          class="pg-header-title"
         >
           Starter
           <span
@@ -30,16 +30,16 @@ exports[`PageHeader centered renders correctly 1`] = `
 exports[`PageHeader default renders correctly 1`] = `
 <DocumentFragment>
   <header
-    class="hero is-medium"
+    class="medium-hero"
   >
     <div
-      class="hero-body has-background-black"
+      class="pg-header-hero-black"
     >
       <div
         class="container "
       >
         <h1
-          class="title has-text-white is-1"
+          class="pg-header-title"
         >
           Starter
           <span

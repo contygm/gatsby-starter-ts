@@ -9,16 +9,15 @@ exports[`GlossaryIndex default renders correctly 1`] = `
       class="is-centered"
     >
       <section
-        class="section pt-0"
+        class="gloss-section-wrapper"
       >
         <h2
-          class="title is-size-2"
+          class="title-two"
           id="A"
         >
           A
         </h2>
         <div
-          class=""
           data-testid="definition-card"
         >
           <div
@@ -43,7 +42,7 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                         class="level-item"
                       >
                         <h3
-                          class="title is-3"
+                          class="title-three"
                           id="air"
                         >
                           Air
@@ -54,7 +53,7 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                       class="level-right"
                     >
                       <div
-                        class="level-item has-text-centered"
+                        class="centered-level"
                       >
                         <div>
                           <p
@@ -70,7 +69,7 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                         </div>
                       </div>
                       <div
-                        class="level-item has-text-centered"
+                        class="centered-level"
                       >
                         <div>
                           <p
@@ -107,10 +106,10 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                 class="content"
               >
                 <div
-                  class="level "
+                  class="level"
                 >
                   <div
-                    class="level-item is-justify-content-left"
+                    class="justified-left-level"
                   >
                     <div>
                       <h4>
@@ -137,7 +136,7 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                     </div>
                   </div>
                   <div
-                    class="level-item is-justify-content-left"
+                    class="justified-left-level"
                   >
                     <div>
                       <h4>
@@ -170,7 +169,7 @@ exports[`GlossaryIndex default renders correctly 1`] = `
               class="card-footer"
             >
               <p
-                class="my-2 ml-5 mr-2"
+                class="definition-card-tag-title"
               >
                 Tags:
               </p>
@@ -178,14 +177,14 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                 class="tags"
               >
                 <a
-                  class="tag is-success is-light"
+                  class="definition-card-tag"
                   href="?tag=two"
                   id="two"
                 >
                   two
                 </a>
                 <a
-                  class="tag is-success is-light"
+                  class="definition-card-tag"
                   href="?tag=three"
                   id="three"
                 >
@@ -196,7 +195,6 @@ exports[`GlossaryIndex default renders correctly 1`] = `
           </div>
         </div>
         <div
-          class=""
           data-testid="definition-card"
         >
           <div
@@ -221,7 +219,7 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                         class="level-item"
                       >
                         <h3
-                          class="title is-3"
+                          class="title-three"
                           id="atom"
                         >
                           Atom
@@ -232,7 +230,7 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                       class="level-right"
                     >
                       <div
-                        class="level-item has-text-centered"
+                        class="centered-level"
                       >
                         <div>
                           <p
@@ -248,7 +246,7 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                         </div>
                       </div>
                       <div
-                        class="level-item has-text-centered"
+                        class="centered-level"
                       >
                         <div>
                           <p
@@ -285,10 +283,10 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                 class="content"
               >
                 <div
-                  class="level "
+                  class="level"
                 >
                   <div
-                    class="level-item is-justify-content-left"
+                    class="justified-left-level"
                   >
                     <div>
                       <h4>
@@ -315,7 +313,7 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                     </div>
                   </div>
                   <div
-                    class="level-item is-justify-content-left"
+                    class="justified-left-level"
                   >
                     <div>
                       <h4>
@@ -348,7 +346,7 @@ exports[`GlossaryIndex default renders correctly 1`] = `
               class="card-footer"
             >
               <p
-                class="my-2 ml-5 mr-2"
+                class="definition-card-tag-title"
               >
                 Tags:
               </p>
@@ -356,14 +354,14 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                 class="tags"
               >
                 <a
-                  class="tag is-success is-light"
+                  class="definition-card-tag"
                   href="?tag=two"
                   id="two"
                 >
                   two
                 </a>
                 <a
-                  class="tag is-success is-light"
+                  class="definition-card-tag"
                   href="?tag=one"
                   id="one"
                 >
@@ -375,16 +373,15 @@ exports[`GlossaryIndex default renders correctly 1`] = `
         </div>
       </section>
       <section
-        class="section pt-0"
+        class="gloss-section-wrapper"
       >
         <h2
-          class="title is-size-2"
+          class="title-two"
           id="C"
         >
           C
         </h2>
         <div
-          class=""
           data-testid="definition-card"
         >
           <div
@@ -409,7 +406,7 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                         class="level-item"
                       >
                         <h3
-                          class="title is-3"
+                          class="title-three"
                           id="cloud"
                         >
                           Cloud
@@ -420,7 +417,7 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                       class="level-right"
                     >
                       <div
-                        class="level-item has-text-centered"
+                        class="centered-level"
                       >
                         <div>
                           <p
@@ -436,7 +433,7 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                         </div>
                       </div>
                       <div
-                        class="level-item has-text-centered"
+                        class="centered-level"
                       >
                         <div>
                           <p
@@ -473,10 +470,10 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                 class="content"
               >
                 <div
-                  class="level "
+                  class="level"
                 >
                   <div
-                    class="level-item is-justify-content-left"
+                    class="justified-left-level"
                   >
                     <div>
                       <h4>
@@ -503,7 +500,7 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                     </div>
                   </div>
                   <div
-                    class="level-item is-justify-content-left"
+                    class="justified-left-level"
                   >
                     <div>
                       <h4>
@@ -536,7 +533,7 @@ exports[`GlossaryIndex default renders correctly 1`] = `
               class="card-footer"
             >
               <p
-                class="my-2 ml-5 mr-2"
+                class="definition-card-tag-title"
               >
                 Tags:
               </p>
@@ -544,14 +541,14 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                 class="tags"
               >
                 <a
-                  class="tag is-success is-light"
+                  class="definition-card-tag"
                   href="?tag=two"
                   id="two"
                 >
                   two
                 </a>
                 <a
-                  class="tag is-success is-light"
+                  class="definition-card-tag"
                   href="?tag=one"
                   id="one"
                 >
@@ -563,16 +560,15 @@ exports[`GlossaryIndex default renders correctly 1`] = `
         </div>
       </section>
       <section
-        class="section pt-0"
+        class="gloss-section-wrapper"
       >
         <h2
-          class="title is-size-2"
+          class="title-two"
           id="M"
         >
           M
         </h2>
         <div
-          class=""
           data-testid="definition-card"
         >
           <div
@@ -597,7 +593,7 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                         class="level-item"
                       >
                         <h3
-                          class="title is-3"
+                          class="title-three"
                           id="moon"
                         >
                           Moon
@@ -608,7 +604,7 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                       class="level-right"
                     >
                       <div
-                        class="level-item has-text-centered"
+                        class="centered-level"
                       >
                         <div>
                           <p
@@ -624,7 +620,7 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                         </div>
                       </div>
                       <div
-                        class="level-item has-text-centered"
+                        class="centered-level"
                       >
                         <div>
                           <p
@@ -661,10 +657,10 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                 class="content"
               >
                 <div
-                  class="level "
+                  class="level"
                 >
                   <div
-                    class="level-item is-justify-content-left"
+                    class="justified-left-level"
                   >
                     <div>
                       <h4>
@@ -691,7 +687,7 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                     </div>
                   </div>
                   <div
-                    class="level-item is-justify-content-left"
+                    class="justified-left-level"
                   >
                     <div>
                       <h4>
@@ -724,7 +720,7 @@ exports[`GlossaryIndex default renders correctly 1`] = `
               class="card-footer"
             >
               <p
-                class="my-2 ml-5 mr-2"
+                class="definition-card-tag-title"
               >
                 Tags:
               </p>
@@ -732,7 +728,7 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                 class="tags"
               >
                 <a
-                  class="tag is-success is-light"
+                  class="definition-card-tag"
                   href="?tag=two"
                   id="two"
                 >
@@ -744,16 +740,15 @@ exports[`GlossaryIndex default renders correctly 1`] = `
         </div>
       </section>
       <section
-        class="section pt-0"
+        class="gloss-section-wrapper"
       >
         <h2
-          class="title is-size-2"
+          class="title-two"
           id="W"
         >
           W
         </h2>
         <div
-          class=""
           data-testid="definition-card"
         >
           <div
@@ -778,7 +773,7 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                         class="level-item"
                       >
                         <h3
-                          class="title is-3"
+                          class="title-three"
                           id="window"
                         >
                           Window
@@ -789,7 +784,7 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                       class="level-right"
                     >
                       <div
-                        class="level-item has-text-centered"
+                        class="centered-level"
                       >
                         <div>
                           <p
@@ -805,7 +800,7 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                         </div>
                       </div>
                       <div
-                        class="level-item has-text-centered"
+                        class="centered-level"
                       >
                         <div>
                           <p
@@ -842,10 +837,10 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                 class="content"
               >
                 <div
-                  class="level "
+                  class="level"
                 >
                   <div
-                    class="level-item is-justify-content-left"
+                    class="justified-left-level"
                   >
                     <div>
                       <h4>
@@ -872,7 +867,7 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                     </div>
                   </div>
                   <div
-                    class="level-item is-justify-content-left"
+                    class="justified-left-level"
                   >
                     <div>
                       <h4>
@@ -888,7 +883,7 @@ exports[`GlossaryIndex default renders correctly 1`] = `
               class="card-footer"
             >
               <p
-                class="my-2 ml-5 mr-2"
+                class="definition-card-tag-title"
               >
                 Tags:
               </p>
@@ -896,7 +891,7 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                 class="tags"
               >
                 <a
-                  class="tag is-success is-light"
+                  class="definition-card-tag"
                   href="?tag=three"
                   id="three"
                 >
@@ -921,7 +916,7 @@ exports[`GlossaryIndex default renders correctly with no results 1`] = `
       class="is-centered"
     >
       <h2
-        class="title is-size-3"
+        class="title-three"
       >
         No results
       </h2>

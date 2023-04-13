@@ -83,16 +83,16 @@ exports[`Wiki Index Page filters correctly 1`] = `
     </nav>
     <main>
       <header
-        class="hero is-medium"
+        class="medium-hero"
       >
         <div
-          class="hero-body has-background-black"
+          class="pg-header-hero-black"
         >
           <div
             class="container has-text-centered"
           >
             <h1
-              class="title has-text-white is-1"
+              class="pg-header-title"
             >
               Wiki Index
               <span
@@ -105,10 +105,10 @@ exports[`Wiki Index Page filters correctly 1`] = `
         </div>
       </header>
       <section
-        class="section "
+        class="section"
       >
         <div
-          class="container is-max-desktop"
+          class="search-filter-wrapper"
         >
           <div
             class="columns"
@@ -117,10 +117,10 @@ exports[`Wiki Index Page filters correctly 1`] = `
               class="column"
             >
               <form
-                class="field has-addons"
+                class="search-form"
               >
                 <p
-                  class="control has-icons-right"
+                  class="search-form-input-wrapper"
                 >
                   <input
                     class="input"
@@ -135,7 +135,7 @@ exports[`Wiki Index Page filters correctly 1`] = `
                   class="control"
                 >
                   <button
-                    class="button is-success"
+                    class="primary-button"
                     data-testid="searchPostSubmit"
                   >
                     Search
@@ -144,16 +144,16 @@ exports[`Wiki Index Page filters correctly 1`] = `
               </form>
             </div>
             <div
-              class="column is-two-thirds m-auto"
+              class="search-row-tags-wrapper"
             >
               <div
-                class="field is-grouped is-grouped-multiline"
+                class="tag-list-wrapper"
               >
                 <div
-                  class="tags has-addons mx-2 tag-align show-pointer"
+                  class="tag-wrapper"
                 >
                   <div
-                    class="tag tag is-success is-light"
+                    class="tag-inactive"
                     data-testid="all"
                     id="all"
                   >
@@ -166,49 +166,49 @@ exports[`Wiki Index Page filters correctly 1`] = `
                   </span>
                 </div>
                 <div
-                  class="tags has-addons mx-2 tag-align show-pointer"
+                  class="tag-wrapper"
                 >
                   <div
-                    class="tag is-success is-light"
+                    class="tag-inactive"
                     data-testid="three"
                     id="three"
                   >
                     three
                   </div>
                   <span
-                    class="tag is-dark"
+                    class="tag-count-enabled"
                   >
                     3
                   </span>
                 </div>
                 <div
-                  class="tags has-addons mx-2 tag-align show-pointer"
+                  class="tag-wrapper"
                 >
                   <div
-                    class="tag is-success is-light"
+                    class="tag-inactive"
                     data-testid="two"
                     id="two"
                   >
                     two
                   </div>
                   <span
-                    class="tag is-dark"
+                    class="tag-count-enabled"
                   >
                     2
                   </span>
                 </div>
                 <div
-                  class="tags has-addons mx-2 tag-align show-pointer"
+                  class="tag-wrapper"
                 >
                   <div
-                    class="tag is-success is-light"
+                    class="tag-inactive"
                     data-testid="one"
                     id="one"
                   >
                     one
                   </div>
                   <span
-                    class="tag is-dark"
+                    class="tag-count-enabled"
                   >
                     1
                   </span>
@@ -222,13 +222,13 @@ exports[`Wiki Index Page filters correctly 1`] = `
         class="section"
       >
         <section
-          class="container is-max-desktop"
+          class="post-index-wrapper"
         >
           <div
-            class="col-multi-wrapper is-centered"
+            class="post-index-cards-wrapper"
           >
             <div
-              class="column is-4"
+              class="post-index-card-wrapper"
               data-testid="post-card"
             >
               <div
@@ -238,13 +238,13 @@ exports[`Wiki Index Page filters correctly 1`] = `
                   class="card-image"
                 >
                   <a
-                    class="tag is-primary sticky-tag"
+                    class="post-card-main-tag"
                     href="?tag=two"
                   >
                     two
                   </a>
                   <figure
-                    class="image is-4by3 blog-card-image"
+                    class="post-card-image"
                   >
                     <img
                       alt="Placeholder image"
@@ -262,12 +262,12 @@ exports[`Wiki Index Page filters correctly 1`] = `
                       class="media-content"
                     >
                       <p
-                        class="title is-4"
+                        class="title-four"
                       >
                         Baking Tutorial
                       </p>
                       <p
-                        class="subtitle is-6"
+                        class="subtitle-six"
                       >
                         <time
                           datetime="3-2-2021"
@@ -293,7 +293,7 @@ exports[`Wiki Index Page filters correctly 1`] = `
                     class="card-footer"
                   >
                     <p
-                      class="mt-2 ml-2 mr-2"
+                      class="post-card-tag-title"
                     >
                       Tags:
                     </p>
@@ -301,7 +301,7 @@ exports[`Wiki Index Page filters correctly 1`] = `
                       class="tags"
                     >
                       <a
-                        class="tag mt-2"
+                        class="post-card-tag"
                         href="?tag=three"
                         id="three"
                       >
@@ -313,7 +313,7 @@ exports[`Wiki Index Page filters correctly 1`] = `
               </div>
             </div>
             <div
-              class="column is-4"
+              class="post-index-card-wrapper"
               data-testid="post-card"
             >
               <div
@@ -323,13 +323,13 @@ exports[`Wiki Index Page filters correctly 1`] = `
                   class="card-image"
                 >
                   <a
-                    class="tag is-primary sticky-tag"
+                    class="post-card-main-tag"
                     href="?tag=one"
                   >
                     one
                   </a>
                   <figure
-                    class="image is-4by3 blog-card-image"
+                    class="post-card-image"
                   >
                     <img
                       alt="Placeholder image"
@@ -347,12 +347,12 @@ exports[`Wiki Index Page filters correctly 1`] = `
                       class="media-content"
                     >
                       <p
-                        class="title is-4"
+                        class="title-four"
                       >
                         10 Best Things
                       </p>
                       <p
-                        class="subtitle is-6"
+                        class="subtitle-six"
                       >
                         <time
                           datetime="2-2-2021"
@@ -378,7 +378,7 @@ exports[`Wiki Index Page filters correctly 1`] = `
                     class="card-footer"
                   >
                     <p
-                      class="mt-2 ml-2 mr-2"
+                      class="post-card-tag-title"
                     >
                       Tags:
                     </p>
@@ -386,14 +386,14 @@ exports[`Wiki Index Page filters correctly 1`] = `
                       class="tags"
                     >
                       <a
-                        class="tag mt-2"
+                        class="post-card-tag"
                         href="?tag=two"
                         id="two"
                       >
                         two
                       </a>
                       <a
-                        class="tag mt-2"
+                        class="post-card-tag"
                         href="?tag=three"
                         id="three"
                       >
@@ -405,7 +405,7 @@ exports[`Wiki Index Page filters correctly 1`] = `
               </div>
             </div>
             <div
-              class="column is-4"
+              class="post-index-card-wrapper"
               data-testid="post-card"
             >
               <div
@@ -415,13 +415,13 @@ exports[`Wiki Index Page filters correctly 1`] = `
                   class="card-image"
                 >
                   <a
-                    class="tag is-primary sticky-tag"
+                    class="post-card-main-tag"
                     href="?tag=one"
                   >
                     one
                   </a>
                   <figure
-                    class="image is-4by3 blog-card-image"
+                    class="post-card-image"
                   >
                     <img
                       alt="Placeholder image"
@@ -439,12 +439,12 @@ exports[`Wiki Index Page filters correctly 1`] = `
                       class="media-content"
                     >
                       <p
-                        class="title is-4"
+                        class="title-four"
                       >
                         Guide
                       </p>
                       <p
-                        class="subtitle is-6"
+                        class="subtitle-six"
                       >
                         <time
                           datetime="5-2-2021"
@@ -470,7 +470,7 @@ exports[`Wiki Index Page filters correctly 1`] = `
                     class="card-footer"
                   >
                     <p
-                      class="mt-2 ml-2 mr-2"
+                      class="post-card-tag-title"
                     >
                       Tags:
                     </p>
@@ -478,7 +478,7 @@ exports[`Wiki Index Page filters correctly 1`] = `
                       class="tags"
                     >
                       <a
-                        class="tag mt-2"
+                        class="post-card-tag"
                         href="?tag=two"
                         id="two"
                       >
@@ -497,7 +497,7 @@ exports[`Wiki Index Page filters correctly 1`] = `
       class="footer"
     >
       <div
-        class="columns mb-1 is-vcentered has-text-centered-mobile"
+        class="footer-main-content-wrapper"
       >
         <div
           class="column"
@@ -508,7 +508,7 @@ exports[`Wiki Index Page filters correctly 1`] = `
             href="/"
           >
             <figure
-              class="image footer-logo"
+              class="footer-logo"
             >
               <img
                 alt="Logo"
@@ -521,17 +521,17 @@ exports[`Wiki Index Page filters correctly 1`] = `
           </a>
         </div>
         <ul
-          class="column has-text-centered"
+          class="centered-col"
           role="list"
           style="flex-basis: auto;"
         >
           <div>
             <li
-              class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              class="footer-pg-link-wrapper"
               role="listitem"
             >
               <a
-                class="footer-link"
+                class="footer-link-base"
                 data-cy="footer-link-Contact"
                 href="/about#contact-us"
               >
@@ -539,11 +539,11 @@ exports[`Wiki Index Page filters correctly 1`] = `
               </a>
             </li>
             <li
-              class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              class="footer-pg-link-wrapper"
               role="listitem"
             >
               <a
-                class="footer-link"
+                class="footer-link-base"
                 data-cy="footer-link-About"
                 href="/about"
               >
@@ -551,11 +551,11 @@ exports[`Wiki Index Page filters correctly 1`] = `
               </a>
             </li>
             <li
-              class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              class="footer-pg-link-wrapper"
               role="listitem"
             >
               <a
-                class="footer-link"
+                class="footer-link-base"
                 data-cy="footer-link-Privacy"
                 href="/legal/privacy-policy"
               >
@@ -563,7 +563,7 @@ exports[`Wiki Index Page filters correctly 1`] = `
               </a>
             </li>
             <li
-              class="dropdown is-hoverable is-up"
+              class="footer-dropup"
               role="listitem"
             >
               <div
@@ -572,7 +572,7 @@ exports[`Wiki Index Page filters correctly 1`] = `
                 <a
                   aria-controls="footer-dropdown-menu"
                   aria-haspopup="true"
-                  class="m-4 footer-link"
+                  class="footer-dropup-menu"
                   data-cy="footer-link-legal"
                   href="/legal"
                 >
@@ -655,14 +655,14 @@ exports[`Wiki Index Page filters correctly 1`] = `
           class="column"
         >
           <ul
-            class="has-text-right has-text-centered-mobile footer-link"
+            class="footer-social-media"
           >
             <li
               class="faicon-link-container"
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -688,7 +688,7 @@ exports[`Wiki Index Page filters correctly 1`] = `
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -714,7 +714,7 @@ exports[`Wiki Index Page filters correctly 1`] = `
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -739,7 +739,7 @@ exports[`Wiki Index Page filters correctly 1`] = `
         </div>
       </div>
       <div
-        class="footer-copyright has-text-centered has-text-grey-light is-size-7"
+        class="footer-copyright"
       >
         <p
           class="pt-3"
@@ -860,16 +860,16 @@ exports[`Wiki Index Page renders correctly 1`] = `
     </nav>
     <main>
       <header
-        class="hero is-medium"
+        class="medium-hero"
       >
         <div
-          class="hero-body has-background-black"
+          class="pg-header-hero-black"
         >
           <div
             class="container has-text-centered"
           >
             <h1
-              class="title has-text-white is-1"
+              class="pg-header-title"
             >
               Wiki Index
               <span
@@ -882,10 +882,10 @@ exports[`Wiki Index Page renders correctly 1`] = `
         </div>
       </header>
       <section
-        class="section "
+        class="section"
       >
         <div
-          class="container is-max-desktop"
+          class="search-filter-wrapper"
         >
           <div
             class="columns"
@@ -894,10 +894,10 @@ exports[`Wiki Index Page renders correctly 1`] = `
               class="column"
             >
               <form
-                class="field has-addons"
+                class="search-form"
               >
                 <p
-                  class="control has-icons-right"
+                  class="search-form-input-wrapper"
                 >
                   <input
                     class="input"
@@ -912,7 +912,7 @@ exports[`Wiki Index Page renders correctly 1`] = `
                   class="control"
                 >
                   <button
-                    class="button is-success"
+                    class="primary-button"
                     data-testid="searchPostSubmit"
                   >
                     Search
@@ -921,16 +921,16 @@ exports[`Wiki Index Page renders correctly 1`] = `
               </form>
             </div>
             <div
-              class="column is-two-thirds m-auto"
+              class="search-row-tags-wrapper"
             >
               <div
-                class="field is-grouped is-grouped-multiline"
+                class="tag-list-wrapper"
               >
                 <div
-                  class="tags has-addons mx-2 tag-align show-pointer"
+                  class="tag-wrapper"
                 >
                   <div
-                    class="tag tag is-success is-light"
+                    class="tag-inactive"
                     data-testid="all"
                     id="all"
                   >
@@ -943,49 +943,49 @@ exports[`Wiki Index Page renders correctly 1`] = `
                   </span>
                 </div>
                 <div
-                  class="tags has-addons mx-2 tag-align show-pointer"
+                  class="tag-wrapper"
                 >
                   <div
-                    class="tag is-success is-light"
+                    class="tag-inactive"
                     data-testid="three"
                     id="three"
                   >
                     three
                   </div>
                   <span
-                    class="tag is-dark"
+                    class="tag-count-enabled"
                   >
                     3
                   </span>
                 </div>
                 <div
-                  class="tags has-addons mx-2 tag-align show-pointer"
+                  class="tag-wrapper"
                 >
                   <div
-                    class="tag is-success is-light"
+                    class="tag-inactive"
                     data-testid="two"
                     id="two"
                   >
                     two
                   </div>
                   <span
-                    class="tag is-dark"
+                    class="tag-count-enabled"
                   >
                     2
                   </span>
                 </div>
                 <div
-                  class="tags has-addons mx-2 tag-align show-pointer"
+                  class="tag-wrapper"
                 >
                   <div
-                    class="tag is-success is-light"
+                    class="tag-inactive"
                     data-testid="one"
                     id="one"
                   >
                     one
                   </div>
                   <span
-                    class="tag is-dark"
+                    class="tag-count-enabled"
                   >
                     1
                   </span>
@@ -999,13 +999,13 @@ exports[`Wiki Index Page renders correctly 1`] = `
         class="section"
       >
         <section
-          class="container is-max-desktop"
+          class="post-index-wrapper"
         >
           <div
-            class="col-multi-wrapper is-centered"
+            class="post-index-cards-wrapper"
           >
             <div
-              class="column is-4"
+              class="post-index-card-wrapper"
               data-testid="post-card"
             >
               <div
@@ -1015,13 +1015,13 @@ exports[`Wiki Index Page renders correctly 1`] = `
                   class="card-image"
                 >
                   <a
-                    class="tag is-primary sticky-tag"
+                    class="post-card-main-tag"
                     href="?tag=two"
                   >
                     two
                   </a>
                   <figure
-                    class="image is-4by3 blog-card-image"
+                    class="post-card-image"
                   >
                     <img
                       alt="Placeholder image"
@@ -1039,12 +1039,12 @@ exports[`Wiki Index Page renders correctly 1`] = `
                       class="media-content"
                     >
                       <p
-                        class="title is-4"
+                        class="title-four"
                       >
                         Baking Tutorial
                       </p>
                       <p
-                        class="subtitle is-6"
+                        class="subtitle-six"
                       >
                         <time
                           datetime="3-2-2021"
@@ -1070,7 +1070,7 @@ exports[`Wiki Index Page renders correctly 1`] = `
                     class="card-footer"
                   >
                     <p
-                      class="mt-2 ml-2 mr-2"
+                      class="post-card-tag-title"
                     >
                       Tags:
                     </p>
@@ -1078,7 +1078,7 @@ exports[`Wiki Index Page renders correctly 1`] = `
                       class="tags"
                     >
                       <a
-                        class="tag mt-2"
+                        class="post-card-tag"
                         href="?tag=three"
                         id="three"
                       >
@@ -1090,7 +1090,7 @@ exports[`Wiki Index Page renders correctly 1`] = `
               </div>
             </div>
             <div
-              class="column is-4"
+              class="post-index-card-wrapper"
               data-testid="post-card"
             >
               <div
@@ -1100,13 +1100,13 @@ exports[`Wiki Index Page renders correctly 1`] = `
                   class="card-image"
                 >
                   <a
-                    class="tag is-primary sticky-tag"
+                    class="post-card-main-tag"
                     href="?tag=one"
                   >
                     one
                   </a>
                   <figure
-                    class="image is-4by3 blog-card-image"
+                    class="post-card-image"
                   >
                     <img
                       alt="Placeholder image"
@@ -1124,12 +1124,12 @@ exports[`Wiki Index Page renders correctly 1`] = `
                       class="media-content"
                     >
                       <p
-                        class="title is-4"
+                        class="title-four"
                       >
                         10 Best Things
                       </p>
                       <p
-                        class="subtitle is-6"
+                        class="subtitle-six"
                       >
                         <time
                           datetime="2-2-2021"
@@ -1155,7 +1155,7 @@ exports[`Wiki Index Page renders correctly 1`] = `
                     class="card-footer"
                   >
                     <p
-                      class="mt-2 ml-2 mr-2"
+                      class="post-card-tag-title"
                     >
                       Tags:
                     </p>
@@ -1163,14 +1163,14 @@ exports[`Wiki Index Page renders correctly 1`] = `
                       class="tags"
                     >
                       <a
-                        class="tag mt-2"
+                        class="post-card-tag"
                         href="?tag=two"
                         id="two"
                       >
                         two
                       </a>
                       <a
-                        class="tag mt-2"
+                        class="post-card-tag"
                         href="?tag=three"
                         id="three"
                       >
@@ -1182,7 +1182,7 @@ exports[`Wiki Index Page renders correctly 1`] = `
               </div>
             </div>
             <div
-              class="column is-4"
+              class="post-index-card-wrapper"
               data-testid="post-card"
             >
               <div
@@ -1192,13 +1192,13 @@ exports[`Wiki Index Page renders correctly 1`] = `
                   class="card-image"
                 >
                   <a
-                    class="tag is-primary sticky-tag"
+                    class="post-card-main-tag"
                     href="?tag=one"
                   >
                     one
                   </a>
                   <figure
-                    class="image is-4by3 blog-card-image"
+                    class="post-card-image"
                   >
                     <img
                       alt="Placeholder image"
@@ -1216,12 +1216,12 @@ exports[`Wiki Index Page renders correctly 1`] = `
                       class="media-content"
                     >
                       <p
-                        class="title is-4"
+                        class="title-four"
                       >
                         Guide
                       </p>
                       <p
-                        class="subtitle is-6"
+                        class="subtitle-six"
                       >
                         <time
                           datetime="5-2-2021"
@@ -1247,7 +1247,7 @@ exports[`Wiki Index Page renders correctly 1`] = `
                     class="card-footer"
                   >
                     <p
-                      class="mt-2 ml-2 mr-2"
+                      class="post-card-tag-title"
                     >
                       Tags:
                     </p>
@@ -1255,7 +1255,7 @@ exports[`Wiki Index Page renders correctly 1`] = `
                       class="tags"
                     >
                       <a
-                        class="tag mt-2"
+                        class="post-card-tag"
                         href="?tag=two"
                         id="two"
                       >
@@ -1274,7 +1274,7 @@ exports[`Wiki Index Page renders correctly 1`] = `
       class="footer"
     >
       <div
-        class="columns mb-1 is-vcentered has-text-centered-mobile"
+        class="footer-main-content-wrapper"
       >
         <div
           class="column"
@@ -1285,7 +1285,7 @@ exports[`Wiki Index Page renders correctly 1`] = `
             href="/"
           >
             <figure
-              class="image footer-logo"
+              class="footer-logo"
             >
               <img
                 alt="Logo"
@@ -1298,17 +1298,17 @@ exports[`Wiki Index Page renders correctly 1`] = `
           </a>
         </div>
         <ul
-          class="column has-text-centered"
+          class="centered-col"
           role="list"
           style="flex-basis: auto;"
         >
           <div>
             <li
-              class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              class="footer-pg-link-wrapper"
               role="listitem"
             >
               <a
-                class="footer-link"
+                class="footer-link-base"
                 data-cy="footer-link-Contact"
                 href="/about#contact-us"
               >
@@ -1316,11 +1316,11 @@ exports[`Wiki Index Page renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              class="footer-pg-link-wrapper"
               role="listitem"
             >
               <a
-                class="footer-link"
+                class="footer-link-base"
                 data-cy="footer-link-About"
                 href="/about"
               >
@@ -1328,11 +1328,11 @@ exports[`Wiki Index Page renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              class="footer-pg-link-wrapper"
               role="listitem"
             >
               <a
-                class="footer-link"
+                class="footer-link-base"
                 data-cy="footer-link-Privacy"
                 href="/legal/privacy-policy"
               >
@@ -1340,7 +1340,7 @@ exports[`Wiki Index Page renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="dropdown is-hoverable is-up"
+              class="footer-dropup"
               role="listitem"
             >
               <div
@@ -1349,7 +1349,7 @@ exports[`Wiki Index Page renders correctly 1`] = `
                 <a
                   aria-controls="footer-dropdown-menu"
                   aria-haspopup="true"
-                  class="m-4 footer-link"
+                  class="footer-dropup-menu"
                   data-cy="footer-link-legal"
                   href="/legal"
                 >
@@ -1432,14 +1432,14 @@ exports[`Wiki Index Page renders correctly 1`] = `
           class="column"
         >
           <ul
-            class="has-text-right has-text-centered-mobile footer-link"
+            class="footer-social-media"
           >
             <li
               class="faicon-link-container"
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -1465,7 +1465,7 @@ exports[`Wiki Index Page renders correctly 1`] = `
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -1491,7 +1491,7 @@ exports[`Wiki Index Page renders correctly 1`] = `
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -1516,7 +1516,7 @@ exports[`Wiki Index Page renders correctly 1`] = `
         </div>
       </div>
       <div
-        class="footer-copyright has-text-centered has-text-grey-light is-size-7"
+        class="footer-copyright"
       >
         <p
           class="pt-3"

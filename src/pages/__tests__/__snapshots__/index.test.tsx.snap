@@ -103,21 +103,21 @@ exports[`HomePage renders correctly 1`] = `
     </nav>
     <main>
       <section
-        class="hero is-dark is-fullheight "
+        class="home-page-header"
       >
         <div
           class="hero-head"
         >
           <div
-            class="container has-text-centered section has-text-white"
+            class="home-page-header-title-wrapper"
           >
             <p
-              class="title home-title"
+              class="home-title"
             >
               Welcome!
             </p>
             <p
-              class="subtitle is-size-2"
+              class="home-subtitle"
             >
               A subtitle describing the site
             </p>
@@ -130,19 +130,19 @@ exports[`HomePage renders correctly 1`] = `
             class="container"
           >
             <div
-              class="columns is-vcentered is-multiline"
+              class="home-new-tile-section-wrapper"
             >
               <div
-                class="column is-9-desktop is-full-tablet"
+                class="home-new-tile-main-wrapper"
               >
                 <div
-                  class="card is-radiusless footer-logo"
+                  class="home-new-tile-card"
                 >
                   <div
                     class="card-image"
                   >
                     <figure
-                      class="image is-3by2"
+                      class="home-new-tile-main-card-image"
                     >
                       <img
                         src="https://bulma.io/images/placeholders/128x128.png"
@@ -150,18 +150,18 @@ exports[`HomePage renders correctly 1`] = `
                     </figure>
                   </div>
                   <div
-                    class="card-content is-overlay home-header-tile-overlay"
+                    class="home-new-tile-card-content-overlay"
                   >
                     <div
                       class="content"
                     >
                       <p
-                        class="title is-size-3 has-text-black"
+                        class="home-new-tile-card-content-title"
                       >
                         Baking Tutorial
                       </p>
                       <p
-                        class="subtitle is-size-6 has-text-black"
+                        class="home-new-tile-card-content-subtitle"
                       >
                         <time
                           datetime="3-2-2021"
@@ -182,10 +182,10 @@ exports[`HomePage renders correctly 1`] = `
                     </div>
                   </div>
                   <div
-                    class="card-content is-overlay"
+                    class="home-new-tile-card-tag-wrapper"
                   >
                     <span
-                      class="tag is-link is-large"
+                      class="home-new-tile-main-card-tag"
                     >
                       FEATURED
                     </span>
@@ -193,7 +193,7 @@ exports[`HomePage renders correctly 1`] = `
                 </div>
               </div>
               <div
-                class="column is-3-desktop is-full-tablet"
+                class="home-new-tile-side-wrapper"
               >
                 <div
                   class=""
@@ -202,7 +202,7 @@ exports[`HomePage renders correctly 1`] = `
                     href="/wiki/ten-best-things/"
                   >
                     <div
-                      class="card footer-logo is-radiusless mb-5"
+                      class="home-new-tile-card mb-5"
                     >
                       <div
                         class="card-image "
@@ -216,18 +216,18 @@ exports[`HomePage renders correctly 1`] = `
                         </figure>
                       </div>
                       <div
-                        class="card-content is-overlay home-header-tile-overlay"
+                        class="home-new-tile-card-content-overlay"
                       >
                         <div
                           class="content"
                         >
                           <p
-                            class="title is-size-5 has-text-black"
+                            class="home-new-tile-card-content-title-small"
                           >
                             10 Best Things
                           </p>
                           <p
-                            class="subtitle is-size-6 has-text-black"
+                            class="home-new-tile-card-content-subtitle"
                           >
                             <time
                               datetime="2-2-2021"
@@ -238,10 +238,10 @@ exports[`HomePage renders correctly 1`] = `
                         </div>
                       </div>
                       <div
-                        class="card-content is-overlay"
+                        class="home-new-tile-card-tag-wrapper"
                       >
                         <span
-                          class="tag is-link"
+                          class="home-new-tile-card-tag"
                         >
                           FEATURED
                         </span>
@@ -252,7 +252,7 @@ exports[`HomePage renders correctly 1`] = `
                     href="/blog/guide/"
                   >
                     <div
-                      class="card footer-logo is-radiusless mb-0"
+                      class="home-new-tile-card mb-0"
                     >
                       <div
                         class="card-image "
@@ -266,18 +266,18 @@ exports[`HomePage renders correctly 1`] = `
                         </figure>
                       </div>
                       <div
-                        class="card-content is-overlay home-header-tile-overlay"
+                        class="home-new-tile-card-content-overlay"
                       >
                         <div
                           class="content"
                         >
                           <p
-                            class="title is-size-5 has-text-black"
+                            class="home-new-tile-card-content-title-small"
                           >
                             Guide
                           </p>
                           <p
-                            class="subtitle is-size-6 has-text-black"
+                            class="home-new-tile-card-content-subtitle"
                           >
                             <time
                               datetime="5-2-2021"
@@ -288,10 +288,10 @@ exports[`HomePage renders correctly 1`] = `
                         </div>
                       </div>
                       <div
-                        class="card-content is-overlay"
+                        class="home-new-tile-card-tag-wrapper"
                       >
                         <span
-                          class="tag is-link"
+                          class="home-new-tile-card-tag"
                         >
                           FEATURED
                         </span>
@@ -327,19 +327,19 @@ exports[`HomePage renders correctly 1`] = `
             class="col-multi-wrapper"
           >
             <div
-              class="column is-half"
+              class="half-col"
             >
               <div
-                class="box home-blog-tile"
+                class="home-blog-tile"
               >
                 <div
-                  class="media p-2 m-2"
+                  class="home-blog-tile-fig-wrapper"
                 >
                   <figure
-                    class="media-left my-auto"
+                    class="home-blog-tile-fig"
                   >
                     <p
-                      class="image is-128x128"
+                      class="home-blog-tile-image-wrapper"
                     >
                       <img
                         src="https://bulma.io/images/placeholders/128x128.png"
@@ -347,18 +347,18 @@ exports[`HomePage renders correctly 1`] = `
                     </p>
                   </figure>
                   <div
-                    class="media-content m-auto"
+                    class="home-blog-tile-content"
                   >
                     <div
                       class="content"
                     >
                       <p
-                        class="title is-4"
+                        class="title-four"
                       >
                         Baking Tutorial
                       </p>
                       <p
-                        class="subtitle is-6"
+                        class="subtitle-six"
                       >
                         <time
                           datetime="3-2-2021"
@@ -380,19 +380,19 @@ exports[`HomePage renders correctly 1`] = `
               </div>
             </div>
             <div
-              class="column is-half"
+              class="half-col"
             >
               <div
-                class="box home-blog-tile"
+                class="home-blog-tile"
               >
                 <div
-                  class="media p-2 m-2"
+                  class="home-blog-tile-fig-wrapper"
                 >
                   <figure
-                    class="media-left my-auto"
+                    class="home-blog-tile-fig"
                   >
                     <p
-                      class="image is-128x128"
+                      class="home-blog-tile-image-wrapper"
                     >
                       <img
                         src="https://bulma.io/images/placeholders/128x128.png"
@@ -400,18 +400,18 @@ exports[`HomePage renders correctly 1`] = `
                     </p>
                   </figure>
                   <div
-                    class="media-content m-auto"
+                    class="home-blog-tile-content"
                   >
                     <div
                       class="content"
                     >
                       <p
-                        class="title is-4"
+                        class="title-four"
                       >
                         10 Best Things
                       </p>
                       <p
-                        class="subtitle is-6"
+                        class="subtitle-six"
                       >
                         <time
                           datetime="2-2-2021"
@@ -433,19 +433,19 @@ exports[`HomePage renders correctly 1`] = `
               </div>
             </div>
             <div
-              class="column is-half"
+              class="half-col"
             >
               <div
-                class="box home-blog-tile"
+                class="home-blog-tile"
               >
                 <div
-                  class="media p-2 m-2"
+                  class="home-blog-tile-fig-wrapper"
                 >
                   <figure
-                    class="media-left my-auto"
+                    class="home-blog-tile-fig"
                   >
                     <p
-                      class="image is-128x128"
+                      class="home-blog-tile-image-wrapper"
                     >
                       <img
                         src="https://bulma.io/images/placeholders/128x128.png"
@@ -453,18 +453,18 @@ exports[`HomePage renders correctly 1`] = `
                     </p>
                   </figure>
                   <div
-                    class="media-content m-auto"
+                    class="home-blog-tile-content"
                   >
                     <div
                       class="content"
                     >
                       <p
-                        class="title is-4"
+                        class="title-four"
                       >
                         Guide
                       </p>
                       <p
-                        class="subtitle is-6"
+                        class="subtitle-six"
                       >
                         <time
                           datetime="5-2-2021"
@@ -504,10 +504,10 @@ exports[`HomePage renders correctly 1`] = `
             </div>
           </div>
           <div
-            class="col-multi-wrapper is-centered"
+            class="home-wiki-content"
           >
             <div
-              class="column is-3"
+              class="third-col"
             >
               <div
                 class="card"
@@ -516,7 +516,7 @@ exports[`HomePage renders correctly 1`] = `
                   class="card-image"
                 >
                   <figure
-                    class="image "
+                    class="image"
                   >
                     <p
                       class="is-128x128"
@@ -534,12 +534,12 @@ exports[`HomePage renders correctly 1`] = `
                     class="content"
                   >
                     <p
-                      class="title is-4"
+                      class="title-four"
                     >
                       Baking Tutorial
                     </p>
                     <p
-                      class="subtitle is-6"
+                      class="subtitle-six"
                     >
                       <time
                         datetime="3-2-2021"
@@ -560,7 +560,7 @@ exports[`HomePage renders correctly 1`] = `
               </div>
             </div>
             <div
-              class="column is-3"
+              class="third-col"
             >
               <div
                 class="card"
@@ -569,7 +569,7 @@ exports[`HomePage renders correctly 1`] = `
                   class="card-image"
                 >
                   <figure
-                    class="image "
+                    class="image"
                   >
                     <p
                       class="is-128x128"
@@ -587,12 +587,12 @@ exports[`HomePage renders correctly 1`] = `
                     class="content"
                   >
                     <p
-                      class="title is-4"
+                      class="title-four"
                     >
                       10 Best Things
                     </p>
                     <p
-                      class="subtitle is-6"
+                      class="subtitle-six"
                     >
                       <time
                         datetime="2-2-2021"
@@ -613,7 +613,7 @@ exports[`HomePage renders correctly 1`] = `
               </div>
             </div>
             <div
-              class="column is-3"
+              class="third-col"
             >
               <div
                 class="card"
@@ -622,7 +622,7 @@ exports[`HomePage renders correctly 1`] = `
                   class="card-image"
                 >
                   <figure
-                    class="image "
+                    class="image"
                   >
                     <p
                       class="is-128x128"
@@ -640,12 +640,12 @@ exports[`HomePage renders correctly 1`] = `
                     class="content"
                   >
                     <p
-                      class="title is-4"
+                      class="title-four"
                     >
                       Guide
                     </p>
                     <p
-                      class="subtitle is-6"
+                      class="subtitle-six"
                     >
                       <time
                         datetime="5-2-2021"
@@ -687,7 +687,7 @@ exports[`HomePage renders correctly 1`] = `
             class="col-multi-wrapper"
           >
             <div
-              class="column is-half"
+              class="half-col"
             >
               <div
                 class="card mb-5"
@@ -711,7 +711,7 @@ exports[`HomePage renders correctly 1`] = `
                             class="level-item"
                           >
                             <h3
-                              class="title is-3"
+                              class="title-three"
                               id="air"
                             >
                               Air
@@ -722,7 +722,7 @@ exports[`HomePage renders correctly 1`] = `
                           class="level-right"
                         >
                           <div
-                            class="level-item has-text-centered"
+                            class="centered-level"
                           >
                             <div>
                               <p
@@ -738,7 +738,7 @@ exports[`HomePage renders correctly 1`] = `
                             </div>
                           </div>
                           <div
-                            class="level-item has-text-centered"
+                            class="centered-level"
                           >
                             <div>
                               <p
@@ -784,7 +784,7 @@ exports[`HomePage renders correctly 1`] = `
               </div>
             </div>
             <div
-              class="column is-half"
+              class="half-col"
             >
               <div
                 class="card mb-5"
@@ -808,7 +808,7 @@ exports[`HomePage renders correctly 1`] = `
                             class="level-item"
                           >
                             <h3
-                              class="title is-3"
+                              class="title-three"
                               id="atom"
                             >
                               Atom
@@ -819,7 +819,7 @@ exports[`HomePage renders correctly 1`] = `
                           class="level-right"
                         >
                           <div
-                            class="level-item has-text-centered"
+                            class="centered-level"
                           >
                             <div>
                               <p
@@ -835,7 +835,7 @@ exports[`HomePage renders correctly 1`] = `
                             </div>
                           </div>
                           <div
-                            class="level-item has-text-centered"
+                            class="centered-level"
                           >
                             <div>
                               <p
@@ -881,7 +881,7 @@ exports[`HomePage renders correctly 1`] = `
               </div>
             </div>
             <div
-              class="column is-half"
+              class="half-col"
             >
               <div
                 class="card mb-5"
@@ -905,7 +905,7 @@ exports[`HomePage renders correctly 1`] = `
                             class="level-item"
                           >
                             <h3
-                              class="title is-3"
+                              class="title-three"
                               id="cloud"
                             >
                               Cloud
@@ -916,7 +916,7 @@ exports[`HomePage renders correctly 1`] = `
                           class="level-right"
                         >
                           <div
-                            class="level-item has-text-centered"
+                            class="centered-level"
                           >
                             <div>
                               <p
@@ -932,7 +932,7 @@ exports[`HomePage renders correctly 1`] = `
                             </div>
                           </div>
                           <div
-                            class="level-item has-text-centered"
+                            class="centered-level"
                           >
                             <div>
                               <p
@@ -978,7 +978,7 @@ exports[`HomePage renders correctly 1`] = `
               </div>
             </div>
             <div
-              class="column is-half"
+              class="half-col"
             >
               <div
                 class="card mb-5"
@@ -1002,7 +1002,7 @@ exports[`HomePage renders correctly 1`] = `
                             class="level-item"
                           >
                             <h3
-                              class="title is-3"
+                              class="title-three"
                               id="moon"
                             >
                               Moon
@@ -1013,7 +1013,7 @@ exports[`HomePage renders correctly 1`] = `
                           class="level-right"
                         >
                           <div
-                            class="level-item has-text-centered"
+                            class="centered-level"
                           >
                             <div>
                               <p
@@ -1029,7 +1029,7 @@ exports[`HomePage renders correctly 1`] = `
                             </div>
                           </div>
                           <div
-                            class="level-item has-text-centered"
+                            class="centered-level"
                           >
                             <div>
                               <p
@@ -1075,7 +1075,7 @@ exports[`HomePage renders correctly 1`] = `
               </div>
             </div>
             <div
-              class="column is-half"
+              class="half-col"
             >
               <div
                 class="card mb-5"
@@ -1099,7 +1099,7 @@ exports[`HomePage renders correctly 1`] = `
                             class="level-item"
                           >
                             <h3
-                              class="title is-3"
+                              class="title-three"
                               id="window"
                             >
                               Window
@@ -1110,7 +1110,7 @@ exports[`HomePage renders correctly 1`] = `
                           class="level-right"
                         >
                           <div
-                            class="level-item has-text-centered"
+                            class="centered-level"
                           >
                             <div>
                               <p
@@ -1126,7 +1126,7 @@ exports[`HomePage renders correctly 1`] = `
                             </div>
                           </div>
                           <div
-                            class="level-item has-text-centered"
+                            class="centered-level"
                           >
                             <div>
                               <p
@@ -1179,7 +1179,7 @@ exports[`HomePage renders correctly 1`] = `
       class="footer"
     >
       <div
-        class="columns mb-1 is-vcentered has-text-centered-mobile"
+        class="footer-main-content-wrapper"
       >
         <div
           class="column"
@@ -1190,7 +1190,7 @@ exports[`HomePage renders correctly 1`] = `
             href="/"
           >
             <figure
-              class="image footer-logo"
+              class="footer-logo"
             >
               <img
                 alt="Logo"
@@ -1203,17 +1203,17 @@ exports[`HomePage renders correctly 1`] = `
           </a>
         </div>
         <ul
-          class="column has-text-centered"
+          class="centered-col"
           role="list"
           style="flex-basis: auto;"
         >
           <div>
             <li
-              class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              class="footer-pg-link-wrapper"
               role="listitem"
             >
               <a
-                class="footer-link"
+                class="footer-link-base"
                 data-cy="footer-link-Contact"
                 href="/about#contact-us"
               >
@@ -1221,11 +1221,11 @@ exports[`HomePage renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              class="footer-pg-link-wrapper"
               role="listitem"
             >
               <a
-                class="footer-link"
+                class="footer-link-base"
                 data-cy="footer-link-About"
                 href="/about"
               >
@@ -1233,11 +1233,11 @@ exports[`HomePage renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              class="footer-pg-link-wrapper"
               role="listitem"
             >
               <a
-                class="footer-link"
+                class="footer-link-base"
                 data-cy="footer-link-Privacy"
                 href="/legal/privacy-policy"
               >
@@ -1245,7 +1245,7 @@ exports[`HomePage renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="dropdown is-hoverable is-up"
+              class="footer-dropup"
               role="listitem"
             >
               <div
@@ -1254,7 +1254,7 @@ exports[`HomePage renders correctly 1`] = `
                 <a
                   aria-controls="footer-dropdown-menu"
                   aria-haspopup="true"
-                  class="m-4 footer-link"
+                  class="footer-dropup-menu"
                   data-cy="footer-link-legal"
                   href="/legal"
                 >
@@ -1337,14 +1337,14 @@ exports[`HomePage renders correctly 1`] = `
           class="column"
         >
           <ul
-            class="has-text-right has-text-centered-mobile footer-link"
+            class="footer-social-media"
           >
             <li
               class="faicon-link-container"
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -1370,7 +1370,7 @@ exports[`HomePage renders correctly 1`] = `
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -1396,7 +1396,7 @@ exports[`HomePage renders correctly 1`] = `
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -1421,7 +1421,7 @@ exports[`HomePage renders correctly 1`] = `
         </div>
       </div>
       <div
-        class="footer-copyright has-text-centered has-text-grey-light is-size-7"
+        class="footer-copyright"
       >
         <p
           class="pt-3"

@@ -92,7 +92,7 @@ exports[`LegalPage Cookie Page renders correctly 1`] = `
             class="content"
           >
             <h1
-              class="title is-1"
+              class="title-one"
             >
               Cookie Page
             </h1>
@@ -161,7 +161,7 @@ exports[`LegalPage Cookie Page renders correctly 1`] = `
       class="footer"
     >
       <div
-        class="columns mb-1 is-vcentered has-text-centered-mobile"
+        class="footer-main-content-wrapper"
       >
         <div
           class="column"
@@ -172,7 +172,7 @@ exports[`LegalPage Cookie Page renders correctly 1`] = `
             href="/"
           >
             <figure
-              class="image footer-logo"
+              class="footer-logo"
             >
               <img
                 alt="Logo"
@@ -185,17 +185,17 @@ exports[`LegalPage Cookie Page renders correctly 1`] = `
           </a>
         </div>
         <ul
-          class="column has-text-centered"
+          class="centered-col"
           role="list"
           style="flex-basis: auto;"
         >
           <div>
             <li
-              class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              class="footer-pg-link-wrapper"
               role="listitem"
             >
               <a
-                class="footer-link"
+                class="footer-link-base"
                 data-cy="footer-link-Contact"
                 href="/about#contact-us"
               >
@@ -203,11 +203,11 @@ exports[`LegalPage Cookie Page renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              class="footer-pg-link-wrapper"
               role="listitem"
             >
               <a
-                class="footer-link"
+                class="footer-link-base"
                 data-cy="footer-link-About"
                 href="/about"
               >
@@ -215,11 +215,11 @@ exports[`LegalPage Cookie Page renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              class="footer-pg-link-wrapper"
               role="listitem"
             >
               <a
-                class="footer-link"
+                class="footer-link-base"
                 data-cy="footer-link-Privacy"
                 href="/legal/privacy-policy"
               >
@@ -227,7 +227,7 @@ exports[`LegalPage Cookie Page renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="dropdown is-hoverable is-up"
+              class="footer-dropup"
               role="listitem"
             >
               <div
@@ -236,7 +236,7 @@ exports[`LegalPage Cookie Page renders correctly 1`] = `
                 <a
                   aria-controls="footer-dropdown-menu"
                   aria-haspopup="true"
-                  class="m-4 footer-link"
+                  class="footer-dropup-menu"
                   data-cy="footer-link-legal"
                   href="/legal"
                 >
@@ -319,14 +319,14 @@ exports[`LegalPage Cookie Page renders correctly 1`] = `
           class="column"
         >
           <ul
-            class="has-text-right has-text-centered-mobile footer-link"
+            class="footer-social-media"
           >
             <li
               class="faicon-link-container"
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -352,7 +352,7 @@ exports[`LegalPage Cookie Page renders correctly 1`] = `
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -378,7 +378,7 @@ exports[`LegalPage Cookie Page renders correctly 1`] = `
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -403,7 +403,7 @@ exports[`LegalPage Cookie Page renders correctly 1`] = `
         </div>
       </div>
       <div
-        class="footer-copyright has-text-centered has-text-grey-light is-size-7"
+        class="footer-copyright"
       >
         <p
           class="pt-3"
@@ -533,7 +533,7 @@ exports[`LegalPage Copyright Page renders correctly 1`] = `
             class="content"
           >
             <h1
-              class="title is-1"
+              class="title-one"
             >
               Copyright Page
             </h1>
@@ -602,7 +602,7 @@ exports[`LegalPage Copyright Page renders correctly 1`] = `
       class="footer"
     >
       <div
-        class="columns mb-1 is-vcentered has-text-centered-mobile"
+        class="footer-main-content-wrapper"
       >
         <div
           class="column"
@@ -613,7 +613,7 @@ exports[`LegalPage Copyright Page renders correctly 1`] = `
             href="/"
           >
             <figure
-              class="image footer-logo"
+              class="footer-logo"
             >
               <img
                 alt="Logo"
@@ -626,17 +626,17 @@ exports[`LegalPage Copyright Page renders correctly 1`] = `
           </a>
         </div>
         <ul
-          class="column has-text-centered"
+          class="centered-col"
           role="list"
           style="flex-basis: auto;"
         >
           <div>
             <li
-              class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              class="footer-pg-link-wrapper"
               role="listitem"
             >
               <a
-                class="footer-link"
+                class="footer-link-base"
                 data-cy="footer-link-Contact"
                 href="/about#contact-us"
               >
@@ -644,11 +644,11 @@ exports[`LegalPage Copyright Page renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              class="footer-pg-link-wrapper"
               role="listitem"
             >
               <a
-                class="footer-link"
+                class="footer-link-base"
                 data-cy="footer-link-About"
                 href="/about"
               >
@@ -656,11 +656,11 @@ exports[`LegalPage Copyright Page renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              class="footer-pg-link-wrapper"
               role="listitem"
             >
               <a
-                class="footer-link"
+                class="footer-link-base"
                 data-cy="footer-link-Privacy"
                 href="/legal/privacy-policy"
               >
@@ -668,7 +668,7 @@ exports[`LegalPage Copyright Page renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="dropdown is-hoverable is-up"
+              class="footer-dropup"
               role="listitem"
             >
               <div
@@ -677,7 +677,7 @@ exports[`LegalPage Copyright Page renders correctly 1`] = `
                 <a
                   aria-controls="footer-dropdown-menu"
                   aria-haspopup="true"
-                  class="m-4 footer-link"
+                  class="footer-dropup-menu"
                   data-cy="footer-link-legal"
                   href="/legal"
                 >
@@ -760,14 +760,14 @@ exports[`LegalPage Copyright Page renders correctly 1`] = `
           class="column"
         >
           <ul
-            class="has-text-right has-text-centered-mobile footer-link"
+            class="footer-social-media"
           >
             <li
               class="faicon-link-container"
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -793,7 +793,7 @@ exports[`LegalPage Copyright Page renders correctly 1`] = `
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -819,7 +819,7 @@ exports[`LegalPage Copyright Page renders correctly 1`] = `
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -844,7 +844,7 @@ exports[`LegalPage Copyright Page renders correctly 1`] = `
         </div>
       </div>
       <div
-        class="footer-copyright has-text-centered has-text-grey-light is-size-7"
+        class="footer-copyright"
       >
         <p
           class="pt-3"
@@ -974,7 +974,7 @@ exports[`LegalPage Disclaimer Page renders correctly 1`] = `
             class="content"
           >
             <h1
-              class="title is-1"
+              class="title-one"
             >
               Disclaimer Page
             </h1>
@@ -1043,7 +1043,7 @@ exports[`LegalPage Disclaimer Page renders correctly 1`] = `
       class="footer"
     >
       <div
-        class="columns mb-1 is-vcentered has-text-centered-mobile"
+        class="footer-main-content-wrapper"
       >
         <div
           class="column"
@@ -1054,7 +1054,7 @@ exports[`LegalPage Disclaimer Page renders correctly 1`] = `
             href="/"
           >
             <figure
-              class="image footer-logo"
+              class="footer-logo"
             >
               <img
                 alt="Logo"
@@ -1067,17 +1067,17 @@ exports[`LegalPage Disclaimer Page renders correctly 1`] = `
           </a>
         </div>
         <ul
-          class="column has-text-centered"
+          class="centered-col"
           role="list"
           style="flex-basis: auto;"
         >
           <div>
             <li
-              class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              class="footer-pg-link-wrapper"
               role="listitem"
             >
               <a
-                class="footer-link"
+                class="footer-link-base"
                 data-cy="footer-link-Contact"
                 href="/about#contact-us"
               >
@@ -1085,11 +1085,11 @@ exports[`LegalPage Disclaimer Page renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              class="footer-pg-link-wrapper"
               role="listitem"
             >
               <a
-                class="footer-link"
+                class="footer-link-base"
                 data-cy="footer-link-About"
                 href="/about"
               >
@@ -1097,11 +1097,11 @@ exports[`LegalPage Disclaimer Page renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              class="footer-pg-link-wrapper"
               role="listitem"
             >
               <a
-                class="footer-link"
+                class="footer-link-base"
                 data-cy="footer-link-Privacy"
                 href="/legal/privacy-policy"
               >
@@ -1109,7 +1109,7 @@ exports[`LegalPage Disclaimer Page renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="dropdown is-hoverable is-up"
+              class="footer-dropup"
               role="listitem"
             >
               <div
@@ -1118,7 +1118,7 @@ exports[`LegalPage Disclaimer Page renders correctly 1`] = `
                 <a
                   aria-controls="footer-dropdown-menu"
                   aria-haspopup="true"
-                  class="m-4 footer-link"
+                  class="footer-dropup-menu"
                   data-cy="footer-link-legal"
                   href="/legal"
                 >
@@ -1201,14 +1201,14 @@ exports[`LegalPage Disclaimer Page renders correctly 1`] = `
           class="column"
         >
           <ul
-            class="has-text-right has-text-centered-mobile footer-link"
+            class="footer-social-media"
           >
             <li
               class="faicon-link-container"
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -1234,7 +1234,7 @@ exports[`LegalPage Disclaimer Page renders correctly 1`] = `
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -1260,7 +1260,7 @@ exports[`LegalPage Disclaimer Page renders correctly 1`] = `
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -1285,7 +1285,7 @@ exports[`LegalPage Disclaimer Page renders correctly 1`] = `
         </div>
       </div>
       <div
-        class="footer-copyright has-text-centered has-text-grey-light is-size-7"
+        class="footer-copyright"
       >
         <p
           class="pt-3"
@@ -1426,16 +1426,16 @@ exports[`LegalPage Legal renders correctly 1`] = `
     </nav>
     <main>
       <header
-        class="hero is-medium"
+        class="medium-hero"
       >
         <div
-          class="hero-body has-background-black"
+          class="pg-header-hero-black"
         >
           <div
             class="container "
           >
             <h1
-              class="title has-text-white is-1"
+              class="pg-header-title"
             >
               Legal Pages
               <span
@@ -1448,7 +1448,7 @@ exports[`LegalPage Legal renders correctly 1`] = `
         </div>
       </header>
       <section
-        class="section my-4"
+        class="legal-index-wrapper"
       >
         <div
           class="container"
@@ -1457,19 +1457,19 @@ exports[`LegalPage Legal renders correctly 1`] = `
             class="col-multi-wrapper"
           >
             <div
-              class="column is-half"
+              class="legal-card-wrapper"
             >
               <div
-                class="card has-background-white-ter"
+                class="legal-card"
               >
                 <div
                   class="card-content"
                 >
                   <h2
-                    class="title is-2"
+                    class="title-two"
                   >
                     <a
-                      class="legal-link"
+                      class="legal-card-link"
                       data-cy="legal-index-privacy"
                       href="/legal/privacy-policy"
                     >
@@ -1485,19 +1485,19 @@ exports[`LegalPage Legal renders correctly 1`] = `
               </div>
             </div>
             <div
-              class="column is-half"
+              class="legal-card-wrapper"
             >
               <div
-                class="card has-background-white-ter"
+                class="legal-card"
               >
                 <div
                   class="card-content"
                 >
                   <h2
-                    class="title is-2"
+                    class="title-two"
                   >
                     <a
-                      class="legal-link"
+                      class="legal-card-link"
                       data-cy="legal-index-copyright"
                       href="/legal/copyright"
                     >
@@ -1513,19 +1513,19 @@ exports[`LegalPage Legal renders correctly 1`] = `
               </div>
             </div>
             <div
-              class="column is-half"
+              class="legal-card-wrapper"
             >
               <div
-                class="card has-background-white-ter"
+                class="legal-card"
               >
                 <div
                   class="card-content"
                 >
                   <h2
-                    class="title is-2"
+                    class="title-two"
                   >
                     <a
-                      class="legal-link"
+                      class="legal-card-link"
                       data-cy="legal-index-cookie"
                       href="/legal/cookie-policy"
                     >
@@ -1541,19 +1541,19 @@ exports[`LegalPage Legal renders correctly 1`] = `
               </div>
             </div>
             <div
-              class="column is-half"
+              class="legal-card-wrapper"
             >
               <div
-                class="card has-background-white-ter"
+                class="legal-card"
               >
                 <div
                   class="card-content"
                 >
                   <h2
-                    class="title is-2"
+                    class="title-two"
                   >
                     <a
-                      class="legal-link"
+                      class="legal-card-link"
                       data-cy="legal-index-terms"
                       href="/legal/terms-and-conditions"
                     >
@@ -1569,19 +1569,19 @@ exports[`LegalPage Legal renders correctly 1`] = `
               </div>
             </div>
             <div
-              class="column is-half"
+              class="legal-card-wrapper"
             >
               <div
-                class="card has-background-white-ter"
+                class="legal-card"
               >
                 <div
                   class="card-content"
                 >
                   <h2
-                    class="title is-2"
+                    class="title-two"
                   >
                     <a
-                      class="legal-link"
+                      class="legal-card-link"
                       data-cy="legal-index-disclaimer"
                       href="/legal/disclaimer"
                     >
@@ -1604,7 +1604,7 @@ exports[`LegalPage Legal renders correctly 1`] = `
       class="footer"
     >
       <div
-        class="columns mb-1 is-vcentered has-text-centered-mobile"
+        class="footer-main-content-wrapper"
       >
         <div
           class="column"
@@ -1615,7 +1615,7 @@ exports[`LegalPage Legal renders correctly 1`] = `
             href="/"
           >
             <figure
-              class="image footer-logo"
+              class="footer-logo"
             >
               <img
                 alt="Logo"
@@ -1628,17 +1628,17 @@ exports[`LegalPage Legal renders correctly 1`] = `
           </a>
         </div>
         <ul
-          class="column has-text-centered"
+          class="centered-col"
           role="list"
           style="flex-basis: auto;"
         >
           <div>
             <li
-              class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              class="footer-pg-link-wrapper"
               role="listitem"
             >
               <a
-                class="footer-link"
+                class="footer-link-base"
                 data-cy="footer-link-Contact"
                 href="/about#contact-us"
               >
@@ -1646,11 +1646,11 @@ exports[`LegalPage Legal renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              class="footer-pg-link-wrapper"
               role="listitem"
             >
               <a
-                class="footer-link"
+                class="footer-link-base"
                 data-cy="footer-link-About"
                 href="/about"
               >
@@ -1658,11 +1658,11 @@ exports[`LegalPage Legal renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              class="footer-pg-link-wrapper"
               role="listitem"
             >
               <a
-                class="footer-link"
+                class="footer-link-base"
                 data-cy="footer-link-Privacy"
                 href="/legal/privacy-policy"
               >
@@ -1670,7 +1670,7 @@ exports[`LegalPage Legal renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="dropdown is-hoverable is-up"
+              class="footer-dropup"
               role="listitem"
             >
               <div
@@ -1679,7 +1679,7 @@ exports[`LegalPage Legal renders correctly 1`] = `
                 <a
                   aria-controls="footer-dropdown-menu"
                   aria-haspopup="true"
-                  class="m-4 footer-link"
+                  class="footer-dropup-menu"
                   data-cy="footer-link-legal"
                   href="/legal"
                 >
@@ -1762,14 +1762,14 @@ exports[`LegalPage Legal renders correctly 1`] = `
           class="column"
         >
           <ul
-            class="has-text-right has-text-centered-mobile footer-link"
+            class="footer-social-media"
           >
             <li
               class="faicon-link-container"
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -1795,7 +1795,7 @@ exports[`LegalPage Legal renders correctly 1`] = `
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -1821,7 +1821,7 @@ exports[`LegalPage Legal renders correctly 1`] = `
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -1846,7 +1846,7 @@ exports[`LegalPage Legal renders correctly 1`] = `
         </div>
       </div>
       <div
-        class="footer-copyright has-text-centered has-text-grey-light is-size-7"
+        class="footer-copyright"
       >
         <p
           class="pt-3"
@@ -1956,7 +1956,7 @@ exports[`LegalPage Privacy Policy Page renders correctly 1`] = `
             class="content"
           >
             <h1
-              class="title is-1"
+              class="title-one"
             >
               Privacy Policy Page
             </h1>
@@ -2025,7 +2025,7 @@ exports[`LegalPage Privacy Policy Page renders correctly 1`] = `
       class="footer"
     >
       <div
-        class="columns mb-1 is-vcentered has-text-centered-mobile"
+        class="footer-main-content-wrapper"
       >
         <div
           class="column"
@@ -2036,7 +2036,7 @@ exports[`LegalPage Privacy Policy Page renders correctly 1`] = `
             href="/"
           >
             <figure
-              class="image footer-logo"
+              class="footer-logo"
             >
               <img
                 alt="Logo"
@@ -2049,17 +2049,17 @@ exports[`LegalPage Privacy Policy Page renders correctly 1`] = `
           </a>
         </div>
         <ul
-          class="column has-text-centered"
+          class="centered-col"
           role="list"
           style="flex-basis: auto;"
         >
           <div>
             <li
-              class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              class="footer-pg-link-wrapper"
               role="listitem"
             >
               <a
-                class="footer-link"
+                class="footer-link-base"
                 data-cy="footer-link-Contact"
                 href="/about#contact-us"
               >
@@ -2067,11 +2067,11 @@ exports[`LegalPage Privacy Policy Page renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              class="footer-pg-link-wrapper"
               role="listitem"
             >
               <a
-                class="footer-link"
+                class="footer-link-base"
                 data-cy="footer-link-About"
                 href="/about"
               >
@@ -2079,11 +2079,11 @@ exports[`LegalPage Privacy Policy Page renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              class="footer-pg-link-wrapper"
               role="listitem"
             >
               <a
-                class="footer-link"
+                class="footer-link-base"
                 data-cy="footer-link-Privacy"
                 href="/legal/privacy-policy"
               >
@@ -2091,7 +2091,7 @@ exports[`LegalPage Privacy Policy Page renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="dropdown is-hoverable is-up"
+              class="footer-dropup"
               role="listitem"
             >
               <div
@@ -2100,7 +2100,7 @@ exports[`LegalPage Privacy Policy Page renders correctly 1`] = `
                 <a
                   aria-controls="footer-dropdown-menu"
                   aria-haspopup="true"
-                  class="m-4 footer-link"
+                  class="footer-dropup-menu"
                   data-cy="footer-link-legal"
                   href="/legal"
                 >
@@ -2183,14 +2183,14 @@ exports[`LegalPage Privacy Policy Page renders correctly 1`] = `
           class="column"
         >
           <ul
-            class="has-text-right has-text-centered-mobile footer-link"
+            class="footer-social-media"
           >
             <li
               class="faicon-link-container"
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -2216,7 +2216,7 @@ exports[`LegalPage Privacy Policy Page renders correctly 1`] = `
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -2242,7 +2242,7 @@ exports[`LegalPage Privacy Policy Page renders correctly 1`] = `
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -2267,7 +2267,7 @@ exports[`LegalPage Privacy Policy Page renders correctly 1`] = `
         </div>
       </div>
       <div
-        class="footer-copyright has-text-centered has-text-grey-light is-size-7"
+        class="footer-copyright"
       >
         <p
           class="pt-3"
@@ -2397,7 +2397,7 @@ exports[`LegalPage Terms and Conditions Page renders correctly 1`] = `
             class="content"
           >
             <h1
-              class="title is-1"
+              class="title-one"
             >
               Terms and Conditions Page
             </h1>
@@ -2466,7 +2466,7 @@ exports[`LegalPage Terms and Conditions Page renders correctly 1`] = `
       class="footer"
     >
       <div
-        class="columns mb-1 is-vcentered has-text-centered-mobile"
+        class="footer-main-content-wrapper"
       >
         <div
           class="column"
@@ -2477,7 +2477,7 @@ exports[`LegalPage Terms and Conditions Page renders correctly 1`] = `
             href="/"
           >
             <figure
-              class="image footer-logo"
+              class="footer-logo"
             >
               <img
                 alt="Logo"
@@ -2490,17 +2490,17 @@ exports[`LegalPage Terms and Conditions Page renders correctly 1`] = `
           </a>
         </div>
         <ul
-          class="column has-text-centered"
+          class="centered-col"
           role="list"
           style="flex-basis: auto;"
         >
           <div>
             <li
-              class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              class="footer-pg-link-wrapper"
               role="listitem"
             >
               <a
-                class="footer-link"
+                class="footer-link-base"
                 data-cy="footer-link-Contact"
                 href="/about#contact-us"
               >
@@ -2508,11 +2508,11 @@ exports[`LegalPage Terms and Conditions Page renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              class="footer-pg-link-wrapper"
               role="listitem"
             >
               <a
-                class="footer-link"
+                class="footer-link-base"
                 data-cy="footer-link-About"
                 href="/about"
               >
@@ -2520,11 +2520,11 @@ exports[`LegalPage Terms and Conditions Page renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              class="footer-pg-link-wrapper"
               role="listitem"
             >
               <a
-                class="footer-link"
+                class="footer-link-base"
                 data-cy="footer-link-Privacy"
                 href="/legal/privacy-policy"
               >
@@ -2532,7 +2532,7 @@ exports[`LegalPage Terms and Conditions Page renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="dropdown is-hoverable is-up"
+              class="footer-dropup"
               role="listitem"
             >
               <div
@@ -2541,7 +2541,7 @@ exports[`LegalPage Terms and Conditions Page renders correctly 1`] = `
                 <a
                   aria-controls="footer-dropdown-menu"
                   aria-haspopup="true"
-                  class="m-4 footer-link"
+                  class="footer-dropup-menu"
                   data-cy="footer-link-legal"
                   href="/legal"
                 >
@@ -2624,14 +2624,14 @@ exports[`LegalPage Terms and Conditions Page renders correctly 1`] = `
           class="column"
         >
           <ul
-            class="has-text-right has-text-centered-mobile footer-link"
+            class="footer-social-media"
           >
             <li
               class="faicon-link-container"
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -2657,7 +2657,7 @@ exports[`LegalPage Terms and Conditions Page renders correctly 1`] = `
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -2683,7 +2683,7 @@ exports[`LegalPage Terms and Conditions Page renders correctly 1`] = `
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -2708,7 +2708,7 @@ exports[`LegalPage Terms and Conditions Page renders correctly 1`] = `
         </div>
       </div>
       <div
-        class="footer-copyright has-text-centered has-text-grey-light is-size-7"
+        class="footer-copyright"
       >
         <p
           class="pt-3"

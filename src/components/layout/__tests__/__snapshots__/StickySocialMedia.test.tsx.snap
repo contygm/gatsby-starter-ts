@@ -3,7 +3,7 @@
 exports[`Sticky Social Media bar renders correctly horizontally 1`] = `
 <DocumentFragment>
   <div
-    class="menu sticky box mt-4  "
+    class="sticky-social-wrapper  "
   >
     <p
       class="menu-label"
@@ -11,7 +11,7 @@ exports[`Sticky Social Media bar renders correctly horizontally 1`] = `
       Share this post
     </p>
     <ul
-      class="has-text-black has-text-centered columns"
+      class="sticky-social-list-wrapper columns"
     >
       <div
         class="column"
@@ -78,7 +78,7 @@ exports[`Sticky Social Media bar renders correctly horizontally 1`] = `
 exports[`Sticky Social Media bar renders correctly vertically: closed vertical bar 1`] = `
 <DocumentFragment>
   <div
-    class="menu sticky box mt-4 is-vertical "
+    class="sticky-social-wrapper is-vertical "
   >
     <p
       class="menu-label"
@@ -86,10 +86,10 @@ exports[`Sticky Social Media bar renders correctly vertically: closed vertical b
       Share
     </p>
     <ul
-      class="has-text-black has-text-centered "
+      class="sticky-social-list-wrapper "
     >
       <div
-        class="has-text-grey-lighter"
+        class="sticky-social-show"
       >
         <svg
           aria-hidden="true"
@@ -116,7 +116,7 @@ exports[`Sticky Social Media bar renders correctly vertically: closed vertical b
 exports[`Sticky Social Media bar renders correctly vertically: open vertical bar 1`] = `
 <DocumentFragment>
   <div
-    class="menu sticky box mt-4 is-vertical "
+    class="sticky-social-wrapper is-vertical "
   >
     <p
       class="menu-label"
@@ -124,7 +124,7 @@ exports[`Sticky Social Media bar renders correctly vertically: open vertical bar
       Share
     </p>
     <ul
-      class="has-text-black has-text-centered "
+      class="sticky-social-list-wrapper "
     >
       <div
         class="column"
@@ -184,7 +184,7 @@ exports[`Sticky Social Media bar renders correctly vertically: open vertical bar
         </svg>
       </div>
       <div
-        class="column has-text-grey-lighter pt-4 pb-2"
+        class="sticky-social-hidden"
       >
         <svg
           aria-hidden="true"
@@ -211,7 +211,7 @@ exports[`Sticky Social Media bar renders correctly vertically: open vertical bar
 exports[`Sticky Social Media bar renders correctly vertically: open vertical bar 2`] = `
 <DocumentFragment>
   <div
-    class="menu sticky box mt-4 is-vertical "
+    class="sticky-social-wrapper is-vertical "
   >
     <p
       class="menu-label"
@@ -219,7 +219,7 @@ exports[`Sticky Social Media bar renders correctly vertically: open vertical bar
       Share
     </p>
     <ul
-      class="has-text-black has-text-centered "
+      class="sticky-social-list-wrapper "
     >
       <div
         class="column"
@@ -279,7 +279,7 @@ exports[`Sticky Social Media bar renders correctly vertically: open vertical bar
         </svg>
       </div>
       <div
-        class="column has-text-grey-lighter pt-4 pb-2"
+        class="sticky-social-hidden"
       >
         <svg
           aria-hidden="true"

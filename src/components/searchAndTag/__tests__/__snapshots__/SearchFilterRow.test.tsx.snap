@@ -3,10 +3,10 @@
 exports[`SearchFilterRow renders correctly with a query 1`] = `
 <DocumentFragment>
   <section
-    class="section "
+    class="section"
   >
     <div
-      class="container is-max-desktop"
+      class="search-filter-wrapper"
     >
       <div
         class="columns"
@@ -15,10 +15,10 @@ exports[`SearchFilterRow renders correctly with a query 1`] = `
           class="column"
         >
           <form
-            class="field has-addons"
+            class="search-form"
           >
             <p
-              class="control has-icons-right"
+              class="search-form-input-wrapper"
             >
               <input
                 class="input"
@@ -31,7 +31,7 @@ exports[`SearchFilterRow renders correctly with a query 1`] = `
               <span>
                 <svg
                   aria-hidden="true"
-                  class="svg-inline--fa fa-circle-xmark fa-2xs icon is-small is-right search-clear-btn"
+                  class="svg-inline--fa fa-circle-xmark fa-2xs search-clear-btn"
                   data-icon="circle-xmark"
                   data-prefix="fas"
                   data-testid="clearSearch"
@@ -51,7 +51,7 @@ exports[`SearchFilterRow renders correctly with a query 1`] = `
               class="control"
             >
               <button
-                class="button is-success"
+                class="primary-button"
                 data-testid="searchPostSubmit"
               >
                 Search
@@ -60,16 +60,16 @@ exports[`SearchFilterRow renders correctly with a query 1`] = `
           </form>
         </div>
         <div
-          class="column is-two-thirds m-auto"
+          class="search-row-tags-wrapper"
         >
           <div
-            class="field is-grouped is-grouped-multiline"
+            class="tag-list-wrapper"
           >
             <div
-              class="tags has-addons mx-2 tag-align show-pointer"
+              class="tag-wrapper"
             >
               <div
-                class="tag tag is-success"
+                class="tag-active"
                 data-testid="all"
                 id="all"
               >
@@ -82,49 +82,49 @@ exports[`SearchFilterRow renders correctly with a query 1`] = `
               </span>
             </div>
             <div
-              class="tags has-addons mx-2 tag-align show-pointer"
+              class="tag-wrapper"
             >
               <div
-                class="tag "
+                class="tag-base"
                 data-testid="three"
                 id="three"
               >
                 three
               </div>
               <span
-                class="tag is-light"
+                class="tag-count-disabled"
               >
                 3
               </span>
             </div>
             <div
-              class="tags has-addons mx-2 tag-align show-pointer"
+              class="tag-wrapper"
             >
               <div
-                class="tag "
+                class="tag-base"
                 data-testid="two"
                 id="two"
               >
                 two
               </div>
               <span
-                class="tag is-light"
+                class="tag-count-disabled"
               >
                 2
               </span>
             </div>
             <div
-              class="tags has-addons mx-2 tag-align show-pointer"
+              class="tag-wrapper"
             >
               <div
-                class="tag "
+                class="tag-base"
                 data-testid="one"
                 id="one"
               >
                 one
               </div>
               <span
-                class="tag is-light"
+                class="tag-count-disabled"
               >
                 1
               </span>
@@ -140,10 +140,10 @@ exports[`SearchFilterRow renders correctly with a query 1`] = `
 exports[`SearchFilterRow renders correctly with an active tag 1`] = `
 <DocumentFragment>
   <section
-    class="section "
+    class="section"
   >
     <div
-      class="container is-max-desktop"
+      class="search-filter-wrapper"
     >
       <div
         class="columns"
@@ -152,10 +152,10 @@ exports[`SearchFilterRow renders correctly with an active tag 1`] = `
           class="column"
         >
           <form
-            class="field has-addons"
+            class="search-form"
           >
             <p
-              class="control has-icons-right"
+              class="search-form-input-wrapper"
             >
               <input
                 class="input"
@@ -171,7 +171,7 @@ exports[`SearchFilterRow renders correctly with an active tag 1`] = `
               class="control"
             >
               <button
-                class="button is-success"
+                class="primary-button"
                 data-testid="searchPostSubmit"
                 disabled=""
               >
@@ -181,16 +181,16 @@ exports[`SearchFilterRow renders correctly with an active tag 1`] = `
           </form>
         </div>
         <div
-          class="column is-two-thirds m-auto"
+          class="search-row-tags-wrapper"
         >
           <div
-            class="field is-grouped is-grouped-multiline"
+            class="tag-list-wrapper"
           >
             <div
-              class="tags has-addons mx-2 tag-align show-pointer"
+              class="tag-wrapper"
             >
               <div
-                class="tag tag is-success is-light"
+                class="tag-inactive"
                 data-testid="all"
                 id="all"
               >
@@ -203,49 +203,49 @@ exports[`SearchFilterRow renders correctly with an active tag 1`] = `
               </span>
             </div>
             <div
-              class="tags has-addons mx-2 tag-align show-pointer"
+              class="tag-wrapper"
             >
               <div
-                class="tag is-success is-light"
+                class="tag-inactive"
                 data-testid="three"
                 id="three"
               >
                 three
               </div>
               <span
-                class="tag is-dark"
+                class="tag-count-enabled"
               >
                 3
               </span>
             </div>
             <div
-              class="tags has-addons mx-2 tag-align show-pointer"
+              class="tag-wrapper"
             >
               <div
-                class="tag is-success is-light"
+                class="tag-inactive"
                 data-testid="two"
                 id="two"
               >
                 two
               </div>
               <span
-                class="tag is-dark"
+                class="tag-count-enabled"
               >
                 2
               </span>
             </div>
             <div
-              class="tags has-addons mx-2 tag-align show-pointer"
+              class="tag-wrapper"
             >
               <div
-                class="tag is-success"
+                class="tag-active"
                 data-testid="one"
                 id="one"
               >
                 one
               </div>
               <span
-                class="tag is-dark"
+                class="tag-count-enabled"
               >
                 1
               </span>
@@ -261,10 +261,10 @@ exports[`SearchFilterRow renders correctly with an active tag 1`] = `
 exports[`SearchFilterRow renders correctly without a query 1`] = `
 <DocumentFragment>
   <section
-    class="section "
+    class="section"
   >
     <div
-      class="container is-max-desktop"
+      class="search-filter-wrapper"
     >
       <div
         class="columns"
@@ -273,10 +273,10 @@ exports[`SearchFilterRow renders correctly without a query 1`] = `
           class="column"
         >
           <form
-            class="field has-addons"
+            class="search-form"
           >
             <p
-              class="control has-icons-right"
+              class="search-form-input-wrapper"
             >
               <input
                 class="input"
@@ -291,7 +291,7 @@ exports[`SearchFilterRow renders correctly without a query 1`] = `
               class="control"
             >
               <button
-                class="button is-success"
+                class="primary-button"
                 data-testid="searchPostSubmit"
               >
                 Search
@@ -300,16 +300,16 @@ exports[`SearchFilterRow renders correctly without a query 1`] = `
           </form>
         </div>
         <div
-          class="column is-two-thirds m-auto"
+          class="search-row-tags-wrapper"
         >
           <div
-            class="field is-grouped is-grouped-multiline"
+            class="tag-list-wrapper"
           >
             <div
-              class="tags has-addons mx-2 tag-align show-pointer"
+              class="tag-wrapper"
             >
               <div
-                class="tag tag is-success is-light"
+                class="tag-inactive"
                 data-testid="all"
                 id="all"
               >
@@ -322,49 +322,49 @@ exports[`SearchFilterRow renders correctly without a query 1`] = `
               </span>
             </div>
             <div
-              class="tags has-addons mx-2 tag-align show-pointer"
+              class="tag-wrapper"
             >
               <div
-                class="tag is-success is-light"
+                class="tag-inactive"
                 data-testid="three"
                 id="three"
               >
                 three
               </div>
               <span
-                class="tag is-dark"
+                class="tag-count-enabled"
               >
                 3
               </span>
             </div>
             <div
-              class="tags has-addons mx-2 tag-align show-pointer"
+              class="tag-wrapper"
             >
               <div
-                class="tag is-success is-light"
+                class="tag-inactive"
                 data-testid="two"
                 id="two"
               >
                 two
               </div>
               <span
-                class="tag is-dark"
+                class="tag-count-enabled"
               >
                 2
               </span>
             </div>
             <div
-              class="tags has-addons mx-2 tag-align show-pointer"
+              class="tag-wrapper"
             >
               <div
-                class="tag is-success is-light"
+                class="tag-inactive"
                 data-testid="one"
                 id="one"
               >
                 one
               </div>
               <span
-                class="tag is-dark"
+                class="tag-count-enabled"
               >
                 1
               </span>

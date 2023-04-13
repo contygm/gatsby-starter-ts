@@ -103,16 +103,16 @@ exports[`About renders correctly 1`] = `
     </nav>
     <main>
       <header
-        class="hero is-medium"
+        class="medium-hero"
       >
         <div
-          class="hero-body has-background-black"
+          class="pg-header-hero-black"
         >
           <div
             class="container "
           >
             <h1
-              class="title has-text-white is-1"
+              class="pg-header-title"
             >
               About The Company
               <span
@@ -134,7 +134,7 @@ exports[`About renders correctly 1`] = `
             class="container"
           >
             <h2
-              class="title is-2"
+              class="title-two"
             >
               Our Story
             </h2>
@@ -156,7 +156,7 @@ exports[`About renders correctly 1`] = `
             class="container"
           >
             <h2
-              class="title is-2"
+              class="title-two"
             >
               Our Tech
             </h2>
@@ -192,7 +192,7 @@ exports[`About renders correctly 1`] = `
             class="container"
           >
             <h2
-              class="title is-2"
+              class="title-two"
               id="contact-us"
             >
               Contact Us
@@ -212,10 +212,10 @@ exports[`About renders correctly 1`] = `
               Biscuit cake candy brownie sweet bear claw croissant pastry jelly-o. Dessert pie marzipan liquorice apple pie toffee shortbread pie sweet roll. Candy canes halvah icing dragée toffee sweet dessert topping chocolate bar.
             </p>
             <div
-              class="columns my-2"
+              class="contact-form-container"
             >
               <div
-                class="column is-two-thirds-desktop"
+                class="contact-form-wrapper"
               >
                 <form
                   class="is-small"
@@ -279,13 +279,13 @@ exports[`About renders correctly 1`] = `
                     </div>
                   </div>
                   <div
-                    class="field is-grouped"
+                    class="contact-action-buttons"
                   >
                     <div
                       class="control"
                     >
                       <button
-                        class="button is-primary"
+                        class="primary-button"
                         type="submit"
                       >
                         Submit
@@ -295,7 +295,7 @@ exports[`About renders correctly 1`] = `
                       class="control"
                     >
                       <button
-                        class="button has-background-grey-lighter"
+                        class="light-grey-button"
                         name="reset"
                         type="reset"
                       >
@@ -314,7 +314,7 @@ exports[`About renders correctly 1`] = `
       class="footer"
     >
       <div
-        class="columns mb-1 is-vcentered has-text-centered-mobile"
+        class="footer-main-content-wrapper"
       >
         <div
           class="column"
@@ -325,7 +325,7 @@ exports[`About renders correctly 1`] = `
             href="/"
           >
             <figure
-              class="image footer-logo"
+              class="footer-logo"
             >
               <img
                 alt="Logo"
@@ -338,17 +338,17 @@ exports[`About renders correctly 1`] = `
           </a>
         </div>
         <ul
-          class="column has-text-centered"
+          class="centered-col"
           role="list"
           style="flex-basis: auto;"
         >
           <div>
             <li
-              class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              class="footer-pg-link-wrapper"
               role="listitem"
             >
               <a
-                class="footer-link"
+                class="footer-link-base"
                 data-cy="footer-link-Contact"
                 href="/about#contact-us"
               >
@@ -356,11 +356,11 @@ exports[`About renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              class="footer-pg-link-wrapper"
               role="listitem"
             >
               <a
-                class="footer-link"
+                class="footer-link-base"
                 data-cy="footer-link-About"
                 href="/about"
               >
@@ -368,11 +368,11 @@ exports[`About renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="is-inline-desktop is-inline-tablet m-4 footer-link"
+              class="footer-pg-link-wrapper"
               role="listitem"
             >
               <a
-                class="footer-link"
+                class="footer-link-base"
                 data-cy="footer-link-Privacy"
                 href="/legal/privacy-policy"
               >
@@ -380,7 +380,7 @@ exports[`About renders correctly 1`] = `
               </a>
             </li>
             <li
-              class="dropdown is-hoverable is-up"
+              class="footer-dropup"
               role="listitem"
             >
               <div
@@ -389,7 +389,7 @@ exports[`About renders correctly 1`] = `
                 <a
                   aria-controls="footer-dropdown-menu"
                   aria-haspopup="true"
-                  class="m-4 footer-link"
+                  class="footer-dropup-menu"
                   data-cy="footer-link-legal"
                   href="/legal"
                 >
@@ -472,14 +472,14 @@ exports[`About renders correctly 1`] = `
           class="column"
         >
           <ul
-            class="has-text-right has-text-centered-mobile footer-link"
+            class="footer-social-media"
           >
             <li
               class="faicon-link-container"
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -505,7 +505,7 @@ exports[`About renders correctly 1`] = `
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -531,7 +531,7 @@ exports[`About renders correctly 1`] = `
             >
               <a
                 aria-label="social media link"
-                class="faicon-link no-label is-white"
+                class="faicon-link  is-white"
                 data-cy="faicon-link"
                 href="/"
               >
@@ -556,7 +556,7 @@ exports[`About renders correctly 1`] = `
         </div>
       </div>
       <div
-        class="footer-copyright has-text-centered has-text-grey-light is-size-7"
+        class="footer-copyright"
       >
         <p
           class="pt-3"

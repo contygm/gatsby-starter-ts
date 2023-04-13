@@ -3,10 +3,10 @@
 exports[`Posts Page searches blog correctly and clears search bar 1`] = `
 <DocumentFragment>
   <section
-    class="section "
+    class="section"
   >
     <div
-      class="container is-max-desktop"
+      class="search-filter-wrapper"
     >
       <div
         class="columns"
@@ -15,10 +15,10 @@ exports[`Posts Page searches blog correctly and clears search bar 1`] = `
           class="column"
         >
           <form
-            class="field has-addons"
+            class="search-form"
           >
             <p
-              class="control has-icons-right"
+              class="search-form-input-wrapper"
             >
               <input
                 class="input"
@@ -33,7 +33,7 @@ exports[`Posts Page searches blog correctly and clears search bar 1`] = `
               class="control"
             >
               <button
-                class="button is-success"
+                class="primary-button"
                 data-testid="searchPostSubmit"
               >
                 Search
@@ -42,16 +42,16 @@ exports[`Posts Page searches blog correctly and clears search bar 1`] = `
           </form>
         </div>
         <div
-          class="column is-two-thirds m-auto"
+          class="search-row-tags-wrapper"
         >
           <div
-            class="field is-grouped is-grouped-multiline"
+            class="tag-list-wrapper"
           >
             <div
-              class="tags has-addons mx-2 tag-align show-pointer"
+              class="tag-wrapper"
             >
               <div
-                class="tag tag is-success is-light"
+                class="tag-inactive"
                 data-testid="all"
                 id="all"
               >
@@ -64,49 +64,49 @@ exports[`Posts Page searches blog correctly and clears search bar 1`] = `
               </span>
             </div>
             <div
-              class="tags has-addons mx-2 tag-align show-pointer"
+              class="tag-wrapper"
             >
               <div
-                class="tag is-success is-light"
+                class="tag-inactive"
                 data-testid="three"
                 id="three"
               >
                 three
               </div>
               <span
-                class="tag is-dark"
+                class="tag-count-enabled"
               >
                 3
               </span>
             </div>
             <div
-              class="tags has-addons mx-2 tag-align show-pointer"
+              class="tag-wrapper"
             >
               <div
-                class="tag is-success is-light"
+                class="tag-inactive"
                 data-testid="two"
                 id="two"
               >
                 two
               </div>
               <span
-                class="tag is-dark"
+                class="tag-count-enabled"
               >
                 2
               </span>
             </div>
             <div
-              class="tags has-addons mx-2 tag-align show-pointer"
+              class="tag-wrapper"
             >
               <div
-                class="tag is-success is-light"
+                class="tag-inactive"
                 data-testid="one"
                 id="one"
               >
                 one
               </div>
               <span
-                class="tag is-dark"
+                class="tag-count-enabled"
               >
                 1
               </span>
@@ -120,13 +120,13 @@ exports[`Posts Page searches blog correctly and clears search bar 1`] = `
     class="section"
   >
     <section
-      class="container is-max-desktop"
+      class="post-index-wrapper"
     >
       <div
-        class="col-multi-wrapper is-centered"
+        class="post-index-cards-wrapper"
       >
         <div
-          class="column is-4"
+          class="post-index-card-wrapper"
           data-testid="post-card"
         >
           <div
@@ -136,13 +136,13 @@ exports[`Posts Page searches blog correctly and clears search bar 1`] = `
               class="card-image"
             >
               <a
-                class="tag is-primary sticky-tag"
+                class="post-card-main-tag"
                 href="?tag=two"
               >
                 two
               </a>
               <figure
-                class="image is-4by3 blog-card-image"
+                class="post-card-image"
               >
                 <img
                   alt="Placeholder image"
@@ -160,12 +160,12 @@ exports[`Posts Page searches blog correctly and clears search bar 1`] = `
                   class="media-content"
                 >
                   <p
-                    class="title is-4"
+                    class="title-four"
                   >
                     Baking Tutorial
                   </p>
                   <p
-                    class="subtitle is-6"
+                    class="subtitle-six"
                   >
                     <time
                       datetime="3-2-2021"
@@ -191,7 +191,7 @@ exports[`Posts Page searches blog correctly and clears search bar 1`] = `
                 class="card-footer"
               >
                 <p
-                  class="mt-2 ml-2 mr-2"
+                  class="post-card-tag-title"
                 >
                   Tags:
                 </p>
@@ -199,7 +199,7 @@ exports[`Posts Page searches blog correctly and clears search bar 1`] = `
                   class="tags"
                 >
                   <a
-                    class="tag mt-2"
+                    class="post-card-tag"
                     href="?tag=three"
                     id="three"
                   >
@@ -211,7 +211,7 @@ exports[`Posts Page searches blog correctly and clears search bar 1`] = `
           </div>
         </div>
         <div
-          class="column is-4"
+          class="post-index-card-wrapper"
           data-testid="post-card"
         >
           <div
@@ -221,13 +221,13 @@ exports[`Posts Page searches blog correctly and clears search bar 1`] = `
               class="card-image"
             >
               <a
-                class="tag is-primary sticky-tag"
+                class="post-card-main-tag"
                 href="?tag=one"
               >
                 one
               </a>
               <figure
-                class="image is-4by3 blog-card-image"
+                class="post-card-image"
               >
                 <img
                   alt="Placeholder image"
@@ -245,12 +245,12 @@ exports[`Posts Page searches blog correctly and clears search bar 1`] = `
                   class="media-content"
                 >
                   <p
-                    class="title is-4"
+                    class="title-four"
                   >
                     10 Best Things
                   </p>
                   <p
-                    class="subtitle is-6"
+                    class="subtitle-six"
                   >
                     <time
                       datetime="2-2-2021"
@@ -276,7 +276,7 @@ exports[`Posts Page searches blog correctly and clears search bar 1`] = `
                 class="card-footer"
               >
                 <p
-                  class="mt-2 ml-2 mr-2"
+                  class="post-card-tag-title"
                 >
                   Tags:
                 </p>
@@ -284,14 +284,14 @@ exports[`Posts Page searches blog correctly and clears search bar 1`] = `
                   class="tags"
                 >
                   <a
-                    class="tag mt-2"
+                    class="post-card-tag"
                     href="?tag=two"
                     id="two"
                   >
                     two
                   </a>
                   <a
-                    class="tag mt-2"
+                    class="post-card-tag"
                     href="?tag=three"
                     id="three"
                   >
@@ -303,7 +303,7 @@ exports[`Posts Page searches blog correctly and clears search bar 1`] = `
           </div>
         </div>
         <div
-          class="column is-4"
+          class="post-index-card-wrapper"
           data-testid="post-card"
         >
           <div
@@ -313,13 +313,13 @@ exports[`Posts Page searches blog correctly and clears search bar 1`] = `
               class="card-image"
             >
               <a
-                class="tag is-primary sticky-tag"
+                class="post-card-main-tag"
                 href="?tag=one"
               >
                 one
               </a>
               <figure
-                class="image is-4by3 blog-card-image"
+                class="post-card-image"
               >
                 <img
                   alt="Placeholder image"
@@ -337,12 +337,12 @@ exports[`Posts Page searches blog correctly and clears search bar 1`] = `
                   class="media-content"
                 >
                   <p
-                    class="title is-4"
+                    class="title-four"
                   >
                     Guide
                   </p>
                   <p
-                    class="subtitle is-6"
+                    class="subtitle-six"
                   >
                     <time
                       datetime="5-2-2021"
@@ -368,7 +368,7 @@ exports[`Posts Page searches blog correctly and clears search bar 1`] = `
                 class="card-footer"
               >
                 <p
-                  class="mt-2 ml-2 mr-2"
+                  class="post-card-tag-title"
                 >
                   Tags:
                 </p>
@@ -376,7 +376,7 @@ exports[`Posts Page searches blog correctly and clears search bar 1`] = `
                   class="tags"
                 >
                   <a
-                    class="tag mt-2"
+                    class="post-card-tag"
                     href="?tag=two"
                     id="two"
                   >
@@ -396,10 +396,10 @@ exports[`Posts Page searches blog correctly and clears search bar 1`] = `
 exports[`Posts Page searches glossary correctly 1`] = `
 <DocumentFragment>
   <section
-    class="section "
+    class="section"
   >
     <div
-      class="container is-max-desktop"
+      class="search-filter-wrapper"
     >
       <div
         class="columns"
@@ -408,10 +408,10 @@ exports[`Posts Page searches glossary correctly 1`] = `
           class="column"
         >
           <form
-            class="field has-addons"
+            class="search-form"
           >
             <p
-              class="control has-icons-right"
+              class="search-form-input-wrapper"
             >
               <input
                 class="input"
@@ -426,7 +426,7 @@ exports[`Posts Page searches glossary correctly 1`] = `
               class="control"
             >
               <button
-                class="button is-success"
+                class="primary-button"
                 data-testid="searchPostSubmit"
               >
                 Search
@@ -435,16 +435,16 @@ exports[`Posts Page searches glossary correctly 1`] = `
           </form>
         </div>
         <div
-          class="column is-two-thirds m-auto"
+          class="search-row-tags-wrapper"
         >
           <div
-            class="field is-grouped is-grouped-multiline"
+            class="tag-list-wrapper"
           >
             <div
-              class="tags has-addons mx-2 tag-align show-pointer"
+              class="tag-wrapper"
             >
               <div
-                class="tag tag is-success is-light"
+                class="tag-inactive"
                 data-testid="all"
                 id="all"
               >
@@ -457,49 +457,49 @@ exports[`Posts Page searches glossary correctly 1`] = `
               </span>
             </div>
             <div
-              class="tags has-addons mx-2 tag-align show-pointer"
+              class="tag-wrapper"
             >
               <div
-                class="tag is-success is-light"
+                class="tag-inactive"
                 data-testid="three"
                 id="three"
               >
                 three
               </div>
               <span
-                class="tag is-dark"
+                class="tag-count-enabled"
               >
                 3
               </span>
             </div>
             <div
-              class="tags has-addons mx-2 tag-align show-pointer"
+              class="tag-wrapper"
             >
               <div
-                class="tag is-success is-light"
+                class="tag-inactive"
                 data-testid="two"
                 id="two"
               >
                 two
               </div>
               <span
-                class="tag is-dark"
+                class="tag-count-enabled"
               >
                 4
               </span>
             </div>
             <div
-              class="tags has-addons mx-2 tag-align show-pointer"
+              class="tag-wrapper"
             >
               <div
-                class="tag is-success is-light"
+                class="tag-inactive"
                 data-testid="one"
                 id="one"
               >
                 one
               </div>
               <span
-                class="tag is-dark"
+                class="tag-count-enabled"
               >
                 2
               </span>
@@ -516,16 +516,15 @@ exports[`Posts Page searches glossary correctly 1`] = `
       class="is-centered"
     >
       <section
-        class="section pt-0"
+        class="gloss-section-wrapper"
       >
         <h2
-          class="title is-size-2"
+          class="title-two"
           id="A"
         >
           A
         </h2>
         <div
-          class=""
           data-testid="definition-card"
         >
           <div
@@ -550,7 +549,7 @@ exports[`Posts Page searches glossary correctly 1`] = `
                         class="level-item"
                       >
                         <h3
-                          class="title is-3"
+                          class="title-three"
                           id="air"
                         >
                           Air
@@ -561,7 +560,7 @@ exports[`Posts Page searches glossary correctly 1`] = `
                       class="level-right"
                     >
                       <div
-                        class="level-item has-text-centered"
+                        class="centered-level"
                       >
                         <div>
                           <p
@@ -577,7 +576,7 @@ exports[`Posts Page searches glossary correctly 1`] = `
                         </div>
                       </div>
                       <div
-                        class="level-item has-text-centered"
+                        class="centered-level"
                       >
                         <div>
                           <p
@@ -614,10 +613,10 @@ exports[`Posts Page searches glossary correctly 1`] = `
                 class="content"
               >
                 <div
-                  class="level "
+                  class="level"
                 >
                   <div
-                    class="level-item is-justify-content-left"
+                    class="justified-left-level"
                   >
                     <div>
                       <h4>
@@ -644,7 +643,7 @@ exports[`Posts Page searches glossary correctly 1`] = `
                     </div>
                   </div>
                   <div
-                    class="level-item is-justify-content-left"
+                    class="justified-left-level"
                   >
                     <div>
                       <h4>
@@ -677,7 +676,7 @@ exports[`Posts Page searches glossary correctly 1`] = `
               class="card-footer"
             >
               <p
-                class="my-2 ml-5 mr-2"
+                class="definition-card-tag-title"
               >
                 Tags:
               </p>
@@ -685,14 +684,14 @@ exports[`Posts Page searches glossary correctly 1`] = `
                 class="tags"
               >
                 <a
-                  class="tag is-success is-light"
+                  class="definition-card-tag"
                   href="?tag=two"
                   id="two"
                 >
                   two
                 </a>
                 <a
-                  class="tag is-success is-light"
+                  class="definition-card-tag"
                   href="?tag=three"
                   id="three"
                 >
@@ -703,7 +702,6 @@ exports[`Posts Page searches glossary correctly 1`] = `
           </div>
         </div>
         <div
-          class=""
           data-testid="definition-card"
         >
           <div
@@ -728,7 +726,7 @@ exports[`Posts Page searches glossary correctly 1`] = `
                         class="level-item"
                       >
                         <h3
-                          class="title is-3"
+                          class="title-three"
                           id="atom"
                         >
                           Atom
@@ -739,7 +737,7 @@ exports[`Posts Page searches glossary correctly 1`] = `
                       class="level-right"
                     >
                       <div
-                        class="level-item has-text-centered"
+                        class="centered-level"
                       >
                         <div>
                           <p
@@ -755,7 +753,7 @@ exports[`Posts Page searches glossary correctly 1`] = `
                         </div>
                       </div>
                       <div
-                        class="level-item has-text-centered"
+                        class="centered-level"
                       >
                         <div>
                           <p
@@ -792,10 +790,10 @@ exports[`Posts Page searches glossary correctly 1`] = `
                 class="content"
               >
                 <div
-                  class="level "
+                  class="level"
                 >
                   <div
-                    class="level-item is-justify-content-left"
+                    class="justified-left-level"
                   >
                     <div>
                       <h4>
@@ -822,7 +820,7 @@ exports[`Posts Page searches glossary correctly 1`] = `
                     </div>
                   </div>
                   <div
-                    class="level-item is-justify-content-left"
+                    class="justified-left-level"
                   >
                     <div>
                       <h4>
@@ -855,7 +853,7 @@ exports[`Posts Page searches glossary correctly 1`] = `
               class="card-footer"
             >
               <p
-                class="my-2 ml-5 mr-2"
+                class="definition-card-tag-title"
               >
                 Tags:
               </p>
@@ -863,14 +861,14 @@ exports[`Posts Page searches glossary correctly 1`] = `
                 class="tags"
               >
                 <a
-                  class="tag is-success is-light"
+                  class="definition-card-tag"
                   href="?tag=two"
                   id="two"
                 >
                   two
                 </a>
                 <a
-                  class="tag is-success is-light"
+                  class="definition-card-tag"
                   href="?tag=one"
                   id="one"
                 >
@@ -882,16 +880,15 @@ exports[`Posts Page searches glossary correctly 1`] = `
         </div>
       </section>
       <section
-        class="section pt-0"
+        class="gloss-section-wrapper"
       >
         <h2
-          class="title is-size-2"
+          class="title-two"
           id="C"
         >
           C
         </h2>
         <div
-          class=""
           data-testid="definition-card"
         >
           <div
@@ -916,7 +913,7 @@ exports[`Posts Page searches glossary correctly 1`] = `
                         class="level-item"
                       >
                         <h3
-                          class="title is-3"
+                          class="title-three"
                           id="cloud"
                         >
                           Cloud
@@ -927,7 +924,7 @@ exports[`Posts Page searches glossary correctly 1`] = `
                       class="level-right"
                     >
                       <div
-                        class="level-item has-text-centered"
+                        class="centered-level"
                       >
                         <div>
                           <p
@@ -943,7 +940,7 @@ exports[`Posts Page searches glossary correctly 1`] = `
                         </div>
                       </div>
                       <div
-                        class="level-item has-text-centered"
+                        class="centered-level"
                       >
                         <div>
                           <p
@@ -980,10 +977,10 @@ exports[`Posts Page searches glossary correctly 1`] = `
                 class="content"
               >
                 <div
-                  class="level "
+                  class="level"
                 >
                   <div
-                    class="level-item is-justify-content-left"
+                    class="justified-left-level"
                   >
                     <div>
                       <h4>
@@ -1010,7 +1007,7 @@ exports[`Posts Page searches glossary correctly 1`] = `
                     </div>
                   </div>
                   <div
-                    class="level-item is-justify-content-left"
+                    class="justified-left-level"
                   >
                     <div>
                       <h4>
@@ -1043,7 +1040,7 @@ exports[`Posts Page searches glossary correctly 1`] = `
               class="card-footer"
             >
               <p
-                class="my-2 ml-5 mr-2"
+                class="definition-card-tag-title"
               >
                 Tags:
               </p>
@@ -1051,14 +1048,14 @@ exports[`Posts Page searches glossary correctly 1`] = `
                 class="tags"
               >
                 <a
-                  class="tag is-success is-light"
+                  class="definition-card-tag"
                   href="?tag=two"
                   id="two"
                 >
                   two
                 </a>
                 <a
-                  class="tag is-success is-light"
+                  class="definition-card-tag"
                   href="?tag=one"
                   id="one"
                 >
@@ -1070,16 +1067,15 @@ exports[`Posts Page searches glossary correctly 1`] = `
         </div>
       </section>
       <section
-        class="section pt-0"
+        class="gloss-section-wrapper"
       >
         <h2
-          class="title is-size-2"
+          class="title-two"
           id="M"
         >
           M
         </h2>
         <div
-          class=""
           data-testid="definition-card"
         >
           <div
@@ -1104,7 +1100,7 @@ exports[`Posts Page searches glossary correctly 1`] = `
                         class="level-item"
                       >
                         <h3
-                          class="title is-3"
+                          class="title-three"
                           id="moon"
                         >
                           Moon
@@ -1115,7 +1111,7 @@ exports[`Posts Page searches glossary correctly 1`] = `
                       class="level-right"
                     >
                       <div
-                        class="level-item has-text-centered"
+                        class="centered-level"
                       >
                         <div>
                           <p
@@ -1131,7 +1127,7 @@ exports[`Posts Page searches glossary correctly 1`] = `
                         </div>
                       </div>
                       <div
-                        class="level-item has-text-centered"
+                        class="centered-level"
                       >
                         <div>
                           <p
@@ -1168,10 +1164,10 @@ exports[`Posts Page searches glossary correctly 1`] = `
                 class="content"
               >
                 <div
-                  class="level "
+                  class="level"
                 >
                   <div
-                    class="level-item is-justify-content-left"
+                    class="justified-left-level"
                   >
                     <div>
                       <h4>
@@ -1198,7 +1194,7 @@ exports[`Posts Page searches glossary correctly 1`] = `
                     </div>
                   </div>
                   <div
-                    class="level-item is-justify-content-left"
+                    class="justified-left-level"
                   >
                     <div>
                       <h4>
@@ -1231,7 +1227,7 @@ exports[`Posts Page searches glossary correctly 1`] = `
               class="card-footer"
             >
               <p
-                class="my-2 ml-5 mr-2"
+                class="definition-card-tag-title"
               >
                 Tags:
               </p>
@@ -1239,7 +1235,7 @@ exports[`Posts Page searches glossary correctly 1`] = `
                 class="tags"
               >
                 <a
-                  class="tag is-success is-light"
+                  class="definition-card-tag"
                   href="?tag=two"
                   id="two"
                 >
@@ -1251,16 +1247,15 @@ exports[`Posts Page searches glossary correctly 1`] = `
         </div>
       </section>
       <section
-        class="section pt-0"
+        class="gloss-section-wrapper"
       >
         <h2
-          class="title is-size-2"
+          class="title-two"
           id="W"
         >
           W
         </h2>
         <div
-          class=""
           data-testid="definition-card"
         >
           <div
@@ -1285,7 +1280,7 @@ exports[`Posts Page searches glossary correctly 1`] = `
                         class="level-item"
                       >
                         <h3
-                          class="title is-3"
+                          class="title-three"
                           id="window"
                         >
                           Window
@@ -1296,7 +1291,7 @@ exports[`Posts Page searches glossary correctly 1`] = `
                       class="level-right"
                     >
                       <div
-                        class="level-item has-text-centered"
+                        class="centered-level"
                       >
                         <div>
                           <p
@@ -1312,7 +1307,7 @@ exports[`Posts Page searches glossary correctly 1`] = `
                         </div>
                       </div>
                       <div
-                        class="level-item has-text-centered"
+                        class="centered-level"
                       >
                         <div>
                           <p
@@ -1349,10 +1344,10 @@ exports[`Posts Page searches glossary correctly 1`] = `
                 class="content"
               >
                 <div
-                  class="level "
+                  class="level"
                 >
                   <div
-                    class="level-item is-justify-content-left"
+                    class="justified-left-level"
                   >
                     <div>
                       <h4>
@@ -1379,7 +1374,7 @@ exports[`Posts Page searches glossary correctly 1`] = `
                     </div>
                   </div>
                   <div
-                    class="level-item is-justify-content-left"
+                    class="justified-left-level"
                   >
                     <div>
                       <h4>
@@ -1395,7 +1390,7 @@ exports[`Posts Page searches glossary correctly 1`] = `
               class="card-footer"
             >
               <p
-                class="my-2 ml-5 mr-2"
+                class="definition-card-tag-title"
               >
                 Tags:
               </p>
@@ -1403,7 +1398,7 @@ exports[`Posts Page searches glossary correctly 1`] = `
                 class="tags"
               >
                 <a
-                  class="tag is-success is-light"
+                  class="definition-card-tag"
                   href="?tag=three"
                   id="three"
                 >
@@ -1422,10 +1417,10 @@ exports[`Posts Page searches glossary correctly 1`] = `
 exports[`Posts Page searches glossary html correctly 1`] = `
 <DocumentFragment>
   <section
-    class="section "
+    class="section"
   >
     <div
-      class="container is-max-desktop"
+      class="search-filter-wrapper"
     >
       <div
         class="columns"
@@ -1434,10 +1429,10 @@ exports[`Posts Page searches glossary html correctly 1`] = `
           class="column"
         >
           <form
-            class="field has-addons"
+            class="search-form"
           >
             <p
-              class="control has-icons-right"
+              class="search-form-input-wrapper"
             >
               <input
                 class="input"
@@ -1452,7 +1447,7 @@ exports[`Posts Page searches glossary html correctly 1`] = `
               class="control"
             >
               <button
-                class="button is-success"
+                class="primary-button"
                 data-testid="searchPostSubmit"
               >
                 Search
@@ -1461,16 +1456,16 @@ exports[`Posts Page searches glossary html correctly 1`] = `
           </form>
         </div>
         <div
-          class="column is-two-thirds m-auto"
+          class="search-row-tags-wrapper"
         >
           <div
-            class="field is-grouped is-grouped-multiline"
+            class="tag-list-wrapper"
           >
             <div
-              class="tags has-addons mx-2 tag-align show-pointer"
+              class="tag-wrapper"
             >
               <div
-                class="tag tag is-success is-light"
+                class="tag-inactive"
                 data-testid="all"
                 id="all"
               >
@@ -1483,49 +1478,49 @@ exports[`Posts Page searches glossary html correctly 1`] = `
               </span>
             </div>
             <div
-              class="tags has-addons mx-2 tag-align show-pointer"
+              class="tag-wrapper"
             >
               <div
-                class="tag is-success is-light"
+                class="tag-inactive"
                 data-testid="three"
                 id="three"
               >
                 three
               </div>
               <span
-                class="tag is-dark"
+                class="tag-count-enabled"
               >
                 3
               </span>
             </div>
             <div
-              class="tags has-addons mx-2 tag-align show-pointer"
+              class="tag-wrapper"
             >
               <div
-                class="tag is-success is-light"
+                class="tag-inactive"
                 data-testid="two"
                 id="two"
               >
                 two
               </div>
               <span
-                class="tag is-dark"
+                class="tag-count-enabled"
               >
                 4
               </span>
             </div>
             <div
-              class="tags has-addons mx-2 tag-align show-pointer"
+              class="tag-wrapper"
             >
               <div
-                class="tag is-success is-light"
+                class="tag-inactive"
                 data-testid="one"
                 id="one"
               >
                 one
               </div>
               <span
-                class="tag is-dark"
+                class="tag-count-enabled"
               >
                 2
               </span>
@@ -1542,16 +1537,15 @@ exports[`Posts Page searches glossary html correctly 1`] = `
       class="is-centered"
     >
       <section
-        class="section pt-0"
+        class="gloss-section-wrapper"
       >
         <h2
-          class="title is-size-2"
+          class="title-two"
           id="A"
         >
           A
         </h2>
         <div
-          class=""
           data-testid="definition-card"
         >
           <div
@@ -1576,7 +1570,7 @@ exports[`Posts Page searches glossary html correctly 1`] = `
                         class="level-item"
                       >
                         <h3
-                          class="title is-3"
+                          class="title-three"
                           id="air"
                         >
                           Air
@@ -1587,7 +1581,7 @@ exports[`Posts Page searches glossary html correctly 1`] = `
                       class="level-right"
                     >
                       <div
-                        class="level-item has-text-centered"
+                        class="centered-level"
                       >
                         <div>
                           <p
@@ -1603,7 +1597,7 @@ exports[`Posts Page searches glossary html correctly 1`] = `
                         </div>
                       </div>
                       <div
-                        class="level-item has-text-centered"
+                        class="centered-level"
                       >
                         <div>
                           <p
@@ -1640,10 +1634,10 @@ exports[`Posts Page searches glossary html correctly 1`] = `
                 class="content"
               >
                 <div
-                  class="level "
+                  class="level"
                 >
                   <div
-                    class="level-item is-justify-content-left"
+                    class="justified-left-level"
                   >
                     <div>
                       <h4>
@@ -1670,7 +1664,7 @@ exports[`Posts Page searches glossary html correctly 1`] = `
                     </div>
                   </div>
                   <div
-                    class="level-item is-justify-content-left"
+                    class="justified-left-level"
                   >
                     <div>
                       <h4>
@@ -1703,7 +1697,7 @@ exports[`Posts Page searches glossary html correctly 1`] = `
               class="card-footer"
             >
               <p
-                class="my-2 ml-5 mr-2"
+                class="definition-card-tag-title"
               >
                 Tags:
               </p>
@@ -1711,14 +1705,14 @@ exports[`Posts Page searches glossary html correctly 1`] = `
                 class="tags"
               >
                 <a
-                  class="tag is-success is-light"
+                  class="definition-card-tag"
                   href="?tag=two"
                   id="two"
                 >
                   two
                 </a>
                 <a
-                  class="tag is-success is-light"
+                  class="definition-card-tag"
                   href="?tag=three"
                   id="three"
                 >
@@ -1729,7 +1723,6 @@ exports[`Posts Page searches glossary html correctly 1`] = `
           </div>
         </div>
         <div
-          class=""
           data-testid="definition-card"
         >
           <div
@@ -1754,7 +1747,7 @@ exports[`Posts Page searches glossary html correctly 1`] = `
                         class="level-item"
                       >
                         <h3
-                          class="title is-3"
+                          class="title-three"
                           id="atom"
                         >
                           Atom
@@ -1765,7 +1758,7 @@ exports[`Posts Page searches glossary html correctly 1`] = `
                       class="level-right"
                     >
                       <div
-                        class="level-item has-text-centered"
+                        class="centered-level"
                       >
                         <div>
                           <p
@@ -1781,7 +1774,7 @@ exports[`Posts Page searches glossary html correctly 1`] = `
                         </div>
                       </div>
                       <div
-                        class="level-item has-text-centered"
+                        class="centered-level"
                       >
                         <div>
                           <p
@@ -1818,10 +1811,10 @@ exports[`Posts Page searches glossary html correctly 1`] = `
                 class="content"
               >
                 <div
-                  class="level "
+                  class="level"
                 >
                   <div
-                    class="level-item is-justify-content-left"
+                    class="justified-left-level"
                   >
                     <div>
                       <h4>
@@ -1848,7 +1841,7 @@ exports[`Posts Page searches glossary html correctly 1`] = `
                     </div>
                   </div>
                   <div
-                    class="level-item is-justify-content-left"
+                    class="justified-left-level"
                   >
                     <div>
                       <h4>
@@ -1881,7 +1874,7 @@ exports[`Posts Page searches glossary html correctly 1`] = `
               class="card-footer"
             >
               <p
-                class="my-2 ml-5 mr-2"
+                class="definition-card-tag-title"
               >
                 Tags:
               </p>
@@ -1889,14 +1882,14 @@ exports[`Posts Page searches glossary html correctly 1`] = `
                 class="tags"
               >
                 <a
-                  class="tag is-success is-light"
+                  class="definition-card-tag"
                   href="?tag=two"
                   id="two"
                 >
                   two
                 </a>
                 <a
-                  class="tag is-success is-light"
+                  class="definition-card-tag"
                   href="?tag=one"
                   id="one"
                 >
@@ -1908,16 +1901,15 @@ exports[`Posts Page searches glossary html correctly 1`] = `
         </div>
       </section>
       <section
-        class="section pt-0"
+        class="gloss-section-wrapper"
       >
         <h2
-          class="title is-size-2"
+          class="title-two"
           id="C"
         >
           C
         </h2>
         <div
-          class=""
           data-testid="definition-card"
         >
           <div
@@ -1942,7 +1934,7 @@ exports[`Posts Page searches glossary html correctly 1`] = `
                         class="level-item"
                       >
                         <h3
-                          class="title is-3"
+                          class="title-three"
                           id="cloud"
                         >
                           Cloud
@@ -1953,7 +1945,7 @@ exports[`Posts Page searches glossary html correctly 1`] = `
                       class="level-right"
                     >
                       <div
-                        class="level-item has-text-centered"
+                        class="centered-level"
                       >
                         <div>
                           <p
@@ -1969,7 +1961,7 @@ exports[`Posts Page searches glossary html correctly 1`] = `
                         </div>
                       </div>
                       <div
-                        class="level-item has-text-centered"
+                        class="centered-level"
                       >
                         <div>
                           <p
@@ -2006,10 +1998,10 @@ exports[`Posts Page searches glossary html correctly 1`] = `
                 class="content"
               >
                 <div
-                  class="level "
+                  class="level"
                 >
                   <div
-                    class="level-item is-justify-content-left"
+                    class="justified-left-level"
                   >
                     <div>
                       <h4>
@@ -2036,7 +2028,7 @@ exports[`Posts Page searches glossary html correctly 1`] = `
                     </div>
                   </div>
                   <div
-                    class="level-item is-justify-content-left"
+                    class="justified-left-level"
                   >
                     <div>
                       <h4>
@@ -2069,7 +2061,7 @@ exports[`Posts Page searches glossary html correctly 1`] = `
               class="card-footer"
             >
               <p
-                class="my-2 ml-5 mr-2"
+                class="definition-card-tag-title"
               >
                 Tags:
               </p>
@@ -2077,14 +2069,14 @@ exports[`Posts Page searches glossary html correctly 1`] = `
                 class="tags"
               >
                 <a
-                  class="tag is-success is-light"
+                  class="definition-card-tag"
                   href="?tag=two"
                   id="two"
                 >
                   two
                 </a>
                 <a
-                  class="tag is-success is-light"
+                  class="definition-card-tag"
                   href="?tag=one"
                   id="one"
                 >
@@ -2096,16 +2088,15 @@ exports[`Posts Page searches glossary html correctly 1`] = `
         </div>
       </section>
       <section
-        class="section pt-0"
+        class="gloss-section-wrapper"
       >
         <h2
-          class="title is-size-2"
+          class="title-two"
           id="M"
         >
           M
         </h2>
         <div
-          class=""
           data-testid="definition-card"
         >
           <div
@@ -2130,7 +2121,7 @@ exports[`Posts Page searches glossary html correctly 1`] = `
                         class="level-item"
                       >
                         <h3
-                          class="title is-3"
+                          class="title-three"
                           id="moon"
                         >
                           Moon
@@ -2141,7 +2132,7 @@ exports[`Posts Page searches glossary html correctly 1`] = `
                       class="level-right"
                     >
                       <div
-                        class="level-item has-text-centered"
+                        class="centered-level"
                       >
                         <div>
                           <p
@@ -2157,7 +2148,7 @@ exports[`Posts Page searches glossary html correctly 1`] = `
                         </div>
                       </div>
                       <div
-                        class="level-item has-text-centered"
+                        class="centered-level"
                       >
                         <div>
                           <p
@@ -2194,10 +2185,10 @@ exports[`Posts Page searches glossary html correctly 1`] = `
                 class="content"
               >
                 <div
-                  class="level "
+                  class="level"
                 >
                   <div
-                    class="level-item is-justify-content-left"
+                    class="justified-left-level"
                   >
                     <div>
                       <h4>
@@ -2224,7 +2215,7 @@ exports[`Posts Page searches glossary html correctly 1`] = `
                     </div>
                   </div>
                   <div
-                    class="level-item is-justify-content-left"
+                    class="justified-left-level"
                   >
                     <div>
                       <h4>
@@ -2257,7 +2248,7 @@ exports[`Posts Page searches glossary html correctly 1`] = `
               class="card-footer"
             >
               <p
-                class="my-2 ml-5 mr-2"
+                class="definition-card-tag-title"
               >
                 Tags:
               </p>
@@ -2265,7 +2256,7 @@ exports[`Posts Page searches glossary html correctly 1`] = `
                 class="tags"
               >
                 <a
-                  class="tag is-success is-light"
+                  class="definition-card-tag"
                   href="?tag=two"
                   id="two"
                 >
@@ -2277,16 +2268,15 @@ exports[`Posts Page searches glossary html correctly 1`] = `
         </div>
       </section>
       <section
-        class="section pt-0"
+        class="gloss-section-wrapper"
       >
         <h2
-          class="title is-size-2"
+          class="title-two"
           id="W"
         >
           W
         </h2>
         <div
-          class=""
           data-testid="definition-card"
         >
           <div
@@ -2311,7 +2301,7 @@ exports[`Posts Page searches glossary html correctly 1`] = `
                         class="level-item"
                       >
                         <h3
-                          class="title is-3"
+                          class="title-three"
                           id="window"
                         >
                           Window
@@ -2322,7 +2312,7 @@ exports[`Posts Page searches glossary html correctly 1`] = `
                       class="level-right"
                     >
                       <div
-                        class="level-item has-text-centered"
+                        class="centered-level"
                       >
                         <div>
                           <p
@@ -2338,7 +2328,7 @@ exports[`Posts Page searches glossary html correctly 1`] = `
                         </div>
                       </div>
                       <div
-                        class="level-item has-text-centered"
+                        class="centered-level"
                       >
                         <div>
                           <p
@@ -2375,10 +2365,10 @@ exports[`Posts Page searches glossary html correctly 1`] = `
                 class="content"
               >
                 <div
-                  class="level "
+                  class="level"
                 >
                   <div
-                    class="level-item is-justify-content-left"
+                    class="justified-left-level"
                   >
                     <div>
                       <h4>
@@ -2405,7 +2395,7 @@ exports[`Posts Page searches glossary html correctly 1`] = `
                     </div>
                   </div>
                   <div
-                    class="level-item is-justify-content-left"
+                    class="justified-left-level"
                   >
                     <div>
                       <h4>
@@ -2421,7 +2411,7 @@ exports[`Posts Page searches glossary html correctly 1`] = `
               class="card-footer"
             >
               <p
-                class="my-2 ml-5 mr-2"
+                class="definition-card-tag-title"
               >
                 Tags:
               </p>
@@ -2429,7 +2419,7 @@ exports[`Posts Page searches glossary html correctly 1`] = `
                 class="tags"
               >
                 <a
-                  class="tag is-success is-light"
+                  class="definition-card-tag"
                   href="?tag=three"
                   id="three"
                 >
