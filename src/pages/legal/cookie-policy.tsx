@@ -19,7 +19,7 @@ const CookiesPage = () => {
             <section className="section">
                 <div className="container">
                     <article className="content">
-                        <h1 className="title is-1">Cookie Page</h1>
+                        <h1 className="title-one">Cookie Page</h1>
                         <p>
                             Welcome to {siteUrl} (the “Site”). We understand
                             that privacy online is important to users of our

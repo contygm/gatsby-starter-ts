@@ -19,7 +19,7 @@ const AboutPage = () => {
             <article className="content">
                 <section className="section">
                     <div className="container">
-                        <h2 className="title is-2">Our Story</h2>
+                        <h2 className="title-two">Our Story</h2>
                         <p>
                             Bonbon tootsie roll lemon drops topping biscuit
                             cookie. Icing gummi bears ice cream marshmallow
@@ -46,7 +46,7 @@ const AboutPage = () => {
                 </section>
                 <section className="section">
                     <div className="container">
-                        <h2 className="title is-2">Our Tech</h2>
+                        <h2 className="title-two">Our Tech</h2>
                         <p>
                             Bonbon tootsie roll lemon drops topping biscuit
                             cookie. Icing gummi bears ice cream marshmallow
@@ -80,7 +80,7 @@ const AboutPage = () => {
                 <section className="section">
                     <div className="container">
                         <h2
-                            className="title is-2"
+                            className="title-two"
                             id="contact-us"
                         >
                             Contact Us
@@ -102,8 +102,8 @@ const AboutPage = () => {
                             halvah icing dragée toffee sweet dessert topping
                             chocolate bar.
                         </p>
-                        <div className="columns my-2">
-                            <div className="column is-two-thirds-desktop">
+                        <div className="contact-form-container">
+                            <div className="contact-form-wrapper">
                                 <ContactForm />
                             </div>
                         </div>

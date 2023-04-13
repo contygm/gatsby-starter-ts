@@ -47,19 +47,19 @@ export interface HomeProps {
  */
 const BlogTile = (props: { post: IndexElements }) => {
     return (
-        <div className="box home-blog-tile">
-            <div className="media p-2 m-2">
-                <figure className="media-left my-auto">
-                    <p className="image is-128x128">
+        <div className="home-blog-tile">
+            <div className="home-blog-tile-fig-wrapper">
+                <figure className="home-blog-tile-fig">
+                    <p className="home-blog-tile-image-wrapper">
                         <img src="https://bulma.io/images/placeholders/128x128.png" />
                     </p>
                 </figure>
-                <div className="media-content m-auto">
+                <div className="home-blog-tile-content">
                     <div className="content">
-                        <p className="title is-4">
+                        <p className="title-four">
                             {props.post.frontmatter.title}
                         </p>
-                        <p className="subtitle is-6">
+                        <p className="subtitle-six">
                             <time dateTime={props.post.frontmatter.date}>
                                 {props.post.frontmatter.date}
                             </time>
@@ -93,7 +93,7 @@ const WikiTile = (props: { post: IndexElements }) => {
     return (
         <div className="card">
             <div className="card-image">
-                <figure className="image ">
+                <figure className="image">
                     <p className="is-128x128">
                         <img src="https://bulma.io/images/placeholders/128x128.png" />
                     </p>
@@ -101,8 +101,8 @@ const WikiTile = (props: { post: IndexElements }) => {
             </div>
             <div className="card-content">
                 <div className="content">
-                    <p className="title is-4">{props.post.frontmatter.title}</p>
-                    <p className="subtitle is-6">
+                    <p className="title-four">{props.post.frontmatter.title}</p>
+                    <p className="subtitle-six">
                         <time dateTime={props.post.frontmatter.date}>
                             {props.post.frontmatter.date}
                         </time>
@@ -127,20 +127,20 @@ const WikiTile = (props: { post: IndexElements }) => {
  */
 const NewTile = (props: { nodes: IndexElements[] }) => {
     return (
-        <div className="columns is-vcentered is-multiline">
-            <div className="column is-9-desktop is-full-tablet">
-                <div className="card is-radiusless footer-logo">
+        <div className="home-new-tile-section-wrapper">
+            <div className="home-new-tile-main-wrapper">
+                <div className="home-new-tile-card">
                     <div className="card-image">
-                        <figure className="image is-3by2">
+                        <figure className="home-new-tile-main-card-image">
                             <img src="https://bulma.io/images/placeholders/128x128.png" />
                         </figure>
                     </div>
-                    <div className="card-content is-overlay home-header-tile-overlay">
+                    <div className="home-new-tile-card-content-overlay">
                         <div className="content">
-                            <p className="title is-size-3 has-text-black">
+                            <p className="home-new-tile-card-content-title">
                                 {props.nodes[0].frontmatter.title}
                             </p>
-                            <p className="subtitle is-size-6 has-text-black">
+                            <p className="home-new-tile-card-content-subtitle">
                                 <time
                                     dateTime={props.nodes[0].frontmatter.date}
                                 >
@@ -157,12 +157,12 @@ const NewTile = (props: { nodes: IndexElements[] }) => {
                             </Link>
                         </div>
                     </div>
-                    <div className="card-content is-overlay">
-                        <span className="tag is-link is-large">FEATURED</span>
+                    <div className="home-new-tile-card-tag-wrapper">
+                        <span className="home-new-tile-main-card-tag">FEATURED</span>
                     </div>
                 </div>
             </div>
-            <div className="column is-3-desktop is-full-tablet">
+            <div className="home-new-tile-side-wrapper">
                 <div className="">
                     {props.nodes
                         .slice(1)
@@ -173,7 +173,7 @@ const NewTile = (props: { nodes: IndexElements[] }) => {
                                     key={post.frontmatter.title}
                                 >
                                     <div
-                                        className={`card footer-logo is-radiusless ${
+                                        className={`home-new-tile-card ${
                                             i === props.nodes.length - 2
                                                 ? 'mb-0'
                                                 : 'mb-5'
@@ -184,12 +184,12 @@ const NewTile = (props: { nodes: IndexElements[] }) => {
                                                 <img src="https://bulma.io/images/placeholders/128x128.png" />
                                             </figure>
                                         </div>
-                                        <div className="card-content is-overlay home-header-tile-overlay">
+                                        <div className="home-new-tile-card-content-overlay">
                                             <div className="content">
-                                                <p className="title is-size-5 has-text-black">
+                                                <p className="home-new-tile-card-content-title-small">
                                                     {post.frontmatter.title}
                                                 </p>
-                                                <p className="subtitle is-size-6 has-text-black">
+                                                <p className="home-new-tile-card-content-subtitle">
                                                     <time
                                                         dateTime={
                                                             post.frontmatter
@@ -201,8 +201,8 @@ const NewTile = (props: { nodes: IndexElements[] }) => {
                                                 </p>
                                             </div>
                                         </div>
-                                        <div className="card-content is-overlay">
-                                            <span className="tag is-link">
+                                        <div className="home-new-tile-card-tag-wrapper">
+                                            <span className="home-new-tile-card-tag">
                                                 FEATURED
                                             </span>
                                         </div>
@@ -234,11 +234,12 @@ const HomePage = ({
 }: PageProps<HomeProps>) => {
     return (
         <Layout>
-            <section className="hero is-dark is-fullheight ">
+            {/* T */}
+            <section className="home-page-header">
                 <div className="hero-head">
-                    <div className="container has-text-centered section has-text-white">
-                        <p className="title home-title">{'Welcome!'}</p>
-                        <p className="subtitle is-size-2">
+                    <div className="home-page-header-title-wrapper">
+                        <p className="home-title">{'Welcome!'}</p>
+                        <p className="home-subtitle">
                             A subtitle describing the site
                         </p>
                     </div>
@@ -263,7 +264,7 @@ const HomePage = ({
                             return (
                                 <div
                                     // data-testid={'post-card'}
-                                    className="column is-half"
+                                    className="half-col"
                                     key={post.frontmatter.title}
                                 >
                                     <BlogTile post={post} />
@@ -278,12 +279,12 @@ const HomePage = ({
                             <h2 className="title">Wiki Posts</h2>
                         </div>
                     </div>
-                    <div className="col-multi-wrapper is-centered">
+                    <div className="home-wiki-content">
                         {wikiFeatured.nodes.map((post: IndexElements) => {
                             return (
                                 <div
                                     // data-testid={'post-card'}
-                                    className="column is-3"
+                                    className="third-col"
                                     key={post.frontmatter.title}
                                 >
                                     <WikiTile post={post} />
@@ -303,7 +304,7 @@ const HomePage = ({
                             return (
                                 <div
                                     // data-testid={'post-card'}
-                                    className="column is-half"
+                                    className="half-col"
                                     key={def.frontmatter.title}
                                 >
                                     <DefinitionCard

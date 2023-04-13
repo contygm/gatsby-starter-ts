@@ -146,9 +146,9 @@ const GlossaryPage = ({
             />
             <div className="col-multi-wrapper">
                 {/* sticky table of contents */}
-                <div className="column mt-4 glossary-toc">
+                <div className="glossary-toc">
                     <section
-                        className={'web-post-toc box'}
+                        className={'glossary-toc-box'}
                         style={{
                             display:
                                 !isMobile || (isMobile && showMobileToc)
@@ -167,7 +167,7 @@ const GlossaryPage = ({
                     </section>
                     <button
                         id="toc-button"
-                        className="button is-rounded is-primary"
+                        className="primary-button-rounded"
                         style={{ display: isMobile ? 'block' : 'none' }}
                         onClick={handleTocBtnClick}
                         data-testid="post-toc-mobile-btn"
@@ -185,7 +185,7 @@ const GlossaryPage = ({
                         </i>
                     </button>
                 </div>
-                <div className="column is-three-fifths-widescreen is-four-fifths is-narrow">
+                <div className="glossary-content-wrapper">
                     <PostPage
                         index={index}
                         allLetters={allLetters}
@@ -193,14 +193,14 @@ const GlossaryPage = ({
                         type={'glossary'}
                     />
                 </div>
-                <div className="column mt-6 is-one-fifth-widescreen">
-                    <div className="blog-sidebar">
-                        <SideBar
-                            type={'glossary'}
-                            featured={wikiFeatured.nodes}
-                            related={blogFeatured.nodes}
-                        />
-                    </div>
+                <div className="glossary-sidebar-wrapper">
+                    {/* TODO featured are labeled as wiki, links for it go to wiki */}
+                    <SideBar
+                        type={'glossary'}
+                        featured={wikiFeatured.nodes}
+                        related={blogFeatured.nodes}
+                    />
+                    {/* TODO need mobile social */}
                     {isBigScreen && <StickySocialMedia isVertical={false} />}
                 </div>
             </div>

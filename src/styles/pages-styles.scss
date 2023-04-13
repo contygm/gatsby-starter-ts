@@ -1,0 +1,228 @@
+/*******************************
+* Legal Page Styles
+********************************/
+.legal-index-wrapper {
+	@extend .section;
+	@extend .my-4;
+}
+
+// legal card
+.legal-card-wrapper {
+	@extend .column;
+	@extend .is-half;
+}
+
+.legal-card {
+	@extend .card;
+	@extend .has-background-white-ter;
+}
+
+.legal-card-link {
+	color: $secondary;
+	text-decoration: none;
+	&:hover {
+		color: $primary;
+	}
+}
+
+/*******************************
+* 404 Styles
+********************************/
+
+.not-found-container {
+	@extend .container;
+	@extend .has-text-centered;
+}
+
+/*******************************
+* About Styles
+********************************/
+
+.contact-form-wrapper {
+	@extend .column;
+	@extend .is-two-thirds-desktop;
+}
+
+.contact-form-container {
+	@extend .columns;
+	@extend .my-2;
+}
+
+/*******************************
+* Glossary Styles
+********************************/
+
+// ToC
+.glossary-toc {
+	@extend .column;
+	@extend .mt-4;
+	max-width: 10%;
+}
+
+.glossary-toc-mobile-btn {
+	@extend .is-rounded;
+	@extend .primary-button;
+}
+
+.glossary-toc-box {
+	@extend .web-post-toc;
+	@extend .box;
+}
+
+@media only screen and (max-width : 1215px) {
+	.glossary-toc {
+		position: fixed; 
+		max-width: 30%;
+		z-index: 99;
+		height: 100vh;
+		overflow-x: scroll;
+		
+		button {
+			position: fixed; 
+			bottom: 20px; 
+			right: 30px; 
+			z-index: 99; 
+		}
+	}
+}
+
+// gloss page layout
+.glossary-content-wrapper {
+	@extend .column;
+	@extend .is-three-fifths-widescreen;
+	@extend .is-four-fifths;
+	@extend .is-narrow;
+}
+
+.glossary-sidebar-wrapper {
+	@extend .column;
+	@extend .mt-6;
+	@extend .is-one-fifth-widescreen;
+}
+
+/*******************************
+* Home Styles
+********************************/
+
+.home-page-header {
+	@extend .full-hero;
+	@extend .is-dark;
+}
+
+.home-page-header-title-wrapper {
+	@extend .container;
+	@extend .has-text-centered;
+	@extend .section;
+	@extend .has-text-white;
+}
+
+.home-title {
+	font-size: 8rem;
+	@extend .title;
+}
+
+.home-subtitle {
+	@extend .subtitle;
+	@extend .is-size-2;
+}
+
+.home-wiki-content {
+	@extend .col-multi-wrapper;
+	@extend .is-centered;
+}
+// ----- TILES TODO: move ---------
+// Blog Tile
+.home-blog-tile {
+	height: 100%;
+	@extend .box;
+}
+
+.home-blog-tile-fig-wrapper {
+	@extend .media;
+	@extend .p-2;
+	@extend .m-2;
+}
+
+.home-blog-tile-fig {
+	@extend .media-left;
+	@extend .my-auto;
+}
+
+.home-blog-tile-image-wrapper {
+	@extend .image;
+	@extend .is-128x128;
+}
+
+.home-blog-tile-content {
+	@extend .media-content;
+	@extend .m-auto;
+}
+
+// New Tile
+.home-new-tile-section-wrapper {
+	@extend .col-multi-wrapper;
+	@extend .is-vcentered;
+}
+
+.home-new-tile-main-wrapper {
+	@extend .column;
+	@extend .is-9-desktop;
+	@extend .is-full-tablet;
+}
+
+.home-new-tile-side-wrapper {
+	@extend .column;
+	@extend .is-3-desktop;
+	@extend .is-full-tablet;
+}
+
+.home-new-tile-card {
+	@extend .card;
+	@extend .is-radiusless;
+	@extend .green-hover-highlight;
+}
+
+.home-new-tile-main-card-image {
+	@extend .image;
+	@extend .is-3by2;
+}
+
+.home-new-tile-card-content-overlay {
+	@extend .card-content;
+	@extend .is-overlay;
+	top: auto;
+}
+
+.home-new-tile-card-content-title {
+	@extend .title-three;
+	@extend .has-text-black;
+}
+
+.home-new-tile-card-content-title-small {
+	@extend .title-five;
+	@extend .has-text-black;
+}
+
+.home-new-tile-card-content-subtitle {
+	@extend .subtitle-six;
+	@extend .has-text-black;
+}
+
+.home-new-tile-card-tag-wrapper {
+	@extend .card-content;
+	@extend .is-overlay;
+}
+
+.home-new-tile-card-tag {
+	@extend .tag;
+	@extend .is-link;
+}
+
+.home-new-tile-main-card-tag {
+	@extend .home-new-tile-card-tag;
+	@extend .is-large;
+}
+
+.home-header-tile-overlay {
+	top: auto;
+}

@@ -3,30 +3,37 @@ import { Link } from 'gatsby';
 import { legalPageMap } from '../../utils/constants/legalConstants';
 import { Layout, SEO, PageHeader } from '../../components';
 
-// TODO legal link interface
-// TODO construct cytag
 /**
- * A basic card component for all the legal pages
- * @param {Object} props - legal page card information
- * @param {string} props.title - display title for the link
- * @param {string} props.cyTag - cypress testing tag for the link
- * @param {string} props.url - relative url for the linked page
- * @param {string} props.description - linked page description
+ * @property {string} props.title - display title for the link
+ * @property {string} props.cyTag - cypress testing tag for the link
+ * @property {string} props.url - relative url for the linked page
+ * @property {string} props.description - linked page description
+ * 
+ * @category Pages
  * @memberof LegalPage
- */
-const LegalLink = (props: {
+*/
+interface LegalLinkProps {
     title: string;
     cyTag: string;
     url: string;
     description: string;
-}) => {
+}
+// TODO construct cytag
+/**
+ * A basic card component for all the legal pages
+ * @property {LegalLinkProps} props - legal page card information
+ * 
+ * @category Pages
+ * @memberof LegalPage
+ */
+const LegalCard = (props: LegalLinkProps) => {
     return (
-        <div className="column is-half">
-            <div className="card has-background-white-ter">
+        <div className="legal-card-wrapper">
+            <div className="legal-card">
                 <div className="card-content">
-                    <h2 className="title is-2">
+                    <h2 className="title-two">
                         <Link
-                            className="legal-link"
+                            className="legal-card-link"
                             to={props.url}
                             data-cy={props.cyTag}
                         >
@@ -51,12 +58,12 @@ const LegalPage = () => {
     return (
         <Layout>
             <PageHeader title="Legal Pages" />
-            <section className="section my-4">
+            <section className="legal-index-wrapper">
                 <div className="container">
                     <div className="col-multi-wrapper">
                         {legalPageMap.map((page) => {
                             return (
-                                <LegalLink
+                                <LegalCard
                                     key={page.title}
                                     title={page.title}
                                     url={page.url}

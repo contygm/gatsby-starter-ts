@@ -10,16 +10,16 @@ import { Layout, SEO } from '../components';
 const NotFoundPage = () => {
     return (
         <Layout>
-            <section className="hero is-fullheight">
+            <section className="full-hero">
                 <div className="hero-body">
-                    <div className="container has-text-centered">
+                    <div className="not-found-container">
                         <h1 className="title">Page not found</h1>
                         <p className="subtitle">
                             Sorry 😔, we couldn’t find that page.
                         </p>
                         <p>
                             <Link
-                                className="button is-primary"
+                                className="primary-button"
                                 to="/"
                             >
                                 Go home

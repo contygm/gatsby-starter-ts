@@ -19,7 +19,7 @@ const TermsPage = () => {
             <section className="section">
                 <div className="container">
                     <article className="content">
-                        <h1 className="title is-1">
+                        <h1 className="title-one">
                             Terms and Conditions Page
                         </h1>
                         <p>
