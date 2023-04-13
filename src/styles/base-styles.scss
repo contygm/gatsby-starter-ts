@@ -1,0 +1,228 @@
+/*******************************
+* Title Styles
+********************************/
+.title-one {
+	@extend .title;
+	@extend .is-size-1;
+}
+
+.title-two {
+	@extend .title;
+	@extend .is-size-2;
+}
+
+.title-three {
+	@extend .title;
+	@extend .is-size-3;
+}
+
+.title-four {
+	@extend .title;
+	@extend .is-size-4;
+}
+
+.title-five {
+	@extend .title;
+	@extend .is-size-5;
+}
+
+/*******************************
+* Subtitle Styles
+********************************/
+
+.subtitle-six {
+	@extend .subtitle;
+	@extend .is-size-6;
+}
+
+/*******************************
+* Columns Styles
+********************************/
+.col-multi-wrapper {
+	@extend .columns;
+	@extend .is-multiline;
+}
+
+.centered-col {
+	@extend .column;
+	@extend .has-text-centered;
+}
+
+.half-col {
+	@extend .column;
+	@extend .is-half;
+}
+
+.third-col {
+	@extend .column;
+	@extend .is-3;
+}
+
+/*******************************
+* Heros Styles
+********************************/
+.full-hero {
+	@extend .hero;
+	@extend .is-fullheight;
+}
+
+.medium-hero {
+	@extend .hero;
+	@extend .is-medium;
+}
+
+/*******************************
+* Buttons Styles
+********************************/
+.primary-button {
+	@extend .button;
+	@extend .is-primary;
+}
+
+.light-grey-button {
+	@extend .button;
+	@extend .has-background-grey-lighter;
+}
+
+.primary-button-rounded {
+	@extend .is-rounded;
+	@extend .primary-button;
+}
+
+/*******************************
+* Level Styles
+********************************/
+.centered-level {
+	@extend .level-item;
+	@extend .has-text-centered;
+}
+
+.justified-left-level {
+	@extend .level-item;
+	@extend .is-justify-content-left;
+}
+
+/*******************************
+* Color Styles
+********************************/
+
+.is-white {
+	color: $white-ter;
+}
+
+.is-black {
+	color: $black;
+}
+
+/*******************************
+* Content Styles
+********************************/
+
+.content {
+	details {
+		@extend .box;
+
+		summary {
+			color: $grey-dark;
+			font-size: 1rem;
+			font-weight: 400;
+			line-height: 1;
+		}
+	}
+
+	details[open] summary {
+		margin-bottom: 1rem;
+	}
+	
+	blockquote {
+		border-color: $primary;
+	}
+
+	a:not(.tag) {
+		text-decoration: underline;
+		
+	}
+
+	a:not(.tag):hover {
+		text-decoration: none;
+		color: $green;
+	}
+
+	table {
+		margin: 3rem 0 !important;
+	}
+}
+
+/*******************************
+* Code Editor Styles
+********************************/
+
+pre[class*="language-"] {
+	font-size: .875rem;
+	border-radius: .3rem;
+}
+
+// colors and positioning for code highlights
+.gatsby-highlight-code-line {
+	background-color: rgba(207, 207, 207, 0.372);
+	display: block;
+	margin-right: -1em;
+	margin-left: -1em;
+	padding-right: 1em;
+	padding-left: 0.75em;
+	border-left: 0.25em solid $primary;
+}
+
+// set up parent container for line highlights + numbers
+.gatsby-highlight {
+	margin: 0.5em 0;
+	padding: 1em;
+	overflow: auto;
+}
+
+// if highlighted lines are present, extend highlight for full line
+.gatsby-highlight.has-highlighted-lines pre[class*="language-"] {
+	margin: 0;
+	overflow: initial;
+	float: left; 
+	min-width: 100%; 
+}
+
+// if highlighted lines AND line numbers are present
+.gatsby-highlight pre[class*="language-"].line-numbers {
+	padding: 0.5rem 0;
+	padding-left: 3rem;
+	overflow: initial;
+
+	.line-numbers-rows {
+		padding: 0.5rem 0;
+		span {
+			width: 3em;
+		}
+	}
+}
+
+/*******************************
+* Misc Styles
+********************************/
+
+// highlight element in green on hover
+.green-hover-highlight {
+	&:hover {
+		-webkit-filter: drop-shadow(1px 1px 1px $primary)
+		drop-shadow(-1px -1px 1px $primary);
+		filter: drop-shadow(1px 1px 1px $primary) 
+		drop-shadow(-1px -1px 1px $primary);
+	}
+}
+
+// keep all cards the same height despite varying content
+.card {
+	height: 100%;
+}
+
+// makes container sticky
+.sticky {
+	position: sticky;
+	top: 0;
+}

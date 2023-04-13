@@ -24,10 +24,8 @@ h1, h2, h3, h4, h5, h6
 }
 
 // Colors
-// $primary: #FFBE0B;
 $primary:hsl(141, 71%, 58%);
 $secondary: #12130F;
-// $white: hsl(0, 0%, 98%);
 $navbar-item-hover-color: hsl(171, 100%, 41%); // bulma primary
 $menu-item-active-background-color: $secondary;
 
@@ -82,364 +80,39 @@ $menu-item-active-background-color: $secondary;
 }
 
 /*******************************
-* Footer
+* Sticky Footer + overrides
 ********************************/
 
 $footer-padding: 1.0rem;
 $footer-background-color: $secondary;
 
 // sticky footer
+main {
+	flex: 1;
+}
+
 #app-container {
 	display: flex;
 	min-height: 100vh;
 	flex-direction: column;
 }
 
-// sticky footer
-main {
-	flex: 1;
-}
-
-.footer-copyright {
-	border-top: 0.1rem solid;
-}
-
 /*******************************
 * IMPORT BULMA
 ********************************/
 @import "~bulma/bulma.sass";
+
 .bulma-fa-mixin {
 	@include fa(1rem, 2rem);
 }
 
 
-
 /*******************************
-* Custom Styles
+* Custom Style Imports
 ********************************/
 
-.legal-link {
-	color: $secondary;
-	text-decoration: none;
-	&:hover {
-		color: $primary;
-	}
-}
-
-.pg-header-period {
-	color: $primary;
-}
-
-.faicon-link {
-	&:hover {
-		color: $primary;
-	}
-}
-
-.faicon-link.with-label {
-	color: $black;
-	text-decoration: none;
-	@extend .icon-text;
-}
-
-.is-white {
-	color: $white-ter;
-}
-
-.is-black {
-	color: $black;
-}
-
-// makes container sticky
-.sticky {
-	position: sticky;
-	top: 0;
-}
-
-/*******************************
-* Footer Styles
-********************************/
-
-.footer-link {
-	color: $white-ter;
-	&:hover {
-		color: $primary;
-	}
-}
-
-.footer-drawer-link {
-	color: $grey-dark;
-	&:hover {
-		color: $primary;
-	}
-}
-
-.footer-logo {
-	&:hover {
-		-webkit-filter: drop-shadow(1px 1px 1px $primary)
-		drop-shadow(-1px -1px 1px $primary);
-		filter: drop-shadow(1px 1px 1px $primary) 
-		drop-shadow(-1px -1px 1px $primary);
-	}
-}
-
-.faicon-link-container {
-	@extend .is-inline;
-}
-
-@media only screen and (max-width : 768px) {
-    .faicon-link-container {    
-		margin-left: 1rem;
-    	margin-right: 1rem;
-	}
-}
-
-@media only screen and (min-width : 769px) {
-    .faicon-link-container {    
-		margin-left: 0.5rem;
-		margin-right: 0.5rem;
-	}
-}
-
-/*******************************
-* Code Editor Styles
-********************************/
-
-pre[class*="language-"] {
-	font-size: .875rem;
-	border-radius: .3rem;
-}
-
-// colors and positioning for code highlights
-.gatsby-highlight-code-line {
-	background-color: rgba(207, 207, 207, 0.372);
-	display: block;
-	margin-right: -1em;
-	margin-left: -1em;
-	padding-right: 1em;
-	padding-left: 0.75em;
-	border-left: 0.25em solid $primary;
-}
-
-// set up parent container for line highlights + numbers
-.gatsby-highlight {
-	margin: 0.5em 0;
-	padding: 1em;
-	overflow: auto;
-}
-
-// if highlighted lines are present, extend highlight for full line
-.gatsby-highlight.has-highlighted-lines pre[class*="language-"] {
-	margin: 0;
-	overflow: initial;
-	float: left; 
-	min-width: 100%; 
-}
-
-// if highlighted lines AND line numbers are present
-.gatsby-highlight pre[class*="language-"].line-numbers {
-	padding: 0.5rem 0;
-	padding-left: 3rem;
-	overflow: initial;
-
-	.line-numbers-rows {
-		padding: 0.5rem 0;
-		span {
-			width: 3em;
-		}
-	}
-}
-
-/*******************************
-* General Styles
-********************************/
-
-.col-multi-wrapper {
-	@extend .columns;
-	@extend .is-multiline;
-}
-
-.header-icon-row {
-	span {
-		margin: 0 1rem;
-	}
-}
-
-// for vertical social media buttons
-.is-vertical {
-	z-index: 99;
-	top: 0;
-	right: 0;
-	max-width: 10%;
-	position: fixed;
-
-	ul {
-		margin-left: 0px;
-	}
-}
-
-.content {
-	details {
-		@extend .box;
-
-		summary {
-			color: $grey-dark;
-			font-size: 1rem;
-			font-weight: 400;
-			line-height: 1;
-		}
-	}
-
-	details[open] summary {
-		margin-bottom: 1rem;
-	}
-	
-	blockquote {
-		border-color: $primary;
-	}
-
-	a:not(.tag) {
-		text-decoration: underline;
-		
-	}
-
-	a:not(.tag):hover {
-		text-decoration: none;
-		color: $green;
-	}
-
-	table {
-		margin: 3rem 0 !important;
-	}
-}
-
-// author blurb component
-.author-container {
-	border-top: 0.1rem solid $grey-light;
-}
-
-.all-post-tags {
-	@extend .tag;
-	@extend .is-primary;
-	@extend .is-medium;
-}
-
-.post-tag:not(:last-child) {
-	@extend .all-post-tags;
-	@extend .m-2;
-}
-
-.post-tag:last-child {
-	@extend .all-post-tags;
-	@extend .my-2;
-	@extend .ml-2;
-}
-
-/*******************************
-* Table of Contents Styles
-********************************/
-// table of contents 
-.toc-wrapper {
-	.container {
-		@extend .menu;
-		padding: 1.25rem; 
-		
-		// TOC string from graphQL query uses <p> to nest lists
-		p {
-			@extend .mb-0;
-			@extend .menu-list;
-			font-size: .875rem;
-		}
-
-		ul {
-			@extend .my-1;
-			@extend .menu-list;
-			list-style-type: none;
-			font-size: .875rem;
-		}
-
-		h6 {
-			@extend .menu-label;
-		}
-	}
-}
-
-// TODO toc class are a mess, fix it
-.glossary-toc {
-	// top: 60px;
-	max-width: 10%;
-}
-
-/*******************************
-* Side Bar Styles
-********************************/
-
-// horizontal post tile component
-.horizontal-post-tile {
-	@extend .py-2;
-	@extend .px-1;
-
-	h6 {
-		@extend .mb-0;
-		@extend .is-size-6;
-	}
-	p {
-		font-size: .875rem;
-		@extend .mb-1;
-	}
-}
-
-.post-tile-image img {
-	height: 100%;
-}
-
-.blog-card-image {
-	margin-left: 0;
-	margin-right: 0;
-}
-
-.card {
-	height: 100%;
-  }
-
-.sticky-tag {
-	position: absolute; 
-	top: 0.5rem;
-	right: 0.5rem;
-	z-index: 99;
-}
-
-.tag-align {
-	align-items: inherit;
-}
-
-/*******************************
-* Home Page Styles
-********************************/
-.home-blog-tile {
-	height: 100%;
-}
-
-.home-title {
-	font-size: 8rem;
-}
-
-.home-header-tile-overlay {
-	top: auto;
-}
-
-.search-clear-btn {
-	top: 50% !important;
-	transform: translate(-50%, -50%);
-	pointer-events: all !important;
-}
-
-.show-pointer {
-	cursor: default !important;
-}
-
-.sidebar-tile-image {
-	max-height: 185px;
-}
-
-@import "post-styles.scss"
+@import "base-styles.scss";
+@import "post-styles.scss";
+@import "pages-styles.scss";
+@import "components-styles.scss";
+@import "layout-styles.scss";
