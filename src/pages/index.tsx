@@ -158,7 +158,9 @@ const NewTile = (props: { nodes: IndexElements[] }) => {
                         </div>
                     </div>
                     <div className="home-new-tile-card-tag-wrapper">
-                        <span className="home-new-tile-main-card-tag">FEATURED</span>
+                        <span className="home-new-tile-main-card-tag">
+                            FEATURED
+                        </span>
                     </div>
                 </div>
             </div>

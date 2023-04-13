@@ -35,9 +35,10 @@ interface TagsListProps {
  * @category Components
  */
 export const TagsList = (props: TagsListProps) => {
-    const classForAllTag = (props.isSearchActive || 'all' === props.activeTag)
-        ? 'tag-active'
-        : 'tag-inactive';
+    const classForAllTag =
+        props.isSearchActive || 'all' === props.activeTag
+            ? 'tag-active'
+            : 'tag-inactive';
 
     return (
         <div className="tag-list-wrapper">
@@ -58,8 +59,8 @@ export const TagsList = (props: TagsListProps) => {
                     const classForTag = props.isSearchActive
                         ? 'tag-base'
                         : tag.fieldValue === props.activeTag
-                            ? 'tag-active'
-                            : 'tag-inactive';
+                        ? 'tag-active'
+                        : 'tag-inactive';
 
                     const classForTagCount = props.isSearchActive
                         ? 'tag-count-disabled'
@@ -78,9 +79,7 @@ export const TagsList = (props: TagsListProps) => {
                             >
                                 {tag.fieldValue}
                             </div>
-                            <span
-                                className={classForTagCount}
-                            >
+                            <span className={classForTagCount}>
                                 {tag.totalCount}
                             </span>
                         </div>

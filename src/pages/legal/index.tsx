@@ -8,10 +8,10 @@ import { Layout, SEO, PageHeader } from '../../components';
  * @property {string} props.cyTag - cypress testing tag for the link
  * @property {string} props.url - relative url for the linked page
  * @property {string} props.description - linked page description
- * 
+ *
  * @category Pages
  * @memberof LegalPage
-*/
+ */
 interface LegalLinkProps {
     title: string;
     cyTag: string;
@@ -22,7 +22,7 @@ interface LegalLinkProps {
 /**
  * A basic card component for all the legal pages
  * @property {LegalLinkProps} props - legal page card information
- * 
+ *
  * @category Pages
  * @memberof LegalPage
  */

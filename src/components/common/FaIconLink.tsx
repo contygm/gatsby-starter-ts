@@ -41,9 +41,7 @@ export const FaIconLink = (props: FaIconLinkProps) => {
     const url = props.url === undefined ? '/' : props.url;
     const labelClass = props.label ? 'with-label' : '';
     const colorClass =
-        props.color && props.color === 'black'
-            ? 'is-black'
-            : 'is-white';
+        props.color && props.color === 'black' ? 'is-black' : 'is-white';
 
     return (
         <li className={`faicon-link-container`}>
