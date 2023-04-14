@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { graphql, PageProps, HeadProps } from 'gatsby';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import { graphql, PageProps, HeadProps, Link } from 'gatsby';
+import { getImage } from 'gatsby-plugin-image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEllipsis, faXmark } from '@fortawesome/free-solid-svg-icons';
 import useCheckMobileScreen from '../utils/hooks/useCheckMobileScreen';
@@ -14,49 +14,18 @@ import {
     StickySocialMedia,
     NextAndPrevious
 } from '../components';
-
-/**
- * All properties of a basic wiki post including content, frontmatter and header image
- * @property {{siteMetadata: SiteMetadata}} site - site metadata
- * @property {WikiPostElements} markdown - includes frontmatter, image, etc
- * @property {NeighborPost} previous - previous post (by date)
- * @property {NeighborPost} next - next post (by date)
- * @property {{nodes: IndexElements[]}} featured - featured blog posts
- * @property {{nodes: IndexElements[]}} related - related blog posts
- *
- * @see SiteMetadata
- * @see IndexElements
- * @see WikiPostElements
- * @see NeighborPost
- * @memberof WikiPost
- * @category Template
- */
-// TODO same as blog mostly
-export interface WikiPostProps {
-    site: {
-        siteMetadata: SiteMetadata;
-    };
-    markdownRemark: WikiPostElements;
-    previous: NeighborPost;
-    next: NeighborPost;
-    featured: {
-        nodes: IndexElements[];
-    };
-    related: {
-        nodes: IndexElements[];
-    };
-}
+import BaseballCard from '../components/common/BaseballCard';
 
 /**
  * A template for a wiki post, including: sidebar, table of contents, blog content, and author section.
- * @param {WikiPostProps} data
+ * @param {PostIndexProps} data
  *
  * @category Template
  * @class
  */
 const WikiPost = ({
     data: { markdownRemark, featured, related, next, previous }
-}: PageProps<WikiPostProps>) => {
+}: PageProps<PostIndexProps<WikiPostElements>>) => {
     const [showMobileToc, setShowMobileToc] = useState(false);
     const [isMobile, setIsMobile] = useState(useCheckMobileScreen());
     const [btnIcon, setBtnIcon] = useState(faEllipsis);
@@ -145,51 +114,10 @@ const WikiPost = ({
                     <article className="wiki-post-article">
                         {/* baseball card */}
                         {image && (
-                            <section className="baseball-card-wrapper">
-                                {/* TODO component */}
-                                <div className="baseball-card">
-                                    <div className="baseball-card-summary">
-                                        <div className="media">
-                                            <figure className="baseball-card-img">
-                                                <GatsbyImage
-                                                    alt={'wiki-post-header'}
-                                                    image={image}
-                                                />
-                                            </figure>
-                                        </div>
-
-                                        <div className="baseball-card-title-wrapper">
-                                            <p className="baseball-card-title">
-                                                Topic
-                                            </p>
-                                        </div>
-
-                                        <div className="baseball-card-table-wrapper">
-                                            <table className="baseball-card-table">
-                                                <tbody>
-                                                    {markdownRemark.frontmatter.summary.map(
-                                                        (attrObj) => {
-                                                            return (
-                                                                <tr
-                                                                    key={attrObj.field}
-                                                                    className='baseball-card-row'
-                                                                >
-                                                                    <td className="baseball-card-table-label">
-                                                                        {attrObj.field}
-                                                                    </td>
-                                                                    <td>
-                                                                        {attrObj.value}
-                                                                    </td>
-                                                                </tr>
-                                                            );
-                                                        }
-                                                    )}
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
+                            <BaseballCard 
+                                image={image}
+                                summary={markdownRemark.frontmatter.summary}
+                            />
                         )}
                         {/* main post content */}
                         <section className="">
@@ -203,9 +131,21 @@ const WikiPost = ({
                         {isMobile && (
                             <StickySocialMedia isVertical={true} />
                         )}
-                        {/* TODO need tags */}
                         <section className="wiki-post-footer-wrapper">
                             <div className="wiki-post-footer">
+                                <>
+                                    {markdownRemark.frontmatter.tags.map((tag) => {
+                                        return (
+                                            <Link
+                                                to={`/wiki?tag=${tag}`}
+                                                className="post-tag"
+                                                key={tag}
+                                            >
+                                                {tag}
+                                            </Link>
+                                        );
+                                    })}
+                                </>
                                 <NextAndPrevious
                                     next={next}
                                     previous={previous}
@@ -242,7 +182,7 @@ export default WikiPost;
  *
  * @memberof WikiPost
  */
-export function Head({ data: { markdownRemark } }: HeadProps<WikiPostProps>) {
+export function Head({ data: { markdownRemark } }: HeadProps<PostIndexProps<BlogPostElements>>) {
     return <SEO title={markdownRemark.frontmatter.title} />;
 }
 

@@ -92,3 +92,33 @@ interface NeighborPost {
         title: string;
     };
 }
+
+/**
+ * All properties of a basic post including content, frontmatter and header image. Accepts a type for markdown.
+ * @category Post Types
+ * @see SiteMetadata
+ * @see IndexElements
+ * @see PostElements
+ * @see NeighborPost
+ * @see WikiPostElements
+ */
+interface PostIndexProps<T> {
+    /** site metadata */
+    site: {
+        siteMetadata: SiteMetadata;
+    };
+    /** includes frontmatter, image, etc */
+    markdownRemark: T;
+    /** previous post (by date) */
+    previous: NeighborPost;
+    /** next post (by date) */
+    next: NeighborPost;
+    /** featured blog posts */
+    featured: {
+        nodes: IndexElements[];
+    };
+    /** related blog posts */
+    related: {
+        nodes: IndexElements[];
+    };
+}

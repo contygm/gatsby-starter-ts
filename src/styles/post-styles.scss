@@ -28,6 +28,13 @@
 	@extend .mt-6;
 }
 
+.post-tag {
+	@extend .tag;
+	@extend .mr-2;
+	@extend .mt-1;
+	@extend .is-primary;
+}
+
 @media only screen and (max-width : 1215px) {
     .post-toc {
 		section {
@@ -98,63 +105,6 @@
 /*******************************
 * Wiki Post Styles
 ********************************/
-.baseball-card-wrapper {
-	@extend .container;
-	@extend .mb-2;
-	@extend .mt-6;
-}
-
-.baseball-card-title-wrapper {
-	@extend .has-text-centered;
-}
-
-.baseball-card-table-wrapper {
-	@extend .has-text-left;
-}
-
-.baseball-card-table {
-	@extend .table;
-	@extend .is-fullwidth;
-}
-
-.baseball-card-table-label {
-	@extend .has-text-weight-semibold;
-}
-
-.baseball-card-title {
-	@extend .title;
-	@extend .is-5;
-}
-
-.baseball-card-img {
-	@extend .image;
-	height: auto;
-	width: 100%;
-}
-
-.baseball-card {
-	@extend .card;
-	width: 40%;
-	float: right;
-	margin-right: 0.5rem;
-	@extend .ml-2;
-	figure {
-		@extend .mx-0;
-	}
-}
-
-.baseball-card-summary-row {
-	width: 100%;
-}
-
-.baseball-card-summary {
-	@extend .card-content;
-	.content {
-		table {
-			margin: 0 0 !important;
-		}
-	}
-}
 
 .wiki-post-article {
 	@extend .content;

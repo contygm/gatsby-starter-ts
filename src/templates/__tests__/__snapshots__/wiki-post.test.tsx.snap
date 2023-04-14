@@ -501,6 +501,24 @@ exports[`Wiki Posts Page ToC shows properly on mobile: closed table of contents 
               <div
                 class="wiki-post-footer"
               >
+                <a
+                  class="post-tag"
+                  href="/wiki?tag=one"
+                >
+                  one
+                </a>
+                <a
+                  class="post-tag"
+                  href="/wiki?tag=two"
+                >
+                  two
+                </a>
+                <a
+                  class="post-tag"
+                  href="/wiki?tag=three"
+                >
+                  three
+                </a>
                 <div
                   class="next-previous-wrapper"
                 >
@@ -1598,6 +1616,24 @@ exports[`Wiki Posts Page ToC shows properly on mobile: closed table of contents 
               <div
                 class="wiki-post-footer"
               >
+                <a
+                  class="post-tag"
+                  href="/wiki?tag=one"
+                >
+                  one
+                </a>
+                <a
+                  class="post-tag"
+                  href="/wiki?tag=two"
+                >
+                  two
+                </a>
+                <a
+                  class="post-tag"
+                  href="/wiki?tag=three"
+                >
+                  three
+                </a>
                 <div
                   class="next-previous-wrapper"
                 >
@@ -2695,6 +2731,24 @@ exports[`Wiki Posts Page ToC shows properly on mobile: open table of contents 1`
               <div
                 class="wiki-post-footer"
               >
+                <a
+                  class="post-tag"
+                  href="/wiki?tag=one"
+                >
+                  one
+                </a>
+                <a
+                  class="post-tag"
+                  href="/wiki?tag=two"
+                >
+                  two
+                </a>
+                <a
+                  class="post-tag"
+                  href="/wiki?tag=three"
+                >
+                  three
+                </a>
                 <div
                   class="next-previous-wrapper"
                 >
@@ -3722,6 +3776,24 @@ exports[`Wiki Posts Page renders correctly 1`] = `
               <div
                 class="wiki-post-footer"
               >
+                <a
+                  class="post-tag"
+                  href="/wiki?tag=one"
+                >
+                  one
+                </a>
+                <a
+                  class="post-tag"
+                  href="/wiki?tag=two"
+                >
+                  two
+                </a>
+                <a
+                  class="post-tag"
+                  href="/wiki?tag=three"
+                >
+                  three
+                </a>
                 <div
                   class="next-previous-wrapper"
                 >
@@ -4889,6 +4961,24 @@ exports[`Wiki Posts Page renders correctly on medium view 1`] = `
               <div
                 class="wiki-post-footer"
               >
+                <a
+                  class="post-tag"
+                  href="/wiki?tag=one"
+                >
+                  one
+                </a>
+                <a
+                  class="post-tag"
+                  href="/wiki?tag=two"
+                >
+                  two
+                </a>
+                <a
+                  class="post-tag"
+                  href="/wiki?tag=three"
+                >
+                  three
+                </a>
                 <div
                   class="next-previous-wrapper"
                 >
@@ -5986,6 +6076,24 @@ exports[`Wiki Posts Page renders correctly on mobile view 1`] = `
               <div
                 class="wiki-post-footer"
               >
+                <a
+                  class="post-tag"
+                  href="/wiki?tag=one"
+                >
+                  one
+                </a>
+                <a
+                  class="post-tag"
+                  href="/wiki?tag=two"
+                >
+                  two
+                </a>
+                <a
+                  class="post-tag"
+                  href="/wiki?tag=three"
+                >
+                  three
+                </a>
                 <div
                   class="next-previous-wrapper"
                 >

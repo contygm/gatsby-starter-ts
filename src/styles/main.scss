@@ -106,7 +106,6 @@ main {
 	@include fa(1rem, 2rem);
 }
 
-
 /*******************************
 * Custom Style Imports
 ********************************/
@@ -114,5 +113,6 @@ main {
 @import "base-styles.scss";
 @import "post-styles.scss";
 @import "pages-styles.scss";
+@import "common-components-styles.scss";
 @import "components-styles.scss";
 @import "layout-styles.scss";

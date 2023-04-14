@@ -16,47 +16,15 @@ import {
 } from '../components';
 
 /**
- * All properties of a basic blog post including content, frontmatter and header image
- * @property {{siteMetadata: SiteMetadata}} site - site metadata
- * @property {BlogPostElements} markdown - includes frontmatter, image, etc
- * @property {NeighborPost} previous - previous post (by date)
- * @property {NeighborPost} next - next post (by date)
- * @property {{nodes: IndexElements[]}} featured - featured blog posts
- * @property {{nodes: IndexElements[]}} related - related blog posts
- *
- * @see SiteMetadata
- * @see IndexElements
- * @see PostElements
- * @see NeighborPost
- * @memberof BlogPost
- * @category Template
- */
-export interface BlogPostProps {
-    site: {
-        siteMetadata: SiteMetadata;
-    };
-    markdownRemark: BlogPostElements;
-    previous: NeighborPost;
-    next: NeighborPost;
-    featured: {
-        nodes: IndexElements[];
-    };
-    related: {
-        nodes: IndexElements[];
-    };
-}
-
-/**
  * A template for a blog post, including: sidebar, table of contents, blog content, and author section.
- * @param {BlogPostProps} data
+ * @param {PostIndexProps<BlogPostElements>} data
  *
  * @category Template
  * @class
  */
 const BlogPost = ({
     data: { site, markdownRemark, previous, next, featured, related }
-}: PageProps<BlogPostProps>) => {
-    // const winSize = window.innerWidth <= 1215;
+}: PageProps<PostIndexProps<BlogPostElements>>) => {
     const [showMobileToc, setShowMobileToc] = useState(false);
     const [isMobile, setIsMobile] = useState(useCheckMobileScreen());
     const [btnIcon, setBtnIcon] = useState(faEllipsis);
@@ -207,7 +175,7 @@ export default BlogPost;
  *
  * @memberof BlogPost
  */
-export function Head({ data: { markdownRemark } }: HeadProps<BlogPostProps>) {
+export function Head({ data: { markdownRemark } }: HeadProps<PostIndexProps<BlogPostElements>>) {
     return <SEO title={markdownRemark.frontmatter.title} />;
 }
 
