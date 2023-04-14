@@ -16,7 +16,6 @@ import { NextAndPrevious } from '../common/NextAndPrevious';
  * @category Components
  * @memberof AuthorBlurb
  */
-// TODO group objects for easy typing on sub components
 export interface AuthorBlurbProps {
     author: {
         name: string;

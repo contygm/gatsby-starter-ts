@@ -27,8 +27,6 @@ export interface SideBarProps {
  * @see SideBarProps
  */
 export const SideBar = (props: SideBarProps) => {
-    // TODO: working search requires queries, tabling for now
-    // const searchPlaceholder = type === 'glossary' ? 'A word...' : 'Title...';
     const firstSectionTitle =
         props.type === 'glossary'
             ? 'Featured Blog Posts'
@@ -44,20 +42,6 @@ export const SideBar = (props: SideBarProps) => {
 
     return (
         <aside className="menu sidebar">
-            {/* <div className="box">
-                <p className="menu-label">{`Search the ${type}`}</p>
-                <p className="menu-list control has-icons-left">
-                    <span className="icon">
-                        <FontAwesomeIcon icon={faMagnifyingGlass} />
-                    </span>
-                    <input
-                        className="input is-rounded"
-                        type="text"
-                        placeholder={searchPlaceholder}
-                        aria-label="blog-search"
-                    />
-                </p>
-            </div> */}
             {props.related && props.related.length > 0 && (
                 <div className="box">
                     <p className="menu-label">{firstSectionTitle}</p>

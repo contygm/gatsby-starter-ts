@@ -40,6 +40,7 @@ export const TagsList = (props: TagsListProps) => {
             ? 'tag-active'
             : 'tag-inactive';
 
+    // TODO get rid of  tag query param
     return (
         <div className="tag-list-wrapper">
             <div className="tag-wrapper">

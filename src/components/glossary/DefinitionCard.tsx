@@ -29,7 +29,6 @@ interface DefinitionCardProps {
  * @see DefinitionCardProps
  * @category Components
  */
-
 // TODO break up into local components
 // TODO name forms better
 export const DefinitionCard = (props: DefinitionCardProps) => {

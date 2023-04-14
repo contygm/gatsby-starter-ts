@@ -57,29 +57,19 @@ export interface WikiPostProps {
 const WikiPost = ({
     data: { markdownRemark, featured, related, next, previous }
 }: PageProps<WikiPostProps>) => {
-    // const winSize = window.innerWidth <= 1215;
     const [showMobileToc, setShowMobileToc] = useState(false);
     const [isMobile, setIsMobile] = useState(useCheckMobileScreen());
-    const [isBigScreen, setIsBigScreen] = useState(!useCheckMobileScreen());
     const [btnIcon, setBtnIcon] = useState(faEllipsis);
     const image = getImage(markdownRemark.frontmatter.headerImage);
 
-    // TODO:
     const handleResize = () => {
+        // mobile screen
         if (window.innerWidth < 1024) {
-            // mobile screen
             setIsMobile(true);
-            setIsBigScreen(false);
-        } else if (1024 <= window.innerWidth && window.innerWidth <= 1215) {
-            // medium screen
-            setIsMobile(false);
-            setIsBigScreen(false);
-            setShowMobileToc(false);
-        } else {
-            // large screen
+        } else { // large or tablet screen
+            
             setIsMobile(false);
             setShowMobileToc(false);
-            setIsBigScreen(true);
         }
     };
 
@@ -210,7 +200,7 @@ const WikiPost = ({
                                 }}
                             />
                         </section>
-                        {!isBigScreen && (
+                        {isMobile && (
                             <StickySocialMedia isVertical={true} />
                         )}
                         {/* TODO need tags */}
@@ -237,7 +227,7 @@ const WikiPost = ({
                             related={related?.nodes}
                         />
                     </div>
-                    {isBigScreen && <StickySocialMedia isVertical={false} />}
+                    {!isMobile && <StickySocialMedia isVertical={false} />}
                 </div>
             </div>
         </Layout>
