@@ -182,22 +182,14 @@ const WikiPost = ({
                                                         (attrObj) => {
                                                             return (
                                                                 <tr
-                                                                    key={
-                                                                        attrObj.field
-                                                                    }
-                                                                    className={
-                                                                        'baseball-card-row'
-                                                                    }
+                                                                    key={attrObj.field}
+                                                                    className='baseball-card-row'
                                                                 >
                                                                     <td className="baseball-card-table-label">
-                                                                        {
-                                                                            attrObj.field
-                                                                        }
+                                                                        {attrObj.field}
                                                                     </td>
                                                                     <td>
-                                                                        {
-                                                                            attrObj.value
-                                                                        }
+                                                                        {attrObj.value}
                                                                     </td>
                                                                 </tr>
                                                             );

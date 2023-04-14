@@ -7,28 +7,22 @@ import React from 'react';
  * @category Components
  */
 export const ContactForm = () => {
-    // console.log form values on submit
-    // TODO: make an alert
     function onSubmit(e: React.SyntheticEvent) {
         e.preventDefault();
 
-        // const target = e.target as typeof e.target & {
-        //     email: { value: string };
-        //     message: { value: string };
-        //     name: { value: string };
-        // };
+        const target = e.target as typeof e.target & {
+            email: { value: string };
+            message: { value: string };
+            name: { value: string };
+        };
 
-        console.log('contact form submit');
-        // console.log('email:', target.email.value);
-        // console.log('message:', target.message.value);
+        alert(`Thanks ${target.name.value} for your submission!`)
     }
 
-    // mailto action will only work in IE (lol)
     return (
         <form
             className="is-small"
             method="get"
-            // action={`mailto:${props.email}`}
             encType="text/plain"
             onSubmit={onSubmit}
         >

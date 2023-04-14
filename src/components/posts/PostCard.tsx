@@ -1,23 +1,32 @@
 import { Link } from 'gatsby';
 import React, { SyntheticEvent } from 'react';
 
-// TODO interface
 /**
- * A card component used to display minimal post information on the PostIndex
- * @param {IndexElements} post - post frontmatter and other index elements
- * @param {PostType} type - the type of post
- * @param {void} handleFilterUpdate - a function for when the a user interacts with the filter; `(e: any) => void`
+ * Post information to be display or used in the post card
+ * @property {IndexElements} post - post frontmatter and other index elements
+ * @property {PostType} type - the type of post
+ * @property {void} handleFilterUpdate - a function for when the a user interacts with the filter; `(e: any) => void`
  *
  * @see IndexElements
  * @see PostType
  * @see PostIndex
  * @category Components
+ * @memberof PostCard
  */
-export const PostCard = (props: {
+interface PostCardProps {
     post: IndexElements;
     type: PostType;
     handleFilterUpdate: (e: SyntheticEvent) => void;
-}) => {
+}
+
+/**
+ * A card component used to display minimal post information on the PostIndex
+ * @param {PostCardProps} props - post information 
+ * 
+ * @class
+ * @category Components
+ */
+export const PostCard = (props: PostCardProps) => {
     return (
         <div className="card">
             <div className="card-image">

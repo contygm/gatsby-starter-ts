@@ -3,8 +3,8 @@ import {
     faMugHot,
     faGhost,
     faEnvelope,
-    faChevronRight,
-    faShare
+    faShare,
+    faChevronUp
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -68,12 +68,11 @@ export const StickySocialMedia = (props: {
                         </div>
                     </>
                 )}
-                {/* TODO should be an up arrow instead of side */}
                 {props.isVertical && showMedia && (
                     <div className="sticky-social-hidden">
                         <FontAwesomeIcon
                             className="faicon-link"
-                            icon={faChevronRight}
+                            icon={faChevronUp}
                             size="sm"
                             onClick={handleCollapse}
                             data-testid={'sticky-social-hide'}

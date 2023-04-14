@@ -9,7 +9,6 @@
  * @see GlossaryElements
  * @see IndexElements
  */
-// TODO generic type?
 export const filterWithSearchQuery = (
     unfilteredPosts: (GlossaryElements | IndexElements)[],
     searchQuery: string

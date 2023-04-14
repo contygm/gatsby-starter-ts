@@ -58,7 +58,6 @@ export interface GlossaryPageProps {
     };
 }
 
-// TODO move to util
 /**
  * A function that takes all the letters used in glossary definitions (sorted alphabetically) and
  * makes a table of contents based on these letters. Each letter will link to the appropriate header
