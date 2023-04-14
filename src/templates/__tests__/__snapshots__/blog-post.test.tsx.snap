@@ -419,17 +419,17 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                 >
                   <svg
                     aria-hidden="true"
-                    class="svg-inline--fa fa-chevron-right fa-sm faicon-link"
-                    data-icon="chevron-right"
+                    class="svg-inline--fa fa-chevron-up fa-sm faicon-link"
+                    data-icon="chevron-up"
                     data-prefix="fas"
                     data-testid="sticky-social-hide"
                     focusable="false"
                     role="img"
-                    viewBox="0 0 384 512"
+                    viewBox="0 0 512 512"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      d="M342.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L274.7 256 105.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                      d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"
                       fill="currentColor"
                     />
                   </svg>
@@ -1529,17 +1529,17 @@ exports[`Blog Posts Page ToC shows properly on mobile: closed table of contents 
                 >
                   <svg
                     aria-hidden="true"
-                    class="svg-inline--fa fa-chevron-right fa-sm faicon-link"
-                    data-icon="chevron-right"
+                    class="svg-inline--fa fa-chevron-up fa-sm faicon-link"
+                    data-icon="chevron-up"
                     data-prefix="fas"
                     data-testid="sticky-social-hide"
                     focusable="false"
                     role="img"
-                    viewBox="0 0 384 512"
+                    viewBox="0 0 512 512"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      d="M342.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L274.7 256 105.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                      d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"
                       fill="currentColor"
                     />
                   </svg>
@@ -2639,17 +2639,17 @@ exports[`Blog Posts Page ToC shows properly on mobile: open table of contents 1`
                 >
                   <svg
                     aria-hidden="true"
-                    class="svg-inline--fa fa-chevron-right fa-sm faicon-link"
-                    data-icon="chevron-right"
+                    class="svg-inline--fa fa-chevron-up fa-sm faicon-link"
+                    data-icon="chevron-up"
                     data-prefix="fas"
                     data-testid="sticky-social-hide"
                     focusable="false"
                     role="img"
-                    viewBox="0 0 384 512"
+                    viewBox="0 0 512 512"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      d="M342.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L274.7 256 105.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                      d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"
                       fill="currentColor"
                     />
                   </svg>
@@ -4680,8 +4680,8 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
           class="post-toc"
         >
           <section
-            class="web-post-toc"
-            style="display: block;"
+            class="mobile-post-toc"
+            style="display: none;"
           >
             <div>
               <div
@@ -4734,7 +4734,7 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
           <button
             class="primary-button-rounded"
             data-testid="post-toc-mobile-btn"
-            style="display: none;"
+            style="display: block;"
           >
             <i
               class="icon"
@@ -4859,17 +4859,17 @@ exports[`Blog Posts Page renders correctly on medium view 1`] = `
                 >
                   <svg
                     aria-hidden="true"
-                    class="svg-inline--fa fa-chevron-right fa-sm faicon-link"
-                    data-icon="chevron-right"
+                    class="svg-inline--fa fa-chevron-up fa-sm faicon-link"
+                    data-icon="chevron-up"
                     data-prefix="fas"
                     data-testid="sticky-social-hide"
                     focusable="false"
                     role="img"
-                    viewBox="0 0 384 512"
+                    viewBox="0 0 512 512"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      d="M342.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L274.7 256 105.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                      d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"
                       fill="currentColor"
                     />
                   </svg>
@@ -5969,17 +5969,17 @@ exports[`Blog Posts Page renders correctly on mobile view 1`] = `
                 >
                   <svg
                     aria-hidden="true"
-                    class="svg-inline--fa fa-chevron-right fa-sm faicon-link"
-                    data-icon="chevron-right"
+                    class="svg-inline--fa fa-chevron-up fa-sm faicon-link"
+                    data-icon="chevron-up"
                     data-prefix="fas"
                     data-testid="sticky-social-hide"
                     focusable="false"
                     role="img"
-                    viewBox="0 0 384 512"
+                    viewBox="0 0 512 512"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      d="M342.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L274.7 256 105.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                      d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"
                       fill="currentColor"
                     />
                   </svg>

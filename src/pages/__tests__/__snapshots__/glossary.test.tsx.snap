@@ -8992,7 +8992,7 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
         >
           <section
             class="glossary-toc-box"
-            style="display: block;"
+            style="display: none;"
           >
             <div>
               <div
@@ -9069,7 +9069,7 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
             class="primary-button-rounded"
             data-testid="post-toc-mobile-btn"
             id="toc-button"
-            style="display: none;"
+            style="display: block;"
           >
             <i
               class="icon"

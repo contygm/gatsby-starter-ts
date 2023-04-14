@@ -12,7 +12,6 @@ import {
 import PostPage from '../templates/post-page';
 import { faEllipsis, faXmark } from '@fortawesome/free-solid-svg-icons';
 import useCheckMobileScreen from '../utils/hooks/useCheckMobileScreen';
-import useCheckBigScreen from '../utils/hooks/useCheckBigScreen';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 /**
@@ -96,7 +95,7 @@ const GlossaryPage = ({
 }: PageProps<GlossaryPageProps>) => {
     const [showMobileToc, setShowMobileToc] = useState(false);
     const [isMobile, setIsMobile] = useState(useCheckMobileScreen());
-    const [isBigScreen, setIsBigScreen] = useState(useCheckBigScreen());
+    const [isBigScreen, setIsBigScreen] = useState(!useCheckMobileScreen());
     const [btnIcon, setBtnIcon] = useState(faEllipsis);
 
     // TODO:

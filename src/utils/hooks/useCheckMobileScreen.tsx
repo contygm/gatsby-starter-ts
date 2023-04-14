@@ -1,9 +1,7 @@
 import { useEffect, useState } from 'react';
 
-// TODO combine with big screen
-
 /**
- * a quick hook to check if the screen is mobile
+ * a quick hook to check if the screen is mobile or tablet size
  * @function useCheckMobileScreen
  * @returns {boolean}
  */
@@ -24,7 +22,7 @@ const useCheckMobileScreen = () => {
             };
         }, []);
 
-        return width <= 1023;
+        return width < 1216;
     }
     return false;
 };

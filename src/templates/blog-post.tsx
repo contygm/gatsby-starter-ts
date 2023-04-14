@@ -4,7 +4,6 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEllipsis, faXmark } from '@fortawesome/free-solid-svg-icons';
 import useCheckMobileScreen from '../utils/hooks/useCheckMobileScreen';
-import useCheckBigScreen from '../utils/hooks/useCheckBigScreen';
 import {
     Layout,
     PageHeader,
@@ -60,7 +59,7 @@ const BlogPost = ({
     // const winSize = window.innerWidth <= 1215;
     const [showMobileToc, setShowMobileToc] = useState(false);
     const [isMobile, setIsMobile] = useState(useCheckMobileScreen());
-    const [isBigScreen, setIsBigScreen] = useState(useCheckBigScreen());
+    const [isBigScreen, setIsBigScreen] = useState(!useCheckMobileScreen());
     const [btnIcon, setBtnIcon] = useState(faEllipsis);
     const image = getImage(markdownRemark.frontmatter.headerImage);
 
