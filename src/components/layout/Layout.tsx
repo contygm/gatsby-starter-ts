@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavBar } from './NavBar';
 import { Footer } from './Footer';
-import { useSiteMetadata } from '../../utils/hooks/useSiteMetadata';
+import { getSiteMetadata } from '../../utils/helpers/getSiteMetadata';
 import '../../styles/main.scss';
 
 /**
@@ -23,7 +23,7 @@ interface LayoutProps {
  * @see LayoutProps
  */
 export const Layout = (props: LayoutProps) => {
-    const { author } = useSiteMetadata();
+    const { author } = getSiteMetadata();
 
     return (
         <div id="app-container">

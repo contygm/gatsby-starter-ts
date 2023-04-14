@@ -1,5 +1,5 @@
 import React from 'react';
-import { useSiteMetadata } from '../utils/hooks/useSiteMetadata';
+import { getSiteMetadata } from '../utils/helpers/getSiteMetadata';
 import { Layout, SEO, PageHeader, ContactForm } from '../components';
 
 /**
@@ -11,7 +11,7 @@ import { Layout, SEO, PageHeader, ContactForm } from '../components';
  * @see ContactForm
  */
 const AboutPage = () => {
-    const { businessName, phone, email } = useSiteMetadata();
+    const { businessName, phone, email } = getSiteMetadata();
 
     return (
         <Layout>

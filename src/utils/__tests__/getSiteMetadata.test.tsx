@@ -1,7 +1,7 @@
-import { useSiteMetadata } from '../hooks/useSiteMetadata';
+import { getSiteMetadata } from '../helpers/getSiteMetadata';
 import * as gatsby from 'gatsby';
 
-describe('useSiteMetadata', () => {
+describe('getSiteMetadata', () => {
     it('return siteMetadata', () => {
         // NOTE: because this is mocked globally (__mocks__/gatsby), we give it a
         // different value to prove the hook will update based on siteMetadata
@@ -19,7 +19,7 @@ describe('useSiteMetadata', () => {
             }
         }));
 
-        const data = useSiteMetadata();
+        const data = getSiteMetadata();
         expect(data).toMatchSnapshot();
 
         mock.mockRestore();

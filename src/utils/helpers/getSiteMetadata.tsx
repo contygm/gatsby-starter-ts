@@ -1,12 +1,11 @@
 import { useStaticQuery, graphql } from 'gatsby';
 
-// TODO: not a hook
 /**
- * a quick hook to get all the site meta data from the `gatsby-config.ts` file
- * @function useSiteMetadata
+ * a simple function to get all the site meta data from the `gatsby-config.ts` file
+ * @function getSiteMetadata
  * @returns {SiteMetadata}
  */
-export const useSiteMetadata = () => {
+export const getSiteMetadata = () => {
     const { site } = useStaticQuery(
         graphql`
             query SiteMetaData {

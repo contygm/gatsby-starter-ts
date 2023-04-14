@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { SyntheticEvent, useEffect, useState } from 'react';
 import { PostCard } from './PostCard';
 
 /**
@@ -17,7 +17,7 @@ interface PostIndexProps {
     allPosts: IndexElements[];
     increment: number;
     type: PostType;
-    handleFilterUpdate: (e: any) => void;
+    handleFilterUpdate: (e: SyntheticEvent) => void;
 }
 
 /**

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Layout, SEO } from '../../components';
-import { useSiteMetadata } from '../../utils/hooks/useSiteMetadata';
+import { getSiteMetadata } from '../../utils/helpers/getSiteMetadata';
 
 /**
  * Basic cookie policy page that uses the `businessName` and `siteUrl` from SiteMetadata
@@ -12,7 +12,7 @@ import { useSiteMetadata } from '../../utils/hooks/useSiteMetadata';
  * @see SiteMetadata
  */
 const CookiesPage = () => {
-    const { businessName, siteUrl } = useSiteMetadata();
+    const { businessName, siteUrl } = getSiteMetadata();
 
     return (
         <Layout>

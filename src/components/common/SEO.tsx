@@ -1,5 +1,5 @@
 import React from 'react';
-import { useSiteMetadata } from '../../utils/hooks/useSiteMetadata';
+import { getSiteMetadata } from '../../utils/helpers/getSiteMetadata';
 
 /**
  * properties for reusable SEO component
@@ -31,7 +31,7 @@ export const SEO = (props: SeoProps) => {
         description: defaultDescription,
         image,
         siteUrl
-    } = useSiteMetadata();
+    } = getSiteMetadata();
 
     // use provided title if it exists
     const seo = {

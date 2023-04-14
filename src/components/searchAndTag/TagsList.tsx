@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { SyntheticEvent } from 'react';
 
 /**
  * Tag filter props
@@ -22,7 +22,7 @@ interface TagsListProps {
     activeTag: string;
     isSearchActive: boolean;
     type: PostType;
-    handleFilterUpdate: (e: any) => void;
+    handleFilterUpdate: (e: SyntheticEvent) => void;
 }
 
 /**

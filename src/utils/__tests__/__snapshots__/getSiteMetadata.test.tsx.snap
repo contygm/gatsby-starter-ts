@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`useSiteMetadata return siteMetadata 1`] = `
+exports[`getSiteMetadata return siteMetadata 1`] = `
 {
   "author": "Different B. Author",
   "businessName": "The Different Company",

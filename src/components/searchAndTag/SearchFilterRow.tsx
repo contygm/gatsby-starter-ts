@@ -1,6 +1,6 @@
 import { faCircleXmark } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useEffect, useState } from 'react';
+import React, { SyntheticEvent, useEffect, useState } from 'react';
 import { TagsList } from './TagsList';
 
 /**
@@ -28,7 +28,7 @@ interface SearchFilterRowProps {
     searchQuery: string;
     type: PostType;
     clearSearchQuery: () => void;
-    handleFilterUpdate: (e: any) => void;
+    handleFilterUpdate: (e: SyntheticEvent) => void;
     handleSubmitSearch: (e: any) => void;
 }
 /**
@@ -54,7 +54,7 @@ interface SearchFilterRowProps {
 export const SearchFilterRow = (props: SearchFilterRowProps) => {
     const [value, setValue] = useState(props.searchQuery);
 
-    const handleChange = (event: any) => {
+    const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         const val = event.target.value;
         setValue(val);
     };

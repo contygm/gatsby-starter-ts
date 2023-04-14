@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { SyntheticEvent, useEffect, useState } from 'react';
 import { SearchFilterRow, PostIndex, GlossaryIndex } from '../components';
 import { filterWithSearchQuery } from '../utils/helpers/searchFunctions';
 
@@ -59,9 +59,10 @@ const PostPage = ({ index, allTags, type, allLetters }: PostPageProps) => {
     const [searchQuery, setSearchQuery] = useState('');
     const [tagFilter, setTagFilter] = useState('');
 
-    const handleFilterUpdate = (e: any) => {
+    const handleFilterUpdate = (e: SyntheticEvent) => {
         if (searchQuery === '') {
-            setTagFilter(e.target.id);
+            console.log(e.currentTarget.id)
+            setTagFilter(e.currentTarget.id);
         }
     };
 

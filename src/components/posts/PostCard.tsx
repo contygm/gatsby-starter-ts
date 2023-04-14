@@ -1,5 +1,5 @@
 import { Link } from 'gatsby';
-import React from 'react';
+import React, { SyntheticEvent } from 'react';
 
 // TODO interface
 /**
@@ -16,7 +16,7 @@ import React from 'react';
 export const PostCard = (props: {
     post: IndexElements;
     type: PostType;
-    handleFilterUpdate: (e: any) => void;
+    handleFilterUpdate: (e: SyntheticEvent) => void;
 }) => {
     return (
         <div className="card">
