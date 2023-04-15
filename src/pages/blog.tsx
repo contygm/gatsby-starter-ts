@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql, HeadProps, PageProps } from 'gatsby';
 import { Layout, SEO, PageHeader } from '../components';
-import PostPage from '../templates/post-page';
+import PostPage from '../components/posts/PostIndex';
 
 /**
  * All props needed for the blog index page. Props come from a graphQL page query.

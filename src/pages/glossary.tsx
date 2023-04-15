@@ -9,7 +9,7 @@ import {
     SideBar,
     StickySocialMedia
 } from '../components';
-import PostPage from '../templates/post-page';
+import PostPage from '../components/posts/PostIndex';
 import { faEllipsis, faXmark } from '@fortawesome/free-solid-svg-icons';
 import useCheckMobileScreen from '../utils/hooks/useCheckMobileScreen';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

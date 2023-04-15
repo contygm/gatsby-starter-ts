@@ -1,6 +1,6 @@
 import React from 'react';
 import { fireEvent, render, waitFor } from '@testing-library/react';
-import PostPage, { Head } from '../../templates/post-page';
+import PostPage, { Head } from '../../components/posts/PostIndex';
 import { mockBlogs } from '../../../__mocks__/mock-blog-page';
 import { mockGlossary } from '../../../__mocks__/mock-glossary-page';
 

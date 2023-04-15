@@ -12,7 +12,6 @@ import { DefinitionCard } from './DefinitionCard';
  * @see GlossaryIndex
  * @category Components
  */
-// TODO just pass the group
 export interface GlossaryIndexProps {
     allDefinitions: GlossaryElements[];
     allLetters?: {

@@ -9,7 +9,7 @@ export * from './common/NextAndPrevious';
 export * from './tableOfContents/OutsideClicker';
 export * from './layout/PageHeader';
 export * from './posts/PostCard';
-export * from './posts/PostIndex';
+export * from './posts/BlogWikiIndex';
 export * from './searchAndTag/SearchFilterRow';
 export * from './common/SEO';
 export * from './layout/SideBar';

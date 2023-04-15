@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql, HeadProps, PageProps } from 'gatsby';
 import { Layout, PageHeader, SEO } from '../components/';
-import PostPage from '../templates/post-page';
+import PostPage from '../components/posts/PostIndex';
 
 // TODO is this any different from the blog index?
 /**

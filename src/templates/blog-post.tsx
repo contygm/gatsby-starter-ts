@@ -65,7 +65,6 @@ const BlogPost = ({
 
     return (
         <Layout>
-            {/* TODO: move to joint function/component cuz same as wiki */}
             {/* full page header with social share */}
             <PageHeader
                 title={markdownRemark.frontmatter.title}

@@ -1,12 +1,12 @@
 import React from 'react';
 import { fireEvent, render } from '@testing-library/react';
-import { PostIndex } from '../PostIndex';
+import { BlogWikiIndex } from '../BlogWikiIndex';
 import { mockBlogPageData } from '../../../../__mocks__/mock-blog-page';
 
-describe('PostIndex', () => {
+describe('BlogWikiIndex', () => {
     it('default renders and load btn works correctly', () => {
         const { asFragment, getByText, getAllByTestId } = render(
-            <PostIndex
+            <BlogWikiIndex
                 allPosts={mockBlogPageData.data.index.nodes}
                 increment={2}
                 type={'blog'}
