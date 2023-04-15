@@ -30,7 +30,7 @@ const WikiPost = ({
                 <article className="wiki-post-article">
                     {/* baseball card */}
                     {image && (
-                        <BaseballCard 
+                        <BaseballCard
                             image={image}
                             summary={markdownRemark.frontmatter.summary}
                         />
@@ -80,7 +80,9 @@ export default WikiPost;
  *
  * @memberof WikiPost
  */
-export function Head({ data: { markdownRemark } }: HeadProps<IndexFilterWrapperProps<BlogPostElements>>) {
+export function Head({
+    data: { markdownRemark }
+}: HeadProps<IndexFilterWrapperProps<BlogPostElements>>) {
     return <SEO title={markdownRemark.frontmatter.title} />;
 }
 

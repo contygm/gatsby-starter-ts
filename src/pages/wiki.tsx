@@ -15,7 +15,9 @@ import IndexFilterWrapper from '../components/posts/IndexFilterWrapper';
  * @class
  * @category Pages
  */
-const WikiIndex = ({ data: { index, allTags } }: PageProps<GenericPageProps>) => {
+const WikiIndex = ({
+    data: { index, allTags }
+}: PageProps<GenericPageProps>) => {
     return (
         <Layout>
             <PageHeader

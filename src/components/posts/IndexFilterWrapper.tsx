@@ -49,7 +49,12 @@ const INCREMENT = 6;
  * @category Components
  * @class
  */
-const IndexFilterWrapper = ({ index, allTags, type, allLetters }: IndexFilterWrapperProps) => {
+const IndexFilterWrapper = ({
+    index,
+    allTags,
+    type,
+    allLetters
+}: IndexFilterWrapperProps) => {
     const unfilteredPosts = index.nodes;
     const tags = allTags.group;
     const [allPosts, setAllPosts] = useState(index.nodes);
@@ -58,7 +63,7 @@ const IndexFilterWrapper = ({ index, allTags, type, allLetters }: IndexFilterWra
 
     const handleFilterUpdate = (e: SyntheticEvent) => {
         if (searchQuery === '') {
-            console.log(e.currentTarget.id)
+            console.log(e.currentTarget.id);
             setTagFilter(e.currentTarget.id);
         }
     };

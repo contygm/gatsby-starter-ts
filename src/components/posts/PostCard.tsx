@@ -21,8 +21,8 @@ interface PostCardProps {
 
 /**
  * A card component used to display minimal post information on the IndexFilterWrapper
- * @param {PostCardProps} props - post information 
- * 
+ * @param {PostCardProps} props - post information
+ *
  * @class
  * @category Components
  */

@@ -1,10 +1,7 @@
 import React from 'react';
 import { graphql, PageProps, HeadProps } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
-import {
-    SEO,
-    AuthorBlurb
-} from '../components';
+import { SEO, AuthorBlurb } from '../components';
 import PostIndexContainer from '../components/posts/PostIndexContainer';
 
 /**
@@ -49,7 +46,7 @@ const BlogPost = ({
                             }}
                         />
                     </section>
-                    
+
                     {/* author, tags, and prev/next post nav */}
                     <AuthorBlurb
                         author={site.siteMetadata.author}
@@ -72,7 +69,9 @@ export default BlogPost;
  *
  * @memberof BlogPost
  */
-export function Head({ data: { markdownRemark } }: HeadProps<IndexFilterWrapperProps<BlogPostElements>>) {
+export function Head({
+    data: { markdownRemark }
+}: HeadProps<IndexFilterWrapperProps<BlogPostElements>>) {
     return <SEO title={markdownRemark.frontmatter.title} />;
 }
 

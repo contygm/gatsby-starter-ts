@@ -58,7 +58,7 @@ collections:
             { label: Slug, name: slug, widget: string },
           ],
         }
-      - { name: tags, label: Tags, widget: list } # TODO: pull from wiki tags, make list
+      - { name: tags, label: Tags, widget: select, options: ["tag1", "tag2", "tag3"] }
       - {
           label: Summary,
           name: summary,

@@ -16,7 +16,7 @@ export const ContactForm = () => {
             name: { value: string };
         };
 
-        alert(`Thanks ${target.name.value} for your submission!`)
+        alert(`Thanks ${target.name.value} for your submission!`);
     }
 
     return (

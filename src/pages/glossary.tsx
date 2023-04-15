@@ -83,7 +83,6 @@ const makeGlossToC = (letterObjs: { fieldValue: string }[]) => {
 const GlossaryPage = ({
     data: { index, allTags, blogFeatured, wikiFeatured, allLetters }
 }: PageProps<GlossaryPageProps>) => {
-
     const toc = makeGlossToC(allLetters.group);
 
     return (

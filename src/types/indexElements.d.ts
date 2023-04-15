@@ -74,11 +74,11 @@ interface IndexElements {
  */
 interface GenericPageProps {
     /** site meta data */
-    site: SiteMetadata; 
+    site: SiteMetadata;
     /** all tags for posts */
     allTags: {
         group: {
-            /** tag value */ 
+            /** tag value */
             fieldValue: string;
             /** total count for this tag */
             totalCount: number;
@@ -87,7 +87,7 @@ interface GenericPageProps {
     /** all posts */
     index: {
         /** indexElements for all posts */
-        nodes: IndexElements[]; 
+        nodes: IndexElements[];
         /** total number of wiki posts */
         totalCount: number;
     };

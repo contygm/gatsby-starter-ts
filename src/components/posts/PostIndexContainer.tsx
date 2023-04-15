@@ -19,7 +19,7 @@ import {
  * @category Components
  * @memberof PostIndexContainer
  */
-export interface PostIndexContainer { 
+export interface PostIndexContainer {
     /** table of contents html string  */
     tocHtml: string;
     /** post title */
@@ -29,16 +29,15 @@ export interface PostIndexContainer {
     /** featured posts */
     featured: {
         nodes: IndexElements[];
-    }; 
+    };
     /** related posts */
     related: {
         nodes: IndexElements[];
-    }; 
+    };
     /** post type */
     postType: PostType;
     /** post index */
     children: React.ReactNode;
-    
 }
 
 /**
@@ -54,19 +53,19 @@ const PostIndexContainer = (props: PostIndexContainer) => {
     const [btnIcon, setBtnIcon] = useState(faEllipsis);
 
     const isGloss = props.postType === 'glossary';
-    const tocClassName = isGloss 
-        ? "glossary-toc" : "post-toc";
-    const tocSectionClassName = isGloss 
-        ? "glossary-toc-box" 
-        : isMobile 
-            ? 'mobile-post-toc' : 'web-post-toc';
+    const tocClassName = isGloss ? 'glossary-toc' : 'post-toc';
+    const tocSectionClassName = isGloss
+        ? 'glossary-toc-box'
+        : isMobile
+        ? 'mobile-post-toc'
+        : 'web-post-toc';
 
     const handleResize = () => {
         // mobile screen
         if (window.innerWidth < 1024) {
             setIsMobile(true);
-        } else { // large or tablet screen
-            
+        } else {
+            // large or tablet screen
             setIsMobile(false);
             setShowMobileToc(false);
         }
@@ -138,9 +137,7 @@ const PostIndexContainer = (props: PostIndexContainer) => {
                         </i>
                     </button>
                 </div>
-                <>
-                    {props.children}
-                </>  
+                <>{props.children}</>
                 {/* 
                     side bar with related + featured posts 
                     and sticky social share btns 
@@ -154,9 +151,7 @@ const PostIndexContainer = (props: PostIndexContainer) => {
                         />
                     </div>
                     {!isMobile && <StickySocialMedia isVertical={false} />}
-                    {isMobile && (
-                        <StickySocialMedia isVertical={true} />
-                    )}
+                    {isMobile && <StickySocialMedia isVertical={true} />}
                 </div>
             </div>
         </Layout>
