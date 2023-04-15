@@ -21,41 +21,45 @@ const BlogPost = ({
 
     return (
         <PostIndexContainer
-            markdownRemark={markdownRemark}
+            tocHtml={markdownRemark.tableOfContents}
+            title={markdownRemark.frontmatter.title}
+            subtitle={markdownRemark.frontmatter.description}
             featured={featured}
             related={related}
             postType={'blog'}
         >
-            <article className="content">
-                {/* image header */}
-                {image && (
-                    <section className="blog-post-header-wrapper">
-                        <GatsbyImage
-                            alt={'blog-post-header'}
-                            image={image}
-                            className="blog-post-header-image"
+            <div className="post-article-wrapper">
+                <article className="content">
+                    {/* image header */}
+                    {image && (
+                        <section className="blog-post-header-wrapper">
+                            <GatsbyImage
+                                alt={'blog-post-header'}
+                                image={image}
+                                className="blog-post-header-image"
+                            />
+                        </section>
+                    )}
+                    {/* Table of Contents */}
+                    <section className="section">
+                        <div
+                            className="container"
+                            dangerouslySetInnerHTML={{
+                                __html: markdownRemark.html
+                            }}
                         />
                     </section>
-                )}
-                {/* Table of Contents */}
-                <section className="section">
-                    <div
-                        className="container"
-                        dangerouslySetInnerHTML={{
-                            __html: markdownRemark.html
-                        }}
+                    
+                    {/* author, tags, and prev/next post nav */}
+                    <AuthorBlurb
+                        author={site.siteMetadata.author}
+                        postDate={markdownRemark.frontmatter.date}
+                        postTags={markdownRemark.frontmatter.tags}
+                        previousPost={previous}
+                        nextPost={next}
                     />
-                </section>
-                
-                {/* author, tags, and prev/next post nav */}
-                <AuthorBlurb
-                    author={site.siteMetadata.author}
-                    postDate={markdownRemark.frontmatter.date}
-                    postTags={markdownRemark.frontmatter.tags}
-                    previousPost={previous}
-                    nextPost={next}
-                />
-            </article>
+                </article>
+            </div>
         </PostIndexContainer>
     );
 };

@@ -1,59 +1,26 @@
 import React from 'react';
 import { graphql, HeadProps, PageProps } from 'gatsby';
 import { Layout, SEO, PageHeader } from '../components';
-import PostPage from '../components/posts/IndexFilterWrapper';
+import IndexFilterWrapper from '../components/posts/IndexFilterWrapper';
 
 /**
- * All props needed for the blog index page. Props come from a graphQL page query.
- * @property {SiteMetadata} site - site meta data
- * @property {Object} allTags - all tags used
- * @property {Array<{fieldValue: string, totalCount: number}>} allTags.group - all tags used
- * @property {Object} index - indexElements for all blog posts
- * @property {IndexElements[]} index.nodes - IndexElements for all blog posts
- * @property {number} index.totalCount - total number of blog posts
- * @property {Object} featured - featured blog articles
- * @property {IndexElements[]} featured.nodes - featured blog articles content
+ * Basic wiki page including page header and IndexFilterWrapper component
+ * @param {PageProps<GenericPageProps>} data - all page query data
  *
- * @memberof BlogIndex
- * @category Pages
- */
-export interface BlogIndexProps {
-    site: SiteMetadata;
-    allTags: {
-        group: {
-            fieldValue: string;
-            totalCount: number;
-        }[];
-    };
-    index: {
-        nodes: IndexElements[];
-        totalCount: number;
-    };
-    featured: {
-        nodes: IndexElements[];
-    };
-}
-
-/**
- * Basic wiki page including page header and PostPage component
- * @param {PageProps<BlogIndexProps>} data - all page query data
- * @param {BlogIndexProps.index} data.index - IndexElements for all wiki posts
- * @param {BlogIndexProps.allTags} data.allTags - all tags used in wiki posts
- *
- * @see IndexElements
+ * @see GenericPageProps
  * @see IndexFilterWrapper
  * @see PageHeader
  * @class
  * @category Pages
  */
-const BlogIndex = ({ data: { index, allTags } }: PageProps<BlogIndexProps>) => {
+const BlogIndex = ({ data: { index, allTags } }: PageProps<GenericPageProps>) => {
     return (
         <Layout>
             <PageHeader
                 title={`Blog Index`}
                 alignCenter={true}
             />
-            <PostPage
+            <IndexFilterWrapper
                 index={index}
                 allTags={allTags}
                 type={'blog'}
@@ -66,12 +33,12 @@ export default BlogIndex;
 
 /**
  * A basic component for SEO focused information
- * @param {HeadProps<BlogIndexProps>} site - site meta data
+ * @param {HeadProps<GenericPageProps>} site - site meta data
  *
- * @see BlogIndexProps
+ * @see GenericPageProps
  * @memberof BlogIndex
  */
-export function Head({ data: { site } }: HeadProps<BlogIndexProps>) {
+export function Head({ data: { site } }: HeadProps<GenericPageProps>) {
     return <SEO title={site.title} />;
 }
 

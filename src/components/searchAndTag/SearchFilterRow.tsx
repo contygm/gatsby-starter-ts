@@ -47,7 +47,7 @@ interface SearchFilterRowProps {
  * @param {SearchFilterRowProps} props
  *
  * @see TagsList
- * @see PostPage
+ * @see IndexFilterWrapper
  * @class
  * @category Components
  */

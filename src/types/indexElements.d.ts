@@ -67,3 +67,33 @@ interface IndexElements {
         };
     };
 }
+/**
+ * All props needed for the wiki index page. Props come from a graphQL page query.
+ *
+ * @category Index Elements
+ */
+interface GenericPageProps {
+    /** site meta data */
+    site: SiteMetadata; 
+    /** all tags for posts */
+    allTags: {
+        group: {
+            /** tag value */ 
+            fieldValue: string;
+            /** total count for this tag */
+            totalCount: number;
+        }[];
+    };
+    /** all posts */
+    index: {
+        /** indexElements for all posts */
+        nodes: IndexElements[]; 
+        /** total number of wiki posts */
+        totalCount: number;
+    };
+    /** featured posts */
+    featured: {
+        /** featured post content */
+        nodes: IndexElements[];
+    };
+}

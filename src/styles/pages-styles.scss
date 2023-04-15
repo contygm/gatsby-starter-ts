@@ -59,11 +59,6 @@
 	max-width: 10%;
 }
 
-.glossary-toc-mobile-btn {
-	@extend .is-rounded;
-	@extend .primary-button;
-}
-
 .glossary-toc-box {
 	@extend .web-post-toc;
 	@extend .box;
@@ -92,12 +87,6 @@
 	@extend .is-three-fifths-widescreen;
 	@extend .is-four-fifths;
 	@extend .is-narrow;
-}
-
-.glossary-sidebar-wrapper {
-	@extend .column;
-	@extend .mt-6;
-	@extend .is-one-fifth-widescreen;
 }
 
 /*******************************

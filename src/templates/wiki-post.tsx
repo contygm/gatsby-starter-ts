@@ -19,51 +19,55 @@ const WikiPost = ({
 
     return (
         <PostIndexContainer
-            markdownRemark={markdownRemark}
+            tocHtml={markdownRemark.tableOfContents}
+            title={markdownRemark.frontmatter.title}
+            subtitle={markdownRemark.frontmatter.description}
             featured={featured}
             related={related}
             postType={'blog'}
         >
-            <article className="wiki-post-article">
-                {/* baseball card */}
-                {image && (
-                    <BaseballCard 
-                        image={image}
-                        summary={markdownRemark.frontmatter.summary}
-                    />
-                )}
-                {/* main post content */}
-                <section className="">
-                    <div
-                        className="wiki-post-content"
-                        dangerouslySetInnerHTML={{
-                            __html: markdownRemark.html
-                        }}
-                    />
-                </section>
-                <section className="wiki-post-footer-wrapper">
-                    <div className="wiki-post-footer">
-                        <>
-                            {markdownRemark.frontmatter.tags.map((tag) => {
-                                return (
-                                    <Link
-                                        to={`/wiki?tag=${tag}`}
-                                        className="post-tag"
-                                        key={tag}
-                                    >
-                                        {tag}
-                                    </Link>
-                                );
-                            })}
-                        </>
-                        <NextAndPrevious
-                            next={next}
-                            previous={previous}
-                            type={'wiki'}
+            <div className="post-article-wrapper">
+                <article className="wiki-post-article">
+                    {/* baseball card */}
+                    {image && (
+                        <BaseballCard 
+                            image={image}
+                            summary={markdownRemark.frontmatter.summary}
                         />
-                    </div>
-                </section>
-            </article>
+                    )}
+                    {/* main post content */}
+                    <section className="">
+                        <div
+                            className="wiki-post-content"
+                            dangerouslySetInnerHTML={{
+                                __html: markdownRemark.html
+                            }}
+                        />
+                    </section>
+                    <section className="wiki-post-footer-wrapper">
+                        <div className="wiki-post-footer">
+                            <>
+                                {markdownRemark.frontmatter.tags.map((tag) => {
+                                    return (
+                                        <Link
+                                            to={`/wiki?tag=${tag}`}
+                                            className="post-tag"
+                                            key={tag}
+                                        >
+                                            {tag}
+                                        </Link>
+                                    );
+                                })}
+                            </>
+                            <NextAndPrevious
+                                next={next}
+                                previous={previous}
+                                type={'wiki'}
+                            />
+                        </div>
+                    </section>
+                </article>
+            </div>
         </PostIndexContainer>
     );
 };

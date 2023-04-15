@@ -19,9 +19,13 @@ import {
  * @category Components
  * @memberof PostIndexContainer
  */
-export interface PostIndexContainer<T> { 
-    /** markdown and frontmatter for post */
-    markdownRemark: T; 
+export interface PostIndexContainer { 
+    /** table of contents html string  */
+    tocHtml: string;
+    /** post title */
+    title: string;
+    /** post subtitle */
+    subtitle: string;
     /** featured posts */
     featured: {
         nodes: IndexElements[];
@@ -34,19 +38,28 @@ export interface PostIndexContainer<T> {
     postType: PostType;
     /** post index */
     children: React.ReactNode;
+    
 }
 
 /**
  * A template for a blog post, including: sidebar, table of contents, blog content, and author section.
- * @param {PostIndexContainer<T>} props
+ * @param {PostIndexContainer} props
  *
  * @category Components
  * @class
  */
-const PostIndexContainer = <T extends WikiPostElements | BlogPostElements>(props: PostIndexContainer<T>) => {
+const PostIndexContainer = (props: PostIndexContainer) => {
     const [showMobileToc, setShowMobileToc] = useState(false);
     const [isMobile, setIsMobile] = useState(useCheckMobileScreen());
     const [btnIcon, setBtnIcon] = useState(faEllipsis);
+
+    const isGloss = props.postType === 'glossary';
+    const tocClassName = isGloss 
+        ? "glossary-toc" : "post-toc";
+    const tocSectionClassName = isGloss 
+        ? "glossary-toc-box" 
+        : isMobile 
+            ? 'mobile-post-toc' : 'web-post-toc';
 
     const handleResize = () => {
         // mobile screen
@@ -82,19 +95,17 @@ const PostIndexContainer = <T extends WikiPostElements | BlogPostElements>(props
         <Layout>
             {/* full page header with social share */}
             <PageHeader
-                title={props.markdownRemark.frontmatter.title}
+                title={props.title}
                 alignCenter={true}
                 hasSocial={true}
-                subtitle={props.markdownRemark.frontmatter.description}
+                subtitle={props.subtitle}
             />
             {/* main body: ToC, sidebar, post content */}
             <div className="col-multi-wrapper">
                 {/* sticky table of contents */}
-                <div className="post-toc">
+                <div className={tocClassName}>
                     <section
-                        className={
-                            isMobile ? 'mobile-post-toc' : 'web-post-toc'
-                        }
+                        className={tocSectionClassName}
                         style={{
                             display:
                                 !isMobile || (isMobile && showMobileToc)
@@ -106,8 +117,8 @@ const PostIndexContainer = <T extends WikiPostElements | BlogPostElements>(props
                             callback={isMobile ? handleClickOutside : undefined}
                         >
                             <ToC
-                                tocHtml={props.markdownRemark.tableOfContents}
-                                includeTitle={true}
+                                tocHtml={props.tocHtml}
+                                includeTitle={!isGloss}
                             />
                         </OutsideClicker>
                     </section>
@@ -127,9 +138,9 @@ const PostIndexContainer = <T extends WikiPostElements | BlogPostElements>(props
                         </i>
                     </button>
                 </div>
-                <div className="post-article-wrapper">
+                <>
                     {props.children}
-                </div>
+                </>  
                 {/* 
                     side bar with related + featured posts 
                     and sticky social share btns 

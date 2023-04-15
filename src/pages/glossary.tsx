@@ -1,18 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { graphql, HeadProps, PageProps } from 'gatsby';
-import {
-    Layout,
-    SEO,
-    PageHeader,
-    OutsideClicker,
-    ToC,
-    SideBar,
-    StickySocialMedia
-} from '../components';
-import PostPage from '../components/posts/IndexFilterWrapper';
-import { faEllipsis, faXmark } from '@fortawesome/free-solid-svg-icons';
-import useCheckMobileScreen from '../utils/hooks/useCheckMobileScreen';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { SEO } from '../components';
+import IndexFilterWrapper from '../components/posts/IndexFilterWrapper';
+import PostIndexContainer from '../components/posts/PostIndexContainer';
 
 /**
  * All props needed for the glossary index page. Props come from a graphQL page query.
@@ -80,7 +70,7 @@ const makeGlossToC = (letterObjs: { fieldValue: string }[]) => {
 };
 
 /**
- * Glossary index page including page header, PostPage component, ToC, and sidebar.
+ * Glossary index page including page header, IndexFilterWrapper component, ToC, and sidebar.
  * @param {PageProps<GlossaryIndexProps>} data
  *
  * @see IndexFilterWrapper
@@ -93,107 +83,27 @@ const makeGlossToC = (letterObjs: { fieldValue: string }[]) => {
 const GlossaryPage = ({
     data: { index, allTags, blogFeatured, wikiFeatured, allLetters }
 }: PageProps<GlossaryPageProps>) => {
-    const [showMobileToc, setShowMobileToc] = useState(false);
-    const [isMobile, setIsMobile] = useState(useCheckMobileScreen());
-    const [btnIcon, setBtnIcon] = useState(faEllipsis);
 
-    const handleResize = () => {
-        // mobile screen
-        if (window.innerWidth < 1024) {
-            setIsMobile(true);
-        } else { // large or tablet screen
-            
-            setIsMobile(false);
-            setShowMobileToc(false);
-        }
-    };
-
-    const handleClickOutside = () => {
-        setShowMobileToc(false);
-        setBtnIcon(faEllipsis);
-    };
-
-    const handleTocBtnClick = () => {
-        if (btnIcon === faEllipsis && !showMobileToc) {
-            setShowMobileToc(true);
-            setBtnIcon(faXmark);
-        } else if (btnIcon === faXmark && showMobileToc) {
-            setBtnIcon(faEllipsis);
-            setShowMobileToc(false);
-        }
-    };
-
-    useEffect(() => {
-        window.addEventListener('resize', handleResize);
-    });
+    const toc = makeGlossToC(allLetters.group);
 
     return (
-        <Layout>
-            <PageHeader
-                title={`Glossary Index`}
-                alignCenter={true}
-            />
-            <div className="col-multi-wrapper">
-                {/* sticky table of contents */}
-                <div className="glossary-toc">
-                    <section
-                        className={'glossary-toc-box'}
-                        style={{
-                            display:
-                                !isMobile || (isMobile && showMobileToc)
-                                    ? 'block'
-                                    : 'none'
-                        }}
-                    >
-                        <OutsideClicker
-                            callback={isMobile ? handleClickOutside : undefined}
-                        >
-                            <ToC
-                                tocHtml={makeGlossToC(allLetters.group)}
-                                includeTitle={false}
-                            />
-                        </OutsideClicker>
-                    </section>
-                    <button
-                        id="toc-button"
-                        className="primary-button-rounded"
-                        style={{ display: isMobile ? 'block' : 'none' }}
-                        onClick={handleTocBtnClick}
-                        data-testid="post-toc-mobile-btn"
-                    >
-                        <i
-                            className="icon"
-                            id="icon-button"
-                        >
-                            <FontAwesomeIcon
-                                className="icon"
-                                icon={btnIcon}
-                                size="xl"
-                                id="toc-button-icon"
-                            />
-                        </i>
-                    </button>
-                </div>
-                <div className="glossary-content-wrapper">
-                    <PostPage
-                        index={index}
-                        allLetters={allLetters}
-                        allTags={allTags}
-                        type={'glossary'}
-                    />
-                </div>
-                <div className="glossary-sidebar-wrapper">
-                    {/* TODO featured are labeled as wiki, links for it go to wiki */}
-                    <SideBar
-                        type={'glossary'}
-                        featured={wikiFeatured.nodes}
-                        related={blogFeatured.nodes}
-                    />
-                    {/* TODO need mobile social */}
-                    {!isMobile && <StickySocialMedia isVertical={false} />}
-                </div>
+        <PostIndexContainer
+            featured={wikiFeatured}
+            related={blogFeatured}
+            postType={'glossary'}
+            tocHtml={toc}
+            title={'Glossary Index'}
+            subtitle={'a glossary'}
+        >
+            <div className="glossary-content-wrapper">
+                <IndexFilterWrapper
+                    index={index}
+                    allLetters={allLetters}
+                    allTags={allTags}
+                    type={'glossary'}
+                />
             </div>
-        </Layout>
+        </PostIndexContainer>
     );
 };
 export default GlossaryPage;
