@@ -19,7 +19,7 @@ import { filterWithSearchQuery } from '../../utils/helpers/searchFunctions';
  * @see IndexElements
  * @see GlossaryElements
  * @memberof IndexFilterWrapper
- * @category Template
+ * @category Components
  */
 export interface IndexFilterWrapperProps {
     allTags: {
@@ -46,7 +46,7 @@ const INCREMENT = 6;
  * A general index page component that works with all post types. Includes search, filter, and card based index.
  * @param {IndexFilterWrapperProps} props - all posts, all tags, type, and all letters (optional, for glossary)
  *
- * @category Template
+ * @category Components
  * @class
  */
 const IndexFilterWrapper = ({ index, allTags, type, allLetters }: IndexFilterWrapperProps) => {
@@ -79,7 +79,6 @@ const IndexFilterWrapper = ({ index, allTags, type, allLetters }: IndexFilterWra
     };
 
     useEffect(() => {
-        // TODO move to hook
         if (tagFilter === '') {
             setAllPosts(unfilteredPosts);
         } else if (tagFilter === 'all') {
