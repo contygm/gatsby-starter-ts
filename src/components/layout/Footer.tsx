@@ -42,15 +42,12 @@ const PageLink = (props: { pageUrl: string; label: string }) => {
  *
  * @memberof Footer
  */
-// TODO: move to dropdown btn file
-// TODO: pass full slug
-// TODO: make general footer dropdown link
-const DrawerLegalLink = (props: { label: string; slug: string }) => {
+const DropUpLink = (props: { label: string; slug: string }) => {
     return (
         <div className="dropdown-item">
             <Link
                 className="footer-drawer-link"
-                to={`/legal/copyright${props.slug}`}
+                to={`${props.slug}`}
                 data-cy={`footer-link-${props.slug}`}
             >
                 {props.label}
@@ -69,9 +66,12 @@ const DrawerLegalLink = (props: { label: string; slug: string }) => {
  * Dropdown actually drops UP.
  * @memberof Footer
  */
-// TODO: modify to take legal links as an arg
-// TODO: move to dropdown btn file
-const DropDownLinkBtn = () => {
+const DropUpBtn = (props: {
+    links: {
+        label: string;
+        slug: string;
+    }[]
+}) => {
     return (
         <li
             className="footer-dropup"
@@ -99,8 +99,8 @@ const DropDownLinkBtn = () => {
                 role="menu"
             >
                 <div className="dropdown-content">
-                    {LEGAL_LINKS.map((link) => (
-                        <DrawerLegalLink
+                    {props.links.map((link) => (
+                        <DropUpLink
                             key={link.label}
                             label={link.label}
                             slug={link.slug}
@@ -166,8 +166,7 @@ export const Footer = (props: { author: string }) => {
                             pageUrl="/legal/privacy-policy"
                         />
                         {/* contains the rest of the 'legal' pages */}
-                        {/* TODO: pass legal pages */}
-                        <DropDownLinkBtn />
+                        <DropUpBtn links={LEGAL_LINKS}/>
                     </div>
                 </ul>
                 {/* Social media links to the left */}

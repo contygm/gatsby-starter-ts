@@ -10,18 +10,18 @@
 export const LEGAL_LINKS = [
     {
         label: 'Copyright',
-        slug: 'copyright'
+        slug: '/legal/copyright'
     },
     {
         label: 'Cookie Policy',
-        slug: 'cookie-policy'
+        slug: '/legal/cookie-policy'
     },
     {
         label: 'Terms and Conditions',
-        slug: 'terms-and-conditions'
+        slug: '/legal/terms-and-conditions'
     },
     {
         label: 'Disclaimer',
-        slug: 'disclaimer'
+        slug: '/legal/disclaimer'
     }
 ];
