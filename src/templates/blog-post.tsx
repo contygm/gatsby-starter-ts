@@ -17,14 +17,14 @@ import {
 
 /**
  * A template for a blog post, including: sidebar, table of contents, blog content, and author section.
- * @param {PostIndexProps<BlogPostElements>} data
+ * @param {IndexFilterWrapperProps<BlogPostElements>} data
  *
  * @category Template
  * @class
  */
 const BlogPost = ({
     data: { site, markdownRemark, previous, next, featured, related }
-}: PageProps<PostIndexProps<BlogPostElements>>) => {
+}: PageProps<IndexFilterWrapperProps<BlogPostElements>>) => {
     const [showMobileToc, setShowMobileToc] = useState(false);
     const [isMobile, setIsMobile] = useState(useCheckMobileScreen());
     const [btnIcon, setBtnIcon] = useState(faEllipsis);
@@ -174,7 +174,7 @@ export default BlogPost;
  *
  * @memberof BlogPost
  */
-export function Head({ data: { markdownRemark } }: HeadProps<PostIndexProps<BlogPostElements>>) {
+export function Head({ data: { markdownRemark } }: HeadProps<IndexFilterWrapperProps<BlogPostElements>>) {
     return <SEO title={markdownRemark.frontmatter.title} />;
 }
 

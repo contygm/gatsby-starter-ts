@@ -9,7 +9,7 @@ import {
     SideBar,
     StickySocialMedia
 } from '../components';
-import PostPage from '../components/posts/PostIndex';
+import PostPage from '../components/posts/IndexFilterWrapper';
 import { faEllipsis, faXmark } from '@fortawesome/free-solid-svg-icons';
 import useCheckMobileScreen from '../utils/hooks/useCheckMobileScreen';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -83,7 +83,7 @@ const makeGlossToC = (letterObjs: { fieldValue: string }[]) => {
  * Glossary index page including page header, PostPage component, ToC, and sidebar.
  * @param {PageProps<GlossaryIndexProps>} data
  *
- * @see PostIndex
+ * @see IndexFilterWrapper
  * @see PageHeader
  * @see OutsideClicker
  * @see ToC

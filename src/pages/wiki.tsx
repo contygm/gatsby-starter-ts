@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql, HeadProps, PageProps } from 'gatsby';
 import { Layout, PageHeader, SEO } from '../components/';
-import PostPage from '../components/posts/PostIndex';
+import PostPage from '../components/posts/IndexFilterWrapper';
 
 // TODO is this any different from the blog index?
 /**
@@ -43,7 +43,7 @@ export interface WikiIndexProps {
  * @param {WikiIndexProps.allTags} data.allTags - all tags used in wiki posts
  *
  * @see WikiIndexProps
- * @see PostIndex
+ * @see IndexFilterWrapper
  * @see PageHeader
  * @class
  * @category Pages

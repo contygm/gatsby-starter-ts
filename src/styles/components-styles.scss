@@ -211,23 +211,9 @@
 }
 
 /*******************************
-* Glossary Components
+* Glossary Index
 ********************************/
-// index
 .gloss-section-wrapper {
 	@extend .section;
 	@extend .pt-0;
-}
-
-// definition card
-.definition-card-tag-title {
-	@extend .my-2;
-	@extend .ml-5;
-	@extend .mr-2;
-}
-
-.definition-card-tag {
-	@extend .ml-2;
-	@extend .tag;
-	@extend .tag-inactive;
 }

@@ -102,7 +102,7 @@ interface NeighborPost {
  * @see NeighborPost
  * @see WikiPostElements
  */
-interface PostIndexProps<T> {
+interface IndexFilterWrapperProps<T> {
     /** site metadata */
     site: {
         siteMetadata: SiteMetadata;

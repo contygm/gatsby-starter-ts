@@ -1,7 +1,7 @@
 import React from 'react';
 import { SEO, Layout } from '../components';
 import { graphql, Link, HeadProps, PageProps } from 'gatsby';
-import { DefinitionCard } from '../components/glossary/DefinitionCard';
+import { DefinitionCard } from '../components/common/DefinitionCard';
 
 /**
  * All props needed for the site-wide home page

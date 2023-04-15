@@ -18,14 +18,14 @@ import BaseballCard from '../components/common/BaseballCard';
 
 /**
  * A template for a wiki post, including: sidebar, table of contents, blog content, and author section.
- * @param {PostIndexProps} data
+ * @param {IndexFilterWrapperProps} data
  *
  * @category Template
  * @class
  */
 const WikiPost = ({
     data: { markdownRemark, featured, related, next, previous }
-}: PageProps<PostIndexProps<WikiPostElements>>) => {
+}: PageProps<IndexFilterWrapperProps<WikiPostElements>>) => {
     const [showMobileToc, setShowMobileToc] = useState(false);
     const [isMobile, setIsMobile] = useState(useCheckMobileScreen());
     const [btnIcon, setBtnIcon] = useState(faEllipsis);
@@ -182,7 +182,7 @@ export default WikiPost;
  *
  * @memberof WikiPost
  */
-export function Head({ data: { markdownRemark } }: HeadProps<PostIndexProps<BlogPostElements>>) {
+export function Head({ data: { markdownRemark } }: HeadProps<IndexFilterWrapperProps<BlogPostElements>>) {
     return <SEO title={markdownRemark.frontmatter.title} />;
 }
 

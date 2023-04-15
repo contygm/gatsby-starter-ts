@@ -107,3 +107,19 @@
 		}
 	}
 }
+
+/*******************************
+* Definition Component
+********************************/
+
+.definition-card-tag-title {
+	@extend .my-2;
+	@extend .ml-5;
+	@extend .mr-2;
+}
+
+.definition-card-tag {
+	@extend .ml-2;
+	@extend .tag;
+	@extend .tag-inactive;
+}

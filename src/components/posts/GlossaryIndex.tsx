@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeLetterDefinitions } from '../../utils/helpers/makeLetterDefinitions';
-import { DefinitionCard } from './DefinitionCard';
+import { DefinitionCard } from '../common/DefinitionCard';
 
 /**
  * Props for the Glossary Index component

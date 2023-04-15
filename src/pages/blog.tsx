@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql, HeadProps, PageProps } from 'gatsby';
 import { Layout, SEO, PageHeader } from '../components';
-import PostPage from '../components/posts/PostIndex';
+import PostPage from '../components/posts/IndexFilterWrapper';
 
 /**
  * All props needed for the blog index page. Props come from a graphQL page query.
@@ -41,7 +41,7 @@ export interface BlogIndexProps {
  * @param {BlogIndexProps.allTags} data.allTags - all tags used in wiki posts
  *
  * @see IndexElements
- * @see PostIndex
+ * @see IndexFilterWrapper
  * @see PageHeader
  * @class
  * @category Pages

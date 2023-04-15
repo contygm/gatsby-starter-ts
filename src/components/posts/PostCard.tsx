@@ -9,7 +9,7 @@ import React, { SyntheticEvent } from 'react';
  *
  * @see IndexElements
  * @see PostType
- * @see PostIndex
+ * @see IndexFilterWrapper
  * @category Components
  * @memberof PostCard
  */
@@ -20,7 +20,7 @@ interface PostCardProps {
 }
 
 /**
- * A card component used to display minimal post information on the PostIndex
+ * A card component used to display minimal post information on the IndexFilterWrapper
  * @param {PostCardProps} props - post information 
  * 
  * @class

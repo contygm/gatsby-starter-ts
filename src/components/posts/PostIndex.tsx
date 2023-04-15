@@ -1,132 +1,108 @@
 import React, { SyntheticEvent, useEffect, useState } from 'react';
-import { SearchFilterRow, BlogWikiIndex, GlossaryIndex } from '..';
-import { filterWithSearchQuery } from '../../utils/helpers/searchFunctions';
+import { PostCard } from './PostCard';
 
 /**
- * All properties needed for post page, including: all tags used for post type, all posts for type,
- * post type, and all letters used (optional, for glossary)
+ * All props needed for the PostIndex component.
+ * @property {IndexElements[]} allPosts - a list of allPosts available. This included front matter and other index elements
+ * @property {number} increment - when the user clicks the 'see more posts' button, this is how many more posts should show
+ * @property {PostType} type - the type of post
+ * @property {void} handleFilterUpdate - a void function for when the a user interacts with the filter; `(e: any) => void`
  *
- * @property {{group: Array}} allTags - all tags used for post type
- * @property {Array<{fieldValue: string, totalCount: number}>} allTags.group - inner object array with tag value and count
- * @property {Object} index - all posts of given type
- * @property {GlossaryElements[] | IndexElements[]} index.nodes - all posts of given type
- * @property {number} index.totalCount - all posts of given type
- * @property {PostType} type - post type: blog, wiki, glossary
- * @property {{group: Array}} [allLetters] - all letters used in glossary
- * @property {Array<{fieldValue: string}>} [allLetters.group] - inner object with letter value
- *
- * @see PostType
  * @see IndexElements
- * @see GlossaryElements
- * @memberof PostIndex
- * @category Template
+ * @see PostType
+ * @see PostIndex
+ * @category Components
  */
-export interface PostIndexProps {
-    allTags: {
-        group: {
-            fieldValue: string;
-            totalCount: number;
-        }[];
-    };
-    index: {
-        nodes: (GlossaryElements | IndexElements)[];
-        totalCount: number;
-    };
+interface PostIndexProps {
+    allPosts: IndexElements[];
+    increment: number;
     type: PostType;
-    allLetters?: {
-        group: {
-            fieldValue: string;
-        }[];
-    };
+    handleFilterUpdate: (e: SyntheticEvent) => void;
 }
 
-const INCREMENT = 6;
-
 /**
- * A general index page component that works with all post types. Includes search, filter, and card based index.
- * @param {PostIndexProps} props - all posts, all tags, type, and all letters (optional, for glossary)
+ * A post index component that displays basic post info in PostCards. The component can also filter available posts based on tags.
+ * Additionally, a 'see more button' that will display more posts. The initial amount of posts displayed as well as additional amount
+ * of posts displayed with the button are both based on the increment passed in.
+ * @param {PostIndexProps} props - includes allPosts, increment, type, handleFilterUpdate
  *
- * @category Template
- * @class
+ * @category Components
+ * @see PostIndexProps
+ * @see PostCard
  */
-const PostIndex = ({ index, allTags, type, allLetters }: PostIndexProps) => {
-    const unfilteredPosts = index.nodes;
-    const tags = allTags.group;
-    const [allPosts, setAllPosts] = useState(index.nodes);
-    const [searchQuery, setSearchQuery] = useState('');
-    const [tagFilter, setTagFilter] = useState('');
+export const PostIndex = (props: PostIndexProps) => {
+    const [displayPosts, setDisplayPosts] = useState([
+        ...props.allPosts.slice(0, props.increment)
+    ]);
+    const [loadMore, setLoadMore] = useState(false);
+    const [hasMore, setHasMore] = useState(
+        props.allPosts.length > props.increment
+    );
 
-    const handleFilterUpdate = (e: SyntheticEvent) => {
-        if (searchQuery === '') {
-            console.log(e.currentTarget.id)
-            setTagFilter(e.currentTarget.id);
-        }
-    };
-
-    const handleSubmitSearch = (e: any) => {
-        e.preventDefault();
-        const queryValue =
-            e.target.searchPost && e.target.searchPost.value
-                ? e.target.searchPost.value
-                : '';
-
-        setSearchQuery(queryValue);
-    };
-
-    const clearSearchQuery = () => {
-        setSearchQuery('');
-        setTagFilter('');
+    const handleLoadMore = () => {
+        setLoadMore(true);
     };
 
     useEffect(() => {
-        // TODO move to hook
-        if (tagFilter === '') {
-            setAllPosts(unfilteredPosts);
-        } else if (tagFilter === 'all') {
-            setAllPosts(unfilteredPosts);
-        } else {
-            const filtered = unfilteredPosts.filter((post) =>
-                post.frontmatter.tags.includes(tagFilter)
-            );
-            setAllPosts(filtered);
+        if (loadMore && hasMore) {
+            const postCount = displayPosts.length;
+            const stillHasMore = postCount < props.allPosts.length;
+            const nextResults = stillHasMore
+                ? props.allPosts.slice(postCount, postCount + props.increment)
+                : [];
+            // combine old displayPosts with next batch of posts
+            setDisplayPosts([...displayPosts, ...nextResults]);
+            setLoadMore(false);
         }
-    }, [tagFilter]);
+    }, [loadMore, hasMore]);
 
     useEffect(() => {
-        const filteredData = filterWithSearchQuery(
-            unfilteredPosts,
-            searchQuery
-        );
-        setAllPosts(filteredData);
-    }, [searchQuery]);
+        setDisplayPosts([...props.allPosts.slice(0, props.increment)]);
+    }, [props.allPosts]);
+
+    useEffect(() => {
+        const stillHasMore = displayPosts.length < props.allPosts.length;
+        setHasMore(stillHasMore);
+    }, [displayPosts]);
 
     return (
-        <>
-            <SearchFilterRow
-                type={type}
-                tags={tags}
-                activeTag={tagFilter}
-                totalPostCount={index.totalCount}
-                clearSearchQuery={clearSearchQuery}
-                handleFilterUpdate={handleFilterUpdate}
-                handleSubmitSearch={handleSubmitSearch}
-                searchQuery={searchQuery}
-            />
-            {type !== 'glossary' ? (
-                <BlogWikiIndex
-                    allPosts={allPosts as IndexElements[]}
-                    increment={INCREMENT}
-                    handleFilterUpdate={handleFilterUpdate}
-                    type={type}
-                />
-            ) : (
-                <GlossaryIndex
-                    allDefinitions={allPosts as GlossaryElements[]}
-                    allLetters={allLetters}
-                />
-            )}
-        </>
+        <article className="section">
+            <section className="post-index-wrapper">
+                {/* post cards */}
+                <div className="post-index-cards-wrapper">
+                    {displayPosts.length > 0 ? (
+                        displayPosts.map((post: IndexElements) => {
+                            return (
+                                <div
+                                    data-testid={'post-card'}
+                                    className="post-index-card-wrapper"
+                                    key={post.frontmatter.title}
+                                >
+                                    <PostCard
+                                        type={props.type}
+                                        post={post}
+                                        handleFilterUpdate={
+                                            props.handleFilterUpdate
+                                        }
+                                    />
+                                </div>
+                            );
+                        })
+                    ) : (
+                        <h2 className="title-three">No results</h2>
+                    )}
+                </div>
+                {hasMore && (
+                    <div className="post-index-load-more-wrapper">
+                        <button
+                            className="post-index-load-more"
+                            onClick={handleLoadMore}
+                        >
+                            Load more...
+                        </button>
+                    </div>
+                )}
+            </section>
+        </article>
     );
 };
-
-export default PostIndex;
