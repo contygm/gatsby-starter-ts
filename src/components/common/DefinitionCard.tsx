@@ -149,7 +149,6 @@ const Tags = (props: {tags: string[]}) => {
                         return (
                             <Link
                                 to={`?tag=${tag}`}
-                                id={tag}
                                 className="definition-card-tag"
                                 key={tag}
                             >
@@ -217,7 +216,9 @@ export const DefinitionCard = (props: DefinitionCardProps) => {
                             similarWords={props.definition.frontmatter.similarWords}
                             relatedPosts={props.definition.frontmatter.relatedPosts}
                         />
-                        <Tags tags={props.definition.frontmatter.tags} />
+                        <Tags 
+                            tags={props.definition.frontmatter.tags} 
+                        />
                     </>
                      
                 )}

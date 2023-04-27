@@ -45,6 +45,7 @@ export interface GlossaryPageProps {
     wikiFeatured: {
         nodes: IndexElements[];
     };
+    location: any;
 }
 
 /**
@@ -81,7 +82,8 @@ const makeGlossToC = (letterObjs: { fieldValue: string }[]) => {
  * @category Pages
  */
 const GlossaryPage = ({
-    data: { index, allTags, blogFeatured, wikiFeatured, allLetters }
+    data: { index, allTags, blogFeatured, wikiFeatured, allLetters},
+    location
 }: PageProps<GlossaryPageProps>) => {
     const toc = makeGlossToC(allLetters.group);
 
@@ -99,7 +101,8 @@ const GlossaryPage = ({
                     index={index}
                     allLetters={allLetters}
                     allTags={allTags}
-                    type={'glossary'}
+                    type={'glossary'} 
+                    location={location}                
                 />
             </div>
         </PostIndexContainer>

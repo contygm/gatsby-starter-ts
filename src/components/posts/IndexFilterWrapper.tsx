@@ -38,6 +38,7 @@ export interface IndexFilterWrapperProps {
             fieldValue: string;
         }[];
     };
+    location: any;
 }
 
 const INCREMENT = 6;
@@ -53,17 +54,18 @@ const IndexFilterWrapper = ({
     index,
     allTags,
     type,
-    allLetters
+    allLetters,
+    location
 }: IndexFilterWrapperProps) => {
     const unfilteredPosts = index.nodes;
     const tags = allTags.group;
-    const [allPosts, setAllPosts] = useState(index.nodes);
     const [searchQuery, setSearchQuery] = useState('');
-    const [tagFilter, setTagFilter] = useState('');
+    const tagFromQuery = location.search.match(/(?<=\btag=)\w+/g);
+    const [tagFilter, setTagFilter] = useState(tagFromQuery ? tagFromQuery[0] : '');
+    const [allPosts, setAllPosts] = useState(unfilteredPosts);
 
     const handleFilterUpdate = (e: SyntheticEvent) => {
         if (searchQuery === '') {
-            console.log(e.currentTarget.id);
             setTagFilter(e.currentTarget.id);
         }
     };
@@ -83,25 +85,30 @@ const IndexFilterWrapper = ({
         setTagFilter('');
     };
 
+    function filterOnTag(tagFilter: string, posts: any[]) {
+        if (tagFilter === 'all' || tagFilter === '') {
+            return posts;
+        } 
+        return posts.filter(post =>
+            post.frontmatter.tags.includes(tagFilter)
+        );
+    }
+
     useEffect(() => {
-        if (tagFilter === '') {
-            setAllPosts(unfilteredPosts);
-        } else if (tagFilter === 'all') {
-            setAllPosts(unfilteredPosts);
-        } else {
-            const filtered = unfilteredPosts.filter((post) =>
-                post.frontmatter.tags.includes(tagFilter)
-            );
-            setAllPosts(filtered);
+        if (searchQuery === '') {
+            const temp = filterOnTag(tagFilter, unfilteredPosts);
+            setAllPosts(temp)
         }
     }, [tagFilter]);
 
     useEffect(() => {
-        const filteredData = filterWithSearchQuery(
-            unfilteredPosts,
-            searchQuery
-        );
-        setAllPosts(filteredData);
+        if (tagFilter === 'all' || tagFilter === '') {
+            const filteredData = filterWithSearchQuery(
+                unfilteredPosts,
+                searchQuery
+            );
+            setAllPosts(filteredData);
+        } 
     }, [searchQuery]);
 
     return (

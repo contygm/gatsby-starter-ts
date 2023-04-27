@@ -26,7 +26,6 @@ export interface SideBarPostTileProps {
  * @see SideBarPostTileProps
  * @category Components
  */
-// TODO ? move to common and make "simple tile"
 export const SideBarPostTile = (props: SideBarPostTileProps) => {
     return (
         <Link

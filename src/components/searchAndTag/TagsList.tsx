@@ -1,3 +1,4 @@
+import { Link } from 'gatsby';
 import React, { SyntheticEvent } from 'react';
 
 /**
@@ -40,7 +41,6 @@ export const TagsList = (props: TagsListProps) => {
             ? 'tag-active'
             : 'tag-inactive';
 
-    // TODO make tag query param from post link
     return (
         <div className="tag-list-wrapper">
             <div className="tag-wrapper">
@@ -54,7 +54,6 @@ export const TagsList = (props: TagsListProps) => {
                 </div>
                 <span className="tag is-dark">{props.totalPostCount}</span>
             </div>
-            {/* TODO ? tag component */}
             {props.tags.map(
                 (tag: { fieldValue: string; totalCount: number }) => {
                     const classForTag = props.isSearchActive
@@ -68,22 +67,23 @@ export const TagsList = (props: TagsListProps) => {
                         : 'tag-count-enabled';
 
                     return (
-                        <div
+                        <Link
+                            to={`?tag=${tag.fieldValue}`}
                             className="tag-wrapper"
                             key={tag.fieldValue}
+                            id={tag.fieldValue}
+                            onClick={props.handleFilterUpdate}
                         >
                             <div
-                                id={tag.fieldValue}
                                 data-testid={tag.fieldValue}
                                 className={`${classForTag}`}
-                                onClick={props.handleFilterUpdate}
                             >
                                 {tag.fieldValue}
                             </div>
                             <span className={classForTagCount}>
                                 {tag.totalCount}
                             </span>
-                        </div>
+                        </Link>
                     );
                 }
             )}

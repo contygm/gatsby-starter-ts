@@ -24,7 +24,9 @@ export const useActiveHash = (itemIds: string[], rootMargin = undefined) => {
         );
 
         itemIds.forEach((id) => {
-            observer.observe(document.getElementById(id) as Element);
+            if(document.getElementById(id)){ 
+                observer.observe(document.getElementById(id) as Element);
+            }
         });
 
         return () => observer.disconnect();

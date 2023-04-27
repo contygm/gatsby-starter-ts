@@ -18,7 +18,6 @@ interface LegalLinkProps {
     url: string;
     description: string;
 }
-// TODO construct cytag
 /**
  * A basic card component for all the legal pages
  * @property {LegalLinkProps} props - legal page card information

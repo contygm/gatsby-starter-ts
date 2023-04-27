@@ -29,8 +29,6 @@ export interface HomeProps {
     };
 }
 
-// TODO do we need so many tiles? can these be combined w/ the other index tiles?
-// TODO break tiles out into separate components
 /**
  * A horizontal tile for blog overview information including:
  * - blog header image
@@ -181,7 +179,7 @@ const NewTile = (props: { nodes: IndexElements[] }) => {
                                                 : 'mb-5'
                                         }`}
                                     >
-                                        <div className="card-image ">
+                                        <div className="card-image">
                                             <figure className="image is-5by3 ">
                                                 <img src="https://bulma.io/images/placeholders/128x128.png" />
                                             </figure>

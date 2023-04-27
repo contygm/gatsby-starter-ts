@@ -16,7 +16,8 @@ import IndexFilterWrapper from '../components/posts/IndexFilterWrapper';
  * @category Pages
  */
 const WikiIndex = ({
-    data: { index, allTags }
+    data: { index, allTags },
+    location,
 }: PageProps<GenericPageProps>) => {
     return (
         <Layout>
@@ -28,6 +29,7 @@ const WikiIndex = ({
                 index={index}
                 allTags={allTags}
                 type={'wiki'}
+                location={location}
             />
         </Layout>
     );

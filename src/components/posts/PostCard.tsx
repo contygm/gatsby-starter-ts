@@ -13,6 +13,12 @@ import React, { SyntheticEvent } from 'react';
  * @category Components
  * @memberof PostCard
  */
+/**
+ * NOTE: handle filter update can be implemented later to avoid the full page reload. If this is done,
+ * two functionalities should be added: 
+ * - scroll to the top of the page when/after user selects filter
+ * - update the page history to reflect the new tag
+ */
 interface PostCardProps {
     post: IndexElements;
     type: PostType;
@@ -27,14 +33,18 @@ interface PostCardProps {
  * @category Components
  */
 export const PostCard = (props: PostCardProps) => {
+    const firstTag = props.post.frontmatter.tags[0];
+
     return (
         <div className="card">
             <div className="card-image">
                 <Link
-                    to={`?tag=${props.post.frontmatter.tags[0]}`}
+                    to={`?tag=${firstTag}`}
                     className="post-card-main-tag"
+                    id={firstTag}
+                    onClick={props.handleFilterUpdate}
                 >
-                    {props.post.frontmatter.tags[0]}
+                    {firstTag}
                 </Link>
                 <figure className="post-card-image">
                     <img
@@ -72,9 +82,9 @@ export const PostCard = (props: PostCardProps) => {
                                 return (
                                     <Link
                                         to={`?tag=${tag}`}
-                                        id={tag}
                                         className="post-card-tag"
                                         key={tag}
+                                        id={tag}
                                         onClick={props.handleFilterUpdate}
                                     >
                                         {tag}
