@@ -60,7 +60,7 @@ const IndexFilterWrapper = ({
     const unfilteredPosts = index.nodes;
     const tags = allTags.group;
     const [searchQuery, setSearchQuery] = useState('');
-    const tagFromQuery = location.search.match(/(?<=\btag=)\w+/g);
+    const tagFromQuery = location ? location.search.match(/(?<=\btag=)\w+/g) : null;
     const [tagFilter, setTagFilter] = useState(tagFromQuery ? tagFromQuery[0] : '');
     const [allPosts, setAllPosts] = useState(unfilteredPosts);
 

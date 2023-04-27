@@ -965,8 +965,8 @@ exports[`Wiki Posts Page ToC shows properly on mobile: closed table of contents 
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-copyright"
-                      href="/legal/copyrightcopyright"
+                      data-cy="footer-link-/legal/copyright"
+                      href="/legal/copyright"
                     >
                       Copyright
                     </a>
@@ -976,8 +976,8 @@ exports[`Wiki Posts Page ToC shows properly on mobile: closed table of contents 
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-cookie-policy"
-                      href="/legal/copyrightcookie-policy"
+                      data-cy="footer-link-/legal/cookie-policy"
+                      href="/legal/cookie-policy"
                     >
                       Cookie Policy
                     </a>
@@ -987,8 +987,8 @@ exports[`Wiki Posts Page ToC shows properly on mobile: closed table of contents 
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-terms-and-conditions"
-                      href="/legal/copyrightterms-and-conditions"
+                      data-cy="footer-link-/legal/terms-and-conditions"
+                      href="/legal/terms-and-conditions"
                     >
                       Terms and Conditions
                     </a>
@@ -998,8 +998,8 @@ exports[`Wiki Posts Page ToC shows properly on mobile: closed table of contents 
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-disclaimer"
-                      href="/legal/copyrightdisclaimer"
+                      data-cy="footer-link-/legal/disclaimer"
+                      href="/legal/disclaimer"
                     >
                       Disclaimer
                     </a>
@@ -2080,8 +2080,8 @@ exports[`Wiki Posts Page ToC shows properly on mobile: closed table of contents 
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-copyright"
-                      href="/legal/copyrightcopyright"
+                      data-cy="footer-link-/legal/copyright"
+                      href="/legal/copyright"
                     >
                       Copyright
                     </a>
@@ -2091,8 +2091,8 @@ exports[`Wiki Posts Page ToC shows properly on mobile: closed table of contents 
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-cookie-policy"
-                      href="/legal/copyrightcookie-policy"
+                      data-cy="footer-link-/legal/cookie-policy"
+                      href="/legal/cookie-policy"
                     >
                       Cookie Policy
                     </a>
@@ -2102,8 +2102,8 @@ exports[`Wiki Posts Page ToC shows properly on mobile: closed table of contents 
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-terms-and-conditions"
-                      href="/legal/copyrightterms-and-conditions"
+                      data-cy="footer-link-/legal/terms-and-conditions"
+                      href="/legal/terms-and-conditions"
                     >
                       Terms and Conditions
                     </a>
@@ -2113,8 +2113,8 @@ exports[`Wiki Posts Page ToC shows properly on mobile: closed table of contents 
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-disclaimer"
-                      href="/legal/copyrightdisclaimer"
+                      data-cy="footer-link-/legal/disclaimer"
+                      href="/legal/disclaimer"
                     >
                       Disclaimer
                     </a>
@@ -3195,8 +3195,8 @@ exports[`Wiki Posts Page ToC shows properly on mobile: open table of contents 1`
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-copyright"
-                      href="/legal/copyrightcopyright"
+                      data-cy="footer-link-/legal/copyright"
+                      href="/legal/copyright"
                     >
                       Copyright
                     </a>
@@ -3206,8 +3206,8 @@ exports[`Wiki Posts Page ToC shows properly on mobile: open table of contents 1`
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-cookie-policy"
-                      href="/legal/copyrightcookie-policy"
+                      data-cy="footer-link-/legal/cookie-policy"
+                      href="/legal/cookie-policy"
                     >
                       Cookie Policy
                     </a>
@@ -3217,8 +3217,8 @@ exports[`Wiki Posts Page ToC shows properly on mobile: open table of contents 1`
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-terms-and-conditions"
-                      href="/legal/copyrightterms-and-conditions"
+                      data-cy="footer-link-/legal/terms-and-conditions"
+                      href="/legal/terms-and-conditions"
                     >
                       Terms and Conditions
                     </a>
@@ -3228,8 +3228,8 @@ exports[`Wiki Posts Page ToC shows properly on mobile: open table of contents 1`
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-disclaimer"
-                      href="/legal/copyrightdisclaimer"
+                      data-cy="footer-link-/legal/disclaimer"
+                      href="/legal/disclaimer"
                     >
                       Disclaimer
                     </a>
@@ -4310,8 +4310,8 @@ exports[`Wiki Posts Page renders correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-copyright"
-                      href="/legal/copyrightcopyright"
+                      data-cy="footer-link-/legal/copyright"
+                      href="/legal/copyright"
                     >
                       Copyright
                     </a>
@@ -4321,8 +4321,8 @@ exports[`Wiki Posts Page renders correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-cookie-policy"
-                      href="/legal/copyrightcookie-policy"
+                      data-cy="footer-link-/legal/cookie-policy"
+                      href="/legal/cookie-policy"
                     >
                       Cookie Policy
                     </a>
@@ -4332,8 +4332,8 @@ exports[`Wiki Posts Page renders correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-terms-and-conditions"
-                      href="/legal/copyrightterms-and-conditions"
+                      data-cy="footer-link-/legal/terms-and-conditions"
+                      href="/legal/terms-and-conditions"
                     >
                       Terms and Conditions
                     </a>
@@ -4343,8 +4343,8 @@ exports[`Wiki Posts Page renders correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-disclaimer"
-                      href="/legal/copyrightdisclaimer"
+                      data-cy="footer-link-/legal/disclaimer"
+                      href="/legal/disclaimer"
                     >
                       Disclaimer
                     </a>
@@ -5425,8 +5425,8 @@ exports[`Wiki Posts Page renders correctly on medium view 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-copyright"
-                      href="/legal/copyrightcopyright"
+                      data-cy="footer-link-/legal/copyright"
+                      href="/legal/copyright"
                     >
                       Copyright
                     </a>
@@ -5436,8 +5436,8 @@ exports[`Wiki Posts Page renders correctly on medium view 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-cookie-policy"
-                      href="/legal/copyrightcookie-policy"
+                      data-cy="footer-link-/legal/cookie-policy"
+                      href="/legal/cookie-policy"
                     >
                       Cookie Policy
                     </a>
@@ -5447,8 +5447,8 @@ exports[`Wiki Posts Page renders correctly on medium view 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-terms-and-conditions"
-                      href="/legal/copyrightterms-and-conditions"
+                      data-cy="footer-link-/legal/terms-and-conditions"
+                      href="/legal/terms-and-conditions"
                     >
                       Terms and Conditions
                     </a>
@@ -5458,8 +5458,8 @@ exports[`Wiki Posts Page renders correctly on medium view 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-disclaimer"
-                      href="/legal/copyrightdisclaimer"
+                      data-cy="footer-link-/legal/disclaimer"
+                      href="/legal/disclaimer"
                     >
                       Disclaimer
                     </a>
@@ -6540,8 +6540,8 @@ exports[`Wiki Posts Page renders correctly on mobile view 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-copyright"
-                      href="/legal/copyrightcopyright"
+                      data-cy="footer-link-/legal/copyright"
+                      href="/legal/copyright"
                     >
                       Copyright
                     </a>
@@ -6551,8 +6551,8 @@ exports[`Wiki Posts Page renders correctly on mobile view 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-cookie-policy"
-                      href="/legal/copyrightcookie-policy"
+                      data-cy="footer-link-/legal/cookie-policy"
+                      href="/legal/cookie-policy"
                     >
                       Cookie Policy
                     </a>
@@ -6562,8 +6562,8 @@ exports[`Wiki Posts Page renders correctly on mobile view 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-terms-and-conditions"
-                      href="/legal/copyrightterms-and-conditions"
+                      data-cy="footer-link-/legal/terms-and-conditions"
+                      href="/legal/terms-and-conditions"
                     >
                       Terms and Conditions
                     </a>
@@ -6573,8 +6573,8 @@ exports[`Wiki Posts Page renders correctly on mobile view 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-disclaimer"
-                      href="/legal/copyrightdisclaimer"
+                      data-cy="footer-link-/legal/disclaimer"
+                      href="/legal/disclaimer"
                     >
                       Disclaimer
                     </a>

@@ -185,13 +185,14 @@ exports[`Blog Index Page renders and filters correctly 1`] = `
                     3
                   </span>
                 </div>
-                <div
+                <a
                   class="tag-wrapper"
+                  href="?tag=three"
+                  id="three"
                 >
                   <div
                     class="tag-inactive"
                     data-testid="three"
-                    id="three"
                   >
                     three
                   </div>
@@ -200,14 +201,15 @@ exports[`Blog Index Page renders and filters correctly 1`] = `
                   >
                     3
                   </span>
-                </div>
-                <div
+                </a>
+                <a
                   class="tag-wrapper"
+                  href="?tag=two"
+                  id="two"
                 >
                   <div
                     class="tag-inactive"
                     data-testid="two"
-                    id="two"
                   >
                     two
                   </div>
@@ -216,14 +218,15 @@ exports[`Blog Index Page renders and filters correctly 1`] = `
                   >
                     2
                   </span>
-                </div>
-                <div
+                </a>
+                <a
                   class="tag-wrapper"
+                  href="?tag=one"
+                  id="one"
                 >
                   <div
                     class="tag-inactive"
                     data-testid="one"
-                    id="one"
                   >
                     one
                   </div>
@@ -232,7 +235,7 @@ exports[`Blog Index Page renders and filters correctly 1`] = `
                   >
                     1
                   </span>
-                </div>
+                </a>
               </div>
             </div>
           </div>
@@ -260,6 +263,7 @@ exports[`Blog Index Page renders and filters correctly 1`] = `
                   <a
                     class="post-card-main-tag"
                     href="?tag=two"
+                    id="two"
                   >
                     two
                   </a>
@@ -345,6 +349,7 @@ exports[`Blog Index Page renders and filters correctly 1`] = `
                   <a
                     class="post-card-main-tag"
                     href="?tag=one"
+                    id="one"
                   >
                     one
                   </a>
@@ -437,6 +442,7 @@ exports[`Blog Index Page renders and filters correctly 1`] = `
                   <a
                     class="post-card-main-tag"
                     href="?tag=one"
+                    id="one"
                   >
                     one
                   </a>
@@ -627,8 +633,8 @@ exports[`Blog Index Page renders and filters correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-copyright"
-                      href="/legal/copyrightcopyright"
+                      data-cy="footer-link-/legal/copyright"
+                      href="/legal/copyright"
                     >
                       Copyright
                     </a>
@@ -638,8 +644,8 @@ exports[`Blog Index Page renders and filters correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-cookie-policy"
-                      href="/legal/copyrightcookie-policy"
+                      data-cy="footer-link-/legal/cookie-policy"
+                      href="/legal/cookie-policy"
                     >
                       Cookie Policy
                     </a>
@@ -649,8 +655,8 @@ exports[`Blog Index Page renders and filters correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-terms-and-conditions"
-                      href="/legal/copyrightterms-and-conditions"
+                      data-cy="footer-link-/legal/terms-and-conditions"
+                      href="/legal/terms-and-conditions"
                     >
                       Terms and Conditions
                     </a>
@@ -660,8 +666,8 @@ exports[`Blog Index Page renders and filters correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-disclaimer"
-                      href="/legal/copyrightdisclaimer"
+                      data-cy="footer-link-/legal/disclaimer"
+                      href="/legal/disclaimer"
                     >
                       Disclaimer
                     </a>
@@ -942,13 +948,14 @@ exports[`Blog Index Page searches correctly 1`] = `
                     3
                   </span>
                 </div>
-                <div
+                <a
                   class="tag-wrapper"
+                  href="?tag=three"
+                  id="three"
                 >
                   <div
                     class="tag-inactive"
                     data-testid="three"
-                    id="three"
                   >
                     three
                   </div>
@@ -957,14 +964,15 @@ exports[`Blog Index Page searches correctly 1`] = `
                   >
                     3
                   </span>
-                </div>
-                <div
+                </a>
+                <a
                   class="tag-wrapper"
+                  href="?tag=two"
+                  id="two"
                 >
                   <div
                     class="tag-inactive"
                     data-testid="two"
-                    id="two"
                   >
                     two
                   </div>
@@ -973,14 +981,15 @@ exports[`Blog Index Page searches correctly 1`] = `
                   >
                     2
                   </span>
-                </div>
-                <div
+                </a>
+                <a
                   class="tag-wrapper"
+                  href="?tag=one"
+                  id="one"
                 >
                   <div
                     class="tag-inactive"
                     data-testid="one"
-                    id="one"
                   >
                     one
                   </div>
@@ -989,7 +998,7 @@ exports[`Blog Index Page searches correctly 1`] = `
                   >
                     1
                   </span>
-                </div>
+                </a>
               </div>
             </div>
           </div>
@@ -1017,6 +1026,7 @@ exports[`Blog Index Page searches correctly 1`] = `
                   <a
                     class="post-card-main-tag"
                     href="?tag=two"
+                    id="two"
                   >
                     two
                   </a>
@@ -1102,6 +1112,7 @@ exports[`Blog Index Page searches correctly 1`] = `
                   <a
                     class="post-card-main-tag"
                     href="?tag=one"
+                    id="one"
                   >
                     one
                   </a>
@@ -1194,6 +1205,7 @@ exports[`Blog Index Page searches correctly 1`] = `
                   <a
                     class="post-card-main-tag"
                     href="?tag=one"
+                    id="one"
                   >
                     one
                   </a>
@@ -1384,8 +1396,8 @@ exports[`Blog Index Page searches correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-copyright"
-                      href="/legal/copyrightcopyright"
+                      data-cy="footer-link-/legal/copyright"
+                      href="/legal/copyright"
                     >
                       Copyright
                     </a>
@@ -1395,8 +1407,8 @@ exports[`Blog Index Page searches correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-cookie-policy"
-                      href="/legal/copyrightcookie-policy"
+                      data-cy="footer-link-/legal/cookie-policy"
+                      href="/legal/cookie-policy"
                     >
                       Cookie Policy
                     </a>
@@ -1406,8 +1418,8 @@ exports[`Blog Index Page searches correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-terms-and-conditions"
-                      href="/legal/copyrightterms-and-conditions"
+                      data-cy="footer-link-/legal/terms-and-conditions"
+                      href="/legal/terms-and-conditions"
                     >
                       Terms and Conditions
                     </a>
@@ -1417,8 +1429,8 @@ exports[`Blog Index Page searches correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-disclaimer"
-                      href="/legal/copyrightdisclaimer"
+                      data-cy="footer-link-/legal/disclaimer"
+                      href="/legal/disclaimer"
                     >
                       Disclaimer
                     </a>

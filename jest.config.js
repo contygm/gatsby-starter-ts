@@ -28,7 +28,10 @@ module.exports = {
     coverageThreshold: {
         // fail if code coverage % is too low
         global: {
-            lines: 90
+            branches: 95,
+            functions: 95,
+            lines: 95,
+            statements: 95
         }
     },
     // setupFilesAfterEnv: ['<rootDir>/__mocks__/utils.js'], use for global utils

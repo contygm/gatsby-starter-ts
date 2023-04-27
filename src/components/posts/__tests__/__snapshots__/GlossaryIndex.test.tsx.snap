@@ -118,7 +118,6 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                       <ol>
                         <li>
                           <a
-                            class=""
                             href="#/blog/test"
                           >
                             /blog/test
@@ -126,7 +125,6 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                         </li>
                         <li>
                           <a
-                            class=""
                             href="#/wiki/test"
                           >
                             /wiki/test
@@ -145,7 +143,6 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                       <ol>
                         <li>
                           <a
-                            class=""
                             href="/blog/test1"
                           >
                             BlogPost
@@ -153,7 +150,6 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                         </li>
                         <li>
                           <a
-                            class=""
                             href="/wiki/test1"
                           >
                             WikiPost
@@ -164,32 +160,30 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                   </div>
                 </div>
               </div>
-            </div>
-            <div
-              class="card-footer"
-            >
-              <p
-                class="definition-card-tag-title"
-              >
-                Tags:
-              </p>
               <div
-                class="tags"
+                class="card-footer"
               >
-                <a
-                  class="definition-card-tag"
-                  href="?tag=two"
-                  id="two"
+                <p
+                  class="definition-card-tag-title"
                 >
-                  two
-                </a>
-                <a
-                  class="definition-card-tag"
-                  href="?tag=three"
-                  id="three"
+                  Tags:
+                </p>
+                <div
+                  class="tags"
                 >
-                  three
-                </a>
+                  <a
+                    class="definition-card-tag"
+                    href="?tag=two"
+                  >
+                    two
+                  </a>
+                  <a
+                    class="definition-card-tag"
+                    href="?tag=three"
+                  >
+                    three
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -295,7 +289,6 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                       <ol>
                         <li>
                           <a
-                            class=""
                             href="#/blog/test"
                           >
                             /blog/test
@@ -303,7 +296,6 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                         </li>
                         <li>
                           <a
-                            class=""
                             href="#/wiki/test"
                           >
                             /wiki/test
@@ -322,7 +314,6 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                       <ol>
                         <li>
                           <a
-                            class=""
                             href="/blog/test1"
                           >
                             BlogPost
@@ -330,7 +321,6 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                         </li>
                         <li>
                           <a
-                            class=""
                             href="/wiki/test1"
                           >
                             WikiPost
@@ -341,32 +331,30 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                   </div>
                 </div>
               </div>
-            </div>
-            <div
-              class="card-footer"
-            >
-              <p
-                class="definition-card-tag-title"
-              >
-                Tags:
-              </p>
               <div
-                class="tags"
+                class="card-footer"
               >
-                <a
-                  class="definition-card-tag"
-                  href="?tag=two"
-                  id="two"
+                <p
+                  class="definition-card-tag-title"
                 >
-                  two
-                </a>
-                <a
-                  class="definition-card-tag"
-                  href="?tag=one"
-                  id="one"
+                  Tags:
+                </p>
+                <div
+                  class="tags"
                 >
-                  one
-                </a>
+                  <a
+                    class="definition-card-tag"
+                    href="?tag=two"
+                  >
+                    two
+                  </a>
+                  <a
+                    class="definition-card-tag"
+                    href="?tag=one"
+                  >
+                    one
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -482,7 +470,6 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                       <ol>
                         <li>
                           <a
-                            class=""
                             href="#/blog/test"
                           >
                             /blog/test
@@ -490,7 +477,6 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                         </li>
                         <li>
                           <a
-                            class=""
                             href="#/wiki/test"
                           >
                             /wiki/test
@@ -509,7 +495,6 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                       <ol>
                         <li>
                           <a
-                            class=""
                             href="/blog/test1"
                           >
                             BlogPost
@@ -517,7 +502,6 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                         </li>
                         <li>
                           <a
-                            class=""
                             href="/wiki/test1"
                           >
                             WikiPost
@@ -528,32 +512,30 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                   </div>
                 </div>
               </div>
-            </div>
-            <div
-              class="card-footer"
-            >
-              <p
-                class="definition-card-tag-title"
-              >
-                Tags:
-              </p>
               <div
-                class="tags"
+                class="card-footer"
               >
-                <a
-                  class="definition-card-tag"
-                  href="?tag=two"
-                  id="two"
+                <p
+                  class="definition-card-tag-title"
                 >
-                  two
-                </a>
-                <a
-                  class="definition-card-tag"
-                  href="?tag=one"
-                  id="one"
+                  Tags:
+                </p>
+                <div
+                  class="tags"
                 >
-                  one
-                </a>
+                  <a
+                    class="definition-card-tag"
+                    href="?tag=two"
+                  >
+                    two
+                  </a>
+                  <a
+                    class="definition-card-tag"
+                    href="?tag=one"
+                  >
+                    one
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -669,7 +651,6 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                       <ol>
                         <li>
                           <a
-                            class=""
                             href="#/blog/test"
                           >
                             /blog/test
@@ -677,7 +658,6 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                         </li>
                         <li>
                           <a
-                            class=""
                             href="#/wiki/test"
                           >
                             /wiki/test
@@ -696,7 +676,6 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                       <ol>
                         <li>
                           <a
-                            class=""
                             href="/blog/test1"
                           >
                             BlogPost
@@ -704,7 +683,6 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                         </li>
                         <li>
                           <a
-                            class=""
                             href="/wiki/test1"
                           >
                             WikiPost
@@ -715,25 +693,24 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                   </div>
                 </div>
               </div>
-            </div>
-            <div
-              class="card-footer"
-            >
-              <p
-                class="definition-card-tag-title"
-              >
-                Tags:
-              </p>
               <div
-                class="tags"
+                class="card-footer"
               >
-                <a
-                  class="definition-card-tag"
-                  href="?tag=two"
-                  id="two"
+                <p
+                  class="definition-card-tag-title"
                 >
-                  two
-                </a>
+                  Tags:
+                </p>
+                <div
+                  class="tags"
+                >
+                  <a
+                    class="definition-card-tag"
+                    href="?tag=two"
+                  >
+                    two
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -849,7 +826,6 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                       <ol>
                         <li>
                           <a
-                            class=""
                             href="#/blog/test"
                           >
                             /blog/test
@@ -857,7 +833,6 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                         </li>
                         <li>
                           <a
-                            class=""
                             href="#/wiki/test1"
                           >
                             /wiki/test1
@@ -878,25 +853,24 @@ exports[`GlossaryIndex default renders correctly 1`] = `
                   </div>
                 </div>
               </div>
-            </div>
-            <div
-              class="card-footer"
-            >
-              <p
-                class="definition-card-tag-title"
-              >
-                Tags:
-              </p>
               <div
-                class="tags"
+                class="card-footer"
               >
-                <a
-                  class="definition-card-tag"
-                  href="?tag=three"
-                  id="three"
+                <p
+                  class="definition-card-tag-title"
                 >
-                  three
-                </a>
+                  Tags:
+                </p>
+                <div
+                  class="tags"
+                >
+                  <a
+                    class="definition-card-tag"
+                    href="?tag=three"
+                  >
+                    three
+                  </a>
+                </div>
               </div>
             </div>
           </div>

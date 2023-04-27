@@ -63,13 +63,14 @@ exports[`Posts Page searches blog correctly and clears search bar 1`] = `
                 3
               </span>
             </div>
-            <div
+            <a
               class="tag-wrapper"
+              href="?tag=three"
+              id="three"
             >
               <div
                 class="tag-inactive"
                 data-testid="three"
-                id="three"
               >
                 three
               </div>
@@ -78,14 +79,15 @@ exports[`Posts Page searches blog correctly and clears search bar 1`] = `
               >
                 3
               </span>
-            </div>
-            <div
+            </a>
+            <a
               class="tag-wrapper"
+              href="?tag=two"
+              id="two"
             >
               <div
                 class="tag-inactive"
                 data-testid="two"
-                id="two"
               >
                 two
               </div>
@@ -94,14 +96,15 @@ exports[`Posts Page searches blog correctly and clears search bar 1`] = `
               >
                 2
               </span>
-            </div>
-            <div
+            </a>
+            <a
               class="tag-wrapper"
+              href="?tag=one"
+              id="one"
             >
               <div
                 class="tag-inactive"
                 data-testid="one"
-                id="one"
               >
                 one
               </div>
@@ -110,7 +113,7 @@ exports[`Posts Page searches blog correctly and clears search bar 1`] = `
               >
                 1
               </span>
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -138,6 +141,7 @@ exports[`Posts Page searches blog correctly and clears search bar 1`] = `
               <a
                 class="post-card-main-tag"
                 href="?tag=two"
+                id="two"
               >
                 two
               </a>
@@ -223,6 +227,7 @@ exports[`Posts Page searches blog correctly and clears search bar 1`] = `
               <a
                 class="post-card-main-tag"
                 href="?tag=one"
+                id="one"
               >
                 one
               </a>
@@ -315,6 +320,7 @@ exports[`Posts Page searches blog correctly and clears search bar 1`] = `
               <a
                 class="post-card-main-tag"
                 href="?tag=one"
+                id="one"
               >
                 one
               </a>
@@ -456,13 +462,14 @@ exports[`Posts Page searches glossary correctly 1`] = `
                 5
               </span>
             </div>
-            <div
+            <a
               class="tag-wrapper"
+              href="?tag=three"
+              id="three"
             >
               <div
                 class="tag-inactive"
                 data-testid="three"
-                id="three"
               >
                 three
               </div>
@@ -471,14 +478,15 @@ exports[`Posts Page searches glossary correctly 1`] = `
               >
                 3
               </span>
-            </div>
-            <div
+            </a>
+            <a
               class="tag-wrapper"
+              href="?tag=two"
+              id="two"
             >
               <div
                 class="tag-inactive"
                 data-testid="two"
-                id="two"
               >
                 two
               </div>
@@ -487,14 +495,15 @@ exports[`Posts Page searches glossary correctly 1`] = `
               >
                 4
               </span>
-            </div>
-            <div
+            </a>
+            <a
               class="tag-wrapper"
+              href="?tag=one"
+              id="one"
             >
               <div
                 class="tag-inactive"
                 data-testid="one"
-                id="one"
               >
                 one
               </div>
@@ -503,7 +512,7 @@ exports[`Posts Page searches glossary correctly 1`] = `
               >
                 2
               </span>
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -625,7 +634,6 @@ exports[`Posts Page searches glossary correctly 1`] = `
                       <ol>
                         <li>
                           <a
-                            class=""
                             href="#/blog/test"
                           >
                             /blog/test
@@ -633,7 +641,6 @@ exports[`Posts Page searches glossary correctly 1`] = `
                         </li>
                         <li>
                           <a
-                            class=""
                             href="#/wiki/test"
                           >
                             /wiki/test
@@ -652,7 +659,6 @@ exports[`Posts Page searches glossary correctly 1`] = `
                       <ol>
                         <li>
                           <a
-                            class=""
                             href="/blog/test1"
                           >
                             BlogPost
@@ -660,7 +666,6 @@ exports[`Posts Page searches glossary correctly 1`] = `
                         </li>
                         <li>
                           <a
-                            class=""
                             href="/wiki/test1"
                           >
                             WikiPost
@@ -671,32 +676,30 @@ exports[`Posts Page searches glossary correctly 1`] = `
                   </div>
                 </div>
               </div>
-            </div>
-            <div
-              class="card-footer"
-            >
-              <p
-                class="definition-card-tag-title"
-              >
-                Tags:
-              </p>
               <div
-                class="tags"
+                class="card-footer"
               >
-                <a
-                  class="definition-card-tag"
-                  href="?tag=two"
-                  id="two"
+                <p
+                  class="definition-card-tag-title"
                 >
-                  two
-                </a>
-                <a
-                  class="definition-card-tag"
-                  href="?tag=three"
-                  id="three"
+                  Tags:
+                </p>
+                <div
+                  class="tags"
                 >
-                  three
-                </a>
+                  <a
+                    class="definition-card-tag"
+                    href="?tag=two"
+                  >
+                    two
+                  </a>
+                  <a
+                    class="definition-card-tag"
+                    href="?tag=three"
+                  >
+                    three
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -802,7 +805,6 @@ exports[`Posts Page searches glossary correctly 1`] = `
                       <ol>
                         <li>
                           <a
-                            class=""
                             href="#/blog/test"
                           >
                             /blog/test
@@ -810,7 +812,6 @@ exports[`Posts Page searches glossary correctly 1`] = `
                         </li>
                         <li>
                           <a
-                            class=""
                             href="#/wiki/test"
                           >
                             /wiki/test
@@ -829,7 +830,6 @@ exports[`Posts Page searches glossary correctly 1`] = `
                       <ol>
                         <li>
                           <a
-                            class=""
                             href="/blog/test1"
                           >
                             BlogPost
@@ -837,7 +837,6 @@ exports[`Posts Page searches glossary correctly 1`] = `
                         </li>
                         <li>
                           <a
-                            class=""
                             href="/wiki/test1"
                           >
                             WikiPost
@@ -848,32 +847,30 @@ exports[`Posts Page searches glossary correctly 1`] = `
                   </div>
                 </div>
               </div>
-            </div>
-            <div
-              class="card-footer"
-            >
-              <p
-                class="definition-card-tag-title"
-              >
-                Tags:
-              </p>
               <div
-                class="tags"
+                class="card-footer"
               >
-                <a
-                  class="definition-card-tag"
-                  href="?tag=two"
-                  id="two"
+                <p
+                  class="definition-card-tag-title"
                 >
-                  two
-                </a>
-                <a
-                  class="definition-card-tag"
-                  href="?tag=one"
-                  id="one"
+                  Tags:
+                </p>
+                <div
+                  class="tags"
                 >
-                  one
-                </a>
+                  <a
+                    class="definition-card-tag"
+                    href="?tag=two"
+                  >
+                    two
+                  </a>
+                  <a
+                    class="definition-card-tag"
+                    href="?tag=one"
+                  >
+                    one
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -989,7 +986,6 @@ exports[`Posts Page searches glossary correctly 1`] = `
                       <ol>
                         <li>
                           <a
-                            class=""
                             href="#/blog/test"
                           >
                             /blog/test
@@ -997,7 +993,6 @@ exports[`Posts Page searches glossary correctly 1`] = `
                         </li>
                         <li>
                           <a
-                            class=""
                             href="#/wiki/test"
                           >
                             /wiki/test
@@ -1016,7 +1011,6 @@ exports[`Posts Page searches glossary correctly 1`] = `
                       <ol>
                         <li>
                           <a
-                            class=""
                             href="/blog/test1"
                           >
                             BlogPost
@@ -1024,7 +1018,6 @@ exports[`Posts Page searches glossary correctly 1`] = `
                         </li>
                         <li>
                           <a
-                            class=""
                             href="/wiki/test1"
                           >
                             WikiPost
@@ -1035,32 +1028,30 @@ exports[`Posts Page searches glossary correctly 1`] = `
                   </div>
                 </div>
               </div>
-            </div>
-            <div
-              class="card-footer"
-            >
-              <p
-                class="definition-card-tag-title"
-              >
-                Tags:
-              </p>
               <div
-                class="tags"
+                class="card-footer"
               >
-                <a
-                  class="definition-card-tag"
-                  href="?tag=two"
-                  id="two"
+                <p
+                  class="definition-card-tag-title"
                 >
-                  two
-                </a>
-                <a
-                  class="definition-card-tag"
-                  href="?tag=one"
-                  id="one"
+                  Tags:
+                </p>
+                <div
+                  class="tags"
                 >
-                  one
-                </a>
+                  <a
+                    class="definition-card-tag"
+                    href="?tag=two"
+                  >
+                    two
+                  </a>
+                  <a
+                    class="definition-card-tag"
+                    href="?tag=one"
+                  >
+                    one
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -1176,7 +1167,6 @@ exports[`Posts Page searches glossary correctly 1`] = `
                       <ol>
                         <li>
                           <a
-                            class=""
                             href="#/blog/test"
                           >
                             /blog/test
@@ -1184,7 +1174,6 @@ exports[`Posts Page searches glossary correctly 1`] = `
                         </li>
                         <li>
                           <a
-                            class=""
                             href="#/wiki/test"
                           >
                             /wiki/test
@@ -1203,7 +1192,6 @@ exports[`Posts Page searches glossary correctly 1`] = `
                       <ol>
                         <li>
                           <a
-                            class=""
                             href="/blog/test1"
                           >
                             BlogPost
@@ -1211,7 +1199,6 @@ exports[`Posts Page searches glossary correctly 1`] = `
                         </li>
                         <li>
                           <a
-                            class=""
                             href="/wiki/test1"
                           >
                             WikiPost
@@ -1222,25 +1209,24 @@ exports[`Posts Page searches glossary correctly 1`] = `
                   </div>
                 </div>
               </div>
-            </div>
-            <div
-              class="card-footer"
-            >
-              <p
-                class="definition-card-tag-title"
-              >
-                Tags:
-              </p>
               <div
-                class="tags"
+                class="card-footer"
               >
-                <a
-                  class="definition-card-tag"
-                  href="?tag=two"
-                  id="two"
+                <p
+                  class="definition-card-tag-title"
                 >
-                  two
-                </a>
+                  Tags:
+                </p>
+                <div
+                  class="tags"
+                >
+                  <a
+                    class="definition-card-tag"
+                    href="?tag=two"
+                  >
+                    two
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -1356,7 +1342,6 @@ exports[`Posts Page searches glossary correctly 1`] = `
                       <ol>
                         <li>
                           <a
-                            class=""
                             href="#/blog/test"
                           >
                             /blog/test
@@ -1364,7 +1349,6 @@ exports[`Posts Page searches glossary correctly 1`] = `
                         </li>
                         <li>
                           <a
-                            class=""
                             href="#/wiki/test1"
                           >
                             /wiki/test1
@@ -1385,25 +1369,24 @@ exports[`Posts Page searches glossary correctly 1`] = `
                   </div>
                 </div>
               </div>
-            </div>
-            <div
-              class="card-footer"
-            >
-              <p
-                class="definition-card-tag-title"
-              >
-                Tags:
-              </p>
               <div
-                class="tags"
+                class="card-footer"
               >
-                <a
-                  class="definition-card-tag"
-                  href="?tag=three"
-                  id="three"
+                <p
+                  class="definition-card-tag-title"
                 >
-                  three
-                </a>
+                  Tags:
+                </p>
+                <div
+                  class="tags"
+                >
+                  <a
+                    class="definition-card-tag"
+                    href="?tag=three"
+                  >
+                    three
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -1477,13 +1460,14 @@ exports[`Posts Page searches glossary html correctly 1`] = `
                 5
               </span>
             </div>
-            <div
+            <a
               class="tag-wrapper"
+              href="?tag=three"
+              id="three"
             >
               <div
                 class="tag-inactive"
                 data-testid="three"
-                id="three"
               >
                 three
               </div>
@@ -1492,14 +1476,15 @@ exports[`Posts Page searches glossary html correctly 1`] = `
               >
                 3
               </span>
-            </div>
-            <div
+            </a>
+            <a
               class="tag-wrapper"
+              href="?tag=two"
+              id="two"
             >
               <div
                 class="tag-inactive"
                 data-testid="two"
-                id="two"
               >
                 two
               </div>
@@ -1508,14 +1493,15 @@ exports[`Posts Page searches glossary html correctly 1`] = `
               >
                 4
               </span>
-            </div>
-            <div
+            </a>
+            <a
               class="tag-wrapper"
+              href="?tag=one"
+              id="one"
             >
               <div
                 class="tag-inactive"
                 data-testid="one"
-                id="one"
               >
                 one
               </div>
@@ -1524,7 +1510,7 @@ exports[`Posts Page searches glossary html correctly 1`] = `
               >
                 2
               </span>
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -1646,7 +1632,6 @@ exports[`Posts Page searches glossary html correctly 1`] = `
                       <ol>
                         <li>
                           <a
-                            class=""
                             href="#/blog/test"
                           >
                             /blog/test
@@ -1654,7 +1639,6 @@ exports[`Posts Page searches glossary html correctly 1`] = `
                         </li>
                         <li>
                           <a
-                            class=""
                             href="#/wiki/test"
                           >
                             /wiki/test
@@ -1673,7 +1657,6 @@ exports[`Posts Page searches glossary html correctly 1`] = `
                       <ol>
                         <li>
                           <a
-                            class=""
                             href="/blog/test1"
                           >
                             BlogPost
@@ -1681,7 +1664,6 @@ exports[`Posts Page searches glossary html correctly 1`] = `
                         </li>
                         <li>
                           <a
-                            class=""
                             href="/wiki/test1"
                           >
                             WikiPost
@@ -1692,32 +1674,30 @@ exports[`Posts Page searches glossary html correctly 1`] = `
                   </div>
                 </div>
               </div>
-            </div>
-            <div
-              class="card-footer"
-            >
-              <p
-                class="definition-card-tag-title"
-              >
-                Tags:
-              </p>
               <div
-                class="tags"
+                class="card-footer"
               >
-                <a
-                  class="definition-card-tag"
-                  href="?tag=two"
-                  id="two"
+                <p
+                  class="definition-card-tag-title"
                 >
-                  two
-                </a>
-                <a
-                  class="definition-card-tag"
-                  href="?tag=three"
-                  id="three"
+                  Tags:
+                </p>
+                <div
+                  class="tags"
                 >
-                  three
-                </a>
+                  <a
+                    class="definition-card-tag"
+                    href="?tag=two"
+                  >
+                    two
+                  </a>
+                  <a
+                    class="definition-card-tag"
+                    href="?tag=three"
+                  >
+                    three
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -1823,7 +1803,6 @@ exports[`Posts Page searches glossary html correctly 1`] = `
                       <ol>
                         <li>
                           <a
-                            class=""
                             href="#/blog/test"
                           >
                             /blog/test
@@ -1831,7 +1810,6 @@ exports[`Posts Page searches glossary html correctly 1`] = `
                         </li>
                         <li>
                           <a
-                            class=""
                             href="#/wiki/test"
                           >
                             /wiki/test
@@ -1850,7 +1828,6 @@ exports[`Posts Page searches glossary html correctly 1`] = `
                       <ol>
                         <li>
                           <a
-                            class=""
                             href="/blog/test1"
                           >
                             BlogPost
@@ -1858,7 +1835,6 @@ exports[`Posts Page searches glossary html correctly 1`] = `
                         </li>
                         <li>
                           <a
-                            class=""
                             href="/wiki/test1"
                           >
                             WikiPost
@@ -1869,32 +1845,30 @@ exports[`Posts Page searches glossary html correctly 1`] = `
                   </div>
                 </div>
               </div>
-            </div>
-            <div
-              class="card-footer"
-            >
-              <p
-                class="definition-card-tag-title"
-              >
-                Tags:
-              </p>
               <div
-                class="tags"
+                class="card-footer"
               >
-                <a
-                  class="definition-card-tag"
-                  href="?tag=two"
-                  id="two"
+                <p
+                  class="definition-card-tag-title"
                 >
-                  two
-                </a>
-                <a
-                  class="definition-card-tag"
-                  href="?tag=one"
-                  id="one"
+                  Tags:
+                </p>
+                <div
+                  class="tags"
                 >
-                  one
-                </a>
+                  <a
+                    class="definition-card-tag"
+                    href="?tag=two"
+                  >
+                    two
+                  </a>
+                  <a
+                    class="definition-card-tag"
+                    href="?tag=one"
+                  >
+                    one
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -2010,7 +1984,6 @@ exports[`Posts Page searches glossary html correctly 1`] = `
                       <ol>
                         <li>
                           <a
-                            class=""
                             href="#/blog/test"
                           >
                             /blog/test
@@ -2018,7 +1991,6 @@ exports[`Posts Page searches glossary html correctly 1`] = `
                         </li>
                         <li>
                           <a
-                            class=""
                             href="#/wiki/test"
                           >
                             /wiki/test
@@ -2037,7 +2009,6 @@ exports[`Posts Page searches glossary html correctly 1`] = `
                       <ol>
                         <li>
                           <a
-                            class=""
                             href="/blog/test1"
                           >
                             BlogPost
@@ -2045,7 +2016,6 @@ exports[`Posts Page searches glossary html correctly 1`] = `
                         </li>
                         <li>
                           <a
-                            class=""
                             href="/wiki/test1"
                           >
                             WikiPost
@@ -2056,32 +2026,30 @@ exports[`Posts Page searches glossary html correctly 1`] = `
                   </div>
                 </div>
               </div>
-            </div>
-            <div
-              class="card-footer"
-            >
-              <p
-                class="definition-card-tag-title"
-              >
-                Tags:
-              </p>
               <div
-                class="tags"
+                class="card-footer"
               >
-                <a
-                  class="definition-card-tag"
-                  href="?tag=two"
-                  id="two"
+                <p
+                  class="definition-card-tag-title"
                 >
-                  two
-                </a>
-                <a
-                  class="definition-card-tag"
-                  href="?tag=one"
-                  id="one"
+                  Tags:
+                </p>
+                <div
+                  class="tags"
                 >
-                  one
-                </a>
+                  <a
+                    class="definition-card-tag"
+                    href="?tag=two"
+                  >
+                    two
+                  </a>
+                  <a
+                    class="definition-card-tag"
+                    href="?tag=one"
+                  >
+                    one
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -2197,7 +2165,6 @@ exports[`Posts Page searches glossary html correctly 1`] = `
                       <ol>
                         <li>
                           <a
-                            class=""
                             href="#/blog/test"
                           >
                             /blog/test
@@ -2205,7 +2172,6 @@ exports[`Posts Page searches glossary html correctly 1`] = `
                         </li>
                         <li>
                           <a
-                            class=""
                             href="#/wiki/test"
                           >
                             /wiki/test
@@ -2224,7 +2190,6 @@ exports[`Posts Page searches glossary html correctly 1`] = `
                       <ol>
                         <li>
                           <a
-                            class=""
                             href="/blog/test1"
                           >
                             BlogPost
@@ -2232,7 +2197,6 @@ exports[`Posts Page searches glossary html correctly 1`] = `
                         </li>
                         <li>
                           <a
-                            class=""
                             href="/wiki/test1"
                           >
                             WikiPost
@@ -2243,25 +2207,24 @@ exports[`Posts Page searches glossary html correctly 1`] = `
                   </div>
                 </div>
               </div>
-            </div>
-            <div
-              class="card-footer"
-            >
-              <p
-                class="definition-card-tag-title"
-              >
-                Tags:
-              </p>
               <div
-                class="tags"
+                class="card-footer"
               >
-                <a
-                  class="definition-card-tag"
-                  href="?tag=two"
-                  id="two"
+                <p
+                  class="definition-card-tag-title"
                 >
-                  two
-                </a>
+                  Tags:
+                </p>
+                <div
+                  class="tags"
+                >
+                  <a
+                    class="definition-card-tag"
+                    href="?tag=two"
+                  >
+                    two
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -2377,7 +2340,6 @@ exports[`Posts Page searches glossary html correctly 1`] = `
                       <ol>
                         <li>
                           <a
-                            class=""
                             href="#/blog/test"
                           >
                             /blog/test
@@ -2385,7 +2347,6 @@ exports[`Posts Page searches glossary html correctly 1`] = `
                         </li>
                         <li>
                           <a
-                            class=""
                             href="#/wiki/test1"
                           >
                             /wiki/test1
@@ -2406,25 +2367,24 @@ exports[`Posts Page searches glossary html correctly 1`] = `
                   </div>
                 </div>
               </div>
-            </div>
-            <div
-              class="card-footer"
-            >
-              <p
-                class="definition-card-tag-title"
-              >
-                Tags:
-              </p>
               <div
-                class="tags"
+                class="card-footer"
               >
-                <a
-                  class="definition-card-tag"
-                  href="?tag=three"
-                  id="three"
+                <p
+                  class="definition-card-tag-title"
                 >
-                  three
-                </a>
+                  Tags:
+                </p>
+                <div
+                  class="tags"
+                >
+                  <a
+                    class="definition-card-tag"
+                    href="?tag=three"
+                  >
+                    three
+                  </a>
+                </div>
               </div>
             </div>
           </div>

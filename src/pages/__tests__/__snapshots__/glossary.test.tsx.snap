@@ -405,13 +405,14 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
                         5
                       </span>
                     </div>
-                    <div
+                    <a
                       class="tag-wrapper"
+                      href="?tag=three"
+                      id="three"
                     >
                       <div
                         class="tag-inactive"
                         data-testid="three"
-                        id="three"
                       >
                         three
                       </div>
@@ -420,14 +421,15 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
                       >
                         3
                       </span>
-                    </div>
-                    <div
+                    </a>
+                    <a
                       class="tag-wrapper"
+                      href="?tag=two"
+                      id="two"
                     >
                       <div
                         class="tag-inactive"
                         data-testid="two"
-                        id="two"
                       >
                         two
                       </div>
@@ -436,14 +438,15 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
                       >
                         4
                       </span>
-                    </div>
-                    <div
+                    </a>
+                    <a
                       class="tag-wrapper"
+                      href="?tag=one"
+                      id="one"
                     >
                       <div
                         class="tag-inactive"
                         data-testid="one"
-                        id="one"
                       >
                         one
                       </div>
@@ -452,7 +455,7 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
                       >
                         2
                       </span>
-                    </div>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -574,7 +577,6 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/blog/test"
                                   >
                                     /blog/test
@@ -582,7 +584,6 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/wiki/test"
                                   >
                                     /wiki/test
@@ -601,7 +602,6 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="/blog/test1"
                                   >
                                     BlogPost
@@ -609,7 +609,6 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="/wiki/test1"
                                   >
                                     WikiPost
@@ -620,32 +619,30 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div
-                      class="card-footer"
-                    >
-                      <p
-                        class="definition-card-tag-title"
-                      >
-                        Tags:
-                      </p>
                       <div
-                        class="tags"
+                        class="card-footer"
                       >
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=two"
-                          id="two"
+                        <p
+                          class="definition-card-tag-title"
                         >
-                          two
-                        </a>
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=three"
-                          id="three"
+                          Tags:
+                        </p>
+                        <div
+                          class="tags"
                         >
-                          three
-                        </a>
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=two"
+                          >
+                            two
+                          </a>
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=three"
+                          >
+                            three
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -751,7 +748,6 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/blog/test"
                                   >
                                     /blog/test
@@ -759,7 +755,6 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/wiki/test"
                                   >
                                     /wiki/test
@@ -778,7 +773,6 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="/blog/test1"
                                   >
                                     BlogPost
@@ -786,7 +780,6 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="/wiki/test1"
                                   >
                                     WikiPost
@@ -797,32 +790,30 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div
-                      class="card-footer"
-                    >
-                      <p
-                        class="definition-card-tag-title"
-                      >
-                        Tags:
-                      </p>
                       <div
-                        class="tags"
+                        class="card-footer"
                       >
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=two"
-                          id="two"
+                        <p
+                          class="definition-card-tag-title"
                         >
-                          two
-                        </a>
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=one"
-                          id="one"
+                          Tags:
+                        </p>
+                        <div
+                          class="tags"
                         >
-                          one
-                        </a>
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=two"
+                          >
+                            two
+                          </a>
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=one"
+                          >
+                            one
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -938,7 +929,6 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/blog/test"
                                   >
                                     /blog/test
@@ -946,7 +936,6 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/wiki/test"
                                   >
                                     /wiki/test
@@ -965,7 +954,6 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="/blog/test1"
                                   >
                                     BlogPost
@@ -973,7 +961,6 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="/wiki/test1"
                                   >
                                     WikiPost
@@ -984,32 +971,30 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div
-                      class="card-footer"
-                    >
-                      <p
-                        class="definition-card-tag-title"
-                      >
-                        Tags:
-                      </p>
                       <div
-                        class="tags"
+                        class="card-footer"
                       >
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=two"
-                          id="two"
+                        <p
+                          class="definition-card-tag-title"
                         >
-                          two
-                        </a>
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=one"
-                          id="one"
+                          Tags:
+                        </p>
+                        <div
+                          class="tags"
                         >
-                          one
-                        </a>
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=two"
+                          >
+                            two
+                          </a>
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=one"
+                          >
+                            one
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -1125,7 +1110,6 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/blog/test"
                                   >
                                     /blog/test
@@ -1133,7 +1117,6 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/wiki/test"
                                   >
                                     /wiki/test
@@ -1152,7 +1135,6 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="/blog/test1"
                                   >
                                     BlogPost
@@ -1160,7 +1142,6 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="/wiki/test1"
                                   >
                                     WikiPost
@@ -1171,25 +1152,24 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div
-                      class="card-footer"
-                    >
-                      <p
-                        class="definition-card-tag-title"
-                      >
-                        Tags:
-                      </p>
                       <div
-                        class="tags"
+                        class="card-footer"
                       >
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=two"
-                          id="two"
+                        <p
+                          class="definition-card-tag-title"
                         >
-                          two
-                        </a>
+                          Tags:
+                        </p>
+                        <div
+                          class="tags"
+                        >
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=two"
+                          >
+                            two
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -1305,7 +1285,6 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/blog/test"
                                   >
                                     /blog/test
@@ -1313,7 +1292,6 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/wiki/test1"
                                   >
                                     /wiki/test1
@@ -1334,25 +1312,24 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div
-                      class="card-footer"
-                    >
-                      <p
-                        class="definition-card-tag-title"
-                      >
-                        Tags:
-                      </p>
                       <div
-                        class="tags"
+                        class="card-footer"
                       >
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=three"
-                          id="three"
+                        <p
+                          class="definition-card-tag-title"
                         >
-                          three
-                        </a>
+                          Tags:
+                        </p>
+                        <div
+                          class="tags"
+                        >
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=three"
+                          >
+                            three
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -1815,8 +1792,8 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-copyright"
-                      href="/legal/copyrightcopyright"
+                      data-cy="footer-link-/legal/copyright"
+                      href="/legal/copyright"
                     >
                       Copyright
                     </a>
@@ -1826,8 +1803,8 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-cookie-policy"
-                      href="/legal/copyrightcookie-policy"
+                      data-cy="footer-link-/legal/cookie-policy"
+                      href="/legal/cookie-policy"
                     >
                       Cookie Policy
                     </a>
@@ -1837,8 +1814,8 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-terms-and-conditions"
-                      href="/legal/copyrightterms-and-conditions"
+                      data-cy="footer-link-/legal/terms-and-conditions"
+                      href="/legal/terms-and-conditions"
                     >
                       Terms and Conditions
                     </a>
@@ -1848,8 +1825,8 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-disclaimer"
-                      href="/legal/copyrightdisclaimer"
+                      data-cy="footer-link-/legal/disclaimer"
+                      href="/legal/disclaimer"
                     >
                       Disclaimer
                     </a>
@@ -2370,13 +2347,14 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
                         5
                       </span>
                     </div>
-                    <div
+                    <a
                       class="tag-wrapper"
+                      href="?tag=three"
+                      id="three"
                     >
                       <div
                         class="tag-inactive"
                         data-testid="three"
-                        id="three"
                       >
                         three
                       </div>
@@ -2385,14 +2363,15 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
                       >
                         3
                       </span>
-                    </div>
-                    <div
+                    </a>
+                    <a
                       class="tag-wrapper"
+                      href="?tag=two"
+                      id="two"
                     >
                       <div
                         class="tag-inactive"
                         data-testid="two"
-                        id="two"
                       >
                         two
                       </div>
@@ -2401,14 +2380,15 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
                       >
                         4
                       </span>
-                    </div>
-                    <div
+                    </a>
+                    <a
                       class="tag-wrapper"
+                      href="?tag=one"
+                      id="one"
                     >
                       <div
                         class="tag-inactive"
                         data-testid="one"
-                        id="one"
                       >
                         one
                       </div>
@@ -2417,7 +2397,7 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
                       >
                         2
                       </span>
-                    </div>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -2539,7 +2519,6 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/blog/test"
                                   >
                                     /blog/test
@@ -2547,7 +2526,6 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/wiki/test"
                                   >
                                     /wiki/test
@@ -2566,7 +2544,6 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="/blog/test1"
                                   >
                                     BlogPost
@@ -2574,7 +2551,6 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="/wiki/test1"
                                   >
                                     WikiPost
@@ -2585,32 +2561,30 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div
-                      class="card-footer"
-                    >
-                      <p
-                        class="definition-card-tag-title"
-                      >
-                        Tags:
-                      </p>
                       <div
-                        class="tags"
+                        class="card-footer"
                       >
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=two"
-                          id="two"
+                        <p
+                          class="definition-card-tag-title"
                         >
-                          two
-                        </a>
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=three"
-                          id="three"
+                          Tags:
+                        </p>
+                        <div
+                          class="tags"
                         >
-                          three
-                        </a>
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=two"
+                          >
+                            two
+                          </a>
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=three"
+                          >
+                            three
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -2716,7 +2690,6 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/blog/test"
                                   >
                                     /blog/test
@@ -2724,7 +2697,6 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/wiki/test"
                                   >
                                     /wiki/test
@@ -2743,7 +2715,6 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="/blog/test1"
                                   >
                                     BlogPost
@@ -2751,7 +2722,6 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="/wiki/test1"
                                   >
                                     WikiPost
@@ -2762,32 +2732,30 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div
-                      class="card-footer"
-                    >
-                      <p
-                        class="definition-card-tag-title"
-                      >
-                        Tags:
-                      </p>
                       <div
-                        class="tags"
+                        class="card-footer"
                       >
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=two"
-                          id="two"
+                        <p
+                          class="definition-card-tag-title"
                         >
-                          two
-                        </a>
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=one"
-                          id="one"
+                          Tags:
+                        </p>
+                        <div
+                          class="tags"
                         >
-                          one
-                        </a>
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=two"
+                          >
+                            two
+                          </a>
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=one"
+                          >
+                            one
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -2903,7 +2871,6 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/blog/test"
                                   >
                                     /blog/test
@@ -2911,7 +2878,6 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/wiki/test"
                                   >
                                     /wiki/test
@@ -2930,7 +2896,6 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="/blog/test1"
                                   >
                                     BlogPost
@@ -2938,7 +2903,6 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="/wiki/test1"
                                   >
                                     WikiPost
@@ -2949,32 +2913,30 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div
-                      class="card-footer"
-                    >
-                      <p
-                        class="definition-card-tag-title"
-                      >
-                        Tags:
-                      </p>
                       <div
-                        class="tags"
+                        class="card-footer"
                       >
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=two"
-                          id="two"
+                        <p
+                          class="definition-card-tag-title"
                         >
-                          two
-                        </a>
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=one"
-                          id="one"
+                          Tags:
+                        </p>
+                        <div
+                          class="tags"
                         >
-                          one
-                        </a>
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=two"
+                          >
+                            two
+                          </a>
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=one"
+                          >
+                            one
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -3090,7 +3052,6 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/blog/test"
                                   >
                                     /blog/test
@@ -3098,7 +3059,6 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/wiki/test"
                                   >
                                     /wiki/test
@@ -3117,7 +3077,6 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="/blog/test1"
                                   >
                                     BlogPost
@@ -3125,7 +3084,6 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="/wiki/test1"
                                   >
                                     WikiPost
@@ -3136,25 +3094,24 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div
-                      class="card-footer"
-                    >
-                      <p
-                        class="definition-card-tag-title"
-                      >
-                        Tags:
-                      </p>
                       <div
-                        class="tags"
+                        class="card-footer"
                       >
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=two"
-                          id="two"
+                        <p
+                          class="definition-card-tag-title"
                         >
-                          two
-                        </a>
+                          Tags:
+                        </p>
+                        <div
+                          class="tags"
+                        >
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=two"
+                          >
+                            two
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -3270,7 +3227,6 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/blog/test"
                                   >
                                     /blog/test
@@ -3278,7 +3234,6 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/wiki/test1"
                                   >
                                     /wiki/test1
@@ -3299,25 +3254,24 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div
-                      class="card-footer"
-                    >
-                      <p
-                        class="definition-card-tag-title"
-                      >
-                        Tags:
-                      </p>
                       <div
-                        class="tags"
+                        class="card-footer"
                       >
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=three"
-                          id="three"
+                        <p
+                          class="definition-card-tag-title"
                         >
-                          three
-                        </a>
+                          Tags:
+                        </p>
+                        <div
+                          class="tags"
+                        >
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=three"
+                          >
+                            three
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -3780,8 +3734,8 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-copyright"
-                      href="/legal/copyrightcopyright"
+                      data-cy="footer-link-/legal/copyright"
+                      href="/legal/copyright"
                     >
                       Copyright
                     </a>
@@ -3791,8 +3745,8 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-cookie-policy"
-                      href="/legal/copyrightcookie-policy"
+                      data-cy="footer-link-/legal/cookie-policy"
+                      href="/legal/cookie-policy"
                     >
                       Cookie Policy
                     </a>
@@ -3802,8 +3756,8 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-terms-and-conditions"
-                      href="/legal/copyrightterms-and-conditions"
+                      data-cy="footer-link-/legal/terms-and-conditions"
+                      href="/legal/terms-and-conditions"
                     >
                       Terms and Conditions
                     </a>
@@ -3813,8 +3767,8 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-disclaimer"
-                      href="/legal/copyrightdisclaimer"
+                      data-cy="footer-link-/legal/disclaimer"
+                      href="/legal/disclaimer"
                     >
                       Disclaimer
                     </a>
@@ -4335,13 +4289,14 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
                         5
                       </span>
                     </div>
-                    <div
+                    <a
                       class="tag-wrapper"
+                      href="?tag=three"
+                      id="three"
                     >
                       <div
                         class="tag-inactive"
                         data-testid="three"
-                        id="three"
                       >
                         three
                       </div>
@@ -4350,14 +4305,15 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
                       >
                         3
                       </span>
-                    </div>
-                    <div
+                    </a>
+                    <a
                       class="tag-wrapper"
+                      href="?tag=two"
+                      id="two"
                     >
                       <div
                         class="tag-inactive"
                         data-testid="two"
-                        id="two"
                       >
                         two
                       </div>
@@ -4366,14 +4322,15 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
                       >
                         4
                       </span>
-                    </div>
-                    <div
+                    </a>
+                    <a
                       class="tag-wrapper"
+                      href="?tag=one"
+                      id="one"
                     >
                       <div
                         class="tag-inactive"
                         data-testid="one"
-                        id="one"
                       >
                         one
                       </div>
@@ -4382,7 +4339,7 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
                       >
                         2
                       </span>
-                    </div>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -4504,7 +4461,6 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/blog/test"
                                   >
                                     /blog/test
@@ -4512,7 +4468,6 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/wiki/test"
                                   >
                                     /wiki/test
@@ -4531,7 +4486,6 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="/blog/test1"
                                   >
                                     BlogPost
@@ -4539,7 +4493,6 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="/wiki/test1"
                                   >
                                     WikiPost
@@ -4550,32 +4503,30 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div
-                      class="card-footer"
-                    >
-                      <p
-                        class="definition-card-tag-title"
-                      >
-                        Tags:
-                      </p>
                       <div
-                        class="tags"
+                        class="card-footer"
                       >
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=two"
-                          id="two"
+                        <p
+                          class="definition-card-tag-title"
                         >
-                          two
-                        </a>
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=three"
-                          id="three"
+                          Tags:
+                        </p>
+                        <div
+                          class="tags"
                         >
-                          three
-                        </a>
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=two"
+                          >
+                            two
+                          </a>
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=three"
+                          >
+                            three
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -4681,7 +4632,6 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/blog/test"
                                   >
                                     /blog/test
@@ -4689,7 +4639,6 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/wiki/test"
                                   >
                                     /wiki/test
@@ -4708,7 +4657,6 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="/blog/test1"
                                   >
                                     BlogPost
@@ -4716,7 +4664,6 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="/wiki/test1"
                                   >
                                     WikiPost
@@ -4727,32 +4674,30 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div
-                      class="card-footer"
-                    >
-                      <p
-                        class="definition-card-tag-title"
-                      >
-                        Tags:
-                      </p>
                       <div
-                        class="tags"
+                        class="card-footer"
                       >
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=two"
-                          id="two"
+                        <p
+                          class="definition-card-tag-title"
                         >
-                          two
-                        </a>
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=one"
-                          id="one"
+                          Tags:
+                        </p>
+                        <div
+                          class="tags"
                         >
-                          one
-                        </a>
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=two"
+                          >
+                            two
+                          </a>
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=one"
+                          >
+                            one
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -4868,7 +4813,6 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/blog/test"
                                   >
                                     /blog/test
@@ -4876,7 +4820,6 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/wiki/test"
                                   >
                                     /wiki/test
@@ -4895,7 +4838,6 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="/blog/test1"
                                   >
                                     BlogPost
@@ -4903,7 +4845,6 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="/wiki/test1"
                                   >
                                     WikiPost
@@ -4914,32 +4855,30 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div
-                      class="card-footer"
-                    >
-                      <p
-                        class="definition-card-tag-title"
-                      >
-                        Tags:
-                      </p>
                       <div
-                        class="tags"
+                        class="card-footer"
                       >
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=two"
-                          id="two"
+                        <p
+                          class="definition-card-tag-title"
                         >
-                          two
-                        </a>
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=one"
-                          id="one"
+                          Tags:
+                        </p>
+                        <div
+                          class="tags"
                         >
-                          one
-                        </a>
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=two"
+                          >
+                            two
+                          </a>
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=one"
+                          >
+                            one
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -5055,7 +4994,6 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/blog/test"
                                   >
                                     /blog/test
@@ -5063,7 +5001,6 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/wiki/test"
                                   >
                                     /wiki/test
@@ -5082,7 +5019,6 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="/blog/test1"
                                   >
                                     BlogPost
@@ -5090,7 +5026,6 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="/wiki/test1"
                                   >
                                     WikiPost
@@ -5101,25 +5036,24 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div
-                      class="card-footer"
-                    >
-                      <p
-                        class="definition-card-tag-title"
-                      >
-                        Tags:
-                      </p>
                       <div
-                        class="tags"
+                        class="card-footer"
                       >
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=two"
-                          id="two"
+                        <p
+                          class="definition-card-tag-title"
                         >
-                          two
-                        </a>
+                          Tags:
+                        </p>
+                        <div
+                          class="tags"
+                        >
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=two"
+                          >
+                            two
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -5235,7 +5169,6 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/blog/test"
                                   >
                                     /blog/test
@@ -5243,7 +5176,6 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/wiki/test1"
                                   >
                                     /wiki/test1
@@ -5264,25 +5196,24 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div
-                      class="card-footer"
-                    >
-                      <p
-                        class="definition-card-tag-title"
-                      >
-                        Tags:
-                      </p>
                       <div
-                        class="tags"
+                        class="card-footer"
                       >
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=three"
-                          id="three"
+                        <p
+                          class="definition-card-tag-title"
                         >
-                          three
-                        </a>
+                          Tags:
+                        </p>
+                        <div
+                          class="tags"
+                        >
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=three"
+                          >
+                            three
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -5745,8 +5676,8 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-copyright"
-                      href="/legal/copyrightcopyright"
+                      data-cy="footer-link-/legal/copyright"
+                      href="/legal/copyright"
                     >
                       Copyright
                     </a>
@@ -5756,8 +5687,8 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-cookie-policy"
-                      href="/legal/copyrightcookie-policy"
+                      data-cy="footer-link-/legal/cookie-policy"
+                      href="/legal/cookie-policy"
                     >
                       Cookie Policy
                     </a>
@@ -5767,8 +5698,8 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-terms-and-conditions"
-                      href="/legal/copyrightterms-and-conditions"
+                      data-cy="footer-link-/legal/terms-and-conditions"
+                      href="/legal/terms-and-conditions"
                     >
                       Terms and Conditions
                     </a>
@@ -5778,8 +5709,8 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-disclaimer"
-                      href="/legal/copyrightdisclaimer"
+                      data-cy="footer-link-/legal/disclaimer"
+                      href="/legal/disclaimer"
                     >
                       Disclaimer
                     </a>
@@ -6300,13 +6231,14 @@ exports[`Glossary Page filters correctly 1`] = `
                         5
                       </span>
                     </div>
-                    <div
+                    <a
                       class="tag-wrapper"
+                      href="?tag=three"
+                      id="three"
                     >
                       <div
                         class="tag-inactive"
                         data-testid="three"
-                        id="three"
                       >
                         three
                       </div>
@@ -6315,14 +6247,15 @@ exports[`Glossary Page filters correctly 1`] = `
                       >
                         3
                       </span>
-                    </div>
-                    <div
+                    </a>
+                    <a
                       class="tag-wrapper"
+                      href="?tag=two"
+                      id="two"
                     >
                       <div
                         class="tag-inactive"
                         data-testid="two"
-                        id="two"
                       >
                         two
                       </div>
@@ -6331,14 +6264,15 @@ exports[`Glossary Page filters correctly 1`] = `
                       >
                         4
                       </span>
-                    </div>
-                    <div
+                    </a>
+                    <a
                       class="tag-wrapper"
+                      href="?tag=one"
+                      id="one"
                     >
                       <div
                         class="tag-inactive"
                         data-testid="one"
-                        id="one"
                       >
                         one
                       </div>
@@ -6347,7 +6281,7 @@ exports[`Glossary Page filters correctly 1`] = `
                       >
                         2
                       </span>
-                    </div>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -6469,7 +6403,6 @@ exports[`Glossary Page filters correctly 1`] = `
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/blog/test"
                                   >
                                     /blog/test
@@ -6477,7 +6410,6 @@ exports[`Glossary Page filters correctly 1`] = `
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/wiki/test"
                                   >
                                     /wiki/test
@@ -6496,7 +6428,6 @@ exports[`Glossary Page filters correctly 1`] = `
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="/blog/test1"
                                   >
                                     BlogPost
@@ -6504,7 +6435,6 @@ exports[`Glossary Page filters correctly 1`] = `
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="/wiki/test1"
                                   >
                                     WikiPost
@@ -6515,32 +6445,30 @@ exports[`Glossary Page filters correctly 1`] = `
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div
-                      class="card-footer"
-                    >
-                      <p
-                        class="definition-card-tag-title"
-                      >
-                        Tags:
-                      </p>
                       <div
-                        class="tags"
+                        class="card-footer"
                       >
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=two"
-                          id="two"
+                        <p
+                          class="definition-card-tag-title"
                         >
-                          two
-                        </a>
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=three"
-                          id="three"
+                          Tags:
+                        </p>
+                        <div
+                          class="tags"
                         >
-                          three
-                        </a>
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=two"
+                          >
+                            two
+                          </a>
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=three"
+                          >
+                            three
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -6646,7 +6574,6 @@ exports[`Glossary Page filters correctly 1`] = `
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/blog/test"
                                   >
                                     /blog/test
@@ -6654,7 +6581,6 @@ exports[`Glossary Page filters correctly 1`] = `
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/wiki/test"
                                   >
                                     /wiki/test
@@ -6673,7 +6599,6 @@ exports[`Glossary Page filters correctly 1`] = `
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="/blog/test1"
                                   >
                                     BlogPost
@@ -6681,7 +6606,6 @@ exports[`Glossary Page filters correctly 1`] = `
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="/wiki/test1"
                                   >
                                     WikiPost
@@ -6692,32 +6616,30 @@ exports[`Glossary Page filters correctly 1`] = `
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div
-                      class="card-footer"
-                    >
-                      <p
-                        class="definition-card-tag-title"
-                      >
-                        Tags:
-                      </p>
                       <div
-                        class="tags"
+                        class="card-footer"
                       >
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=two"
-                          id="two"
+                        <p
+                          class="definition-card-tag-title"
                         >
-                          two
-                        </a>
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=one"
-                          id="one"
+                          Tags:
+                        </p>
+                        <div
+                          class="tags"
                         >
-                          one
-                        </a>
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=two"
+                          >
+                            two
+                          </a>
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=one"
+                          >
+                            one
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -6833,7 +6755,6 @@ exports[`Glossary Page filters correctly 1`] = `
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/blog/test"
                                   >
                                     /blog/test
@@ -6841,7 +6762,6 @@ exports[`Glossary Page filters correctly 1`] = `
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/wiki/test"
                                   >
                                     /wiki/test
@@ -6860,7 +6780,6 @@ exports[`Glossary Page filters correctly 1`] = `
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="/blog/test1"
                                   >
                                     BlogPost
@@ -6868,7 +6787,6 @@ exports[`Glossary Page filters correctly 1`] = `
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="/wiki/test1"
                                   >
                                     WikiPost
@@ -6879,32 +6797,30 @@ exports[`Glossary Page filters correctly 1`] = `
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div
-                      class="card-footer"
-                    >
-                      <p
-                        class="definition-card-tag-title"
-                      >
-                        Tags:
-                      </p>
                       <div
-                        class="tags"
+                        class="card-footer"
                       >
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=two"
-                          id="two"
+                        <p
+                          class="definition-card-tag-title"
                         >
-                          two
-                        </a>
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=one"
-                          id="one"
+                          Tags:
+                        </p>
+                        <div
+                          class="tags"
                         >
-                          one
-                        </a>
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=two"
+                          >
+                            two
+                          </a>
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=one"
+                          >
+                            one
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -7020,7 +6936,6 @@ exports[`Glossary Page filters correctly 1`] = `
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/blog/test"
                                   >
                                     /blog/test
@@ -7028,7 +6943,6 @@ exports[`Glossary Page filters correctly 1`] = `
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/wiki/test"
                                   >
                                     /wiki/test
@@ -7047,7 +6961,6 @@ exports[`Glossary Page filters correctly 1`] = `
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="/blog/test1"
                                   >
                                     BlogPost
@@ -7055,7 +6968,6 @@ exports[`Glossary Page filters correctly 1`] = `
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="/wiki/test1"
                                   >
                                     WikiPost
@@ -7066,25 +6978,24 @@ exports[`Glossary Page filters correctly 1`] = `
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div
-                      class="card-footer"
-                    >
-                      <p
-                        class="definition-card-tag-title"
-                      >
-                        Tags:
-                      </p>
                       <div
-                        class="tags"
+                        class="card-footer"
                       >
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=two"
-                          id="two"
+                        <p
+                          class="definition-card-tag-title"
                         >
-                          two
-                        </a>
+                          Tags:
+                        </p>
+                        <div
+                          class="tags"
+                        >
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=two"
+                          >
+                            two
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -7200,7 +7111,6 @@ exports[`Glossary Page filters correctly 1`] = `
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/blog/test"
                                   >
                                     /blog/test
@@ -7208,7 +7118,6 @@ exports[`Glossary Page filters correctly 1`] = `
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/wiki/test1"
                                   >
                                     /wiki/test1
@@ -7229,25 +7138,24 @@ exports[`Glossary Page filters correctly 1`] = `
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div
-                      class="card-footer"
-                    >
-                      <p
-                        class="definition-card-tag-title"
-                      >
-                        Tags:
-                      </p>
                       <div
-                        class="tags"
+                        class="card-footer"
                       >
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=three"
-                          id="three"
+                        <p
+                          class="definition-card-tag-title"
                         >
-                          three
-                        </a>
+                          Tags:
+                        </p>
+                        <div
+                          class="tags"
+                        >
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=three"
+                          >
+                            three
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -7690,8 +7598,8 @@ exports[`Glossary Page filters correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-copyright"
-                      href="/legal/copyrightcopyright"
+                      data-cy="footer-link-/legal/copyright"
+                      href="/legal/copyright"
                     >
                       Copyright
                     </a>
@@ -7701,8 +7609,8 @@ exports[`Glossary Page filters correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-cookie-policy"
-                      href="/legal/copyrightcookie-policy"
+                      data-cy="footer-link-/legal/cookie-policy"
+                      href="/legal/cookie-policy"
                     >
                       Cookie Policy
                     </a>
@@ -7712,8 +7620,8 @@ exports[`Glossary Page filters correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-terms-and-conditions"
-                      href="/legal/copyrightterms-and-conditions"
+                      data-cy="footer-link-/legal/terms-and-conditions"
+                      href="/legal/terms-and-conditions"
                     >
                       Terms and Conditions
                     </a>
@@ -7723,8 +7631,8 @@ exports[`Glossary Page filters correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-disclaimer"
-                      href="/legal/copyrightdisclaimer"
+                      data-cy="footer-link-/legal/disclaimer"
+                      href="/legal/disclaimer"
                     >
                       Disclaimer
                     </a>
@@ -8265,13 +8173,14 @@ exports[`Glossary Page renders correctly 1`] = `
                         5
                       </span>
                     </div>
-                    <div
+                    <a
                       class="tag-wrapper"
+                      href="?tag=three"
+                      id="three"
                     >
                       <div
                         class="tag-inactive"
                         data-testid="three"
-                        id="three"
                       >
                         three
                       </div>
@@ -8280,14 +8189,15 @@ exports[`Glossary Page renders correctly 1`] = `
                       >
                         3
                       </span>
-                    </div>
-                    <div
+                    </a>
+                    <a
                       class="tag-wrapper"
+                      href="?tag=two"
+                      id="two"
                     >
                       <div
                         class="tag-inactive"
                         data-testid="two"
-                        id="two"
                       >
                         two
                       </div>
@@ -8296,14 +8206,15 @@ exports[`Glossary Page renders correctly 1`] = `
                       >
                         4
                       </span>
-                    </div>
-                    <div
+                    </a>
+                    <a
                       class="tag-wrapper"
+                      href="?tag=one"
+                      id="one"
                     >
                       <div
                         class="tag-inactive"
                         data-testid="one"
-                        id="one"
                       >
                         one
                       </div>
@@ -8312,7 +8223,7 @@ exports[`Glossary Page renders correctly 1`] = `
                       >
                         2
                       </span>
-                    </div>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -8434,7 +8345,6 @@ exports[`Glossary Page renders correctly 1`] = `
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/blog/test"
                                   >
                                     /blog/test
@@ -8442,7 +8352,6 @@ exports[`Glossary Page renders correctly 1`] = `
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/wiki/test"
                                   >
                                     /wiki/test
@@ -8461,7 +8370,6 @@ exports[`Glossary Page renders correctly 1`] = `
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="/blog/test1"
                                   >
                                     BlogPost
@@ -8469,7 +8377,6 @@ exports[`Glossary Page renders correctly 1`] = `
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="/wiki/test1"
                                   >
                                     WikiPost
@@ -8480,32 +8387,30 @@ exports[`Glossary Page renders correctly 1`] = `
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div
-                      class="card-footer"
-                    >
-                      <p
-                        class="definition-card-tag-title"
-                      >
-                        Tags:
-                      </p>
                       <div
-                        class="tags"
+                        class="card-footer"
                       >
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=two"
-                          id="two"
+                        <p
+                          class="definition-card-tag-title"
                         >
-                          two
-                        </a>
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=three"
-                          id="three"
+                          Tags:
+                        </p>
+                        <div
+                          class="tags"
                         >
-                          three
-                        </a>
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=two"
+                          >
+                            two
+                          </a>
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=three"
+                          >
+                            three
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -8611,7 +8516,6 @@ exports[`Glossary Page renders correctly 1`] = `
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/blog/test"
                                   >
                                     /blog/test
@@ -8619,7 +8523,6 @@ exports[`Glossary Page renders correctly 1`] = `
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/wiki/test"
                                   >
                                     /wiki/test
@@ -8638,7 +8541,6 @@ exports[`Glossary Page renders correctly 1`] = `
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="/blog/test1"
                                   >
                                     BlogPost
@@ -8646,7 +8548,6 @@ exports[`Glossary Page renders correctly 1`] = `
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="/wiki/test1"
                                   >
                                     WikiPost
@@ -8657,32 +8558,30 @@ exports[`Glossary Page renders correctly 1`] = `
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div
-                      class="card-footer"
-                    >
-                      <p
-                        class="definition-card-tag-title"
-                      >
-                        Tags:
-                      </p>
                       <div
-                        class="tags"
+                        class="card-footer"
                       >
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=two"
-                          id="two"
+                        <p
+                          class="definition-card-tag-title"
                         >
-                          two
-                        </a>
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=one"
-                          id="one"
+                          Tags:
+                        </p>
+                        <div
+                          class="tags"
                         >
-                          one
-                        </a>
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=two"
+                          >
+                            two
+                          </a>
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=one"
+                          >
+                            one
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -8798,7 +8697,6 @@ exports[`Glossary Page renders correctly 1`] = `
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/blog/test"
                                   >
                                     /blog/test
@@ -8806,7 +8704,6 @@ exports[`Glossary Page renders correctly 1`] = `
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/wiki/test"
                                   >
                                     /wiki/test
@@ -8825,7 +8722,6 @@ exports[`Glossary Page renders correctly 1`] = `
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="/blog/test1"
                                   >
                                     BlogPost
@@ -8833,7 +8729,6 @@ exports[`Glossary Page renders correctly 1`] = `
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="/wiki/test1"
                                   >
                                     WikiPost
@@ -8844,32 +8739,30 @@ exports[`Glossary Page renders correctly 1`] = `
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div
-                      class="card-footer"
-                    >
-                      <p
-                        class="definition-card-tag-title"
-                      >
-                        Tags:
-                      </p>
                       <div
-                        class="tags"
+                        class="card-footer"
                       >
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=two"
-                          id="two"
+                        <p
+                          class="definition-card-tag-title"
                         >
-                          two
-                        </a>
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=one"
-                          id="one"
+                          Tags:
+                        </p>
+                        <div
+                          class="tags"
                         >
-                          one
-                        </a>
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=two"
+                          >
+                            two
+                          </a>
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=one"
+                          >
+                            one
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -8985,7 +8878,6 @@ exports[`Glossary Page renders correctly 1`] = `
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/blog/test"
                                   >
                                     /blog/test
@@ -8993,7 +8885,6 @@ exports[`Glossary Page renders correctly 1`] = `
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/wiki/test"
                                   >
                                     /wiki/test
@@ -9012,7 +8903,6 @@ exports[`Glossary Page renders correctly 1`] = `
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="/blog/test1"
                                   >
                                     BlogPost
@@ -9020,7 +8910,6 @@ exports[`Glossary Page renders correctly 1`] = `
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="/wiki/test1"
                                   >
                                     WikiPost
@@ -9031,25 +8920,24 @@ exports[`Glossary Page renders correctly 1`] = `
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div
-                      class="card-footer"
-                    >
-                      <p
-                        class="definition-card-tag-title"
-                      >
-                        Tags:
-                      </p>
                       <div
-                        class="tags"
+                        class="card-footer"
                       >
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=two"
-                          id="two"
+                        <p
+                          class="definition-card-tag-title"
                         >
-                          two
-                        </a>
+                          Tags:
+                        </p>
+                        <div
+                          class="tags"
+                        >
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=two"
+                          >
+                            two
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -9165,7 +9053,6 @@ exports[`Glossary Page renders correctly 1`] = `
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/blog/test"
                                   >
                                     /blog/test
@@ -9173,7 +9060,6 @@ exports[`Glossary Page renders correctly 1`] = `
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/wiki/test1"
                                   >
                                     /wiki/test1
@@ -9194,25 +9080,24 @@ exports[`Glossary Page renders correctly 1`] = `
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div
-                      class="card-footer"
-                    >
-                      <p
-                        class="definition-card-tag-title"
-                      >
-                        Tags:
-                      </p>
                       <div
-                        class="tags"
+                        class="card-footer"
                       >
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=three"
-                          id="three"
+                        <p
+                          class="definition-card-tag-title"
                         >
-                          three
-                        </a>
+                          Tags:
+                        </p>
+                        <div
+                          class="tags"
+                        >
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=three"
+                          >
+                            three
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -9655,8 +9540,8 @@ exports[`Glossary Page renders correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-copyright"
-                      href="/legal/copyrightcopyright"
+                      data-cy="footer-link-/legal/copyright"
+                      href="/legal/copyright"
                     >
                       Copyright
                     </a>
@@ -9666,8 +9551,8 @@ exports[`Glossary Page renders correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-cookie-policy"
-                      href="/legal/copyrightcookie-policy"
+                      data-cy="footer-link-/legal/cookie-policy"
+                      href="/legal/cookie-policy"
                     >
                       Cookie Policy
                     </a>
@@ -9677,8 +9562,8 @@ exports[`Glossary Page renders correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-terms-and-conditions"
-                      href="/legal/copyrightterms-and-conditions"
+                      data-cy="footer-link-/legal/terms-and-conditions"
+                      href="/legal/terms-and-conditions"
                     >
                       Terms and Conditions
                     </a>
@@ -9688,8 +9573,8 @@ exports[`Glossary Page renders correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-disclaimer"
-                      href="/legal/copyrightdisclaimer"
+                      data-cy="footer-link-/legal/disclaimer"
+                      href="/legal/disclaimer"
                     >
                       Disclaimer
                     </a>
@@ -10210,13 +10095,14 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
                         5
                       </span>
                     </div>
-                    <div
+                    <a
                       class="tag-wrapper"
+                      href="?tag=three"
+                      id="three"
                     >
                       <div
                         class="tag-inactive"
                         data-testid="three"
-                        id="three"
                       >
                         three
                       </div>
@@ -10225,14 +10111,15 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
                       >
                         3
                       </span>
-                    </div>
-                    <div
+                    </a>
+                    <a
                       class="tag-wrapper"
+                      href="?tag=two"
+                      id="two"
                     >
                       <div
                         class="tag-inactive"
                         data-testid="two"
-                        id="two"
                       >
                         two
                       </div>
@@ -10241,14 +10128,15 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
                       >
                         4
                       </span>
-                    </div>
-                    <div
+                    </a>
+                    <a
                       class="tag-wrapper"
+                      href="?tag=one"
+                      id="one"
                     >
                       <div
                         class="tag-inactive"
                         data-testid="one"
-                        id="one"
                       >
                         one
                       </div>
@@ -10257,7 +10145,7 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
                       >
                         2
                       </span>
-                    </div>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -10379,7 +10267,6 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/blog/test"
                                   >
                                     /blog/test
@@ -10387,7 +10274,6 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/wiki/test"
                                   >
                                     /wiki/test
@@ -10406,7 +10292,6 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="/blog/test1"
                                   >
                                     BlogPost
@@ -10414,7 +10299,6 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="/wiki/test1"
                                   >
                                     WikiPost
@@ -10425,32 +10309,30 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div
-                      class="card-footer"
-                    >
-                      <p
-                        class="definition-card-tag-title"
-                      >
-                        Tags:
-                      </p>
                       <div
-                        class="tags"
+                        class="card-footer"
                       >
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=two"
-                          id="two"
+                        <p
+                          class="definition-card-tag-title"
                         >
-                          two
-                        </a>
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=three"
-                          id="three"
+                          Tags:
+                        </p>
+                        <div
+                          class="tags"
                         >
-                          three
-                        </a>
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=two"
+                          >
+                            two
+                          </a>
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=three"
+                          >
+                            three
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -10556,7 +10438,6 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/blog/test"
                                   >
                                     /blog/test
@@ -10564,7 +10445,6 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/wiki/test"
                                   >
                                     /wiki/test
@@ -10583,7 +10463,6 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="/blog/test1"
                                   >
                                     BlogPost
@@ -10591,7 +10470,6 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="/wiki/test1"
                                   >
                                     WikiPost
@@ -10602,32 +10480,30 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div
-                      class="card-footer"
-                    >
-                      <p
-                        class="definition-card-tag-title"
-                      >
-                        Tags:
-                      </p>
                       <div
-                        class="tags"
+                        class="card-footer"
                       >
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=two"
-                          id="two"
+                        <p
+                          class="definition-card-tag-title"
                         >
-                          two
-                        </a>
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=one"
-                          id="one"
+                          Tags:
+                        </p>
+                        <div
+                          class="tags"
                         >
-                          one
-                        </a>
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=two"
+                          >
+                            two
+                          </a>
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=one"
+                          >
+                            one
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -10743,7 +10619,6 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/blog/test"
                                   >
                                     /blog/test
@@ -10751,7 +10626,6 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/wiki/test"
                                   >
                                     /wiki/test
@@ -10770,7 +10644,6 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="/blog/test1"
                                   >
                                     BlogPost
@@ -10778,7 +10651,6 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="/wiki/test1"
                                   >
                                     WikiPost
@@ -10789,32 +10661,30 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div
-                      class="card-footer"
-                    >
-                      <p
-                        class="definition-card-tag-title"
-                      >
-                        Tags:
-                      </p>
                       <div
-                        class="tags"
+                        class="card-footer"
                       >
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=two"
-                          id="two"
+                        <p
+                          class="definition-card-tag-title"
                         >
-                          two
-                        </a>
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=one"
-                          id="one"
+                          Tags:
+                        </p>
+                        <div
+                          class="tags"
                         >
-                          one
-                        </a>
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=two"
+                          >
+                            two
+                          </a>
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=one"
+                          >
+                            one
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -10930,7 +10800,6 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/blog/test"
                                   >
                                     /blog/test
@@ -10938,7 +10807,6 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/wiki/test"
                                   >
                                     /wiki/test
@@ -10957,7 +10825,6 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="/blog/test1"
                                   >
                                     BlogPost
@@ -10965,7 +10832,6 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="/wiki/test1"
                                   >
                                     WikiPost
@@ -10976,25 +10842,24 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div
-                      class="card-footer"
-                    >
-                      <p
-                        class="definition-card-tag-title"
-                      >
-                        Tags:
-                      </p>
                       <div
-                        class="tags"
+                        class="card-footer"
                       >
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=two"
-                          id="two"
+                        <p
+                          class="definition-card-tag-title"
                         >
-                          two
-                        </a>
+                          Tags:
+                        </p>
+                        <div
+                          class="tags"
+                        >
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=two"
+                          >
+                            two
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -11110,7 +10975,6 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/blog/test"
                                   >
                                     /blog/test
@@ -11118,7 +10982,6 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/wiki/test1"
                                   >
                                     /wiki/test1
@@ -11139,25 +11002,24 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div
-                      class="card-footer"
-                    >
-                      <p
-                        class="definition-card-tag-title"
-                      >
-                        Tags:
-                      </p>
                       <div
-                        class="tags"
+                        class="card-footer"
                       >
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=three"
-                          id="three"
+                        <p
+                          class="definition-card-tag-title"
                         >
-                          three
-                        </a>
+                          Tags:
+                        </p>
+                        <div
+                          class="tags"
+                        >
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=three"
+                          >
+                            three
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -11620,8 +11482,8 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-copyright"
-                      href="/legal/copyrightcopyright"
+                      data-cy="footer-link-/legal/copyright"
+                      href="/legal/copyright"
                     >
                       Copyright
                     </a>
@@ -11631,8 +11493,8 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-cookie-policy"
-                      href="/legal/copyrightcookie-policy"
+                      data-cy="footer-link-/legal/cookie-policy"
+                      href="/legal/cookie-policy"
                     >
                       Cookie Policy
                     </a>
@@ -11642,8 +11504,8 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-terms-and-conditions"
-                      href="/legal/copyrightterms-and-conditions"
+                      data-cy="footer-link-/legal/terms-and-conditions"
+                      href="/legal/terms-and-conditions"
                     >
                       Terms and Conditions
                     </a>
@@ -11653,8 +11515,8 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-disclaimer"
-                      href="/legal/copyrightdisclaimer"
+                      data-cy="footer-link-/legal/disclaimer"
+                      href="/legal/disclaimer"
                     >
                       Disclaimer
                     </a>
@@ -12175,13 +12037,14 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
                         5
                       </span>
                     </div>
-                    <div
+                    <a
                       class="tag-wrapper"
+                      href="?tag=three"
+                      id="three"
                     >
                       <div
                         class="tag-inactive"
                         data-testid="three"
-                        id="three"
                       >
                         three
                       </div>
@@ -12190,14 +12053,15 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
                       >
                         3
                       </span>
-                    </div>
-                    <div
+                    </a>
+                    <a
                       class="tag-wrapper"
+                      href="?tag=two"
+                      id="two"
                     >
                       <div
                         class="tag-inactive"
                         data-testid="two"
-                        id="two"
                       >
                         two
                       </div>
@@ -12206,14 +12070,15 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
                       >
                         4
                       </span>
-                    </div>
-                    <div
+                    </a>
+                    <a
                       class="tag-wrapper"
+                      href="?tag=one"
+                      id="one"
                     >
                       <div
                         class="tag-inactive"
                         data-testid="one"
-                        id="one"
                       >
                         one
                       </div>
@@ -12222,7 +12087,7 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
                       >
                         2
                       </span>
-                    </div>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -12344,7 +12209,6 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/blog/test"
                                   >
                                     /blog/test
@@ -12352,7 +12216,6 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/wiki/test"
                                   >
                                     /wiki/test
@@ -12371,7 +12234,6 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="/blog/test1"
                                   >
                                     BlogPost
@@ -12379,7 +12241,6 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="/wiki/test1"
                                   >
                                     WikiPost
@@ -12390,32 +12251,30 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div
-                      class="card-footer"
-                    >
-                      <p
-                        class="definition-card-tag-title"
-                      >
-                        Tags:
-                      </p>
                       <div
-                        class="tags"
+                        class="card-footer"
                       >
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=two"
-                          id="two"
+                        <p
+                          class="definition-card-tag-title"
                         >
-                          two
-                        </a>
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=three"
-                          id="three"
+                          Tags:
+                        </p>
+                        <div
+                          class="tags"
                         >
-                          three
-                        </a>
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=two"
+                          >
+                            two
+                          </a>
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=three"
+                          >
+                            three
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -12521,7 +12380,6 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/blog/test"
                                   >
                                     /blog/test
@@ -12529,7 +12387,6 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/wiki/test"
                                   >
                                     /wiki/test
@@ -12548,7 +12405,6 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="/blog/test1"
                                   >
                                     BlogPost
@@ -12556,7 +12412,6 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="/wiki/test1"
                                   >
                                     WikiPost
@@ -12567,32 +12422,30 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div
-                      class="card-footer"
-                    >
-                      <p
-                        class="definition-card-tag-title"
-                      >
-                        Tags:
-                      </p>
                       <div
-                        class="tags"
+                        class="card-footer"
                       >
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=two"
-                          id="two"
+                        <p
+                          class="definition-card-tag-title"
                         >
-                          two
-                        </a>
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=one"
-                          id="one"
+                          Tags:
+                        </p>
+                        <div
+                          class="tags"
                         >
-                          one
-                        </a>
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=two"
+                          >
+                            two
+                          </a>
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=one"
+                          >
+                            one
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -12708,7 +12561,6 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/blog/test"
                                   >
                                     /blog/test
@@ -12716,7 +12568,6 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/wiki/test"
                                   >
                                     /wiki/test
@@ -12735,7 +12586,6 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="/blog/test1"
                                   >
                                     BlogPost
@@ -12743,7 +12593,6 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="/wiki/test1"
                                   >
                                     WikiPost
@@ -12754,32 +12603,30 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div
-                      class="card-footer"
-                    >
-                      <p
-                        class="definition-card-tag-title"
-                      >
-                        Tags:
-                      </p>
                       <div
-                        class="tags"
+                        class="card-footer"
                       >
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=two"
-                          id="two"
+                        <p
+                          class="definition-card-tag-title"
                         >
-                          two
-                        </a>
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=one"
-                          id="one"
+                          Tags:
+                        </p>
+                        <div
+                          class="tags"
                         >
-                          one
-                        </a>
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=two"
+                          >
+                            two
+                          </a>
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=one"
+                          >
+                            one
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -12895,7 +12742,6 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/blog/test"
                                   >
                                     /blog/test
@@ -12903,7 +12749,6 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/wiki/test"
                                   >
                                     /wiki/test
@@ -12922,7 +12767,6 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="/blog/test1"
                                   >
                                     BlogPost
@@ -12930,7 +12774,6 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="/wiki/test1"
                                   >
                                     WikiPost
@@ -12941,25 +12784,24 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div
-                      class="card-footer"
-                    >
-                      <p
-                        class="definition-card-tag-title"
-                      >
-                        Tags:
-                      </p>
                       <div
-                        class="tags"
+                        class="card-footer"
                       >
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=two"
-                          id="two"
+                        <p
+                          class="definition-card-tag-title"
                         >
-                          two
-                        </a>
+                          Tags:
+                        </p>
+                        <div
+                          class="tags"
+                        >
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=two"
+                          >
+                            two
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -13075,7 +12917,6 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/blog/test"
                                   >
                                     /blog/test
@@ -13083,7 +12924,6 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/wiki/test1"
                                   >
                                     /wiki/test1
@@ -13104,25 +12944,24 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div
-                      class="card-footer"
-                    >
-                      <p
-                        class="definition-card-tag-title"
-                      >
-                        Tags:
-                      </p>
                       <div
-                        class="tags"
+                        class="card-footer"
                       >
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=three"
-                          id="three"
+                        <p
+                          class="definition-card-tag-title"
                         >
-                          three
-                        </a>
+                          Tags:
+                        </p>
+                        <div
+                          class="tags"
+                        >
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=three"
+                          >
+                            three
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -13585,8 +13424,8 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-copyright"
-                      href="/legal/copyrightcopyright"
+                      data-cy="footer-link-/legal/copyright"
+                      href="/legal/copyright"
                     >
                       Copyright
                     </a>
@@ -13596,8 +13435,8 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-cookie-policy"
-                      href="/legal/copyrightcookie-policy"
+                      data-cy="footer-link-/legal/cookie-policy"
+                      href="/legal/cookie-policy"
                     >
                       Cookie Policy
                     </a>
@@ -13607,8 +13446,8 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-terms-and-conditions"
-                      href="/legal/copyrightterms-and-conditions"
+                      data-cy="footer-link-/legal/terms-and-conditions"
+                      href="/legal/terms-and-conditions"
                     >
                       Terms and Conditions
                     </a>
@@ -13618,8 +13457,8 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-disclaimer"
-                      href="/legal/copyrightdisclaimer"
+                      data-cy="footer-link-/legal/disclaimer"
+                      href="/legal/disclaimer"
                     >
                       Disclaimer
                     </a>
@@ -14140,13 +13979,14 @@ exports[`Glossary Page searches glossary html correctly 1`] = `
                         5
                       </span>
                     </div>
-                    <div
+                    <a
                       class="tag-wrapper"
+                      href="?tag=three"
+                      id="three"
                     >
                       <div
                         class="tag-inactive"
                         data-testid="three"
-                        id="three"
                       >
                         three
                       </div>
@@ -14155,14 +13995,15 @@ exports[`Glossary Page searches glossary html correctly 1`] = `
                       >
                         3
                       </span>
-                    </div>
-                    <div
+                    </a>
+                    <a
                       class="tag-wrapper"
+                      href="?tag=two"
+                      id="two"
                     >
                       <div
                         class="tag-inactive"
                         data-testid="two"
-                        id="two"
                       >
                         two
                       </div>
@@ -14171,14 +14012,15 @@ exports[`Glossary Page searches glossary html correctly 1`] = `
                       >
                         4
                       </span>
-                    </div>
-                    <div
+                    </a>
+                    <a
                       class="tag-wrapper"
+                      href="?tag=one"
+                      id="one"
                     >
                       <div
                         class="tag-inactive"
                         data-testid="one"
-                        id="one"
                       >
                         one
                       </div>
@@ -14187,7 +14029,7 @@ exports[`Glossary Page searches glossary html correctly 1`] = `
                       >
                         2
                       </span>
-                    </div>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -14309,7 +14151,6 @@ exports[`Glossary Page searches glossary html correctly 1`] = `
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/blog/test"
                                   >
                                     /blog/test
@@ -14317,7 +14158,6 @@ exports[`Glossary Page searches glossary html correctly 1`] = `
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/wiki/test"
                                   >
                                     /wiki/test
@@ -14336,7 +14176,6 @@ exports[`Glossary Page searches glossary html correctly 1`] = `
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="/blog/test1"
                                   >
                                     BlogPost
@@ -14344,7 +14183,6 @@ exports[`Glossary Page searches glossary html correctly 1`] = `
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="/wiki/test1"
                                   >
                                     WikiPost
@@ -14355,32 +14193,30 @@ exports[`Glossary Page searches glossary html correctly 1`] = `
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div
-                      class="card-footer"
-                    >
-                      <p
-                        class="definition-card-tag-title"
-                      >
-                        Tags:
-                      </p>
                       <div
-                        class="tags"
+                        class="card-footer"
                       >
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=two"
-                          id="two"
+                        <p
+                          class="definition-card-tag-title"
                         >
-                          two
-                        </a>
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=three"
-                          id="three"
+                          Tags:
+                        </p>
+                        <div
+                          class="tags"
                         >
-                          three
-                        </a>
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=two"
+                          >
+                            two
+                          </a>
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=three"
+                          >
+                            three
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -14486,7 +14322,6 @@ exports[`Glossary Page searches glossary html correctly 1`] = `
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/blog/test"
                                   >
                                     /blog/test
@@ -14494,7 +14329,6 @@ exports[`Glossary Page searches glossary html correctly 1`] = `
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/wiki/test"
                                   >
                                     /wiki/test
@@ -14513,7 +14347,6 @@ exports[`Glossary Page searches glossary html correctly 1`] = `
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="/blog/test1"
                                   >
                                     BlogPost
@@ -14521,7 +14354,6 @@ exports[`Glossary Page searches glossary html correctly 1`] = `
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="/wiki/test1"
                                   >
                                     WikiPost
@@ -14532,32 +14364,30 @@ exports[`Glossary Page searches glossary html correctly 1`] = `
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div
-                      class="card-footer"
-                    >
-                      <p
-                        class="definition-card-tag-title"
-                      >
-                        Tags:
-                      </p>
                       <div
-                        class="tags"
+                        class="card-footer"
                       >
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=two"
-                          id="two"
+                        <p
+                          class="definition-card-tag-title"
                         >
-                          two
-                        </a>
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=one"
-                          id="one"
+                          Tags:
+                        </p>
+                        <div
+                          class="tags"
                         >
-                          one
-                        </a>
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=two"
+                          >
+                            two
+                          </a>
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=one"
+                          >
+                            one
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -14673,7 +14503,6 @@ exports[`Glossary Page searches glossary html correctly 1`] = `
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/blog/test"
                                   >
                                     /blog/test
@@ -14681,7 +14510,6 @@ exports[`Glossary Page searches glossary html correctly 1`] = `
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/wiki/test"
                                   >
                                     /wiki/test
@@ -14700,7 +14528,6 @@ exports[`Glossary Page searches glossary html correctly 1`] = `
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="/blog/test1"
                                   >
                                     BlogPost
@@ -14708,7 +14535,6 @@ exports[`Glossary Page searches glossary html correctly 1`] = `
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="/wiki/test1"
                                   >
                                     WikiPost
@@ -14719,32 +14545,30 @@ exports[`Glossary Page searches glossary html correctly 1`] = `
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div
-                      class="card-footer"
-                    >
-                      <p
-                        class="definition-card-tag-title"
-                      >
-                        Tags:
-                      </p>
                       <div
-                        class="tags"
+                        class="card-footer"
                       >
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=two"
-                          id="two"
+                        <p
+                          class="definition-card-tag-title"
                         >
-                          two
-                        </a>
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=one"
-                          id="one"
+                          Tags:
+                        </p>
+                        <div
+                          class="tags"
                         >
-                          one
-                        </a>
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=two"
+                          >
+                            two
+                          </a>
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=one"
+                          >
+                            one
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -14860,7 +14684,6 @@ exports[`Glossary Page searches glossary html correctly 1`] = `
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/blog/test"
                                   >
                                     /blog/test
@@ -14868,7 +14691,6 @@ exports[`Glossary Page searches glossary html correctly 1`] = `
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/wiki/test"
                                   >
                                     /wiki/test
@@ -14887,7 +14709,6 @@ exports[`Glossary Page searches glossary html correctly 1`] = `
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="/blog/test1"
                                   >
                                     BlogPost
@@ -14895,7 +14716,6 @@ exports[`Glossary Page searches glossary html correctly 1`] = `
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="/wiki/test1"
                                   >
                                     WikiPost
@@ -14906,25 +14726,24 @@ exports[`Glossary Page searches glossary html correctly 1`] = `
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div
-                      class="card-footer"
-                    >
-                      <p
-                        class="definition-card-tag-title"
-                      >
-                        Tags:
-                      </p>
                       <div
-                        class="tags"
+                        class="card-footer"
                       >
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=two"
-                          id="two"
+                        <p
+                          class="definition-card-tag-title"
                         >
-                          two
-                        </a>
+                          Tags:
+                        </p>
+                        <div
+                          class="tags"
+                        >
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=two"
+                          >
+                            two
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -15040,7 +14859,6 @@ exports[`Glossary Page searches glossary html correctly 1`] = `
                               <ol>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/blog/test"
                                   >
                                     /blog/test
@@ -15048,7 +14866,6 @@ exports[`Glossary Page searches glossary html correctly 1`] = `
                                 </li>
                                 <li>
                                   <a
-                                    class=""
                                     href="#/wiki/test1"
                                   >
                                     /wiki/test1
@@ -15069,25 +14886,24 @@ exports[`Glossary Page searches glossary html correctly 1`] = `
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div
-                      class="card-footer"
-                    >
-                      <p
-                        class="definition-card-tag-title"
-                      >
-                        Tags:
-                      </p>
                       <div
-                        class="tags"
+                        class="card-footer"
                       >
-                        <a
-                          class="definition-card-tag"
-                          href="?tag=three"
-                          id="three"
+                        <p
+                          class="definition-card-tag-title"
                         >
-                          three
-                        </a>
+                          Tags:
+                        </p>
+                        <div
+                          class="tags"
+                        >
+                          <a
+                            class="definition-card-tag"
+                            href="?tag=three"
+                          >
+                            three
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -15530,8 +15346,8 @@ exports[`Glossary Page searches glossary html correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-copyright"
-                      href="/legal/copyrightcopyright"
+                      data-cy="footer-link-/legal/copyright"
+                      href="/legal/copyright"
                     >
                       Copyright
                     </a>
@@ -15541,8 +15357,8 @@ exports[`Glossary Page searches glossary html correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-cookie-policy"
-                      href="/legal/copyrightcookie-policy"
+                      data-cy="footer-link-/legal/cookie-policy"
+                      href="/legal/cookie-policy"
                     >
                       Cookie Policy
                     </a>
@@ -15552,8 +15368,8 @@ exports[`Glossary Page searches glossary html correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-terms-and-conditions"
-                      href="/legal/copyrightterms-and-conditions"
+                      data-cy="footer-link-/legal/terms-and-conditions"
+                      href="/legal/terms-and-conditions"
                     >
                       Terms and Conditions
                     </a>
@@ -15563,8 +15379,8 @@ exports[`Glossary Page searches glossary html correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-disclaimer"
-                      href="/legal/copyrightdisclaimer"
+                      data-cy="footer-link-/legal/disclaimer"
+                      href="/legal/disclaimer"
                     >
                       Disclaimer
                     </a>

@@ -24,6 +24,7 @@ exports[`BlogWikiIndex default renders and load btn works correctly 1`] = `
               <a
                 class="post-card-main-tag"
                 href="?tag=two"
+                id="two"
               >
                 two
               </a>
@@ -109,6 +110,7 @@ exports[`BlogWikiIndex default renders and load btn works correctly 1`] = `
               <a
                 class="post-card-main-tag"
                 href="?tag=one"
+                id="one"
               >
                 one
               </a>

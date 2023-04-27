@@ -11,7 +11,6 @@ import { TagsList } from './TagsList';
  * @property {boolean} isSearchActive - true when the user is interacting with the search bar. When true, filter
  * will be disabled.
  * @property {PostType} type - the type of post being filtered/searched
- * @property {void} clearSearchQuery - void function used as the action when search is cleared
  * @property {void} handleFilterUpdate - void function used as the action when filter is updated
  * @property {void} handleSubmitSearch - void function used as the action when search is submitted
  *
@@ -27,7 +26,6 @@ interface SearchFilterRowProps {
     activeTag: string;
     searchQuery: string;
     type: PostType;
-    clearSearchQuery: () => void;
     handleFilterUpdate: (e: SyntheticEvent) => void;
     handleSubmitSearch: (e: any) => void;
 }
@@ -89,18 +87,6 @@ export const SearchFilterRow = (props: SearchFilterRowProps) => {
                                         props.activeTag !== 'all'
                                     }
                                 />
-
-                                {hasQuery && (
-                                    <span>
-                                        <FontAwesomeIcon
-                                            size="2xs"
-                                            className="search-clear-btn"
-                                            data-testid="clearSearch"
-                                            icon={faCircleXmark}
-                                            onClick={props.clearSearchQuery}
-                                        />
-                                    </span>
-                                )}
                             </p>
                             <p className="control">
                                 <button
