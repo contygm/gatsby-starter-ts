@@ -76,13 +76,7 @@ const IndexFilterWrapper = ({
             e.target.searchPost && e.target.searchPost.value
                 ? e.target.searchPost.value
                 : '';
-
         setSearchQuery(queryValue);
-    };
-
-    const clearSearchQuery = () => {
-        setSearchQuery('');
-        setTagFilter('');
     };
 
     function filterOnTag(tagFilter: string, posts: any[]) {
@@ -118,7 +112,6 @@ const IndexFilterWrapper = ({
                 tags={tags}
                 activeTag={tagFilter}
                 totalPostCount={index.totalCount}
-                clearSearchQuery={clearSearchQuery}
                 handleFilterUpdate={handleFilterUpdate}
                 handleSubmitSearch={handleSubmitSearch}
                 searchQuery={searchQuery}

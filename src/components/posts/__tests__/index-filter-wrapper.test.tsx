@@ -1,16 +1,18 @@
 import React from 'react';
 import { fireEvent, render, waitFor } from '@testing-library/react';
-import PostPage, { Head } from '../../components/posts/IndexFilterWrapper';
-import { mockBlogs } from '../../../__mocks__/mock-blog-page';
-import { mockGlossary } from '../../../__mocks__/mock-glossary-page';
+import IndexFilterWrapper from '../IndexFilterWrapper';
+import { mockBlogs } from '../../../../__mocks__/mock-blog-page';
+import { mockGlossary } from '../../../../__mocks__/mock-glossary-page';
 
-describe('Posts Page', () => {
+describe('IndexFilterWrapper', () => {
     it('searches blog correctly and clears search bar', () => {
+        const location = {search: ''};
         const { asFragment, getByTestId, getAllByTestId } = render(
-            <PostPage
+            <IndexFilterWrapper
                 allTags={mockBlogs.allTags}
                 index={mockBlogs.index}
                 type={'blog'}
+                location={location}
             />
         );
 
@@ -23,20 +25,17 @@ describe('Posts Page', () => {
 
         fireEvent.click(getByTestId('searchPostSubmit'));
         waitFor(() => expect(getAllByTestId('post-card').length).toEqual(2));
-        // expect(asFragment()).toMatchSnapshot('has clear btn');
-        // fireEvent.click(getByTestId('clearSearch'));
-
-        // waitFor(() => expect(getAllByTestId('post-card').length).toEqual(3));
-        // expect(input.value).toBe('')
     });
 
     it('searches glossary correctly', () => {
+        const location = {search: ''};
         const { asFragment, getByTestId, getAllByTestId } = render(
-            <PostPage
+            <IndexFilterWrapper
                 allTags={mockGlossary.allTags}
                 allLetters={mockGlossary.allLetters}
                 index={mockGlossary.index}
                 type={'glossary'}
+                location={location}
             />
         );
 
@@ -54,12 +53,15 @@ describe('Posts Page', () => {
     });
 
     it('searches glossary html correctly', () => {
+        const location = {search: ''};
+
         const { asFragment, getByTestId, getAllByTestId } = render(
-            <PostPage
+            <IndexFilterWrapper
                 allTags={mockGlossary.allTags}
                 allLetters={mockGlossary.allLetters}
                 index={mockGlossary.index}
                 type={'glossary'}
+                location={location}
             />
         );
 
@@ -76,7 +78,18 @@ describe('Posts Page', () => {
         );
     });
 
-    // TODO wiki
-    // TODO disabled search on tag
-    // TODO disabled tag on search
+    it('filters based on tag from query correctly', () => {
+        const location = {search: '?tag=one'};
+        const { asFragment, getAllByTestId} = render(
+            <IndexFilterWrapper
+                allTags={mockBlogs.allTags}
+                index={mockBlogs.index}
+                type={'blog'}
+                location={location}
+            />
+        );
+
+        expect(asFragment()).toMatchSnapshot();
+        expect(getAllByTestId('post-card').length).toEqual(2);
+    });
 });
