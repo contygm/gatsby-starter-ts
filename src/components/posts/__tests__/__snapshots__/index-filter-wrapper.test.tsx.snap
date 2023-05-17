@@ -1,6 +1,321 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Posts Page searches blog correctly and clears search bar 1`] = `
+exports[`IndexFilterWrapper filters based on tag from query correctly 1`] = `
+<DocumentFragment>
+  <section
+    class="section"
+  >
+    <div
+      class="search-filter-wrapper"
+    >
+      <div
+        class="columns"
+      >
+        <div
+          class="column"
+        >
+          <form
+            class="search-form"
+          >
+            <p
+              class="search-form-input-wrapper"
+            >
+              <input
+                class="input"
+                data-testid="searchPost"
+                disabled=""
+                name="searchPost"
+                placeholder="Find a post"
+                type="search"
+                value=""
+              />
+            </p>
+            <p
+              class="control"
+            >
+              <button
+                class="primary-button"
+                data-testid="searchPostSubmit"
+                disabled=""
+              >
+                Search
+              </button>
+            </p>
+          </form>
+        </div>
+        <div
+          class="search-row-tags-wrapper"
+        >
+          <div
+            class="tag-list-wrapper"
+          >
+            <div
+              class="tag-wrapper"
+            >
+              <div
+                class="tag-inactive"
+                data-testid="all"
+                id="all"
+              >
+                All
+              </div>
+              <span
+                class="tag is-dark"
+              >
+                3
+              </span>
+            </div>
+            <a
+              class="tag-wrapper"
+              href="?tag=three"
+              id="three"
+            >
+              <div
+                class="tag-inactive"
+                data-testid="three"
+              >
+                three
+              </div>
+              <span
+                class="tag-count-enabled"
+              >
+                3
+              </span>
+            </a>
+            <a
+              class="tag-wrapper"
+              href="?tag=two"
+              id="two"
+            >
+              <div
+                class="tag-inactive"
+                data-testid="two"
+              >
+                two
+              </div>
+              <span
+                class="tag-count-enabled"
+              >
+                2
+              </span>
+            </a>
+            <a
+              class="tag-wrapper"
+              href="?tag=one"
+              id="one"
+            >
+              <div
+                class="tag-active"
+                data-testid="one"
+              >
+                one
+              </div>
+              <span
+                class="tag-count-enabled"
+              >
+                1
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <article
+    class="section"
+  >
+    <section
+      class="post-index-wrapper"
+    >
+      <div
+        class="post-index-cards-wrapper"
+      >
+        <div
+          class="post-index-card-wrapper"
+          data-testid="post-card"
+        >
+          <div
+            class="card"
+          >
+            <div
+              class="card-image"
+            >
+              <a
+                class="post-card-main-tag"
+                href="?tag=one"
+                id="one"
+              >
+                one
+              </a>
+              <figure
+                class="post-card-image"
+              >
+                <img
+                  alt="Placeholder image"
+                  src="https://bulma.io/images/placeholders/1280x960.png"
+                />
+              </figure>
+            </div>
+            <div
+              class="card-content"
+            >
+              <div
+                class="media"
+              >
+                <div
+                  class="media-content"
+                >
+                  <p
+                    class="title-four"
+                  >
+                    10 Best Things
+                  </p>
+                  <p
+                    class="subtitle-six"
+                  >
+                    <time
+                      datetime="2-2-2021"
+                    >
+                      2-2-2021
+                    </time>
+                  </p>
+                </div>
+              </div>
+              <div
+                class="content"
+              >
+                <p>
+                  a list of the ten best things
+                </p>
+                <a
+                  href="/blog/ten-best-things/"
+                >
+                  Read more...
+                </a>
+              </div>
+              <div
+                class="card-footer"
+              >
+                <p
+                  class="post-card-tag-title"
+                >
+                  Tags:
+                </p>
+                <div
+                  class="tags"
+                >
+                  <a
+                    class="post-card-tag"
+                    href="?tag=two"
+                    id="two"
+                  >
+                    two
+                  </a>
+                  <a
+                    class="post-card-tag"
+                    href="?tag=three"
+                    id="three"
+                  >
+                    three
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="post-index-card-wrapper"
+          data-testid="post-card"
+        >
+          <div
+            class="card"
+          >
+            <div
+              class="card-image"
+            >
+              <a
+                class="post-card-main-tag"
+                href="?tag=one"
+                id="one"
+              >
+                one
+              </a>
+              <figure
+                class="post-card-image"
+              >
+                <img
+                  alt="Placeholder image"
+                  src="https://bulma.io/images/placeholders/1280x960.png"
+                />
+              </figure>
+            </div>
+            <div
+              class="card-content"
+            >
+              <div
+                class="media"
+              >
+                <div
+                  class="media-content"
+                >
+                  <p
+                    class="title-four"
+                  >
+                    Guide
+                  </p>
+                  <p
+                    class="subtitle-six"
+                  >
+                    <time
+                      datetime="5-2-2021"
+                    >
+                      5-2-2021
+                    </time>
+                  </p>
+                </div>
+              </div>
+              <div
+                class="content"
+              >
+                <p>
+                  a guide
+                </p>
+                <a
+                  href="/blog/guide/"
+                >
+                  Read more...
+                </a>
+              </div>
+              <div
+                class="card-footer"
+              >
+                <p
+                  class="post-card-tag-title"
+                >
+                  Tags:
+                </p>
+                <div
+                  class="tags"
+                >
+                  <a
+                    class="post-card-tag"
+                    href="?tag=two"
+                    id="two"
+                  >
+                    two
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </article>
+</DocumentFragment>
+`;
+
+exports[`IndexFilterWrapper searches blog correctly and clears search bar 1`] = `
 <DocumentFragment>
   <section
     class="section"
@@ -399,7 +714,7 @@ exports[`Posts Page searches blog correctly and clears search bar 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Posts Page searches glossary correctly 1`] = `
+exports[`IndexFilterWrapper searches glossary correctly 1`] = `
 <DocumentFragment>
   <section
     class="section"
@@ -1397,7 +1712,7 @@ exports[`Posts Page searches glossary correctly 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Posts Page searches glossary html correctly 1`] = `
+exports[`IndexFilterWrapper searches glossary html correctly 1`] = `
 <DocumentFragment>
   <section
     class="section"
