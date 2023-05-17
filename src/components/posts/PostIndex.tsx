@@ -46,15 +46,12 @@ export const PostIndex = (props: PostIndexProps) => {
     useEffect(() => {
         if (loadMore && hasMore) {
             const postCount = displayPosts.length;
-            const stillHasMore = postCount < props.allPosts.length;
-            const nextResults = stillHasMore
-                ? props.allPosts.slice(postCount, postCount + props.increment)
-                : [];
+            const nextResults = props.allPosts.slice(postCount, postCount + props.increment);
             // combine old displayPosts with next batch of posts
             setDisplayPosts([...displayPosts, ...nextResults]);
             setLoadMore(false);
         }
-    }, [loadMore, hasMore]);
+    }, [loadMore]);
 
     useEffect(() => {
         setDisplayPosts([...props.allPosts.slice(0, props.increment)]);

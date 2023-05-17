@@ -39,7 +39,7 @@ export const ToC = (props: { tocHtml: string; includeTitle: boolean }) => {
             `.toc-links a[href$="${'#' + activeHash}"]`
         );
 
-        if (activeLink.length) {
+        if (activeLink.length > 0) {
             activeLink[0].classList.add('is-active');
         }
     }, [activeHash]);
