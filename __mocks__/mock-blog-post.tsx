@@ -1,10 +1,9 @@
 /* istanbul ignore file */
 import { HeadProps, PageProps } from 'gatsby';
-import { BlogPostProps } from '../src/templates/blog-post';
 import { mockHeadProps, mockPageProps } from './test-props';
 import { previous, next, featuredOrRelatedPosts, siteData } from './constants';
 
-export const mockBlogPost: BlogPostProps = {
+export const mockBlogPost: IndexFilterWrapperProps<BlogPostElements> = {
     site: {
         siteMetadata: siteData
     },
@@ -39,7 +38,7 @@ export const mockBlogPost: BlogPostProps = {
 
 export const mockBlogPostData = mockPageProps(
     mockBlogPost
-) as PageProps<BlogPostProps>;
+) as PageProps<IndexFilterWrapperProps<BlogPostElements>>;
 export const mockBlogPostHeadData = mockHeadProps(
     mockBlogPost
-) as HeadProps<BlogPostProps>;
+) as HeadProps<IndexFilterWrapperProps<BlogPostElements>>;

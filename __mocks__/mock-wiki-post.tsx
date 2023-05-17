@@ -1,10 +1,9 @@
 /* istanbul ignore file */
 import { HeadProps, PageProps } from 'gatsby';
-import { WikiPostProps } from '../src/templates/wiki-post';
 import { mockHeadProps, mockPageProps } from './test-props';
 import { featuredOrRelatedPosts, next, previous, siteData } from './constants';
 
-export const mockWikiPost: WikiPostProps = {
+export const mockWikiPost: IndexFilterWrapperProps<WikiPostElements> = {
     site: {
         siteMetadata: siteData
     },
@@ -49,7 +48,7 @@ export const mockWikiPost: WikiPostProps = {
 
 export const mockWikiPostData = mockPageProps(
     mockWikiPost
-) as PageProps<WikiPostProps>;
+) as PageProps<IndexFilterWrapperProps<WikiPostElements>>;
 export const mockWikiPostHeadData = mockHeadProps(
     mockWikiPost
-) as HeadProps<WikiPostProps>;
+) as HeadProps<IndexFilterWrapperProps<WikiPostElements>>;

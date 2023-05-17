@@ -1,10 +1,9 @@
 /* istanbul ignore file */
-import { BlogIndexProps } from '../src/pages/blog';
 import { mockHeadProps, mockPageProps } from './test-props';
 import { HeadProps, PageProps } from 'gatsby';
 import { featuredOrRelatedPosts, siteData } from './constants';
 
-export const mockBlogs: BlogIndexProps = {
+export const mockBlogs: GenericPageProps = {
     site: siteData,
     allTags: {
         group: [
@@ -24,8 +23,8 @@ export const mockBlogs: BlogIndexProps = {
 
 export const mockBlogPageData = mockPageProps(
     mockBlogs
-) as PageProps<BlogIndexProps>;
+) as PageProps<GenericPageProps>;
 
 export const mockBlogHeadData = mockHeadProps(
     mockBlogs
-) as HeadProps<BlogIndexProps>;
+) as HeadProps<GenericPageProps>;

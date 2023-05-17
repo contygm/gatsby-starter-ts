@@ -34,7 +34,8 @@ export const mockGlossary: GlossaryPageProps = {
     },
     wikiFeatured: {
         nodes: featuredOrRelatedPosts
-    }
+    },
+    location: ''
 };
 
 export const mockGlossaryPageData = mockPageProps(
