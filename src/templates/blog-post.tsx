@@ -65,7 +65,7 @@ export default BlogPost;
 
 /**
  * A basic component for SEO focused information
- * @param {HeadProps<BlogPostProps>} site - site meta data
+ * @param {HeadProps<IndexFilterWrapperProps<BlogPostElements>>} site - site meta data
  *
  * @memberof BlogPost
  */

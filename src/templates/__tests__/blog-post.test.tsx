@@ -56,12 +56,13 @@ describe('Blog Posts Page', () => {
         // open with ToC button
         fireEvent.click(getByTestId('post-toc-mobile-btn'));
         expect(asFragment()).toMatchSnapshot('open table of contents');
-        // ToC sectiion has role of widget
+        // ToC section has role of widget
         expect(queryByRole('widget', { hidden: false })).toBeDefined();
 
         // close with ToC button
         fireEvent.click(getByTestId('post-toc-mobile-btn'));
         expect(asFragment()).toMatchSnapshot('closed table of contents w btn');
         expect(queryByRole('widget', { hidden: false })).toBeNull();
+
     });
 });
