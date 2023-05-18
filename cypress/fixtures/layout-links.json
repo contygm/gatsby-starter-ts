@@ -9,17 +9,17 @@
             {
                 "name": "Blog",
                 "cyTag": "nav-link-blog",
-                "url": "/"
+                "url": "/blog"
             },
             {
                 "name": "Wiki",
                 "cyTag": "nav-link-wiki",
-                "url": "/"
+                "url": "/wiki"
             },
             {
                 "name": "Glossary",
                 "cyTag": "nav-link-glossary",
-                "url": "/404"
+                "url": "/glossary"
             },
             {
                 "name": "Logo",
@@ -51,11 +51,11 @@
                 "url": "/legal/copyright"
             },
             {
-                "cyTag": "footer-link-cookie",
+                "cyTag": "footer-link-cookie-policy",
                 "url": "/legal/cookie-policy"
             },
             {
-                "cyTag": "footer-link-terms",
+                "cyTag": "footer-link-terms-and-conditions",
                 "url": "/legal/terms-and-conditions"
             },
             {

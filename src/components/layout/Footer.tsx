@@ -48,7 +48,7 @@ const DropUpLink = (props: { label: string; slug: string }) => {
             <Link
                 className="footer-drawer-link"
                 to={`${props.slug}`}
-                data-cy={`footer-link-${props.slug}`}
+                data-cy={`footer-link-${props.label.toLocaleLowerCase().replaceAll(" ", "-")}`}
             >
                 {props.label}
             </Link>

@@ -9,7 +9,7 @@ describe('Links + Routing Tests', () => {
             .its('data.navLinks')
             .then((links) => {
                 links.forEach((link) => {
-                    cy.get(`[data-cy=${link.cyTag}]`).click();
+                    cy.get(`[data-cy=${link.cyTag}]`).click({ force: true });
                     cy.url().should('include', link.url);
                 });
             });
@@ -31,13 +31,15 @@ describe('Links + Routing Tests', () => {
             .its('data.legalFooterLinks')
             .then((links) => {
                 links.forEach((link) => {
-                    cy.get(`[data-cy=footer-link-legal]`).realHover();
-                    cy.get(`[data-cy=${link.cyTag}]`)
+                    cy.get(`[data-cy=footer-link-legal]`).realHover().then(() => {
+                        cy.get(`[data-cy=${link.cyTag}]`)
                         .should('exist')
                         .trigger('mouseenter', { force: true })
                         .invoke('show')
                         .click({ force: true });
-                    cy.url().should('include', link.url);
+                        cy.url().should('include', link.url);
+                    });
+                    
                 });
             });
     });
