@@ -10,7 +10,9 @@ describe('ContactForm', () => {
 
     it('submit does nothing', () => {
         const { asFragment, getByText } = render(<ContactForm />);
-        window.alert = () => {};
+        window.alert = () => {
+            // do nothing
+        };
 
         expect(asFragment()).toMatchSnapshot();
         fireEvent.click(getByText('Submit'));

@@ -30,8 +30,9 @@ describe('useCheckBigScreen', () => {
     });
 
     it('return window undefined', () => {
-        // @ts-ignore
-        delete global.window;
+        const globalObj:{ window?: Window } = global.window;
+        
+        delete globalObj.window;
         expect(useCheckMobileScreen()).toBe(false);
     });
 });
