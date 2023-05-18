@@ -29,7 +29,7 @@ describe('Search Functions', () => {
 
     it('filterWithSearchQuery works with empty array', () => {
         const unfilteredIndexPosts: IndexElements[] = [];
-        let filteredPosts = filterWithSearchQuery(
+        const filteredPosts = filterWithSearchQuery(
             unfilteredIndexPosts,
             'hello'
         );

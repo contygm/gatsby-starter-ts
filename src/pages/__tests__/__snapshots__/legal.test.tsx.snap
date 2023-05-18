@@ -435,7 +435,7 @@ exports[`LegalPage Cookie Policy header meta data renders correctly 1`] = `
     name="image"
   />
   <link
-    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>👤</text></svg>"
+    href="../../images/icon.png"
     rel="icon"
   />
 </DocumentFragment>
@@ -876,7 +876,7 @@ exports[`LegalPage Copyright header meta data renders correctly 1`] = `
     name="image"
   />
   <link
-    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>👤</text></svg>"
+    href="../../images/icon.png"
     rel="icon"
   />
 </DocumentFragment>
@@ -1317,7 +1317,7 @@ exports[`LegalPage Disclaimer header meta data renders correctly 1`] = `
     name="image"
   />
   <link
-    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>👤</text></svg>"
+    href="../../images/icon.png"
     rel="icon"
   />
 </DocumentFragment>
@@ -1337,7 +1337,7 @@ exports[`LegalPage Legal header meta data renders correctly 1`] = `
     name="image"
   />
   <link
-    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>👤</text></svg>"
+    href="../../images/icon.png"
     rel="icon"
   />
 </DocumentFragment>
@@ -2299,7 +2299,7 @@ exports[`LegalPage Privacy Policy header meta data renders correctly 1`] = `
     name="image"
   />
   <link
-    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>👤</text></svg>"
+    href="../../images/icon.png"
     rel="icon"
   />
 </DocumentFragment>
@@ -2740,7 +2740,7 @@ exports[`LegalPage Terms and Conditions header meta data renders correctly 1`] =
     name="image"
   />
   <link
-    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>👤</text></svg>"
+    href="../../images/icon.png"
     rel="icon"
   />
 </DocumentFragment>

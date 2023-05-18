@@ -340,7 +340,7 @@ exports[`Wiki Posts Page ToC shows properly on mobile: closed table of contents 
                       class="baseball-card-img"
                     >
                       <img
-                        alt="wiki-post-header"
+                        alt="summary icon"
                         image="[object Object]"
                       />
                     </figure>
@@ -1455,7 +1455,7 @@ exports[`Wiki Posts Page ToC shows properly on mobile: closed table of contents 
                       class="baseball-card-img"
                     >
                       <img
-                        alt="wiki-post-header"
+                        alt="summary icon"
                         image="[object Object]"
                       />
                     </figure>
@@ -2570,7 +2570,7 @@ exports[`Wiki Posts Page ToC shows properly on mobile: open table of contents 1`
                       class="baseball-card-img"
                     >
                       <img
-                        alt="wiki-post-header"
+                        alt="summary icon"
                         image="[object Object]"
                       />
                     </figure>
@@ -3359,7 +3359,7 @@ exports[`Wiki Posts Page header meta data renders correctly 1`] = `
     name="image"
   />
   <link
-    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>👤</text></svg>"
+    href="../../images/icon.png"
     rel="icon"
   />
 </DocumentFragment>
@@ -3705,7 +3705,7 @@ exports[`Wiki Posts Page renders correctly 1`] = `
                       class="baseball-card-img"
                     >
                       <img
-                        alt="wiki-post-header"
+                        alt="summary icon"
                         image="[object Object]"
                       />
                     </figure>
@@ -4800,7 +4800,7 @@ exports[`Wiki Posts Page renders correctly on medium view 1`] = `
                       class="baseball-card-img"
                     >
                       <img
-                        alt="wiki-post-header"
+                        alt="summary icon"
                         image="[object Object]"
                       />
                     </figure>
@@ -5915,7 +5915,7 @@ exports[`Wiki Posts Page renders correctly on mobile view 1`] = `
                       class="baseball-card-img"
                     >
                       <img
-                        alt="wiki-post-header"
+                        alt="summary icon"
                         image="[object Object]"
                       />
                     </figure>
