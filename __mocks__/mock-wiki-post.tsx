@@ -46,9 +46,9 @@ export const mockWikiPost: IndexFilterWrapperProps<WikiPostElements> = {
     }
 };
 
-export const mockWikiPostData = mockPageProps(
-    mockWikiPost
-) as PageProps<IndexFilterWrapperProps<WikiPostElements>>;
-export const mockWikiPostHeadData = mockHeadProps(
-    mockWikiPost
-) as HeadProps<IndexFilterWrapperProps<WikiPostElements>>;
+export const mockWikiPostData = mockPageProps(mockWikiPost) as PageProps<
+    IndexFilterWrapperProps<WikiPostElements>
+>;
+export const mockWikiPostHeadData = mockHeadProps(mockWikiPost) as HeadProps<
+    IndexFilterWrapperProps<WikiPostElements>
+>;

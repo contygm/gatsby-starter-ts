@@ -46,7 +46,10 @@ export const PostIndex = (props: PostIndexProps) => {
     useEffect(() => {
         if (loadMore && hasMore) {
             const postCount = displayPosts.length;
-            const nextResults = props.allPosts.slice(postCount, postCount + props.increment);
+            const nextResults = props.allPosts.slice(
+                postCount,
+                postCount + props.increment
+            );
             // combine old displayPosts with next batch of posts
             setDisplayPosts([...displayPosts, ...nextResults]);
             setLoadMore(false);

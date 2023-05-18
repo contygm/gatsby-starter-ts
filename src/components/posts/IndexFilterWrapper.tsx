@@ -60,8 +60,12 @@ const IndexFilterWrapper = ({
     const unfilteredPosts = index.nodes;
     const tags = allTags.group;
     const [searchQuery, setSearchQuery] = useState('');
-    const tagFromQuery = location ? location.search.match(/(?<=\btag=)\w+/g) : null;
-    const [tagFilter, setTagFilter] = useState(tagFromQuery ? tagFromQuery[0] : '');
+    const tagFromQuery = location
+        ? location.search.match(/(?<=\btag=)\w+/g)
+        : null;
+    const [tagFilter, setTagFilter] = useState(
+        tagFromQuery ? tagFromQuery[0] : ''
+    );
     const [allPosts, setAllPosts] = useState(unfilteredPosts);
 
     const handleFilterUpdate = (e: SyntheticEvent) => {
@@ -82,8 +86,8 @@ const IndexFilterWrapper = ({
     function filterOnTag(tagFilter: string, posts: any[]) {
         if (tagFilter === 'all' || tagFilter === '') {
             return posts;
-        } 
-        return posts.filter(post =>
+        }
+        return posts.filter((post) =>
             post.frontmatter.tags.includes(tagFilter)
         );
     }
@@ -91,7 +95,7 @@ const IndexFilterWrapper = ({
     useEffect(() => {
         if (searchQuery === '') {
             const temp = filterOnTag(tagFilter, unfilteredPosts);
-            setAllPosts(temp)
+            setAllPosts(temp);
         }
     }, [tagFilter]);
 
@@ -102,7 +106,7 @@ const IndexFilterWrapper = ({
                 searchQuery
             );
             setAllPosts(filteredData);
-        } 
+        }
     }, [searchQuery]);
 
     return (

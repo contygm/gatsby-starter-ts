@@ -15,7 +15,7 @@ import React, { SyntheticEvent } from 'react';
  */
 /**
  * NOTE: handle filter update can be implemented later to avoid the full page reload. If this is done,
- * two functionalities should be added: 
+ * two functionalities should be added:
  * - scroll to the top of the page when/after user selects filter
  * - update the page history to reflect the new tag
  */

@@ -36,9 +36,9 @@ export const mockBlogPost: IndexFilterWrapperProps<BlogPostElements> = {
     }
 };
 
-export const mockBlogPostData = mockPageProps(
-    mockBlogPost
-) as PageProps<IndexFilterWrapperProps<BlogPostElements>>;
-export const mockBlogPostHeadData = mockHeadProps(
-    mockBlogPost
-) as HeadProps<IndexFilterWrapperProps<BlogPostElements>>;
+export const mockBlogPostData = mockPageProps(mockBlogPost) as PageProps<
+    IndexFilterWrapperProps<BlogPostElements>
+>;
+export const mockBlogPostHeadData = mockHeadProps(mockBlogPost) as HeadProps<
+    IndexFilterWrapperProps<BlogPostElements>
+>;

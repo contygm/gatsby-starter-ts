@@ -6,7 +6,7 @@ import { mockGlossary } from '../../../../__mocks__/mock-glossary-page';
 
 describe('IndexFilterWrapper', () => {
     it('searches blog correctly and clears search bar', () => {
-        const location = {search: ''};
+        const location = { search: '' };
         const { asFragment, getByTestId, getAllByTestId } = render(
             <IndexFilterWrapper
                 allTags={mockBlogs.allTags}
@@ -28,7 +28,7 @@ describe('IndexFilterWrapper', () => {
     });
 
     it('searches glossary correctly', () => {
-        const location = {search: ''};
+        const location = { search: '' };
         const { asFragment, getByTestId, getAllByTestId } = render(
             <IndexFilterWrapper
                 allTags={mockGlossary.allTags}
@@ -53,7 +53,7 @@ describe('IndexFilterWrapper', () => {
     });
 
     it('searches glossary html correctly', () => {
-        const location = {search: ''};
+        const location = { search: '' };
 
         const { asFragment, getByTestId, getAllByTestId } = render(
             <IndexFilterWrapper
@@ -79,8 +79,8 @@ describe('IndexFilterWrapper', () => {
     });
 
     it('filters based on tag from query correctly', () => {
-        const location = {search: '?tag=one'};
-        const { asFragment, getAllByTestId} = render(
+        const location = { search: '?tag=one' };
+        const { asFragment, getAllByTestId } = render(
             <IndexFilterWrapper
                 allTags={mockBlogs.allTags}
                 index={mockBlogs.index}

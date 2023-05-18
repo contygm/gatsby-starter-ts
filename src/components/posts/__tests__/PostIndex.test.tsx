@@ -5,7 +5,7 @@ import { mockBlogPageData } from '../../../../__mocks__/mock-blog-page';
 
 describe('PostIndex', () => {
     it('default renders and load btn works correctly', () => {
-        const { asFragment, getByText, getAllByTestId, queryByText} = render(
+        const { asFragment, getByText, getAllByTestId, queryByText } = render(
             <PostIndex
                 allPosts={mockBlogPageData.data.index.nodes}
                 increment={2}

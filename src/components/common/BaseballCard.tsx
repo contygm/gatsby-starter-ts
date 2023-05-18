@@ -18,7 +18,7 @@ const BaseballCard = ({
                     <div className="media">
                         <figure className="baseball-card-img">
                             <GatsbyImage
-                                alt={'wiki-post-header'}
+                                alt={'summary icon'}
                                 image={image}
                             />
                         </figure>

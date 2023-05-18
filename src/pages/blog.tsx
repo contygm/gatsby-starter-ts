@@ -15,7 +15,7 @@ import IndexFilterWrapper from '../components/posts/IndexFilterWrapper';
  */
 const BlogIndex = ({
     location,
-    data: { index, allTags }, 
+    data: { index, allTags }
 }: PageProps<GenericPageProps>) => {
     return (
         <Layout>

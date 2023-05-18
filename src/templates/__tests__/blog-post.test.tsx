@@ -63,6 +63,5 @@ describe('Blog Posts Page', () => {
         fireEvent.click(getByTestId('post-toc-mobile-btn'));
         expect(asFragment()).toMatchSnapshot('closed table of contents w btn');
         expect(queryByRole('widget', { hidden: false })).toBeNull();
-
     });
 });

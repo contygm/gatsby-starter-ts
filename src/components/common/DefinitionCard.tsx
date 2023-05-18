@@ -23,7 +23,7 @@ interface DefinitionCardProps {
  *
  * @memberof DefinitionCard
  */
-const TitleRow = (props : {
+const TitleRow = (props: {
     title: string;
     syllables: string;
     phonetics: string;
@@ -45,23 +45,19 @@ const TitleRow = (props : {
                 <div className="centered-level">
                     <div>
                         <p className="heading">Syllables</p>
-                        <p className="subheading">
-                            {props.syllables}
-                        </p>
+                        <p className="subheading">{props.syllables}</p>
                     </div>
                 </div>
                 <div className="centered-level">
                     <div>
                         <p className="heading">Phonetics</p>
-                        <p className="subheading">
-                            {props.phonetics}
-                        </p>
+                        <p className="subheading">{props.phonetics}</p>
                     </div>
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
 /**
  * A subcomponent for similar words and related posts
@@ -72,12 +68,12 @@ const TitleRow = (props : {
  *
  * @memberof DefinitionCard
  */
-const SimilarWordsRelatedPosts = (props: { 
-    similarWords: string[], 
+const SimilarWordsRelatedPosts = (props: {
+    similarWords: string[];
     relatedPosts: {
         title: string;
         slug: string;
-    }[]
+    }[];
 }) => {
     return (
         <div className="content">
@@ -86,19 +82,13 @@ const SimilarWordsRelatedPosts = (props: {
                     <div>
                         <h4>Similar Words:</h4>
                         <ol>
-                            {props.similarWords.map(
-                                (word: string) => {
-                                    return (
-                                        <li key={word}>
-                                            <Link
-                                                to={`#${word}`}
-                                            >
-                                                {word}
-                                            </Link>
-                                        </li>
-                                    );
-                                }
-                            )}
+                            {props.similarWords.map((word: string) => {
+                                return (
+                                    <li key={word}>
+                                        <Link to={`#${word}`}>{word}</Link>
+                                    </li>
+                                );
+                            })}
                         </ol>
                     </div>
                 </div>
@@ -108,15 +98,10 @@ const SimilarWordsRelatedPosts = (props: {
                             <h4>RelatedPosts:</h4>
                             <ol>
                                 {props.relatedPosts.map(
-                                    (post: {
-                                        title: string;
-                                        slug: string;
-                                    }) => {
+                                    (post: { title: string; slug: string }) => {
                                         return (
                                             <li key={post.slug}>
-                                                <Link
-                                                    to={`${post.slug}`}
-                                                >
+                                                <Link to={`${post.slug}`}>
                                                     {post.title}
                                                 </Link>
                                             </li>
@@ -129,8 +114,8 @@ const SimilarWordsRelatedPosts = (props: {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
 /**
  * A subcomponent for tags
@@ -138,29 +123,27 @@ const SimilarWordsRelatedPosts = (props: {
  *
  * @memberof DefinitionCard
  */
-const Tags = (props: {tags: string[]}) => {
+const Tags = (props: { tags: string[] }) => {
     return (
         <div className="card-footer">
             <p className="definition-card-tag-title">Tags:</p>
 
             <div className="tags">
-                {props.tags.map(
-                    (tag: string) => {
-                        return (
-                            <Link
-                                to={`?tag=${tag}`}
-                                className="definition-card-tag"
-                                key={tag}
-                            >
-                                {tag}
-                            </Link>
-                        );
-                    }
-                )}
+                {props.tags.map((tag: string) => {
+                    return (
+                        <Link
+                            to={`?tag=${tag}`}
+                            className="definition-card-tag"
+                            key={tag}
+                        >
+                            {tag}
+                        </Link>
+                    );
+                })}
             </div>
         </div>
-    )
-}
+    );
+};
 
 /**
  * A component for Glossary definitions. By default, this card will always include:
@@ -212,15 +195,16 @@ export const DefinitionCard = (props: DefinitionCardProps) => {
                 {/* similar words and related posts */}
                 {props.includeAll && (
                     <>
-                        <SimilarWordsRelatedPosts 
-                            similarWords={props.definition.frontmatter.similarWords}
-                            relatedPosts={props.definition.frontmatter.relatedPosts}
+                        <SimilarWordsRelatedPosts
+                            similarWords={
+                                props.definition.frontmatter.similarWords
+                            }
+                            relatedPosts={
+                                props.definition.frontmatter.relatedPosts
+                            }
                         />
-                        <Tags 
-                            tags={props.definition.frontmatter.tags} 
-                        />
+                        <Tags tags={props.definition.frontmatter.tags} />
                     </>
-                     
                 )}
             </div>
         </div>

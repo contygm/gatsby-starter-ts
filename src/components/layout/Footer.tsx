@@ -70,7 +70,7 @@ const DropUpBtn = (props: {
     links: {
         label: string;
         slug: string;
-    }[]
+    }[];
 }) => {
     return (
         <li
@@ -166,7 +166,7 @@ export const Footer = (props: { author: string }) => {
                             pageUrl="/legal/privacy-policy"
                         />
                         {/* contains the rest of the 'legal' pages */}
-                        <DropUpBtn links={LEGAL_LINKS}/>
+                        <DropUpBtn links={LEGAL_LINKS} />
                     </div>
                 </ul>
                 {/* Social media links to the left */}
