@@ -1,9 +1,9 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { SideBarPostTile, PostTileProps } from '../SideBarPostTile';
+import { SideBarPostTile, SideBarPostTileProps } from '../SideBarPostTile';
 import { IGatsbyImageData } from 'gatsby-plugin-image';
 
-const mockData: PostTileProps = {
+const mockData: SideBarPostTileProps = {
     title: 'A Blog Title',
     excerpt: 'Cheesecake lemon drops cheesecake lemon drops pastry danish…',
     slug: '/blog-url/',

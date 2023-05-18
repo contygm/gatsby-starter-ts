@@ -2,6 +2,30 @@ import { GatsbyNode } from 'gatsby';
 import path from 'path';
 import { createFilePath } from 'gatsby-source-filesystem';
 
+type GraphQLNode = {
+    id: string;
+    fields:  {
+        slug: string
+    }
+    frontmatter: {
+        title: string
+        type: string
+        related: string[]
+    }
+}
+
+interface GraphQLResult {
+    errors?: any;
+    data?: {
+        blogs: {
+            nodes: GraphQLNode[]
+        },
+        wikis: {
+            nodes: GraphQLNode[]
+        }
+    }
+}
+
 export const createPages: GatsbyNode['createPages'] = async ({
     graphql,
     actions,
@@ -14,7 +38,7 @@ export const createPages: GatsbyNode['createPages'] = async ({
     const wikiTemplate = path.resolve(`./src/templates/wiki-post.tsx`);
 
     // Get all markdown posts
-    const result = await graphql(`
+    const result: GraphQLResult = await graphql(`
         {
             blogs: allMarkdownRemark(
                 sort: { fields: [frontmatter___date], order: DESC }
@@ -64,9 +88,9 @@ export const createPages: GatsbyNode['createPages'] = async ({
     // Create blog posts pages
     // But only if there's at least one markdown file found at "content/blog" (defined in gatsby-config.js)
     // `context` is available in the template as a prop and as a variable in GraphQL
-    const allBlogs = result.data.blogs.nodes;
-    if (allBlogs.length > 0) {
-        allBlogs.forEach((post, index) => {
+    const allBlogs = result.data?.blogs.nodes;
+    if (allBlogs && allBlogs.length > 0) {
+        allBlogs.forEach((post, index)  => {
             const previousPostId = index === 0 ? null : allBlogs[index - 1].id;
             const nextPostId =
                 index === allBlogs.length - 1 ? null : allBlogs[index + 1].id;
@@ -84,9 +108,9 @@ export const createPages: GatsbyNode['createPages'] = async ({
         });
     }
 
-    const allWikis = result.data.wikis.nodes;
-    if (allWikis.length > 0) {
-        allWikis.forEach((post, index) => {
+    const allWikis = result.data?.wikis.nodes;
+    if (allWikis && allWikis.length > 0) {
+        allWikis.forEach((post, index)  => {
             const previousPostId = index === 0 ? null : allWikis[index - 1].id;
             const nextPostId =
                 index === allWikis.length - 1 ? null : allWikis[index + 1].id;

@@ -1,5 +1,4 @@
 import React, { SyntheticEvent, useEffect, useState } from 'react';
-import { PageProps } from 'gatsby';
 import { SearchFilterRow, PostIndex, GlossaryIndex } from '..';
 import { filterWithSearchQuery } from '../../utils/helpers/searchFunctions';
 

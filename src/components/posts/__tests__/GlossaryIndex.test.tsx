@@ -31,7 +31,7 @@ describe('GlossaryIndex', () => {
              * because in this try, we export().toBeUndefined().
              */
             expect(getAllByTestId('definition-card')).toBeUndefined();
-        } catch (e) {
+        } catch (e: any) {
             // This should succeed, as we expect an undefined error
             expect(e.message).toContain('Unable to find an element by');
         }
