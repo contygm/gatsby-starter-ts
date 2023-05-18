@@ -46,8 +46,9 @@ describe('Mobile Tests', () => {
     });
 
     it('check mobile footer styling', () => {
+        cy.scrollTo('bottom');
         // all icon links show
-        cy.get(`[data-cy=footer-falink]`)
+        cy.get(`[data-cy=faicon-link]`)
             .should('be.visible')
             .then((icons) => {
                 expect(icons, '3 footer icons').to.have.length(3);

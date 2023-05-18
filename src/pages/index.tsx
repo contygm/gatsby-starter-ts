@@ -49,7 +49,7 @@ const BlogTile = (props: { post: IndexElements }) => {
             <div className="home-blog-tile-fig-wrapper">
                 <figure className="home-blog-tile-fig">
                     <p className="home-blog-tile-image-wrapper">
-                        <img src="https://bulma.io/images/placeholders/128x128.png" />
+                        <img src="https://bulma.io/images/placeholders/128x128.png" alt={`image for ${props.post.frontmatter.title}`}/>
                     </p>
                 </figure>
                 <div className="home-blog-tile-content">
@@ -93,7 +93,7 @@ const WikiTile = (props: { post: IndexElements }) => {
             <div className="card-image">
                 <figure className="image">
                     <p className="is-128x128">
-                        <img src="https://bulma.io/images/placeholders/128x128.png" />
+                        <img src="https://bulma.io/images/placeholders/128x128.png" alt={`image for ${props.post.frontmatter.title}`}/>
                     </p>
                 </figure>
             </div>
@@ -130,7 +130,7 @@ const NewTile = (props: { nodes: IndexElements[] }) => {
                 <div className="home-new-tile-card">
                     <div className="card-image">
                         <figure className="home-new-tile-main-card-image">
-                            <img src="https://bulma.io/images/placeholders/128x128.png" />
+                            <img src="https://bulma.io/images/placeholders/128x128.png" alt='main featured blog image'/>
                         </figure>
                     </div>
                     <div className="home-new-tile-card-content-overlay">
@@ -181,7 +181,7 @@ const NewTile = (props: { nodes: IndexElements[] }) => {
                                     >
                                         <div className="card-image">
                                             <figure className="image is-5by3 ">
-                                                <img src="https://bulma.io/images/placeholders/128x128.png" />
+                                                <img src="https://bulma.io/images/placeholders/128x128.png" alt={`featured image for ${post.frontmatter.title}`}/>
                                             </figure>
                                         </div>
                                         <div className="home-new-tile-card-content-overlay">
