@@ -84,8 +84,9 @@
 // gloss page layout
 .glossary-content-wrapper {
 	@extend .column;
-	@extend .is-three-fifths-widescreen;
 	@extend .is-four-fifths;
+	@extend .is-three-fifths-widescreen;
+	@extend .is-full-desktop;
 	@extend .is-narrow;
 }
 
