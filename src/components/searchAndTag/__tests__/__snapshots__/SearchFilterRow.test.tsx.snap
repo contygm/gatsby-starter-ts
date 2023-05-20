@@ -47,13 +47,14 @@ exports[`SearchFilterRow renders correctly with a query 1`] = `
           <div
             class="tag-list-wrapper"
           >
-            <div
+            <a
               class="tag-wrapper"
+              href="?tag=all"
+              id="all"
             >
               <div
-                class="tag-active"
+                class="tag-inactive"
                 data-testid="all"
-                id="all"
               >
                 All
               </div>
@@ -62,20 +63,20 @@ exports[`SearchFilterRow renders correctly with a query 1`] = `
               >
                 3
               </span>
-            </div>
+            </a>
             <a
               class="tag-wrapper"
               href="?tag=three"
               id="three"
             >
               <div
-                class="tag-base"
+                class="tag-inactive"
                 data-testid="three"
               >
                 three
               </div>
               <span
-                class="tag-count-disabled"
+                class="tag-count-enabled"
               >
                 3
               </span>
@@ -86,13 +87,13 @@ exports[`SearchFilterRow renders correctly with a query 1`] = `
               id="two"
             >
               <div
-                class="tag-base"
+                class="tag-inactive"
                 data-testid="two"
               >
                 two
               </div>
               <span
-                class="tag-count-disabled"
+                class="tag-count-enabled"
               >
                 2
               </span>
@@ -103,13 +104,13 @@ exports[`SearchFilterRow renders correctly with a query 1`] = `
               id="one"
             >
               <div
-                class="tag-base"
+                class="tag-inactive"
                 data-testid="one"
               >
                 one
               </div>
               <span
-                class="tag-count-disabled"
+                class="tag-count-enabled"
               >
                 1
               </span>
@@ -145,7 +146,6 @@ exports[`SearchFilterRow renders correctly with an active tag 1`] = `
               <input
                 class="input"
                 data-testid="searchPost"
-                disabled=""
                 name="searchPost"
                 placeholder="Find a post"
                 type="search"
@@ -158,7 +158,6 @@ exports[`SearchFilterRow renders correctly with an active tag 1`] = `
               <button
                 class="primary-button"
                 data-testid="searchPostSubmit"
-                disabled=""
               >
                 Search
               </button>
@@ -171,13 +170,14 @@ exports[`SearchFilterRow renders correctly with an active tag 1`] = `
           <div
             class="tag-list-wrapper"
           >
-            <div
+            <a
               class="tag-wrapper"
+              href="?tag=all"
+              id="all"
             >
               <div
                 class="tag-inactive"
                 data-testid="all"
-                id="all"
               >
                 All
               </div>
@@ -186,7 +186,7 @@ exports[`SearchFilterRow renders correctly with an active tag 1`] = `
               >
                 3
               </span>
-            </div>
+            </a>
             <a
               class="tag-wrapper"
               href="?tag=three"
@@ -293,13 +293,14 @@ exports[`SearchFilterRow renders correctly without a query 1`] = `
           <div
             class="tag-list-wrapper"
           >
-            <div
+            <a
               class="tag-wrapper"
+              href="?tag=all"
+              id="all"
             >
               <div
                 class="tag-inactive"
                 data-testid="all"
-                id="all"
               >
                 All
               </div>
@@ -308,7 +309,7 @@ exports[`SearchFilterRow renders correctly without a query 1`] = `
               >
                 3
               </span>
-            </div>
+            </a>
             <a
               class="tag-wrapper"
               href="?tag=three"

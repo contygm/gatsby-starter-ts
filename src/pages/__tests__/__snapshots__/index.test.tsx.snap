@@ -132,11 +132,16 @@ exports[`HomePage renders correctly 1`] = `
             <div
               class="home-new-tile-section-wrapper"
             >
-              <div
+              <a
                 class="home-new-tile-main-wrapper"
+                href="/blog/baking-tutorial/"
+              />
+              <div
+                class="home-new-tile-card"
               >
-                <div
-                  class="home-new-tile-card"
+                <a
+                  class="home-new-tile-main-wrapper"
+                  href="/blog/baking-tutorial/"
                 >
                   <div
                     class="card-image"
@@ -145,15 +150,25 @@ exports[`HomePage renders correctly 1`] = `
                       class="home-new-tile-main-card-image"
                     >
                       <img
+                        alt="main featured blog image"
                         src="https://bulma.io/images/placeholders/128x128.png"
                       />
                     </figure>
                   </div>
+                </a>
+                <div
+                  class="home-new-tile-card-content-overlay"
+                >
+                  <a
+                    class="home-new-tile-main-wrapper"
+                    href="/blog/baking-tutorial/"
+                  />
                   <div
-                    class="home-new-tile-card-content-overlay"
+                    class="content"
                   >
-                    <div
-                      class="content"
+                    <a
+                      class="home-new-tile-main-wrapper"
+                      href="/blog/baking-tutorial/"
                     >
                       <p
                         class="home-new-tile-card-content-title"
@@ -174,22 +189,22 @@ exports[`HomePage renders correctly 1`] = `
                       >
                         a baking tutorial
                       </p>
-                      <a
-                        href="/blog/baking-tutorial/"
-                      >
-                        Read more...
-                      </a>
-                    </div>
-                  </div>
-                  <div
-                    class="home-new-tile-card-tag-wrapper"
-                  >
-                    <span
-                      class="home-new-tile-main-card-tag"
+                    </a>
+                    <a
+                      href="/blog/baking-tutorial/"
                     >
-                      FEATURED
-                    </span>
+                      Read more...
+                    </a>
                   </div>
+                </div>
+                <div
+                  class="home-new-tile-card-tag-wrapper"
+                >
+                  <span
+                    class="home-new-tile-main-card-tag"
+                  >
+                    FEATURED
+                  </span>
                 </div>
               </div>
               <div
@@ -211,6 +226,7 @@ exports[`HomePage renders correctly 1`] = `
                           class="image is-5by3 "
                         >
                           <img
+                            alt="featured image for 10 Best Things"
                             src="https://bulma.io/images/placeholders/128x128.png"
                           />
                         </figure>
@@ -261,6 +277,7 @@ exports[`HomePage renders correctly 1`] = `
                           class="image is-5by3 "
                         >
                           <img
+                            alt="featured image for Guide"
                             src="https://bulma.io/images/placeholders/128x128.png"
                           />
                         </figure>
@@ -329,11 +346,16 @@ exports[`HomePage renders correctly 1`] = `
             <div
               class="half-col"
             >
-              <div
+              <a
                 class="home-blog-tile"
+                href="/blog/baking-tutorial/"
+              />
+              <div
+                class="home-blog-tile-fig-wrapper"
               >
-                <div
-                  class="home-blog-tile-fig-wrapper"
+                <a
+                  class="home-blog-tile"
+                  href="/blog/baking-tutorial/"
                 >
                   <figure
                     class="home-blog-tile-fig"
@@ -342,15 +364,25 @@ exports[`HomePage renders correctly 1`] = `
                       class="home-blog-tile-image-wrapper"
                     >
                       <img
+                        alt="image for Baking Tutorial"
                         src="https://bulma.io/images/placeholders/128x128.png"
                       />
                     </p>
                   </figure>
+                </a>
+                <div
+                  class="home-blog-tile-content"
+                >
+                  <a
+                    class="home-blog-tile"
+                    href="/blog/baking-tutorial/"
+                  />
                   <div
-                    class="home-blog-tile-content"
+                    class="content"
                   >
-                    <div
-                      class="content"
+                    <a
+                      class="home-blog-tile"
+                      href="/blog/baking-tutorial/"
                     >
                       <p
                         class="title-four"
@@ -369,12 +401,12 @@ exports[`HomePage renders correctly 1`] = `
                       <p>
                         a baking tutorial
                       </p>
-                      <a
-                        href="/blog/baking-tutorial/"
-                      >
-                        Read more...
-                      </a>
-                    </div>
+                    </a>
+                    <a
+                      href="/blog/baking-tutorial/"
+                    >
+                      Read more...
+                    </a>
                   </div>
                 </div>
               </div>
@@ -382,11 +414,16 @@ exports[`HomePage renders correctly 1`] = `
             <div
               class="half-col"
             >
-              <div
+              <a
                 class="home-blog-tile"
+                href="/blog/ten-best-things/"
+              />
+              <div
+                class="home-blog-tile-fig-wrapper"
               >
-                <div
-                  class="home-blog-tile-fig-wrapper"
+                <a
+                  class="home-blog-tile"
+                  href="/blog/ten-best-things/"
                 >
                   <figure
                     class="home-blog-tile-fig"
@@ -395,15 +432,25 @@ exports[`HomePage renders correctly 1`] = `
                       class="home-blog-tile-image-wrapper"
                     >
                       <img
+                        alt="image for 10 Best Things"
                         src="https://bulma.io/images/placeholders/128x128.png"
                       />
                     </p>
                   </figure>
+                </a>
+                <div
+                  class="home-blog-tile-content"
+                >
+                  <a
+                    class="home-blog-tile"
+                    href="/blog/ten-best-things/"
+                  />
                   <div
-                    class="home-blog-tile-content"
+                    class="content"
                   >
-                    <div
-                      class="content"
+                    <a
+                      class="home-blog-tile"
+                      href="/blog/ten-best-things/"
                     >
                       <p
                         class="title-four"
@@ -422,12 +469,12 @@ exports[`HomePage renders correctly 1`] = `
                       <p>
                         a list of the ten best things
                       </p>
-                      <a
-                        href="/blog/ten-best-things/"
-                      >
-                        Read more...
-                      </a>
-                    </div>
+                    </a>
+                    <a
+                      href="/blog/ten-best-things/"
+                    >
+                      Read more...
+                    </a>
                   </div>
                 </div>
               </div>
@@ -435,11 +482,16 @@ exports[`HomePage renders correctly 1`] = `
             <div
               class="half-col"
             >
-              <div
+              <a
                 class="home-blog-tile"
+                href="/blog/guide/"
+              />
+              <div
+                class="home-blog-tile-fig-wrapper"
               >
-                <div
-                  class="home-blog-tile-fig-wrapper"
+                <a
+                  class="home-blog-tile"
+                  href="/blog/guide/"
                 >
                   <figure
                     class="home-blog-tile-fig"
@@ -448,15 +500,25 @@ exports[`HomePage renders correctly 1`] = `
                       class="home-blog-tile-image-wrapper"
                     >
                       <img
+                        alt="image for Guide"
                         src="https://bulma.io/images/placeholders/128x128.png"
                       />
                     </p>
                   </figure>
+                </a>
+                <div
+                  class="home-blog-tile-content"
+                >
+                  <a
+                    class="home-blog-tile"
+                    href="/blog/guide/"
+                  />
                   <div
-                    class="home-blog-tile-content"
+                    class="content"
                   >
-                    <div
-                      class="content"
+                    <a
+                      class="home-blog-tile"
+                      href="/blog/guide/"
                     >
                       <p
                         class="title-four"
@@ -475,12 +537,12 @@ exports[`HomePage renders correctly 1`] = `
                       <p>
                         a guide
                       </p>
-                      <a
-                        href="/blog/guide/"
-                      >
-                        Read more...
-                      </a>
-                    </div>
+                    </a>
+                    <a
+                      href="/blog/guide/"
+                    >
+                      Read more...
+                    </a>
                   </div>
                 </div>
               </div>
@@ -509,47 +571,62 @@ exports[`HomePage renders correctly 1`] = `
             <div
               class="third-col"
             >
+              <a
+                href="/wiki/baking-tutorial/"
+              />
               <div
                 class="card"
               >
-                <div
-                  class="card-image"
+                <a
+                  href="/wiki/baking-tutorial/"
                 >
-                  <figure
-                    class="image"
+                  <div
+                    class="card-image"
                   >
-                    <p
-                      class="is-128x128"
+                    <figure
+                      class="image"
                     >
-                      <img
-                        src="https://bulma.io/images/placeholders/128x128.png"
-                      />
-                    </p>
-                  </figure>
-                </div>
+                      <p
+                        class="is-128x128"
+                      >
+                        <img
+                          alt="image for Baking Tutorial"
+                          src="https://bulma.io/images/placeholders/128x128.png"
+                        />
+                      </p>
+                    </figure>
+                  </div>
+                </a>
                 <div
                   class="card-content"
                 >
+                  <a
+                    href="/wiki/baking-tutorial/"
+                  />
                   <div
                     class="content"
                   >
-                    <p
-                      class="title-four"
+                    <a
+                      href="/wiki/baking-tutorial/"
                     >
-                      Baking Tutorial
-                    </p>
-                    <p
-                      class="subtitle-six"
-                    >
-                      <time
-                        datetime="3-2-2021"
+                      <p
+                        class="title-four"
                       >
-                        3-2-2021
-                      </time>
-                    </p>
-                    <p>
-                      a baking tutorial
-                    </p>
+                        Baking Tutorial
+                      </p>
+                      <p
+                        class="subtitle-six"
+                      >
+                        <time
+                          datetime="3-2-2021"
+                        >
+                          3-2-2021
+                        </time>
+                      </p>
+                      <p>
+                        a baking tutorial
+                      </p>
+                    </a>
                     <a
                       href="/wiki/baking-tutorial/"
                     >
@@ -562,47 +639,62 @@ exports[`HomePage renders correctly 1`] = `
             <div
               class="third-col"
             >
+              <a
+                href="/wiki/ten-best-things/"
+              />
               <div
                 class="card"
               >
-                <div
-                  class="card-image"
+                <a
+                  href="/wiki/ten-best-things/"
                 >
-                  <figure
-                    class="image"
+                  <div
+                    class="card-image"
                   >
-                    <p
-                      class="is-128x128"
+                    <figure
+                      class="image"
                     >
-                      <img
-                        src="https://bulma.io/images/placeholders/128x128.png"
-                      />
-                    </p>
-                  </figure>
-                </div>
+                      <p
+                        class="is-128x128"
+                      >
+                        <img
+                          alt="image for 10 Best Things"
+                          src="https://bulma.io/images/placeholders/128x128.png"
+                        />
+                      </p>
+                    </figure>
+                  </div>
+                </a>
                 <div
                   class="card-content"
                 >
+                  <a
+                    href="/wiki/ten-best-things/"
+                  />
                   <div
                     class="content"
                   >
-                    <p
-                      class="title-four"
+                    <a
+                      href="/wiki/ten-best-things/"
                     >
-                      10 Best Things
-                    </p>
-                    <p
-                      class="subtitle-six"
-                    >
-                      <time
-                        datetime="2-2-2021"
+                      <p
+                        class="title-four"
                       >
-                        2-2-2021
-                      </time>
-                    </p>
-                    <p>
-                      a list of the ten best things
-                    </p>
+                        10 Best Things
+                      </p>
+                      <p
+                        class="subtitle-six"
+                      >
+                        <time
+                          datetime="2-2-2021"
+                        >
+                          2-2-2021
+                        </time>
+                      </p>
+                      <p>
+                        a list of the ten best things
+                      </p>
+                    </a>
                     <a
                       href="/wiki/ten-best-things/"
                     >
@@ -615,47 +707,62 @@ exports[`HomePage renders correctly 1`] = `
             <div
               class="third-col"
             >
+              <a
+                href="/wiki/guide/"
+              />
               <div
                 class="card"
               >
-                <div
-                  class="card-image"
+                <a
+                  href="/wiki/guide/"
                 >
-                  <figure
-                    class="image"
+                  <div
+                    class="card-image"
                   >
-                    <p
-                      class="is-128x128"
+                    <figure
+                      class="image"
                     >
-                      <img
-                        src="https://bulma.io/images/placeholders/128x128.png"
-                      />
-                    </p>
-                  </figure>
-                </div>
+                      <p
+                        class="is-128x128"
+                      >
+                        <img
+                          alt="image for Guide"
+                          src="https://bulma.io/images/placeholders/128x128.png"
+                        />
+                      </p>
+                    </figure>
+                  </div>
+                </a>
                 <div
                   class="card-content"
                 >
+                  <a
+                    href="/wiki/guide/"
+                  />
                   <div
                     class="content"
                   >
-                    <p
-                      class="title-four"
+                    <a
+                      href="/wiki/guide/"
                     >
-                      Guide
-                    </p>
-                    <p
-                      class="subtitle-six"
-                    >
-                      <time
-                        datetime="5-2-2021"
+                      <p
+                        class="title-four"
                       >
-                        5-2-2021
-                      </time>
-                    </p>
-                    <p>
-                      a guide
-                    </p>
+                        Guide
+                      </p>
+                      <p
+                        class="subtitle-six"
+                      >
+                        <time
+                          datetime="5-2-2021"
+                        >
+                          5-2-2021
+                        </time>
+                      </p>
+                      <p>
+                        a guide
+                      </p>
+                    </a>
                     <a
                       href="/wiki/guide/"
                     >
@@ -689,90 +796,107 @@ exports[`HomePage renders correctly 1`] = `
             <div
               class="half-col"
             >
+              <a
+                href="/glossary#Air"
+              />
               <div
                 class="card mb-5"
               >
+                <a
+                  href="/glossary#Air"
+                />
                 <div
                   class="card-content"
                 >
-                  <div
-                    class="media"
+                  <a
+                    href="/glossary#Air"
                   >
                     <div
-                      class="media-content"
+                      class="media"
                     >
                       <div
-                        class="level"
+                        class="media-content"
                       >
                         <div
-                          class="level-left"
+                          class="level"
                         >
                           <div
-                            class="level-item"
+                            class="level-left"
                           >
-                            <h3
-                              class="title-three"
-                              id="air"
+                            <div
+                              class="level-item"
                             >
-                              Air
-                            </h3>
-                          </div>
-                        </div>
-                        <div
-                          class="level-right"
-                        >
-                          <div
-                            class="centered-level"
-                          >
-                            <div>
-                              <p
-                                class="heading"
+                              <h3
+                                class="title-three"
+                                id="air"
                               >
-                                Syllables
-                              </p>
-                              <p
-                                class="subheading"
-                              >
-                                a·ban·don
-                              </p>
+                                Air
+                              </h3>
                             </div>
                           </div>
                           <div
-                            class="centered-level"
+                            class="level-right"
                           >
-                            <div>
-                              <p
-                                class="heading"
-                              >
-                                Phonetics
-                              </p>
-                              <p
-                                class="subheading"
-                              >
-                                əˈbandən
-                              </p>
+                            <div
+                              class="centered-level"
+                            >
+                              <div>
+                                <p
+                                  class="heading"
+                                >
+                                  Syllables
+                                </p>
+                                <p
+                                  class="subheading"
+                                >
+                                  a·ban·don
+                                </p>
+                              </div>
+                            </div>
+                            <div
+                              class="centered-level"
+                            >
+                              <div>
+                                <p
+                                  class="heading"
+                                >
+                                  Phonetics
+                                </p>
+                                <p
+                                  class="subheading"
+                                >
+                                  əˈbandən
+                                </p>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </a>
                   <div
                     class="content"
                   >
-                    <div
-                      class="container"
+                    <a
+                      href="/glossary#Air"
                     >
-                      <h3>
-                        Definition
-                      </h3>
-                      <p>
-                        Lemon drops pastry danish halvah. Lemon drops pastry danish halvah.
-                      </p>
-                    </div>
+                      <div
+                        class="container"
+                      >
+                        <h3>
+                          Definition
+                        </h3>
+                        <p>
+                          Lemon drops pastry danish halvah. Lemon drops pastry danish halvah.
+                        </p>
+                      </div>
+                    </a>
                     <div
                       class="has-text-centered"
                     >
+                      <a
+                        href="/glossary#Air"
+                      />
                       <a
                         href="/glossary#Air"
                       >
@@ -786,90 +910,107 @@ exports[`HomePage renders correctly 1`] = `
             <div
               class="half-col"
             >
+              <a
+                href="/glossary#Atom"
+              />
               <div
                 class="card mb-5"
               >
+                <a
+                  href="/glossary#Atom"
+                />
                 <div
                   class="card-content"
                 >
-                  <div
-                    class="media"
+                  <a
+                    href="/glossary#Atom"
                   >
                     <div
-                      class="media-content"
+                      class="media"
                     >
                       <div
-                        class="level"
+                        class="media-content"
                       >
                         <div
-                          class="level-left"
+                          class="level"
                         >
                           <div
-                            class="level-item"
+                            class="level-left"
                           >
-                            <h3
-                              class="title-three"
-                              id="atom"
+                            <div
+                              class="level-item"
                             >
-                              Atom
-                            </h3>
-                          </div>
-                        </div>
-                        <div
-                          class="level-right"
-                        >
-                          <div
-                            class="centered-level"
-                          >
-                            <div>
-                              <p
-                                class="heading"
+                              <h3
+                                class="title-three"
+                                id="atom"
                               >
-                                Syllables
-                              </p>
-                              <p
-                                class="subheading"
-                              >
-                                a·ban·don
-                              </p>
+                                Atom
+                              </h3>
                             </div>
                           </div>
                           <div
-                            class="centered-level"
+                            class="level-right"
                           >
-                            <div>
-                              <p
-                                class="heading"
-                              >
-                                Phonetics
-                              </p>
-                              <p
-                                class="subheading"
-                              >
-                                əˈbandən
-                              </p>
+                            <div
+                              class="centered-level"
+                            >
+                              <div>
+                                <p
+                                  class="heading"
+                                >
+                                  Syllables
+                                </p>
+                                <p
+                                  class="subheading"
+                                >
+                                  a·ban·don
+                                </p>
+                              </div>
+                            </div>
+                            <div
+                              class="centered-level"
+                            >
+                              <div>
+                                <p
+                                  class="heading"
+                                >
+                                  Phonetics
+                                </p>
+                                <p
+                                  class="subheading"
+                                >
+                                  əˈbandən
+                                </p>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </a>
                   <div
                     class="content"
                   >
-                    <div
-                      class="container"
+                    <a
+                      href="/glossary#Atom"
                     >
-                      <h3>
-                        Definition
-                      </h3>
-                      <p>
-                        Lemon drops pastry danish halvah. Lemon drops pastry danish halvah.
-                      </p>
-                    </div>
+                      <div
+                        class="container"
+                      >
+                        <h3>
+                          Definition
+                        </h3>
+                        <p>
+                          Lemon drops pastry danish halvah. Lemon drops pastry danish halvah.
+                        </p>
+                      </div>
+                    </a>
                     <div
                       class="has-text-centered"
                     >
+                      <a
+                        href="/glossary#Atom"
+                      />
                       <a
                         href="/glossary#Atom"
                       >
@@ -883,90 +1024,107 @@ exports[`HomePage renders correctly 1`] = `
             <div
               class="half-col"
             >
+              <a
+                href="/glossary#Cloud"
+              />
               <div
                 class="card mb-5"
               >
+                <a
+                  href="/glossary#Cloud"
+                />
                 <div
                   class="card-content"
                 >
-                  <div
-                    class="media"
+                  <a
+                    href="/glossary#Cloud"
                   >
                     <div
-                      class="media-content"
+                      class="media"
                     >
                       <div
-                        class="level"
+                        class="media-content"
                       >
                         <div
-                          class="level-left"
+                          class="level"
                         >
                           <div
-                            class="level-item"
+                            class="level-left"
                           >
-                            <h3
-                              class="title-three"
-                              id="cloud"
+                            <div
+                              class="level-item"
                             >
-                              Cloud
-                            </h3>
-                          </div>
-                        </div>
-                        <div
-                          class="level-right"
-                        >
-                          <div
-                            class="centered-level"
-                          >
-                            <div>
-                              <p
-                                class="heading"
+                              <h3
+                                class="title-three"
+                                id="cloud"
                               >
-                                Syllables
-                              </p>
-                              <p
-                                class="subheading"
-                              >
-                                a·ban·don
-                              </p>
+                                Cloud
+                              </h3>
                             </div>
                           </div>
                           <div
-                            class="centered-level"
+                            class="level-right"
                           >
-                            <div>
-                              <p
-                                class="heading"
-                              >
-                                Phonetics
-                              </p>
-                              <p
-                                class="subheading"
-                              >
-                                əˈbandən
-                              </p>
+                            <div
+                              class="centered-level"
+                            >
+                              <div>
+                                <p
+                                  class="heading"
+                                >
+                                  Syllables
+                                </p>
+                                <p
+                                  class="subheading"
+                                >
+                                  a·ban·don
+                                </p>
+                              </div>
+                            </div>
+                            <div
+                              class="centered-level"
+                            >
+                              <div>
+                                <p
+                                  class="heading"
+                                >
+                                  Phonetics
+                                </p>
+                                <p
+                                  class="subheading"
+                                >
+                                  əˈbandən
+                                </p>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </a>
                   <div
                     class="content"
                   >
-                    <div
-                      class="container"
+                    <a
+                      href="/glossary#Cloud"
                     >
-                      <h3>
-                        Definition
-                      </h3>
-                      <p>
-                        Lemon drops pastry danish halvah. Lemon drops pastry danish halvah.
-                      </p>
-                    </div>
+                      <div
+                        class="container"
+                      >
+                        <h3>
+                          Definition
+                        </h3>
+                        <p>
+                          Lemon drops pastry danish halvah. Lemon drops pastry danish halvah.
+                        </p>
+                      </div>
+                    </a>
                     <div
                       class="has-text-centered"
                     >
+                      <a
+                        href="/glossary#Cloud"
+                      />
                       <a
                         href="/glossary#Cloud"
                       >
@@ -980,90 +1138,107 @@ exports[`HomePage renders correctly 1`] = `
             <div
               class="half-col"
             >
+              <a
+                href="/glossary#Moon"
+              />
               <div
                 class="card mb-5"
               >
+                <a
+                  href="/glossary#Moon"
+                />
                 <div
                   class="card-content"
                 >
-                  <div
-                    class="media"
+                  <a
+                    href="/glossary#Moon"
                   >
                     <div
-                      class="media-content"
+                      class="media"
                     >
                       <div
-                        class="level"
+                        class="media-content"
                       >
                         <div
-                          class="level-left"
+                          class="level"
                         >
                           <div
-                            class="level-item"
+                            class="level-left"
                           >
-                            <h3
-                              class="title-three"
-                              id="moon"
+                            <div
+                              class="level-item"
                             >
-                              Moon
-                            </h3>
-                          </div>
-                        </div>
-                        <div
-                          class="level-right"
-                        >
-                          <div
-                            class="centered-level"
-                          >
-                            <div>
-                              <p
-                                class="heading"
+                              <h3
+                                class="title-three"
+                                id="moon"
                               >
-                                Syllables
-                              </p>
-                              <p
-                                class="subheading"
-                              >
-                                a·ban·don
-                              </p>
+                                Moon
+                              </h3>
                             </div>
                           </div>
                           <div
-                            class="centered-level"
+                            class="level-right"
                           >
-                            <div>
-                              <p
-                                class="heading"
-                              >
-                                Phonetics
-                              </p>
-                              <p
-                                class="subheading"
-                              >
-                                əˈbandən
-                              </p>
+                            <div
+                              class="centered-level"
+                            >
+                              <div>
+                                <p
+                                  class="heading"
+                                >
+                                  Syllables
+                                </p>
+                                <p
+                                  class="subheading"
+                                >
+                                  a·ban·don
+                                </p>
+                              </div>
+                            </div>
+                            <div
+                              class="centered-level"
+                            >
+                              <div>
+                                <p
+                                  class="heading"
+                                >
+                                  Phonetics
+                                </p>
+                                <p
+                                  class="subheading"
+                                >
+                                  əˈbandən
+                                </p>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </a>
                   <div
                     class="content"
                   >
-                    <div
-                      class="container"
+                    <a
+                      href="/glossary#Moon"
                     >
-                      <h3>
-                        Definition
-                      </h3>
-                      <p>
-                        Lemon drops pastry danish halvah. Lemon drops pastry danish halvah.
-                      </p>
-                    </div>
+                      <div
+                        class="container"
+                      >
+                        <h3>
+                          Definition
+                        </h3>
+                        <p>
+                          Lemon drops pastry danish halvah. Lemon drops pastry danish halvah.
+                        </p>
+                      </div>
+                    </a>
                     <div
                       class="has-text-centered"
                     >
+                      <a
+                        href="/glossary#Moon"
+                      />
                       <a
                         href="/glossary#Moon"
                       >
@@ -1077,90 +1252,107 @@ exports[`HomePage renders correctly 1`] = `
             <div
               class="half-col"
             >
+              <a
+                href="/glossary#Window"
+              />
               <div
                 class="card mb-5"
               >
+                <a
+                  href="/glossary#Window"
+                />
                 <div
                   class="card-content"
                 >
-                  <div
-                    class="media"
+                  <a
+                    href="/glossary#Window"
                   >
                     <div
-                      class="media-content"
+                      class="media"
                     >
                       <div
-                        class="level"
+                        class="media-content"
                       >
                         <div
-                          class="level-left"
+                          class="level"
                         >
                           <div
-                            class="level-item"
+                            class="level-left"
                           >
-                            <h3
-                              class="title-three"
-                              id="window"
+                            <div
+                              class="level-item"
                             >
-                              Window
-                            </h3>
-                          </div>
-                        </div>
-                        <div
-                          class="level-right"
-                        >
-                          <div
-                            class="centered-level"
-                          >
-                            <div>
-                              <p
-                                class="heading"
+                              <h3
+                                class="title-three"
+                                id="window"
                               >
-                                Syllables
-                              </p>
-                              <p
-                                class="subheading"
-                              >
-                                a·ban·don
-                              </p>
+                                Window
+                              </h3>
                             </div>
                           </div>
                           <div
-                            class="centered-level"
+                            class="level-right"
                           >
-                            <div>
-                              <p
-                                class="heading"
-                              >
-                                Phonetics
-                              </p>
-                              <p
-                                class="subheading"
-                              >
-                                əˈbandən
-                              </p>
+                            <div
+                              class="centered-level"
+                            >
+                              <div>
+                                <p
+                                  class="heading"
+                                >
+                                  Syllables
+                                </p>
+                                <p
+                                  class="subheading"
+                                >
+                                  a·ban·don
+                                </p>
+                              </div>
+                            </div>
+                            <div
+                              class="centered-level"
+                            >
+                              <div>
+                                <p
+                                  class="heading"
+                                >
+                                  Phonetics
+                                </p>
+                                <p
+                                  class="subheading"
+                                >
+                                  əˈbandən
+                                </p>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </a>
                   <div
                     class="content"
                   >
-                    <div
-                      class="container"
+                    <a
+                      href="/glossary#Window"
                     >
-                      <h3>
-                        Definition
-                      </h3>
-                      <p>
-                        Lemon drops pastry danish halvah. Lemon drops pastry danish halvah.
-                      </p>
-                    </div>
+                      <div
+                        class="container"
+                      >
+                        <h3>
+                          Definition
+                        </h3>
+                        <p>
+                          Lemon drops pastry danish halvah. Lemon drops pastry danish halvah.
+                        </p>
+                      </div>
+                    </a>
                     <div
                       class="has-text-centered"
                     >
+                      <a
+                        href="/glossary#Window"
+                      />
                       <a
                         href="/glossary#Window"
                       >
@@ -1289,7 +1481,7 @@ exports[`HomePage renders correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-/legal/copyright"
+                      data-cy="footer-link-copyright"
                       href="/legal/copyright"
                     >
                       Copyright
@@ -1300,7 +1492,7 @@ exports[`HomePage renders correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-/legal/cookie-policy"
+                      data-cy="footer-link-cookie-policy"
                       href="/legal/cookie-policy"
                     >
                       Cookie Policy
@@ -1311,7 +1503,7 @@ exports[`HomePage renders correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-/legal/terms-and-conditions"
+                      data-cy="footer-link-terms-and-conditions"
                       href="/legal/terms-and-conditions"
                     >
                       Terms and Conditions
@@ -1322,7 +1514,7 @@ exports[`HomePage renders correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-/legal/disclaimer"
+                      data-cy="footer-link-disclaimer"
                       href="/legal/disclaimer"
                     >
                       Disclaimer

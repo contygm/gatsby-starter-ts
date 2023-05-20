@@ -389,13 +389,14 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
                   <div
                     class="tag-list-wrapper"
                   >
-                    <div
+                    <a
                       class="tag-wrapper"
+                      href="?tag=all"
+                      id="all"
                     >
                       <div
                         class="tag-inactive"
                         data-testid="all"
-                        id="all"
                       >
                         All
                       </div>
@@ -404,7 +405,7 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
                       >
                         5
                       </span>
-                    </div>
+                    </a>
                     <a
                       class="tag-wrapper"
                       href="?tag=three"
@@ -1792,7 +1793,7 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-/legal/copyright"
+                      data-cy="footer-link-copyright"
                       href="/legal/copyright"
                     >
                       Copyright
@@ -1803,7 +1804,7 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-/legal/cookie-policy"
+                      data-cy="footer-link-cookie-policy"
                       href="/legal/cookie-policy"
                     >
                       Cookie Policy
@@ -1814,7 +1815,7 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-/legal/terms-and-conditions"
+                      data-cy="footer-link-terms-and-conditions"
                       href="/legal/terms-and-conditions"
                     >
                       Terms and Conditions
@@ -1825,7 +1826,7 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents 1`
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-/legal/disclaimer"
+                      data-cy="footer-link-disclaimer"
                       href="/legal/disclaimer"
                     >
                       Disclaimer
@@ -2331,13 +2332,14 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
                   <div
                     class="tag-list-wrapper"
                   >
-                    <div
+                    <a
                       class="tag-wrapper"
+                      href="?tag=all"
+                      id="all"
                     >
                       <div
                         class="tag-inactive"
                         data-testid="all"
-                        id="all"
                       >
                         All
                       </div>
@@ -2346,7 +2348,7 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
                       >
                         5
                       </span>
-                    </div>
+                    </a>
                     <a
                       class="tag-wrapper"
                       href="?tag=three"
@@ -3734,7 +3736,7 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-/legal/copyright"
+                      data-cy="footer-link-copyright"
                       href="/legal/copyright"
                     >
                       Copyright
@@ -3745,7 +3747,7 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-/legal/cookie-policy"
+                      data-cy="footer-link-cookie-policy"
                       href="/legal/cookie-policy"
                     >
                       Cookie Policy
@@ -3756,7 +3758,7 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-/legal/terms-and-conditions"
+                      data-cy="footer-link-terms-and-conditions"
                       href="/legal/terms-and-conditions"
                     >
                       Terms and Conditions
@@ -3767,7 +3769,7 @@ exports[`Glossary Page ToC shows properly on mobile: closed table of contents w 
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-/legal/disclaimer"
+                      data-cy="footer-link-disclaimer"
                       href="/legal/disclaimer"
                     >
                       Disclaimer
@@ -4273,13 +4275,14 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
                   <div
                     class="tag-list-wrapper"
                   >
-                    <div
+                    <a
                       class="tag-wrapper"
+                      href="?tag=all"
+                      id="all"
                     >
                       <div
                         class="tag-inactive"
                         data-testid="all"
-                        id="all"
                       >
                         All
                       </div>
@@ -4288,7 +4291,7 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
                       >
                         5
                       </span>
-                    </div>
+                    </a>
                     <a
                       class="tag-wrapper"
                       href="?tag=three"
@@ -5676,7 +5679,7 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-/legal/copyright"
+                      data-cy="footer-link-copyright"
                       href="/legal/copyright"
                     >
                       Copyright
@@ -5687,7 +5690,7 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-/legal/cookie-policy"
+                      data-cy="footer-link-cookie-policy"
                       href="/legal/cookie-policy"
                     >
                       Cookie Policy
@@ -5698,7 +5701,7 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-/legal/terms-and-conditions"
+                      data-cy="footer-link-terms-and-conditions"
                       href="/legal/terms-and-conditions"
                     >
                       Terms and Conditions
@@ -5709,7 +5712,7 @@ exports[`Glossary Page ToC shows properly on mobile: open table of contents 1`] 
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-/legal/disclaimer"
+                      data-cy="footer-link-disclaimer"
                       href="/legal/disclaimer"
                     >
                       Disclaimer
@@ -6215,13 +6218,14 @@ exports[`Glossary Page filters correctly 1`] = `
                   <div
                     class="tag-list-wrapper"
                   >
-                    <div
+                    <a
                       class="tag-wrapper"
+                      href="?tag=all"
+                      id="all"
                     >
                       <div
                         class="tag-inactive"
                         data-testid="all"
-                        id="all"
                       >
                         All
                       </div>
@@ -6230,7 +6234,7 @@ exports[`Glossary Page filters correctly 1`] = `
                       >
                         5
                       </span>
-                    </div>
+                    </a>
                     <a
                       class="tag-wrapper"
                       href="?tag=three"
@@ -7598,7 +7602,7 @@ exports[`Glossary Page filters correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-/legal/copyright"
+                      data-cy="footer-link-copyright"
                       href="/legal/copyright"
                     >
                       Copyright
@@ -7609,7 +7613,7 @@ exports[`Glossary Page filters correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-/legal/cookie-policy"
+                      data-cy="footer-link-cookie-policy"
                       href="/legal/cookie-policy"
                     >
                       Cookie Policy
@@ -7620,7 +7624,7 @@ exports[`Glossary Page filters correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-/legal/terms-and-conditions"
+                      data-cy="footer-link-terms-and-conditions"
                       href="/legal/terms-and-conditions"
                     >
                       Terms and Conditions
@@ -7631,7 +7635,7 @@ exports[`Glossary Page filters correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-/legal/disclaimer"
+                      data-cy="footer-link-disclaimer"
                       href="/legal/disclaimer"
                     >
                       Disclaimer
@@ -8157,13 +8161,14 @@ exports[`Glossary Page renders correctly 1`] = `
                   <div
                     class="tag-list-wrapper"
                   >
-                    <div
+                    <a
                       class="tag-wrapper"
+                      href="?tag=all"
+                      id="all"
                     >
                       <div
                         class="tag-inactive"
                         data-testid="all"
-                        id="all"
                       >
                         All
                       </div>
@@ -8172,7 +8177,7 @@ exports[`Glossary Page renders correctly 1`] = `
                       >
                         5
                       </span>
-                    </div>
+                    </a>
                     <a
                       class="tag-wrapper"
                       href="?tag=three"
@@ -9540,7 +9545,7 @@ exports[`Glossary Page renders correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-/legal/copyright"
+                      data-cy="footer-link-copyright"
                       href="/legal/copyright"
                     >
                       Copyright
@@ -9551,7 +9556,7 @@ exports[`Glossary Page renders correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-/legal/cookie-policy"
+                      data-cy="footer-link-cookie-policy"
                       href="/legal/cookie-policy"
                     >
                       Cookie Policy
@@ -9562,7 +9567,7 @@ exports[`Glossary Page renders correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-/legal/terms-and-conditions"
+                      data-cy="footer-link-terms-and-conditions"
                       href="/legal/terms-and-conditions"
                     >
                       Terms and Conditions
@@ -9573,7 +9578,7 @@ exports[`Glossary Page renders correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-/legal/disclaimer"
+                      data-cy="footer-link-disclaimer"
                       href="/legal/disclaimer"
                     >
                       Disclaimer
@@ -10079,13 +10084,14 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
                   <div
                     class="tag-list-wrapper"
                   >
-                    <div
+                    <a
                       class="tag-wrapper"
+                      href="?tag=all"
+                      id="all"
                     >
                       <div
                         class="tag-inactive"
                         data-testid="all"
-                        id="all"
                       >
                         All
                       </div>
@@ -10094,7 +10100,7 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
                       >
                         5
                       </span>
-                    </div>
+                    </a>
                     <a
                       class="tag-wrapper"
                       href="?tag=three"
@@ -11482,7 +11488,7 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-/legal/copyright"
+                      data-cy="footer-link-copyright"
                       href="/legal/copyright"
                     >
                       Copyright
@@ -11493,7 +11499,7 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-/legal/cookie-policy"
+                      data-cy="footer-link-cookie-policy"
                       href="/legal/cookie-policy"
                     >
                       Cookie Policy
@@ -11504,7 +11510,7 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-/legal/terms-and-conditions"
+                      data-cy="footer-link-terms-and-conditions"
                       href="/legal/terms-and-conditions"
                     >
                       Terms and Conditions
@@ -11515,7 +11521,7 @@ exports[`Glossary Page renders correctly on medium view 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-/legal/disclaimer"
+                      data-cy="footer-link-disclaimer"
                       href="/legal/disclaimer"
                     >
                       Disclaimer
@@ -12021,13 +12027,14 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
                   <div
                     class="tag-list-wrapper"
                   >
-                    <div
+                    <a
                       class="tag-wrapper"
+                      href="?tag=all"
+                      id="all"
                     >
                       <div
                         class="tag-inactive"
                         data-testid="all"
-                        id="all"
                       >
                         All
                       </div>
@@ -12036,7 +12043,7 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
                       >
                         5
                       </span>
-                    </div>
+                    </a>
                     <a
                       class="tag-wrapper"
                       href="?tag=three"
@@ -13424,7 +13431,7 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-/legal/copyright"
+                      data-cy="footer-link-copyright"
                       href="/legal/copyright"
                     >
                       Copyright
@@ -13435,7 +13442,7 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-/legal/cookie-policy"
+                      data-cy="footer-link-cookie-policy"
                       href="/legal/cookie-policy"
                     >
                       Cookie Policy
@@ -13446,7 +13453,7 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-/legal/terms-and-conditions"
+                      data-cy="footer-link-terms-and-conditions"
                       href="/legal/terms-and-conditions"
                     >
                       Terms and Conditions
@@ -13457,7 +13464,7 @@ exports[`Glossary Page renders correctly on mobile view 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-/legal/disclaimer"
+                      data-cy="footer-link-disclaimer"
                       href="/legal/disclaimer"
                     >
                       Disclaimer
@@ -13963,13 +13970,14 @@ exports[`Glossary Page searches glossary html correctly 1`] = `
                   <div
                     class="tag-list-wrapper"
                   >
-                    <div
+                    <a
                       class="tag-wrapper"
+                      href="?tag=all"
+                      id="all"
                     >
                       <div
                         class="tag-inactive"
                         data-testid="all"
-                        id="all"
                       >
                         All
                       </div>
@@ -13978,7 +13986,7 @@ exports[`Glossary Page searches glossary html correctly 1`] = `
                       >
                         5
                       </span>
-                    </div>
+                    </a>
                     <a
                       class="tag-wrapper"
                       href="?tag=three"
@@ -15346,7 +15354,7 @@ exports[`Glossary Page searches glossary html correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-/legal/copyright"
+                      data-cy="footer-link-copyright"
                       href="/legal/copyright"
                     >
                       Copyright
@@ -15357,7 +15365,7 @@ exports[`Glossary Page searches glossary html correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-/legal/cookie-policy"
+                      data-cy="footer-link-cookie-policy"
                       href="/legal/cookie-policy"
                     >
                       Cookie Policy
@@ -15368,7 +15376,7 @@ exports[`Glossary Page searches glossary html correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-/legal/terms-and-conditions"
+                      data-cy="footer-link-terms-and-conditions"
                       href="/legal/terms-and-conditions"
                     >
                       Terms and Conditions
@@ -15379,7 +15387,7 @@ exports[`Glossary Page searches glossary html correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-/legal/disclaimer"
+                      data-cy="footer-link-disclaimer"
                       href="/legal/disclaimer"
                     >
                       Disclaimer

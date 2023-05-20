@@ -23,7 +23,6 @@ exports[`IndexFilterWrapper filters based on tag from query correctly 1`] = `
               <input
                 class="input"
                 data-testid="searchPost"
-                disabled=""
                 name="searchPost"
                 placeholder="Find a post"
                 type="search"
@@ -36,7 +35,6 @@ exports[`IndexFilterWrapper filters based on tag from query correctly 1`] = `
               <button
                 class="primary-button"
                 data-testid="searchPostSubmit"
-                disabled=""
               >
                 Search
               </button>
@@ -49,13 +47,14 @@ exports[`IndexFilterWrapper filters based on tag from query correctly 1`] = `
           <div
             class="tag-list-wrapper"
           >
-            <div
+            <a
               class="tag-wrapper"
+              href="?tag=all"
+              id="all"
             >
               <div
                 class="tag-inactive"
                 data-testid="all"
-                id="all"
               >
                 All
               </div>
@@ -64,7 +63,7 @@ exports[`IndexFilterWrapper filters based on tag from query correctly 1`] = `
               >
                 3
               </span>
-            </div>
+            </a>
             <a
               class="tag-wrapper"
               href="?tag=three"
@@ -315,7 +314,7 @@ exports[`IndexFilterWrapper filters based on tag from query correctly 1`] = `
 </DocumentFragment>
 `;
 
-exports[`IndexFilterWrapper searches blog correctly and clears search bar 1`] = `
+exports[`IndexFilterWrapper searches blog correctly 1`] = `
 <DocumentFragment>
   <section
     class="section"
@@ -362,13 +361,14 @@ exports[`IndexFilterWrapper searches blog correctly and clears search bar 1`] = 
           <div
             class="tag-list-wrapper"
           >
-            <div
+            <a
               class="tag-wrapper"
+              href="?tag=all"
+              id="all"
             >
               <div
                 class="tag-inactive"
                 data-testid="all"
-                id="all"
               >
                 All
               </div>
@@ -377,7 +377,7 @@ exports[`IndexFilterWrapper searches blog correctly and clears search bar 1`] = 
               >
                 3
               </span>
-            </div>
+            </a>
             <a
               class="tag-wrapper"
               href="?tag=three"
@@ -761,13 +761,14 @@ exports[`IndexFilterWrapper searches glossary correctly 1`] = `
           <div
             class="tag-list-wrapper"
           >
-            <div
+            <a
               class="tag-wrapper"
+              href="?tag=all"
+              id="all"
             >
               <div
                 class="tag-inactive"
                 data-testid="all"
-                id="all"
               >
                 All
               </div>
@@ -776,7 +777,7 @@ exports[`IndexFilterWrapper searches glossary correctly 1`] = `
               >
                 5
               </span>
-            </div>
+            </a>
             <a
               class="tag-wrapper"
               href="?tag=three"
@@ -1759,13 +1760,14 @@ exports[`IndexFilterWrapper searches glossary html correctly 1`] = `
           <div
             class="tag-list-wrapper"
           >
-            <div
+            <a
               class="tag-wrapper"
+              href="?tag=all"
+              id="all"
             >
               <div
                 class="tag-inactive"
                 data-testid="all"
-                id="all"
               >
                 All
               </div>
@@ -1774,7 +1776,7 @@ exports[`IndexFilterWrapper searches glossary html correctly 1`] = `
               >
                 5
               </span>
-            </div>
+            </a>
             <a
               class="tag-wrapper"
               href="?tag=three"

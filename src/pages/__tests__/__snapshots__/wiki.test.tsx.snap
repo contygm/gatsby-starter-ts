@@ -149,13 +149,14 @@ exports[`Wiki Index Page filters correctly 1`] = `
               <div
                 class="tag-list-wrapper"
               >
-                <div
+                <a
                   class="tag-wrapper"
+                  href="?tag=all"
+                  id="all"
                 >
                   <div
                     class="tag-inactive"
                     data-testid="all"
-                    id="all"
                   >
                     All
                   </div>
@@ -164,7 +165,7 @@ exports[`Wiki Index Page filters correctly 1`] = `
                   >
                     3
                   </span>
-                </div>
+                </a>
                 <a
                   class="tag-wrapper"
                   href="?tag=three"
@@ -613,7 +614,7 @@ exports[`Wiki Index Page filters correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-/legal/copyright"
+                      data-cy="footer-link-copyright"
                       href="/legal/copyright"
                     >
                       Copyright
@@ -624,7 +625,7 @@ exports[`Wiki Index Page filters correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-/legal/cookie-policy"
+                      data-cy="footer-link-cookie-policy"
                       href="/legal/cookie-policy"
                     >
                       Cookie Policy
@@ -635,7 +636,7 @@ exports[`Wiki Index Page filters correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-/legal/terms-and-conditions"
+                      data-cy="footer-link-terms-and-conditions"
                       href="/legal/terms-and-conditions"
                     >
                       Terms and Conditions
@@ -646,7 +647,7 @@ exports[`Wiki Index Page filters correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-/legal/disclaimer"
+                      data-cy="footer-link-disclaimer"
                       href="/legal/disclaimer"
                     >
                       Disclaimer
@@ -932,13 +933,14 @@ exports[`Wiki Index Page renders correctly 1`] = `
               <div
                 class="tag-list-wrapper"
               >
-                <div
+                <a
                   class="tag-wrapper"
+                  href="?tag=all"
+                  id="all"
                 >
                   <div
                     class="tag-inactive"
                     data-testid="all"
-                    id="all"
                   >
                     All
                   </div>
@@ -947,7 +949,7 @@ exports[`Wiki Index Page renders correctly 1`] = `
                   >
                     3
                   </span>
-                </div>
+                </a>
                 <a
                   class="tag-wrapper"
                   href="?tag=three"
@@ -1396,7 +1398,7 @@ exports[`Wiki Index Page renders correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-/legal/copyright"
+                      data-cy="footer-link-copyright"
                       href="/legal/copyright"
                     >
                       Copyright
@@ -1407,7 +1409,7 @@ exports[`Wiki Index Page renders correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-/legal/cookie-policy"
+                      data-cy="footer-link-cookie-policy"
                       href="/legal/cookie-policy"
                     >
                       Cookie Policy
@@ -1418,7 +1420,7 @@ exports[`Wiki Index Page renders correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-/legal/terms-and-conditions"
+                      data-cy="footer-link-terms-and-conditions"
                       href="/legal/terms-and-conditions"
                     >
                       Terms and Conditions
@@ -1429,7 +1431,7 @@ exports[`Wiki Index Page renders correctly 1`] = `
                   >
                     <a
                       class="footer-drawer-link"
-                      data-cy="footer-link-/legal/disclaimer"
+                      data-cy="footer-link-disclaimer"
                       href="/legal/disclaimer"
                     >
                       Disclaimer

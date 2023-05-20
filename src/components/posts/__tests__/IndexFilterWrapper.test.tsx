@@ -5,7 +5,7 @@ import { mockBlogs } from '../../../../__mocks__/mock-blog-page';
 import { mockGlossary } from '../../../../__mocks__/mock-glossary-page';
 
 describe('IndexFilterWrapper', () => {
-    it('searches blog correctly and clears search bar', () => {
+    it('searches blog correctly', () => {
         const location = { search: '' };
         const { asFragment, getByTestId, getAllByTestId } = render(
             <IndexFilterWrapper
