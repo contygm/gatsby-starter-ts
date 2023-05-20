@@ -172,12 +172,12 @@ exports[`HomePage renders correctly 1`] = `
                         </time>
                       </p>
                       <p
-                        class="is-size-5"
+                        class="home-new-tile-card-content-description"
                       >
                         a baking tutorial
                       </p>
                       <button
-                        class="button is-ghost is-inverted"
+                        class="home-read-more-btn"
                       >
                         Read more...
                       </button>
@@ -187,7 +187,7 @@ exports[`HomePage renders correctly 1`] = `
                     class="home-new-tile-card-tag-wrapper"
                   >
                     <span
-                      class="home-new-tile-main-card-tag"
+                      class="home-new-tile-card-tag"
                     >
                       FEATURED
                     </span>
@@ -376,7 +376,7 @@ exports[`HomePage renders correctly 1`] = `
                         a baking tutorial
                       </p>
                       <button
-                        class="button is-ghost is-inverted"
+                        class="home-read-more-btn"
                       >
                         Read more...
                       </button>
@@ -431,7 +431,7 @@ exports[`HomePage renders correctly 1`] = `
                         a list of the ten best things
                       </p>
                       <button
-                        class="button is-ghost is-inverted"
+                        class="home-read-more-btn"
                       >
                         Read more...
                       </button>
@@ -486,7 +486,7 @@ exports[`HomePage renders correctly 1`] = `
                         a guide
                       </p>
                       <button
-                        class="button is-ghost is-inverted"
+                        class="home-read-more-btn"
                       >
                         Read more...
                       </button>
@@ -565,7 +565,7 @@ exports[`HomePage renders correctly 1`] = `
                         a baking tutorial
                       </p>
                       <button
-                        class="button is-ghost is-inverted"
+                        class="home-read-more-btn"
                       >
                         Read more...
                       </button>
@@ -623,7 +623,7 @@ exports[`HomePage renders correctly 1`] = `
                         a list of the ten best things
                       </p>
                       <button
-                        class="button is-ghost is-inverted"
+                        class="home-read-more-btn"
                       >
                         Read more...
                       </button>
@@ -681,7 +681,7 @@ exports[`HomePage renders correctly 1`] = `
                         a guide
                       </p>
                       <button
-                        class="button is-ghost is-inverted"
+                        class="home-read-more-btn"
                       >
                         Read more...
                       </button>
