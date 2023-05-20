@@ -135,13 +135,9 @@ exports[`HomePage renders correctly 1`] = `
               <a
                 class="home-new-tile-main-wrapper"
                 href="/blog/baking-tutorial/"
-              />
-              <div
-                class="home-new-tile-card"
               >
-                <a
-                  class="home-new-tile-main-wrapper"
-                  href="/blog/baking-tutorial/"
+                <div
+                  class="home-new-tile-card"
                 >
                   <div
                     class="card-image"
@@ -155,20 +151,11 @@ exports[`HomePage renders correctly 1`] = `
                       />
                     </figure>
                   </div>
-                </a>
-                <div
-                  class="home-new-tile-card-content-overlay"
-                >
-                  <a
-                    class="home-new-tile-main-wrapper"
-                    href="/blog/baking-tutorial/"
-                  />
                   <div
-                    class="content"
+                    class="home-new-tile-card-content-overlay"
                   >
-                    <a
-                      class="home-new-tile-main-wrapper"
-                      href="/blog/baking-tutorial/"
+                    <div
+                      class="content"
                     >
                       <p
                         class="home-new-tile-card-content-title"
@@ -189,24 +176,24 @@ exports[`HomePage renders correctly 1`] = `
                       >
                         a baking tutorial
                       </p>
-                    </a>
-                    <a
-                      href="/blog/baking-tutorial/"
+                      <button
+                        class="button is-ghost is-inverted"
+                      >
+                        Read more...
+                      </button>
+                    </div>
+                  </div>
+                  <div
+                    class="home-new-tile-card-tag-wrapper"
+                  >
+                    <span
+                      class="home-new-tile-main-card-tag"
                     >
-                      Read more...
-                    </a>
+                      FEATURED
+                    </span>
                   </div>
                 </div>
-                <div
-                  class="home-new-tile-card-tag-wrapper"
-                >
-                  <span
-                    class="home-new-tile-main-card-tag"
-                  >
-                    FEATURED
-                  </span>
-                </div>
-              </div>
+              </a>
               <div
                 class="home-new-tile-side-wrapper"
               >
@@ -349,13 +336,9 @@ exports[`HomePage renders correctly 1`] = `
               <a
                 class="home-blog-tile"
                 href="/blog/baking-tutorial/"
-              />
-              <div
-                class="home-blog-tile-fig-wrapper"
               >
-                <a
-                  class="home-blog-tile"
-                  href="/blog/baking-tutorial/"
+                <div
+                  class="home-blog-tile-fig-wrapper"
                 >
                   <figure
                     class="home-blog-tile-fig"
@@ -369,20 +352,11 @@ exports[`HomePage renders correctly 1`] = `
                       />
                     </p>
                   </figure>
-                </a>
-                <div
-                  class="home-blog-tile-content"
-                >
-                  <a
-                    class="home-blog-tile"
-                    href="/blog/baking-tutorial/"
-                  />
                   <div
-                    class="content"
+                    class="home-blog-tile-content"
                   >
-                    <a
-                      class="home-blog-tile"
-                      href="/blog/baking-tutorial/"
+                    <div
+                      class="content"
                     >
                       <p
                         class="title-four"
@@ -401,15 +375,15 @@ exports[`HomePage renders correctly 1`] = `
                       <p>
                         a baking tutorial
                       </p>
-                    </a>
-                    <a
-                      href="/blog/baking-tutorial/"
-                    >
-                      Read more...
-                    </a>
+                      <button
+                        class="button is-ghost is-inverted"
+                      >
+                        Read more...
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
             <div
               class="half-col"
@@ -417,13 +391,9 @@ exports[`HomePage renders correctly 1`] = `
               <a
                 class="home-blog-tile"
                 href="/blog/ten-best-things/"
-              />
-              <div
-                class="home-blog-tile-fig-wrapper"
               >
-                <a
-                  class="home-blog-tile"
-                  href="/blog/ten-best-things/"
+                <div
+                  class="home-blog-tile-fig-wrapper"
                 >
                   <figure
                     class="home-blog-tile-fig"
@@ -437,20 +407,11 @@ exports[`HomePage renders correctly 1`] = `
                       />
                     </p>
                   </figure>
-                </a>
-                <div
-                  class="home-blog-tile-content"
-                >
-                  <a
-                    class="home-blog-tile"
-                    href="/blog/ten-best-things/"
-                  />
                   <div
-                    class="content"
+                    class="home-blog-tile-content"
                   >
-                    <a
-                      class="home-blog-tile"
-                      href="/blog/ten-best-things/"
+                    <div
+                      class="content"
                     >
                       <p
                         class="title-four"
@@ -469,15 +430,15 @@ exports[`HomePage renders correctly 1`] = `
                       <p>
                         a list of the ten best things
                       </p>
-                    </a>
-                    <a
-                      href="/blog/ten-best-things/"
-                    >
-                      Read more...
-                    </a>
+                      <button
+                        class="button is-ghost is-inverted"
+                      >
+                        Read more...
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
             <div
               class="half-col"
@@ -485,13 +446,9 @@ exports[`HomePage renders correctly 1`] = `
               <a
                 class="home-blog-tile"
                 href="/blog/guide/"
-              />
-              <div
-                class="home-blog-tile-fig-wrapper"
               >
-                <a
-                  class="home-blog-tile"
-                  href="/blog/guide/"
+                <div
+                  class="home-blog-tile-fig-wrapper"
                 >
                   <figure
                     class="home-blog-tile-fig"
@@ -505,20 +462,11 @@ exports[`HomePage renders correctly 1`] = `
                       />
                     </p>
                   </figure>
-                </a>
-                <div
-                  class="home-blog-tile-content"
-                >
-                  <a
-                    class="home-blog-tile"
-                    href="/blog/guide/"
-                  />
                   <div
-                    class="content"
+                    class="home-blog-tile-content"
                   >
-                    <a
-                      class="home-blog-tile"
-                      href="/blog/guide/"
+                    <div
+                      class="content"
                     >
                       <p
                         class="title-four"
@@ -537,15 +485,15 @@ exports[`HomePage renders correctly 1`] = `
                       <p>
                         a guide
                       </p>
-                    </a>
-                    <a
-                      href="/blog/guide/"
-                    >
-                      Read more...
-                    </a>
+                      <button
+                        class="button is-ghost is-inverted"
+                      >
+                        Read more...
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         </section>
@@ -573,12 +521,9 @@ exports[`HomePage renders correctly 1`] = `
             >
               <a
                 href="/wiki/baking-tutorial/"
-              />
-              <div
-                class="card"
               >
-                <a
-                  href="/wiki/baking-tutorial/"
+                <div
+                  class="card"
                 >
                   <div
                     class="card-image"
@@ -596,18 +541,11 @@ exports[`HomePage renders correctly 1`] = `
                       </p>
                     </figure>
                   </div>
-                </a>
-                <div
-                  class="card-content"
-                >
-                  <a
-                    href="/wiki/baking-tutorial/"
-                  />
                   <div
-                    class="content"
+                    class="card-content"
                   >
-                    <a
-                      href="/wiki/baking-tutorial/"
+                    <div
+                      class="content"
                     >
                       <p
                         class="title-four"
@@ -626,27 +564,24 @@ exports[`HomePage renders correctly 1`] = `
                       <p>
                         a baking tutorial
                       </p>
-                    </a>
-                    <a
-                      href="/wiki/baking-tutorial/"
-                    >
-                      Read more...
-                    </a>
+                      <button
+                        class="button is-ghost is-inverted"
+                      >
+                        Read more...
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
             <div
               class="third-col"
             >
               <a
                 href="/wiki/ten-best-things/"
-              />
-              <div
-                class="card"
               >
-                <a
-                  href="/wiki/ten-best-things/"
+                <div
+                  class="card"
                 >
                   <div
                     class="card-image"
@@ -664,18 +599,11 @@ exports[`HomePage renders correctly 1`] = `
                       </p>
                     </figure>
                   </div>
-                </a>
-                <div
-                  class="card-content"
-                >
-                  <a
-                    href="/wiki/ten-best-things/"
-                  />
                   <div
-                    class="content"
+                    class="card-content"
                   >
-                    <a
-                      href="/wiki/ten-best-things/"
+                    <div
+                      class="content"
                     >
                       <p
                         class="title-four"
@@ -694,27 +622,24 @@ exports[`HomePage renders correctly 1`] = `
                       <p>
                         a list of the ten best things
                       </p>
-                    </a>
-                    <a
-                      href="/wiki/ten-best-things/"
-                    >
-                      Read more...
-                    </a>
+                      <button
+                        class="button is-ghost is-inverted"
+                      >
+                        Read more...
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
             <div
               class="third-col"
             >
               <a
                 href="/wiki/guide/"
-              />
-              <div
-                class="card"
               >
-                <a
-                  href="/wiki/guide/"
+                <div
+                  class="card"
                 >
                   <div
                     class="card-image"
@@ -732,18 +657,11 @@ exports[`HomePage renders correctly 1`] = `
                       </p>
                     </figure>
                   </div>
-                </a>
-                <div
-                  class="card-content"
-                >
-                  <a
-                    href="/wiki/guide/"
-                  />
                   <div
-                    class="content"
+                    class="card-content"
                   >
-                    <a
-                      href="/wiki/guide/"
+                    <div
+                      class="content"
                     >
                       <p
                         class="title-four"
@@ -762,15 +680,15 @@ exports[`HomePage renders correctly 1`] = `
                       <p>
                         a guide
                       </p>
-                    </a>
-                    <a
-                      href="/wiki/guide/"
-                    >
-                      Read more...
-                    </a>
+                      <button
+                        class="button is-ghost is-inverted"
+                      >
+                        Read more...
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         </section>
@@ -798,18 +716,12 @@ exports[`HomePage renders correctly 1`] = `
             >
               <a
                 href="/glossary#Air"
-              />
-              <div
-                class="card mb-5"
               >
-                <a
-                  href="/glossary#Air"
-                />
                 <div
-                  class="card-content"
+                  class="card mb-5"
                 >
-                  <a
-                    href="/glossary#Air"
+                  <div
+                    class="card-content"
                   >
                     <div
                       class="media"
@@ -873,12 +785,8 @@ exports[`HomePage renders correctly 1`] = `
                         </div>
                       </div>
                     </div>
-                  </a>
-                  <div
-                    class="content"
-                  >
-                    <a
-                      href="/glossary#Air"
+                    <div
+                      class="content"
                     >
                       <div
                         class="container"
@@ -890,40 +798,31 @@ exports[`HomePage renders correctly 1`] = `
                           Lemon drops pastry danish halvah. Lemon drops pastry danish halvah.
                         </p>
                       </div>
-                    </a>
-                    <div
-                      class="has-text-centered"
-                    >
-                      <a
-                        href="/glossary#Air"
-                      />
-                      <a
-                        href="/glossary#Air"
+                      <div
+                        class="has-text-centered"
                       >
-                        Read more...
-                      </a>
+                        <button
+                          class="button is-ghost is-inverted"
+                        >
+                          Read more...
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
             <div
               class="half-col"
             >
               <a
                 href="/glossary#Atom"
-              />
-              <div
-                class="card mb-5"
               >
-                <a
-                  href="/glossary#Atom"
-                />
                 <div
-                  class="card-content"
+                  class="card mb-5"
                 >
-                  <a
-                    href="/glossary#Atom"
+                  <div
+                    class="card-content"
                   >
                     <div
                       class="media"
@@ -987,12 +886,8 @@ exports[`HomePage renders correctly 1`] = `
                         </div>
                       </div>
                     </div>
-                  </a>
-                  <div
-                    class="content"
-                  >
-                    <a
-                      href="/glossary#Atom"
+                    <div
+                      class="content"
                     >
                       <div
                         class="container"
@@ -1004,40 +899,31 @@ exports[`HomePage renders correctly 1`] = `
                           Lemon drops pastry danish halvah. Lemon drops pastry danish halvah.
                         </p>
                       </div>
-                    </a>
-                    <div
-                      class="has-text-centered"
-                    >
-                      <a
-                        href="/glossary#Atom"
-                      />
-                      <a
-                        href="/glossary#Atom"
+                      <div
+                        class="has-text-centered"
                       >
-                        Read more...
-                      </a>
+                        <button
+                          class="button is-ghost is-inverted"
+                        >
+                          Read more...
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
             <div
               class="half-col"
             >
               <a
                 href="/glossary#Cloud"
-              />
-              <div
-                class="card mb-5"
               >
-                <a
-                  href="/glossary#Cloud"
-                />
                 <div
-                  class="card-content"
+                  class="card mb-5"
                 >
-                  <a
-                    href="/glossary#Cloud"
+                  <div
+                    class="card-content"
                   >
                     <div
                       class="media"
@@ -1101,12 +987,8 @@ exports[`HomePage renders correctly 1`] = `
                         </div>
                       </div>
                     </div>
-                  </a>
-                  <div
-                    class="content"
-                  >
-                    <a
-                      href="/glossary#Cloud"
+                    <div
+                      class="content"
                     >
                       <div
                         class="container"
@@ -1118,40 +1000,31 @@ exports[`HomePage renders correctly 1`] = `
                           Lemon drops pastry danish halvah. Lemon drops pastry danish halvah.
                         </p>
                       </div>
-                    </a>
-                    <div
-                      class="has-text-centered"
-                    >
-                      <a
-                        href="/glossary#Cloud"
-                      />
-                      <a
-                        href="/glossary#Cloud"
+                      <div
+                        class="has-text-centered"
                       >
-                        Read more...
-                      </a>
+                        <button
+                          class="button is-ghost is-inverted"
+                        >
+                          Read more...
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
             <div
               class="half-col"
             >
               <a
                 href="/glossary#Moon"
-              />
-              <div
-                class="card mb-5"
               >
-                <a
-                  href="/glossary#Moon"
-                />
                 <div
-                  class="card-content"
+                  class="card mb-5"
                 >
-                  <a
-                    href="/glossary#Moon"
+                  <div
+                    class="card-content"
                   >
                     <div
                       class="media"
@@ -1215,12 +1088,8 @@ exports[`HomePage renders correctly 1`] = `
                         </div>
                       </div>
                     </div>
-                  </a>
-                  <div
-                    class="content"
-                  >
-                    <a
-                      href="/glossary#Moon"
+                    <div
+                      class="content"
                     >
                       <div
                         class="container"
@@ -1232,40 +1101,31 @@ exports[`HomePage renders correctly 1`] = `
                           Lemon drops pastry danish halvah. Lemon drops pastry danish halvah.
                         </p>
                       </div>
-                    </a>
-                    <div
-                      class="has-text-centered"
-                    >
-                      <a
-                        href="/glossary#Moon"
-                      />
-                      <a
-                        href="/glossary#Moon"
+                      <div
+                        class="has-text-centered"
                       >
-                        Read more...
-                      </a>
+                        <button
+                          class="button is-ghost is-inverted"
+                        >
+                          Read more...
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
             <div
               class="half-col"
             >
               <a
                 href="/glossary#Window"
-              />
-              <div
-                class="card mb-5"
               >
-                <a
-                  href="/glossary#Window"
-                />
                 <div
-                  class="card-content"
+                  class="card mb-5"
                 >
-                  <a
-                    href="/glossary#Window"
+                  <div
+                    class="card-content"
                   >
                     <div
                       class="media"
@@ -1329,12 +1189,8 @@ exports[`HomePage renders correctly 1`] = `
                         </div>
                       </div>
                     </div>
-                  </a>
-                  <div
-                    class="content"
-                  >
-                    <a
-                      href="/glossary#Window"
+                    <div
+                      class="content"
                     >
                       <div
                         class="container"
@@ -1346,22 +1202,19 @@ exports[`HomePage renders correctly 1`] = `
                           Lemon drops pastry danish halvah. Lemon drops pastry danish halvah.
                         </p>
                       </div>
-                    </a>
-                    <div
-                      class="has-text-centered"
-                    >
-                      <a
-                        href="/glossary#Window"
-                      />
-                      <a
-                        href="/glossary#Window"
+                      <div
+                        class="has-text-centered"
                       >
-                        Read more...
-                      </a>
+                        <button
+                          class="button is-ghost is-inverted"
+                        >
+                          Read more...
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         </section>

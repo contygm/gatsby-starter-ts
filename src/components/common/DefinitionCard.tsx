@@ -183,11 +183,9 @@ export const DefinitionCard = (props: DefinitionCardProps) => {
                     />
                     {!props.includeAll && (
                         <div className="has-text-centered">
-                            <Link
-                                to={`/glossary#${props.definition.frontmatter.title}`}
-                            >
+                            <button className='button is-ghost is-inverted'>
                                 Read more...
-                            </Link>
+                            </button>
                         </div>
                     )}
                 </div>

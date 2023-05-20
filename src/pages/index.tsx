@@ -66,9 +66,9 @@ const BlogTile = (props: { post: IndexElements }) => {
                             </time>
                         </p>
                         <p>{props.post.frontmatter.description}</p>
-                        <Link to={`/blog${props.post.fields.slug}`}>
+                        <button className='button is-ghost is-inverted'>
                             Read more...
-                        </Link>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -112,9 +112,9 @@ const WikiTile = (props: { post: IndexElements }) => {
                             </time>
                         </p>
                         <p>{props.post.frontmatter.description}</p>
-                        <Link to={`/wiki${props.post.fields.slug}`}>
+                        <button className='button is-ghost is-inverted'>
                             Read more...
-                        </Link>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -158,11 +158,9 @@ const NewTile = (props: { nodes: IndexElements[] }) => {
                             <p className="is-size-5">
                                 {props.nodes[0].frontmatter.description}
                             </p>
-                            <Link
-                                to={`/${props.nodes[0].frontmatter.type}${props.nodes[0].fields.slug}`}
-                            >
+                            <button className='button is-ghost is-inverted'>
                                 Read more...
-                            </Link>
+                            </button>
                         </div>
                     </div>
                     <div className="home-new-tile-card-tag-wrapper">
