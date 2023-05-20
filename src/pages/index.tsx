@@ -159,9 +159,11 @@ const FeaturedTiles = (props: { nodes: IndexElements[], isMobile: boolean }) => 
                             <p className="home-new-tile-card-content-description">
                                 {props.nodes[0].frontmatter.description}
                             </p>
-                            <button className='home-read-more-btn'>
-                                Read more...
-                            </button>
+                            {
+                                props.isMobile && <button className='home-read-more-btn'>
+                                    Read more...
+                                </button>
+                            }
                         </div>
                     </div>
                     <div className="home-new-tile-card-tag-wrapper">
@@ -241,7 +243,7 @@ const FeaturedTiles = (props: { nodes: IndexElements[], isMobile: boolean }) => 
 const HomePage = ({
     data: { blogFeatured, wikiFeatured, glossaryFeatured }
 }: PageProps<HomeProps>) => {
-    const [isMobile, setIsMobile] = useState(useCheckMobileScreen());
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
 
     const handleResize = () => {
         // mobile screen
