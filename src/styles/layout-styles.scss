@@ -125,11 +125,9 @@
 
 .is-vertical {
 	z-index: 99;
-	top: 0;
-	right: 0;
-	max-width: 10%;
+	bottom: 70px;
+	right: 30px;
 	position: fixed;
-
 	ul {
 		margin-left: 0px;
 	}
@@ -137,7 +135,6 @@
 
 .sticky-social-wrapper {
 	@extend .menu;
-	@extend .sticky;
 	@extend .box;
 	@extend .mt-4; 
 }

@@ -21,9 +21,9 @@ export const StickySocialMedia = (props: {
     isVertical: boolean;
     classes?: string;
 }) => {
-    const [showMedia, setShowMedia] = useState(true);
+    const [showMedia, setShowMedia] = useState(false);
 
-    const verticalClass = props.isVertical ? 'is-vertical' : '';
+    const verticalClass = props.isVertical ? 'is-vertical' : 'sticky';
 
     const handleCollapse = () => {
         setShowMedia(!showMedia);

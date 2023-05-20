@@ -149,9 +149,9 @@ const PostIndexContainer = (props: PostIndexContainer) => {
                             featured={props.featured.nodes}
                             related={props.related?.nodes}
                         />
+                        {/* <StickySocialMedia isVertical={isMobile} /> */}
                     </div>
-                    {!isMobile && <StickySocialMedia isVertical={false} />}
-                    {isMobile && <StickySocialMedia isVertical={true} />}
+                    <StickySocialMedia isVertical={isMobile} />
                 </div>
             </div>
         </Layout>
