@@ -45,7 +45,10 @@ export interface HomeProps {
  */
 const BlogTile = (props: { post: IndexElements }) => {
     return (
-        <div className="home-blog-tile">
+        <Link 
+            className="home-blog-tile"
+            to={`/blog${props.post.fields.slug}`}
+        >
             <div className="home-blog-tile-fig-wrapper">
                 <figure className="home-blog-tile-fig">
                     <p className="home-blog-tile-image-wrapper">
@@ -69,7 +72,7 @@ const BlogTile = (props: { post: IndexElements }) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </Link>
     );
 };
 
@@ -89,29 +92,33 @@ const BlogTile = (props: { post: IndexElements }) => {
  */
 const WikiTile = (props: { post: IndexElements }) => {
     return (
-        <div className="card">
-            <div className="card-image">
-                <figure className="image">
-                    <p className="is-128x128">
-                        <img src="https://bulma.io/images/placeholders/128x128.png" alt={`image for ${props.post.frontmatter.title}`}/>
-                    </p>
-                </figure>
-            </div>
-            <div className="card-content">
-                <div className="content">
-                    <p className="title-four">{props.post.frontmatter.title}</p>
-                    <p className="subtitle-six">
-                        <time dateTime={props.post.frontmatter.date}>
-                            {props.post.frontmatter.date}
-                        </time>
-                    </p>
-                    <p>{props.post.frontmatter.description}</p>
-                    <Link to={`/wiki${props.post.fields.slug}`}>
-                        Read more...
-                    </Link>
+        <Link 
+            to={`/wiki${props.post.fields.slug}`} 
+        >
+            <div className="card">
+                <div className="card-image">
+                    <figure className="image">
+                        <p className="is-128x128">
+                            <img src="https://bulma.io/images/placeholders/128x128.png" alt={`image for ${props.post.frontmatter.title}`}/>
+                        </p>
+                    </figure>
+                </div>
+                <div className="card-content">
+                    <div className="content">
+                        <p className="title-four">{props.post.frontmatter.title}</p>
+                        <p className="subtitle-six">
+                            <time dateTime={props.post.frontmatter.date}>
+                                {props.post.frontmatter.date}
+                            </time>
+                        </p>
+                        <p>{props.post.frontmatter.description}</p>
+                        <Link to={`/wiki${props.post.fields.slug}`}>
+                            Read more...
+                        </Link>
+                    </div>
                 </div>
             </div>
-        </div>
+        </Link>
     );
 };
 
@@ -126,7 +133,10 @@ const WikiTile = (props: { post: IndexElements }) => {
 const NewTile = (props: { nodes: IndexElements[] }) => {
     return (
         <div className="home-new-tile-section-wrapper">
-            <div className="home-new-tile-main-wrapper">
+            <Link
+                to={`/${props.nodes[0].frontmatter.type}${props.nodes[0].fields.slug}`}
+                className="home-new-tile-main-wrapper"
+            >
                 <div className="home-new-tile-card">
                     <div className="card-image">
                         <figure className="home-new-tile-main-card-image">
@@ -161,7 +171,7 @@ const NewTile = (props: { nodes: IndexElements[] }) => {
                         </span>
                     </div>
                 </div>
-            </div>
+            </Link>
             <div className="home-new-tile-side-wrapper">
                 <div className="">
                     {props.nodes
@@ -303,14 +313,18 @@ const HomePage = ({
                         {glossaryFeatured.nodes.map((def: GlossaryElements) => {
                             return (
                                 <div
-                                    // data-testid={'post-card'}
                                     className="half-col"
                                     key={def.frontmatter.title}
                                 >
-                                    <DefinitionCard
-                                        definition={def}
-                                        includeAll={false}
-                                    />
+                                    <Link 
+                                        to={`/glossary#${def.frontmatter.title}`}
+                                        
+                                    >
+                                        <DefinitionCard
+                                            definition={def}
+                                            includeAll={false}
+                                        />
+                                    </Link>
                                 </div>
                             );
                         })}
