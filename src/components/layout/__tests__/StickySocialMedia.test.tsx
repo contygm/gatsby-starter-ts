@@ -12,12 +12,13 @@ describe('Sticky Social Media bar', () => {
         const { asFragment, getByTestId } = render(
             <StickySocialMedia isVertical={true} />
         );
+        expect(asFragment()).toMatchSnapshot('closed vertical bar');
+
+        fireEvent.click(getByTestId('sticky-social-show-more'));
         expect(asFragment()).toMatchSnapshot('open vertical bar');
 
         fireEvent.click(getByTestId('sticky-social-hide'));
         expect(asFragment()).toMatchSnapshot('closed vertical bar');
 
-        fireEvent.click(getByTestId('sticky-social-show-more'));
-        expect(asFragment()).toMatchSnapshot('open vertical bar');
     });
 });
