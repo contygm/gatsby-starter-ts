@@ -56,9 +56,9 @@ const PostIndexContainer = (props: PostIndexContainer) => {
     const tocClassName = isGloss ? 'glossary-toc' : 'post-toc';
     const tocSectionClassName = isGloss
         ? 'glossary-toc-box'
-        : isMobile
-        ? 'mobile-post-toc'
-        : 'web-post-toc';
+            : isMobile
+            ? 'mobile-post-toc'
+            : 'web-post-toc';
 
     const handleResize = () => {
         // mobile screen

@@ -36,35 +36,33 @@ interface TagsListProps {
  * @category Components
  */
 export const TagsList = (props: TagsListProps) => {
-    const classForAllTag =
-        props.isSearchActive || 'all' === props.activeTag
+    const classForAllTag = 'all' === props.activeTag
             ? 'tag-active'
             : 'tag-inactive';
 
     return (
         <div className="tag-list-wrapper">
-            <div className="tag-wrapper">
+            <Link 
+                className="tag-wrapper"
+                to={`?tag=all`}
+                onClick={props.handleFilterUpdate}
+                id="all"
+            >
                 <div
-                    id="all"
                     data-testid="all"
                     className={`${classForAllTag}`}
-                    onClick={props.handleFilterUpdate}
                 >
                     All
                 </div>
                 <span className="tag is-dark">{props.totalPostCount}</span>
-            </div>
+            </Link>
             {props.tags.map(
                 (tag: { fieldValue: string; totalCount: number }) => {
-                    const classForTag = props.isSearchActive
-                        ? 'tag-base'
-                        : tag.fieldValue === props.activeTag
+                    const classForTag = tag.fieldValue === props.activeTag
                         ? 'tag-active'
                         : 'tag-inactive';
 
-                    const classForTagCount = props.isSearchActive
-                        ? 'tag-count-disabled'
-                        : 'tag-count-enabled';
+                    const classForTagCount = 'tag-count-enabled';
 
                     return (
                         <Link

@@ -69,9 +69,7 @@ const IndexFilterWrapper = ({
     const [allPosts, setAllPosts] = useState(unfilteredPosts);
 
     const handleFilterUpdate = (e: SyntheticEvent) => {
-        if (searchQuery === '') {
-            setTagFilter(e.currentTarget.id);
-        }
+        setTagFilter(e.currentTarget.id);
     };
 
     const handleSubmitSearch = (e: any) => {
@@ -93,21 +91,19 @@ const IndexFilterWrapper = ({
     }
 
     useEffect(() => {
+        let filteredPosts = unfilteredPosts;
         if (searchQuery === '') {
-            const temp = filterOnTag(tagFilter, unfilteredPosts);
-            setAllPosts(temp);
-        }
-    }, [tagFilter]);
-
-    useEffect(() => {
-        if (tagFilter === 'all' || tagFilter === '') {
-            const filteredData = filterWithSearchQuery(
+            filteredPosts = filterOnTag(tagFilter, unfilteredPosts);
+        } else if (searchQuery !== '') {
+            const filteredBySearch = filterWithSearchQuery(
                 unfilteredPosts,
                 searchQuery
             );
-            setAllPosts(filteredData);
-        }
-    }, [searchQuery]);
+            filteredPosts = filterOnTag(tagFilter, filteredBySearch);
+        } 
+        setAllPosts(filteredPosts);
+
+    }, [searchQuery, tagFilter]);
 
     return (
         <>

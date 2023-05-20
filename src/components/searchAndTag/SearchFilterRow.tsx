@@ -80,20 +80,12 @@ export const SearchFilterRow = (props: SearchFilterRowProps) => {
                                     value={value}
                                     key={props.searchQuery}
                                     onChange={handleChange}
-                                    disabled={
-                                        props.activeTag !== '' &&
-                                        props.activeTag !== 'all'
-                                    }
                                 />
                             </p>
                             <p className="control">
                                 <button
                                     className="primary-button"
                                     data-testid="searchPostSubmit"
-                                    disabled={
-                                        props.activeTag !== '' &&
-                                        props.activeTag !== 'all'
-                                    }
                                 >
                                     Search
                                 </button>
