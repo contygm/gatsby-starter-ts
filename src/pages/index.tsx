@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { SEO, Layout } from '../components';
 import { graphql, Link, HeadProps, PageProps } from 'gatsby';
 import { DefinitionCard } from '../components/common/DefinitionCard';
+import useCheckMobileScreen from '../utils/hooks/useCheckMobileScreen';
 
 /**
  * All props needed for the site-wide home page
@@ -66,7 +67,7 @@ const BlogTile = (props: { post: IndexElements }) => {
                             </time>
                         </p>
                         <p>{props.post.frontmatter.description}</p>
-                        <button className='button is-ghost is-inverted'>
+                        <button className='home-read-more-btn'>
                             Read more...
                         </button>
                     </div>
@@ -112,7 +113,7 @@ const WikiTile = (props: { post: IndexElements }) => {
                             </time>
                         </p>
                         <p>{props.post.frontmatter.description}</p>
-                        <button className='button is-ghost is-inverted'>
+                        <button className='home-read-more-btn'>
                             Read more...
                         </button>
                     </div>
@@ -130,7 +131,7 @@ const WikiTile = (props: { post: IndexElements }) => {
  * @see IndexElements
  * @memberof HomePage
  */
-const NewTile = (props: { nodes: IndexElements[] }) => {
+const FeaturedTiles = (props: { nodes: IndexElements[], isMobile: boolean }) => {
     return (
         <div className="home-new-tile-section-wrapper">
             <Link
@@ -155,16 +156,16 @@ const NewTile = (props: { nodes: IndexElements[] }) => {
                                     {props.nodes[0].frontmatter.date}
                                 </time>
                             </p>
-                            <p className="is-size-5">
+                            <p className="home-new-tile-card-content-description">
                                 {props.nodes[0].frontmatter.description}
                             </p>
-                            <button className='button is-ghost is-inverted'>
+                            <button className='home-read-more-btn'>
                                 Read more...
                             </button>
                         </div>
                     </div>
                     <div className="home-new-tile-card-tag-wrapper">
-                        <span className="home-new-tile-main-card-tag">
+                        <span className={props.isMobile ? 'home-new-tile-card-tag' : 'home-new-tile-main-card-tag'}>
                             FEATURED
                         </span>
                     </div>
@@ -240,6 +241,22 @@ const NewTile = (props: { nodes: IndexElements[] }) => {
 const HomePage = ({
     data: { blogFeatured, wikiFeatured, glossaryFeatured }
 }: PageProps<HomeProps>) => {
+    const [isMobile, setIsMobile] = useState(useCheckMobileScreen());
+
+    const handleResize = () => {
+        // mobile screen
+        if (window.innerWidth < 1024) {
+            setIsMobile(true);
+        } else {
+            // large or tablet screen
+            setIsMobile(false);
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener('resize', handleResize);
+    });
+
     return (
         <Layout>
             {/* T */}
@@ -254,13 +271,12 @@ const HomePage = ({
                 </div>
                 <div className="hero-body">
                     <div className="container">
-                        <NewTile nodes={blogFeatured.nodes} />
+                        <FeaturedTiles nodes={blogFeatured.nodes} isMobile={isMobile}/>
                     </div>
                 </div>
             </section>
 
             <div className="container">
-                {/* <NewTile post={blogFeatured.nodes[0]}/> */}
                 <section className="section">
                     <div className="level">
                         <div className="level-left">
@@ -271,7 +287,6 @@ const HomePage = ({
                         {blogFeatured.nodes.map((post: IndexElements) => {
                             return (
                                 <div
-                                    // data-testid={'post-card'}
                                     className="half-col"
                                     key={post.frontmatter.title}
                                 >

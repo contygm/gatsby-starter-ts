@@ -109,11 +109,13 @@
 .home-title {
 	font-size: 8rem;
 	@extend .title;
+	@extend .is-size-1-mobile;
 }
 
 .home-subtitle {
 	@extend .subtitle;
 	@extend .is-size-2;
+	@extend .is-size-4-mobile;
 }
 
 .home-wiki-content {
@@ -184,8 +186,16 @@
 }
 
 .home-new-tile-card-content-title {
-	@extend .title-three;
 	@extend .has-text-black;
+	@extend .title;
+	@extend .is-size-3;
+	@extend .is-size-5-mobile;
+}
+
+.home-new-tile-card-content-description {
+	@extend .is-size-5;
+	@extend .is-size-6-mobile;
+	@extend .mb-0;
 }
 
 .home-new-tile-card-content-title-small {
@@ -215,4 +225,10 @@
 
 .home-header-tile-overlay {
 	top: auto;
+}
+
+.home-read-more-btn {
+	@extend .button;
+	@extend .is-ghost;
+	@extend .is-inverted;
 }
