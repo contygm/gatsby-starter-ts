@@ -259,7 +259,7 @@ const HomePage = ({
 
     useEffect(() => {
         window.addEventListener('resize', handleResize);
-    }, [window]);
+    }, []);
 
     return (
         <Layout>
