@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { SEO, Layout } from '../components';
 import { graphql, Link, HeadProps, PageProps } from 'gatsby';
 import { DefinitionCard } from '../components/common/DefinitionCard';
+import useCheckMobileScreen from '../utils/hooks/useCheckMobileScreen';
 
 /**
  * All props needed for the site-wide home page
@@ -250,16 +251,10 @@ const FeaturedTiles = (props: { nodes: IndexElements[], isMobile: boolean }) => 
 const HomePage = ({
     data: { blogFeatured, wikiFeatured, glossaryFeatured }
 }: PageProps<HomeProps>) => {
-    const [isMobile, setIsMobile] = useState(window && window.innerWidth < 1024);
+    const [isMobile, setIsMobile] = useState(useCheckMobileScreen(1024));
 
     const handleResize = () => {
-        // mobile screen
-        if (window.innerWidth < 1024) {
-            setIsMobile(true);
-        } else {
-            // large or tablet screen
-            setIsMobile(false);
-        }
+        setIsMobile(useCheckMobileScreen(1024))
     };
 
     useEffect(() => {
