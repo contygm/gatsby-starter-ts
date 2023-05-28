@@ -254,8 +254,14 @@ const HomePage = ({
     const [isMobile, setIsMobile] = useState(useCheckMobileScreen(1024));
 
     const handleResize = () => {
-        setIsMobile(useCheckMobileScreen(1024))
+        if (window.innerWidth < 1024) {
+            setIsMobile(true);
+        } else {
+            // large or tablet screen
+            setIsMobile(false);
+        }
     };
+
 
     useEffect(() => {
         window.addEventListener('resize', handleResize);
