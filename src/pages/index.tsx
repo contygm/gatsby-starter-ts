@@ -250,7 +250,7 @@ const FeaturedTiles = (props: { nodes: IndexElements[], isMobile: boolean }) => 
 const HomePage = ({
     data: { blogFeatured, wikiFeatured, glossaryFeatured }
 }: PageProps<HomeProps>) => {
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
+    const [isMobile, setIsMobile] = useState(window && window.innerWidth < 1024);
 
     const handleResize = () => {
         // mobile screen
