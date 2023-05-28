@@ -129,15 +129,15 @@
 	@extend .box;
 }
 
-.home-blog-tile-fig-wrapper {
-	@extend .media;
-	@extend .p-2;
-	@extend .m-2;
+.home-blog-tile-content {
+	@extend .media-content;
+	@extend .m-auto;
 }
 
 .home-blog-tile-fig {
 	@extend .media-left;
 	@extend .my-auto;
+	@extend .card-image;
 }
 
 .home-blog-tile-image-wrapper {
@@ -145,9 +145,10 @@
 	@extend .is-128x128;
 }
 
-.home-blog-tile-content {
-	@extend .media-content;
-	@extend .m-auto;
+.home-blog-tile-fig-wrapper {
+	@extend .media;
+	@extend .p-2;
+	@extend .m-2;
 }
 
 // New Tile

@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { SEO, Layout } from '../components';
 import { graphql, Link, HeadProps, PageProps } from 'gatsby';
 import { DefinitionCard } from '../components/common/DefinitionCard';
-import useCheckMobileScreen from '../utils/hooks/useCheckMobileScreen';
 
 /**
  * All props needed for the site-wide home page
@@ -44,7 +43,7 @@ export interface HomeProps {
  * @see IndexElements
  * @memberof HomePage
  */
-const BlogTile = (props: { post: IndexElements }) => {
+const BlogTile = (props: { post: IndexElements, isMobile: boolean }) => {
     return (
         <Link 
             className="home-blog-tile"
@@ -66,10 +65,15 @@ const BlogTile = (props: { post: IndexElements }) => {
                                 {props.post.frontmatter.date}
                             </time>
                         </p>
-                        <p>{props.post.frontmatter.description}</p>
-                        <button className='home-read-more-btn'>
-                            Read more...
-                        </button>
+                        {
+                             !props.isMobile && 
+                             <div>
+                                <p>{props.post.frontmatter.description}</p>
+                                <button className='home-read-more-btn'>
+                                    Read more...
+                                </button>
+                             </div>
+                        }
                     </div>
                 </div>
             </div>
@@ -156,13 +160,16 @@ const FeaturedTiles = (props: { nodes: IndexElements[], isMobile: boolean }) => 
                                     {props.nodes[0].frontmatter.date}
                                 </time>
                             </p>
-                            <p className="home-new-tile-card-content-description">
-                                {props.nodes[0].frontmatter.description}
-                            </p>
                             {
-                                props.isMobile && <button className='home-read-more-btn'>
-                                    Read more...
-                                </button>
+                                !props.isMobile && 
+                                <div>
+                                    <p className="home-new-tile-card-content-description">
+                                        {props.nodes[0].frontmatter.description}
+                                    </p>
+                                    <button className='home-read-more-btn'>
+                                        Read more...
+                                    </button>
+                                </div>  
                             }
                         </div>
                     </div>
@@ -257,7 +264,7 @@ const HomePage = ({
 
     useEffect(() => {
         window.addEventListener('resize', handleResize);
-    });
+    }, [window]);
 
     return (
         <Layout>
@@ -292,7 +299,7 @@ const HomePage = ({
                                     className="half-col"
                                     key={post.frontmatter.title}
                                 >
-                                    <BlogTile post={post} />
+                                    <BlogTile post={post} isMobile={isMobile}/>
                                 </div>
                             );
                         })}
