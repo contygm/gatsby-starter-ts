@@ -5,7 +5,7 @@
 .toc-wrapper {
 	.container {
 		@extend .menu;
-		padding: 1.25rem; 
+		padding: 0.75rem;
 		
 		// TOC string from graphQL query uses <p> to nest lists
 		p {
@@ -23,7 +23,7 @@
 
 		h6 {
 			@extend .menu-label;
-		}
+		}	
 	}
 }
 

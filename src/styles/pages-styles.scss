@@ -62,6 +62,7 @@
 .glossary-toc-box {
 	@extend .web-post-toc;
 	@extend .box;
+	// padding: 0 .75rem;
 }
 
 @media only screen and (max-width : 1215px) {
@@ -71,6 +72,7 @@
 		z-index: 99;
 		height: 100vh;
 		overflow-x: scroll;
+		top: 20%;
 		
 		button {
 			position: fixed; 
