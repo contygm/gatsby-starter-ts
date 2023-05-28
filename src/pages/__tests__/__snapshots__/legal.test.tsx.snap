@@ -23,6 +23,7 @@ exports[`LegalPage Cookie Page renders correctly 1`] = `
             layout="constrained"
             placeholder="blurred"
             src="../../images/bulma-logo-white.png"
+            width="150"
           />
         </a>
         <button
@@ -464,6 +465,7 @@ exports[`LegalPage Copyright Page renders correctly 1`] = `
             layout="constrained"
             placeholder="blurred"
             src="../../images/bulma-logo-white.png"
+            width="150"
           />
         </a>
         <button
@@ -905,6 +907,7 @@ exports[`LegalPage Disclaimer Page renders correctly 1`] = `
             layout="constrained"
             placeholder="blurred"
             src="../../images/bulma-logo-white.png"
+            width="150"
           />
         </a>
         <button
@@ -1366,6 +1369,7 @@ exports[`LegalPage Legal renders correctly 1`] = `
             layout="constrained"
             placeholder="blurred"
             src="../../images/bulma-logo-white.png"
+            width="150"
           />
         </a>
         <button
@@ -1887,6 +1891,7 @@ exports[`LegalPage Privacy Policy Page renders correctly 1`] = `
             layout="constrained"
             placeholder="blurred"
             src="../../images/bulma-logo-white.png"
+            width="150"
           />
         </a>
         <button
@@ -2328,6 +2333,7 @@ exports[`LegalPage Terms and Conditions Page renders correctly 1`] = `
             layout="constrained"
             placeholder="blurred"
             src="../../images/bulma-logo-white.png"
+            width="150"
           />
         </a>
         <button

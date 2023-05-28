@@ -23,6 +23,7 @@ exports[`Wiki Posts Page ToC shows properly on mobile: closed table of contents 
             layout="constrained"
             placeholder="blurred"
             src="../../images/bulma-logo-white.png"
+            width="150"
           />
         </a>
         <button
@@ -1081,6 +1082,7 @@ exports[`Wiki Posts Page ToC shows properly on mobile: closed table of contents 
             layout="constrained"
             placeholder="blurred"
             src="../../images/bulma-logo-white.png"
+            width="150"
           />
         </a>
         <button
@@ -2139,6 +2141,7 @@ exports[`Wiki Posts Page ToC shows properly on mobile: open table of contents 1`
             layout="constrained"
             placeholder="blurred"
             src="../../images/bulma-logo-white.png"
+            width="150"
           />
         </a>
         <button
@@ -3217,6 +3220,7 @@ exports[`Wiki Posts Page renders correctly 1`] = `
             layout="constrained"
             placeholder="blurred"
             src="../../images/bulma-logo-white.png"
+            width="150"
           />
         </a>
         <button
@@ -4312,6 +4316,7 @@ exports[`Wiki Posts Page renders correctly on medium view 1`] = `
             layout="constrained"
             placeholder="blurred"
             src="../../images/bulma-logo-white.png"
+            width="150"
           />
         </a>
         <button
@@ -5370,6 +5375,7 @@ exports[`Wiki Posts Page renders correctly on mobile view 1`] = `
             layout="constrained"
             placeholder="blurred"
             src="../../images/bulma-logo-white.png"
+            width="150"
           />
         </a>
         <button

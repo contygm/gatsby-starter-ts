@@ -43,6 +43,7 @@ exports[`404 - NotFoundPage renders correctly 1`] = `
             layout="constrained"
             placeholder="blurred"
             src="../../images/bulma-logo-white.png"
+            width="150"
           />
         </a>
         <button
