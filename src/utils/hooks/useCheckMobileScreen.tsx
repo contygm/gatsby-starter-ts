@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
  * @function useCheckMobileScreen
  * @returns {boolean}
  */
-const useCheckMobileScreen = ( breakpoint: number = 1216 ) => {
+const useCheckMobileScreen = ( breakpoint = 1216 ) => {
     const hasWindow = typeof window !== 'undefined';
 
     if (hasWindow) {
