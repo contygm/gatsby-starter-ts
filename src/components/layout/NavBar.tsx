@@ -38,9 +38,9 @@ export const NavBar = () => {
                         src="../../images/bulma-logo-white.png"
                         alt="Logo"
                         placeholder="blurred"
-                        className="nav-side-width"
                         layout="constrained"
                         data-cy="nav-link-logo"
+                        width={150}
                     />
                 </Link>
                 {/* Mobile Hamburger Graphic - following Bulma docs */}
